@@ -1,16 +1,16 @@
 # Security
 Collection of links to Security stuff
 
+## Disclaimer:
+Do NOT use this knowledge for any illegal activities and / or any activities that you do NOT have explicit authorization to do so.
+Failure to gain authorization BEFORE you even try to hack a system may result in prosecution and punishment in either confinement and / or fines.
 
 ## Getting started
 [How to get your first job as a hacker](https://medium.com/@hakluke/how-to-get-your-first-job-as-a-hacker-7c1f5c4bf4b3) - Luke Stephens<br>
 [Careers in Security, Ethical Hacking and advice onm getting started](https://www.troyhunt.com/careers-in-security-ethical-hacking-and-advice-on-where-to-get-started/) - Troy Hunt<br>
 
-
-
 ## Pages similar like this
 [Resources for learning Hacking](https://github.com/faizann24/Resources-for-learning-Hacking) - Faizan Ahmad
-
 
 ## Books
 
@@ -77,7 +77,7 @@ Start with Why - Simon Sinek's golden circle of Why, How, What (in that order) t
 ## Video's
 [Web Hacking](https://www.youtube.com/playlist?list=PLJM73L2pQRd4lXBZjsHAmeEqsn5pENXxN)<br>
 [Ethical hacking, a comprehensive playlist covering almost everything](https://www.youtube.com/playlist?list=PLkRo97mCIn9lgvE7AskNsmwJVOlJX2zaI)<br>
-[Complete Free Hacking Course: Go from Beginner to Expert Hacker Today](https://www.youtube.com/watch?v=7nF2BAfWUEg)<br>
+[Complete Free Hacking Course: Go from Beginner to Expert Hacker Today](https://www.youtube.com/watch?v=7nF2BAfWUEg) - 4:51h preview of a $199,- video course<br>
 
 
 ## Conferences
@@ -87,11 +87,7 @@ Loco Moco Sec (Hawaii)- Jim Manico<br>
 SecAppDev (Leuven Belgium) - KU Leuven<br>
 D3n H4ck (The Hague NL)<br>
 
-## Terminology
-
-Hacker - 
-- [Types of hackers](./teminology/hackerTypes)
-
+## [Terminology](terminology/list.md)
 
 ## Hacking way of working
 - [Stages](./techniques/stages)
