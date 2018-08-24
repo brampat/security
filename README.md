@@ -1,4 +1,4 @@
-# security
+# Security
 Collection of links to Security stuff
 
 
@@ -38,8 +38,23 @@ Start with Why - Simon Sinek's golden circle of Why, How, What (in that order) t
 
 ## Tools
 [Kali Linux](https://www.kali.org/downloads/) - Linux distro specifically for Penetration testing
+[Burp Suite / Portswigger (Euro 350 / year)](https://portswigger.net/burp/communitydownload) - Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
+[Ettercap](http://www.ettercap-project.org/ettercap/downloads.html) - Network sniffing (incl. SSH & HTTPS)
 
+### Network hacking
+[Aircrack-NG](https://www.aircrack-ng.org/downloads.html) - Wireless network cracking
+[Angry IP Scanner](https://angryip.org/download/#linux) - IP & port scanner
 
+### Password hacking
+[Hashcat](https://hashcat.net/hashcat/) - Highspeed hashed password cracking tool
+[RainbowCrack](http://project-rainbowcrack.com/index.htm) - Hash-cracker based on Rainbow-tables
+
+### Database
+[SQLMap](http://sqlmap.org/) - Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
+
+### Paid
+[Netsparker (5k+ / year)](https://www.netsparker.com) - Web app security scanner
+[Acunetix (4.5k+ / year)](https://www.acunetix.com/web-vulnerability-scanner/) - Web app security scanner
 
 ## Practicing
 [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/) - Vulnerable Linux VM for security & penetration practicing<br>
@@ -55,6 +70,10 @@ Start with Why - Simon Sinek's golden circle of Why, How, What (in that order) t
 [CCISP](http://www.firebrandtraining.co.uk/uk/cissp.asp#fast-metro) - Certified Information Systems Security Professional
 
 
+## Websites:
+[Guru99 Ethical Hacking tutorials](https://www.guru99.com/ethical-hacking-tutorials.html)
+
+
 ## Video's
 [Web Hacking](https://www.youtube.com/playlist?list=PLJM73L2pQRd4lXBZjsHAmeEqsn5pENXxN)<br>
 [Ethical hacking, a comprehensive playlist covering almost everything](https://www.youtube.com/playlist?list=PLkRo97mCIn9lgvE7AskNsmwJVOlJX2zaI)<br>
@@ -68,9 +87,19 @@ Loco Moco Sec (Hawaii)- Jim Manico<br>
 SecAppDev (Leuven Belgium) - KU Leuven<br>
 D3n H4ck (The Hague NL)<br>
 
+## Terminology
+
+Hacker - 
+- [Types of hackers](./teminology/hackerTypes)
+
+
+## Hacking way of working
+- [Stages](./techniques/stages)
+
 
 ## Big names (for me at least)
 Freaky Clown<br>
 Troy Hunt<br>
 Edward Snowden<br>
 Brenno de Winter<br>
+Victor Gevers<br>
