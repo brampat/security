@@ -1,4 +1,4 @@
-# [Terminology](terminology/list.md)
+# Terminology
 
 | Term | Description |
 | ---- | ----------- |
@@ -8,10 +8,10 @@
 | Firewall |  |
 | Root kit | Low level malicious software that interferes with the regular functionality of the operating system. Can be used to hide software and tools running, so these cannot be detected. Guarding against rootkits is very complex, but possible with things like timing detection. In such methods, a system would indirectly detect inconsistencies using comparisons of internal and external timings. |
 | Fishing |  |
-| Footprinting | Information gathering. Also see [Stages of a hack](./techniques/stages) |
+| Footprinting | Information gathering. Also see [Stages of a hack](../techniques/stages.md) |
 | FUD | Fear uncertainty and doubt |
 | FUD | Fully undetectable, either undetectable by tools like Antivirus or Firewalls or not labeled as malicious tools |
-| Hacker | Also see [Types of hackers](./teminology/hackerTypes) |
+| Hacker | Also see [Types of hackers](./hackerTypes.md) |
 | Hacking | Having a system do something it was not designed to do. (note: the absense of the work computer. The system can be any system, even a non-fysical system like a business process, a legal system, tax-system etc. ) |
 | Key Logger | Software on a system that records all key-strokes. Mostly running without the knowledge of the current user of the system and used to gather login-credentials or other valuable information |
 | Proxy | Less reliable than VPN. Chaining proxies can make it much harder to detect. |
