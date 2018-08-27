@@ -3,7 +3,7 @@
 | Term | Description |
 | ---- | ----------- |
 | Adware | See [Malware types](malwareTypes.md) |
-| APT  | Advanced Persistent Threat, followed by a number of identification. A state, state-sponsored or other highly advanced hacker / organization. When more information is identified, these often get nick-names |
+| APT  | Advanced Persistent Threat, followed by a number of identification. A state, state-sponsored or other highly advanced hacker / organization. When more information is identified, these often get nick-names. See [Hacker groups](hackerGroups.md) |
 | Attack surface | Number of attack vectors or potential access points a hacker may explore to try to hack. Compare this with a building with numerous doors and windows. Each door, window etc. gives an attacker another way to gain access to the building, thereby increasing the "attack-surface". |
 | Attack vector | Potential access points to target in a hack |
 | Blue Team | Defense side of an ethical hack operation. Also see Red team / Blue team testing |

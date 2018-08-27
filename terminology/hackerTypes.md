@@ -79,7 +79,7 @@ Often reformed black hat or rogue white hat hackers
 
 ## State sponsored
 Commonly identified with APT-numbers. APT is abbreviation for Advanced Persistent Thread. 
-Virtually unlimited funding. Also see [hacker groups](hackerGroups.md)<br>
+Virtually unlimited funding. Also see [Hacker groups](hackerGroups.md)<br>
 
 <b>Activities</b>: Spying, denial of service <br>
 <b>Goal</b>: <br>
