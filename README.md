@@ -85,7 +85,7 @@ Loco Moco Sec (Hawaii)- Jim Manico<br>
 SecAppDev (Leuven Belgium) - KU Leuven<br>
 D3n H4ck (The Hague NL)<br>
 
-## [Terminology](terminology/list.md)
+## [Terminology](terminology/README.md)
 
 ## Hacking way of working
 - [Stages](./techniques/stages)
