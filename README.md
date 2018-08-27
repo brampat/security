@@ -41,6 +41,8 @@ Start with Why - Simon Sinek's golden circle of Why, How, What (in that order) t
 [Burp Suite / Portswigger (Euro 350 / year)](https://portswigger.net/burp/communitydownload) - Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
 [Ettercap](http://www.ettercap-project.org/ettercap/downloads.html) - Network sniffing (incl. SSH & HTTPS)
 
+[MacChanger](https://www.hackingtutorials.org/general-tutorials/mac-address-spoofing-with-macchanger/) - Change mac-addresses of your network interfaces to allow for anonimization or spoofing [https://www.youtube.com/watch?v=7nF2BAfWUEg&t=12469s](Basic tutorial on 3:34:05)
+
 ### Network hacking
 [Aircrack-NG](https://www.aircrack-ng.org/downloads.html) - Wireless network cracking
 [Angry IP Scanner](https://angryip.org/download/#linux) - IP & port scanner
@@ -64,21 +66,17 @@ Start with Why - Simon Sinek's golden circle of Why, How, What (in that order) t
 ## Certification
 [PWK](https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux/) - Penetration Testing with Kali Linux - $800,- including 30-day lab access & exam.<br>
 [OSCP](https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/) - Offensive Security Certified Professional (highly regarded) - $800,- including 30-day lab access & exam. Requires PWK<br>
-
 [CEH](http://www.firebrandtraining.co.uk/courses/ec_council/ceh/hacking.asp#fast-metro) - Certified Ethical Hacker (is questionably not sufficient)<br>
 [Plural-sight CEH preparation](https://www.pluralsight.com/paths/ethical-hacking) - By Troy Hunt<br> 
 [CCISP](http://www.firebrandtraining.co.uk/uk/cissp.asp#fast-metro) - Certified Information Systems Security Professional
 
-
 ## Websites:
 [Guru99 Ethical Hacking tutorials](https://www.guru99.com/ethical-hacking-tutorials.html)
-
 
 ## Video's
 [Web Hacking](https://www.youtube.com/playlist?list=PLJM73L2pQRd4lXBZjsHAmeEqsn5pENXxN)<br>
 [Ethical hacking, a comprehensive playlist covering almost everything](https://www.youtube.com/playlist?list=PLkRo97mCIn9lgvE7AskNsmwJVOlJX2zaI)<br>
-[Complete Free Hacking Course: Go from Beginner to Expert Hacker Today](https://www.youtube.com/watch?v=7nF2BAfWUEg) - 4:51h preview of a $199,- video course<br>
-
+[Complete Free Hacking Course: Go from Beginner to Expert Hacker Today](https://www.youtube.com/watch?v=7nF2BAfWUEg) - 4:51h preview of a $199,- video course, but add coupon-code "JBU25" for a 87% discount to just $25<br>
 
 ## Conferences
 Defcon<br>

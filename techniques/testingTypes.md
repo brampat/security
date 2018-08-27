@@ -1,6 +1,32 @@
 # Types of tests
 
-Source: [OWASP](https://www.owasp.org/index.php/Testing:_Introduction_and_objectives)
+
+## Types of Ethical hacking setups
+
+### Black box testing
+The hacker knows nothing or very little of the system being tested. The hacker might know an IP-address 
+or maybe just the organization that requires testing, but not much more. This requires the hacker to execute full information gathering and thread modelling stages
+
+### White box testing
+The hacker knows just about everything of the system being tested. This includes full system overview / architecture,
+software and services including versions running on the system, full sourcecode etc. Sometimes even admin account credentials
+
+### Grey box testing
+Some or limited knowledge about the target or system
+
+### Vulnerability testing
+Scan & testing for vulnerabilities, no exploits
+
+### Full penetration testing
+Testing for all targets & attack vectors
+
+### Targeted testing
+Targeting only specific pieces of infrastructure. Part of grey or white-box testing as the hacker should know which systems to target.<br>
+
+
+Source [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
+------------
+
 
 ## Configuration and deployment management testing
 
@@ -31,3 +57,9 @@ should not have been accessible.
 Examples are: a webshop where customers can order negative amount of articles. Also see input validation.
 
 ## Client side testing
+
+
+-------------------
+Source: [OWASP](https://www.owasp.org/index.php/Testing:_Introduction_and_objectives)<br>
+
+
