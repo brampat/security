@@ -34,34 +34,8 @@ Console wars - Tom Kalinski, former Mattel CEO is tasked to challenge Goliath Ni
 Brick by brick - Marketing, innovation & leadership within The Lego Group<br>
 Start with Why - Simon Sinek's golden circle of Why, How, What (in that order) to create loyal employees and customers<br>
 
-
-
 ## Tools
-[Kali Linux](https://www.kali.org/downloads/) - Linux distro specifically for Penetration testing
-[Burp Suite / Portswigger (Euro 350 / year)](https://portswigger.net/burp/communitydownload) - Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
-[Ettercap](http://www.ettercap-project.org/ettercap/downloads.html) - Network sniffing (incl. SSH & HTTPS)
-
-[MacChanger](https://www.hackingtutorials.org/general-tutorials/mac-address-spoofing-with-macchanger/) - Change mac-addresses of your network interfaces to allow for anonimization or spoofing [https://www.youtube.com/watch?v=7nF2BAfWUEg&t=12469s](Basic tutorial on 3:34:05)
-
-### Network hacking
-[Aircrack-NG](https://www.aircrack-ng.org/downloads.html) - Wireless network cracking
-[Angry IP Scanner](https://angryip.org/download/#linux) - IP & port scanner
-
-### Password hacking
-[Hashcat](https://hashcat.net/hashcat/) - Highspeed hashed password cracking tool
-[RainbowCrack](http://project-rainbowcrack.com/index.htm) - Hash-cracker based on Rainbow-tables
-
-### Database
-[SQLMap](http://sqlmap.org/) - Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
-
-### Paid
-[Netsparker (5k+ / year)](https://www.netsparker.com) - Web app security scanner
-[Acunetix (4.5k+ / year)](https://www.acunetix.com/web-vulnerability-scanner/) - Web app security scanner
-
-## Practicing
-[Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/) - Vulnerable Linux VM for security & penetration practicing<br>
-[Firing Range](https://public-firing-range.appspot.com/) - Test bed for automated application security scanners<br>
-
+See [Tools](techniques/tools.md)
 
 ## Certification
 [PWK](https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux/) - Penetration Testing with Kali Linux - $800,- including 30-day lab access & exam.<br>

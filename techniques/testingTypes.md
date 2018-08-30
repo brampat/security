@@ -23,9 +23,21 @@ Testing for all targets & attack vectors
 ### Targeted testing
 Targeting only specific pieces of infrastructure. Part of grey or white-box testing as the hacker should know which systems to target.<br>
 
+- Databases
+- Web application testing
+- Client-server application testing
+- Code review (secure code review)
+- Physical security tests
+- Social engineering
+- Network scanning
+- Malware detection
+- Information leakage
+- Defensive testing only (reactive defensive team testing)
+- Red team testing
+- Contingency / incident response testing (how well defense responds to incidents)
 
-Source [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
 ------------
+Source [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
 
 
 ## Configuration and deployment management testing
