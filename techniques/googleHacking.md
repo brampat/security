@@ -22,5 +22,6 @@ Source [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&in
 
 
 Other resources:
+* [Shodan](https://www.shodan.io/): IoT device search-engine, often used to find unsecured IoT devices like SCADA or other industrial systems, webcams etc.
 * [Google Hacking Database](https://www.exploit-db.com/google-hacking-database/) (originally started as [Hackers for Charity](http://www.hackersforcharity.org/ghdb/) )
 * [25 killer combo's with Google site: operator](https://moz.com/blog/25-killer-combos-for-googles-site-operator)
