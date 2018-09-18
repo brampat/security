@@ -41,6 +41,7 @@
 
 ## Database
 * [SQLMap](http://sqlmap.org/): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
+* [SQLMap](tools/sqlmap.md): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
 
 ## Web app
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
@@ -52,7 +53,7 @@
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
 * [Hack the box](https://www.hackthebox.eu/): Online testing environment, accessible after completing an entry-level test
-
+* [Root-me](https://www.root-me.org/?lang=en): Online challenges and VM to practice hacking
 
 ## Defensive
 * [Fail2Ban](https://www.fail2ban.org/wiki/index.php/Main_Page): scans logfiles and bans IPs based on malicious signs

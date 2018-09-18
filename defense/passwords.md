@@ -6,7 +6,7 @@ Users can adopt:
 * Unique passwords
 * Long passwords
 * Complex passwords
-* Password-managers
+* Password-managers (as explained by [Mary Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ))
 
 Developers can adopt:
 * Proper hashing

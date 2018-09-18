@@ -1,3 +1,6 @@
+# SQL Injection
+
+
 # Blind SQL Injection techniques
 
 Mostly, web-application will hide output of the actual SQL-query. 
@@ -23,3 +26,9 @@ http://newspaper.com/items.php?id=2 and 1=2
 SELECT title, description, body FROM items WHERE ID = 2 and 1=2
 ```
 
+
+
+Source:
+* [SQL injection for dummies](https://www.youtube.com/watch?v=ciNHn38EyRc)
+* [OWASP](https://www.owasp.org/index.php/Blind_SQL_Injection)
+* [Acunetix](https://www.acunetix.com/websitesecurity/blind-sql-injection/)

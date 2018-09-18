@@ -43,7 +43,6 @@ On robots in the following movies:
 * [I, Robot](https://www.imdb.com/title/tt0343818): Technophobic police officer investigates a crime apparently committed by a robot (book by Asimov).
 * [Westworld](https://www.imdb.com/title/tt0475784): In a real-life Wild-west themepark, guests can do whatever they like to the rootic hosts. Westworld questions about life, existentialism and ethics against AI lifeforms. 
 
-
 On [transhumanism](https://en.wikipedia.org/wiki/Transhumanism) in the following movies:
 [Ray Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) is a well known transhumanist who predicts that 2045 AI will surpass humans in both intelligence and development speed. He also predicts a future in which humans
 will have eternal life either by continuously reparing diseases and aging by the use of nanobots or by transcending into the virtual world of the (successor of) the internet.
@@ -59,11 +58,7 @@ will have eternal life either by continuously reparing diseases and aging by the
 See [Tools](techniques/tools.md)
 
 ## Certification
-[PWK](https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux/) - Penetration Testing with Kali Linux - $800,- including 30-day lab access & exam.<br>
-[OSCP](https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/) - Offensive Security Certified Professional (highly regarded) - $800,- including 30-day lab access & exam. Requires PWK<br>
-[CEH](http://www.firebrandtraining.co.uk/courses/ec_council/ceh/hacking.asp#fast-metro) - Certified Ethical Hacker (is questionably not sufficient)<br>
-[Plural-sight CEH preparation](https://www.pluralsight.com/paths/ethical-hacking) - By Troy Hunt<br> 
-[CCISP](http://www.firebrandtraining.co.uk/uk/cissp.asp#fast-metro) - Certified Information Systems Security Professional
+See [Certifications](certifications/README.md)
 
 ## Websites:
 [Guru99 Ethical Hacking tutorials](https://www.guru99.com/ethical-hacking-tutorials.html)
@@ -71,9 +66,10 @@ See [Tools](techniques/tools.md)
 ## Video's
 * [Ethical hacking online course (CEH using Kali Linux)](https://www.youtube.com/playlist?list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
 * [Complete Free Hacking Course: Go from Beginner to Expert Hacker Today](https://www.youtube.com/watch?v=7nF2BAfWUEg) - 4:51h preview of a $199,- video course, but add coupon-code "JBU25" for a 87% discount to just $25
+* [Learn Ethical Hacking From Scratch](https://www.udemy.com/learn-ethical-hacking-from-scratch/?siteID=Fh5UMknfYAU-BDE1hskMrSipfOtU44evZQ&LSNPUBID=Fh5UMknfYAU): Udemy (Euro 11.99 when applying 94% discount)
+* [List of 12 video's](https://medium.com/quick-code/the-best-ethical-hacking-video-tutorials-for-everyone-e0cbd465b03c)
 * [21st century hackers](https://www.youtube.com/watch?v=koi54cPRlhQ): Documentary on hackers
-* [Anonymous - The hacker wars](https://www.youtube.com/watch?v=ku9edEKvGuY&): Documentary on Anonymous, hacktivists, US Intelligence & police-state privacy etc.
-* [Anonymous - Chasing Edward Snowden](https://www.youtube.com/watch?v=8YkLS95qDjI)
+* [The hacker wars](https://www.youtube.com/watch?v=ku9edEKvGuY&): Documentary on Anonymous, hacktivists, US Intelligence & police-state privacy etc.
 
 
 
@@ -89,9 +85,11 @@ See [Tools](techniques/tools.md)
 ## Hacking way of working
 - [Stages](./techniques/stages)
 
-
 ## Quotes
 * [List of interesting quotes](quotes.md)
+
+## Related subjects
+* [Privacy](privacy/README.md)
 
 ## Name drops
 

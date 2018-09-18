@@ -30,6 +30,9 @@ Common webservers include
 * Defacement: Replace the target's website with different content for mischief, damage to reputation or spread activist, political, religious or other propaganda 
 
 
+## CSRF
+[10 ways to bypass CSRF](https://haiderm.com/10-methods-to-bypass-cross-site-request-forgery-csrf/)
+
 ## Impact
 * Reputation damage to the target company
 * Webservers misused to spread malicious software, like malware (eg. download-page of legitimate company could serve malicious software uploaded by the attacker to unsuspecting users)
