@@ -1,5 +1,7 @@
 # SQL Injection
 
+[Cheatsheet](sqlmap-cheatsheet-1.0-SDB.pdf)
+
 
 # Blind SQL Injection techniques
 

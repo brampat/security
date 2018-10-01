@@ -9,6 +9,7 @@
 | Attack surface | Number of attack vectors or potential access points a hacker may explore to try to hack. Compare this with a building with numerous doors and windows. Each door, window etc. gives an attacker another way to gain access to the building, thereby increasing the "attack-surface". |
 | Attack vector | Potential access points to target in a hack |
 | Blue Team | Defense side of an ethical hack operation. Also see Red team / Blue team testing |
+| [C.I.A.](CIA.md) | Confidentiality, Integrity, Availability |
 | [DMZ](https://en.wikipedia.org/wiki/DMZ_(computing)) | Demilitarized zone or perimeter network, subnetwork containing and only exposing external-facing services. |
 | [DoS](../techniques/dos.md) | Denial of Service, flooding a system with more requests it can handle, thereby making the system unable to respond to valid requests. |
 | [DDoS](../techniques/dos.md) | Distributed Denial of Service |

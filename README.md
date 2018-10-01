@@ -11,48 +11,10 @@ Failure to gain authorization BEFORE you even try to hack a system may result in
 
 ## Pages similar like this
 [Resources for learning Hacking](https://github.com/faizann24/Resources-for-learning-Hacking) - Faizan Ahmad
+[Hacking books](https://github.com/tanc7/hacking-books) PDF downloads
 
-## Books
-
-### Hacking resources
-* RTFM
-* BTFM
-* Hacker playbook (2 or 3)
-
-### Non-hacking resources
-* The darknet
-* The clean coder (on coding best practices)
-
-### Fiction
-* Komt een vrouw bij de hacker (Dutch)
-* We are legion - Dot-com billionaire buys cryogenic-treatment and instantly dies only to wake up as a Von Neumann AI
-* The circle - Facebook-like company helps new employee with illness which makes her question her privacy
-* Ready player one - Ultimate easter-egg adventure: Facebook-VR world inventor dies and gives his heritage to the one who finds the ultimate easter egg. Filled with 70's and 80's retro-references
-
-### Non-fiction / other
-* Console wars - Tom Kalinski, former Mattel CEO is tasked to challenge Goliath Nintendo - Great marketing book, but flashback to 16-bit gaming era
-* Brick by brick - Marketing, innovation & leadership within The Lego Group
-* Start with Why - Simon Sinek's golden circle of Why, How, What (in that order) to create loyal employees and customers
-
-### Movies (beware: some minor spoilers)
-* Minority report: Science fiction which has mostly become reality: drones scan retina / facial recognition, personalized shopping experience and crime-prediction through oracles / big-data
-
-On robots in the following movies:
-[Asimov](https://en.wikipedia.org/wiki/Isaac_Asimov)'s first [law of robotics](https://en.wikipedia.org/wiki/Three_Laws_of_Robotics), what if those laws fail?
-* [Ex Machina](https://www.imdb.com/title/tt0470752): Mark Zuggerberg-like hermit invites employee to test his AI robot.
-* [I, Robot](https://www.imdb.com/title/tt0343818): Technophobic police officer investigates a crime apparently committed by a robot (book by Asimov).
-* [Westworld](https://www.imdb.com/title/tt0475784): In a real-life Wild-west themepark, guests can do whatever they like to the rootic hosts. Westworld questions about life, existentialism and ethics against AI lifeforms. 
-
-On [transhumanism](https://en.wikipedia.org/wiki/Transhumanism) in the following movies:
-[Ray Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil) is a well known transhumanist who predicts that 2045 AI will surpass humans in both intelligence and development speed. He also predicts a future in which humans
-will have eternal life either by continuously reparing diseases and aging by the use of nanobots or by transcending into the virtual world of the (successor of) the internet.
-
-* [Transcendence](https://www.imdb.com/title/tt2209764): Futurologist and transhumanist scientist is forced to backup his conscienceness into a computer and gains omnipotence and omniscience.
-* [Chappie](https://www.imdb.com/title/tt1823672): Mark Zuggerberg-like wunderkind invented semi-AI which is used in 1 100% robotized police-force, but has his Eureka moment when he gets real AI working.
-* [The Matrix](https://www.imdb.com/title/tt0133093): Computer hacker finds out reality as we know it, may just be a virtual cage to keep humans quiet.
-* [Ghost in the shell](https://www.imdb.com/title/tt0113568): First manga book 1989 !! The line between human and cyborg is blurred when many humans are transhumanized with cyber-enhanced brains, direct brain-internet connections and other body-enhancements. Cyborg Kusanagi finds out hacking brain and memories is a real thing.
-* [Ghost in the Shell](https://www.imdb.com/title/tt1219827): 2017 live-action movie with Scarlett Johansson
-
+## Books & Film
+See [Books](books/README.md)
 
 ## Tools
 See [Tools](techniques/tools.md)
@@ -88,6 +50,8 @@ See [Certifications](certifications/README.md)
 ## Quotes
 * [List of interesting quotes](quotes.md)
 
+
+
 ## Related subjects
 * [Privacy](privacy/README.md)
 
@@ -114,7 +78,7 @@ See [Certifications](certifications/README.md)
 * [Oscar Koeroo](https://twitter.com/okoeroo): CISO at [KPN](https://twitter.com/kpn)
 * [Queen Fennec](https://twitter.com/Queen_fennec): Security investigator
 * [Ronald Prins](https://twitter.com/cryptoron): Former owner of [Fox-IT](https://www.fox-it.com/nl/) member of BIV review committee
-* [Sanne Maasakkers](https://twitter.com/sannemaasakkers): Ethcical hacker at Fox-IT and advocate of women in IT / Security
+* [Sanne Maasakkers](https://twitter.com/sannemaasakkers): Ethical hacker at Fox-IT and advocate of women in IT / Security
 * [Victor Gevers](https://twitter.com/0xdude)
 
 
