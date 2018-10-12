@@ -10,12 +10,14 @@
 | Attack vector | Potential access points to target in a hack |
 | Blue Team | Defense side of an ethical hack operation. Also see Red team / Blue team testing |
 | [C.I.A.](CIA.md) | Confidentiality, Integrity, Availability |
+| Countermeasure | Control put in place to mitigate potential losses |
 | [DMZ](https://en.wikipedia.org/wiki/DMZ_(computing)) | Demilitarized zone or perimeter network, subnetwork containing and only exposing external-facing services. |
 | [DoS](../techniques/dos.md) | Denial of Service, flooding a system with more requests it can handle, thereby making the system unable to respond to valid requests. |
 | [DDoS](../techniques/dos.md) | Distributed Denial of Service |
 | [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) | Domain Name Server, maps domain names to internet resources |
 | [DPI](https://en.wikipedia.org/wiki/Deep_packet_inspection) | Deep Packet Inspection, monitoring of network traffic by thouroughly inspecting the network traffic, reading the packets etc. |
 | Exploit | Method or technique to apply onto a vulnerability to execute a hack |
+| Epxosure | Time in which a threat agent is exploiting a vulnerability |
 | Firewall |  |
 | Fishing |  |
 | Footprinting | Information gathering. Also see [Stages of a hack](../techniques/stages.md) |
@@ -45,6 +47,7 @@
 | Red Team | Attack side of an ethical hack operation. Quote of @Viss "If the customer defines the scope, it cannot be called red teaming" [here](https://youtu.be/4LmSEthRZLU?t=10m5s) |
 | Red team / Blue team testing | Testing security by pitting one group of hackers as the attackers (Red team) against the other team of defenders (Blue team) engaging in a real life security "war", often in a safe virtualized environment to simulate real-world attacks |
 | Reverse-shell | Malicious software on a system to gain access to that system initiated from the system iteself to the hacker |
+| Risk | Probability of a threat becoming real and corresponding potential damages |
 | Root kit | See [Malware types](malwareTypes.md) |
 | Shoulder surfing | Method of gaining access to a secret or password by observing a user entering the secret on a keyboard. In [Citizen Four](https://www.imdb.com/title/tt4044364/) Edward Snowden is using a blanket to shield his typing in the password when accessing his laptop. |
 | Social Engineering | Ways of using weakness of people (helpfulness) by persuading them to give up information that can help you in gaining access gaining access to a system, organization or building ||
@@ -53,12 +56,13 @@
 | Target value | Value in either money, criticality, aid to reputation etc. of a specific target |
 | [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) | Transmissions Control Protocol, network protocol part of the internet protocol suite. Commonly used cmplemented by IP and referred to as TCP/IP |
 | Terminal | Command interface of an OS to directly access certain tools using typed commands |
+| Threat | Entity uncovering or exploiting a vulnerability |
 | Tor | Client-software to anonimize internet traffic. Downsides: Good, but no 100% guarentee. Can often result in slow connection. |
 | [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) | User Datagram Protocol, Message protocol devoid of error checking, delivery guarantee, ordening or duplicate protection. This avoids overhead of those protection and security mechanisms. Used when the application is time-sensitive and dropping packets is preferred to waiting. |
 | Virus | See [Malware types](malwareTypes.md) |
 | VPN | Virtual Private Network, used to anonymize traffic. Traffic via VPN's is encrypted. When using a "bullet-proof" VPN provider (one that prioritizes privacy and anonimity) requests from authorities mostly cannot and / or will not be effective to gain information about you or your activities. |
 | VPS | Virtual Private Service. Way to encapsulate and / or isolate services that should only be accessed by certain systems. Example: a webserver may contain a VPS SQL-server that only the web-server should be able to access. By setting up a VPS for the SQL-server the actual webserver will not expose the SQL connection points to the outside world, thereby enlarging the attack-surface of the system. |
-| Vulnerability | Weakness in a system, orgnanization, software etc. that could be exploited  |
+| Vulnerability | Weakness in a system, organization, software etc. that could be exploited, lack of countermeasure |
 | Zero Day | Exploit for which no patch, mitigation is available |
 | WEP | Wired Equivalent Privacy, encrypts the data transmitted over the network |
 | WPA | WiFi protected Access, developed to solve WEP's weaknesses |

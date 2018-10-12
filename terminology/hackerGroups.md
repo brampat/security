@@ -4,8 +4,6 @@
 
 ## APTs
 
-
-
 ### Russia: Bears
 - APT28: Tsar Team / [Fancy Bear](https://en.wikipedia.org/wiki/Fancy_Bear)
 - APT29: [Cozy Bear](https://en.wikipedia.org/wiki/Cozy_Bear)
@@ -39,6 +37,16 @@
 ## Activists
 Anonymous
 
+- [The 414s](https://en.wikipedia.org/wiki/The_414s)
+- [Chaos Computer Club](https://en.wikipedia.org/wiki/Chaos_Computer_Club) Germany
+- [Cult of the Dead Cow](https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow) cDc Texas
+- [globalHell](https://en.wikipedia.org/wiki/GlobalHell) 
+- [L0pht](https://en.wikipedia.org/wiki/L0pht) Boston, Massachusetts
+- [Level Seven](https://en.wikipedia.org/wiki/Level_Seven_(hacking_group))
+- [Legion of Doom](https://en.wikipedia.org/wiki/Legion_of_Doom_(hacking)) LOD
+- [Master of Deception](https://en.wikipedia.org/wiki/Masters_of_Deception) New York
+- [P.H.I.R.M.](https://en.wikipedia.org/wiki/P.H.I.R.M.)
+- [TESO](https://en.wikipedia.org/wiki/TESO_(Austrian_hacker_group)) Austria
 
 -----------------------------------------------------
 Sources: [FireEye](https://www.fireeye.com/current-threats/apt-groups.html)

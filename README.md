@@ -79,7 +79,5 @@ See [Certifications](certifications/README.md)
 * [Queen Fennec](https://twitter.com/Queen_fennec): Security investigator
 * [Ronald Prins](https://twitter.com/cryptoron): Former owner of [Fox-IT](https://www.fox-it.com/nl/) member of BIV review committee
 * [Sanne Maasakkers](https://twitter.com/sannemaasakkers): Ethical hacker at Fox-IT and advocate of women in IT / Security
-* [Victor Gevers](https://twitter.com/0xdude)
-
-
-* [Rian van Rijbroek](https://twitter.com/RianvanRijbroek): ;-) Ultra secret spy who hacked Kaspersky Utrecht, wrote a book "De wereld van cybersecurity en cybercrime" and legndary expert on "Smart blockchain"
+* [Victor Gevers](https://twitter.com/0xdude): Ethical hacker and chairman of GDI foundation, defending the free & open internet supplying a world-dashboard showing security-leaks and cyber-threats along with solutions
+* [Rian van Rijbroek](https://twitter.com/RianvanRijbroek): ;-) Ultra secret spy who hacked Kaspersky Utrecht, wrote a book "De wereld van cybersecurity en cybercrime" and legendary expert on "Smart blockchain"
