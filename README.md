@@ -33,6 +33,39 @@ See [Certifications](certifications/README.md)
 * [21st century hackers](https://www.youtube.com/watch?v=koi54cPRlhQ): Documentary on hackers
 * [The hacker wars](https://www.youtube.com/watch?v=ku9edEKvGuY&): Documentary on Anonymous, hacktivists, US Intelligence & police-state privacy etc.
 
+### Web Application Penetration Testing
+
+Phase 1 – History
+
+* [History of Internet](https://www.youtube.com/watch?v=9hIQjrMHTv4) 
+
+Phase 2 – Web and Server Technology
+
+* [Basic concepts of web applications, how they work and the HTTP protocol](https://www.youtube.com/watch?v=RsQ1tFLwldY)
+* [HTML basics part 1](https://www.youtube.com/watch?v=p6fRBGI_BY0) 
+* [HTML basics part 2](https://www.youtube.com/watch?v=Zs6lzuBVK2w) 
+* [Difference between static and dynamic website](https://www.youtube.com/watch?v=hlg6q6OFoxQ)
+* [HTTP protocol Understanding](https://www.youtube.com/watch?v=JFZMyhRTVt0)
+* [Parts of HTTP Request](https://www.youtube.com/watch?v=pHFWGN-upGM)
+* [Parts of HTTP Response](https://www.youtube.com/watch?v=c9sMNc2PrMU) 
+* [Various HTTP Methods](https://www.youtube.com/watch?v=PO7D20HsFsY)
+* [Understanding URLS](https://www.youtube.com/watch?v=5Jr-_Za5yQM)
+* [Intro to REST](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
+* [HTTP Request & Response Headers](https://www.youtube.com/watch?v=vAuZwirKjWs) 
+* [What is a cookie](https://www.youtube.com/watch?v=I01XMRo2ESg)
+* [HTTP Status codes](https://www.youtube.com/watch?v=VLH3FMQ5BIQ)
+* [HTTP Proxy](https://www.youtube.com/watch?v=qU0PVSJCKcs)
+* [Authentication with HTTP](https://www.youtube.com/watch?v=GxiFXUFKo1M)
+* [HTTP basic and digest authentication](https://www.youtube.com/watch?v=GOnhCbDhMzk) 
+* [What is “Server-Side”](https://www.youtube.com/watch?v=JnCLmLO9LhA)
+* [Server and client side with example](https://www.youtube.com/watch?v=DcBB2Fp8WNI) 
+* [What is a session](https://www.youtube.com/watch?v=WV4DJ6b0jhg&t=202s)
+* [Introduction to UTF-8 and Unicode](https://www.youtube.com/watch?v=sqPTR_v4qFA) 
+* [URL encoding](https://www.youtube.com/watch?v=Z3udiqgW1VA) 
+* [HTML encoding](https://www.youtube.com/watch?v=IiAfCLWpgII)
+* [Base64 encoding](https://www.youtube.com/watch?v=8qkxeZmKmOY)
+* [Hex encoding & ASCII](https://www.youtube.com/watch?v=WW2SaCMnHdU)  
+
 
 
 ## Conferences
