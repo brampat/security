@@ -1,11 +1,9 @@
 # Hacker groups
 
-
-
 ## APTs
 
 ### Russia: Bears
-- APT28: Tsar Team / [Fancy Bear](https://en.wikipedia.org/wiki/Fancy_Bear)
+- APT28: Tsar Team / [Fancy Bear](https://en.wikipedia.org/wiki/Fancy_Bear) / [Sofacy](https://securelist.com/threats-in-the-netherlands/88185/) / Pawn Storm
 - APT29: [Cozy Bear](https://en.wikipedia.org/wiki/Cozy_Bear)
 
 ### Iran: Kittens
@@ -25,6 +23,7 @@
 - APT19: Codoso Team
 - APT30: 
 - Deep panda
+- Putter Panda [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
 - [PLA Unit 61486](https://en.wikipedia.org/wiki/PLA_Unit_61486)
 
 ### North Korea: Chollima
@@ -33,6 +32,19 @@
 ### Vietnam
 - APT32: OceanLotus Group
 - [Force 47](https://en.wikipedia.org/wiki/Force_47)
+
+### Others
+
+#### Various groups targeting Netherlands
+- BlackOasis [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
+- Hades [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
+- Buhtrap [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
+- The Lamberts [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
+- Turla [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
+- Gatak [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
+- Animal Farm [source: SecureList](https://securelist.com/threats-in-the-netherlands/88185/)
+
+
 
 ## Activists
 Anonymous
