@@ -29,10 +29,13 @@ The tools described can be integrated in CI/CD toolchains.
     * Yelp pre-commit framework
     * Overcommit
   * AWS Labs [git-secrets](https://github.com/awslabs/git-secrets)
-  * [Talisman](https://github.com/thoughtworks/talisman)
+  * git-hound
+  * ThoughtWorks [Talisman](https://github.com/thoughtworks/talisman)
   * Auth0 [repo-supervisor](https://github.com/auth0/repo-supervisor)
   * Peer Code reviews
-    * Ensure frameworks & libraries are used to do security things (atuhentication, crypto etc.)
+    * CERT Secure Coding Standards
+    * OWASP Proactive controls
+    * Ensure frameworks & libraries are used to do security things (authentication, crypto etc.)
     * Check for hard-coded secrets, backdoors, re-invented wheels
     * Get all developers trained in secure coding
     * Focus on high-risk code that does:
@@ -45,7 +48,7 @@ The tools described can be integrated in CI/CD toolchains.
       * Handling of confidential data
       * Cryptography
     * Use workflow tools to support & enforce code review
-      * Pull reuqets comments (See BitBucket, GitHub, GitLab etc.)
+      * Pull request comments (See BitBucket, GitHub, GitLab etc.)
       * Review Board or Gerrit
       * Atlassian Crucible
       * SmartBear Code Collaborator
@@ -73,15 +76,154 @@ The tools described can be integrated in CI/CD toolchains.
   * NodeJS: [Mocha](https://mochajs.org/)
   * Ruby: [RSpec](http://rspec.info/)
   * Python: [PyUnit](https://wiki.python.org/moin/PyUnit)
+* Infrastructure as Code analysis
+  * Ansible-lint
+  * Foodcritic
+  * puppet-lint
+  * cfn_nag
 * Container Security
+  * Dangers:
+    * Untrusted content & vulnerable images
+    * Docker Daemon: extra attack surface
+    * Container sprawl (scale is next-level vs. VM's in both number of machines, changes, but also security-events that can feed SIEM)
+  * Guides / Resources:
+    * Docker Security Guidelines
+    * Docker Reference Architecture
+    * [CIS Docker Benchmark](https://github.com/dev-sec/cis-docker-benchmark)
+    * NCC Group: Understanding and hardening Linux Containers
+    * NIST SP 800-190 Application Container Security Guide
+    * CIS Kubernetes Benchmark
+  * Tools:
+    * [Actuary](https://github.com/diogomonica/actuary)
+    * [Anchore](https://anchore.com/opensource/)
+    * [Clair](https://github.com/coreos/clair)
+    * Dagda
+    * Docker Bench
+    * [Falco](https://github.com/draios/falco)
+  * Hardening:
+    * Bane
+    * CIS Benchmarks
+    * grsecurity
 * Dependency Management
-
-## 
-
+  * Scan code to identify external dependencies (Bill of materials)
+  * Identify out-of-date components
+  * Check for CVE's
+  * Commercial tools check for licensing risks and violations
+  * Ensure also transitive dependencies are checked
+  * Integrate into CI/CD
+  * Tools:
+    * [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
+    * [PHP Sercurity Checker](https://security.sensiolabs.org/)
+    * Ruby [Bundler-Audit](https://github.com/rubysec/bundler-audit)
+    * Gemnasium
+    * [NPM Audit](https://docs.npmjs.com/cli/audit)
+    * [Retire.JS](https://retirejs.github.io/retire.js/)
+    * Node Security Platform
+  
 ## Acceptance
 
+* Infrastructure as Code analysis
+  * Ansible
+  * Chef
+  * Puppet
+  * Saltstack
+  * Terraform
+  * Vagrant
+* Immutable Infrastructure:
+  * Docker
+  * RKT
+* Security Scanning:
+  * Arachni
+  * NMap
+  * SQLMap
+  * sslyze
+  * OWASP ZAP
+  * ssh_scan
+* Cloud Configuration Management:
+  * AWS CloudFormation
+  * Azure Resource Manager
+  * Google Cloud Deployment Manager
+* Security Acceptance testing:
+  * BDD-Security
+  * Gauntlt
+  * Mittn
+* Infrastructure Tests:
+  * Serverspec
+  * Test Kitchen
+* Infrastructure Compliance Checks
+  * HubbleStack
+  * InSpec  
 
 ## Production
-
+* Security Smoke Tests:
+  * ZAP Baseline Scna
+  * NMap
+  * SSLLabs-Scan
+* Configuration Safety Checks
+  * AWS Config
+  * AWS Trusted Advisor
+  * Microsoft Azure Advisor
+  * Security Monkey
+  * OSQuery
+* Secrets Management
+  * Ansible Vault
+  * Blackbox
+  * Chef Vault
+  * Docker Secrets
+  * Hashicorp Vault
+  * Pinterest Knox
+* Cloud Secrets Management:
+  * AWS KMS
+  * Azure Key Vault
+  * Google Cloud KMS
+* Cloud Security Testing:
+  * CloudSploit
+  * Nimbostratus
+* Server Hardening:
+  * dev-sec.io
+  * SIMP
+* Host Intrusion Detection System (HIDS):
+  * fail2ban
+  * OSSEC
+  * Samhain
 
 ## Operation
+* Fault Injection:
+  * Chaos Kong
+  * Chaos Monkey
+* Cyber Simulations:
+  * Game day exercises
+  * Tabletop Scenarios
+* Penetration Testing:
+  * Attack-driven defense
+  * Bug Bounties
+  * Red Team exercises
+* Threat Intelligence
+  * Diamond Model
+  * Kill Chain
+  * STIX
+  * TAXII
+* Continuous Scanning:
+  * OpenSCAP
+  * OpenVAS
+  * Prowler
+  * Scout2
+  * vuls
+* Blameless Postmortems:
+  * Etsy Morgue
+* Continuous Monitoring:
+  * Grafana
+  * Graphite
+  * Statsd
+  * Seyren
+  * Sof-elk
+  * ElastAlert
+  * 411
+* Cloud Monitoring
+  * CloudWatch
+  * CloudTrail
+  * Reddalert
+* Cloud Compliance:
+  * Cloud Custodian
+  * Compliance Monkey
+  * Forseti Security
