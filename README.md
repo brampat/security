@@ -2,6 +2,11 @@
 Collection of links to Security stuff
 
 ## Disclaimer:
+This information is gathered from public sources on (among others) Internet including Twitter, GitHub, various InfoSec blogs, sites etc.
+If you see any information that originated from you and you would like to have it removed, please notify me on Github or Twitter and describe
+the URL of this material in my repo, the source of this material, the reason to have it removed (eg. copyright claim) and a reasonable proof 
+that you are the legitimate owner of this material.
+
 Do NOT use this knowledge for any illegal activities and / or any activities that you do NOT have explicit authorization to do so.
 Failure to gain authorization BEFORE you even try to hack a system may result in prosecution and punishment in either confinement and / or fines.
 

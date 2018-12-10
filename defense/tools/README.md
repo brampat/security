@@ -90,6 +90,8 @@ The tools described can be integrated in CI/CD toolchains.
     * Docker Security Guidelines
     * Docker Reference Architecture
     * [CIS Docker Benchmark](https://github.com/dev-sec/cis-docker-benchmark)
+    * [Docker Bench](https://github.com/docker/docker-bench-security)
+    * [BLOG Docker Security & best practices](https://blog.docker.com/2015/05/understanding-docker-security-and-best-practices/)
     * NCC Group: Understanding and hardening Linux Containers
     * NIST SP 800-190 Application Container Security Guide
     * CIS Kubernetes Benchmark
