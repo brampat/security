@@ -63,15 +63,16 @@ This method would fail when proper salting is applied which is the site's or app
 using unique, random and long passwords. These can easily be created within password-managers. 
 
 ## Impact
-
 What has more impact on the strength of passwords? Length or complexity? If I had to choose between a long password of words (only characters, easier to remember) and a complex 
 but short string of characters and symbols, what would be better? Let's analyse:
 
 * To compare the impact of length versus complexity, we will look at a number-slot of <b>3 decimal positions</b>. This slot has only 3 dials, each with 10 possible values.
 It illustrates a short, but complex password. It makes for a password-space of <b>1000</b> (10^3).
+
 ![Short decimal slot](keypad.png)
 * Now we will compare this with a theoretical number-slot of <b>10 "trinary" positions</b>. So this slot has 8 dials, each of which can be either 0, 1 or 2. It illustrates a long password
-of low complexity. This makes for a password-space of <b>59049</b> (3^10). 
+of low complexity. This makes for a password-space of <b>59049</b> (3^10).
+ 
 ![Long binary slot](keylock_long.png)
 
 In this simple example, we can state that length has more impact then complexity.
@@ -83,5 +84,14 @@ In this simple example, we can state that length has more impact then complexity
 * Guess: Using common or default passwords
 * Spidering: Using company information or social media, construct a targeted word-list to use in brute-force attack. Information includes founder's birth year, name, hobbies, company vision, initials etc. 
 
+[Here](crackingSpeeds.md) are some speeds at which very simple to complex and / or long passwords could be cracked in a number of encryption algorithms.
+
 ------------
 Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.html)
+
+* More on [Password cracking](https://www.youtube.com/watch?v=zUM7i8fsf0g)
+* Plain-text password mailers [shame-site](http://plaintextoffenders.com/) and a complete [list](https://github.com/plaintextoffenders/plaintextoffenders/blob/master/offenders.csv) of offenders
+* Password cracking  rules for Hashcat [here](https://github.com/praetorian-inc/Hob0Rules)
+* Statistics will crack your password mask [here](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure)
+* Statistics based password cracking rules [here](https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0)
+* Password cracking rig [here](https://www.netmux.com/blog/how-to-build-a-password-cracking-rig)

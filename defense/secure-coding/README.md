@@ -7,3 +7,4 @@
   ![](SAMM.png)
 * [OpenSAMM PDF](https://opensamm.org/downloads/SAMM-1.0.pdf): SAMM in a PDF 
 * [SAMM Self Assessment](https://github.com/AsteriskLabs/ssa): (dormant since 2014) Tool to assist in Self-assessment on OpenSAMM (built in Rails).
+* [Cybrary Secure coding](https://www.cybrary.it/course/secure-coding/): OWASP Top 10 and SANS Top 25 vulnerabilities and defenses
