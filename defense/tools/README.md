@@ -57,6 +57,8 @@ The tools described can be integrated in CI/CD toolchains.
 ## Commit
 
 * Static Code analysis
+  * Checkmarx
+  * Fortify
   * Java: [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
   * PHP: [Phan](https://github.com/etsy/phan)
   * JavaScript: [NodeJsScan](https://github.com/ajinabraham/NodeJsScan)

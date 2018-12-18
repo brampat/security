@@ -1,7 +1,7 @@
 # News
 Collection of links to Hack-related news
 
-
+* Other [sources](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) like this.
 
 ## 2018
 
@@ -24,6 +24,17 @@ It is unclear if this was caused by a configuration error or a deliberate attack
 * [Hardware implants debunked](https://9to5mac.com/2018/10/09/bloomberg/): This story appears to be FUD from an over-enthousiastic Bloomberg reporter, but...
 * [China's Hardware implants](https://www.bloomberg.com/news/features/2018-10-04/the-big-hack-how-china-used-a-tiny-chip-to-infiltrate-america-s-top-companies): Supermicro's server 
 supply chain compromised by China's grain-sized server-implants. Discovery by Amazon, Apple confirmed the FBI's fears
+
+
+
+### February
+* [DDoS](https://tweakers.net/reviews/6031/een-ddoser-betrapt-hoe-de-aanvaller-tegen-de-lamp-liep.html) alleged to be Russians is a "simple" Script-kiddie. Remarkable (Dutch) story about how he was caught
+* [Cryptojacking](https://scotthelme.co.uk/protect-site-from-cryptojacking-csp-sri/) in Browsealoud JavaScript plugin used to run Coinhive miner on subjects
+
+
+### January
+* Large [DDoS](https://tweakers.net/nieuws/134651/belastingdienst-en-banken-waren-dinsdagavond-opnieuw-doelwit-van-ddos-aanvallen.html) on Dutch banks, Tax-services and national Auth-service DigiD
+
 
 
 
