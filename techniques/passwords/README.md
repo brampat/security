@@ -1,17 +1,21 @@
 # Password handling
 
-## Unreadable
-
-TODO
-
 ### Hashing
 
 There are many hashing algorithms, some are more suited for passwords than others.
+On top of that, some have been broken. Here's an overview
+
+| Algorithm             | Safe?   |
+| ---------------------------------------------- | ------- |
+| [MD5](https://en.wikipedia.org/wiki/MD5)       | No, first collisions since 1996, controlled collision in 2 docs since 2005 |
+| [SHA1](https://en.wikipedia.org/wiki/SHA-1)    | No, first [collisions](https://www.theverge.com/2017/2/23/14712118/google-sha1-collision-broken-web-encryption-shattered) since Feb. 2005, controlled [collision](https://en.wikipedia.org/wiki/SHA-1#SHAttered_%E2%80%93_first_public_collision) in 2 docs since 2017 |
+| [SHA2](https://en.wikipedia.org/wiki/SHA-2) (256, 512 etc)   |           |
+| SHA512    |           |
+| 
 
 
 Use bcrypt, because [this](https://codahale.com/how-to-safely-store-a-password/)
 
-TODO
 
 ### Encryption
 

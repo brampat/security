@@ -48,8 +48,6 @@ See [Video's](videos/README.md)
 ## Quotes
 * [List of interesting quotes](quotes.md)
 
-
-
 ## Related subjects
 * [Privacy](privacy/README.md)
 
