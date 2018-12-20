@@ -1,9 +1,14 @@
 # JavaScript Secure coding
 
-* [SonarLint](https://www.sonarlint.org/) for VisualStudio, IntelliJ and Eclipse
-* [NodeJsScan](https://github.com/ajinabraham/NodeJsScan)
-* [Mocha](https://mochajs.org/)
 
+* [SonarLint](https://www.sonarlint.org/) for VisualStudio, IntelliJ and Eclipse
+* [Mocha](https://mochajs.org/): Test framework
+* [NPM Audit](https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities): Dependency check
+
+
+## NodeJS
+
+* [NodeJsScan](https://github.com/ajinabraham/NodeJsScan)
 * [23 NodeJS Security Best practices](https://medium.com/@nodepractices/were-under-attack-23-node-js-security-best-practices-e33c146cb87d)
   * [Full GitHub Repo](https://github.com/i0natan/nodebestpractices)
 * [NodeJS App Security Checklist](https://medium.com/@grsind19/nodejs-apps-security-checklist-d3e981ec445c)

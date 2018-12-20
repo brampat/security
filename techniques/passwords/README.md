@@ -6,6 +6,11 @@ TODO
 
 ### Hashing
 
+There are many hashing algorithms, some are more suited for passwords than others.
+
+
+Use bcrypt, because [this](https://codahale.com/how-to-safely-store-a-password/)
+
 TODO
 
 ### Encryption

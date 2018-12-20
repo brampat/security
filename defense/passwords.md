@@ -9,7 +9,7 @@ Users can adopt:
 * Password-managers (as explained by [Mary Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ))
 
 Developers can adopt:
-* Proper hashing
+* Proper hashing (bcrypt)
 * Proper encryption (using hardened algorithms)
 * Dynamic & static salting
 * 2FA / Multi-FA
