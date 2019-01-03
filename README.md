@@ -34,11 +34,20 @@ See [Certifications](certifications/README.md)
 See [Video's](videos/README.md)
 
 ## Conferences
-* Defcon
-* Blackhat
-* Loco Moco Sec (Hawaii)- Jim Manico
-* SecAppDev (Leuven Belgium) - KU Leuven
-* D3n H4ck (The Hague NL)
+
+| Conference                                            | Days  | Where?        | Period        | Cost          |
+| ----------------------------------------------------- | ----- | ------------- | ------------- | ------------- |
+| [Defcon](https://www.defcon.org/)                     | 4     | Las Vegas     | July / August | $ 280         |
+| [Blackhat EU](https://www.blackhat.com/)              | 4     | London        | December      | £ 1400        |
+| [Blackhat USA](https://www.blackhat.com/)             | 6     | Las Vegas     | August        | $  ??         |
+| [Blackhat Asia](https://www.blackhat.com/)            | 4     | Singapore     | March         | $ 1900        |
+| [LocoMocoSec](https://locomocosec.com/)               | 5     | USA, Hawai    | April         | $ 632 - 986   |
+| [SecAppDev](https://secappdev.org/)                   | 5     | Leuven, BE    | Februari      | € 2400        |
+| [D3n H4ck](https://www.denhack.nl/)                   | 1     | Den Haag, NL  | Juli          | Free          |
+| [Tweakers](https://www.tweakers.net/)                 | 1     | Var, NL       | Var           | € 15          |
+| [Hack in the Box](http://www.hitb.nl/)                | 5     | Amsterdam, NL | April / May   | € ??          |
+| [Dutch Cyber Warfare Community](http://www.dcwc.nl/)  | part  | Var, NL       | Var           | Free          |
+
 
 ## [Terminology](terminology/README.md)
 

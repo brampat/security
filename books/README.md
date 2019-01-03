@@ -1,13 +1,29 @@
-# Books & Film
+# Books, documentaries & Films
+
 
 ## Hacking resources
-* RTFM: Red Team Field Manual, Ben Clark [Download](https://github.com/tanc7/hacking-books/blob/master/RTFM%20-%20Red%20Team%20Field%20Manual%20v3.pdf)
+* RTFM: Red Team Field Manual, Ben Clark [Download](h)
 * BTFM: Blue Team Field Manual, 
 * Hacker playbook (2 or 3), Peter Kim [Download of v2](https://github.com/tanc7/hacking-books/blob/master/The%20Hacker%20Playbook%202%2C%20Practical%20Guide%20To%20Penetration%20Testing%20By%20Peter%20Kim.pdf)
 
 ![RTFM](rtfm.png)
 ![BTFM](btfm.png)
 ![Hacker Playbook 2](hacker_playbook.png)
+
+
+## Secure Coding
+
+* Iron-clad Java, Jim Manico & August Detlefsen - Amazon [USA](https://www.amazon.com/Iron-Clad-Java-Building-Secure-Applications/dp/0071835881/) | [Germany](https://www.amazon.de/Iron-Clad-Java-Building-Secure-Applications/dp/0071835881/)
+
+
+
+
+| Title     | Book  | eBook | Audiobook | Movie | Fiction   | Subjects                      | Description                   | Downloads |
+| --------- | ----- | ----- | --------- | ----- | --------- | ----------------------------- | ----------------------------- | --------- |
+| RTFM      | ✅    | ✅    |           |       |           | Security, Hacking             | Red Team Field Manual         | [here](https://github.com/tanc7/hacking-books/blob/master/RTFM%20-%20Red%20Team%20Field%20Manual%20v3.pdf) |
+| BTFM      | ✅    |       |           |       |           |
+
+
 
 ## Fiction
 * Komt een vrouw bij de hacker (Dutch), Maria Genova
@@ -40,7 +56,9 @@
 
 ## SciFi
 These are non-security or privacy book and movies that are quite interesting reads (beware: some minor spoilers)
-* We are legion,  Dennis E. Taylor - Dot-com billionaire buys cryogenic-treatment and instantly dies only to wake up as a Von Neumann AI
+* We are legion (we are Bob) - Bobiverse #1,  Dennis E. Taylor - Dot-com billionaire buys cryogenic-treatment and instantly dies only to wake up as a Von Neumann AI
+  * For we are many - Bobiverse #2, Dennis E. Taylor 
+  * All these worls - Bobiverse #3, Dennis E. Taylor
 * Ready player one, Ernest Cline - Ultimate easter-egg adventure: Facebook-VR world inventor dies and gives his heritage to the one who finds the ultimate easter egg. Filled with 70's and 80's retro-references
 
 ![We are Legion](we_are_legion.jpg)
