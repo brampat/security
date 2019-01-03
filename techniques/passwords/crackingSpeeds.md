@@ -62,4 +62,8 @@ See system-specs [here](https://gist.github.com/epixoip/ace60d09981be09544fdd350
 More info on speeds and cracking:
 * [Hashcat]()
 * [25 GPU cluster](https://arstechnica.com/information-technology/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/)
-  * [Presentation](http://passwords12.at.ifi.uio.no/Jeremi_Gosney_Password_Cracking_HPC_Passwords12.pdf) of this cluster 
+  * [Presentation](http://passwords12.at.ifi.uio.no/Jeremi_Gosney_Password_Cracking_HPC_Passwords12.pdf) of this cluster
+* [Brutalis](https://gist.github.com/epixoip/ace60d09981be09544fdd35005051505) $22k Password cracking rig (product [here](https://sagitta.pw/hardware/gpu-compute-nodes/brutalis/))
+* [Conversation](https://twitter.com/brampatelski/status/1073339746263408640) on password-cracking speeds
+* [Conversation](https://twitter.com/jmgosney/status/714599256410054657) on safe password-lengths
+* [Conversation](https://twitter.com/brampatelski/status/1075692359076188160) on cracking speeds within 100 years vs. password-lengths in various setups
