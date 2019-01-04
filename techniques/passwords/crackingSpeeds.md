@@ -59,6 +59,9 @@ See system-specs [here](https://gist.github.com/epixoip/ace60d09981be09544fdd350
 | BCRYPT        |           0 sec|             0 sec|       24 years|                     1 days|      257 millennia|       148355 millennia|      144 millennia|  17158978346 millennia|  202577 millennia| 21293936931227968043393271 millennia| 171589783461929580651041838 millennia|36829819027504875713598535392263101001502215 millennia|2168245435839920130422766646577474702715978691252418440267638889060478672350818469539930727145339017485136206597393812005684151802873264060 millennia
 
 
+The tables above are generated using the password complexity calculator in [this](https://github.com/brampat/security-examples) 
+toolset of Groovy scripts.
+
 More info on speeds and cracking:
 * [Hashcat]()
 * [25 GPU cluster](https://arstechnica.com/information-technology/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/)

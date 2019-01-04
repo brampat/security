@@ -5,24 +5,24 @@ This can be done using mathematical properties of large prime-numbers and modulo
 small primenumbers to be able to understand the basics. For sufficiently secure Diffie-Hellman key exchange, the number p in the algorithm 
 should be at least 2048 bits. [source](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange#Practical_attacks_on_Internet_traffic)
 
-In onderstaande voorbeeld gebruiken Alice en Bob het Doffie Hellman algoritme voor key exchange. Als basis-getallen komen zij overeen:
+In the example below Alice and Bob use Diffie Hellman for key exchange. The following base-numbers are used:
 * p = 13
 * g = 6
 
-* Alice kiest als persoonlijk secret a: 5
-* Bob kiest als persoonlijk secret b: 4
+* Alice chooses a personal secret a: 5
+* Bob chooses a personal secret b: 4
 
-Beide rekenen nu uit obv. (g^private) MOD p:
+Both calculate using (g^private) MOD p:
 * Alice -> A = (6^5) MOD 13 = 2
 * Bob -> B = (6^4) MOD 13 = 9
 
-Op basis van deze publieke informatie kunnen Alice en Bob nu hun eigen secrets a en b gebruiken om een gezamenlijke shared secret overeen te komen:
+Based in this public information, Alice and Bob can use their respective secrets a and b to agree upon a shared secret:
 * Alice -> Sa = (9^5) MOD 13 = 3
 * Bob -> Sb = (2^4) MOD 13 = 3
 
 ![](DH-example.png)
 
-In dit voorbeeld is de status van informatie als volgt:
+In this example the confidentiality of information is:
 
 | Alice     |   Public  |   Bob     |
 | --------- | --------- | --------- |
@@ -30,9 +30,13 @@ In dit voorbeeld is de status van informatie als volgt:
 |           | A = 2     |           |
 | Sa = 3    | B = 9     | Sb = 3    |
 
-In onderstaande diagram wordt verduidelijkt welke informatie voor wie beschikbaar is.
+In the diagram below we see in generic terms what the confidentiality of information is.
 
 ![](DH-diagram.png)
+
+
+To demonstrate Diffie Hellman, you can use [this](https://github.com/brampat/security-examples) set of Groovy scripts,
+which contains a Diffie Hellman Demo tool.
 
 
 Sources:
