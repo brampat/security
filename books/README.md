@@ -22,11 +22,19 @@ Unless otherwise stated:
 ![BTFM](btfm.png)
 ![Hacker Playbook 2](hacker_playbook.png)
 
-
+## Secure programming:
 
 #### Iron-clad Java - Jim Manico, August Detlefsen
   * Book (Amazon: [USA](https://www.amazon.com/Iron-Clad-Java-Building-Secure-Applications/dp/0071835881/) - [Germany](https://www.amazon.de/Iron-Clad-Java-Building-Secure-Applications/dp/0071835881/)
   * Subjects: Secure Coding, Java
+#### The clean coder
+  * Book
+  * Subjects: Coding
+  * Synopsis: On coding best practices and professional behavior
+
+
+## Security awareness:
+
 #### Komt een vrouw bij de h4cker - Maria Genova
   * Book, Dutch
   * Fictional
@@ -36,6 +44,9 @@ Unless otherwise stated:
   * Fictional
   * Subjects: Financial Fraude, Hacking
   * Synopsis: Fictional story, which brings true stories together to tell a terrifying (and very possible) story about holes in the financial system that could make it collapse.
+
+## Privacy:
+
 #### Je hebt wel iets te verbergen - Maurits Martijn & Dimitri Tokmetzis
   * Book
   * Subjects: Privacy, Surveillance
@@ -75,6 +86,9 @@ Unless otherwise stated:
 #### Citizenfour - Laura Poitras
   * [Documentary](https://www.imdb.com/title/tt4044364)
   * Documentary by Laura Poitras on the story of Edward Snowden, includes footage of interviews with Edward Snowden
+  
+## Darknet & Hacker stories
+
 #### The darknet - Jamie Bartlett
   * Book
   * Synopsis: Stories about the excesses of a free internet. Shows both sides of mostly controversial phenomenon, like webcam girls, crypto-currencies, information freedom, privacy
@@ -85,25 +99,8 @@ Unless otherwise stated:
 ![The Darknet](the_darknet.jpg) 
 ![The world's most dangerous geek](worlds_most_dangerous_geek.jpg) 
 
-#### The clean coder
-  * Book
-  * Subjects: Coding
-  * Synopsis: On coding best practices and professional behavior
-#### We are legion (we are Bob), Bobiverse #1 - Dennis E. Taylor
-  * Book, Audiobook
-  * Fictional
-  * Subjects: Cryogenics, AI, Interstellar travel, Terraforming, Von Neumann probes
-  * Synopsis: Dot-com billionaire buys cryogenic-treatment and instantly dies only to wake up as a Von Neumann AI
-  * For we are many - Bobiverse #2, Dennis E. Taylor 
-  * All these worls - Bobiverse #3, Dennis E. Taylor
-#### Ready player one - Ernest Cline
-  * Book, [Movie](https://www.imdb.com/title/tt1677720/)
-  * Fictional
-  * Subject: Privacy, Politics, Surveillance, SciFi, VR
-  * Synopsis: Ultimate easter-egg adventure: Facebook-VR world inventor dies and gives his heritage to the one who finds the ultimate easter egg. Filled with 70's and 80's retro-references
 
-![We are Legion](we_are_legion.jpg)
-![Ready Player One](ready_player_one.jpg)
+## Movies
 
 #### Minority Report
   * [Movie](https://www.imdb.com/title/tt0181689)
@@ -162,6 +159,26 @@ will have eternal life either by continuously reparing diseases and aging by the
   * Manga book (1989), [Animated Movie](https://www.imdb.com/title/tt0113568) (1995), [Live action Movie](https://www.imdb.com/title/tt1219827) (2017)
   * Subjects: AI, Transhumanism, Cyborg / Cyber enhancements, Brain interfacing
   * Synopsis: The line between human and cyborg is blurred when many humans are transhumanized with cyber-enhanced brains, direct brain-internet connections and other body-enhancements. Cyborg Kusanagi finds out hacking brain and memories is a real thing.
+
+
+## Entertainment
+
+#### We are legion (we are Bob), Bobiverse #1 - Dennis E. Taylor
+  * Book, Audiobook
+  * Fictional
+  * Subjects: Cryogenics, AI, Interstellar travel, Terraforming, Von Neumann probes
+  * Synopsis: Dot-com billionaire buys cryogenic-treatment and instantly dies only to wake up as a Von Neumann AI
+  * For we are many - Bobiverse #2, Dennis E. Taylor 
+  * All these worls - Bobiverse #3, Dennis E. Taylor
+#### Ready player one - Ernest Cline
+  * Book, [Movie](https://www.imdb.com/title/tt1677720/)
+  * Fictional
+  * Subject: Privacy, Politics, Surveillance, SciFi, VR
+  * Synopsis: Ultimate easter-egg adventure: Facebook-VR world inventor dies and gives his heritage to the one who finds the ultimate easter egg. Filled with 70's and 80's retro-references
+
+![We are Legion](we_are_legion.jpg)
+![Ready Player One](ready_player_one.jpg)
+
 
 
 ## Non-fiction / other

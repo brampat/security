@@ -42,5 +42,6 @@ which contains a Diffie Hellman Demo tool.
 Sources:
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
-* [Youtube](https://youtu.be/YEBfamv-_do)
+* [Secret Key Exchange](https://www.youtube.com/watch?v=NmM9HA2MQGI) by Computerphile
+* [Diffie-Hellman Key Exchange](https://youtu.be/YEBfamv-_do)
 * [Diffie-Hellman exploiting](https://blog.trendmicro.com/trendlabs-security-intelligence/how-exploit-kit-operators-are-misusing-diffie-hellman-key-exchange/)

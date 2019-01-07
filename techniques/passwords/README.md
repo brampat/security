@@ -5,12 +5,12 @@
 There are many hashing algorithms, some are more suited for passwords than others.
 On top of that, some have been broken. Here's an overview
 
-| Algorithm             | Safe?   |
+| Algorithm                                      | Safe?   |
 | ---------------------------------------------- | ------- |
 | [MD5](https://en.wikipedia.org/wiki/MD5)       | No, first collisions since 1996, controlled collision in 2 docs since 2005 |
 | [SHA1](https://en.wikipedia.org/wiki/SHA-1)    | No, first [collisions](https://www.theverge.com/2017/2/23/14712118/google-sha1-collision-broken-web-encryption-shattered) since Feb. 2005, controlled [collision](https://en.wikipedia.org/wiki/SHA-1#SHAttered_%E2%80%93_first_public_collision) in 2 docs since 2017 |
 | [SHA2](https://en.wikipedia.org/wiki/SHA-2) (256, 512 etc)   |           |
-| SHA512    |           |
+| [SHA3](https://en.wikipedia.org/wiki/SHA-3)    |           |
 | 
 
 
@@ -68,7 +68,7 @@ A 4 position slot of UTF-8 symbols would net a password-space of more than 3.5 x
 A key of "1234" on a number-slot is easily guessable. So is the key "0000". A birthdate might also be guessable, depending on the information 
 an attacker has about its victim. Compare this to passwords that include partner-names, pet-names etc. Rainbow-table attacks make use of lists of leaked and derived passwords
 and calculate hashes for different hashing methods. This effectively creates a look-up table for hashes with corresponding unhashed passwords.
-This method would fail when proper salting is applied which is the site's or application's resposibility. As a user however, one can also beat rainbow-table attacks by 
+This method would fail when proper salting is applied which is the site's or application's responsibility. As a user however, one can also beat rainbow-table attacks by 
 using unique, random and long passwords. These can easily be created within password-managers. 
 
 ## Impact
@@ -105,3 +105,4 @@ Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.h
 * Statistics will crack your password mask [here](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure)
 * Statistics based password cracking rules [here](https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0)
 * Password cracking rig [here](https://www.netmux.com/blog/how-to-build-a-password-cracking-rig)
+* Online rainbow-tables at [hashes.org](https://hashes.org/)
