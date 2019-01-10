@@ -10,15 +10,15 @@ Optimization could include:
 Here are the numbers of each of the password-patterns:
 
 | Description                  | Length | Possible Characters | Password space                                   |
-| ---------------------------- | -----: | ------------------: | ------------------------------------------------ |
+| ---------------------------- | -----: | ------------------: | -----------------------------------------------: |
 | 3x numberslot                |       3|                   10|                                              1000|
-| Reverse numberslot           |      10|                    3|                                             59049|
+| Reverse numberslot (\*)      |      10|                    3|                                             59049|
 | 10x Lowercase                |      10|                   26|                                   141167095653376|
 | Pattern like 'London18'      |       8|                     |                                       30891577600|
 | 4x English words             |       4|                35000|                               1500625000000000000|
 | 4x English Dictionary        |       4|               171476|                             864596308417753067776|
 | 10x alphanumeric             |      10|                   62|                                839299365868340224|
-| 26x numerical                |      26|                   10|                       100000000000000000000000000|
+| 26x numerical (\**)          |      26|                   10|                       100000000000000000000000000|
 | 10x ASCII                    |      10|                  128|                            1180591620717411303424|
 | 8x UTF8 (smilies ;-)         |       8|               137000|        124097929967680321000000000000000000000000|
 | 42x numerical                |      42|                   10|       1000000000000000000000000000000000000000000|
@@ -28,8 +28,9 @@ Here are the numbers of each of the password-patterns:
 |                              |        |                     |000000000000000000000000000000000000000000000000 >|
 |                              |        |                     |00000000000                                       |
 
-(*) Reverse number-slot: 10 dials, but only 3 options
-(**) The reverse of 10x lowercase
+(\*) Reverse number-slot: 10 dials, but only 3 options
+
+(\**) The reverse of 10x lowercase
 
 
 ## 4x GTX 1070
@@ -58,6 +59,29 @@ See system-specs [here](https://gist.github.com/epixoip/ace60d09981be09544fdd350
 | SCRYPT        |           0 sec|             0 sec|       257 days|                    1 hours|        7 millennia|         4315 millennia|        4 millennia|    499091712 millennia|    5892 millennia|   619362484440218540083273 millennia|   4990917129733939797641068 millennia| 1071244283667726612398364577081958143555144 millennia|63066303068106908019536834231135173536147456070425266036272867978024153403703667769100369619337160688007109621342311554049017274442587423 millennia
 | BCRYPT        |           0 sec|             0 sec|       24 years|                     1 days|      257 millennia|       148355 millennia|      144 millennia|  17158978346 millennia|  202577 millennia| 21293936931227968043393271 millennia| 171589783461929580651041838 millennia|36829819027504875713598535392263101001502215 millennia|2168245435839920130422766646577474702715978691252418440267638889060478672350818469539930727145339017485136206597393812005684151802873264060 millennia
 
+
+# Required password length
+
+Another (more practical) way to look at these numbers is to switch the formula to calculate the required length of a specific password-pattern
+with a given required minimal cracking-time. This should result in a minimum length using random characters (or words) 
+of a specific set. This gives a much more conceivable set of numbers.
+
+The table below lists minimum lengths for different hashing algorithms and "character-sets". 
+
+|        |DECIMAL     |LOWERCASE   |UPPERCASE   |ALPHANUMERIC|ASCII       |SYMBOL      |ALPHA_SYMBOL|UTF8        |ENGLISH_WORDS |DICTIONARY_WORDS   |USA_CITIES  |CITIES      |
+| ------ | ---------: | ---------: | ---------: | ---------: | ---------: | ---------: | ---------: | ---------: | ---------:   | ---------:        | ---------: | ---------: |     
+| MD5    |         23 |         16 |         16 |         13 |         11 |         15 |         12 |           4|           5  |                 4 |           5|           4|
+| SHA1   |         22 |         16 |         16 |         12 |         10 |         15 |         11 |           4|           5  |                 4 |           5|           4|
+| SHA256 |         22 |         15 |         15 |         12 |         10 |         14 |         11 |           4|           5  |                 4 |           5|           3|
+| SHA512 |         21 |         15 |         15 |         12 |         10 |         14 |         11 |           4|           5  |                 4 |           5|           3|
+| SCRYPT |         18 |         13 |         13 |         10 |          8 |         12 |          9 |           3|           4  |                 3 |           4|           3|
+| BCRYPT |         16 |         12 |         12 |          9 |          8 |         11 |          8 |           3|           4  |                 3 |           4|           3|
+
+
+
+
+The tables above are generated using the password complexity calculator in [this](https://github.com/brampat/security-examples) 
+toolset of Groovy scripts.
 
 More info on speeds and cracking:
 * [Hashcat]()

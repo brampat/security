@@ -3,7 +3,7 @@
 | Term | Description |
 | ---- | ----------- |
 | Adware | See [Malware types](malwareTypes.md) |
-| [APT](https://en.wikipedia.org/wiki/Advanced_persistent_threat)  | Advanced Persistent Threat, followed by a number of identification. A state, state-sponsored or other highly advanced hacker / organization. When more information is identified, these often get nick-names. See [Hacker groups](hackerGroups.md) |
+| [APT](https://en.wikipedia.org/wiki/Advanced_persistent_threat)  | Advanced Persistent Threat, followed by a number of identification. A state, state-sponsored or other highly advanced hacker / organization. When more information is identified, these often get nick-names. See [Hacker groups](../news/hackerGroups.md) |
 | ARP | Address Reolution Protocol, used to convert IP address to MAC address on a switch |
 | ARP poisoning | Sending fake MAC addresses with the target's IP address to a switch to hijack traffic |
 | Attack surface | Number of attack vectors or potential access points a hacker may explore to try to hack. Compare this with a building with numerous doors and windows. Each door, window etc. gives an attacker another way to gain access to the building, thereby increasing the "attack-surface". |

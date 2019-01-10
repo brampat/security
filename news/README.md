@@ -1,11 +1,13 @@
 # News
 Collection of links to Hack-related news
 
+* [APT](hackerGroups.md) groups list
 * Other [sources](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) like this.
 
 ## 2018
 
 ### December
+* [German Politics leak](https://www.bleepingcomputer.com/news/security/private-data-official-docs-of-hundreds-of-german-politicians-leaking-for-at-least-a-month/) exposes personal data and communications on all German political parties except for AFD
 * [LinkedIn MongoDB exposed](https://www.bleepingcomputer.com/news/security/unprotected-mongodb-exposes-scraped-profile-data-of-66-million/): A dataset 
 containing data of more than 66 million users has been made public, containing scraped data from LinkedIn profiles
 * [Facebook Pikini controversy](https://www.indiatoday.in/technology/features/story/facebook-six4three-bikini-app-lawsuit-pikini-scandal-1399690-2018-11-30): App-dev Six4Three sued

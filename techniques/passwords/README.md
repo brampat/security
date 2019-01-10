@@ -5,12 +5,12 @@
 There are many hashing algorithms, some are more suited for passwords than others.
 On top of that, some have been broken. Here's an overview
 
-| Algorithm             | Safe?   |
+| Algorithm                                      | Safe?   |
 | ---------------------------------------------- | ------- |
 | [MD5](https://en.wikipedia.org/wiki/MD5)       | No, first collisions since 1996, controlled collision in 2 docs since 2005 |
 | [SHA1](https://en.wikipedia.org/wiki/SHA-1)    | No, first [collisions](https://www.theverge.com/2017/2/23/14712118/google-sha1-collision-broken-web-encryption-shattered) since Feb. 2005, controlled [collision](https://en.wikipedia.org/wiki/SHA-1#SHAttered_%E2%80%93_first_public_collision) in 2 docs since 2017 |
 | [SHA2](https://en.wikipedia.org/wiki/SHA-2) (256, 512 etc)   |           |
-| SHA512    |           |
+| [SHA3](https://en.wikipedia.org/wiki/SHA-3)    |           |
 | 
 
 
@@ -68,12 +68,13 @@ A 4 position slot of UTF-8 symbols would net a password-space of more than 3.5 x
 A key of "1234" on a number-slot is easily guessable. So is the key "0000". A birthdate might also be guessable, depending on the information 
 an attacker has about its victim. Compare this to passwords that include partner-names, pet-names etc. Rainbow-table attacks make use of lists of leaked and derived passwords
 and calculate hashes for different hashing methods. This effectively creates a look-up table for hashes with corresponding unhashed passwords.
-This method would fail when proper salting is applied which is the site's or application's resposibility. As a user however, one can also beat rainbow-table attacks by 
+This method would fail when proper salting is applied which is the site's or application's responsibility. As a user however, one can also beat rainbow-table attacks by 
 using unique, random and long passwords. These can easily be created within password-managers. 
 
 ## Impact
-What has more impact on the strength of passwords? Length or complexity? If I had to choose between a long password of words (only characters, easier to remember) and a complex 
-but short string of characters and symbols, what would be better? Let's analyse:
+What has more impact on the strength of passwords? Length or complexity? If I had to choose between a long password of words 
+(only characters, easier to remember) and a complex but short string of characters and symbols, what would be better? 
+Let's analyse:
 
 * To compare the impact of length versus complexity, we will look at a number-slot of <b>3 decimal positions</b>. This slot has only 3 dials, each with 10 possible values.
 It illustrates a short, but complex password. It makes for a password-space of <b>1000</b> (10^3).
@@ -84,7 +85,9 @@ of low complexity. This makes for a password-space of <b>59049</b> (3^10).
  
 ![Long binary slot](keylock_long.png)
 
-In this simple example, we can state that length has more impact then complexity.
+In this simple example, we can state that length has more impact then complexity. An extended research can be found [here](crackingSpeeds.md).
+This research analyses different password-patterns ranging from very simple to complex and / or long passwords. It also 
+lists the total password space for each pattern and speeds at which they could be cracked in a number of encryption algorithms.
 
 ## Cracking techniques / attacks
 * Dictionary attacks: Use a wordlist to compare against user passwords
@@ -92,8 +95,6 @@ In this simple example, we can state that length has more impact then complexity
 * Rainbow table attacks: Using common passwords and storing MD5 hashes and various encrypted variants of these passwords, query this lookup-database for hashed / encrypted passwords in the target database
 * Guess: Using common or default passwords
 * Spidering: Using company information or social media, construct a targeted word-list to use in brute-force attack. Information includes founder's birth year, name, hobbies, company vision, initials etc. 
-
-[Here](crackingSpeeds.md) are some speeds at which very simple to complex and / or long passwords could be cracked in a number of encryption algorithms.
 
 ------------
 Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.html)
@@ -104,3 +105,4 @@ Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.h
 * Statistics will crack your password mask [here](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure)
 * Statistics based password cracking rules [here](https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0)
 * Password cracking rig [here](https://www.netmux.com/blog/how-to-build-a-password-cracking-rig)
+* Online rainbow-tables at [hashes.org](https://hashes.org/)
