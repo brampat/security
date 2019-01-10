@@ -4,6 +4,15 @@ Overview of data breaches
 Giant dynamic graph of data-breaches:
 [Information is awesome](https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
 
+
+## 2019
+
+### January
+| When | Who | How many | What | Source |
+| ---- |--------|--------|--------|-------|
+|2019-01-10 | Unsure, appears from BJ.58.com | 202.730.434 | Scraped profiles in an open MongoDB (854 GB) | [source](https://thehackernews.com/2019/01/mongodb-chinese-database.html) |
+
+
 ## 2018
 
 ### December

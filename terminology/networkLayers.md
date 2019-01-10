@@ -14,3 +14,4 @@ A <b>switch</b> (layer 2 and 3) uses IP / MAC address mapping to determine which
 
 Sources:
 * [Hackernoon](https://hackernoon.com/10-things-infosec-professionals-need-to-know-about-networking-d159946efc93?gi=a62f470c6a9b)
+

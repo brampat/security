@@ -27,6 +27,7 @@
 | Google Hacking | Using Google search commands to control search results. [Google Hacking](../techniques/googleHacking.md) is not directly related to ethical hacking, but using this method a hacker hopes to gain specific knowledge about the target during [Footprinting phase](../techniques/stages.md) |
 | Hacker | Also see [Types of hackers](hackerTypes.md) |
 | Hacking | Having a system do something it was not designed to do. (note: the absense of the work computer. The system can be any system, even a non-fysical system like a business process, a legal system, tax-system etc. ) |
+| HIDS | Host Intrusion Detection System |
 | [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) | Internet Control Message Protocol, layer 3 protocol used by network devices (eg. routers) to send error messages and operational information. ICMP does not use ports, the port concept does not exist in ICMP. Ping and traceroute commands use ICMP. |
 | [IDS](https://en.wikipedia.org/wiki/Intrusion_detection_system) | Intrusion Detection System, used to detect abnormal behavior or penetration of systems |
 | IoT | Internet of Things, indicates large variety of devices and sensors connected to the internet. These include small devices like security-camera's, coolers, smart-lighting, smart garage-doors, but also modern cars etc. |
@@ -35,11 +36,13 @@
 | IPv4 | See IP and IP Address. IPv4 uses 32-bit numbers, displayed as 4 numbers, dot-delimited of 0 to 255. The local system is displayed as 127.0.0.1 |
 | IPv6 | See IP and IP Address. IPv6 uses 128-bit numbers, displayed as 6 hexadecimal digits, colon-delimited of 0000 to ffff. Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334 or simplified with obsolete zero's filtered: 2001:db8:85a3:::8a2e:370:7334 |
 | [IP Spoofing](https://en.wikipedia.org/wiki/IP_address_spoofing) | Changing source-IP address in an information packket to hide the identity of the sender. |
+| IPS | Intrusion Prevention System |
 | Key Logger | Software on a system that records all key-strokes. Mostly running without the knowledge of the current user of the system and used to gather login-credentials or other valuable information |
 | LAN | Local Area Network, limited to a household, school or company network. This network may or may not be connected to the internet. Regardless, computers on the LAN can interface with each other |
 | MAC address | Media Access Control address, uniquely identifies a network interface at physical layer. Usually embedded into the network card (ethernet), but also in Bluetooth, WiFi, Thunderbolt, USB network interface etc.. |
 | MAC address spoofing | Changing the MAC address of a network interface |
 | Malware | Malicious software |
+| NIDS | Network Intrusion Detection System |
 | [Password-manager](../techniques/passwords/password-managers.md) | Tool for storing account-credentials and generating unique, random and strong passwords |
 | Proxy | System to use as an intermediate between you and the target / server. Sometimes used to mask your identity and / or location. Less reliable than VPN. Chaining proxies can make it much harder to detect. |
 | Ransomware | Also see Malware |

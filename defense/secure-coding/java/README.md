@@ -6,7 +6,7 @@
 * [HDIV](https://hdivsecurity.com/docs) (Enterprise, not free): Web Application framework that protects from OWASP Top 10 risks
 * [OACC](http://oaccframework.org/): Object Access control framework for authentication and authorization on application objects
 
-
+* [Iron-Clad Java](https://www.amazon.de/Iron-Clad-Java-Building-Secure-Applications/dp/0071835881) by Jim Manico & August Detlefsen
 
 ## Spring Security
 

@@ -188,8 +188,10 @@ The tools described can be integrated in CI/CD toolchains.
   * SIMP
 * Host Intrusion Detection System (HIDS):
   * fail2ban
-  * OSSEC
+  * [Snort](https://www.snort.org/)
+  * [OSSEC](https://www.ossec.net/)
   * Samhain
+  * [Netfilter](https://www.netfilter.org/): Linux kernel packet filtering framework
 
 ## Operation
 * Fault Injection:

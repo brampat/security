@@ -1,6 +1,5 @@
 # Tools
 
-
 * [Kali Linux](https://www.kali.org/downloads/): Linux distro specifically for Penetration testing, strict Debian based
 * [Back track Linux](https://www.backtrack-linux.org/): Precursor to Kali Linux (since 2013), Ubuntu based.
 * [MacChanger](https://www.hackingtutorials.org/general-tutorials/mac-address-spoofing-with-macchanger/): Change mac-addresses of your network interfaces to allow for anonimization or spoofing [https://www.youtube.com/watch?v=7nF2BAfWUEg&t=12469s](Basic tutorial on 3:34:05)
@@ -9,12 +8,20 @@
 * [You Get Signal](https://www.yougetsignal.com/tools/web-sites-on-web-server/): Reverse IP domain check
 
 ## Network scanning
-* Nmap: Netwrok scanning tool, comes with most Linux distributions, but also available on Windows
+* Nmap: Network scanning tool, comes with most Linux distributions, but also available on Windows
 * Zenmap: GUI front-end to Nmap
-* [Wireshark](https://www.wireshark.org): DPI scanning tool
+* [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
+* OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
 * [Ettercap](http://www.ettercap-project.org/ettercap/downloads.html): Network sniffing (incl. SSH & HTTPS)
+* [Wireshark](https://www.wireshark.org)
+  * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)
+  * [Filter reference guide](https://www.wireshark.org/docs/dfref/)
 
+
+## Calculating with IP-addresses:
+* [Subnet calculator](http://www.subnet-calculator.com/)
+* [CIDR calculator](http://www.subnet-calculator.com/cidr.php)
 
 ## Network hacking
 * [Aircrack-NG](https://www.aircrack-ng.org/downloads.html): Wireless network cracking
@@ -22,6 +29,8 @@
 
 ## IDS
 * [Snort](https://www.snort.org/): Opensource IDS
+* [OSSEC](https://www.ossec.net/): Opensource IDS
+* [IDS FAQ](http://www.linuxsecurity.com/resource_files/intrusion_detection/network-intrusion-detection.html)
 
 ### DoS tools
 * [Nemesy](http://packetstormsecurity.com/files/25599/nemesy13.zip.html): Windows tool to generate random packets.

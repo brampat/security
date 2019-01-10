@@ -9,12 +9,16 @@
 ![BTFM](btfm.png)
 ![Hacker Playbook 2](hacker_playbook.png)
 
+
+## Defensive resources
+* [Firewall fundamentals](https://www.amazon.com/Firewall-Fundamentals-Wes-Noonan/dp/1587052210/ref=cm_cr_pr_sims_t)
+
+
 ## Fiction
 * Komt een vrouw bij de hacker (Dutch), Maria Genova
 * De Rode hack (Dutch), Brenno de Winter & Victor Broers - Fictional story, which brings true stories together to tell a terrifying (and very possible) story about holes in the financial system that could make it collapse.
 ![Komt een vrouw bij de hacker](Komt_een_vrouw_bij_de_hacker.jpg)
 ![De rode Hack](de_rode_hack.jpg)
-
 
 
 ## Privacy
