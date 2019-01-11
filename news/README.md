@@ -1,6 +1,8 @@
 # News
 Collection of links to Hack-related news
 
+* [Cyberthreats map](http://www.vanimpe.eu/pewpew/index.html?pew=1)
+* [Kaspersky](https://cybermap.kaspersky.com/) Cyberthreat real-time map
 * [APT](hackerGroups.md) groups list
 * Other [sources](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) like this.
 
