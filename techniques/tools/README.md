@@ -28,6 +28,8 @@
 ## Network hacking
 * [Aircrack-NG](https://www.aircrack-ng.org/downloads.html): Wireless network cracking
 * [Angry IP Scanner](https://angryip.org/download/#linux): IP & port scanner
+* enum: Enumerate Wdinwos shares using null-sessions
+* enum4linux: Enumerate Wdinwos shares using null-sessions
 
 ## IDS
 * [Snort](https://www.snort.org/): Opensource IDS
@@ -59,6 +61,7 @@
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
 * [Acunetix](https://www.acunetix.com/web-vulnerability-scanner/) (4.5k+ / year): Web app security scanner
 * [Metasploit](https://www.metasploit.com/) (15k+ / year (?), community and dev / research versions available): Penmetration testing framework by Rapid7
+  * [Meterpreter Basics](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)
 * [Nessus](https://www.tenable.com/downloads/nessus): Was OpenSource, now commercial (Euro 2470 / year), free for home & limited training use. Updates vuln. database using plugins.
 * [DomListener](https://chrome.google.com/webstore/detail/domlistener/jlfdgnlpibogjanomigieemaembjeolj?hl=en) Chrome extension that listens to DOM-changes (eg. for DOM-bases XSS detection)
 

@@ -233,3 +233,5 @@ The tools described can be integrated in CI/CD toolchains.
   * Cloud Custodian
   * Compliance Monkey
   * Forseti Security
+* Tools:
+  * [Secure Headers](https://securityheaders.com/)

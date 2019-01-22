@@ -17,6 +17,9 @@ Unless otherwise stated:
 #### Hacker playbook (versions 1, 2 or 3) - Peter Kim
   * Book, eBook [v2](https://github.com/tanc7/hacking-books/blob/master/The%20Hacker%20Playbook%202%2C%20Practical%20Guide%20To%20Penetration%20Testing%20By%20Peter%20Kim.pdf)
   * Subjects: Hacking, Pentesting
+#### Web Application Hacker's Handbook
+  * Book Amazon [USA](https://www.amazon.com/The-Web-Application-Hackers-Handbook/dp/1118026470) - [Germany](https://www.amazon.de/The-Web-Application-Hackers-Handbook/dp/1118026470) - [UK](https://www.amazon.co.uk/The-Web-Application-Hackers-Handbook/dp/1118026470)
+
 
 ![RTFM](rtfm.png)
 ![BTFM](btfm.png)

@@ -106,3 +106,5 @@ Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.h
 * Statistics based password cracking rules [here](https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0)
 * Password cracking rig [here](https://www.netmux.com/blog/how-to-build-a-password-cracking-rig)
 * Online rainbow-tables at [hashes.org](https://hashes.org/)
+* Password [dictionaries](https://wiki.skullsecurity.org/Passwords)
+* More leaked [Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords)

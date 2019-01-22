@@ -25,13 +25,15 @@ Failure to gain authorization BEFORE you even try to hack a system may result in
 See [Books](books/README.md)
 
 ## Tools
-See [Tools](techniques/tools.md)
+See [Tools](techniques/tools/README.md)
 
 ## Certification
 See [Certifications](certifications/README.md)
 
 ## Websites:
-[Guru99 Ethical Hacking tutorials](https://www.guru99.com/ethical-hacking-tutorials.html)
+* [Guru99 Ethical Hacking tutorials](https://www.guru99.com/ethical-hacking-tutorials.html)
+* [Yeahhub](https://www.yeahhub.com/) Advanced hacking tutorials
+
 
 ## Video's
 See [Video's](videos/README.md)

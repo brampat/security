@@ -1,5 +1,8 @@
 # SQLMap
 
+Enumerate and extract data from SQL databases
+
+
 ## GET request
 
 SQL-injection in URL's (GET requests):

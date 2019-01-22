@@ -77,11 +77,9 @@ The table below lists minimum lengths for different hashing algorithms and "char
 | SCRYPT |         18 |         13 |         13 |         10 |          8 |         12 |          9 |           3|           4  |                 3 |           4|           3|
 | BCRYPT |         16 |         12 |         12 |          9 |          8 |         11 |          8 |           3|           4  |                 3 |           4|           3|
 
-
-
-
 The tables above are generated using the password complexity calculator in [this](https://github.com/brampat/security-examples) 
-toolset of Groovy scripts.
+toolset of Groovy scripts. The system used to get these numbers is a simulated 40x Brutalis machine each with 8 Nvidia GTX 1080 GPU's as described 
+[here](https://gist.github.com/epixoip/ace60d09981be09544fdd35005051505)
 
 More info on speeds and cracking:
 * [Hashcat]()

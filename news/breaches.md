@@ -10,8 +10,8 @@ Giant dynamic graph of data-breaches:
 ### January
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
+|2019-01-15 | VOIPO California | 6.7M call logs | Call logs, SMS/MMS logs, SMS/MMS contents and API keys for internal systems | [source](https://thehackernews.com/2019/01/voip-service-database-hacking.html) |
 |2019-01-10 | Unsure, appears from BJ.58.com | 202.730.434 | Scraped profiles in an open MongoDB (854 GB) | [source](https://thehackernews.com/2019/01/mongodb-chinese-database.html) |
-
 
 ## 2018
 

@@ -40,7 +40,7 @@ Common webservers include
 
 --------
 Tools:
-See [tools](../techniques/tools.md) page
+See [tools](../techniques/tools/README.md) page
 ---------------
 Sources:
 * [Guru99](https://www.guru99.com/how-to-hack-web-server.html)
