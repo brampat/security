@@ -77,9 +77,52 @@ The table below lists minimum lengths for different hashing algorithms and "char
 | SCRYPT |         18 |         13 |         13 |         10 |          8 |         12 |          9 |           3|           4  |                 3 |           4|           3|
 | BCRYPT |         16 |         12 |         12 |          9 |          8 |         11 |          8 |           3|           4  |                 3 |           4|           3|
 
+
 The tables above are generated using the password complexity calculator in [this](https://github.com/brampat/security-examples) 
 toolset of Groovy scripts. The system used to get these numbers is a simulated 40x Brutalis machine each with 8 Nvidia GTX 1080 GPU's as described 
 [here](https://gist.github.com/epixoip/ace60d09981be09544fdd35005051505)
+
+
+## Password patterns
+A number of studies ([2013](http://passwordresearch.com/stats/statistic428.html)) ([2014](http://passwordresearch.com/stats/statistic356.html))
+on cracked corporate passwords reveals the following common patterns:
+
+| Pattern       | 2013-02   | 2014-08   |
+| ------------- | --------: | --------: |
+| DDDDDD	    | 1.75%     | 11.85%    |
+| LLLLLL	    | 1.15%     | 0%        |
+| LLLLLDD       | 0%        | 0.81%     |
+| LLLNNNN       | 0%        | 0.66%     |
+| ULLLLLD	    | 0.93%     | 0.95%     |
+| DDDDDDDD	    | 0.72%     | 0%        |
+| DDDDLLLL	    | 1.10%     | 0%        |
+| LLLLLLLL	    | 1.53%     | 1.18%     |
+| LLLLDDDD	    | 3.24%     | 4.03%     |
+| LLLLLDDD	    | 3.16%     | 4.29%     |
+| LLLLLLDD	    | 10.65%    | 17.76%    |
+| LLLLLLLD	    | 1.20%     | 0.54%     |
+| ULLLDLLL	    | 0.93%     | 0%        |
+| ULLLDDDD	    | 1.78%     | 1.58%     |
+| ULLLLDDD	    | 2.32%     | 2.67%     |z
+| ULLLLLDD	    | 4.49%     | 4.32%     |
+| ULLLLLLD	    | 3.85%     | 1.79%     |
+| UUUUUDDD	    | 0.76%     | 0.81%     |
+| LLLLLLLDD	    | 0.80%     | 0.93%     |
+| LLLLLLLLD	    | 0.73%     | 0%        |
+| ULLLLDDDD	    | 1.25%     | 1.35%     |
+| ULLLLLDDD	    | 0.88%     | 0.95%     |
+| ULLLLLLDD	    | 2.46%     | 2.08%     |
+| ULLLLLLLD	    | 2.48%     | 1.74%     |
+| LLLLLLLLNN    | 0%        | 0.61%     |
+| ULLLLLDDDD	| 1.21%     | 1.60%     |
+| ULLLLLLLDD    | 1.74%     | 1.37%     |
+| ULLLLLLLLD	| 0.88%     | 0%        |
+| ULLLLLLNNN    | 0%        | 0.75%     |
+| ULLLLLLLLNN   | 0%        | 0.55%     |
+| ULLLLLLNNNN   | 0%        | 0.74%     |
+
+Where: D = Decimal number, L = lowercase character, U = uppercase character
+
 
 More info on speeds and cracking:
 * [Hashcat]()

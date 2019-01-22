@@ -100,6 +100,7 @@ lists the total password space for each pattern and speeds at which they could b
 Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.html)
 
 * More on [Password cracking](https://www.youtube.com/watch?v=zUM7i8fsf0g)
+* [Hashkiller](https://hashkiller.co.uk/db-info.aspx) lists cracked / calculated hashes
 * Plain-text password mailers [shame-site](http://plaintextoffenders.com/) and a complete [list](https://github.com/plaintextoffenders/plaintextoffenders/blob/master/offenders.csv) of offenders
 * Password cracking  rules for Hashcat [here](https://github.com/praetorian-inc/Hob0Rules)
 * Statistics will crack your password mask [here](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure)
