@@ -71,6 +71,9 @@ and calculate hashes for different hashing methods. This effectively creates a l
 This method would fail when proper salting is applied which is the site's or application's responsibility. As a user however, one can also beat rainbow-table attacks by 
 using unique, random and long passwords. These can easily be created within password-managers. 
 
+Studies on the most commonly used passwords indicate that the 25 most commonly used passwords where used in about 10% of all passwords
+in that study. So trying only those 25 passwords could access 10% of all accounts. The most common password "123456" accounted for 4%.
+
 ## Impact
 What has more impact on the strength of passwords? Length or complexity? If I had to choose between a long password of words 
 (only characters, easier to remember) and a complex but short string of characters and symbols, what would be better? 

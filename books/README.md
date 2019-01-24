@@ -166,7 +166,9 @@ will have eternal life either by continuously reparing diseases and aging by the
   * Manga book (1989), [Animated Movie](https://www.imdb.com/title/tt0113568) (1995), [Live action Movie](https://www.imdb.com/title/tt1219827) (2017)
   * Subjects: AI, Transhumanism, Cyborg / Cyber enhancements, Brain interfacing
   * Synopsis: The line between human and cyborg is blurred when many humans are transhumanized with cyber-enhanced brains, direct brain-internet connections and other body-enhancements. Cyborg Kusanagi finds out hacking brain and memories is a real thing.
-
+#### The Transcendant Man
+  * Documentary on Ray Kurzweil
+  * Subjects: AI, Transhumanism, Cyborg / Cyber enhancements, Brain interfacing
 
 ## Entertainment
 
@@ -213,6 +215,13 @@ These are non-fiction books on subjects like Console gaming, Lego, Leadership an
 #### Start with Why - Simon Sinek
   * Subjects: Leadership, Customer Satisfaction, Employee Satisfaction, Marketing, Brand Management
   * Synopsis: The golden circle of Why, How, What (in that order) to create loyal employees and customers
+
+#### Hack your career - Troy Hunt
+  * [Hack your career](https://www.youtube.com/watch?v=-MUhcgXBj_A)
+  * Troy Hunt's view on how you can control your career and life satisfaction
+  * Subjects: Leadership, career building, Personal brand management
+  * Also see: The clean coder
+
 
 #### The life-changing magic of Not giving a F*ck - Sarah Knight
   * Synopsis: Parody on Marie Kondo's The life-changing magic of Tidying up, Sarah Knight's version of not giving an F, may be even more useful to live a happy life and just say "No" to the things you don't want, so you have more time to say "Yes" to the things that make you happy. Being honest, but polite has never been (described as) so easy.
