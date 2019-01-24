@@ -10,8 +10,9 @@
 * [You Get Signal](https://www.yougetsignal.com/tools/web-sites-on-web-server/): Reverse IP domain check
 
 ## Network scanning
-* Nmap: Network scanning tool, comes with most Linux distributions, but also available on Windows
+* Nmap: Network scanning tool and OS fingerprinting. Comes with most Linux distributions, but also available on Windows
 * Zenmap: GUI front-end to Nmap
+* [p0f](http://lcamtuf.coredump.cx/p0f3/): Offline / passive OS fingerprinter
 * [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
 * OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
@@ -55,12 +56,16 @@
 * [SQLMap](http://sqlmap.org/): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
 * [SQLMap](tools/sqlmap.md): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
 
-## Web app
+## Vulnerability scanners
+* [List](https://sectools.org/tag/vuln-scanners/) of vulnerability scanners with comparisons
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
 * [Acunetix](https://www.acunetix.com/web-vulnerability-scanner/) (4.5k+ / year): Web app security scanner
 * [Metasploit](https://www.metasploit.com/) (15k+ / year (?), community and dev / research versions available): Penmetration testing framework by Rapid7
 * [Nessus](https://www.tenable.com/downloads/nessus): Was OpenSource, now commercial (Euro 2470 / year), free for home & limited training use. Updates vuln. database using plugins.
 * [DomListener](https://chrome.google.com/webstore/detail/domlistener/jlfdgnlpibogjanomigieemaembjeolj?hl=en) Chrome extension that listens to DOM-changes (eg. for DOM-bases XSS detection)
+* [OpenVAS](http://www.openvas.org/): OpenSource
+* [Nexpose](https://www.rapid7.com/products/nexpose/): 
+* [GFI LAN Guard](https://www.gfi.com/products-and-solutions/network-security-solutions/gfi-languard): Euro 21.60 per node per year (or less from 50+ nodes)  
 
 ## Practicing
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing

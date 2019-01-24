@@ -127,4 +127,14 @@ nmap -script=smb-brute <IP>
 #### Scan vulnerabilities
 ```bash
 nmap -script=smb-check-vulns.nse -script-args=unsafe=1 <IP>
+
+nmap -script=smb-vuln-ms08-067 -script-args=unsafe=1 <IP>
+
+smb-vuln-conficker
+    smb-vuln-cve2009-3103
+    smb-vuln-ms06-025
+    smb-vuln-ms07-029
+    smb-vuln-regsvc-dos
+    smb-vuln-ms08-067
+
 ```
