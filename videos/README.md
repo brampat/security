@@ -14,7 +14,7 @@
 ## Web Applications
 * [History of Internet](https://www.youtube.com/watch?v=9hIQjrMHTv4) 
 * [Web Application basics](web-app-basics.md)
-
+* [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt
 
 ## Fun stories
 * [How I used to rob banks](https://www.youtube.com/watch?v=mDdRGlSW9Ro) by [Freaky Clown](https://twitter.com/__freakyclown__)

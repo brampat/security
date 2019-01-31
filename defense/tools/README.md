@@ -187,7 +187,7 @@ The tools described can be integrated in CI/CD toolchains.
   * dev-sec.io
   * SIMP
 * Host Intrusion Detection System (HIDS):
-  * fail2ban
+  * [Fail2Ban](https://www.fail2ban.org/wiki/index.php/Main_Page): scans logfiles and bans IPs based on malicious signs
   * [Snort](https://www.snort.org/)
   * [OSSEC](https://www.ossec.net/)
   * Samhain

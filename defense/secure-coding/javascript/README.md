@@ -17,3 +17,11 @@
 * [NodeJS Security Best Practices](https://expressjs.com/en/advanced/best-practice-security.html)
 * [NodeJS Security tips](https://blog.risingstack.com/node-js-security-tips/)
 * [NodeJS Security Checklist](https://blog.risingstack.com/node-js-security-checklist/)
+
+
+## Practice
+
+* [OWASP JuiceShop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project) vulnerable webapplication
+  * [JuiceShop on github](https://github.com/bkimminich/juice-shop)
+* [OWASP NodeJS Goat](https://www.owasp.org/index.php/OWASP_Node_js_Goat_Project) vulnerable application
+  * [NodeGoat on github](https://github.com/OWASP/NodeGoat)
