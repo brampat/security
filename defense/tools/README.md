@@ -57,16 +57,23 @@ The tools described can be integrated in CI/CD toolchains.
 ## Commit
 
 * Static Code analysis
-  * Checkmarx
+  * [Checkmarx](https://www.checkmarx.com/)
   * Fortify
-  * Java: [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
-  * PHP: [Phan](https://github.com/etsy/phan)
+  * Java:
+    * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
+    * [OWASP Lapse+](https://www.owasp.org/index.php/OWASP_LAPSE_Project)
+    * [OWASP Orizon](https://www.owasp.org/index.php/Category:OWASP_Orizon_Project) (Also for Android APK files)
+  * Groovy: [CodeNarc](http://codenarc.sourceforge.net/)
+  * PHP:
+    * [OWASP WAP](https://www.owasp.org/index.php/OWASP_WAP-Web_Application_Protection)
+    * [Phan](https://github.com/etsy/phan)
   * JavaScript: [NodeJsScan](https://github.com/ajinabraham/NodeJsScan)
   * Ruby: [Brakeman](http://brakemanscanner.org/)
   * Python: [Bandit](https://github.com/openstack/bandit)
   * C: [Flawfinder](http://www.dwheeler.com/flawfinder/)
   * C#: [PumaScan](https://github.com/pumasecurity/puma-scan)
   * Go: [Gosec](https://github.com/GoASTScanner/gas)
+  * .NET: [OWASP O2](https://www.owasp.org/index.php/OWASP_O2_Platform)
 * Security Unit tests
   * Leverage "test-obsessed" teams
   * Think evil to come up with test-cases: evil user stories, abuse cases, OWASP ASVS
@@ -217,7 +224,19 @@ The tools described can be integrated in CI/CD toolchains.
   * vuls
 * Blameless Postmortems:
   * Etsy Morgue
-* Continuous Monitoring:
+* Continuous Monitoring / SIEM:
+  * [SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management) - Security Information and Event Management
+  * [Comparison](https://logz.io/blog/open-source-siem-tools/)
+  * [Splunk](https://www.splunk.com/page/sign_up/es_sandbox)
+  * [Elastic Stack](https://www.elastic.co/solutions/security-analytics) with [additions](https://logz.io/blog/elk-siem/):
+    * [X-Pack](https://www.elastic.co/products/stack)
+    * [EasltAlert](https://github.com/Yelp/elastalert)
+  * [OSSIM](https://www.alienvault.com/products/ossim)
+  * [OSSEC](http://www.ossec.net/)
+  * [Apache Metron](http://metron.apache.org/)
+  * [SIEMonster](https://siemonster.com/)
+  * [Prelude](https://www.prelude-siem.org/)
+  * [Elastic Intel](https://github.com/securityclippy/elasticintel/)
   * Grafana
   * Graphite
   * Statsd

@@ -6,6 +6,12 @@ Collection of links to Hack-related news
 * [APT](hackerGroups.md) groups list
 * Other [sources](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) like this.
 
+## 2019
+
+### January
+* [iPhone hack-tool Karma](https://www.reuters.com/investigates/special-report/usa-spying-karma/) only needs phone-number or email-account
+
+
 ## 2018
 
 ### December
