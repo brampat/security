@@ -157,7 +157,7 @@ will have eternal life either by continuously reparing diseases and aging by the
 #### Chappie
   * [Movie](https://www.imdb.com/title/tt1823672)
   * Subjects: AI, Transhumanism
-  * Synopsis: Mark Zuggerberg-like wunderkind invented semi-AI which is used in 1 100% robotized police-force, but has his Eureka moment when he gets real AI working.
+  * Synopsis: Mark Zuggerberg-like wunderkind invented semi-AI which is used in a 100% robotized police-force, but has his Eureka moment when he gets real AI working.
 #### The Matrix
   * [Movie](https://www.imdb.com/title/tt0133093)
   * Subjects: AI, VR
@@ -196,11 +196,12 @@ These are non-fiction books on subjects like Console gaming, Lego, Leadership an
 #### Console wars - Tom Kalinski
   * Book
   * Subjects: Marketing, Console Gaming, SEGA, Nintendo, Brand management, Public Relations
-  * Synopsis: Former Mattel CEO is tasked to challenge Goliath Nintendo - Great marketing book, but flashback to 16-bit gaming era
+  * Synopsis: Former Mattel CEO is tasked to challenge Goliath Nintendo - Great marketing book and flashback to 16-bit gaming era
 
 #### Brick by brick - 
   * Book
   * Subjects: Marketing, innovation & leadership within The Lego Group
+  * Synopsis: How The Lego Company was saved from bankruptcy, twice.
 
 ### Ricardo Semler
   * [TED-talk](https://www.ted.com/talks/ricardo_semler_how_to_run_a_company_with_almost_no_rules)

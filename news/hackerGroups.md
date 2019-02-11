@@ -2,6 +2,9 @@
 
 ## APTs
 
+The naming scheme with animals is introduced by [Crowdstrike](https://www.crowdstrike.com/) and one of the most commoonly known naming schemes for APT-groups.
+The APT-numbering scheme is introduced by Mandiant (sub-company of FireEye).
+
 ### Russia: Bears
 * APT28: Tsar Team / [Fancy Bear](https://en.wikipedia.org/wiki/Fancy_Bear) / [Sofacy](https://securelist.com/threats-in-the-netherlands/88185/) / Pawn Storm
 * APT29: [Cozy Bear](https://en.wikipedia.org/wiki/Cozy_Bear)
@@ -47,7 +50,7 @@
 * APT37
 * [DarkHotel](https://aptmap.netlify.com/#DarkHotel) / DUBNIUM /Fallout Team /Karba /Luder /Nemim /Tapaoux /Pioneer
 
-### Vietnam
+### Vietnam: Buffalo
 * APT32: OceanLotus Group
 * [Force 47](https://en.wikipedia.org/wiki/Force_47)
 
@@ -56,6 +59,16 @@
 * [Rocket Kitten](https://en.wikipedia.org/wiki/Rocket_Kitten) / Ajax Security Team
 * APT33: [here](https://aptmap.netlify.com/#APT33)
 
+
+### India: Tiger
+
+### Criminal / Financial: Spider
+* Singing Spider
+* Union Spider
+* Andromeda Spider
+* Dextorous Spider
+
+### Espionage: Bat
 
 ### Others
 
@@ -71,7 +84,7 @@
 
 
 
-## Activists
+## Activists: Jackal
 Anonymous
 
 * [The 414s](https://en.wikipedia.org/wiki/The_414s)
@@ -89,5 +102,5 @@ Anonymous
 Sources: 
 * [FireEye](https://www.fireeye.com/current-threats/apt-groups.html)
 * [APTMap](https://aptmap.netlify.com/)
-* [APT-Groups](https://docs.google.com/spreadsheets/u/0/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml#) by Florian Roth
+* [APT-Groups](https://apt.threattracking.com/) or [here](https://docs.google.com/spreadsheets/u/0/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/pubhtml#) by Florian Roth
 * [Repo](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) with links to APT-lists and Criminal campaigns

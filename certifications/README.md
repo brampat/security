@@ -12,6 +12,18 @@ The more serious ethical hackers see this as insufficient, basic.
 * [CEH Handbook](https://s3-us-west-2.amazonaws.com/edm-image/documents/CEH-Handbook-v2.2.pdf) (PDF download)
 * [CEH Exam Blueprint](https://www.eccouncil.org/wp-content/uploads/2016/02/CEH-Exam-Blueprint-v2.0.pdf) (PDF download)
 
+## eLearnSecurity
+* [eLearnSecurity Junior Penetration Tester](https://www.elearnsecurity.com/certification/ejpt/) or eJPT
+* [eLearnSecurity Certified Professional Penetration Tester](https://www.elearnsecurity.com/certification/ecpptv2/) or eCPPTV2
+* [eLearnSecurity Certified Penetration Tester eXtreme](https://www.elearnsecurity.com/certification/ecptx/) or eCPTX
+* [eLearnSecurity Web application Penetration Tester](https://www.elearnsecurity.com/certification/ewpt/) or eWPT
+* [eLearnSecurity Web application Penetration Tester eXtreme](https://www.elearnsecurity.com/certification/ewptx/) or eWPTX
+* [eLearnSecurity Mobile Application Penetration Tester](https://www.elearnsecurity.com/certification/emapt/) or eMAPT
+* [eLearnSecurity Certified Reverse Engineer](https://www.elearnsecurity.com/certification/ecre/) or eCRE
+* [eLearnSecurity Network Defense Professional](https://www.elearnsecurity.com/certification/endp/) or eNDP
+* [eLearnSecurity Web Defense Professional](https://www.elearnsecurity.com/certification/ewdp/) or eWDP
+* [eLearnSecurity Certified Threat Hunting Professional](https://www.elearnsecurity.com/certification/ecthp/) or eCTHP
+* [eLearnSecurity Certified Digital Forensics Professional](https://www.elearnsecurity.com/certification/ecdfp/) or eCDFP
 
 ## Preparation:
 * [Plural-sight CEH preparation](https://www.pluralsight.com/paths/ethical-hacking) - By Troy Hunt 
