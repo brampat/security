@@ -30,10 +30,6 @@ independent from another request. So for example, there's no auto-save for the s
 
 ## Security standards / models
 
-* Video's from [SecAppDev](https://www.youtube.com/channel/UCSii2fuiLLlGqaR6sR_y0rA/videos)
-  * [OWASP Top 10 Proactive controls](https://www.youtube.com/watch?v=-tF-ZkzdThI) by [Jim Manico](https://twitter.com/manicode)
-  * [Secure Development Lifecycles](https://www.youtube.com/watch?v=L-gL1YQUrwg) by Bart de Win
-* [OWASP Encoding project](https://www.owasp.org/index.php/Category:OWASP_Encoding_Project)
 * [ASVS](https://github.com/OWASP/ASVS/tree/master/4.0/en) Application Security Verification Standard: For verification of security maturity
 * [OpenSAMM](http://www.opensamm.org/) OWASP Software Assurance Maturity Model: For measuring maturity of secure software deveopment.
   * SAMM defines four business functions each with three security practices. Each of the twelve practices are divided into three maturity levels.O
@@ -41,3 +37,13 @@ independent from another request. So for example, there's no auto-save for the s
 * [OpenSAMM PDF](https://opensamm.org/downloads/SAMM-1.0.pdf): SAMM in a PDF 
 * [SAMM Self Assessment](https://github.com/AsteriskLabs/ssa): (dormant since 2014) Tool to assist in Self-assessment on OpenSAMM (built in Rails).
 * [Cybrary Secure coding](https://www.cybrary.it/course/secure-coding/): OWASP Top 10 and SANS Top 25 vulnerabilities and defenses
+
+
+## Secure coding training  /teaching
+
+* [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt on Pluralsight (free course)
+* [OWASP Secure coding practices](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)  quick reference guide
+* Video's from [SecAppDev](https://www.youtube.com/channel/UCSii2fuiLLlGqaR6sR_y0rA/videos)
+  * [OWASP Top 10 Proactive controls](https://www.youtube.com/watch?v=-tF-ZkzdThI) by [Jim Manico](https://twitter.com/manicode)
+  * [Secure Development Lifecycles](https://www.youtube.com/watch?v=L-gL1YQUrwg) by Bart de Win
+* [OWASP Encoding project](https://www.owasp.org/index.php/Category:OWASP_Encoding_Project)

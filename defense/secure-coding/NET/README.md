@@ -5,4 +5,10 @@
 
 * On [Securing .NET Deserialization](https://www.youtube.com/watch?v=oxlD8VWWHE8)
 
+
+## Practice
+
+* [OWASP WebGoat.NET](https://www.owasp.org/index.php/Category:OWASP_WebGoat.NET) vulnerable application
+* [DVTA](https://github.com/secvulture/dvta) Damn Vulnerable Thick-client App
+
 ------------

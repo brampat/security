@@ -68,15 +68,14 @@
 * [GFI LAN Guard](https://www.gfi.com/products-and-solutions/network-security-solutions/gfi-languard): Euro 21.60 per node per year (or less from 50+ nodes)  
 
 ## Practicing
+
+* [OWASP maintained list](https://github.com/OWASP/OWASP-VWAD) contains both online, offline and VM vulnerable applications
+* [OWASP JuiceShop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project) vulnerable webapplication
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
 * [Hack the box](https://www.hackthebox.eu/): Online testing environment, accessible after completing an entry-level test
 * [Root-me](https://www.root-me.org/?lang=en): Online challenges and VM to practice hacking
 * [Hack.me](https://hack.me/): Online challenges on vulnerable web-applications
-
-
-## Defensive
-* [Fail2Ban](https://www.fail2ban.org/wiki/index.php/Main_Page): scans logfiles and bans IPs based on malicious signs
 
 
 ---------------
