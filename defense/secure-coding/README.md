@@ -25,6 +25,8 @@ independent from another request. So for example, there's no auto-save for the s
   the cookie's protocol, host-name and port. It is not necessary to match the full path on the server.
 * Flag http-only: prevents a cookies from being read by non-html resources like JavaScript, Flash, Java
 * Secure flag: prevents the cookie to be sent over non-secure (HTTPS) connection
+* CSP, Content Security Policy: Blocks non-whitelisted url's for script or other resource loading. Report-uri attribute: url to send json report on blocking error
+* x-xss-protection: 1; [mode=block;] (optional, kills whole page), "report"-attribute: endpoint for XSS warnings
 
 ## Security standards / models
 

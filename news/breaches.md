@@ -14,6 +14,7 @@ Sources:
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
 | 2019-01-15 | VOIPO California | 6.7M call logs | Call logs, SMS/MMS logs, SMS/MMS contents and API keys for internal systems | [source](https://thehackernews.com/2019/01/voip-service-database-hacking.html) |
+| 2019-01-10 | Ascension                  | 24,000,000 | Exposed Elasticsearch DB with financial and banking documents, representing several 10k's of loan and mortgages from USA banks | [source](https://techcrunch.com/2019/01/23/financial-files/) |
 | 2019-01-10 | Unsure, appears from BJ.58.com | 202,730,434 | Scraped profiles in an open MongoDB (854 GB) | [source](https://thehackernews.com/2019/01/mongodb-chinese-database.html) |
 | 2019-01-07 |                            | 772,904,991 | In January 2019, a large collection of credential stuffing lists (combinations of email addresses and passwords used to hijack accounts on other services) was discovered being distributed on a popular hacking forum. The data contained almost 2.7 <em>billion</em> records including 773 million unique email addresses alongside passwords those addresses had used on other breached services. Full details on the incident and how to search the breached passwords are provided in the blog post <a href="https://www.troyhunt.com/the-773-million-record-collection-1-data-reach" target="_blank" rel="noopener">The 773 Million Record "Collection #1" Data Breach</a>. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/COLLECTION1) |
 

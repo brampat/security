@@ -50,7 +50,17 @@ supply chain compromised by China's grain-sized server-implants. Discovery by Am
 
 * USA's Democratic party hacked by Russian Intelligence and leaked emails from Hilary Clinton, causing Donald Trump to win the elections 
 
+### February
+* [Nissan Leaf](https://www.troyhunt.com/controlling-vehicle-features-of-nissan/) controlled from the other side of the world by Troy Hunt and Scott Helme
 
+
+## 2015
+
+### August
+* [Jeep Cherokee](https://www.kaspersky.com/blog/blackhat-jeep-cherokee-hack-explained/9493/) Hack explained in detail
+
+### July
+* [Jeep Cherokee](https://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/) controlled over internet
 
 
 ## 2013
