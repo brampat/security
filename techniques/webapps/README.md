@@ -26,6 +26,7 @@
 * Sensitive Data Exposure
 * XXE - XML External Entities 
 * XSS - Cross Site Scripting
+  * Having fun with XSS: Do the [Harlem Shake](https://gist.github.com/marcaube/692b5bdb99ba69b9b60f471d2721aa95) in [action](https://www.youtube.com/watch?v=K0noqLisW_c) at Dutch banks (2015)
   * Stored (Persistent, Type I): payload can be stored in the web-app by means of forum-comments, feedback etc. When these are displayed, a victims will be confronted with malicious content
   * Reflected (Type II): payload in a link causes injection of malicious content in the page. By persuading a user to click the link an attacker can trigger this weakness
   * DOM-based (Type 0): payload in a link causes the DOM to be changed by means of the application using this data in normal usage to add functionality. See [example](https://www.owasp.org/index.php/DOM_Based_XSS)

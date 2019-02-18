@@ -77,6 +77,10 @@
 * [Fail2Ban](https://www.fail2ban.org/wiki/index.php/Main_Page): scans logfiles and bans IPs based on malicious signs
 
 
+## Other
+
+* [https://Crawler.ninja](Crawler.ninja): Security Statistics on top 1 million Alexa sites
+
 ---------------
 Sources:
 * [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
