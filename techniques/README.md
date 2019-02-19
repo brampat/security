@@ -22,7 +22,7 @@ Sub-pages:
 * [Passwords](passwords/README.md)
 * [Password managers](passwords/password-managers.md)
 * [Brute-forcing](passwords/crackingSpeeds.md)
-* Blogs (Dutch) [Part 1](passwords/blog/part1.md), [Part 2](passwords/blog/part2.md), [Part 3](passwords/blog/part3.md)
+* Blogs (Dutch) [Part 1](../blogs/2018-02-08_passwords_myths_errors_tip_for_users/README.md), [Part 2](../blogs/2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md), [Part 3](../blogs/2018-05-04_passwords_myths_errors_tips_for_devs_2/README.md)
 
 ## Application server
 * [Webservers](webserver.md)

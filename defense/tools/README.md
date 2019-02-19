@@ -228,6 +228,8 @@ The tools described can be integrated in CI/CD toolchains.
   * [SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management) - Security Information and Event Management
   * [Comparison](https://logz.io/blog/open-source-siem-tools/)
   * [Splunk](https://www.splunk.com/page/sign_up/es_sandbox)
+    * [ThreatHunting](https://github.com/olafhartong/ThreatHunting) for Splunk: A Splunk app mapped to MITRE ATT&CK to guide your threat hunts
+      * [BLOG](https://securityaffairs.co/wordpress/81288/security/hunting-mitres-attck-splunk.html) on using ThreatHunting
   * [Elastic Stack](https://www.elastic.co/solutions/security-analytics) with [additions](https://logz.io/blog/elk-siem/):
     * [X-Pack](https://www.elastic.co/products/stack)
     * [EasltAlert](https://github.com/Yelp/elastalert)

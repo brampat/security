@@ -8,7 +8,7 @@ Password cracking can very effectively be defended against using (a combination 
 * Complex passwords
 * Password-managers (as explained by [Mary Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ))
 
-See my article for users (Dutch) [here](../techniques/passwords/blog/part1.md)
+See my article for users (Dutch) [here](../blogs/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
 
 ## Developers can adopt:
 * Proper hashing (bcrypt)
@@ -17,7 +17,7 @@ See my article for users (Dutch) [here](../techniques/passwords/blog/part1.md)
 * 2FA / Multi-FA
 * Account lockout (temporary, after failed logins)
 
-See my article for developers (Dutch) [part 1](../techniques/passwords/blog/part2.md) and [part 2](../techniques/passwords/blog/part1.md)
+See my article for developers (Dutch) [part 1](../blogs/2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md) and [part 2](../blogs/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
 
 ## Rigorous defense:
 * Disallow all cracked passwords (eg. using Troy Hunt's [Pwnd Passwords API](https://haveibeenpwned.com/API/v2) )

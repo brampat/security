@@ -4,11 +4,11 @@ Original publishing at [First8](https://technology.first8.nl/wachtwoorden-3-myth
 # Wachtwoorden: 3 mythes, 4 fouten en 5 tips voor ontwikkelaars (deel 1)
 
 Als ontwikkelaars hebben we tegenwoordig een grote verantwoordelijkheid. We moeten ervoor zorgen dat onze gebruikers zich
-zo veilig en betrouwbaar mogelijk kunnen identificeren. In [deel één](part1.md) 
+zo veilig en betrouwbaar mogelijk kunnen identificeren. In [deel één](../2018-02-08_passwords_myths_errors_tip_for_users/README.md) 
 van deze blog vertelde ik over de mythes, fouten en tips voor gebruikers. In dit deel zal ik toelichten waar wij als ontwikkelaars 
 vaak de fout in gaan. In deel 3 zal ik de tips gericht op ontwikkelaars beschrijven.
 
-![](bram.png)
+![](../2018-02-08_passwords_myths_errors_tip_for_users/bram.png)
 
 Als Senior Java Developer bij First8 houd ik me tijdens en buiten werktijden bezig met security en privacy. Door kennis hierover 
 voor mezelf en mijn vakgenoten te vergroten, hoop ik de wereld veiliger te maken.
@@ -67,7 +67,7 @@ onnodig complex. Bovendien leggen ze beperkingen op, die een gebruiker dwingen o
 slechts een kleine subset aan speciale karakters mogelijk. De overige eisen zijn eveneens complex en beperkend. Op de eerste 
 regel die je in het plaatje ziet, kom ik later nog terug.
 
-![](belastingdienst.png)
+![](../2018-02-08_passwords_myths_errors_tip_for_users/belastingdienst.png)
 
 ## Copy-paste
 
@@ -217,4 +217,4 @@ kennis voor nodig om dit goed te doen. Gelukkig zijn er voldoende standaard oplo
 zijn. Gebruik deze dan ook. Een framework als [Spring Security](https://projects.spring.io/spring-security/) helpt je als 
 ontwikkelaar om goed en veilig identity management op te zetten.
 
-[Deel 3](part3.md)
+[Deel 3](../2018-05-04_passwords_myths_errors_tips_for_devs_2/README.md)

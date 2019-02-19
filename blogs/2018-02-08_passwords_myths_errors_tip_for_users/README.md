@@ -230,4 +230,4 @@ Volgende keer ga ik dieper in op de technische maatregelen die ontwikkelaars kun
 makkelijk te maken en je kunnen sturen naar een veilig wachtwoord. Daarnaast zal ik ook een aantal belangrijke fouten 
 toelichten, die zowel de veiligheid als de privacy van gebruikers in gevaar kunnen brengen.
 
-[Deel 2](part2.md)
+[Deel 2](../2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md)

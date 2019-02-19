@@ -2,13 +2,13 @@ Original publishing at [First8](https://technology.first8.nl/wachtwoorden-3-myth
 
 # Wachtwoorden: 3 mythes, 4 fouten en 5 tips voor ontwikkelaars (deel 2)
 
-In de vorige blogs gaf ik [hier](part1.md) al tips voor gebruikers. De mythes en fouten voor ontwikkelaars kun je 
-[hier](part2.md) vinden. In dat deel heb ik overigens stiekem al enkele tips gegeven. Aan te raden is een goede combinatie 
+In de vorige blogs gaf ik [hier](../2018-02-08_passwords_myths_errors_tip_for_users/README.md) al tips voor gebruikers. De mythes en fouten voor ontwikkelaars kun je 
+[hier](../2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md) vinden. In dat deel heb ik overigens stiekem al enkele tips gegeven. Aan te raden is een goede combinatie 
 van encoding, encryptie, hashing met salt & pepper en het gebruik van cpu en memory [hardened](https://medium.com/@mpreziuso/password-hashing-pbkdf2-scrypt-bcrypt-1ef4bb9c19b3) 
 algoritmes, zoals bcrypt of scrypt. Daarnaast hintte ik al op het gebruik van bewezen frameworks zoals 
 [Spring Security](https://projects.spring.io/spring-security/).
 
-![](bram.png)
+![](../2018-02-08_passwords_myths_errors_tip_for_users/bram.png)
 
 Als Senior Java Developer bij First8 houd ik me steeds meer bezig met security en privacy. Deze blog-serie is ontstaan uit 
 de vraag naar praktische tips voor gebruikers en ontwikkelaars om eigen en andermans accounts veiliger te maken. Door deze 
@@ -79,7 +79,7 @@ Zorg ervoor dat je deze netjes kunt inlezen bij wachtwoord invoer, wachtwoord re
 Maar denk ook aan encoden en decoden als het wachtwoord over de lijn gaat. Zo voorkom je dat je gebruikers het wel 
 kunnen instellen als wachtwoord, maar er [niet daadwerkelijk mee kunnen inloggen](https://apple.stackexchange.com/questions/202143/i-included-emoji-in-my-password-and-now-i-cant-log-in-to-my-account-on-yosemite). Controleer of er geen systemen crashen door het gebruik van speciale tekens. Het is gerechtvaardigd om [control](https://www.fileformat.info/info/unicode/category/Cc/list.htm)– en [format](http://www.fileformat.info/info/unicode/category/Cf/list.htm)– karakters uit te sluiten in een wachtwoord. De rest zou je gewoon kunnen verwerken.
 
-![](frozen.png)
+![](../2018-02-08_passwords_myths_errors_tip_for_users/frozen.png)
 
 ## Common passwords
 
