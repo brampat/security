@@ -228,5 +228,11 @@ To manage fully random passwords of 15 to 20 length, the use of password manager
 | USA Cities                | There are about 27k USA cities. [source](https://www.quora.com/How-many-towns-and-cities-are-there-in-the-world)                      |
 | Cities                    | The estimate for cities in the world is 2M. [source](https://www.quora.com/How-many-towns-and-cities-are-there-in-the-world)          |
 
+## Acknowledgements
 
-
+Thank you for inspiration, input and comments to:
+* [Arjan Gelderblom](https://twitter.com/ragelderblom) for helping me get started on Sec App Development
+* [Jeremy M Gosney](https://twitter.com/jmgosney) for inspiring me on hashcracking and benchmarking awesome hardware
+* [Jim Manico](https://twitter.com/manicode) for helping me understand Sec App Development and just being an awesome dude
+* [John Opdenakker](https://twitter.com/j_opdenakker) for discussing password- and identity management 
+* [Ronald van der Meer](https://twitter.com/ronaldvdmeer) for discussing crypto, password- and identity management and tweeting many relevant news-items
