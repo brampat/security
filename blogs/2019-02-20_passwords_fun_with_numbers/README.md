@@ -236,3 +236,7 @@ Thank you for inspiration, input and comments to:
 * [Jim Manico](https://twitter.com/manicode) for helping me understand Sec App Development and just being an awesome dude
 * [John Opdenakker](https://twitter.com/j_opdenakker) for discussing password- and identity management 
 * [Ronald van der Meer](https://twitter.com/ronaldvdmeer) for discussing crypto, password- and identity management and tweeting many relevant news-items
+
+## Notes
+
+Calculations made with ```ComplexityCalculator``` in my [Security-examples](https://github.com/brampat/security-examples/) Groovy scripts 
