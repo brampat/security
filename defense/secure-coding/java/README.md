@@ -1,5 +1,9 @@
 # Java Secure coding
 
+
+## Security best practices and tips: Java
+* [Secure coding in Java](https://blog.acolyer.org/2018/06/27/secure-coding-practices-in-java-challenges-and-vulnerabilities/)
+* [10 minute Java security](https://www.youtube.com/watch?v=_ANdXIuhbzQ) with Stephen Chan & Jim Manico
 * [OWASP Java knowledge base](https://www.owasp.org/index.php/Category:Java)
 
 ## Tools
@@ -25,11 +29,17 @@
 ## Video's
 * [Security control enhancements Java 8 and 9](https://www.youtube.com/watch?v=IeDmyBXhcGo) video at SecAppDev by [Jim Manico](https://twitter.com/manicode)
 
-## Spring Security
+## Spring
+
+### Spring Security for IAM
+* [Spring Security cheat-sheet](https://res.cloudinary.com/snyk/image/upload/v1534422834/blog/Spring_Boot_Security_Cheat_Sheet.pdf)
+* [Spring Framework Security introduction](https://www.youtube.com/watch?v=Q3yStECBuAg)
 * [Securing a web-app](https://spring.io/guides/gs/securing-web/) with Spring Security
 * [Spring Security](https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/): Spring Authentication and Access control
 * [Spring Security Account registration](https://www.baeldung.com/registration-with-spring-mvc-and-spring-security): Note: is vulnerable to account enumeration
 
+### Other
+* [Spring Actuators](https://www.veracode.com/blog/research/exploiting-spring-boot-actuators) exploit on Spring Boot < 1.5
 
 ## Examples / practice
 

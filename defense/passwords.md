@@ -7,6 +7,7 @@ Password cracking can very effectively be defended against using (a combination 
 * Long passwords
 * Complex passwords
 * Password-managers (as explained by [Mary Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ))
+  * Choosing a password-manager can be [tricky](https://www.securityevaluators.com/casestudies/password-manager-hacking/) as these don't guarantee 100% safety, though nothing will. I do want to stress that using any password-manager (listed in the article) gives far more security than reuse or otherwise predictable passwords.
 
 See my article for users (Dutch) [here](../blogs/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
 

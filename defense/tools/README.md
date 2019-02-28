@@ -57,7 +57,8 @@ The tools described can be integrated in CI/CD toolchains.
 ## Commit
 
 * Static Code analysis
-  * [Checkmarx](https://www.checkmarx.com/)
+  * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
+  * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
   * Fortify
   * Java:
     * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
@@ -104,6 +105,7 @@ The tools described can be integrated in CI/CD toolchains.
     * NCC Group: Understanding and hardening Linux Containers
     * NIST SP 800-190 Application Container Security Guide
     * CIS Kubernetes Benchmark
+    * Securing Kubernetes [course-material](https://github.com/manicodesecurity/defending-devops)
   * Tools:
     * [Actuary](https://github.com/diogomonica/actuary)
     * [Anchore](https://anchore.com/opensource/)

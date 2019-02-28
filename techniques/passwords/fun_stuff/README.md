@@ -127,7 +127,7 @@ Why [Troy Hunt Sucks](https://www.youtube.com/watch?v=cyQ4PjUnclM), why it
 ![](friend.jpg)
 
 
-### Game references
+## Game references
 
 | Password              | Used      | From                                                                      |
 | --------------------- | ----:     | ------------------------------------------------------------------------- |
@@ -140,9 +140,9 @@ Why [Troy Hunt Sucks](https://www.youtube.com/watch?v=cyQ4PjUnclM), why it
 ![](konamicode.jpg)
 ![](zelda.gif)
 
-
 # Sources
 
 * [Wikipedia](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)
 * [Twitter thread](https://twitter.com/tonynorthrup/status/1087818989147959298)
 * [HIBP](https://haveibeenpwned.com/Passwords)
+* [Top 25 passwords](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)

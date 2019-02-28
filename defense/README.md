@@ -36,8 +36,16 @@ Sub-pages:
 * [Footprinting](footprinting.md)
 * [Scanning](scanning.md)
 
-## Programming
-* [Java](java.md)
+## Secure Coding
+* [Java](secure-coding/java/README.md)
+* [GO](secure-coding/GO/README.md)
+* [Grails](secure-coding/Grails/README.md)
+* [JavaScript](secure-coding/javascript/README.md)
+* [ASP.NET](secure-coding/NET/README.md)
+* [PHP](secure-coding/PHP/README.md)
+* [Python](secure-coding/python/README.md)
+* [Ruby on Rails](secure-coding/rubyOnRails/README.md)
+* [SSDLC](secure-coding/ssdlc/README.md)
 
 ## Application
 * [Webserver attacks](webserver.md)
