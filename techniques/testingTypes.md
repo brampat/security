@@ -37,7 +37,8 @@ Targeting only specific pieces of infrastructure. Part of grey or white-box test
 - Contingency / incident response testing (how well defense responds to incidents)
 
 ------------
-Source [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
+* Source [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
+* [Vulnerability testing vs. penetration tests](https://www.gracefulsecurity.com/vulnerability-assessments-vs-penetration-tests/)
 
 
 ## Configuration and deployment management testing

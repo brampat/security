@@ -15,12 +15,24 @@
 * [p0f](http://lcamtuf.coredump.cx/p0f3/): Offline / passive OS fingerprinter
 * [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
+  * [Introduction to Burp-suite Pro](https://www.gracefulsecurity.com/introduction-to-burp-suite-pro/)
+  * [Burp Macros](https://www.gracefulsecurity.com/burp-macros-re-authentication/)
 * OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
 * [Ettercap](http://www.ettercap-project.org/ettercap/downloads.html): Network sniffing (incl. SSH & HTTPS)
 * [Wireshark](https://www.wireshark.org)
   * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)
   * [Filter reference guide](https://www.wireshark.org/docs/dfref/)
 
+## CMS
+* [CMSMap](https://github.com/Dionach/CMSmap) CMS scanner, supports WordPress, Joomla, Drupal and Moodle
+  * Wordpress:
+    * [Wordpress Vulnerability scanner](https://github.com/RamadhanAmizudin/Wordpress-scanner)
+    * Another [WP Vulnerability scanner](https://github.com/10up/wp-vulnerability-scanner)
+    * [WPHunter](https://github.com/Jamalc0m/wphunter)
+    * [WPSeku](https://github.com/m4ll0k/WPSeku)
+
+## Cloud
+* [Introduction to Azure pentesting](https://www.gracefulsecurity.com/an-introduction-to-pentesting-azure/)
 
 ## Calculating with IP-addresses:
 * [Subnet calculator](http://www.subnet-calculator.com/)
@@ -51,6 +63,12 @@
 * [Cain & Abel](http://www.softpedia.com/get/Security/Decrypting-Decoding/Cain-and-Abel.shtml): Windows tool with GUI to recover crack / recover passwords of various tools, network sniffing etc.
 * [Ophcrack](http://ophcrack.sourceforge.net/): Cross platform tool uses Rainbow table attacks or brute force.
 * [Hydra](https://sectools.org/tool/hydra/): Dictionary attacks against numerous network protocols
+
+## Privilege escalation
+* Sharecheck
+* CPasswords
+* Incognito
+* Mimikatz
 
 ## Database
 * [SQLMap](http://sqlmap.org/): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.

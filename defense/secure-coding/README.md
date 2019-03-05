@@ -22,6 +22,7 @@ independent from another request. So for example, there's no auto-save for the s
   and cannot be trusted
 * SOP: Same Origin Policy prevents cookies from being read by scripts outside of the same origin. The reading code should match
   the cookie's protocol, host-name and port. It is not necessary to match the full path on the server.
+  * [SOP Basics](https://www.gracefulsecurity.com/same-origin-policy-basics-and-cross-site-request-forgery/)
 * Flag http-only: prevents a cookies from being read by non-html resources like JavaScript, Flash, Java
 * Secure flag: prevents the cookie to be sent over non-secure (HTTPS) connection
 * CSP, Content Security Policy: Blocks non-whitelisted url's for script or other resource loading. Report-uri attribute: url to send json report on blocking error

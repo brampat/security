@@ -42,3 +42,6 @@ The more serious ethical hackers see this as insufficient, basic.
 ## OSCP
 Compared to CEH, this certification is much more challenging and valuable
 * [OSCP](https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/) - Offensive Security Certified Professional (highly regarded) - $800,- including 30-day lab access & exam. Requires PWK
+
+Preparation guides:
+* [From newbie to OSCP](http://niiconsulting.com/checkmate/2017/06/a-detail-guide-on-oscp-preparation-from-newbie-to-oscp/)

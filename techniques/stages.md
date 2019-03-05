@@ -57,6 +57,8 @@ Active, possibly modification<br>
 Actual hacks, penetration of systems.
 * Using exploits
 * Physical access, eg. to install hardware or software tools / malware
+* Privilege escalation
+
 
 ### Exploitation
 Active, possibly modification<br>
@@ -86,3 +88,5 @@ This eventually pays the bills.
 Sources:
 * [PTES](http://www.pentest-standard.org/index.php)
 * [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
+* [Hacking from outside](https://www.gracefulsecurity.com/hacking-from-outside/) from information gathering to clean-up
+* [hacking from inside](https://www.gracefulsecurity.com/hacking-from-inside/) from information gathering to clean-up

@@ -200,7 +200,7 @@ Examples: ASCII, Unicode, URL Encoding, base64, ROT13
 
 ##### Encryption
 
-Encryption transforms data to keep confidential data secret. The primary goal of encryption is to prevent unauthorized persons or organizations to be able to read the data, even when intercepted.
+Encryption transforms data to keep that data confidential. The primary goal of encryption is to prevent unauthorized persons or organizations to be able to read the data, even when intercepted.
 
 Encryption can use a single (symmetric) key where the same key is used to both encrypt and decrypt a message. It can also use asymmetrical keys (2 or more) to encrypt data, where the key to encrypt is different from the key to decrypt.
 
@@ -209,18 +209,13 @@ ROT13 is identical to CAESAR13. Since this encryption method includes the key wi
 
 ![](ROT13.png)
 
-Encryption transforms data into another format in such a way that only specific individual(s) can reverse the transformation. It uses a key, which is kept secret, in conjunction with the plaintext and the algorithm, in order to perform the encryption operation. As such, the ciphertext, algorithm, and key are all required to return to the plaintext.
-
 Examples: CAESAR-cipher, PGP, 3DES, RSA, Blowfish, Twofish, AES
-
 
 [5 common ecryption algorithms](https://blog.storagecraft.com/5-common-encryption-algorithms/)
 
 ##### Hashing
 
-
-Hashing serves the purpose of ensuring integrity, i.e. making it so that if something is changed you can know that it’s changed. Technically, hashing takes arbitrary input and produce a fixed-length string that has the following attributes:
-
+Hashing creates a digest of data so that digest can be used to validate the origin or integrity of the data. Hashing takes arbitrary input and produce a fixed-length string that has the following attributes:
 * The same input will always produce the same output.
 * Multiple disparate inputs should not produce the same output.
 * It should not be possible to go from the output to the input.

@@ -6,3 +6,8 @@ You can only try to make it as hard and as low-impact as possible.
 
 
 Source: [Troy Hunt: 5 stages of Data breach grief](https://www.troyhunt.com/the-5-stages-of-data-breach-grief/)
+
+
+## We take your privacy very seriously
+
+[We take your privacy very seriously](https://techcrunch.com/2019/02/17/we-take-your-privacy-and-security-seriously/) by Zack Whittaker

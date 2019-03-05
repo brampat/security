@@ -7,6 +7,10 @@ Sub-pages:
 * [Types of attacks](testingTypes.md)
 * [Tools](tools/README.md)
 
+## Information gathering
+* [Footprinting](footprinting.md)
+* [Google Hacking](googleHacking.md)
+
 ## Networking
 * [DOS attacks](dos.md)
 * [Network sniffing](networkSniffing.md)
@@ -15,7 +19,7 @@ Sub-pages:
 
 ## Databases
 * SQL Injection (TODO) [cheat-sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
-* [Blind SQL Injection](sql-injection/blind_sqlinjection.md)
+* [Blind SQL Injection](sql-injection/README.md)
 * SQL Map (TODO)
 
 ## Account-management
@@ -31,11 +35,6 @@ Sub-pages:
 * [Different kinds](webapps/README.md) of Web-app attacks
 * [PHP](webapps/php/file-upload.md) File-upload and shell-access
 
-
-
-## Information gathering
-* [Footprinting](footprinting.md)
-* [Google Hacking](googleHacking.md)
 
 
 

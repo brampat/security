@@ -75,6 +75,11 @@ The tools described can be integrated in CI/CD toolchains.
   * C#: [PumaScan](https://github.com/pumasecurity/puma-scan)
   * Go: [Gosec](https://github.com/GoASTScanner/gas)
   * .NET: [OWASP O2](https://www.owasp.org/index.php/OWASP_O2_Platform)
+    * [Microsoft SDL](https://docs.microsoft.com/en-us/azure/security/azure-security-threat-modeling-tool) for Azure
+    * [WhiteSource](https://marketplace.visualstudio.com/items?itemName=whitesource.whitesource) for dependency management, checks licenses and vulnerabilities.
+    * [Fortify](https://marketplace.visualstudio.com/items?itemName=fortifyvsts.hpe-security-fortify-vsts) for VisualStudio
+    * [Checkmarx](https://marketplace.visualstudio.com/items?itemName=checkmarx.cxsast) for VisualStudio
+    * [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension) for active scan of vulnerabilities on running code
 * Security Unit tests
   * Leverage "test-obsessed" teams
   * Think evil to come up with test-cases: evil user stories, abuse cases, OWASP ASVS
@@ -234,7 +239,8 @@ The tools described can be integrated in CI/CD toolchains.
       * [BLOG](https://securityaffairs.co/wordpress/81288/security/hunting-mitres-attck-splunk.html) on using ThreatHunting
   * [Elastic Stack](https://www.elastic.co/solutions/security-analytics) with [additions](https://logz.io/blog/elk-siem/):
     * [X-Pack](https://www.elastic.co/products/stack)
-    * [EasltAlert](https://github.com/Yelp/elastalert)
+    * [ElastAlert](https://github.com/Yelp/elastalert)
+  * [Backstory](https://chronicle.security/products/backstory/) from Google / Alphabet's [Chronicle](https://chronicle.security/)
   * [OSSIM](https://www.alienvault.com/products/ossim)
   * [OSSEC](http://www.ossec.net/)
   * [Apache Metron](http://metron.apache.org/)

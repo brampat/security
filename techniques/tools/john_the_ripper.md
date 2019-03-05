@@ -31,3 +31,5 @@ john --show hashes
 
 
 
+--------------
+* [Custom rules for John the Ripper](https://www.gracefulsecurity.com/custom-rules-for-john-the-ripper/)
