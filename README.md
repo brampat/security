@@ -34,7 +34,6 @@ See [Certifications](certifications/README.md)
 * [Guru99 Ethical Hacking tutorials](https://www.guru99.com/ethical-hacking-tutorials.html)
 * [Yeahhub](https://www.yeahhub.com/) Advanced hacking tutorials
 
-
 ## Video's
 See [Video's](videos/README.md)
 
@@ -59,6 +58,19 @@ See [Video's](videos/README.md)
 
 
 ## [Terminology](terminology/README.md)
+
+## Bug Bounty platforms
+* [Zerocopter](https://www.zerocopter.com/nl/home) (Dutch) by [Edwin van Andel](https://twitter.com/Yafsec)
+* [HackerOne](https://www.hackerone.com/)
+* [BugCrowd](https://www.bugcrowd.com/)
+* [SynAck](https://www.synack.com/)
+* [Yes We Hack](https://www.yeswehack.com/en/index.html)
+* [Open Bug Bounty](https://www.openbugbounty.org/) with optional bounties
+* [Plug Bounty](https://www.plugbounty.com/) aimed at plugin-development
+* [Intigriti](https://www.intigriti.com/public/)
+* [Hackenproof](https://www.hackenproof.com/)
+* [Cobalt](https://cobalt.io/) aimed as SaaS
+
 
 ## Hacking way of working
 - [Stages](./techniques/stages)

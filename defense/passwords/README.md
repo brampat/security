@@ -103,41 +103,7 @@ When receiving multiple login-attempts for a single user or from single sources,
 A website may opt to disallow certain passwords, because of their predictability. A balance between blacklisting enough passwords to be effective and not too much to frustrate users should be made. Having password complexity rules may not be the best option for enforcing password-strength, but it is much more easily explained to the user why a certain password is not allowed. Explaining why a password is not allowed becasue it is one of billions of leaked passwords is hard for users to understand. 
 
 #### SQL injection
-This attack is mostly employed on insecure websites or systems that use databases to store data like credentials, forum-posts, messages, online catalogue-data etc.
-
-##### How it works
-An attacker may use malformed data in a request, using a query-field, a search-box or login-fields to abuse unsafe SQL-code and inject malicious SQL-code on the server. This can be abused to gain access to user accounts, retrieve data from or change data in the database of the application.
-
-###### Account takeover
-For example, consider a simple login-form:
-
-![](login-form.png)
-
-Now consider the following code to validate the credentials:
-
-```SQL
-SELECT U.USERNAME FROM USERS U WHERE U.USERNAME = '" + $_POST['username'] + "' AND U.PASSWORD = '" + $_POST['password'] + "' 
-```
-
-When used as intended, this statement will result in the following example query:
-
-```SQL
-SELECT U.USERNAME FROM USERS U WHERE U.USERNAME = 'foo' AND U.PASSWORD = 'bar' 
-```
-
-If there is a user with username 'foo' and password 'bar', this query returns a single result and the user is authenticated. But consider the following malicious input:
-
-Username: ```admin'--```
-Password: ```doesnt matter```
-
-This will result in the following SQL statement
-```SQL
-SELECT U.USERNAME FROM USERS U WHERE U.USERNAME = 'admin'--' AND U.PASSWORD = 'doesnt matter' 
-```
-
-The password-check is now commented out, including the hardcoded end-of-string quote directly following the username param. This will result in the query just checking for the corresponding username and logging in as that user.
-Since the query is constructed using String concatenation, with malicious input, the attacker can re-structure the SQL-statement to perform the unintended behavior.
-
+See [here](../../techniques/sql-injection/README.md) for explanation of the attack
 
 ##### Defense
 

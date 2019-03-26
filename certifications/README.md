@@ -45,3 +45,117 @@ Compared to CEH, this certification is much more challenging and valuable
 
 Preparation guides:
 * [From newbie to OSCP](http://niiconsulting.com/checkmate/2017/06/a-detail-guide-on-oscp-preparation-from-newbie-to-oscp/)
+
+
+## SANS
+
+| Days  | Relevant for             | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+| 6     | Web-dev                  | [DEV522](https://www.sans.org/course/defending-web-applications-security-essentials): Defending Web Applications Security Essentials                                                  | [GWEB](https://www.giac.org/certification/gweb) | $ 6610  + $ 769 for cert |
+| Online only   | Dev-ops          | [DEV534](https://www.sans.org/course/secure-dev-ops-a-practical-introduction): Secure DevOps: A Practical Introduction                                                                |                   | $ 2640|
+| 2     | Mobile-dev               | [DEV531](https://www.sans.org/course/defending-mobile-applications-security-essentials): Defending Mobile Applications Security Essentials                                            |                   |       |
+| 5     | Cloud                    | [DEV540](https://www.sans.org/course/secure-devops-cloud-application-security): Secure DevOps and Cloud Application Security                                                          |                   | $ 5730|
+| 4     | Java                     | [DEV541](https://www.sans.org/course/secure-coding-java-jee-developing-defensible-applications): Secure Coding in Java/JEE: Developing Defensible Applications                        | [GSSP-JAVA](https://www.giac.org/certification/gssp-java) | $5180 + $769 for cert  |
+|       | C/C++                    | [DEV543](https://www.sans.org/course/secure-coding-c-plus-plus): Secure Coding in C & C++	                                                                                            |                   |       |
+|       | .NET/C#                  | [DEV544](https://www.sans.org/course/secure-coding-net-developing-defensible-applications): Secure Coding in .NET: Developing Defensible Applications                                 | [GSSP-.NET](https://www.giac.org/certification/gssp-.net) | $5180 + $769 for cert  |
+|       | Pen-testers              | [SEC542](https://www.sans.org/course/web-app-penetration-testing-ethical-hacking): Web App Penetration Testing and Ethical Hacking	                                                | [GWAPT](https://www.giac.org/certification/gwapt)         | $6610 + $769 for cert  |
+|       | Pen-testers              | [SEC642](https://www.sans.org/course/advanced-web-app-penetration-testing-ethical-hacking): Advanced Web App Penetration Testing, Ethical Hacking, and Exploitation Techniques	    |                   | $ 6610|
+
+[Software Development](https://www.sans.org/courses/developer) curriculum
+[All](https://www.sans.org/course/) courses
+
+
+## EC-Council
+
+Focus on Pen-testing. Quality of training and value of certification is debatable
+
+| Days  | Relevant for                  | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+| 3     | Java                     | [CASE Java](https://www.eccouncil.org/programs/certified-application-security-engineer-case/) Certified Application Security Engineer                                                 | Included          | $1069 |
+| 3     | .NET/C#                  | [CASE .NET](https://www.eccouncil.org/programs/certified-application-security-engineer-case/) Certified Application Security Engineer                                                 | Included          | $1069 |
+
+[Source](https://www.eccouncil.org/programs/)
+
+
+## ISC<sup>2</sup>
+
+| Relevant for             | Self-paced Training (online)                                          | Certification     | Cost  |
+| ------------------------ | --------------------------------------------------------------------- | ----------------- | ----: |
+| BPS, SDLC                | [CSSLP](https://www.amazon.de/Official-Guide-CSSLP-Second-Edition/dp/1466571276/) (book)                      | [CSSLP](https://www.isc2.org/Certifications/CSSLP) Certified Secure Software Lifecycle Professional           | € 83 (book) + € 555   |
+| BPS, Cloud Architects    | [CCSP](https://enroll.isc2.org/product?catalog=CCSP-SPT-GLOBAL) Certified Cloud Security Professional         | [CCSP](https://www.isc2.org/Certifications/CCSP) Certified Cloud Security Professional                        | $ 1995 + € 555        |
+|                          | [SSCP](https://www.coursera.org/specializations/sscp-training) Systems Security Certified Practitioner        | [SSCP](https://www.isc2.org/Certifications/SSCP)                                                              | $ 1740 ([Instructor-led online](https://www.koenig-solutions.com/sscp-system-security-practitioner-certification-training-course-usa.aspx) 1-on-1) or € 2895 [classroom-based](https://www.globalknowledge.com/nl-NL/Trainingen/ISC2/Information_Security_Management_and-or_Cybersecurity_Management/SSCP) in NL + € 230 (Cert)   |
+|                          | [CISSP](https://enroll.isc2.org/product?catalog=CISSP-SPT-GLOBAL) Information Systems Security Professional   | [CISSP](https://www.isc2.org/Certifications/CISSP) Certified Information Systems Security Professional        | $ 1720 ([Instructor-led online](https://www.koenig-solutions.com/cissp-information-system-security-professional-certification-training-course-usa.aspx) 1-on-1) € 2995,- or € 1931 (last-minute) [class-room based](https://www.globalknowledge.com/nl-nl/trainingen/ISC2/Security/GK9840) in NL + € 650 (Cert)   |
+| CISO, Healthcare         | [HCISSP](https://www.amazon.de/gp/product/1482262770/) (book)                                                  | [HCISPP](https://www.isc2.org/Certifications/HCISPP) Healthcare Information Security and Privacy Practitioner | € 68 (book) + € 555   |
+
+
+ISC2 [Class-room based](https://www.isc2.org/Training/Classroom-Based)
+
+## Scademy
+
+Only available as group-package. Price-quote on request.
+
+| Days  | Relevant for             | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+| 3     | Java, Web                | [CL-JWA](https://www.scademy.com/courses/cl-jwa/) Java and Web Application Security                                                                                                   | No                | ??    |
+| 3     | Java, Android            | [CL-AND](https://www.scademy.com/courses/cl-and/) Android Security                                                                                                                    | No                | ??    |
+| 3     | Java, C/C++, .NET/C#, Web, DevOps | [CL-WDT](https://www.scademy.com/courses/cl-wtd/) Secure Web Application Development and testing for DevOps                                                                  | No                | ??    |
+| 4     | Java, C/C++, Native Mobile | [CL-AAN](https://www.scademy.com/courses/cl-aan/) Android Java and Native code Security                                                                                             | No                | ??    |
+| 4     | Java EE, Web             | [CL-JWE](https://www.scademy.com/courses/cl-jwe/) Java EE and Web Application Security                                                                                                | No                | ??    |
+| 5     | Java, Web                | [CL-JSM](https://www.scademy.com/courses/cl-jsm/) Java and Web Application Security Master Course                                                                                     | No                | ??    |
+| 3     | .NET / C# / ASP.NET      | [CL-ANS](https://www.scademy.com/courses/cl-ans/) Secure Desktop Application Development in C#                                                                                        | No                | ??    |
+| 3     | .NET / C# / ASP.NET      | [CL-NWA](https://www.scademy.com/courses/cl-nwa/) C# amd Web Application Security                                                                                                     | No                | ??    |
+| 5     | .NET / C# / ASP.NET      | [CL-NSM](https://www.scademy.com/courses/cl-nsm/) C# and Web Application Security Master course                                                                                       | No                | ??    |
+| 3     | .NET / C# / ASP.NET, SDL | [CL-SDW](https://www.scademy.com/courses/cl-sdw/) Web Application Security with SDL                                                                                                   | No                | ??    |
+
+
+[source](https://www.scademy.com/)
+
+## Global Knowledge
+
+Courses are mostly Live Virtual classroom courses
+
+| Days  | Relevant for             | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+| 5     | Java                     | [TT8325-J](https://www.globalknowledge.com/us-en/course/84608/secure-java-web-application-development-lifecycle-sdl-tt8325-j/) Secure Java Web Application Development Lifecycle-SDL  | No                | $ 2595|
+| 5     | .NET/C#                  | [TT8325-N](https://www.globalknowledge.com/us-en/course/87020/secure-net-web-application-development-lifecycle-tt8325-n/) Secure .Net Web Application Development - Lifecycle         | No                | $ 2595|
+| 4     | Java                     | [TT8320-J](https://www.globalknowledge.com/us-en/course/85000/securing-java-web-applications-tt8320-j/) Securing Java Web Applications                                                | No                | $ 2395|
+| 1.5   | Java                     | [TT8320-J](https://www.globalknowledge.com/us-en/course/85000/securing-java-web-applications-tt8320-j/) Securing Java Web Applications (On-demand, elearning)                         | No                | $  720|
+| 4     | .NET/C#                  | [TT8320-N](https://www.globalknowledge.com/us-en/course/85914/securing-net-web-applications-tt8320-n/) Securing .NET Web Applications                                                 | No                | $ 2395|
+| 2     | Java, .NET/C#            | [TT8120](https://www.globalknowledge.com/us-en/course/84999/secure-web-application-development-seminar-tt8120/) Secure Web Application Development Seminar                            | No                | $ 1595|
+| 2     | Java EE, Web             | [TT8120-JEE](https://www.globalknowledge.com/us-en/course/85921/secure-jee-web-application-development-tt8120-jee/) Secure JEE Web Application Dvelopment                             | No                | $ 1495|
+| 4     | Java EE                  | [TT8500-J](https://www.globalknowledge.com/us-en/course/85915/securing-jee-web-services-tt8500-j/) Securing JEE Web Services                                                          | No                | $ 2195|
+
+[source](https://www.globalknowledge.com/us-en/training/course-catalog/topics/application-development/secure-development/)
+
+## High Tech Institute
+
+| Days  | Relevant for             | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+| 3     | .NET/C#                  | [here](https://www.hightechinstitute.nl/en/training/software/training_c_and_web_application_security/) Training C# and Web application security                                       | No                | €1850 |
+| 3     | C / C++                  | [here](https://www.hightechinstitute.nl/en/training/software/training_c_and_c_secure_coding/) Training C and C++ secure coding                                                        | No                | €1850 |
+| 3     | Java, Web                | [here](https://www.hightechinstitute.nl/en/training/software/training_java_and_web_application_security/) Training Java and Web application security                                  | No                | €1850 |
+
+
+## Fundamentals of Secure Application Development
+
+This training is available from these three sources. Course outline is exactly identical.
+
+| Days  | Relevant for             | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+| 2     | SDLC, Testing            | Fundamentals of Secure Application Development [ASPE](http://aspetraining.com/courses/fundamentals-of-secure-application-development)                                                 | No                | $ 1395|
+| 2     | SDLC, Testing            | Fundamentals of Secure Application Development [Learning Tree](https://www.learningtree.com/courses/1825/secure-programming-training-developer-security-training/)                    | No                | ??    |
+| 2     | SDLC, Testing            | Fundamentals of Secure Application Development [Tech Town](http://techtowntraining.com/courses/fundamentals-of-secure-app-development)                                                | No                | $ 1395|
+
+
+## Pluralsight
+
+| Days  | Relevant for             | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+| 1     | SDLC                     | [Secure Software Development](https://www.pluralsight.com/courses/software-development-secure)                                                                                        | No                | Pluralsight access at $ 300,- / year  |
+| 2     | Java, .NET/C#            | [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first)                                                                                                        | No                | Pluralsight free course  |
+
+
+
+
+
+

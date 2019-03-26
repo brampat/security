@@ -21,7 +21,7 @@
 * [Top hacker shows how it's done](https://www.youtube.com/watch?v=hqKafI7Amd8) by Pablos Holman
 * [Steal everything, kill everyone, cause total financial ruin](https://www.youtube.com/watch?v=JsVtHqICeKE) by Jayson E. Street
 * [The dark site of the web](https://www.youtube.com/watch?v=HfuZJVpNWR4) by Kyle Terry
-
+* [Chris Roberts](https://www.youtube.com/watch?v=PMP9TKrQBKQ) at Tweakers XL Privacy & Security May 2018
 
 ## Why hackers?
 * [Hackers: the internet's immune system](https://www.youtube.com/watch?v=erCAp_Bd0AQ) by [Keren Elazari](https://twitter.com/k3r3n3)

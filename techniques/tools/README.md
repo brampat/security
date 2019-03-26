@@ -8,6 +8,9 @@
 
 ## Information gathering
 * [You Get Signal](https://www.yougetsignal.com/tools/web-sites-on-web-server/): Reverse IP domain check
+* [Initial Scan](https://github.com/SolomonSklash/initial-scan): A tool for performing an initial, information-gathering scan of websites for penetration tests.
+* [Osmedeus](https://github.com/j3ssie/Osmedeus): Automatic Reconnaissance and Scanning in Penetration Testing
+
 
 ## Network scanning
 * Nmap: Network scanning tool, comes with most Linux distributions, but also available on Windows
@@ -54,8 +57,8 @@
 * [Hydra](https://sectools.org/tool/hydra/): Dictionary attacks against numerous network protocols
 
 ## Database
-* [SQLMap](http://sqlmap.org/): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
 * [SQLMap](tools/sqlmap.md): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
+* [AutoSQLi](https://github.com/jesuiscamille/AutoSQLi): An automatic SQL Injection tool which takes advantage of ~DorkNet~ Googler, Ddgr, WhatWaf and sqlmap.
 
 ## Web app
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner

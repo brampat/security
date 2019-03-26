@@ -131,6 +131,7 @@ The tools described can be integrated in CI/CD toolchains.
   * Integrate into CI/CD
   * Tools:
     * [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
+    * [JForg X-Ray](https://jfrog.com/xray/): in combination with JFrog Artifactory
     * [PHP Sercurity Checker](https://security.sensiolabs.org/)
     * Ruby [Bundler-Audit](https://github.com/rubysec/bundler-audit)
     * Gemnasium

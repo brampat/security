@@ -8,6 +8,15 @@ Collection of links to Hack-related news
 
 ## 2019
 
+### March
+
+* [ASUS](https://techcrunch.com/2019/03/25/asus-update-backdoor/) update software backdoored to target 600 specific Mac-addresses
+  * Same on [Hackernews](https://thehackernews.com/2019/03/asus-computer-hacking.html) 
+* Hydro hit by [LockerGoga](https://doublepulsar.com/how-lockergoga-took-down-hydro-ransomware-used-in-targeted-attacks-aimed-at-big-business-c666551f5880?gi=f6a067014efa) ransomware
+* Teenage hacker [breaks $1M mark](https://www.businesswire.com/news/home/20190301005093/en/Teen-World%E2%80%99s-1-Million-Bug-Bounty-Hacker) on HackerOne
+  * [More](https://www.bbc.com/news/av/technology-47407609/how-one-teenager-is-making-millions-by-hacking-legally)
+
+
 ### January
 * [iPhone hack-tool Karma](https://www.reuters.com/investigates/special-report/usa-spying-karma/) only needs phone-number or email-account
 

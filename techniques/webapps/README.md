@@ -29,6 +29,7 @@
   * [XXS basics](https://www.gracefulsecurity.com/xml-external-entity-injection-xxe-vulnerabilities/) XML External Entity injection 
 * XSS - Cross Site Scripting
   * Having fun with XSS: Do the [Harlem Shake](https://gist.github.com/marcaube/692b5bdb99ba69b9b60f471d2721aa95) in [action](https://www.youtube.com/watch?v=K0noqLisW_c) at Dutch banks (2015)
+  * [Samy is my Hero](https://en.wikipedia.org/wiki/Samy_(computer_worm)): MySpace worm gets 1M infected "friends" within 20 hours
   * [XSS basics](https://www.gracefulsecurity.com/what-is-cross-site-scripting-xss/) and [context](https://www.gracefulsecurity.com/cross-site-scripting-lesson-2-contexts/)
   * [XSS: Life after the alert box](https://www.gracefulsecurity.com/cross-site-scripting-xss-life-after-the-alert-box/)
   * Stored (Persistent, Type I): payload can be stored in the web-app by means of forum-comments, feedback etc. When these are displayed, a victims will be confronted with malicious content

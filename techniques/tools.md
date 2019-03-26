@@ -1,7 +1,6 @@
 # Tools
 
 * [Security Tools list](https://sectools.org)
-
 * [Kali Linux](https://www.kali.org/downloads/): Linux distro specifically for Penetration testing, strict Debian based
 * [Back track Linux](https://www.backtrack-linux.org/): Precursor to Kali Linux (since 2013), Ubuntu based.
 * [MacChanger](https://www.hackingtutorials.org/general-tutorials/mac-address-spoofing-with-macchanger/): Change mac-addresses of your network interfaces to allow for anonimization or spoofing [https://www.youtube.com/watch?v=7nF2BAfWUEg&t=12469s](Basic tutorial on 3:34:05)
@@ -87,14 +86,20 @@
 
 ## Practicing
 
-* [OWASP maintained list](https://github.com/OWASP/OWASP-VWAD) contains both online, offline and VM vulnerable applications
+### Super-basics
+* [Hacksplaining](https://www.hacksplaining.com/lessons)
+* [Security Ninja's](https://github.com/cniemira/security-ninjas) OpenSource AppSec training with examples for all OWASP Top 10 vulnerabilities
+
+### Various levels
+* [Root-me](https://www.root-me.org/?lang=en): Online challenges and VM to practice hacking
+* [Hack.me](https://hack.me/): Online challenges on vulnerable web-applications
+* [Hack the box](https://www.hackthebox.eu/): Online testing environment, accessible after completing an entry-level test
 * [OWASP JuiceShop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project) vulnerable webapplication
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
-* [Hack the box](https://www.hackthebox.eu/): Online testing environment, accessible after completing an entry-level test
-* [Root-me](https://www.root-me.org/?lang=en): Online challenges and VM to practice hacking
-* [Hack.me](https://hack.me/): Online challenges on vulnerable web-applications
 
+### Lists of practice sites and VM's
+* [OWASP maintained list](https://github.com/OWASP/OWASP-VWAD) contains both online, offline and VM vulnerable applications
 
 ---------------
 Sources:

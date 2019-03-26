@@ -2,6 +2,8 @@
 
 Enumerate and extract data from SQL databases
 
+Download SQLMap [here](http://sqlmap.org/)
+
 
 ## GET request
 
