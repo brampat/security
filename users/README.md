@@ -17,7 +17,7 @@ please watch [this page](../videos/README.md) under _Fun stories_ and _Why hacke
 * Use a password-manager
   * See [Mary Password Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ) for explanation on safe password usage and password-managers  
 * Use unique, long and unpredictable passwords
-  * See [this page](../blogs/2018-02-08_passwords_myths_errors_tip_for_users/README.md)for more info on passwords
+  * See [this page](../publications/2018-02-08_passwords_myths_errors_tip_for_users/README.md)for more info on passwords
 * Use 2-factor authentication
 * Update your software
   * Including PC, laptop, Smartphone, WiFi router, Smart-TV, Smart-automobile, etc.

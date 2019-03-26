@@ -9,7 +9,7 @@ Password cracking can very effectively be defended against using (a combination 
 * Password-managers (as explained by [Mary Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ))
   * Choosing a password-manager can be [tricky](https://www.securityevaluators.com/casestudies/password-manager-hacking/) as these don't guarantee 100% safety, though nothing will. I do want to stress that using any password-manager (listed in the article) gives far more security than reuse or otherwise predictable passwords.
 
-See my article for users (Dutch) [here](../blogs/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
+See my article for users (Dutch) [here](../publications/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
 
 ## Developers can adopt:
 * Proper hashing (bcrypt)
@@ -18,7 +18,7 @@ See my article for users (Dutch) [here](../blogs/2018-02-08_passwords_myths_erro
 * 2FA / Multi-FA
 * Account lockout (temporary, after failed logins)
 
-See my article for developers (Dutch) [part 1](../blogs/2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md) and [part 2](../blogs/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
+See my article for developers (Dutch) [part 1](../publications/2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md) and [part 2](../publications/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
 
 ## Rigorous defense:
 * Disallow all cracked passwords (eg. using Troy Hunt's [Pwnd Passwords API](https://haveibeenpwned.com/API/v2) )

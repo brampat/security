@@ -75,7 +75,7 @@ Although all of the above help in creating a strong password, none of these are 
 * randomness
 * no re-use
 
-If these factors are included, even a decimal only password can be [strong enough](../../blogs/2019-02-20_passwords_fun_with_numbers/README.md) (see final table: 23 length decimal password can withstand a $847k intelligence agency grade password-cracking machine).  
+If these factors are included, even a decimal only password can be [strong enough](../../publications/2019-02-20_passwords_fun_with_numbers/README.md) (see final table: 23 length decimal password can withstand a $847k intelligence agency grade password-cracking machine).  
 
 ### Online attacks:
 These attacks describe online attacks performed against running systems, including websites, online API's, backends exposed to outside connections or apps. These attacks use automated tools to fire multiple password-guesses per second to the system using lists of credentials to try out, reading the response to scan for valid credentials. Tools like Burp-suite's Repeater can launch these attacks.
@@ -221,7 +221,7 @@ Salting (Dynamic & Static)
 
 ##### Statistics
 
-Full analysis: see [this blog](../../blogs/2019-02-20_passwords_fun_with_numbers/README.md)
+Full analysis: see [this blog](../../publications/2019-02-20_passwords_fun_with_numbers/README.md)
 
 ##### Defense
 
