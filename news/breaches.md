@@ -10,6 +10,28 @@ Sources:
 
 ## 2019
 
+### February
+| When | Who | How many | What | Source |
+| ---- |--------|--------|--------|-------|
+| 2019-02-11 | Dubsmash | 162M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | MyFitnessPas | 151M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | MyHeritage | 92M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | ShareThis | 41M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | HauteLook | 28M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | Animoto | 25M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | EyeEm | 22M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | 8fit | 20M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | Whitepages | 18M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | Fotolog | 16M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | 500px | 15M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | Armor Games | 11M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | BookMate | 8M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | CoffeeMeetsBagel | 6M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | Artsy | 1M accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+| 2019-02-11 | Datacamp | 700k accounts |  | [The Register](https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/) |
+
+
+
 ### January
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
