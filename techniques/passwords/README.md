@@ -72,7 +72,7 @@ This method would fail when proper salting is applied which is the site's or app
 using unique, random and long passwords. These can easily be created within password-managers. 
 
 Studies on the most commonly used passwords indicate that the 25 most commonly used passwords where used in about 10% of all passwords
-in that study. So trying only those 25 passwords could access 10% of all accounts. The most common password "123456" accounted for 4%.
+in that study. So trying only those 25 passwords could access 10% of all accounts (in the observed systems from that study). The most common password "123456" accounted for 4%.
 
 ## Impact
 What has more impact on the strength of passwords? Length or complexity? If I had to choose between a long password of words 
