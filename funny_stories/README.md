@@ -10,6 +10,6 @@ This page contains a collection of (links to) funny infosec related stories.
 
 ## Hacking the Expo exhibitor badges
 
-In [this](https://www.bulletproof.co.uk/blog/expo-hack) Tom Wyatt of Bulletproof (UK) tells about printable Exhibition badges with QR-codes that are vulnerable to some injection. What could possibly go wrong?
+In [this](https://www.bulletproof.co.uk/blog/expo-hack) blog Tom Wyatt of Bulletproof (UK) tells about printable Exhibition badges with QR-codes that are vulnerable to some injection. What could possibly go wrong?
 
 
