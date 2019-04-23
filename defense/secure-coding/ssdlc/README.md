@@ -4,7 +4,7 @@
 ## CI/CD
 
 * Hacking Jenkins part [1](https://blog.orange.tw/2019/01/hacking-jenkins-part-1-play-with-dynamic-routing.html) and [2](http://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html)
-
+* [CI/CD hardening](https://snyk.io/blog/so-you-think-your-ci-cd-environment-is-secure/) by [Snyk.io](https://snyk.io)
 
 
 ## Agile software development
