@@ -21,6 +21,7 @@ Failure to gain authorization BEFORE you even try to hack a system may result in
 
 ## Pages similar like this
 * [Resources for learning Hacking](https://github.com/faizann24/Resources-for-learning-Hacking) - Faizan Ahmad
+* [The Book of secret knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more
 * [Hacking books](https://github.com/tanc7/hacking-books) PDF downloads
 
 ## Books & Film
