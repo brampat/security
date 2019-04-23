@@ -8,6 +8,11 @@ Collection of links to Hack-related news
 
 ## 2019
 
+### April
+
+* [Carbanak Mallware sources found](https://thehackernews.com/2019/04/carbanak-malware-source-code.html): Researchers found the full source-code of the Carbanak (FIN7, Anunak or Cobalt) malware
+  * [Analysis](https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-one-a-rare-occurrence.html) from FireEye in 4 parts. 
+
 ### March
 
 * [ASUS](https://techcrunch.com/2019/03/25/asus-update-backdoor/) update software backdoored to target 600 specific Mac-addresses
