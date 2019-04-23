@@ -445,7 +445,7 @@ How<!-- .element: class="fragment" data-fragment-index="3" style="position: fixe
 <hr />
 
 Analyze:
-![](./pics/hs_zuyd.jpeg)<!-- .element style="position: fixed; top: 250px; right: 20px; width: 475px;" -->
+![](./pics/school.png)<!-- .element style="position: fixed; top: 250px; right: 20px; width: 475px;" -->
 
 * What
 * Who
