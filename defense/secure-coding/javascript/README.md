@@ -3,9 +3,12 @@
 
 * [SonarLint](https://www.sonarlint.org/) for VisualStudio, IntelliJ and Eclipse
 * [Mocha](https://mochajs.org/): Test framework
-* [NPM Audit](https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities): Dependency check
 * [Building Secure Angular Applcations](https://www.youtube.com/watch?v=WK2qc4U405I) by [Philippe de Ryck](https://twitter.com/philippederyck)
 * [JsHtmlSanitizer](http://code.google.com/p/google-caja/wiki/JsHtmlSanitizer)
+
+## NPM
+* [NPM Audit](https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities): Dependency check
+* [10 NPM Security Best practices](https://snyk.io/blog/ten-npm-security-best-practices/)
 
 ## NodeJS
 

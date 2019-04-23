@@ -70,7 +70,9 @@ The tools described can be integrated in CI/CD toolchains.
     * [Phan](https://github.com/etsy/phan)
   * JavaScript: [NodeJsScan](https://github.com/ajinabraham/NodeJsScan)
   * Ruby: [Brakeman](http://brakemanscanner.org/)
-  * Python: [Bandit](https://github.com/openstack/bandit)
+  * Python:
+    * [Bandit](https://github.com/openstack/bandit) on GitHub
+    * [Bandit](https://bandit.readthedocs.io/en/latest/)
   * C: [Flawfinder](http://www.dwheeler.com/flawfinder/)
   * C#: [PumaScan](https://github.com/pumasecurity/puma-scan)
   * Go: [Gosec](https://github.com/GoASTScanner/gas)
