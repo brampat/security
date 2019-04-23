@@ -11,10 +11,23 @@
 * [Initial Scan](https://github.com/SolomonSklash/initial-scan): A tool for performing an initial, information-gathering scan of websites for penetration tests.
 * [Osmedeus](https://github.com/j3ssie/Osmedeus): Automatic Reconnaissance and Scanning in Penetration Testing
 
+## Search engines for Hackers:
+* https://censys.io/ 
+* https://www.shodan.io/ 
+* https://viz.greynoise.io/table 
+* https://www.zoomeye.org/ 
+* https://wigle.net/ 
+* https://publicwww.com/ 
+* https://hunter.io/ 
+* https://haveibeenpwned.com/ 
+* https://pipl.com/ 
+* https://osintframework.com/ 
+
 
 ## Network scanning
 * Nmap: Network scanning tool, comes with most Linux distributions, but also available on Windows
 * Zenmap: GUI front-end to Nmap
+* [GoScan](https://github.com/marco-lancini/goscan): Similar to NMap, developed in Go
 * [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
 * OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
@@ -83,7 +96,6 @@
 
 
 ## Other
-
 * [https://Crawler.ninja](Crawler.ninja): Security Statistics on top 1 million Alexa sites
 
 ---------------
