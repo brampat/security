@@ -143,6 +143,10 @@ OWASP SQL injection prevention [cheatsheet](https://github.com/OWASP/CheatSheetS
 * Whitelist input validation: using a switch-case construct to limit the number of options a request may supply. For instance when supplying the order-column
 * Escape all user-supplied input: escaping user-input is a good practice in general, but is not the best option for protection against SQL-injection, since it can be database-specific. OWASP [ESAPI](https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API) can be used for escaping user-input.
 
+There's even a site specifically for SQL-injection called [Booby-tables](http://bobby-tables.com), referencing the famous comic:
+
+![](../../publications/presentation/pics/bobby_tables.png)
+
 #### Encoding, encryption & hashing
 
 All these techniques are used for converting the format of data. 
@@ -200,6 +204,9 @@ Examples: sha-3, md5 (now obsolete), etc.
 | Encoding      | Yes           | No                            | Efficiency of transmission or storage of data, mostly text, but some encoding schemes also support binary format          | ASCII, Unicode, Base64, ROT13, HTML               |
 | Encryption    | Yes           | Yes (symetric or asymetric)   | Protect confidentiality of information                                                                                    | PGP, 3DES, RSA, Blowfish, Twofish, AES            |
 | Hashing       | No            | -                             | Password storage, file and application integrity validation                                                               | MD5, SHA1, SHA2 (256, 512 etc), Bcrypt, Scrypt    |
+
+
+[Slides](https://www.slideshare.net/sas3/secure-password-storage-management) from Jim Manico
 
 
 ### Offline attacks:
