@@ -15,7 +15,7 @@ Collection of links to Hack-related news
 * [TicToc GPS tracking watch Pwnd](https://www.pentestpartners.com/security-blog/tic-toc-pwned/)
 * [How to track your kids](https://www.troyhunt.com/how-to-track-your-kids-and-other-peoples-kids-with-the-tictoctrack-watch/) and other people's kids by Troy Hunt
 * [Hacker dox'd thousands of US Police and federal agents](https://techcrunch.com/2019/04/12/police-data-hack/)
-
+* [Julien Assange](https://motherboard.vice.com/en_us/article/mb8qyn/julian-assange-charged-with-hacking-conspiracy-not-publishing) charged for hacking and extradited from Ecuadorian embassy
 
 ### March
 
