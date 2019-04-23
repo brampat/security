@@ -633,7 +633,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 ![](./pics/stegemanschiphol.jpg)<!-- .element style="position: fixed; width: 350px; top: 200px; right: 120px; background-color: #ffffff;" -->
 
-![](./pics/stuktv.png)<!-- .element style="position: fixed; width: 400px; top: 300px; left: 60px; background-color: #ffffff;" -->
+![](./pics/streetlab_cannes.png)<!-- .element style="position: fixed; width: 400px; top: 300px; left: 60px; background-color: #ffffff;" -->
 
 [Crying baby example](https://www.youtube.com/watch?v=lc7scxvKQOo)
 
@@ -641,6 +641,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 * Alberto Stegeman tests Schiphol security
 * [StukTV](https://www.youtube.com/watch?v=vFd6kIdjUpM) enters festival as sound / decibel auditors
+* [StreetLab](https://www.youtube.com/watch?v=d8cB0x5wEBc) on stage at Cannes Film-festival (around 12:00)
 
 --
 
