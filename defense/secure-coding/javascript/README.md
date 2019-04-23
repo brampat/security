@@ -17,7 +17,7 @@
 * [NodeJS Security Best Practices](https://expressjs.com/en/advanced/best-practice-security.html)
 * [NodeJS Security tips](https://blog.risingstack.com/node-js-security-tips/)
 * [NodeJS Security Checklist](https://blog.risingstack.com/node-js-security-checklist/)
-
+* [NodeJS integrity policies](https://snyk.io/blog/introducing-experimental-integrity-policies-to-node-js/)
 
 ## Practice
 
