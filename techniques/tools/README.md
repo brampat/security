@@ -55,7 +55,7 @@
 * [Cain & Abel](http://www.softpedia.com/get/Security/Decrypting-Decoding/Cain-and-Abel.shtml): Windows tool with GUI to recover crack / recover passwords of various tools, network sniffing etc.
 * [Ophcrack](http://ophcrack.sourceforge.net/): Cross platform tool uses Rainbow table attacks or brute force.
 * [Hydra](https://sectools.org/tool/hydra/): Dictionary attacks against numerous network protocols
-* [Pipal](https://digi.ninja/projects/pipal.php) Password Analyser
+* [Pipal](https://digi.ninja/projects/pipal.php) Password Analyser [Usage tips](./pipal.md)
 
 
 ## Database
