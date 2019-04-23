@@ -1,7 +1,7 @@
 # JavaScript Secure coding
 
-
 * [SonarLint](https://www.sonarlint.org/) for VisualStudio, IntelliJ and Eclipse
+* [ESLint](https://medium.com/greenwolf-security/linting-for-bugs-vulnerabilities-49bc75a61c6) How-to blog by [Jacob Wilkin](https://twitter.com/Jacob_Wilkin) 
 * [Mocha](https://mochajs.org/): Test framework
 * [Building Secure Angular Applcations](https://www.youtube.com/watch?v=WK2qc4U405I) by [Philippe de Ryck](https://twitter.com/philippederyck)
 * [JsHtmlSanitizer](http://code.google.com/p/google-caja/wiki/JsHtmlSanitizer)
