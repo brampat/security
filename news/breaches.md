@@ -10,6 +10,12 @@ Sources:
 
 ## 2019
 
+### April
+| When | Who | How many | What | Source |
+| ---- |--------|--------|--------|-------|
+| 2019-04-17 | JustDial | 100M user-info | NoSQL database accessed by an old API endpoint containing users' name, email, mobile number, address, gender, date of birth, photo, occupation, company name | [Hacker News](https://thehackernews.com/2019/04/justdial-hacked-data-breach.html)
+| 2019-04-12 | FBI National Academy Association | 4000 Dox'd agents | member names, a mix of personal and government email addresses, job titles, phone numbers and their postal addresses of FBI and Police officers | [TechCrunch](https://techcrunch.com/2019/04/12/police-data-hack/) |
+
 ### March
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
@@ -141,6 +147,7 @@ Sources:
 ### January
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
+| 2018-01-XX | Club Pengiun Rewritten | 1,688,176 accounts | E-mail addresses, IP-addresses, usernames & passwords in bcrypt | [ITSecurity News](https://www.itsecuritynews.info/club-penguin-rewritten-1688176-breached-accounts/)
 | 2018-01-30 | joomlart.com               |      22,477 | In January 2018, the Joomla template website <a href="https://www.joomlart.com/" target="_blank" rel="noopener">JoomlArt</a> inadvertantly exposed more than 22k unique customer records in a Jira ticket. The exposed data was from iJoomla and JomSocial, both services that <a href="https://www.joomlart.com/blog/joomlart-acquires-ijoomla-and-jomsocial" target="_blank" rel="noopener">JoomlArt acquired the previous year</a>. The data included usernames, email addresses, purchases and passwords stored as MD5 hashes. When contacted, JoomlArt advised they were aware of the incident and had previously notified impacted parties. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/JOOMLART) |
 
 ## 2017
@@ -225,6 +232,7 @@ Sources:
 | 2017-01-01 | littlemonsters.com         |     995,698 | In approximately January 2017, <a href="https://www.heise.de/security/meldung/Little-Monsters-Nutzerdaten-aus-Lady-Gagas-Social-Network-sollen-geleakt-sein-3646447.html" target="_blank" rel="noopener">the Lady Gaga fan site known as &quot;Little Monsters&quot; suffered a data breach that impacted 1 million accounts</a>. The data contained usernames, email addresses, dates of birth and bcrypt hashes of passwords. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/LITTLEMONSTERS) |
 | 2017-01-01 | hub4tech.com               |      36,916 | On an unknown date in approximately 2017, the Indian training and assessment service known as <a href="https://www.forumcommunity.net/" target="_blank" rel="noopener">Hub4Tech</a> suffered a data breach via a SQL injection attack. The incident exposed almost 37k unique email addresses and passwords stored as unsalted MD5 hashes. No response was received from Hub4Tech when contacted about the incident. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/HUB4TECH) |
 | 2017-01-01 | cloudpets.com              |     583,503 | In January, the maker of teddy bears that record children's voices and sends them to family and friends via the internet <a href="https://www.troyhunt.com/data-from-connected-cloudpets-teddy-bears-leaked-and-ransomed-exposing-kids-voice-messages" target="_blank" rel="noopener">CloudPets left their database publicly exposed and it was subsequently downloaded by external parties</a> (the data was also subject to 3 different ransom demands). 583k records were provided to HIBP via a data trader and included email addresses and bcrypt hashes, but the full extent of user data exposed by the system was over 821k records and also included children's names and references to portrait photos and voice recordings. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/CLOUDPETS) |
+| 2017-04-13 | Club Penguin Rewritten     |     unknown | Passwords in MD5, Blog, Game contents | [CPR Knowledgebase](https://cprknowledgebase.wordpress.com/2017/04/13/security-breach-and-what-you-should-do/) |
 
 ## 2016
 

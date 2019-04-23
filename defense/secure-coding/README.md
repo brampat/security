@@ -47,7 +47,5 @@ independent from another request. So for example, there's no auto-save for the s
   * [OWASP Top 10 Proactive controls](https://www.youtube.com/watch?v=-tF-ZkzdThI) by [Jim Manico](https://twitter.com/manicode)
   * [Secure Development Lifecycles](https://www.youtube.com/watch?v=L-gL1YQUrwg) by Bart de Win
 * [OWASP Encoding project](https://www.owasp.org/index.php/Category:OWASP_Encoding_Project)
+* [SAFECode](https://safecode.org/training/) On-demand web-casts
 
-
-## Fun stuff:
-* [Tesla Sentry mode](https://www.youtube.com/watch?v=vTueNRDLSCQ) protecting your cookies

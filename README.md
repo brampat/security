@@ -16,6 +16,8 @@ Failure to gain authorization BEFORE you even try to hack a system may result in
 ## Getting started
 * [How to get your first job as a hacker](https://medium.com/@hakluke/how-to-get-your-first-job-as-a-hacker-7c1f5c4bf4b3) - Luke Stephens<br>
 * [Careers in Security, Ethical Hacking and advice on getting started](https://www.troyhunt.com/careers-in-security-ethical-hacking-and-advice-on-where-to-get-started/) - Troy Hunt<br>
+* [Appsec Learning Resources](https://medium.com/@john.opdenakker/some-useful-appsec-learning-resources-de8a0b3c896f) by [John Opdenakker](https://twitter.com/j_opdenakker)
+
 
 ## Pages similar like this
 * [Resources for learning Hacking](https://github.com/faizann24/Resources-for-learning-Hacking) - Faizan Ahmad

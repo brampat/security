@@ -122,5 +122,11 @@ Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.h
 * [Online Hashcrack](https://www.onlinehashcrack.com/) 
 * [Hash.help](https://hash.help/)
 * [Password Recovery](https://passwordrecovery.io/)
-* [cracker.offensive-security](http://cracker.offensive-security.com/) 
+* [cracker.offensive-security](http://cracker.offensive-security.com/)
+* [Hashes.org](https://hashes.org/)
+  * [Pwnd Passwords v1](https://hashes.org/leaks.php?id=70) from Have I been Pwned
+  * [Pwnd Passwords v2](https://hashes.org/leaks.php?id=515) from Have I been Pwned
+
+
+
 

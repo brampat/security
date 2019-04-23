@@ -10,8 +10,10 @@ The APT-numbering scheme is introduced by Mandiant (sub-company of FireEye).
 * APT29: [Cozy Bear](https://en.wikipedia.org/wiki/Cozy_Bear)
 
 ### Iran: Kittens
-* APT33: [Elfin Hacking Group](https://thehackernews.com/2019/03/apt33-cyber-espionage-hacking.html)
-* APT34
+* APT33: [More](https://aptmap.netlify.com/#APT33), [Elfin Hacking Group](https://thehackernews.com/2019/03/apt33-cyber-espionage-hacking.html)
+* APT34: [Helix Kitten](https://aptmap.netlify.com/#OilRig) / OilRig: [What we can learn from the leak](https://blog.cygenta.co.uk/what-we-can-learn-from-apt34-leak/)
+* [Rocket Kitten](https://en.wikipedia.org/wiki/Rocket_Kitten) / Ajax Security Team
+* [Charming Kitten](https://attack.mitre.org/groups/G0058/) / Newscaster / Newsbeef
 * [Rocket Kitten](https://en.wikipedia.org/wiki/Rocket_Kitten) / Ajax Security Team
 
 
@@ -53,11 +55,6 @@ The APT-numbering scheme is introduced by Mandiant (sub-company of FireEye).
 ### Vietnam: Buffalo
 * APT32: OceanLotus Group
 * [Force 47](https://en.wikipedia.org/wiki/Force_47)
-
-### Iran: Kittens
-* [Charming Kitten](https://attack.mitre.org/groups/G0058/) / Newscaster / Newsbeef
-* [Rocket Kitten](https://en.wikipedia.org/wiki/Rocket_Kitten) / Ajax Security Team
-* APT33: [here](https://aptmap.netlify.com/#APT33)
 
 
 ### India: Tiger
