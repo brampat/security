@@ -14,6 +14,8 @@ Collection of links to Hack-related news
   * [Analysis](https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-one-a-rare-occurrence.html) from FireEye in 4 parts. 
 * [TicToc GPS tracking watch Pwnd](https://www.pentestpartners.com/security-blog/tic-toc-pwned/)
 * [How to track your kids](https://www.troyhunt.com/how-to-track-your-kids-and-other-peoples-kids-with-the-tictoctrack-watch/) and other people's kids by Troy Hunt
+* [Hacker dox'd thousands of US Police and federal agents](https://techcrunch.com/2019/04/12/police-data-hack/)
+
 
 ### March
 
