@@ -5,7 +5,7 @@
 
 ## Security, Secure Coding & Hacking
 
-![](./pics/brpa.jpg)<!-- .element style="position: fixed; top: 200px; right: 60px; height: 200px;"  -->
+![](./pics/brpa.jpg)<!-- .element style="position: fixed; top: 300px; right: 60px; height: 200px;"  -->
 
 <br><br><br>
 
@@ -37,6 +37,7 @@
 ![](./pics/summer-of-pwnage.jpg)<!-- .element style="position: fixed; bottom: 30px; left: 290px; width: 250px;" -->
 ![](./pics/jfall.png)<!-- .element style="position: fixed; bottom: 130px; right: 70px; width: 150px;" -->
 ![](./pics/javaone.jpg)<!-- .element style="position: fixed; bottom: 20px; right: 240px; width: 150px;" -->
+![](./pics/codemotion.svg)<!-- .element style="position: fixed; bottom: 20px; right: 40px; width: 150px;" -->
 
 --
 
@@ -62,28 +63,30 @@
 ![](./pics/oscar_koeroo.jpg)<!-- .element style="position: fixed; top: 320px; left: 350px; width: 150px;" -->
 
 -- Notes --
-Troy Hunt - Have I Been pwned, Microsoft MVP
-Daniel Verlaan - IT / Security Journalist, Laat je niet Hack maken / Watch your hack
-Bart Roos - Ethical hacker, Call-center scam
-Scott Helme - Hacker, researcher, Founder of ![SecurityHeaders](https://securityheaders.com/) and ![ReportURI](https://report-uri.com/)
-Brenno de Winter - Ex IT- and privact journalist, OV Chip hacking, CISO, trainer, GDPR / AVG
-Edward Snowden - Activist on privacy & freedom of speech, former NSA, leaked Snowden documents in 2013
-FC (Freaky Clown Cygenta) - Hardware hacking & Social engineering / Physical pentesting
-Oscar Koeroo - KPN CISO, Crypto, High performance security
-Jeremy Gosney - Founder CEO Terahash
-Jim Manico - Java Champion, former OWASP boardmember
-Jayson E Street - Hacker, Social Engineer
-Victor Gevers - GDI Foundation non-profit for safer internet
-Rik van Duijn - Dearbytes hacker
-Wesley Neelen - Dearbytes hacker, IoT devices, hardware
-Kevin Mitnick - Worlds most famous hacker (actually only social engineer)
-Edwin van Andel - Zerocopter hacker platform
+
+* Troy Hunt - Have I Been pwned, Microsoft MVP
+* Daniel Verlaan - IT / Security Journalist, Laat je niet Hack maken / Watch your hack
+* Bart Roos - Ethical hacker, Call-center scam
+* Scott Helme - Hacker, researcher, Founder of ![SecurityHeaders](https://securityheaders.com/) and ![ReportURI](https://report-uri.com/)
+* Brenno de Winter - Ex IT- and privact journalist, OV Chip hacking, CISO, trainer, GDPR / AVG
+* Edward Snowden - Activist on privacy & freedom of speech, former NSA, leaked Snowden documents in 2013
+* FC (Freaky Clown Cygenta) - Hardware hacking & Social engineering / Physical pentesting
+* Oscar Koeroo - KPN CISO, Crypto, High performance security
+* Jeremy Gosney - Founder CEO Terahash
+* Jim Manico - Java Champion, former OWASP boardmember
+* Jayson E Street - Hacker, Social Engineer
+* Victor Gevers - GDI Foundation non-profit for safer internet
+* Rik van Duijn - Dearbytes hacker
+* Wesley Neelen - Dearbytes hacker, IoT devices, hardware
+* Kevin Mitnick - Worlds most famous hacker (actually only social engineer)
+* Edwin van Andel - Zerocopter hacker platform
 
 ---
 
 ## Expectations
 <hr />
 
+What pops up in your mind?
 
 --
 
@@ -442,7 +445,7 @@ How<!-- .element: class="fragment" data-fragment-index="3" style="position: fixe
 <hr />
 
 Analyze:
-![](./pics/school.png)<!-- .element style="position: fixed; top: 250px; right: 20px; width: 475px;" -->
+![](./pics/hs_zuyd.jpeg)<!-- .element style="position: fixed; top: 250px; right: 20px; width: 475px;" -->
 
 * What
 * Who
@@ -662,7 +665,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 ---
 
-## Dummy hacking
+## OWASP Top 10 Examples
 <hr />
 
 ### Disclaimer
@@ -671,7 +674,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 --
 
-## Dummy hacking
+## OWASP Top 10 Examples
 <hr />
 
 ### Indirect object reference
@@ -680,7 +683,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 --
 
-## Dummy hacking
+## OWASP Top 10 Examples
 <hr />
 
 ### Cross Site Scripting
@@ -691,7 +694,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 --
 
-## Dummy hacking
+## OWASP Top 10 Examples
 <hr />
 
 ### Security Misconfiguration
@@ -700,7 +703,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 --
 
-## Dummy hacking
+## OWASP Top 10 Examples
 <hr />
 
 ### Insufficient Logging
@@ -710,7 +713,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 --
 
-## Dummy hacking
+## OWASP Top 10 Examples
 <hr />
 
 ### Sensitive Data Exposure
@@ -721,7 +724,7 @@ APT-Names [*](https://www.crowdstrike.com/blog/meet-the-adversaries/):
 
 --
 
-## Dummy hacking
+## OWASP Top 10 Examples
 <hr />
 
 ### SQL Injection
@@ -1513,6 +1516,9 @@ aaaaaaaB
 
 <span style="font-size: 16px;">20 - 30 characters is sufficient<span><br>
 <span style="font-size: 16px;">Any pattern or system you introduce can be broken<span>
+![](./pics/lastpass.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 260px; width: 290px;" class="fragment" data-fragment-index="0" -->
+![](./pics/1password.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 460px; width: 290px;" class="fragment" data-fragment-index="0" -->
+
 
 --
 
