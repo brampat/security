@@ -2,7 +2,7 @@
 
 Enumerate and extract data from SQL databases
 
-Download SQLMap [here](http://sqlmap.org/)
+Download SQLMap [here](http://sqlmap.org/) or clone it on [GitHub](https://github.com/sqlmapproject/sqlmap)
 
 
 ## GET request
