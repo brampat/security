@@ -9,8 +9,10 @@
 * [You Get Signal](https://www.yougetsignal.com/tools/web-sites-on-web-server/): Reverse IP domain check
 
 ## Network scanning
-* Nmap: Network scanning tool and OS fingerprinting. Comes with most Linux distributions, but also available on Windows
-* Zenmap: GUI front-end to Nmap
+* [Nmap](https://nmap.org/): Network scanning tool and OS fingerprinting. Comes with most Linux distributions, but also available on Windows
+  * Zenmap: GUI front-end to Nmap
+* [Masscan](https://github.com/robertdavidgraham/masscan) TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes.
+* [Pbscan](https://github.com/gvb84/pbscan) Faster and more efficient stateless SYN scanner and banner grabber due to userland TCP/IP stack usage. 
 * [p0f](http://lcamtuf.coredump.cx/p0f3/): Offline / passive OS fingerprinter
 * [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
@@ -83,6 +85,9 @@
 * [OpenVAS](http://www.openvas.org/): OpenSource
 * [Nexpose](https://www.rapid7.com/products/nexpose/): 
 * [GFI LAN Guard](https://www.gfi.com/products-and-solutions/network-security-solutions/gfi-languard): Euro 21.60 per node per year (or less from 50+ nodes)  
+
+## Payloads
+* [GitHub repo](https://github.com/foospidy/payloads) with lots of payloads for diffirent tools, includes links to external lists and script to download those automatically.
 
 ## Practicing
 
