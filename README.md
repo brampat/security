@@ -23,6 +23,8 @@ Failure to gain authorization BEFORE you even try to hack a system may result in
 * [Resources for learning Hacking](https://github.com/faizann24/Resources-for-learning-Hacking) - Faizan Ahmad
 * [The Book of secret knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more
 * [Hacking books](https://github.com/tanc7/hacking-books) PDF downloads
+* [Hacker Roadmap](https://github.com/sundowndev/hacker-roadmap) guide for amateurs pen testers and a collection of hacking tools, resources and references to practice ethical hacking, pen testing and web security
+
 
 ## Books & Film
 See [Books](books/README.md)
