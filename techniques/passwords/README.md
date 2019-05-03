@@ -95,8 +95,10 @@ lists the total password space for each pattern and speeds at which they could b
 ## Cracking techniques / attacks
 * Dictionary attacks: Use a wordlist to compare against user passwords
 * Brute force attacks: Variations of words replacing certain characters by symbols (l33tsp34k). Eg. variantions on "password" include p@$$w0rd etc.
-* Rainbow table attacks: Using common passwords and storing MD5 hashes and various encrypted variants of these passwords, query this lookup-database for hashed / encrypted passwords in the target database
+* Rainbow table attacks: Using hash-reduce strategies to balance storage-space limitations and brute-force processing limitations to do lookups for passwords
+  * Details in [this post](http://kestas.kuliukas.com/RainbowTables/)
 * Guess: Using common or default passwords
+* Credential-stuffing: Use leaked credentials (username and corresponding password)
 * Spidering: Using company information or social media, construct a targeted word-list to use in brute-force attack. Information includes founder's birth year, name, hobbies, company vision, initials etc. 
 
 ------------
