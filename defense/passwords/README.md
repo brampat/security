@@ -149,19 +149,13 @@ There's even a site specifically for SQL-injection called [Booby-tables](http://
 
 #### Encoding, encryption & hashing
 
-All these techniques are used for converting the format of data. 
-
-Encoding transforms data into another format using a scheme that is publicly available so that it can easily be reversed. It does not require a key. 
-Encryption transforms data into another format and it is used for keeping the data secret. 
-In Hashing technique, data is converted to a message digest or hash, which is usually a number generated from a string of text. Hashing is not reversible.
-
-
+All these techniques are used for converting the format of data. They have different properties and therefore serve very different purposes. Let's first explain each in more detail. 
 
 [source](https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/)
 
 ##### Encoding
 
-Encoding is used to transform data to properly and safely send and process to another application or system. Encoding is done by publicly available schemes and can easily be undone by decoding using the same scheme in reverse. A key is not needed to decode data. Only knowing the encoding algorithm is sufficient, which can often be derived from the encoded data.
+Encoding is used to transform data to properly and safely store for or send to another application or system. Encoding is done by publicly available schemes and can easily be undone by decoding using the same scheme in reverse. A key is not needed to decode data. Only knowing the encoding algorithm is sufficient, which can often be derived from the encoded data.
 
 Examples: ASCII, Unicode, URL Encoding, base64, ROT13
 
@@ -174,7 +168,7 @@ Encryption transforms data to keep that data confidential. The primary goal of e
 
 Encryption can use a single (symmetric) key where the same key is used to both encrypt and decrypt a message. It can also use asymmetrical keys (2 or more) to encrypt data, where the key to encrypt is different from the key to decrypt.
 
-The CAESAR-cipher is a very simple (and unsafe) encryption method used by [Caesar](https://en.wikipedia.org/wiki/Caesar_cipher) to send secret military messages. Since his opponents were mostly illiterate, this encryption method was probably sufficient for that situation.
+The CAESAR-cipher is a very simple (and very unsafe) encryption method used by [Caesar](https://en.wikipedia.org/wiki/Caesar_cipher) to send secret military messages. Since his opponents were mostly illiterate, this encryption method was probably sufficient for that situation.
 ROT13 is identical to CAESAR13. Since this encryption method includes the key within its name, it would strictly be an encoding rather than an encryption. The special property of ROT13 / CAESAR13 is that the first half (13 characters) of the alphabet is mapped to the second half and vice versa:
 
 ![](ROT13.png)
@@ -188,12 +182,24 @@ Examples: CAESAR-cipher, PGP, 3DES, RSA, Blowfish, Twofish, AES
 Hashing creates a digest of data so that digest can be used to validate the origin or integrity of the data. Hashing takes arbitrary input and produce a fixed-length string that has the following attributes:
 * The same input will always produce the same output.
 * Multiple disparate inputs should not produce the same output.
-* It should not be possible to go from the output to the input.
+* It should be impossible to go from the output to the input.
 * Any modification of a given input should result in drastic change to the hash.
 
-Hashing is used in conjunction with authentication to produce strong evidence that a given message has not been modified. This is accomplished by taking a given input, hashing it, and then signing the hash with the sender’s private key.
+Hashing is often used to validate the integrity of data. A common example is validating downloaded software using a hash of the software. Fast hash-algorithms are optimal for this scenario.
 
-When the recipient opens the message, they can then validate the signature of the hash with the sender’s public key and then hash the message themselves and compare it to the hash that was signed by the sender. If they match it is an unmodified message, sent by the correct person.
+Hashing is also used in conjunction with asymmetric encryption to produce strong evidence that a message has not been modified. Review the example below. Here are the steps to produce the message:
+* Create the message
+* Hash the message
+* Encrypt the hash with asymetric key encryption using the sender's private key
+* Attach the encrypted hash to the message as the message's signature
+
+To verify the message:
+* Extract the signature from the message
+* Decrypt the signature using the sender's public key
+* Hash the message itself
+* Compare the message's hash with the decrypted signature. If they match, the message is from the sender (or someone who has access to the sender's private key)
+
+![](signedmessage.png)
 
 Examples: sha-3, md5 (now obsolete), etc.
 
@@ -203,15 +209,16 @@ Examples: sha-3, md5 (now obsolete), etc.
 | ------------- | ------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | Encoding      | Yes           | No                            | Efficiency of transmission or storage of data, mostly text, but some encoding schemes also support binary format          | ASCII, Unicode, Base64, ROT13, HTML               |
 | Encryption    | Yes           | Yes (symetric or asymetric)   | Protect confidentiality of information                                                                                    | PGP, 3DES, RSA, Blowfish, Twofish, AES            |
-| Hashing       | No            | -                             | Password storage, file and application integrity validation                                                               | MD5, SHA1, SHA2 (256, 512 etc), Bcrypt, Scrypt    |
+| Hashing       | No            | -                             | Proof of integrity or password storage                                                                                    | MD5, SHA1, SHA2 (256, 512 etc), Bcrypt, Scrypt    |
 
-
-[Slides](https://www.slideshare.net/sas3/secure-password-storage-management) from Jim Manico
+[Slides](https://www.slideshare.net/sas3/secure-password-storage-management) from Sastry Tumuluri
 
 
 ### Offline attacks:
 
 #### Rainbow tables:
+
+[Source](http://kestas.kuliukas.com/RainbowTables/)
 
 ##### How it works
 
