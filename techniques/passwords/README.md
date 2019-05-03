@@ -104,13 +104,15 @@ Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.h
 
 * More on [Password cracking](https://www.youtube.com/watch?v=zUM7i8fsf0g)
 * Plain-text password mailers [shame-site](http://plaintextoffenders.com/) and a complete [list](https://github.com/plaintextoffenders/plaintextoffenders/blob/master/offenders.csv) of offenders
-* Password cracking  rules for Hashcat [here](https://github.com/praetorian-inc/Hob0Rules)
+* Password cracking rules for Hashcat [here](https://github.com/praetorian-inc/Hob0Rules)
 * Statistics will crack your password mask [here](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure)
 * Statistics based password cracking rules [here](https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0)
 * Password cracking rig [here](https://www.netmux.com/blog/how-to-build-a-password-cracking-rig)
 * Online rainbow-tables at [hashes.org](https://hashes.org/)
 * Password [dictionaries](https://wiki.skullsecurity.org/Passwords)
 * More leaked [Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords)
+* On [Password strength](https://nulab.com/blog/tech/password-strength/) and password strength meters
+
 
 ## Password Hash lookup / cracking online
 * [Hashkiller](https://hashkiller.co.uk/db-info.aspx) lists cracked / calculated hashes
