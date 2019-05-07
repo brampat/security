@@ -58,7 +58,7 @@ Let's take a password storage system that has at least hashed its passwords. The
 Obviously, when attackers use brute-forcing techniques to crack a password, the bigger the password-space is, the longer it will take for cracking a password. That's where my statistics fetish went in overdrive.
 
 ## Speed
-Depending on password length, complexity and the hashing algorithm, brute-forcing passwords can take anywhere between seconds and many millenia. Let's see some statistics from a $5000,- cracking rig.
+Depending on password length, complexity and the hash-function, brute-forcing passwords can take anywhere between seconds and many millenia. Let's see some statistics from a $5000,- cracking rig.
 ![](5k_cracking_rig.jpg)
 
 ```
@@ -137,7 +137,7 @@ With a bit of tinkering (there's no logC method in Java / Groovy), I've come up 
     }
 ``` 
 
-This will calculate for each password-pattern and hashing algorithm, the required length for a given minimum time to crack. I've chosen 100 years for this, here are the results:
+This will calculate for each password-pattern and hash-function, the required length for a given minimum time to crack. I've chosen 100 years for this, here are the results:
 
 |      |Decimal|Lowercase|UPPERCASE|Alphanumeric|ASCII|Symbol|Alphanumeric or symbol|UTF8|English words|Dictionary Words|USA Cities|Cities|
 |------| ----: | ------: | ------: | ---------: |----:|----: | -------------------: |---:| ----------: | -------------: | -------: | ---: |
@@ -166,7 +166,7 @@ But what about a more professional cracking-rig. Let's see what a $21200,- [mach
 |SCRYPT|          0 seconds|              0 seconds|      257 days |                  0 seconds|      7 millennia|        4315 millennia|             1 years|          4 millennia|   61896203 millennia|  499091712 millennia|  5892 millennia|  619362484440218540083273 millennia|  4990917129733939797641068 millennia| 1071244283667726612398364577081958143555144 millennia|  63066303068106908019536834231135173536147456070425266036272867978024153403703667769100369619337160688007109621342311554049017274442587423 millennia|
 |BCRYPT|          0 seconds|              0 seconds|      24 years |                 18 seconds|    257 millennia|      148355 millennia|            37 years|        144 millennia| 2128016931 millennia|17158978346 millennia|202577 millennia|21293936931227968043393271 millennia|171589783461929580651041838 millennia|36829819027504875713598535392263101001502215 millennia|2168245435839920130422766646577474702715978691252418440267638889060478672350818469539930727145339017485136206597393812005684151802873264060 millennia|
 
-As you can see, the time required to crack these password-patterns decreases dramatically. A 10-length lowercase password becomes within reach even when hashed with scrypt. An 8-length alphanumeric (no symbols!) password can be cracked within hours if no proper 'slow' hashing algorithm is used. What's more suprising though, is the difference in length to 'fix' these speed-gains.
+As you can see, the time required to crack these password-patterns decreases dramatically. A 10-length lowercase password becomes within reach even when hashed with scrypt. An 8-length alphanumeric (no symbols!) password can be cracked within hours if no proper 'slow' hash-function is used. What's more suprising though, is the difference in length to 'fix' these speed-gains.
 
 |      |Decimal|Lowercase|UPPERCASE|Alphanumeric|ASCII|Symbol|Alphanumeric or symbol|UTF8|English words|Dictionary Words|USA Cities|Cities|
 |------| ----: | ------: | ------: | ---------: |----:|----: | -------------------: |---:| ----------: | -------------: | -------: | ---: |
