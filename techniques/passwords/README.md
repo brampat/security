@@ -2,7 +2,7 @@
 
 ### Hashing
 
-There are many hashing algorithms, some are more suited for passwords than others.
+There are many hash-functions, some are more suited for passwords than others.
 On top of that, some have been broken. Here's an overview
 
 | Algorithm                                      | Safe?   |
