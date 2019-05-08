@@ -9,7 +9,7 @@
 * [21st century hackers](https://www.youtube.com/watch?v=koi54cPRlhQ): Documentary on hackers
 * [The hacker wars](https://www.youtube.com/watch?v=ku9edEKvGuY&): Documentary on Anonymous, hacktivists, US Intelligence & police-state privacy etc.
 * [The responsibility of Disclosure](https://www.youtube.com/watch?v=wBP73MuMXI0) by [Troy Hunt](https://twitter.com/TroyHunt)
-
+* [Bug Hunter's Methodology](https://www.youtube.com/watch?v=HI1mTQ7ovFY) on how to efficiently do Bug Bounties by [Jason Haddix](https://twitter.com/jhaddix)
 
 ## Web Applications
 * [History of Internet](https://www.youtube.com/watch?v=9hIQjrMHTv4) 
