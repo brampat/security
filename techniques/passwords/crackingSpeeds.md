@@ -66,7 +66,7 @@ Another (more practical) way to look at these numbers is to switch the formula t
 with a given required minimal cracking-time. This should result in a minimum length using random characters (or words) 
 of a specific set. This gives a much more conceivable set of numbers.
 
-The table below lists minimum lengths for different hashing algorithms and "character-sets". 
+The table below lists minimum lengths for different hash-function and "character-sets". 
 
 |        |DECIMAL     |LOWERCASE   |UPPERCASE   |ALPHANUMERIC|ASCII       |SYMBOL      |ALPHA_SYMBOL|UTF8        |ENGLISH_WORDS |DICTIONARY_WORDS   |USA_CITIES  |CITIES      |
 | ------ | ---------: | ---------: | ---------: | ---------: | ---------: | ---------: | ---------: | ---------: | ---------:   | ---------:        | ---------: | ---------: |     

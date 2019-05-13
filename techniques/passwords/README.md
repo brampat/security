@@ -2,7 +2,7 @@
 
 ### Hashing
 
-There are many hashing algorithms, some are more suited for passwords than others.
+There are many hash-functions, some are more suited for passwords than others.
 On top of that, some have been broken. Here's an overview
 
 | Algorithm                                      | Safe?   |
@@ -95,8 +95,10 @@ lists the total password space for each pattern and speeds at which they could b
 ## Cracking techniques / attacks
 * Dictionary attacks: Use a wordlist to compare against user passwords
 * Brute force attacks: Variations of words replacing certain characters by symbols (l33tsp34k). Eg. variantions on "password" include p@$$w0rd etc.
-* Rainbow table attacks: Using common passwords and storing MD5 hashes and various encrypted variants of these passwords, query this lookup-database for hashed / encrypted passwords in the target database
+* Rainbow table attacks: Using hash-reduce strategies to balance storage-space limitations and brute-force processing limitations to do lookups for passwords
+  * Details in [this post](http://kestas.kuliukas.com/RainbowTables/)
 * Guess: Using common or default passwords
+* Credential-stuffing: Use leaked credentials (username and corresponding password)
 * Spidering: Using company information or social media, construct a targeted word-list to use in brute-force attack. Information includes founder's birth year, name, hobbies, company vision, initials etc. 
 
 ------------
@@ -104,13 +106,15 @@ Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.h
 
 * More on [Password cracking](https://www.youtube.com/watch?v=zUM7i8fsf0g)
 * Plain-text password mailers [shame-site](http://plaintextoffenders.com/) and a complete [list](https://github.com/plaintextoffenders/plaintextoffenders/blob/master/offenders.csv) of offenders
-* Password cracking  rules for Hashcat [here](https://github.com/praetorian-inc/Hob0Rules)
+* Password cracking rules for Hashcat [here](https://github.com/praetorian-inc/Hob0Rules)
 * Statistics will crack your password mask [here](https://p16.praetorian.com/blog/statistics-will-crack-your-password-mask-structure)
 * Statistics based password cracking rules [here](https://p16.praetorian.com/blog/hob064-statistics-based-password-cracking-rules-hashcat-d3adhob0)
 * Password cracking rig [here](https://www.netmux.com/blog/how-to-build-a-password-cracking-rig)
 * Online rainbow-tables at [hashes.org](https://hashes.org/)
 * Password [dictionaries](https://wiki.skullsecurity.org/Passwords)
 * More leaked [Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords)
+* On [Password strength](https://nulab.com/blog/tech/password-strength/) and password strength meters
+
 
 ## Password Hash lookup / cracking online
 * [Hashkiller](https://hashkiller.co.uk/db-info.aspx) lists cracked / calculated hashes
