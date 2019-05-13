@@ -12,16 +12,15 @@
 * [Osmedeus](https://github.com/j3ssie/Osmedeus): Automatic Reconnaissance and Scanning in Penetration Testing
 
 ## Search engines for Hackers:
-* https://censys.io/ 
-* https://www.shodan.io/ 
-* https://viz.greynoise.io/table 
-* https://www.zoomeye.org/ 
-* https://wigle.net/ 
-* https://publicwww.com/ 
-* https://hunter.io/ 
-* https://haveibeenpwned.com/ 
-* https://pipl.com/ 
-* https://osintframework.com/ 
+* [Censys.io](https://censys.io/): Exposed devices & services lookup, based on IP or CIDR blocks
+* [Shodan](https://www.shodan.io/): IoT search engine
+* [Greynoise](https://viz.greynoise.io/table): Overview of baseline untargeted "internet background noise" of scans and attacks
+* [Wigle.net](https://wigle.net/): Wifi, Bluetooth and Cell-tower indexer
+* [Publicwww](https://publicwww.com/): HTML source-code scanner, Find any alphanumeric snippet, signature or keyword in the web pages HTML, JS and CSS code.
+* [Hunter.io](https://hunter.io/): E-mail address search engine
+* [HIBP](https://haveibeenpwned.com/): Have I Been Pwned, see if an account (based on mail-address) has been breached and in what leak
+* [Pipl](https://pipl.com/): People Search engine
+* [OSInt](https://osintframework.com/): Information gathering from free and semi-free resources. Links to many other search engines.
 
 
 ## Network scanning
