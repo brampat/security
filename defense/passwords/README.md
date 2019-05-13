@@ -239,19 +239,25 @@ When we know both the algorithm and the HASH, we cannot reverse and find the pas
 
 Since hash-functions always produce the same has for any given input, hashing is often used to validate the integrity of data. A common example is validating downloaded software using a hash of the software. Fast hash-functions are optimal for this scenario.
 
+##### Message integrity
+
 Hashing is also used in conjunction with asymmetric encryption to produce strong evidence that a message has not been modified. Review the example below. Here are the steps to produce the message:
-* Create the message
-* Hash the message
-* Encrypt the hash with asymetric key encryption using the sender's private key
-* Attach the encrypted hash to the message as the message's signature
+1. Create the message
+1. Hash the message
+1. Encrypt the hash with asymetric key encryption using the sender's private key
+1. Attach the encrypted hash to the message as the message's signature
 
 To verify the message:
-* Extract the signature from the message
-* Decrypt the signature using the sender's public key
-* Hash the message itself
-* Compare the message's hash with the decrypted signature. If they match, the message is from the sender (or someone who has access to the sender's private key)
+1. Extract the signature from the message
+1. Decrypt the signature using the sender's public key
+1. Hash the message itself
+1. Compare the message's hash with the decrypted signature. If they match, the message is from the sender (or someone who has access to the sender's private key)
 
 ![](signedmessage.png)
+
+This method can be extended to achieve both integrity and confidentiality:
+* Encrypt the signature using the sender's private key, so anyone can verify that the message came from the sender using the sender's public key
+* Encrypt the message using the receiver's public key, so only the receiver can decrypt the message using his / her's private key.
 
 Examples: sha-3, md5 (now obsolete), etc.
 
@@ -272,7 +278,7 @@ Examples: sha-3, md5 (now obsolete), etc.
 
 Given unlimited CPU power and unlimited storage space, a pure brute-force attack can find any password. It simply tries out every possible password combination in existence and continues until a match is found. Pre-calculating tables of password/hash combinations also helps so an attacker can reuse those combinations for later attacks or decrease the time of the attack by preparing those tables beforehand.
 
-Note that a pure brute-force attack is not feasible when strong (unique and random) passwords are used. There simply isn't enough time the universe exists to brute-force any reasonably strong password.
+Note that a pure brute-force attack is not feasible because of the time required to calculate all possible passwords' hashes. There simply isn't enough time to brute-force all possible passwords. For example, calculating the full password-space for a length 10 alphanumeric password takes more than 3 millennia when using bcrypt. 
 
 ##### How it works
 
@@ -280,15 +286,39 @@ Note that a pure brute-force attack is not feasible when strong (unique and rand
 * For each password generated, calculate its hash
 * Compare the hash to the hash to crack
 
-Example of a simple password-space looper
+Example of a simple password-space looper in Groovy:
+
+```groovy
+static List<String> calculate(int min, int max, char[] chars) {
+    assert min <= max
+    List<String> results = []
+    for (int length = min; length <= max; ++length) {
+        results.addAll(generateAllPasswordsForLength(length, chars))
+    }
+    return results
+}
+
+static List<String> generateAllPasswordsForLength(int length, char[] chars) {
+    switch (length) {
+        case 0: // <== No length means no passwords
+            return []
+        case 1: // <== Length 1 means all single chars make up the full password-space
+            return chars.toList()
+        default: // <== Length X means: recursively combine the list of chars with the list of chars until you have the desired length
+            return generateAllPasswordsForLength(length - 1, chars).collectMany{ pass ->
+                chars.collect { "${pass}${it}"}
+            }
+    }
+}
+```
 
 ##### Pro's & Con's
 
 Pro's:
-* Should always find the password
+* Should in theory always find the password
 
 Con's:
-* Takes incredible amount of time (see statistics in [this blog](../../publications/2019-02-20_passwords_fun_with_numbers/README.md))
+* Takes unlimited amounts of time (see statistics in [this blog](../../publications/2019-02-20_passwords_fun_with_numbers/README.md))
 * Depending on method, takes incredible amount of storage
 
 ##### Pre-calculate or not
@@ -296,6 +326,45 @@ Con's:
 There are two ways to approach this attack.
 * Pre-calculate all hashes before-hand, then do a lookup
 * Calculate and compare each hash on the fly.
+
+###### Pre-calculate
+
+With a pre-calculated approach, the attacker performs the following steps in order:
+1. Iterate over each possible password
+1. Calculate a hash for that password
+1. Store the password with its hashes in an indexed database
+1. Start attack
+1. Perform lookup in database using a hash to crack
+1. Repeat until all desired accounts are hacked
+1. End attack
+1. Start another attacks
+1. Perform lookup in database using a hash to crack
+1. Repeat until all desired accounts are hacked
+1. End attack
+
+![](Pre-calculate.png)
+
+This method requires incredible amounts of time beforehand to pre-calculate and incredible amounts of storage for the lookup-table. But once that has been achieved, each attack can be performed using a simple lookup with negligible time compared to the preparation time.
+
+###### Regular Brute force
+ 
+With a regular brute-force approach, the attacker performs the following steps in order:
+1. Start attack
+1. Iterate over each possible password
+1. Calculate a hash for that password
+1. Compare that hash with each of the hashes to crack
+1. Repeat until all desired accounts are hacked
+1. End attack
+1. Start another attacks
+1. Perform lookup in database using a hash to crack
+1. Repeat until all desired accounts are hacked
+1. End attack
+
+![](Brute_force.png)
+
+This method requires incredible amounts of time for each attack, but doesn't require much of storage. But every attack should re-calculate all hashes for each password, so each attack will take an incredible amount of time.
+
+###### Comparing
 
 Each method has advantages and disadvantages:
 * Pre-calculation:
@@ -313,28 +382,72 @@ Each method has advantages and disadvantages:
 ##### Defense
 
 * Hardened hash-functions
+* Salt increases the time needed exponentially
 
 #### Lookup Table or Dictionary attacks
 
-Using lists of common or leaked passwords can decrease both CPU time and storage space needed, compared to a pure brute-force attack. By concentrating on only passwords with a high probability to be used, an attacker can eliminate a large part of the password-space and therefore decrease CPU time to hash. This also makes pre-calculating feasible since the storage is much smaller.
+Since we don't have theoretically unlimited time and we don't have unlimited storage space either, we'll have to customize our attacks, so it becomes practically feasible. The trade-off will be a lower success-rate and no guaranteed crack.
+Using lists of common or leaked passwords can decrease both CPU time and storage space needed, compared to a pure brute-force attack. By concentrating on only passwords with a high probability to be used, an attacker can eliminate a large part of the password-space and therefore decrease CPU time to hash. This also makes pre-calculating feasible since the storage is much smaller. For example, calculating the hashes (including slow bcrypt) for the full Pwned Password list of 500 million passwords takes only minutes to a few hours depending on the hardware.
 
 ##### How it works
 
-* Download or generate a list of common and / or leaked passwords
-* For each password in the list, calculate its hash or several hashes for different hash-functions
-* Store the passwords with its hashes
-* Do a lookup in the list using a hash to crack
+1. Download or generate a list of common and / or leaked passwords
+1. Iterate over the list of passwords
+1. Calculate a hash for that password
+1. Store the password with its hashes in an indexed database
+1. Start attack
+1. Perform lookup in database using a hash to crack
+1. Repeat until all desired accounts are hacked
+1. End attack
+1. Start another attacks
+1. Perform lookup in database using a hash to crack
+1. Repeat until all desired accounts are hacked
+1. End attack
 
-A lookup table can be used to revert hashed passwords to their original input. By pre-calculating hashes for an entire password-space, cracking a password becomes a lookup based on the hash for a specific password. This method requires incredible amounts of storage if an attacker wants to precalculate the entire password space. 
+![](Dictionary_attack.png)
+
+A lookup table can be used to revert hashed passwords to their original input. By pre-calculating hashes for a limited list of passwords, cracking a password becomes a lookup based on the hash for a specific password.
+
+This requires a feasible amount of storage of about 142 GB\* to store both passwords and all corresponding hashes:
+
+| Hash      | Storage   | Bits          | Bytes         | KB            | MB        | GB    |
+|-----------|-----------|--------------:|--------------:|--------------:|----------:|------:|
+| Password  | 80        | 40000000000   | 5000000000    | 5000000       | 5000      | 5     |
+| MD5       | 128       | 64000000000   | 8000000000    | 8000000       | 8000      | 8     |
+| SHA1      | 160       | 80000000000   | 10000000000   | 10000000      | 10000     | 10    |
+| SHA256    | 256       | 128000000000  | 16000000000   | 16000000      | 16000     | 16    |
+| SHA512    | 512       | 256000000000  | 32000000000   | 32000000      | 32000     | 32    |
+| SCRYPT    | 656       | 328000000000  | 41000000000   | 41000000      | 41000     | 41    |
+| BCRYPT    | 480       | 240000000000  | 30000000000   | 30000000      | 30000     | 30    |
+| Total     | 2272      | 1136000000000 | 142000000000  | 142000000     | 142000    | 142   |
+
+\* No compression, average of 10 characters per password, 500M passwords in total
+
+If you are wondering how much time it would take to hash 500M passwords, compared to pure brute-forcing of different password patterns, have a look at this table\*:
+
+|        |  10x Lowercase |  Random pattern like 'Ullllldd' | Pwned Password dictionary |  8x alphanumeric or symbol |  4x English words |  4x English Dictionary |
+|--------|---------------:|--------------------------------:|--------------------------:|---------------------------:|------------------:|-----------------------:|
+| MD5    |     30 minutes |                       0 seconds |                 0 seconds |                     1 days |          226 days |              358 years |
+| SHA1   |        1 hours |                       1 seconds |                 0 seconds |                     2 days |           1 years |            1 millennia |
+| SHA512 |       12 hours |                       9 seconds |                 0 seconds |                    23 days |          14 years |            8 millennia |
+| SHA256 |        4 hours |                       3 seconds |                 0 seconds |                     8 days |           5 years |            2 millennia |
+| SCRYPT |        2 years |                         4 hours |                 4 minutes |                  112 years |      25 millennia |        14642 millennia |
+| BCRYPT |      102 years |                          8 days |                   3 hours |                4 millennia |    1092 millennia |       629518 millennia |
+
+\* No overhead for storing, using a $5000,- system
+
+As you can see in the column labelled "Pwned Password dictionary", that full list of passwords is hashed using "slow" BCrypt hash in about 3 hours. 
 
 ##### Pro's & Con's
 
 Pro's:
 * Fast
 * High probability of success
+* Storage needed is manageable
 
 Con's:
-
+* No guaranteed success
+* Only cracks common or leaked passwords from the list used
 
 ##### Defense
 * Strong passwords
@@ -342,6 +455,36 @@ Con's:
 * Salting
 
 #### Rainbow tables:
+
+To increase the chances of success of a dictionary attack, we can find a middle ground between both brute-force attacks and dictionary attacks. Let's again compare regular brute-force and a pre-calculated brute-force attack:
+
+##### Regular brute-force:
+In a regular brute force, we calculate all hashes on-the-fly, which takes incredible amounts of time. Also, we have to repeat this for each attack, which is not practical. We do however require just a small amount of memory. CPU time is our limiting factor.
+
+![](Brute-force_CPU_Memory.png)
+
+##### Pre-calculated brute-force:
+In a brute-force attack using pre-calculated hashes, the attack itself uses just a small amount of CPU, but to store the pre-calculated hashes (and corresponding passwords), we need incredible amounts of storage.
+
+![](Precalc_CPU_Memory.png)
+
+##### Dictionary attack:
+
+This attack is only different from a Pre-calc brute-force in the way it uses only a limited set of passwords and hashes to make the storage (and pre-calc time) manageable. As seen in the Pwned Password timing example, CPU time for a set that limited is not an issue. An attacker could even hash some more passwords without worrying too much about time needed. The only limiting factor would quickly become storage.
+
+So what if we would increase the number of passwords up to a moderately but manageable CPU time and decrease the storage requirements so that it becomes manageable as well? Here's the plan:
+
+![](Rainbow.png)
+
+* As a base, we'll take a pre-calculated brute-force attack
+* We limit the total number of passwords to only include certain patterns we assume to have a high success-rate.
+* We store those passwords along with their hash in a large table.
+* Then we chunk that table into smaller tables
+
+
+To do so, we use a method using rainbow tables.
+
+
 
 Sources:
 * [Blog]](http://kestas.kuliukas.com/RainbowTables/)
