@@ -377,7 +377,7 @@ Each method has advantages and disadvantages:
   * Pro's:
     * No storage needed
   * Con's:
-    * Re-calculate for each atack / password
+    * Re-calculate for each attack / password
 
 ##### Defense
 
