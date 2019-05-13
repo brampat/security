@@ -7,6 +7,9 @@ Most coding will be in context of web-application development.
 ### Securing web-servers
 * [HTTPS in 6 steps](https://www.troyhunt.com/the-6-step-happy-path-to-https/) by Troy Hunt
 
+### Securing Web applications
+* [SANS SWAT checklist](https://www.sans.org/security-resources/posters/secure-devops-practices/175/download) Securing Web Application Technologies
+
 ### Cookies
 * HTTP is stateless, a web-application by definition does not save state between requests. This means, each request is
 independent from another request. So for example, there's no auto-save for the shopping-cart in a webshop.
