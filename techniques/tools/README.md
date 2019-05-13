@@ -58,6 +58,12 @@
 * Panther: Flood target with UDP packets
 * Botnets: Multitudes of compromised computers to perform DDoS attacks
 
+## Encoding & Decoding
+* [Base64](https://www.base64encode.org/)
+* [Hex to ASCII](https://www.rapidtables.com/convert/number/hex-to-ascii.html)
+* [UUEncode](http://uuencode.online-domain-tools.com/)
+
+
 ## Password and crypto hacking
 * [Hashcat](https://hashcat.net/hashcat/): Highspeed hashed password cracking tool
 * [RainbowCrack](http://project-rainbowcrack.com/index.htm): Hash-cracker based on Rainbow-tables
@@ -81,6 +87,8 @@
   * [Meterpreter Basics](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)
 * [Nessus](https://www.tenable.com/downloads/nessus): Was OpenSource, now commercial (Euro 2470 / year), free for home & limited training use. Updates vuln. database using plugins.
 * [DomListener](https://chrome.google.com/webstore/detail/domlistener/jlfdgnlpibogjanomigieemaembjeolj?hl=en) Chrome extension that listens to DOM-changes (eg. for DOM-bases XSS detection)
+* [Requestbin.com](https://requestbin.com) for dumping requests of XSS
+* [Beecepter](https://beeceptor.com/) for intercepting requests of XSS
 
 ## Practicing
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
