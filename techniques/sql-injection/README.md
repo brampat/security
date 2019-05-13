@@ -39,8 +39,6 @@ The password-check is now commented out, including the hardcoded end-of-string q
 Since the query is constructed using String concatenation, with malicious input, the attacker can re-structure the SQL-statement to perform the unintended behavior.
 
 
-
-
 ## Blind SQL Injection techniques
 
 Mostly, web-application will hide output of the actual SQL-query. 
@@ -71,6 +69,7 @@ SELECT title, description, body FROM items WHERE ID = 2 and 1=2
 Source:
 * [SQL injection for dummies](https://www.youtube.com/watch?v=ciNHn38EyRc)
 * [OWASP](https://www.owasp.org/index.php/Blind_SQL_Injection)
+* [Acunetix](https://www.acunetix.com/blog/articles/exploiting-sql-injection-example/) full step-by-step exploit with SQL-injection
 * [Acunetix](https://www.acunetix.com/websitesecurity/blind-sql-injection/)
 * [SQL Injection out of band exploitation](https://www.gracefulsecurity.com/sql-injection-out-of-band-exploitation/)
 * [SQL Injection filter evasion with sqlmap](https://www.gracefulsecurity.com/sql-injection-filter-evasion/)
