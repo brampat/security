@@ -2,6 +2,10 @@
 
 Making sure your accounts are secure is easy. Just use a password manager and MFA where possible. But the theory is easy, while in practice, a mistake is easily made.
 
+## Remember
+We all know you memorize passwords, never write a password down.
+
+![](passwords_memory.jpg)
 
 ## Strong passwords
 Choosing a strong password is hard in itself. Because systems ask us to jump through all those hoops that just don't help
