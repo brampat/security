@@ -1,4 +1,11 @@
 # Fun stuff:
 
 * [Tesla Sentry mode](https://www.youtube.com/watch?v=l5G4fZWYM4U) protecting your cookies
-* [](2FA_gone_wrong.png) Tags: 2FA Password Username
+
+## Authentication
+
+All things [authentication](authentication/README.md)
+
+## Unlocked
+
+Things [to do](unlocked_pc/README.md) with other people's unlocked PC's.
