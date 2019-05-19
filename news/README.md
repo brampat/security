@@ -8,6 +8,10 @@ Collection of links to Hack-related news
 
 ## 2019
 
+### May
+
+* [Practical SHAttered](https://www.zdnet.com/article/sha-1-collision-attacks-are-now-actually-practical-and-a-looming-danger/) SHA-1 collision attack using chosen-prefix collisions
+
 ### April
 
 * [Carbanak Mallware sources found](https://thehackernews.com/2019/04/carbanak-malware-source-code.html): Researchers found the full source-code of the Carbanak (FIN7, Anunak or Cobalt) malware
