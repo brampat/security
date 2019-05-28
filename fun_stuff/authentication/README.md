@@ -29,7 +29,11 @@ Why not use Emoji in your passwords?
 _- Let it go from Frozen_ 
 
 Well, [this](https://apple.stackexchange.com/questions/202143/i-included-emoji-in-my-password-and-now-i-cant-log-in-to-my-account-on-yosemite) is why. 
-And some [more info](https://medium.com/@hvost/why-you-should-not-use-emojis-in-your-passwords-b8db0607e169) how he fixed it.
+And some [more info](https://medium.com/@hvost/why-you-should-not-use-emojis-in-your-passwords-b8db0607e169) on how he fixed it.
+
+## Update
+But changing is so easy
+![](password_change_signup_sheet.png)
 
 ## What is 2FA?
 What exactly is 2FA anyway?
