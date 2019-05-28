@@ -10,12 +10,26 @@ Collection of links to Hack-related news
 
 ### April
 
+* [Ireland to investigate Facebook](https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-opens-statutory-inquiry-facebook-0) for GDPR violations when accidentally storing plaintext passwords in log-files
+* [Qualcomm Chips](https://www.nccgroup.trust/us/our-research/private-key-extraction-qualcomm-keystore/?research=Technical+advisories) vulnerable for side-channel attack, enabling extraction of private keys
+* [NSA recommends](https://www.wsj.com/articles/nsa-recommends-dropping-phone-surveillance-program-11556138247) dropping phone-surveillance
+* [Facebook](https://investor.fb.com/investor-news/press-release-details/2019/Facebook-Reports-First-Quarter-2019-Results/default.aspx) expect $3 to $5 Billion legal fees for privacy issues
+* [Amazon Alexa Team](https://www.bloomberg.com/news/articles/2019-04-24/amazon-s-alexa-reviewers-can-access-customers-home-addresses) audits random user-commands manually and thereby sometimes hears sensitive material
+* [ASUS Update-malware](https://securelist.com/operation-shadowhammer-a-high-profile-supply-chain-attack/90380/) Shadowhammer also found in some game-software
+* [CIR](https://www.zdnet.com/article/eu-votes-to-create-gigantic-biometrics-database/) Common Identity Repository to connect European systems to create virtual database with 350M people's biometric data
+* [AdBlock Plus](https://armin.dev/blog/2019/04/adblock-plus-code-injection/) had vulnerable 
+* UK Releases [Standards](https://ico.org.uk/media/about-the-ico/consultations/2614762/age-appropriate-design-code-for-public-consultation.pdf) for protection of children's privacy in online services
+* [Microsoft Customer Support Portal](https://motherboard.vice.com/en_us/article/ywyz3x/hackers-could-read-your-hotmail-msn-outlook-microsoft-customer-support) hacked allowing access to Hotmail, MSN and Outlook mail of non-corporate accounts
+  * [Confirmation](https://www.theverge.com/2019/4/15/18311112/microsoft-outlook-web-email-hack-response-comment) from Microsoft
+*
+
 * [Carbanak Mallware sources found](https://thehackernews.com/2019/04/carbanak-malware-source-code.html): Researchers found the full source-code of the Carbanak (FIN7, Anunak or Cobalt) malware
   * [Analysis](https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-one-a-rare-occurrence.html) from FireEye in 4 parts. 
 * [TicToc GPS tracking watch Pwnd](https://www.pentestpartners.com/security-blog/tic-toc-pwned/)
 * [How to track your kids](https://www.troyhunt.com/how-to-track-your-kids-and-other-peoples-kids-with-the-tictoctrack-watch/) and other people's kids by Troy Hunt
 * [Hacker dox'd thousands of US Police and federal agents](https://techcrunch.com/2019/04/12/police-data-hack/)
 * [Julien Assange](https://motherboard.vice.com/en_us/article/mb8qyn/julian-assange-charged-with-hacking-conspiracy-not-publishing) charged for hacking and extradited from Ecuadorian embassy
+
 
 ### March
 
