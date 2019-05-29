@@ -8,6 +8,10 @@ Collection of links to Hack-related news
 
 ## 2019
 
+### May
+
+* [Practical SHAttered](https://www.zdnet.com/article/sha-1-collision-attacks-are-now-actually-practical-and-a-looming-danger/) SHA-1 collision attack using chosen-prefix collisions
+
 ### April
 
 * [Ireland to investigate Facebook](https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-opens-statutory-inquiry-facebook-0) for GDPR violations when accidentally storing plaintext passwords in log-files
