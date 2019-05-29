@@ -39,6 +39,9 @@ Collection of links to Hack-related news
 * Teenage hacker [breaks $1M mark](https://www.businesswire.com/news/home/20190301005093/en/Teen-World%E2%80%99s-1-Million-Bug-Bounty-Hacker) on HackerOne
   * [More](https://www.bbc.com/news/av/technology-47407609/how-one-teenager-is-making-millions-by-hacking-legally)
 
+### February
+* [ISE](https://www.securityevaluators.com/casestudies/password-manager-hacking/) reports several vulnerabilities in popular password-managers
+  * [ZDNet](https://www.zdnet.com/article/critical-vulnerabilities-uncovered-in-popular-password-managers/) article on the matter
 
 ### January
 * [iPhone hack-tool Karma](https://www.reuters.com/investigates/special-report/usa-spying-karma/) only needs phone-number or email-account
