@@ -10,6 +10,12 @@ Sources:
 
 ## 2019
 
+### May
+| When | Who | How many | What | Source |
+| ---- |--------|--------|--------|-------|
+| 2019-05-29 | FlipBoard | 150M user-data | Rela names, usernames, salted & hashes passwords, email-addresses, digital tokens for linked social media services | [Hacker News](https://thehackernews.com/2019/05/flipboard-data-breach-hacking.html)
+
+
 ### April
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
