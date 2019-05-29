@@ -1,0 +1,30 @@
+.reveal h3 {
+	text-align:left;
+}
+
+.reveal h1 { font-size: 2.5em; }
+.reveal h2 { font-size: 1.8em; }
+.reveal h3 { font-size: 1.2em; }
+.reveal h3 { font-size: 1.0em; }
+
+.reveal {
+	font-size: 2.0em;
+}
+
+section.present {
+	top: 10px !important;
+}
+
+.reveal .slides { text-align: left; }
+
+hr {
+	border-top: 4px solid #DB8831;
+	border-bottom: 2px solid #DDDDDD;
+}
+
+.reveal section img {
+	margin: 15px 0px;
+	background: rgba(255, 255, 255, 0.12);
+	border: 0px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
