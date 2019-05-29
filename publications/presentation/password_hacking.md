@@ -492,7 +492,7 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 
 <div class="fragment fade-in" data-fragment-index="3">
   <div class="fragment fade-out" data-fragment-index="4">
-    <img src="./pics/Cross.png style="box-shadow:none; position: fixed; left: 210px; top: 345px; width: 50px; ">
+    <img src="./pics/Cross.png" style="box-shadow:none; position: fixed; left: 210px; top: 345px; width: 50px; ">
   </div>
 </div>
 
@@ -505,7 +505,7 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 <pre>6D231..EC</pre><!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 308px; width: 100px;" class="fragment" data-fragment-index="5" -->
 <pre>simon</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 308px; width: 100px;" class="fragment" data-fragment-index="5" -->
 
-[Pwned Passwords API](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange)
+[Pwned Passwords API](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange)<!-- .element style="box-shadow:none; position: fixed; left: 25px; bottom: 40px; " class="fragment" data-fragment-index="6" -->
 
 --
 
