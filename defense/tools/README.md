@@ -209,12 +209,21 @@ The tools described can be integrated in CI/CD toolchains.
 * Server Hardening:
   * dev-sec.io
   * SIMP
-* Host Intrusion Detection System (HIDS):
+* Intrusion Detection System (IDS):
+  * [Comparison](https://www.alienvault.com/blogs/security-essentials/open-source-intrusion-detection-tools-a-quick-overview) of Open-source IDS
   * [Fail2Ban](https://www.fail2ban.org/wiki/index.php/Main_Page): scans logfiles and bans IPs based on malicious signs
-  * [Snort](https://www.snort.org/)
-  * [OSSEC](https://www.ossec.net/)
-  * Samhain
+  * [Snort](https://www.snort.org/): Network-based IDS
+  * [Suricata](https://suricata-ids.org/features/): Network-based IDS and extra non-IDS functions
+  * [Zeek](https://www.zeek.org/documentation/index.html) (formerly known as Bro): Signature and Anomaly-based IDS
+  * [OSSEC](https://www.ossec.net/): Host-based IDS
+  * [Samhain](https://la-samhna.de/samhain/s_documentation.html): Host-based IDS
   * [Netfilter](https://www.netfilter.org/): Linux kernel packet filtering framework
+ * File Integrity Monitors (FIM):
+   * [AFICK](http://afick.sourceforge.net/)
+   * [TripWire](https://github.com/Tripwire/tripwire-open-source)
+   * [CchRootkit](https://github.com/Magentron/chkrootkit): Rootkit-finding file integrity checkers for Unix-based systems
+   * [rkhunter](http://rkhunter.sourceforge.net/): Rootkit-finding file integrity checkers for Unix-based systems
+   * [Unhide](http://www.unhide-forensics.info/): Rootkit-finding file integrity checkers for Unix-based systems
 
 ## Operation
 * Fault Injection:
