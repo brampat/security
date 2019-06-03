@@ -476,21 +476,79 @@ So what if we would increase the number of passwords up to a moderately but mana
 
 ![](Rainbow.png)
 
-* As a base, we'll take a pre-calculated brute-force attack
-* We limit the total number of passwords to only include certain patterns we assume to have a high success-rate.
-* We store those passwords along with their hash in a large table.
-* Then we chunk that table into smaller tables
+##### How it works
+
+* Consider a pre-calculated brute-force attack
+* Limit the total number of passwords to only include certain patterns we assume to have a high success-rate.
+* Store the passwords along with their hash in a large table.
+* Then chunk that table into smaller tables
+
+To do so, we use a method called rainbow tables.
+
+******* TODO: *******
+Each chunk is cropped using this method:
+
+1. Base password (stored in table) -> HASH -> Hashed PW
+2. Hashed PW -> Reduce -> New password
+3. new password -> HASH -> Hashed PW
+4. Store Hashed PW
+
+Repeat step 2 and 3 N times. 
+
+![](Rainbow_table_creation.png)
+
+You then store only the base password and the eventual hashed password, for which you don't store the actual password. This is called a chain. When using the same reduce-function, the resulting chains are vulnerable to merging and looping, which frustrates the cracking method. By using a different reduce-function in each iteration, we reduce the chances of merges and completely prevent loops.
+
+![](Rainbow_chain.png)
+
+You now have a single chunk of N passwords stored as a single Password-Hash combination, which do not match. Repeat this process for M different base passwords:
+
+![](Rainbow_chains.png)
+
+And store their Password-Hash combinations resulting in a rainbow table.
+
+![](Rainbow_chains_stored.png)
+
+This way, we have M chains of N passwords, stored in M records of 2 items per record.
 
 
-To do so, we use a method using rainbow tables.
+Proceed to the cracking stage:
+* Take a hash (H1) you want to crack
+* Compare it to all hashes from the rainbow-table.
+  * If found, the password you want to crack is in that chain. Proceed to next step
+  * If not, do H1 -> Reduce (R1) -> HASH and recompare that to the rainbow-table hashes
+
+* With your found hash, take the base-password from that chain and hash it (H2).
+* If the hash matches the hash you want to crack, your done
+* Otherwise, H2 -> Reduce (R2) -> HASH and recompare that to the hash you want to crack
+* You will eventually find the password in that chain
 
 
+##### Things to consider
+TODO:
+* Chain merges and loops caused by hash collisions will negatively influence rainbow-tables
+
+
+* Increasing M and N will increase the success-rate of the table.
+* Increasing M will require more storage.
+* Increasing N will require more CPU time. 
+
+
+##### Pros and Cons
+Pros:
+* Limited and manageable storage needed
+* Limited and manageable CPU time needed
+* Rainbow-tables are available pre-calculated online
+
+Cons:
+* No guarantee to find all passwords
+* Optimizing rainbow-tables is complex and hard
+* Still easily defended against with salting
 
 Sources:
-* [Blog]](http://kestas.kuliukas.com/RainbowTables/)
+* [Blog](http://kestas.kuliukas.com/RainbowTables/)
 * [Wikipedia](https://en.m.wikipedia.org/wiki/Rainbow_table)
 
-##### How it works
 
 ##### Defense
 * Strong passwords
