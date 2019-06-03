@@ -37,7 +37,8 @@ independent from another request. So for example, there's no auto-save for the s
 * [OpenSAMM](http://www.opensamm.org/) OWASP Software Assurance Maturity Model: For measuring maturity of secure software deveopment.
   * SAMM defines four business functions each with three security practices. Each of the twelve practices are divided into three maturity levels.O
   ![](SAMM.png)
-* [OpenSAMM PDF](https://opensamm.org/downloads/SAMM-1.0.pdf): SAMM in a PDF 
+  * [OpenSAMM 1.5](https://owaspsamm.org/v1-5/downloads/): SAMM in a PDF 
+  * [OpenSAMM 2.0](https://owaspsamm.org/v2.0b/introduction/): SAMM 2.0 (Beta) introduction 
 * [SAMM Self Assessment](https://github.com/AsteriskLabs/ssa): (dormant since 2014) Tool to assist in Self-assessment on OpenSAMM (built in Rails).
 * [Cybrary Secure coding](https://www.cybrary.it/course/secure-coding/): OWASP Top 10 and SANS Top 25 vulnerabilities and defenses
 
