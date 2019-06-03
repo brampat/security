@@ -10,6 +10,10 @@ Collection of links to Hack-related news
 
 ## 2019
 
+### Juni
+
+* Google Cloud [down](https://techcrunch.com/2019/06/02/google-cloud-is-down-affecting-numerous-applications-and-services/) affecting Google, GMail, Youtube and other services
+
 ### May
 
 * [Practical SHAttered](https://www.zdnet.com/article/sha-1-collision-attacks-are-now-actually-practical-and-a-looming-danger/) SHA-1 collision attack using chosen-prefix collisions
