@@ -4,13 +4,32 @@ Collection of links to Hack-related news
 * [Cyberthreats map](http://www.vanimpe.eu/pewpew/index.html?pew=1)
 * [Kaspersky](https://cybermap.kaspersky.com/) Cyberthreat real-time map
 * [APT](hackerGroups.md) groups list
-* Other [sources](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) like this.
+* Other sources:
+  * [Cybermonitor](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) github.
+  * [Zack Whittaker](https://us18.campaign-archive.com/home/?u=e1ad6038c994abec17dafb116&id=a2457dc8ad) This week in Security
 
 ## 2019
 
 ### May
 
 * [Practical SHAttered](https://www.zdnet.com/article/sha-1-collision-attacks-are-now-actually-practical-and-a-looming-danger/) SHA-1 collision attack using chosen-prefix collisions
+* [US Universities](https://www.buzzfeednews.com/article/ryanmac/us-money-funding-facial-recognition-sensetime-megvii) funding tech behind China's surveillance state
+* [Flipboard](https://about.flipboard.com/support-information-incident-May-2019/) hacked twice, but only found out 9 months later
+* [Russian Hackers Sell](https://www.bbc.com/news/world-europe-48348307) stolen passport and bank account data
+* [US asks Social Media](https://www.apnews.com/c96a215355b242e58107c2125c18fc4a) details for all VISA applications
+* Chinese database with [42.5 Million dating records](https://www.cyberscoop.com/chinese-database-42-million-records/) exposed
+* Apple, Google, Microsoft and WhatsApp condemn GCHQ over [surveillance proposal](https://techcrunch.com/2019/05/30/apple-google-microsoft-whatsapp-sign-open-letter-condemning-gchq-proposal-to-listen-in-on-encrypted-chats/)
+* DuckDuckGo CEO proposes [Opt-in](https://www.vox.com/recode/2019/5/27/18639284/duckduckgo-gabe-weinberg-do-not-track-privacy-legislation-kara-swisher-decode-podcast-interview) instead of Opt-out for data tracking
+* Google announced new policies to better [secure Chrome Extensions](https://www.wired.com/story/google-chrome-extensions-security-changes/)
+* NSA [blames SysAdmins](https://www.cyberscoop.com/eternal-blue-baltimore-ransomware-rob-joyce-new-york-times/) for Baltimore ransomware incident by not patching for EternalBlue
+* [WordPress plugin](https://arstechnica.com/information-technology/2019/05/hackers-actively-exploit-wordpress-plugin-flaw-to-send-visitors-to-bad-sites/) sends visitors to malicious sites
+* [POS malware](https://threatpost.com/pos-malware-found-at-102-checkers-restaurant-locations/145181/) found on 102 Checkers restaurants in US
+* Police can [monitor MacDonald's and Westfield WiFi](https://www.theguardian.com/business/2019/may/28/spies-with-that-police-can-snoop-on-mcdonalds-and-westfield-wifi-customers) used by customers
+* Docker bug allows [Root access](https://duo.com/decipher/docker-bug-allows-root-access-to-host-file-system) to host file system
+* Comprehensive [analysis](https://www.thezdi.com/blog/2019/5/27/cve-2019-0708-a-comprehensive-analysis-of-a-remote-desktop-services-vulnerability) of BlueKeep RDP vulnerability
+* First public schools in US to start using [Facial Recognition](https://www.buzzfeednews.com/article/daveyalba/lockport-schools-facial-recognition-pilot-aegis), but NY Education Dep. asked to delay 
+* MacOS [Keychain attack](https://www.wired.com/story/keysteal-apple-keychain-attack-shenanigans/) revealed
+* [PatronScan](https://onezero.medium.com/id-at-the-door-meet-the-security-company-building-an-international-database-of-banned-bar-patrons-7c6d4b236fc3) selling surveillance as physical security for bars
 
 ### April
 
