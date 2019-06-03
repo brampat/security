@@ -45,11 +45,14 @@
 | Time      | Immediate response                | Limited assignment time       | No deadline                       | Black-hats|
 | Money     | Limited resources                 | Limited resources             | Unlimited resources (sometimes)   | Black-hats|
 | Knowledge | White-box                         | White-box (mostly)            | Black-box                         | SOC       |
-| Attack    | Don't known when, where and how   | Controlled (Rules of engagement) | No rules                       | Black-hats|
+| Attack    | Don't known when, where and how   | Controlled (Rules of engagement)| No rules                       | Black-hats|
 | Defend    | Needs to defend everything        |                               | Needs just one entry              | Black-hats|
 | Detect    | Single detection needed           | Stealthy not (always) needed  | Remain stealthy                   | SOC       |
 
 
 -- Notes --
 
+White-hats don't need to create full damage, just proof / Proof of concept.
+They don't need to execute the full attack up to grabbing all the data.
+Just an SQL-injection that grabs one record or an XSS that does alert(1) should be sufficient.
 
