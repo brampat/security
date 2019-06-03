@@ -196,9 +196,74 @@ If you machine is compromised, narrow vulnerabilities in PW-managers are NOT you
 ## So update
 <hr />
 
+--
+
+## MFA
+<hr />
+
+Things you:
+* know
+* have
+* are
+
+-- Notes --
+
+MFA requires authentication over more than one category.
+(multiple in the same category is NOT MFA)
+
+Example:
+* Know: Passwords, (static) pins
+* Have: Badge, smartphone (Authentication app), security key, Yubi-key, RSA-token (with rolling pins)
+* Are: Biometrics like fingerprints, eye-scan, face-scan, voice, but also keystroke and mouse dynamics
 
 --
 
-## Defense: MFA
+## MFA: Adaptive authentication
+<hr />
 
-https://thenextweb.com/google/2019/05/23/google-data-shows-2-factor-authentication-blocks-100-of-automated-bot-hacks/
+Context:
+* Location-based
+* Time-based
+* Device-based
+* Network-based
+
+-- Notes --
+Example:
+* Location-based: Are you in an expected location, like office or home?
+* Time-based: Working-hours?
+* Device-based: Smartphone, tablet or laptop?
+* Network-based: Office, VPN? Private or public network?
+
+--
+
+## MFA Effectiveness
+<hr />
+
+### Knowledge-based
+
+* Last sign-in location
+* Secondary email-address<!-- .element style="position: fixed; bottom: 350px; " class="fragment" data-fragment-index="0" -->
+* Phone number<!-- .element style="position: fixed; bottom: 80px; bottom: 250px; " class="fragment" data-fragment-index="1" -->
+
+![](pics/MFA/login_location.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; bottom: 420px; width: 450px; " -->
+![](pics/MFA/email_address.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; bottom: 310px; width: 450px; " class="fragment" data-fragment-index="0" -->
+![](pics/MFA/phone_number.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; bottom: 200px; width: 450px; " class="fragment" data-fragment-index="1" -->
+
+<span>Source: [Google research](https://thenextweb.com/google/2019/05/23/google-data-shows-2-factor-authentication-blocks-100-of-automated-bot-hacks/)</span><!-- .element style="font-size: 16px; position: fixed; bottom: 80px; " -->
+
+--
+
+## MFA Effectiveness
+<hr />
+
+### Device-based
+
+* SMS-code
+* Device-prompt<!-- .element style="position: fixed; bottom: 350px; " class="fragment" data-fragment-index="0" -->
+* Security-key<!-- .element style="position: fixed; bottom: 80px; bottom: 250px; " class="fragment" data-fragment-index="1" -->
+
+![](pics/MFA/sms_code.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; bottom: 420px; width: 450px; " -->
+![](pics/MFA/device_prompt.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; bottom: 310px; width: 450px; " class="fragment" data-fragment-index="0" -->
+![](pics/MFA/security_key.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; bottom: 200px; width: 450px; " class="fragment" data-fragment-index="1" -->
+
+<span>Source: [Google research](https://thenextweb.com/google/2019/05/23/google-data-shows-2-factor-authentication-blocks-100-of-automated-bot-hacks/)</span><!-- .element style="font-size: 16px; position: fixed; bottom: 80px; " -->
