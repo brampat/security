@@ -58,8 +58,11 @@ The tools described can be integrated in CI/CD toolchains.
 
 * Static Code analysis
   * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
+  * [Fortify](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports 25+ languages including Java, C#, C++, Swift & PHP
   * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
-  * Fortify
+  * Dependency Checks:
+    * OWASP [Dependency-check](https://www.owasp.org/index.php/OWASP_Dependency_Check) to identify vulnerable dependencies
+    * GitHub [Automated Security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes) for vulnerable dependencies
   * Java:
     * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
     * [OWASP Lapse+](https://www.owasp.org/index.php/OWASP_LAPSE_Project)
