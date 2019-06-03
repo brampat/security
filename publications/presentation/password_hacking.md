@@ -512,7 +512,7 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 ## Offline Attacks
 <hr />
 
-### Rainbow table attack
+### Lookup table attack
 
 ![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 300px;" -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 405px; width: 100px; height: 100px;" -->

@@ -89,6 +89,18 @@
 * [DomListener](https://chrome.google.com/webstore/detail/domlistener/jlfdgnlpibogjanomigieemaembjeolj?hl=en) Chrome extension that listens to DOM-changes (eg. for DOM-bases XSS detection)
 * [Requestbin.com](https://requestbin.com) for dumping requests of XSS
 * [Beecepter](https://beeceptor.com/) for intercepting requests of XSS
+* [myBFF](https://github.com/MooseDojo/myBFF) a Bruteforce Framework, Bruteforces:
+  * HP SiteScope (will attempt to give you a Meterpreter Shell!)
+  * Citrix Gateway (also enumerates authorized applications)
+  * Juniper Portal (Will look for 2FA bypass and list what is accessible)
+  * MobileIron (Unknown. Have to find out what is accessible first!)
+  * Outlook/Office365 (will parse email, contacts, and other data from email)
+  * Wordpress (Will be adding "SomethingCool" soon)
+  * CiscoVPN (Enumerate User accounts (May not work on all configurations))
+  * Okta (Enumerate Applications and check if 2FA is setup for account)
+  * Jenkins (Will be adding "Something Cool" soon)
+  * SMB (Check if user is an administrator) (must use --domain with this module. for host, use smb://)
+  * FTP (List root dir contents)
 
 ## Practicing
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
