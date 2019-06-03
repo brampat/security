@@ -60,9 +60,6 @@ The tools described can be integrated in CI/CD toolchains.
   * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
   * [Fortify](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports 25+ languages including Java, C#, C++, Swift & PHP
   * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
-  * Dependency Checks:
-    * OWASP [Dependency-check](https://www.owasp.org/index.php/OWASP_Dependency_Check) to identify vulnerable dependencies
-    * GitHub [Automated Security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes) for vulnerable dependencies
   * Java:
     * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
     * [OWASP Lapse+](https://www.owasp.org/index.php/OWASP_LAPSE_Project)
@@ -142,6 +139,7 @@ The tools described can be integrated in CI/CD toolchains.
   * Integrate into CI/CD
   * Tools:
     * [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
+    * GitHub [Automated Security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes) for vulnerable dependencies
     * [JForg X-Ray](https://jfrog.com/xray/): in combination with JFrog Artifactory
     * [PHP Sercurity Checker](https://security.sensiolabs.org/)
     * Ruby [Bundler-Audit](https://github.com/rubysec/bundler-audit)
@@ -186,7 +184,7 @@ The tools described can be integrated in CI/CD toolchains.
 
 ## Production
 * Security Smoke Tests:
-  * ZAP Baseline Scna
+  * ZAP Baseline Scan
   * NMap
   * SSLLabs-Scan
 * Configuration Safety Checks
@@ -224,7 +222,7 @@ The tools described can be integrated in CI/CD toolchains.
  * File Integrity Monitors (FIM):
    * [AFICK](http://afick.sourceforge.net/)
    * [TripWire](https://github.com/Tripwire/tripwire-open-source)
-   * [CchRootkit](https://github.com/Magentron/chkrootkit): Rootkit-finding file integrity checkers for Unix-based systems
+   * [ChkRootkit](https://github.com/Magentron/chkrootkit): Rootkit-finding file integrity checkers for Unix-based systems
    * [rkhunter](http://rkhunter.sourceforge.net/): Rootkit-finding file integrity checkers for Unix-based systems
    * [Unhide](http://www.unhide-forensics.info/): Rootkit-finding file integrity checkers for Unix-based systems
 
