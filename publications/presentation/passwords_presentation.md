@@ -17,6 +17,7 @@ Systems have bad policies
    ![](passwords_presentation/belastingdienst.png)
   
 1. Users don't like complex
+
 1. Users invent "a system"
 
    ![](passwords_presentation/elephants_path.jpg)
