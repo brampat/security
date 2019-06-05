@@ -151,12 +151,18 @@ The tools described can be integrated in CI/CD toolchains.
 ## Acceptance
 
 * Infrastructure as Code analysis
-  * Ansible
-  * Chef
-  * Puppet
-  * Saltstack
-  * Terraform
-  * Vagrant
+  * Red Hat [Ansible](https://www.ansible.com/) automation
+  * [Chef](https://www.chef.io/) enterprise automation
+  * [Puppet](https://puppet.com/) infrastructure automation and delivery
+  * [Saltstack Enterprise](https://www.saltstack.com/products/saltstack-enterprise/) 
+  * [Saltstack Security](https://www.saltstack.com/products/secops/)
+  * Hashicorp [Terraform](https://www.terraform.io/) infrastructure as code
+  * Hashicorp [Vagrant](https://www.vagrantup.com/)
+  * Comparison [Puppet vs Chef](https://logz.io/blog/chef-vs-puppet/) and [Revisited](https://www.upguard.com/articles/puppet-vs.-chef-revisited)
+  * Comparison [Ansible vs Saltstack](https://www.upguard.com/articles/ansible-vs-salt)
+  * Comparison [Ansible vs Terraform](https://linuxacademy.com/blog/devops/ansible-vs-terraform-fight/)
+  * Comparison [Terraform vs Vagrant](https://www.trustradius.com/compare-products/terraform-vs-vagrant)
+  * [Blog](https://blog.pulumi.com/testing-your-infrastructure-as-code-with-pulumi) on testing ingrastructure as code with Pulumi
 * Immutable Infrastructure:
   * Docker
   * RKT
@@ -219,12 +225,12 @@ The tools described can be integrated in CI/CD toolchains.
   * [OSSEC](https://www.ossec.net/): Host-based IDS
   * [Samhain](https://la-samhna.de/samhain/s_documentation.html): Host-based IDS
   * [Netfilter](https://www.netfilter.org/): Linux kernel packet filtering framework
- * File Integrity Monitors (FIM):
-   * [AFICK](http://afick.sourceforge.net/)
-   * [TripWire](https://github.com/Tripwire/tripwire-open-source)
-   * [ChkRootkit](https://github.com/Magentron/chkrootkit): Rootkit-finding file integrity checkers for Unix-based systems
-   * [rkhunter](http://rkhunter.sourceforge.net/): Rootkit-finding file integrity checkers for Unix-based systems
-   * [Unhide](http://www.unhide-forensics.info/): Rootkit-finding file integrity checkers for Unix-based systems
+* File Integrity Monitors (FIM):
+  * [AFICK](http://afick.sourceforge.net/)
+  * [TripWire](https://github.com/Tripwire/tripwire-open-source)
+  * [ChkRootkit](https://github.com/Magentron/chkrootkit): Rootkit-finding file integrity checkers for Unix-based systems
+  * [rkhunter](http://rkhunter.sourceforge.net/): Rootkit-finding file integrity checkers for Unix-based systems
+  * [Unhide](http://www.unhide-forensics.info/): Rootkit-finding file integrity checkers for Unix-based systems
 
 ## Operation
 * Fault Injection:
@@ -259,6 +265,7 @@ The tools described can be integrated in CI/CD toolchains.
   * [Elastic Stack](https://www.elastic.co/solutions/security-analytics) with [additions](https://logz.io/blog/elk-siem/):
     * [X-Pack](https://www.elastic.co/products/stack)
     * [ElastAlert](https://github.com/Yelp/elastalert)
+    * Blog on [Security plugins](https://www.theserverside.com/feature/Detect-attacker-intent-with-Elasticsearch-security-plugins) for Elasticsearch
   * [Backstory](https://chronicle.security/products/backstory/) from Google / Alphabet's [Chronicle](https://chronicle.security/)
   * [OSSIM](https://www.alienvault.com/products/ossim)
   * [OSSEC](http://www.ossec.net/)
