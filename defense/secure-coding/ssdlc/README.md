@@ -7,6 +7,22 @@
 * [CI/CD hardening](https://snyk.io/blog/so-you-think-your-ci-cd-environment-is-secure/) by [Snyk.io](https://snyk.io)
 * [Github Security Best practices](https://snyk.io/blog/ten-git-hub-security-best-practices/) by [Snyk.io](https://snyk.io)
 * [Pushing Left like a Boss](https://code.likeagirl.io/pushing-left-like-a-boss-part-1-80f1f007da95) by [Tanya Janca](https://twitter.com/shehackspurple)
+  * Part 2: [Security Requirements](https://code.likeagirl.io/pushing-left-like-a-boss-part-2-security-requirements-a71b86f6dd3f)
+  * Part 3: [Secure Design](https://code.likeagirl.io/pushing-left-like-a-boss-part-3-secure-design-16d729453afa)
+  * Part 4: [Secure Coding Concepts](https://code.likeagirl.io/pushing-left-like-a-boss-part-4-secure-coding-3a544dd30e20)
+  * Part 5.1: [Input Validation, Output Encoding & Parameterized queries](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-1-input-validation-output-encoding-and-parameterized-queries-ad1d4e7136c9)
+  * Part 5.2: [Safe Dependencies](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-2-use-safe-dependencies-5bda811506)
+  * Part 5.3: [Browser & Client-side Hardening](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-3-browser-and-client-side-hardening-e7bdd6596ab3)
+  * Part 5.4: [Session Management](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-4-session-management-ad441942511c)
+  * Part 5.5: [File Uploads](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-5-file-uploads-c2b1ee17f2d6)
+  * Part 5.6: [Redirects and Forwards](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-6-redirects-and-forwards-3d97bf46609c)
+  * Part 5.7: [URL Parameters](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-7-url-parameters-ac77c83b3d10)
+  * Part 5.8: [Securing your Cookies](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-8-securing-your-cookies-1c4391b10f88)
+  * Part 5.9: [Error Handling & Logging](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-9-error-handling-and-logging-28e9b8267c56)
+  * Part 5.10: [Handling Untrusted Data](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-10-untrusted-data-786b857255e0)
+  * Part 5.11: [Authorization](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-11-authorization-authz-58d81d387536)
+  * Part 5.12: [Authentication, Identity & Access Control](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-12-authentication-authn-identity-and-access-control-165cd2f23110)
+  * Part 5.13: [HTTPS only](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-13-https-only-e4fd3b881519)
 
 ## Agile software development
 
@@ -32,3 +48,77 @@ Modern & Secure development: a mismatch ?
 8. Build projects around motivated individuals. Knowing how to build secure software is an intrinsic motivator.
 9. The most effective solution emerges from self-organizing teams able to call upon security experts when needed.
 10. At regular intervals, the team reflects on how to become more effective, adjusting its processes and technical solutions accordingly.
+
+
+
+## SSDLC steps
+
+Often in organisations, the only effort (if any) with regards to secure software development is the execution of a pentest, just before deployment to production. This will then result into a list of issues, prioritized and crisis management to mitigate at least the high-critical issues, as to not delay the deadline too much.
+
+As with all bugs, the earlier you can find them, the less effort it will cost to fix them.
+
+![](../../../publications/presentation/pics/bug_cost.jpg)
+
+For security bugs, this is no different. Security bugs are no different than any other bugs, whether it be functional bugs or other non-functional bugs, like performance and usability bugs. Also, there are lots of activities to execute in each stage of the software lifecycle to increase security.
+
+![](SSDLC_process_steps.png)
+
+Here, you can see the different stages of a software development lifecycle from requirements to decommissioning. For each stage, a corresponding stage in security activities can be added. Below, I will detail each stage's security activities. Please note, this is not a comprehensive list of activities. 
+
+### Requirements
+
+During requirements, the team can coordinate with their organisation's Chief Information Security Officer (CISO) to discuss CIA classifications and Business Impact Analysis.
+
+#### Risk assessment
+
+Using this table the application and it's data can be classified on the CIA aspects.
+
+| Quality aspect    | Priority      |           |           |           |
+|-------------------|---------------|-----------|-----------|-----------|
+| Confidentiality   | Very strict   | Strict    | Internal  | Public    |
+| Integrity         | Critical      | High      | Medium    | Low       |
+| Availability      | Critical      | High      | Medium    | Low       |
+
+Additionally the team could also add the extended CIA aspects of:
+* Non-repudiation
+* Code validation
+* Authentication
+
+### Design
+
+During the design phase of the application or separate functionality, the team again assisted by the CISO can Sollic
+* Threat analysis
+* Abuse cases
+
+### Build
+
+* Static analysis
+* SAST tools
+
+### Test
+
+* Security Unit-tests
+* Dynamic Analysis
+* DAST
+  * OWASP ZAP
+
+### Deploy
+
+* Secrets management
+* Secure config
+* Pentest
+
+### Maintain
+
+* Threat detection / Monitor
+  * Log aggregation
+  * SIEM
+  * IDS
+
+### Decommision
+
+Take the application out of service, which includes:
+
+* Secure deletion
+ 
+Details [here](secure_decommission.md) 
