@@ -67,7 +67,30 @@ Here, you can see the different stages of a software development lifecycle from 
 
 ### Requirements
 
-During requirements, the team can coordinate with their organisation's Chief Information Security Officer (CISO) to discuss CIA classifications and Business Impact Analysis.
+During requirements, the team can coordinate with their organisation's Chief Information Security Officer (CISO) to discuss CIA classifications and Business Impact Analysis. Questions to answer include:
+* What data is handled in the application?
+  * Does this concern sensitive / confidential data, like:
+    * Information that is already publicly available?
+    * Personally Identifiable data (PII) -> This will require you to adhere to privacy laww like GDPR and equivalent
+    * Intellectual Property
+    * Competitive Client or contract information
+    * Etc.
+  * Where and how will data be stored?
+    * Will data be stored on cloud-services or internally?
+    * Will data be encrypted?
+    * Will data storage be separated from the application's logic?
+    * How will data storage be secured?
+  * How will the application be accessed?
+    * Is it accessible via internet or only internally?
+    * Is VPN mandatory?
+  * Does the application expose sensitive or important functionality?
+    * Financial transactions
+    * Control industrial machinery, utilities like water purification, water, gas or electricity networks, traffic systems like traffic-lights, level crossings etc.
+    * Handle or support in health-care, like insulin monitors or pumps, pacemakers, MRI scanners etc.
+  * Does it support risky software operations, like managing content, uploading data or files, etc.
+  * What are availability requirements?
+    * Should it be available 24/7 99.999999% of the time?
+    * Should it be available only during working hours? If so: what are working hours? Are users located in different timezones?
 
 #### Risk assessment
 
@@ -94,6 +117,26 @@ During the design phase of the application or separate functionality, the team a
 
 * Static analysis
 * SAST tools
+
+Some security measures:
+* Encrypt data at rest (in database or other storage)
+* Encrypt data in transit (between all of users, application, data store, API's etc)
+* Validate and Sanitize all data coming into the system from anywhere. Even systems you control / own, because they might also become compromised. Security in-depth to prevent indirect compromise.
+* Validate and scan all file-uploads properly
+* Encode all output and escape when needed
+* Scan dependencies for vulnerabilities
+* Use security headers
+* Use security measures to properly store passwords (proper hashing, salting)
+* Only allow HTTPS for all resources
+* Ensure TLS version 1.2 or higher is used
+* Never hardcode secrets, certificates, data, references like connection strings etc.
+* Never put sensitive information in code-comments
+* Use security frameworks whenever possible. If you cannot find it, you either need to rethink your architecture or search harder.
+* Use the latest version of frameworks and say up-to-date.
+* Log errors, aggregate logs and have proper analysis and alerts. Do not log sensitive information
+* Perform sanitization server-side and use a whitelist approach
+* Perform Security testing on both code (SAST: Static Analysis Security Testing) and executable (DAST: Dynamic Anaysis Security Testing)
+
 
 ### Test
 
