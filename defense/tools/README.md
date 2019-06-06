@@ -57,6 +57,8 @@ The tools described can be integrated in CI/CD toolchains.
 ## Commit
 
 * Static Code analysis
+  * Wikipedia [List](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) of Static Code Analysis Tools
+  * [Awesome Static Analysis](https://github.com/mre/awesome-static-analysis) list of tools
   * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
   * [Fortify](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports 25+ languages including Java, C#, C++, Swift & PHP
   * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
