@@ -11,6 +11,7 @@
 | Blue Team | Defense side of an ethical hack operation. Also see Red team / Blue team testing |
 | [C.I.A.](CIA.md) | Confidentiality, Integrity, Availability |
 | Countermeasure | Control put in place to mitigate potential losses |
+| DAST | Dynamic Application Security Testing, in which a runnig application is reviewed and debugged to find security issues |
 | [DMZ](https://en.wikipedia.org/wiki/DMZ_(computing)) | Demilitarized zone or perimeter network, subnetwork containing and only exposing external-facing services. |
 | [DoS](../techniques/dos.md) | Denial of Service, flooding a system with more requests it can handle, thereby making the system unable to respond to valid requests. |
 | [DDoS](../techniques/dos.md) | Distributed Denial of Service |
@@ -30,6 +31,7 @@
 | HIDS | Host Intrusion Detection System |
 | [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) | Internet Control Message Protocol, layer 3 protocol used by network devices (eg. routers) to send error messages and operational information. ICMP does not use ports, the port concept does not exist in ICMP. Ping and traceroute commands use ICMP. |
 | [IDS](https://en.wikipedia.org/wiki/Intrusion_detection_system) | Intrusion Detection System, used to detect abnormal behavior or penetration of systems |
+| IAST | Interactive Application Security Testing |
 | IoT | Internet of Things, indicates large variety of devices and sensors connected to the internet. These include small devices like security-camera's, coolers, smart-lighting, smart garage-doors, but also modern cars etc. |
 | [IP](https://en.wikipedia.org/wiki/Internet_Protocol) | Internet Protocol, communications protocol part of the internet protocol suite. It is tasked with delivering packets of information from source to destination host using the IP addresses in the packet headers. |
 | IP Address | Internet Protocol Address, uniquely identifies a computer or device on a network |
@@ -52,6 +54,7 @@
 | Reverse-shell | Malicious software on a system to gain access to that system initiated from the system iteself to the hacker |
 | Risk | Probability of a threat becoming real and corresponding potential damages |
 | Root kit | See [Malware types](malwareTypes.md) |
+| SAST | Static Application Security Testing, in which the code is reviewed to find any security issues. This can be performaned automatically using tools or manually |
 | Shoulder surfing | Method of gaining access to a secret or password by observing a user entering the secret on a keyboard. In [Citizen Four](https://www.imdb.com/title/tt4044364/) Edward Snowden is using a blanket to shield his typing in the password when accessing his laptop. |
 | Social Engineering | Ways of using weakness of people (helpfulness) by persuading them to give up information that can help you in gaining access gaining access to a system, organization or building ||
 | SQL Injection |  |
