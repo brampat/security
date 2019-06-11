@@ -6,6 +6,7 @@
 * Hacking Jenkins part [1](https://blog.orange.tw/2019/01/hacking-jenkins-part-1-play-with-dynamic-routing.html) and [2](http://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html)
 * [CI/CD hardening](https://snyk.io/blog/so-you-think-your-ci-cd-environment-is-secure/) by [Snyk.io](https://snyk.io)
 * [Github Security Best practices](https://snyk.io/blog/ten-git-hub-security-best-practices/) by [Snyk.io](https://snyk.io)
+* [Creating AppSec training that developers love](https://www.youtube.com/watch?v=cnz4X3yoI08) by [Leif Dreizler](https://twitter.com/leifdreizler)
 * [Pushing Left like a Boss](https://code.likeagirl.io/pushing-left-like-a-boss-part-1-80f1f007da95) by [Tanya Janca](https://twitter.com/shehackspurple)
   * Part 2: [Security Requirements](https://code.likeagirl.io/pushing-left-like-a-boss-part-2-security-requirements-a71b86f6dd3f)
   * Part 3: [Secure Design](https://code.likeagirl.io/pushing-left-like-a-boss-part-3-secure-design-16d729453afa)
@@ -23,6 +24,7 @@
   * Part 5.11: [Authorization](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-11-authorization-authz-58d81d387536)
   * Part 5.12: [Authentication, Identity & Access Control](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-12-authentication-authn-identity-and-access-control-165cd2f23110)
   * Part 5.13: [HTTPS only](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-13-https-only-e4fd3b881519)
+ * [Security Learns to Sprint](https://www.youtube.com/watch?v=g3wCiEEiZmI) Adding Sec to DevSecOps by [Tanya Janca](https://twitter.com/shehackspurple)
 
 ## Agile software development
 

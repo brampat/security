@@ -61,4 +61,4 @@ Sub-pages:
 * [What to do when hacked](stagesOfGrief.md)
 
 -----------
-Source: [Virtual Training Company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
+Source: [Virtual Training Company](https://www.youtube.com/watch?v=wWKbQIfEGrQ)
