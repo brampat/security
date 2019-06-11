@@ -1,7 +1,57 @@
 ## Secure Software Development
 <hr />
 
-### Conventional Security effort
+
+--
+
+## Development class 101
+<hr />
+
+```php
+<?php
+	echo 'Hello, World!';
+?>
+```
+
+--
+
+## Development class 102
+<hr />
+
+```php
+<?php
+echo 'Hello ' . $_GET["name"] . '!'; 
+?>
+```
+
+--
+
+## Secure Software Development class 101
+<hr />
+
+```http request
+http://example.com/?name=Bram
+```
+
+```http request
+http://example.com/?name=<script>alert('XSS triggered')</script>
+```
+
+--
+
+## Secure Software Development class 102
+<hr />
+
+```php
+<?php
+echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';
+?>
+```
+
+--
+
+## Conventional Security effort
+<hr />
 
 ![](./pics/truck_fixing.gif)<!-- .element style="width: 500px;" class="fragment" -->
 
@@ -90,6 +140,46 @@ Cost increases 30-100x
 * Security Smoke tests
 
 ![](./pics/nessus.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
+
+--
+
+## Secure Software Development: Unit tests
+<hr />
+
+![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+
+```groovy
+class SimpleController {
+    def hello() {
+        render "Hello ${params.name} !"
+    }
+}
+```
+
+```groovy
+@TestFor(SimpleController)
+@Unroll
+class SimpleControllerSpec extends Specification {
+
+    void 'test param'() {
+        given:
+        params.name = name
+        
+        when:
+        controller.hello()
+        
+        then:
+        response.text.contains(result)
+        
+        where:
+        name                        || result
+        'Bram'                      || 'Hello Bram'
+        '<script>alert(1)</script>' || '&lt;script&gt;alert(1)&lt;/script&gt;'
+    }
+}
+```
+
 
 --
 
