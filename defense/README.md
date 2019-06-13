@@ -1,5 +1,9 @@
-
 # Security Controls / Countermeasures
+
+This section describes means to manage, monitor and defend against attacks. The first place to start for developers would be the [OWASP section](owasp/README.md) and the following online courses:
+* [Hacksplaining](https://www.hacksplaining.com/) which describes different web-attacks in detailed, easy-to-understand steps and explains how to protect against these attacks.
+* [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt, free Pluralsight training which describes web-attacks in details and how to perform them yourself.
+* [SAFECode](https://safecode.org) Non profit organization with free on-demand webcasts on Secure Software Development.
 
 ## Use of defense-in-depth strategy
 Secure systems and organizations on several levels, both vertically as horizontally. 
@@ -22,6 +26,7 @@ Technical measures to enforce security: Firewalls, encryption, network securitie
 Sub-pages:
 
 * [Defense Types](defenseTypes.md)
+* [OWASP](owasp/README.md)
 
 ## Networking:
 * [ARP Poisoning](arpPoisoning.md)
@@ -53,8 +58,6 @@ Sub-pages:
 
 ## Application
 * [Webserver attacks](webserver.md)
-
-
 
 ## Incident response
 * [Responsible disclosure](responsibleDisclosure.md)
