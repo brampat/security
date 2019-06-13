@@ -485,15 +485,40 @@ So what if we would increase the number of passwords up to a moderately but mana
 
 To do so, we use a method called rainbow tables.
 
-******* TODO: *******
-Each chunk is cropped using this method:
+###### Preparation
 
-1. Base password (stored in table) -> HASH -> Hashed PW
-2. Hashed PW -> Reduce -> New password
-3. new password -> HASH -> Hashed PW
-4. Store Hashed PW
+Before the attack, we can either pre-calculate a rainbow-table or use a rainbow table available from various sources.
 
-Repeat step 2 and 3 N times. 
+A rainbow table is calculated using this method:
+
+1. Choose a password pattern
+2. Choose a hash-method
+3. Determine a reduction method to reduce a hash-output of the hash-method to a password conforming to the chosen password pattern
+4. Choose a base-password
+5. Hash the base-password to an intermediate Hash
+5. Take this hash and reduce it to a new password
+6. Hash the new password
+7. Repeat steps 5-6 any number of times
+   * The number of times repeated determines the length X of the chains
+   * More repeats means longer preparation-time and longer time of the actual attack, but less storage space required for the rainbow-table and higher change of success
+8. Store the final hashed from step 6 together with the base-password from step 4
+9. Choose a different base-password and repeat steps 5 through 8
+10. Repeat step 9 any number of time.
+
+###### Details on step 3
+
+We chose MD5 as the hash-method and 8 character passwords containing lowercase or numbers.
+```
+hashMD5(12345678) = 25d55ad283aa400af464c76d713c07ad
+```
+
+We reduce the hash by taking only the first 8 characters.
+
+```
+reduce(25d55ad283aa400af464c76d713c07ad) = 25d55ad2
+```
+
+###### Details on step 8
 
 ![](Rainbow_table_creation.png)
 
@@ -501,7 +526,7 @@ You then store only the base password and the eventual hashed password, for whic
 
 ![](Rainbow_chain.png)
 
-You now have a single chunk of N passwords stored as a single Password-Hash combination, which do not match. Repeat this process for M different base passwords:
+You now have a single chunk of X passwords stored as a single Password-Hash combination, which do not match. Repeat this process for M different base passwords:
 
 ![](Rainbow_chains.png)
 
@@ -511,28 +536,38 @@ And store their Password-Hash combinations resulting in a rainbow table.
 
 This way, we have M chains of N passwords, stored in M records of 2 items per record.
 
-
+###### Cracking
 Proceed to the cracking stage:
-* Take a hash (H1) you want to crack
-* Compare it to all hashes from the rainbow-table.
-  * If found, the password you want to crack is in that chain. Proceed to next step
-  * If not, do H1 -> Reduce (R1) -> HASH and recompare that to the rainbow-table hashes
 
-* With your found hash, take the base-password from that chain and hash it (H2).
-* If the hash matches the hash you want to crack, your done
-* Otherwise, H2 -> Reduce (R2) -> HASH and recompare that to the hash you want to crack
-* You will eventually find the password in that chain
+![](Rainbow_algorithm.png)
 
+Input:
+* Leaked hash you want to crack
+* Rainbow-table
+* Hash-method used to pre-calculate the rainbow-table and which matches the hash-method for the leaked password
+* Reduce-function used to pre-calculate the rainbow-table
+
+1. Compare the hash to all hashes at the chain-ends from the rainbow-table.
+  * If found, the password you want to crack is in that chain. Proceed to step 4
+  * If not, proceed to step 2
+2. Reduce the hash to a new password-guess using the reduce-function
+3. Hash the new password-guess and use it to repeat step 1 until the hash is found at a chain-end or after X times where X is the (maximum) chain-length.
+4. Take the base-password from this chain.
+5. Hash it
+6. Compare the hash to the leaked hash. Does it match?
+   * If they match, the password is the last used input for step 5.
+   * If they don't match, proceed to step 7
+7. Reduce the hash to a new password-guess
+
+Note on step 1-3: If the actual password corresponding to the leaked hash is never hit during the creation of the rainbow-table, steps 1 to 3 will be repeated infinitely. After X repeats (where X is the chain-length), we can safely assume the password is not hit by the rainbow table and stop cracking.
+
+Note on step 4-7: The hash was found in the rainbow table. The Base-password / End-hash combination is the only relevant information to crack this specific leaked hash. 
 
 ##### Things to consider
-TODO:
 * Chain merges and loops caused by hash collisions will negatively influence rainbow-tables
-
-
-* Increasing M and N will increase the success-rate of the table.
-* Increasing M will require more storage.
-* Increasing N will require more CPU time. 
-
+* Increasing chain-length and number of chains will increase the success-rate of the table, but will increase preparation-time.
+* Increasing number of chains will require more storage.
+* Increasing chain-length will require more CPU time during the attack.
 
 ##### Pros and Cons
 Pros:
@@ -548,7 +583,8 @@ Cons:
 Sources:
 * [Blog](http://kestas.kuliukas.com/RainbowTables/)
 * [Wikipedia](https://en.m.wikipedia.org/wiki/Rainbow_table)
-
+* [The Security Blogger](https://www.thesecurityblogger.com/understanding-rainbow-tables/)
+* [Geeks for Geeks](https://www.geeksforgeeks.org/understanding-rainbow-table-attack/)
 
 ##### Defense
 * Strong passwords
