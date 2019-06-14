@@ -66,3 +66,4 @@ TODO:
 SHA-1
 SHA-2 etc
 
+[SHA-1 attacks](https://www.zdnet.com/article/sha-1-collision-attacks-are-now-actually-practical-and-a-looming-danger/) are now practically feasible
