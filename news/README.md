@@ -60,6 +60,7 @@ Collection of links to Hack-related news
 
 ### March
 
+* [PentestPartners](https://www.youtube.com/watch?v=aZUQmJMuf8c) finds exploits in car-alarms from Viper and Pandora and clearly explains the attack scenario.
 * [ASUS](https://techcrunch.com/2019/03/25/asus-update-backdoor/) update software backdoored to target 600 specific Mac-addresses
   * Same on [Hackernews](https://thehackernews.com/2019/03/asus-computer-hacking.html) 
 * Hydro hit by [LockerGoga](https://doublepulsar.com/how-lockergoga-took-down-hydro-ransomware-used-in-targeted-attacks-aimed-at-big-business-c666551f5880?gi=f6a067014efa) ransomware
@@ -91,11 +92,10 @@ It is unclear if this was caused by a configuration error or a deliberate attack
 ### October
 
 * [Dutch foil Russian Cyber-attack on OPCW](https://www.bbc.com/news/world-europe-45747472): APT28
-
-* [Bloomberg doubles down](https://www.infosecurity-magazine.com/news/us-telco-supply-chain-alteration) on the story
-* [Hardware implants debunked](https://9to5mac.com/2018/10/09/bloomberg/): This story appears to be FUD from an over-enthousiastic Bloomberg reporter, but...
 * [China's Hardware implants](https://www.bloomberg.com/news/features/2018-10-04/the-big-hack-how-china-used-a-tiny-chip-to-infiltrate-america-s-top-companies): Supermicro's server 
 supply chain compromised by China's grain-sized server-implants. Discovery by Amazon, Apple confirmed the FBI's fears
+  * [Hardware implants debunked](https://9to5mac.com/2018/10/09/bloomberg/): This story appears to be FUD from an over-enthousiastic Bloomberg reporter, but...
+  * [Bloomberg doubles down](https://www.infosecurity-magazine.com/news/us-telco-supply-chain-alteration) on the story
 
 
 
