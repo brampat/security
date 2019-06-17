@@ -8,9 +8,13 @@ Work in progress
 ## OWASP Top 10 Examples
 <hr />
 
-### Disclaimer
+### Disclaimer: Don't try this at home
 
-![](pics/dont_try_this_at_home.jpg)<!-- .element style="width: 800px;" class="fragment" -->
+![](pics/dont_try_this_at_home.jpg)
+
+-- Notes --
+
+All hacking as displayed in examples is illegal
 
 --
 
@@ -55,10 +59,10 @@ Password: correct horse battery staple
 
 
 <pre><code data-trim data-noescape>
-SELECT *
+SELECT username
   FROM users
  WHERE email = 'user@email.com'
-   AND pass  = 'correct horse battery staple' LIMIT 1
+   AND pass  = 'correct horse battery staple'
 </code></pre><!-- .element style="position: fixed; width: 470px; left: 30px; top: 370px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
@@ -85,10 +89,10 @@ Password: ' or 1=1 --
 </code></pre><!-- .element: style="position: fixed; width: 470px; left: 30px; top: 300px;" class="fragment" data-fragment-index="0" -->
 
 <pre><code data-trim data-noescape>
-SELECT *
+SELECT username
   FROM users
  WHERE email = 'user@email.com'
-   AND pass  = '' or 1=1 --' LIMIT 1
+   AND pass  = '' or 1=1 -- '
 </code></pre><!-- .element style="position: fixed; width: 470px; left: 30px; top: 370px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
@@ -117,15 +121,21 @@ In prioritized order
 * Escape special characters
 * LIMIT query-results
 
+-- Notes --
+
+* Safe API: Use the frameworks
+* Input validation: if you expect an ID, whitelist only decimals
+* Escape special chars: having an sql-injection payload as password should be perfectly fine
+* LIMIT: will slow down massive data-breaches (but won't stop them)
+
 --
 
 ## Injection: further reading
 <hr />
 
-
 * OWASP on [2017-A1 Injection](https://www.owasp.org/index.php/Top_10-2017_A1-Injection)
 * [Bobby-tables.com](https://bobby-tables.com/) <sup>Yep, seriously</sup>
-* Types:
+* Injection Types:
   * NoSQL
   * Commands
   * ORM
@@ -167,7 +177,7 @@ In prioritized order
 
 -- Notes --
 
-Although the leaks themselves are not the actual attack, they enable credential stuffing, which is an excellent example of broken authentication
+Although Data-breaches (with password-leaks) themselves are not the actual attack, they enable credential stuffing, which is an excellent example of broken authentication
 
 --
 
@@ -181,6 +191,10 @@ Although the leaks themselves are not the actual attack, they enable credential 
 * [John the Ripper](http://www.openwall.com/john/)
 * [Cain & Abel](http://www.softpedia.com/get/Security/Decrypting-Decoding/Cain-and-Abel.shtml)
 * [Hydra](https://sectools.org/tool/hydra/)
+
+-- Notes --
+
+These tools help to crack passwords
 
 --
 
@@ -229,15 +243,28 @@ Although the leaks themselves are not the actual attack, they enable credential 
 ## Sensitive Data Exposure: attack
 <hr />
 
+![](pics/gevers_chinese_mongodb.png)<!-- .element style="width: 400px;" -->
+
+[Breed-ready status](https://www.bleepingcomputer.com/news/security/creepy-database-lists-breedready-status-for-18-million-women/)<!-- .element style="position: fixed; width: 400px; bottom: 100px; right: 100px;" -->
+
+--
+
+## Sensitive Data Exposure: attack
+<hr />
+
 ![](pics/linkedin.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 380px; width: 200px;" -->
 ![](pics/marriott.jpeg)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 400px; width: 200px;" -->
-![](pics/family_locator.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 132px; width: 200px;" -->
+![](pics/family_locator.png)<!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 180px; width: 350px;" -->
+![](pics/flipboard.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 300px; width: 200px;" -->
+![](pics/justdial.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 200px; width: 300px;" -->
 
 -- Notes --
 
 * [Marriott](https://www.nytimes.com/2018/11/30/business/marriott-data-breach.html) Data Breach with unencrypted passports and credit-card details
 * [Family Locator](https://techcrunch.com/2019/03/23/family-tracking-location-leak/) leaked unencrypted GPS data
-* [LinedIn](https://www.vice.com/en_us/article/4xaaxb/you-can-now-finally-check-if-you-were-a-victim-of-the-2012-linkedin-hack) had 164 Million accounts with unsalted SHA1 passwords
+* [LinkedIn](https://www.vice.com/en_us/article/4xaaxb/you-can-now-finally-check-if-you-were-a-victim-of-the-2012-linkedin-hack) had 164 Million accounts with unsalted SHA1 passwords
+* [FlipBoard](https://thehackernews.com/2019/05/flipboard-data-breach-hacking.html): Real names, usernames, salted & hashes passwords, email-addresses, digital tokens for linked social media services
+* [JustDial](https://thehackernews.com/2019/04/justdial-hacked-data-breach.html): NoSQL database accessed by an old API endpoint containing users' name, email, mobile number, address, gender, date of birth, photo, occupation, company name
 
 --
 
@@ -273,238 +300,319 @@ Although the leaks themselves are not the actual attack, they enable credential 
 ## OWASP 2017-A4: XML External Entities (XXE)
 <hr />
 
-TABLE
+| Year  | Position  | Name                          |
+|------:|----------:|-------------------------------|
+| 2017  | A4 (new)  | XML External Entities (XXE)   |
+| 2013  |           |                               |
+| 2010  |           |                               |
+| 2007  |           |                               |
+| 2004  |           |                               |
+| 2003  |           |                               |
 
 --
 
 ## XML External Entities (XXE): attack
 <hr />
 
+Data Extraction:
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE foo [
+<!ELEMENT foo ANY >
+<!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+<foo>&xxe;</foo>
+```
+
+Network Intrusion:
+```xml
+<!ENTITY xxe SYSTEM "https://192.168.1.1/private" >]>
+```
+
+Denial of Service:
+```xml
+<!ENTITY xxe SYSTEM "file:///dev/random" >]>
+```
+
+-- Notes --
+
+Old XML processors include external files referenced from the XML.
+When accepting XML, this could result in several different attacks:
+* Data extraction by including a reference to sensitive files
+* Network intrusion by probing private network URI's
+* Denial of Service by including large / endless files or recursive references
 
 --
 
 ## XML External Entities (XXE): defense
 <hr />
 
+In prioritized order
+* Developer training
+* JSON
+  * Avoid serialization of sensitive data
+* Upgrade XML Processors
+  * Dependency checks
+  * SOAP 1.2+
+* Disable XML External entity & DTD processing
+* Server-side whitelist-based input validation, filtering and sanitization
+* XSD Validation on incoming XML / XSL
+* SAST tools
+* Virtual patching, API security gateways, WAFs
 
 --
 
 ## XML External Entities (XXE): further reading
 <hr />
 
-* OWASP on [2017-A4 XML External Entities (XXE)](https://www.owasp.org/index.php/Top_10-2017_A4-XML_External_Entities_(XXE))
-
-
---
-
-## OWASP 2017-AX: DESCRIPTION
-<hr />
-
-TABLE
+* OWASP on [2017-A4 XML External Entities (XXE)](https://www.owasp.org/index.php/Top_10-2017_A4-XML_External_Entities_%28XXE%29)
+* [Hacksplaining](https://www.hacksplaining.com/prevention/xml-external-entities) prevention
+* [Acunetix](https://www.acunetix.com/blog/articles/xml-external-entity-xxe-vulnerabilities/)
 
 --
 
-## DESCRIPTION: attack
+## OWASP 2017-A5: Broken Access Control
 <hr />
 
+| Year  | Position  | Name                                                                      |
+|------:|----------:|---------------------------------------------------------------------------|
+| 2017  | A5        | Broken Access Control                                                     |
+| 2013  | A4 - A7   | Insecure Direct Object References - Missing Function Level Access Control |
+| 2010  | A4 - A8   | Insecure Direct Object References – Failure to Restrict URL Access        |
+| 2007  | A4 - A10  | Insecure Direct Object References – Failure to Restrict URL Access        |
+| 2004  | A2        | Broken Access Control                                                     |
+| 2003  | A2 - A9   | Broken Access Control - Remote Administration Flaws                       |
 
 --
 
-## DESCRIPTION: defense
+## Broken Access Control: attack
 <hr />
 
+![](pics/broken_access_control.png)
+
+```
+GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
+```
 
 --
 
-## DESCRIPTION: further reading
+## Broken Access Control: defense
 <hr />
 
-* OWASP on [2017-AX DESCRIPTION]()
+* Implement server-side validation
+* Deny by default (unless public)
+* Centralize implementation
+* Minimize CORS
+* Use ABAC instead of RBAC
+* Disable server dir-listing
+* Remove metadata and backup-files
+* Log access control failures and alert admins if needed
+* Rate limit API and controller access
+* Invalidate JWT's on server after logout
+* Create functional access control unit- and integration tests (including negatives)
 
+-- Notes --
+
+* Client-side access validation can be circumvented
+* CORS: Cross Origin Resource Sharing
+* Patient-records should only be accessed by patient's own doctor, not all doctors
 
 --
 
-## OWASP 2017-AX: DESCRIPTION
+## Broken Access Control: further reading
 <hr />
 
-TABLE
+* OWASP on [2017-A5 Broken Access Control](https://www.owasp.org/index.php/Top_10-2017_A5-Broken_Access_Control)
+* [Hacksplaining](https://www.hacksplaining.com/prevention/broken-access-control)
 
 --
 
-## DESCRIPTION: attack
+## OWASP 2017-A6: Security Misconfiguration
 <hr />
 
+| Year  | Position  | Name                      |
+|------:|----------:|---------------------------|
+| 2017  | A6        | Security Misconfiguration |
+| 2013  | A5        | Security Misconfiguration |
+| 2010  | A6 (new)  | Security Misconfiguration |
+| 2007  |           |                           |
+| 2004  |           |                           |
+| 2003  |           |                           |
 
 --
 
-## DESCRIPTION: defense
+## Security Misconfiguration: attack
 <hr />
 
+![](pics/mongo_db_2.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 150px; width: 500px;" -->
+![](pics/mongo_db_1.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; bottom: 0px; width: 500px;" -->
 
 --
 
-## DESCRIPTION: further reading
+## Security Misconfiguration: defense
 <hr />
 
-* OWASP on [2017-AX DESCRIPTION]()
-
+* Automated build & deployment process
+* Review components
+* Removed default credentials
+* Separated code and configuration
+* NNo hardcoded credentials or other settings and secrets
+* Dedicated accounts with appropriate (least) privileges
+* Smoke-tests for correct version and configuration
+* Segregated environments and differentiate credentials
+  * No network access between environments
+* Admin-tools limited to internal network
+* Security awareness training
+* MFA
+* Account management procedure
 
 --
 
-## OWASP 2017-AX: DESCRIPTION
+## Security Misconfiguration: further reading
 <hr />
 
-TABLE
+* OWASP on [2017-A6 Security Misconfiguration](https://www.owasp.org/index.php/Top_10-2017_A6-Security_Misconfiguration)
+* [Hacksplaining](https://www.hacksplaining.com/prevention/lax-security-settings)
 
 --
 
-## DESCRIPTION: attack
+## OWASP 2017-A7: Cross-Site Scripting (XSS)
 <hr />
 
+| Year  | Position  | Name                          |
+|------:|----------:|-------------------------------|
+| 2017  | A7        | Cross-Site Scripting (XSS)    |
+| 2013  | A3        | Cross-Site Scripting (XSS)    |
+| 2010  | A2        | Cross-Site Scripting (XSS)    |
+| 2007  | A1        | Cross-Site Scripting (XSS)    |
+| 2004  | A4        | Cross-Site Scripting (XSS)    |
+| 2003  | A4        | Cross-Site Scripting (XSS)    |
 
 --
 
-## DESCRIPTION: defense
+## Cross-Site Scripting (XSS): attack
 <hr />
-
-
---
-
-## DESCRIPTION: further reading
-<hr />
-
-* OWASP on [2017-AX DESCRIPTION]()
-
-
---
-
-## OWASP 2017-AX: DESCRIPTION
-<hr />
-
-TABLE
-
---
-
-## DESCRIPTION: attack
-<hr />
-
-
---
-
-## DESCRIPTION: defense
-<hr />
-
-
---
-
-## DESCRIPTION: further reading
-<hr />
-
-* OWASP on [2017-AX DESCRIPTION]()
-
-
---
-
-## OWASP 2017-AX: DESCRIPTION
-<hr />
-
-TABLE
-
---
-
-## DESCRIPTION: attack
-<hr />
-
-
---
-
-## DESCRIPTION: defense
-<hr />
-
-
---
-
-## DESCRIPTION: further reading
-<hr />
-
-* OWASP on [2017-AX DESCRIPTION]()
-
-
---
-
-## OWASP 2017-AX: DESCRIPTION
-<hr />
-
-TABLE
-
---
-
-## DESCRIPTION: attack
-<hr />
-
-
---
-
-## DESCRIPTION: defense
-<hr />
-
-
---
-
-## DESCRIPTION: further reading
-<hr />
-
-* OWASP on [2017-AX DESCRIPTION]()
-
-
-
---
-
-## OWASP Top 10 Examples
-<hr />
-
-### Indirect object reference
-
-![](pics/miljoenennota.png)
-
---
-
-## OWASP Top 10 Examples
-<hr />
-
-### Cross Site Scripting
 
 ![](pics/harlem_shake.png)<!-- .element style="width: 500px;" -->
 
 [Harlem Shake](https://www.youtube.com/watch?v=K0noqLisW_c)
 
---
-
-## OWASP Top 10 Examples
-<hr />
-
-### Security Misconfiguration
-
-![](pics/handbalsters.png)<!-- .element style="width: 450px;" -->
 
 --
 
-## OWASP Top 10 Examples
+## Cross-Site Scripting (XSS): defense
 <hr />
 
-### Insufficient Logging
+
+--
+
+## Cross-Site Scripting (XSS): further reading
+<hr />
+
+* OWASP on [2017-A7 Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_%28XSS%29)
+
+
+--
+
+## OWASP 2017-A8: Insecure Deserialization
+<hr />
+
+| Year  | Position  | Name                      |
+|------:|----------:|---------------------------|
+| 2017  | A8 (new)  | Insecure Deserialization  |
+| 2013  |           |                           |
+| 2010  |           |                           |
+| 2007  |           |                           |
+| 2004  |           |                           |
+| 2003  |           |                           |
+
+--
+
+## Insecure Deserialization: attack
+<hr />
+
+
+--
+
+## Insecure Deserialization: defense
+<hr />
+
+
+--
+
+## Insecure Deserialization: further reading
+<hr />
+
+* OWASP on [2017-A8 Insecure Deserialization](https://www.owasp.org/index.php/Top_10-2017_A8-Insecure_Deserialization)
+
+
+--
+
+## OWASP 2017-A9: Using Components with Known Vulnerabilities
+<hr />
+
+| Year  | Position  | Name                                          |
+|------:|----------:|-----------------------------------------------|
+| 2017  | A9        | Using Components with Known Vulnerabilities   |
+| 2013  | A9 (new)  | Using Components with Known Vulnerabilities   |
+| 2010  |           |                                               |
+| 2007  |           |                                               |
+| 2004  |           |                                               |
+| 2003  |           |                                               |
+
+--
+
+## Using Components with Known Vulnerabilities: attack
+<hr />
+
+
+--
+
+## Using Components with Known Vulnerabilities: defense
+<hr />
+
+
+--
+
+## Using Components with Known Vulnerabilities: further reading
+<hr />
+
+* OWASP on [2017-A9 Using Components with Known Vulnerabilities](https://www.owasp.org/index.php/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities)
+
+
+--
+
+## OWASP 2017-A10: Insufficient Logging & Monitoring
+<hr />
+
+| Year  | Position  | Name                              |
+|------:|----------:|-----------------------------------|
+| 2017  | A10 (new) | Insufficient Logging & Monitoring |
+| 2013  |           |                                   |
+| 2010  |           |                                   |
+| 2007  |           |                                   |
+| 2004  |           |                                   |
+| 2003  |           |                                   |
+
+--
+
+## Insufficient Logging & Monitoring: attack
+<hr />
 
 ![](pics/facebook_passwords.png)
 ![](pics/facebook_thumbs_down.png)<!-- .element style="width: 400px;" -->
 
 --
 
-## OWASP Top 10 Examples
+## Insufficient Logging & Monitoring: defense
 <hr />
 
-### Sensitive Data Exposure
 
-![](pics/gevers_chinese_mongodb.png)<!-- .element style="width: 400px;" -->
+--
 
-[Breed-ready status](https://www.bleepingcomputer.com/news/security/creepy-database-lists-breedready-status-for-18-million-women/)<!-- .element style="position: fixed; width: 400px; bottom: 100px; right: 100px;" -->
+## Insufficient Logging & Monitoring: further reading
+<hr />
+
+* OWASP on [2017-A10 Insufficient Logging & Monitoring](https://www.owasp.org/index.php/Top_10-2017_A10-Insufficient_Logging%26Monitoring)
+
 
