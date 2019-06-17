@@ -2,6 +2,7 @@
 
 | Term | Description |
 | ---- | ----------- |
+| ABAC | Attribute Base Access Control, grants access based on 1: user attributes, 2: attributes of the resources being accessed, 3: context attributes |
 | Adware | See [Malware types](malwareTypes.md) |
 | [APT](https://en.wikipedia.org/wiki/Advanced_persistent_threat)  | Advanced Persistent Threat, followed by a number of identification. A state, state-sponsored or other highly advanced hacker / organization. When more information is identified, these often get nick-names. See [Hacker groups](../news/hackerGroups.md) |
 | ARP | Address Reolution Protocol, used to convert IP address to MAC address on a switch |
@@ -49,6 +50,7 @@
 | Proxy | System to use as an intermediate between you and the target / server. Sometimes used to mask your identity and / or location. Less reliable than VPN. Chaining proxies can make it much harder to detect. |
 | Ransomware | Also see Malware |
 | RAT | Remote Administration Tools |
+| RBAC | Role Base Access Control, grants access based on a user's role |
 | Red Team | Attack side of an ethical hack operation. Quote of @Viss "If the customer defines the scope, it cannot be called red teaming" [here](https://youtu.be/4LmSEthRZLU?t=10m5s) |
 | Red team / Blue team testing | Testing security by pitting one group of hackers as the attackers (Red team) against the other team of defenders (Blue team) engaging in a real life security "war", often in a safe virtualized environment to simulate real-world attacks |
 | Reverse-shell | Malicious software on a system to gain access to that system initiated from the system iteself to the hacker |
