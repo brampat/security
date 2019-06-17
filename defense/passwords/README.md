@@ -48,7 +48,7 @@ Most attacks listed below can be mitigated in several different ways. The most e
 
 The top 25 most common passwords cover up to 10% of all passwords surveyed. This means that (based on surveyed data) only testing these 25 passwords, most _trial-and-error_ attacks can successfully guess 10% of all passwords, when no other countermeasures are implemented. Obviously, survey data may be skewed as in reality passwords not surveyed may be significantly more unique. That would decrease the 10% a bit, though the message is clear: it is alarming that just 25 common passwords are re-used for so many accounts.
 
-[source](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)
+Source [Wikipedia](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)
 
 #### HaveIBeenPwned
 This site started as a try-out project by [Troy Hunt](https://haveibeenpwned.com/About) to combine some cloud-technologies, including optimizing caching with Cloudflare and (eventually) serverless architecture with Azure functions.
@@ -72,7 +72,7 @@ A strong password does not necessarily include all or as much of the following:
 * symbols
 * have at least 8 length
 
-Although all of the above help in creating a strong password, none of these are essential, except maybe for length. Given the above rules, a password using these minimum requirements could be "cracked" in a fraction of a second or it could take up to 28 years. It all depends on how the password is constructed.
+Although all of the above help in creating a strong password, none of these are essential, except maybe for length. Given the above rules, a password using these minimum requirements could be "cracked" in a fraction of a second or it could take up to [28 years](../../publications/2019-02-20_passwords_fun_with_numbers/README.md). It all depends on how the password is constructed.
 For example, the following passwords both adhere to the above rules as a minimum, though there is a big difference in cracking speed:
 * P@ssw0rd
 * Bx9X}1Hv
@@ -84,7 +84,7 @@ So the most important factor of a strong password is unpredictability. The impor
 * randomness
 * no re-use
 
-If these factors are included, even a decimal only password can be [strong enough](../../publications/2019-02-20_passwords_fun_with_numbers/README.md) (see final table). At length 23 even a "simple" decimal password can withstand a $847k intelligence agency grade password-cracking machine. These scenario's describe pure brute-forcing in which systems try out every conceivable password possible, which is often not a feasible attack because of its CPU (time) or storage intensive requirements.
+If these factors are included, even a decimal only password can be [strong enough](../../publications/2019-02-20_passwords_fun_with_numbers/README.md#professional-cracking). At length 23 even a "simple" decimal password hashed in weak MD5 can withstand a $847k intelligence agency grade password-cracking machine. These scenario's describe pure brute-forcing in which systems try out every conceivable password possible, which is often not a feasible attack because of its CPU (time) or storage intensive requirements.
 
 ### Online attacks:
 These attacks describe online attacks performed against running systems, including websites, online API's, backends exposed to outside connections or apps. Attacks like this use automated tools to fire multiple password-guesses per second to the system using lists of credentials to try out, reading the response to scan for valid credentials. Tools like Burp-suite's Repeater can launch these attacks.
