@@ -596,3 +596,4 @@ Sources:
 * [Administrator's guide to password research](https://www.microsoft.com/en-us/research/publication/an-administrators-guide-to-internet-password-research/)
 * [Analyzing password-strength meters](https://www.ndss-symposium.org/ndss2014/programme/very-weak-very-strong-analyzing-password-strength-meters/)
 * [Password manager hacking](https://www.securityevaluators.com/casestudies/password-manager-hacking/)
+* [Effectiveness of several MFA types](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html)
