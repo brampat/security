@@ -163,7 +163,7 @@ Many older or poorly configured XML processors evaluate external entity referenc
 documents. External entities can be used to disclose internal files using the file URI handler,
 internal file shares, internal port scanning, remote code execution, and denial of service attacks.
 
-[source](https://www.owasp.org/index.php/Top_10-2017_A4-XML_External_Entities_(XXE))
+[source](https://www.owasp.org/index.php/Top_10-2017_A4-XML_External_Entities_%28XXE%29)
 
 ### Mitigation
 
@@ -623,3 +623,9 @@ Sources:
 * [OWASP 2010](https://www.owasp.org/index.php/Top_10_2010)
 * [OWASP 2007](https://www.owasp.org/index.php/Top_10_2007)
 * [OWASP 2004](https://www.owasp.org/index.php/Top_10_2004)
+* OWASP Top 10 examples by 
+  * [QuanHeng Lim](https://blog.horangi.com/real-life-examples-of-web-vulnerabilities-2017)
+  * George Mathias: 
+    * [Part 1](https://medium.com/@cxosmo/owasp-top-10-real-world-examples-part-1-a540c4ea2df5)
+    * [Part 2](https://medium.com/@cxosmo/owasp-top-10-real-world-examples-part-2-3cdb3bebc976)
+* 
