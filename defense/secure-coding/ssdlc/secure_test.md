@@ -67,6 +67,8 @@ Have a responsible disclosure policy and hope someone (everyone) uses it. This r
   * If you handle it badly, you WILL get exposure
   * If you have a security-related product, you WILL get exposure: see BitFi, but also Tesla, secure USB's etc.
 
+More on [responsible disclosure](responsible_disclosure.md)
+
 #### Conclusion
 * Medium effort
 * Medium control
@@ -75,6 +77,8 @@ Have a responsible disclosure policy and hope someone (everyone) uses it. This r
 
 Sources:
 * [ICS-CERT](https://ics-cert.us-cert.gov/ICS-CERT-Vulnerability-Disclosure-Policy) Disclosure procedure where ICS-CERT acts as intermediary
+* [Tesla](https://www.tesla.com/about/security) responsible disclosure
+* [Dropbox](https://hackerone.com/dropbox) responsible disclosure
 
 ### Bug bounty program
 
