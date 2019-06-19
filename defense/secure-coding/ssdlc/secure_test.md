@@ -81,6 +81,14 @@ Use a bug-bounty platform (private or public)
   * Private bug-bounties should be aimed at experienced bug-hunters, which will result in more and higher bounty-payouts
   * Cost also depends on how good the base security is of what you like to test
 
+Things to consider:
+* You might also pay for quality duplicate findings or findings that are useful but would not qualify for a bounty under the rules you've set. This will nurture the relationship between the reporter and stimulate him / her to search and report more findings.
+* The value of a bug-bounty program is in the program as a whole, not in individual bugs. Think about what the results of a well-run bug-bounty program would look like if a company was creating good quality, secure software. Would it have:
+  * No bug-bounty program at all?
+  * No bug submissions at all?
+  * Good or bad quality bug-submissions?
+
+  
 ### Pentest
 
 Hire pentesters to do this (most common way)
@@ -136,3 +144,16 @@ Have developers test their own software
   * Cooperate
   * Thank
 * Never, EVER claim you're unhackable
+
+## Opinion
+
+In my opinion, a good security-focused company would employ:
+* Internal testing to catch and fix the obvious issues in their product.
+* Pentesting would find and report the more advanced issues.
+* It would then run both a responsible disclosure procedure and run a bug-bounty program.
+* These programs would both direct their findings into a mature and flexible incident response team that knows how to:
+  * communicates on any level, with every type of issue reporter, from professional well-skilled ethical hackers to inexperienced hackers that don't know how to fill in a quality report.
+  * communicate transparently about findings, sets clear disclosure deadlines and understands the importance of this deadline for both the researcher and himself
+  * reward and nurture relationships with all researchers
+
+In the end, a company would not have built more secure software because of any single one of these programs. Instead, running these programs would be a natural result of being security-focused. And that, along with the totality of all testing efforts in a mature SSDLC will result in more secure software. 
