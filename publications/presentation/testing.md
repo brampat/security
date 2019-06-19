@@ -169,7 +169,7 @@ Five main ways to test your software product:
   * Geeky shirts and stickers are cool, but product and $$$ are better. Doesn't have to be $100k budget (unless you're Google / Facebook)
 * Exposure depends on product, PR, handling etc.
   * If you handle it badly, you WILL get exposure
-  * IF you have a security-related product, you WILL get exposure: see BitFi, but also Tesla, secure USB's etc.
+  * If you have a security-related product, you WILL get exposure: see BitFi, but also Tesla, secure USB's etc.
 
 --
 
