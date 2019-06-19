@@ -82,17 +82,17 @@ During requirements, the team can coordinate with their organisation's Chief Inf
     * Will data be encrypted?
     * Will data storage be separated from the application's logic?
     * How will data storage be secured?
-  * How will the application be accessed?
-    * Is it accessible via internet or only internally?
-    * Is VPN mandatory?
-  * Does the application expose sensitive or important functionality?
-    * Financial transactions
-    * Control industrial machinery, utilities like water purification, water, gas or electricity networks, traffic systems like traffic-lights, level crossings etc.
-    * Handle or support in health-care, like insulin monitors or pumps, pacemakers, MRI scanners etc.
-  * Does it support risky software operations, like managing content, uploading data or files, etc.
-  * What are availability requirements?
-    * Should it be available 24/7 99.999999% of the time?
-    * Should it be available only during working hours? If so: what are working hours? Are users located in different timezones?
+* How will the application be accessed?
+  * Is it accessible via internet or only internally?
+  * Is VPN mandatory?
+* Does the application expose sensitive or important functionality?
+  * Financial transactions
+  * Control industrial machinery, utilities like water purification, water, gas or electricity networks, traffic systems like traffic-lights, level crossings etc.
+  * Handle or support in health-care, like insulin monitors or pumps, pacemakers, MRI scanners etc.
+* Does it support risky software operations, like managing content, uploading data or files, etc.
+* What are availability requirements?
+  * Should it be available 24/7 99.999999% of the time?
+  * Should it be available only during working hours? If so: what are working hours? Are users located in different timezones?
 
 #### Risk assessment
 
@@ -114,6 +114,8 @@ Additionally the team could also add the extended CIA aspects of:
 During the design phase of the application or separate functionality, the team again assisted by the CISO can Sollic
 * Threat analysis
 * Abuse cases
+
+[Sub-page](secure_design.md)
 
 ### Build
 
@@ -142,10 +144,7 @@ Some security measures:
 
 ### Test
 
-* Security Unit-tests
-* Dynamic Analysis
-* DAST
-  * OWASP ZAP
+[Sub-page](secure_test.md)
 
 ### Deploy
 
