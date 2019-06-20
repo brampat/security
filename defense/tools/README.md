@@ -11,19 +11,16 @@ The tools described can be integrated in CI/CD toolchains.
 ![Security controls](security-controls.png)
 
 ## Pre-commit
-
 * Threat modeling
   * OWASP User Security Stories [source](https://github.com/OWASP/user-security-stories)
   * OWASP Application Security Verification Standards [source](https://www.owasp.org/index.php/Category:OWASP_Application_Secuity_verification_standard_Project)
   * Mozilla's Rapid Risk Assessment (RRA) [source](https://infosec.mozilla.org/guidelines/risk/rapid_risk_assessment.html)
   * OWASP Threat Dragon [source](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
-
 * IDE Security plugins
   * [FindSecurityBugs](http://find-sec-bugs.github.io/) for Eclipse and IntelliJ
   * [Puma Scan](https://github.com/pumasecurity/puma-scan) for Visual Studio
   * Microsoft's [DevSkim](https://github.com/Microsoft/DevSkim) for VSCode, Sublime, Visual Studio
   * [SonarLint](https://www.sonarlint.org/) for VisualStudio, IntelliJ and Eclipse
-
 * Pre-commit hooks
   * For hooks:
     * Yelp pre-commit framework
@@ -55,7 +52,6 @@ The tools described can be integrated in CI/CD toolchains.
       * Facebook's Phabricator
 
 ## Commit
-
 * Static Code analysis
   * Wikipedia [List](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) of Static Code Analysis Tools
   * [Awesome Static Analysis](https://github.com/mre/awesome-static-analysis) list of tools
@@ -84,6 +80,8 @@ The tools described can be integrated in CI/CD toolchains.
     * [Fortify](https://marketplace.visualstudio.com/items?itemName=fortifyvsts.hpe-security-fortify-vsts) for VisualStudio
     * [Checkmarx](https://marketplace.visualstudio.com/items?itemName=checkmarx.cxsast) for VisualStudio
     * [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension) for active scan of vulnerabilities on running code
+  * [Secure Headers](https://securityheaders.com/)
+  * [ImmuniWeb](https://www.immuniweb.com/free/) free tests for Website, Mobile app, SSL and Phishing sites.
 * Security Unit tests
   * Leverage "test-obsessed" teams
   * Think evil to come up with test-cases: evil user stories, abuse cases, OWASP ASVS
@@ -151,7 +149,6 @@ The tools described can be integrated in CI/CD toolchains.
     * Node Security Platform
   
 ## Acceptance
-
 * Infrastructure as Code analysis
   * Red Hat [Ansible](https://www.ansible.com/) automation
   * [Chef](https://www.chef.io/) enterprise automation
@@ -235,6 +232,8 @@ The tools described can be integrated in CI/CD toolchains.
   * [Unhide](http://www.unhide-forensics.info/): Rootkit-finding file integrity checkers for Unix-based systems
 
 ## Operation
+* Tools Integration:
+  * [Nucleus](https://www.nucleussec.com/)
 * Fault Injection:
   * Chaos Kong
   * Chaos Monkey
@@ -290,6 +289,3 @@ The tools described can be integrated in CI/CD toolchains.
   * Cloud Custodian
   * Compliance Monkey
   * Forseti Security
-* Tools:
-  * [Secure Headers](https://securityheaders.com/)
-  * [ImmuniWeb](https://www.immuniweb.com/free/) free tests for Website, Mobile app, SSL and Phishing sites.
