@@ -1,5 +1,7 @@
 # Security
-Collection of links to Security stuff
+Collection of links to Security stuff. Source found [here](https://github.com/brampat/security). Sponsor this page on [Patreon](https://www.patreon.com/bePatron?u=21519345)
+
+<a href="https://www.patreon.com/bePatron?u=21519345" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 ## For non-techie people
 See [this](users/README.md) page
