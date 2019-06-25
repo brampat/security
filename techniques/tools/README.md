@@ -90,6 +90,7 @@
 * [DomListener](https://chrome.google.com/webstore/detail/domlistener/jlfdgnlpibogjanomigieemaembjeolj?hl=en) Chrome extension that listens to DOM-changes (eg. for DOM-bases XSS detection)
 * [Requestbin.com](https://requestbin.com) for dumping requests of XSS
 * [Beecepter](https://beeceptor.com/) for intercepting requests of XSS
+* [Uguu](https://uguu.se) for temporary file hosting (Javascrip, image etc.)
 * [myBFF](https://github.com/MooseDojo/myBFF) a Bruteforce Framework, Bruteforces:
   * HP SiteScope (will attempt to give you a Meterpreter Shell!)
   * Citrix Gateway (also enumerates authorized applications)
