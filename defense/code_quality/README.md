@@ -113,7 +113,7 @@ Lower values are better.
 
 Code Metrics Viewer rates this metric value the following way: 
 
-* Per member (method)
+* Per member (method) 
 ![](class_coupling_member.png)
 
 * Per type (class, interface, enum)
