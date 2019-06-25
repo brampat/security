@@ -112,18 +112,24 @@ It is calculated for each level and represents the number of types (excluding bu
 Lower values are better. 
 
 Code Metrics Viewer rates this metric value the following way: 
-* 0-9 dependencies is good (green)
-* 10-30 dependencies (on member level) and 10-80 dependencies (on type level) are still okay (yellow)
-* more than 30 dependencies (on member level) and more than 80 dependencies (on type level) are critical (red) and should be reviewed and possibly refactored.
 
-#### Per member (method)
+* Per member (method)
 ![](class_coupling_member.png)
 
-#### Per type (class, interface, enum)
+* Per type (class, interface, enum)
 ![](class_coupling_type.png)
-
   
 * [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)
+
+### Lines of code
+
+Lines of code is both a measurement of quality and readability. This will mean that there are two thresholds to adhere to. Always take the lower threshold.
+For both criteria, the lines of code are measured in context of a single method. For the quality criteria, a method with more lines of code will often 
+fulfil more than one purpose and will therefore be much harder to test. Keeping a method simple and focused will result in smaller methods.
+
+Code Metrics Viewer rates this metric value the following way: 
+![](lines_of_code_quality.png)
+
 
 ## Additional metrics
 * Number of methods per class:
@@ -190,9 +196,14 @@ Sources:
 * [Stackexchange](https://softwareengineering.stackexchange.com/questions/81899/how-should-i-organize-my-source-tree) discussion
 
 
-## Lines per method
-* Lines of code:
-  * Method level -> Bigger than a screen is too long
+## Lines of code
+
+For readability lines of code is a heavily debated metric. The threshold for an acceptable number of lines of code is dependant on a number of factors, 
+including screen-size / resolution, team preference, IDE's used etc. The threshold is measured in context of a single method. The threshold is simply 
+having all lines of code for a single method be visible without having to scroll. Always reason from the least optimistic scenario. So take the screen, 
+IDE etc. from the team-member who can display the least number of lines on his / her screen.
+
+![](lines_of_code_read.png)
 
 ## Line length
 
