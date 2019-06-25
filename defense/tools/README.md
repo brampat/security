@@ -60,6 +60,7 @@ The tools described can be integrated in CI/CD toolchains.
   * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
   * Java:
     * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
+      * See [JavaVulnerableLab](https://github.com/brampat/JavaVulnerableLab) demo for an example-project and instructions to run Sonar with FindSecurityBugs and import them into Sonarcloud
     * [OWASP Lapse+](https://www.owasp.org/index.php/OWASP_LAPSE_Project)
     * [OWASP Orizon](https://www.owasp.org/index.php/Category:OWASP_Orizon_Project) (Also for Android APK files)
   * Groovy: [CodeNarc](http://codenarc.sourceforge.net/)
