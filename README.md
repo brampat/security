@@ -90,14 +90,18 @@ See [Terminology](terminology/README.md)
 ### International
 * [Edward Snowden](https://twitter.com/snowden)
 * [Emad Shanab](https://twitter.com/Alra3ees): Ethical hacker & Lawyer. Posts lots of tools, repositories with resources, etc. on Twitter
-* [Freaky Clown](https://twitter.com/__freakyclown__)
+* [Freaky Clown](https://twitter.com/__freakyclown__): Physical hacker and pentester, founder of Cygenta
 * [Ian Spiro](https://twitter.com/RAPLPOSOW): Ethical hacker and founder of Vermont Secure Computing and rather experienced in Cryptocoins and blockchain tech at Synopsys Inc.
+* [Jayson E Street](https://twitter.com/jaysonstreet): Hacker, physical pentester and social engineer, VP InfoSec at SphereNY
+* [Jessica Barker](https://twitter.com/drjessicabarker): Co-founder of Cybenta and expert on human / psychological side of info-sec
 * [Jim Manico](https://twitter.com/manicode): Ethical hacker and secure coding instructor, founder of [Manicode Security](https://manicode.com/), Java champion. Hawaiian goodguy and organizer of [LocoMocoSec](https://locomocosec.com/)
 * [Joanna Rutkowska](https://twitter.com/rootkovska): Founder of Invisible Things Lab and [QubesOS](https://twitter.com/QubesOS), (reasonable) Secure OS for PCs. Rootkit expert and designer of [Blue Pill](https://en.wikipedia.org/wiki/Blue_Pill_(software)), the x86 virtualization rootkit.
 * [Kevin Mitnick](https://twitter.com/kevinmitnick): Whistler of ICBM launch codes, security consultant and the world's most famous hacker and social engineer. Was once most wanted by FBI
+* [Mike Pound](https://twitter.com/_mikepound): Lecturer and teacher at Computer Science Nottingham University and security expert on [Computerphile](https://www.youtube.com/user/Computerphile/featured) Youtube channel
 * [Random Robbie](https://twitter.com/Random_Robbie): Ethical hacker sometimes on BBC and ZDNet
 * [Scott Helme](https://twitter.com/Scott_Helme): Founder of [Security Headers](https://twitter.com/securityheaders) and [Report URI](https://twitter.com/reporturi) and Ethical hacker, regularly on BBC
-* [Troy Hunt](https://twitter.com/troyhunt)
+* [Troy Hunt](https://twitter.com/troyhunt): Famous for starting [Have I been Pwned](https://haveibeenpwned.com), a very active speaker and blogger on security, data-breaches, responsible disclosures, but also professional ethics in general
+* [Tanya Janca](https://twitter.com/shehackspurple): Cloud advocate at Microsoft and active in AppSec, OWASP, Azure, DevSecOps and WoSEC chapter leader
 
 ### Netherlands
 * [Bart Roos](https://twitter.com/Bartr00s): Ethical hacker, hacked the Windows-support [call-center scam](https://media.ccc.de/v/SHA2017-233-a_trip_to_india)
