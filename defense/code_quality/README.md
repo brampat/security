@@ -18,6 +18,8 @@ Maintainability measures the ease with which code can be changed, bugs can be fi
 
 Using Visual Studio, the maintainability score can be calculated. This produces an integer value of 0 to 100, whereby larger values indicate a higher (better) maintainability. Microsoft advises to keep the score above 20, though I'ld advise to also look at code that scores between 20-50. The index is an aggregated score of several indexes, including cyclomatic complexity, lines of code and the Halstead volume. 
 
+![](maintainability.png)
+
 * Maintainability index: See Visual Studio support
   * 0-24: Low
   * 25-74: Moderate
@@ -57,9 +59,11 @@ In this graph, we see 9 edges and 8 nodes. Therefore the complexity is ```9 - 8 
 
 Cyclomatic complexity directly influences the minimum number of tests required to potentially cover all the code in unit-tests.
 
+![](cyclomatic_complexity_max.png)
+
 * 2-10: Good
- * 11-20: Okay
- * 21+: Avoid
+* 11-20: Okay
+* 21+: Avoid
 
 Sources:
 * [Wikipedia](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
@@ -86,7 +90,7 @@ Visual Studio contains the Code Metrics functionality to calculate Cyclomatic Co
 * [MSDN Blog](https://blogs.msdn.microsoft.com/zainnab/2011/05/17/code-metrics-cyclomatic-complexity/)
 * [C-Sharp corner](https://www.c-sharpcorner.com/article/code-metrics-cyclomatic-complexity/)
 
-### Inheritance
+### Inheritence
 
 The depth of inheritance metric indicates the depth of the inheritance chain, including classes and interfaces. Higher inheritence depth means a more complex object hierarchy. Lower values are better because it will be easier to follow the flow of the code when debugging or analyzing. 
 
@@ -101,11 +105,27 @@ Code Metrics Viewer rates the metric value the following way:
 
 ### Class coupling
 
-* [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)
+Class coupling indicates how dependent a class is upon other classes. 
+
+This metric can be used as an indicator of how evolvable a function, a class, or at least an assembly project actually is. 
+It is calculated for each level and represents the number of types (excluding built-in language types) being used by a method, class, etc.. 
+Lower values are better. 
+
+Code Metrics Viewer rates this metric value the following way: 
+* 0-9 dependencies is good (green)
+* 10-30 dependencies (on member level) and 10-80 dependencies (on type level) are still okay (yellow)
+* more than 30 dependencies (on member level) and more than 80 dependencies (on type level) are critical (red) and should be reviewed and possibly refactored.
+
+#### Per member (method)
+![](class_coupling_member.png)
+
+#### Per type (class, interface, enum)
+![](class_coupling_type.png)
+
   
+* [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)
 
 ## Additional metrics
-
 * Number of methods per class:
   * Aim for max 20
 * Number of fields per class:
@@ -114,8 +134,6 @@ Code Metrics Viewer rates the metric value the following way:
 * Number of Variables per method: Larger numbers is more difficult to maintain.
 * Class Coupling: number of unique classes used in a class as parameters, local vars, return types etc
   * Low coupling (low number of references classes) is better
-
-
 * Afferent coupling: Inbound coupling from types outside of the assembly
 * Efferent Coupling: Outbound coupling, determined by the number of types outside an assembly that are used by child types of the assembly
 * Relational Cohesion: Average number of internal relationships per type
@@ -123,31 +141,29 @@ Code Metrics Viewer rates the metric value the following way:
 # Reusability
 
 TODO:
-
 * [Measuring Code reusability](https://stackoverflow.com/questions/3184432/measuring-code-reusability)
-* [Code Reuse is not a good goal](https://blog.ndepend.com/code-reuse-not-good-goal/
+* [Code Reuse is not a good goal](https://blog.ndepend.com/code-reuse-not-good-goal/)
 
 
 # Readability
 
 ## Inline comments
 
-* [source](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
-* [source](https://en.wikipedia.org/wiki/Comment_(computer_programming))
-* [source](https://softwareengineering.stackexchange.com/questions/336430/coding-standard-for-clarity-comment-every-line-of-code)
-* [source](https://softwareengineering.stackexchange.com/questions/201657/forcing-people-to-read-and-understand-code-instead-of-using-comments-function-s)
+* [Comments tell you why](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
+* [Wikipedia](https://en.wikipedia.org/wiki/Comment_(computer_programming)
+* [Coding standards for clarity](https://softwareengineering.stackexchange.com/questions/336430/coding-standard-for-clarity-comment-every-line-of-code)
+* [Force people to read and understand code](https://softwareengineering.stackexchange.com/questions/201657/forcing-people-to-read-and-understand-code-instead-of-using-comments-function-s)
 
 ## Formatting
 
+
 ## Code grouping
-
 Grouping code and methods in classes based on functionality
-
 
 ## Naming conventions
 
-## Duplicate code / DRY
 
+## Duplicate code / DRY
 [Artima](https://www.artima.com/intv/dry.html)
 
 
@@ -191,17 +207,11 @@ TODO
 * [Static Code Analysis and Quality Metrics](https://ardalis.com/static-code-analysis-and-quality-metrics)
 * [CodeMetrics viewer](https://codemetricsviewer.wordpress.com/2011/06/26/how-to-interpret-received-results/)
 
-# Other tools to calculate code metrics:
-
-Sources:
-* List of tools on [Wikipedia](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis)
-* List of Java tools by [Martin Monperrus](https://www.monperrus.net/martin/java-metrics)
-* Blog by Eugen Paraschiv on [Baeldung](https://www.baeldung.com/java-static-analysis-tools)
 
 ## Java
 
-* [List](https://www.monperrus.net/martin/java-metrics) of tools for Java Code metrics
-* [Baeldung](https://www.baeldung.com/java-static-analysis-tools) Blog on Java Static Analysis tools
+* List of Java tools by [Martin Monperrus](https://www.monperrus.net/martin/java-metrics)
+* Blog by Eugen Paraschiv on [Baeldung](https://www.baeldung.com/java-static-analysis-tools) on Java static analysis tools
 * [JavaNCSS](http://www.kclee.de/clemens/java/javancss/), sourcecode [here](https://github.com/nokia/javancss)
   * Languages: Java
   * Metrics: Non Commenting Source Statements (NCSS), Cyclomatic Complexity, Count Packages, classes, functions, inner classes, formal Javadoc comments per class and method.
