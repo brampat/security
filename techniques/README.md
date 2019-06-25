@@ -20,13 +20,20 @@ Sub-pages:
 ## Databases
 * SQL Injection (TODO) [cheat-sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
 * [Blind SQL Injection](sql-injection/README.md)
-* SQL Map (TODO)
+* [SQL Map](tools/sqlmap.md)
+
+## XSS
+See [XSS Sub-page](xss/README.md)
 
 ## Account-management
 * [Passwords](passwords/README.md)
 * [Password managers](passwords/password-managers.md)
 * [Brute-forcing](passwords/crackingSpeeds.md)
-* Blogs (Dutch) [Part 1](../publications/2018-02-08_passwords_myths_errors_tip_for_users/README.md), [Part 2](../publications/2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md), [Part 3](../publications/2018-05-04_passwords_myths_errors_tips_for_devs_2/README.md)
+* Blogs (Dutch)
+   * [Part 1](../publications/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
+   * [Part 2](../publications/2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md)
+   * [Part 3](../publications/2018-05-04_passwords_myths_errors_tips_for_devs_2/README.md)
+   * [Fun with numbers](../publications/2019-02-20_passwords_fun_with_numbers/README.md)
 
 ## Application server
 * [Webservers](webserver.md)
