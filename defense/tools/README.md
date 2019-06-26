@@ -106,6 +106,8 @@ The tools described can be integrated in CI/CD toolchains.
     * Container sprawl (scale is next-level vs. VM's in both number of machines, changes, but also security-events that can feed SIEM)
   * Guides / Resources:
     * Docker Security Guidelines
+      * [Research on top 1000 Docker containers](https://www.kennasecurity.com/one-fifth-of-the-most-used-docker-containers-have-at-least-one-critical-vulnerability/) reveals 20% with high risk and 60% with medium risk CVE's
+        * [VulnerableContainer.org](https://vulnerablecontainers.org/)
       * [10 Docker Security Best practices](https://snyk.io/blog/10-docker-image-security-best-practices/)
       * [Shifting Docker Security Left](https://snyk.io/blog/shifting-docker-security-left/)
       * [Top 2 Docker Base images have over 500 vulnerabilities](https://snyk.io/blog/the-top-two-most-popular-docker-base-images-each-have-over-500-vulnerabilities/)

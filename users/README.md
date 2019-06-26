@@ -18,6 +18,8 @@ please watch [this page](../videos/README.md) under _Fun stories_ and _Why hacke
   * See [Mary Password Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ) for explanation on safe password usage and password-managers  
 * Use unique, long and unpredictable passwords
   * See [this page](../publications/2018-02-08_passwords_myths_errors_tip_for_users/README.md)for more info on passwords
+  * See [Computerphile](https://www.youtube.com/watch?v=Pe_3cFuSw1E) on what makes a strong password
+  * Use [Diceware](http://www.diceware.com/) to generate a strong password
 * Use 2-factor authentication because it stops [100%](https://thenextweb.com/google/2019/05/23/google-data-shows-2-factor-authentication-blocks-100-of-automated-bot-hacks/) of automated attacks
 * Update your software
   * Including PC, laptop, Smartphone, WiFi router, Smart-TV, Smart-automobile, etc.
@@ -26,3 +28,4 @@ please watch [this page](../videos/README.md) under _Fun stories_ and _Why hacke
 
 ## Repond when being hacked
 * What to do when your [nude-pics](https://medium.com/@UID_/naaktfotos-gelekt-wat-nu-fb3490c2ab6b) are leaked (Dutch)
+* Help and support against revenge pron [The BADASS Army](https://badassarmy.org/) Battling Against Demeaning & Abusive Selfie Sharing, 
