@@ -23,7 +23,6 @@
 * [Pipl](https://pipl.com/): People Search engine
 * [OSInt](https://osintframework.com/): Information gathering from free and semi-free resources. Links to many other search engines.
 
-
 ## Network scanning
 * Nmap: Network scanning tool, comes with most Linux distributions, but also available on Windows
 * Zenmap: GUI front-end to Nmap
@@ -35,7 +34,6 @@
 * [Wireshark](https://www.wireshark.org)
   * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)
   * [Filter reference guide](https://www.wireshark.org/docs/dfref/)
-
 
 ## Calculating with IP-addresses:
 * [Subnet calculator](http://www.subnet-calculator.com/)
@@ -64,7 +62,6 @@
 * [Hex to ASCII](https://www.rapidtables.com/convert/number/hex-to-ascii.html)
 * [UUEncode](http://uuencode.online-domain-tools.com/)
 
-
 ## Password and crypto hacking
 * [Hashcat](https://hashcat.net/hashcat/): Highspeed hashed password cracking tool
 * [RainbowCrack](http://project-rainbowcrack.com/index.htm): Hash-cracker based on Rainbow-tables
@@ -76,8 +73,8 @@
 * [Hydra](https://sectools.org/tool/hydra/): Dictionary attacks against numerous network protocols
 * [Pipal](https://digi.ninja/projects/pipal.php) Password Analyser [Usage tips](./pipal.md)
 
-
 ## Database
+* [SleuthQL](https://github.com/RhinoSecurityLabs/SleuthQL) identifies parameters and values for potential SQL-injection attacks
 * [SQLMap](tools/sqlmap.md): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
 * [AutoSQLi](https://github.com/jesuiscamille/AutoSQLi): An automatic SQL Injection tool which takes advantage of ~DorkNet~ Googler, Ddgr, WhatWaf and sqlmap.
 
@@ -104,17 +101,27 @@
   * SMB (Check if user is an administrator) (must use --domain with this module. for host, use smb://)
   * FTP (List root dir contents)
 
+## API's
+* [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ) pentesting API's using OpenAPI definitions
+
+## Cloud
+* [GCP Google Storage Brute-forcing](https://github.com/RhinoSecurityLabs/GCPBucketBrute) script to enumerate Google Storage buckets
+* [Pacu](https://github.com/RhinoSecurityLabs/pacu) AWS exploitation framework
+* [AWS Security Research](https://github.com/RhinoSecurityLabs/Cloud-Security-Research) by [Rhino Security Labs](http://www.rhinosecuritylabs.com/)
+
+
 ## Practicing
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
 * [Hack the box](https://www.hackthebox.eu/): Online testing environment, accessible after completing an entry-level test
 * [Root-me](https://www.root-me.org/?lang=en): Online challenges and VM to practice hacking
 * [Hack.me](https://hack.me/): Online challenges on vulnerable web-applications
+* [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat) Vulnerable by Design AWS deployment tool for CTF-style challenges on AWS
 
-
-## Defensive
-* [Fail2Ban](https://www.fail2ban.org/wiki/index.php/Main_Page): scans logfiles and bans IPs based on malicious signs
-
+## Docker automation for Hack-tasks
+* [Docker for hackers](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/) A pentester's guide
+* [Using Docker for disposable attack images](https://blog.zsec.uk/ltr101-dac/)
+* [DockerAttack](https://github.com/ZephrFish/DockerAttack): Various tools and Docker images
 
 ## Other
 * [https://Crawler.ninja](Crawler.ninja): Security Statistics on top 1 million Alexa sites
