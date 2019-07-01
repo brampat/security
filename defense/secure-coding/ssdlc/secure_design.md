@@ -51,3 +51,8 @@ Remove unused code, code comments, API's, VM's, libraries and otyher resources
 
 
 ## Categorize data based on sensitivity
+
+
+
+# Sources
+* [Design towards best practices](https://segment.com/blog/helping-customers-secure-their-accounts/) to help customers secure their accounts
