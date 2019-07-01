@@ -206,7 +206,7 @@ These tools help to crack passwords
   * High entropy
   * Not in URL
   * Securely stored
-  * Invalidated (on logout, idle and absolute timeouts) 
+  * Invalidate (on logout, idle and absolute timeouts) 
 
 --
 

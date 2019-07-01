@@ -8,7 +8,7 @@
 
 ## NPM
 * [NPM Audit](https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities): Dependency check
-* [10 NPM Security Best practices](https://snyk.io/blog/ten-npm-security-best-practices/)
+* [10 NPM Security Best practices](https://snyk.io/blog/ten-npm-security-best-practices/) NPM Cheatsheet
 
 ## NodeJS
 

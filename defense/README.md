@@ -19,7 +19,6 @@ The physical means to enforce security and access to the organization: Gates, gu
 Technical measures to enforce security: Firewalls, encryption, network securities, accounts
 
 # Resources
-
 * [SAFECode](https://safecode.org) Non profit organization with free on-demand webcasts on Secure Software Development
 
 -----------
@@ -33,7 +32,6 @@ Sub-pages:
 * [DoS](dos.md)
 * [MAC Flooding](macFlooding.md)
 * [WiFi Sniffing](wifiSniffing.md)
-
 
 ## Malware
 * [Malware](malware.md)
