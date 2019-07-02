@@ -23,6 +23,9 @@
 * [OACC](http://oaccframework.org/): Object Access control framework for authentication and authorization on application objects
 * [Google Tink](https://github.com/google/tink) Cryptography API
 * [HDIV](https://hdivsecurity.com/docs) (Enterprise, not free): Web Application framework that protects from OWASP Top 10 risks
+* [Spring-Vault](https://docs.spring.io/spring-vault/docs/current/reference/html/index.html)
+  * [Spring Vault Blog](https://www.baeldung.com/spring-vault)
+* [Spring Cloud Vault](https://www.baeldung.com/spring-cloud-vault)
 
 ## Books
 * [Iron-Clad Java](https://www.amazon.de/Iron-Clad-Java-Building-Secure-Applications/dp/0071835881) by Jim Manico & August Detlefsen
@@ -31,14 +34,63 @@
 * [Security control enhancements Java 8 and 9](https://www.youtube.com/watch?v=IeDmyBXhcGo) video at SecAppDev by [Jim Manico](https://twitter.com/manicode)
 
 ## Spring
+* [Spring Security](https://www.baeldung.com/security-spring) blogs by Eugen Paraschiv
+
+### Spring Boot
+* [Spring Boot Cheatsheet](https://snyk.io/blog/spring-boot-security-best-practices/) including 10 Spring Boot Security Best practices
+* 10 Excellent Ways to [Secure Your Spring Boot Application](https://developer.okta.com/blog/2018/07/30/10-ways-to-secure-spring-boot)
+  * [Screencast about this blog](https://www.youtube.com/watch?v=KsG7AZqXL9M)
+  * Spring Boot Starter [ACME](https://github.com/creactiviti/spring-boot-starter-acme): Automatic Certificate Management Environment (ACME) protocol
 
 ### Spring Security for IAM
-* [Spring Security cheat-sheet](https://res.cloudinary.com/snyk/image/upload/v1534422834/blog/Spring_Boot_Security_Cheat_Sheet.pdf)
-* [10 Spring Boot Security Best practices](https://snyk.io/blog/spring-boot-security-best-practices/) by Snyk
 * [Spring Framework Security introduction](https://www.youtube.com/watch?v=Q3yStECBuAg)
 * [Securing a web-app](https://spring.io/guides/gs/securing-web/) with Spring Security
 * [Spring Security](https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/): Spring Authentication and Access control
 * [Spring Security Account registration](https://www.baeldung.com/registration-with-spring-mvc-and-spring-security): Note: is vulnerable to account enumeration
+* Get Started with [Spring Security 5.0 and OIDC](https://developer.okta.com/blog/2017/12/18/spring-security-5-oidc)
+
+### Fail on no HTTPS
+
+```java
+@Configuration
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.requiresChannel().anyRequest().requiresSecure();
+    }
+}
+```
+
+* [source](https://developer.okta.com/blog/2018/07/30/10-ways-to-secure-spring-boot)
+
+### Enable CSRF
+
+
+```java
+@EnableWebSecurity
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+}
+```
+
+If you use a Javascript Framework like Angular, add this method, so the JavaScript can read the cookie:
+
+```java
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .csrf()
+                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+    }
+
+```
+
+* [source](https://developer.okta.com/blog/2018/07/30/10-ways-to-secure-spring-boot)
+
+### Spring Security 5 Open ID Connect
+
+* Get Started with [Spring Security 5.0 and OIDC](https://developer.okta.com/blog/2017/12/18/spring-security-5-oidc)
+
 
 ### Other
 * [Spring Actuators](https://www.veracode.com/blog/research/exploiting-spring-boot-actuators) exploit on Spring Boot < 1.5
