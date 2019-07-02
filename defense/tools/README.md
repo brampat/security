@@ -26,6 +26,8 @@ The tools described can be integrated in CI/CD toolchains.
     * Yelp pre-commit framework
     * Overcommit
   * AWS Labs [git-secrets](https://github.com/awslabs/git-secrets)
+    * [BFG](https://rtyley.github.io/bfg-repo-cleaner/) deletes secrets from GIT repo history
+      * [BFG Blog](https://anchor.host/removing-sensitive-data-from-git-repos/) 
   * git-hound
   * ThoughtWorks [Talisman](https://github.com/thoughtworks/talisman)
   * Auth0 [repo-supervisor](https://github.com/auth0/repo-supervisor)
@@ -203,6 +205,7 @@ The tools described can be integrated in CI/CD toolchains.
   * OSQuery
 * Secrets Management
   * Ansible Vault
+  * [HashiCorp Vault](https://www.vaultproject.io/)
   * Blackbox
   * Chef Vault
   * Docker Secrets
