@@ -15,8 +15,12 @@ Collection of links to Hack-related news
 * [China Secretly Installing Spyware App Feng Cai (BXAQ) on Tourists' Phones](https://thehackernews.com/2019/07/xinjiang-fengcai-spyware.html)
 * [Android Security update patches 9 critical vulenrabilities](https://thehackernews.com/2019/07/android-security-update.html) including RCE without user interaction
 * [2000 IoT devices bricked by new Silex malware](https://www.zdnet.com/article/new-silex-malware-is-bricking-iot-devices-has-scary-plans/)
+* Florida [fires IT employee](https://www.zdnet.com/article/florida-city-fires-it-employee-after-paying-ransom-demand-last-week/) after being forced to pay ransom demand
+* [Third Florida city](https://www.techspot.com/news/80744-third-florida-city-falls-victim-ransomware-attack.html) falls victim to ransomware attack
 
 ### June
+* [Lake City](https://www.techspot.com/news/80698-second-florida-city-agrees-pay-ransomware-hackers-massive.html) in Florida pays $500k in ransomware attack
+* [Riviera Beach](https://www.techspot.com/news/80595-florida-city-agrees-pay-ransomware-hackers-600000-unlock.html) in Florida pays $600k in ransomware attack
 * Google Cloud [down](https://techcrunch.com/2019/06/02/google-cloud-is-down-affecting-numerous-applications-and-services/) affecting Google, GMail, Youtube and other services
 * [Hackers infiltrated](https://www.cnet.com/news/a-hacker-assault-left-mobile-carriers-open-to-network-shutdown/) 12+ mobile carriers, complete control of networks
 
@@ -60,11 +64,13 @@ Collection of links to Hack-related news
 * [How to track your kids](https://www.troyhunt.com/how-to-track-your-kids-and-other-peoples-kids-with-the-tictoctrack-watch/) and other people's kids by Troy Hunt
 * [Hacker dox'd thousands of US Police and federal agents](https://techcrunch.com/2019/04/12/police-data-hack/)
 * [Julien Assange](https://motherboard.vice.com/en_us/article/mb8qyn/julian-assange-charged-with-hacking-conspiracy-not-publishing) charged for hacking and extradited from Ecuadorian embassy
-
+* Researchers found [massive spam operation](https://techcrunch.com/2019/04/02/inside-a-spam-operation/) and sunk its server
 
 ### March
+* IT guy [fired and torches AWS servers](https://www.inc.com/gene-marks/an-it-guy-gets-fired-promptly-torches-23-amazon-web-servers.html)
 * [XSS on Google Searchbox](https://www.youtube.com/watch?v=lG7U3fuNw3A)
 * [PentestPartners](https://www.youtube.com/watch?v=aZUQmJMuf8c) finds exploits in car-alarms from Viper and Pandora and clearly explains the attack scenario.
+* [Jackson County](https://www.techspot.com/news/79119-jackson-county-government-gives-hackers-pays-400000.html) pays $400k in ransomware attack
 * [ASUS](https://techcrunch.com/2019/03/25/asus-update-backdoor/) update software backdoored to target 600 specific Mac-addresses
   * Same on [Hackernews](https://thehackernews.com/2019/03/asus-computer-hacking.html) 
 * Hydro hit by [LockerGoga](https://doublepulsar.com/how-lockergoga-took-down-hydro-ransomware-used-in-targeted-attacks-aimed-at-big-business-c666551f5880?gi=f6a067014efa) ransomware
@@ -120,6 +126,9 @@ supply chain compromised by China's grain-sized server-implants. Discovery by Am
 ## 2016
 
 * USA's Democratic party hacked by Russian Intelligence and leaked emails from Hilary Clinton, causing Donald Trump to win the elections 
+
+### Kay
+* [Kansas Heart Hospital](https://www.techspot.com/news/64954-hackers-demand-ransom-payment-kansas-heart-hospital-files.html) pays for ransomware attack, but only partially restored ransomed files
 
 ### February
 * [Nissan Leaf](https://www.troyhunt.com/controlling-vehicle-features-of-nissan/) controlled from the other side of the world by Troy Hunt and Scott Helme
