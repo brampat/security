@@ -9,9 +9,12 @@ Collection of links to Hack-related news
   * [Zack Whittaker](https://us18.campaign-archive.com/home/?u=e1ad6038c994abec17dafb116&id=a2457dc8ad) This week in Security
 
 ## 2019
+### July
+* [China forcing tourists to install text-stealing malware](https://www.vice.com/en_us/article/7xgame/at-chinese-border-tourists-forced-to-install-a-text-stealing-piece-of-malware) at its borders
+* [China Secretly Installing Spyware App Feng Cai (BXAQ) on Tourists' Phones](https://thehackernews.com/2019/07/xinjiang-fengcai-spyware.html)
+* [Android Security update patches 9 critical vulenrabilities](https://thehackernews.com/2019/07/android-security-update.html) including RCE without user interaction
 
-### Juni
-
+### June
 * Google Cloud [down](https://techcrunch.com/2019/06/02/google-cloud-is-down-affecting-numerous-applications-and-services/) affecting Google, GMail, Youtube and other services
 
 ### May
@@ -90,13 +93,14 @@ Facebook over disabling an API (Graph API) they used to scrape Bikini pictures o
 It is unclear if this was caused by a configuration error or a deliberate attack
 
 ### October
-
 * [Dutch foil Russian Cyber-attack on OPCW](https://www.bbc.com/news/world-europe-45747472): APT28
 * [China's Hardware implants](https://www.bloomberg.com/news/features/2018-10-04/the-big-hack-how-china-used-a-tiny-chip-to-infiltrate-america-s-top-companies): Supermicro's server 
 supply chain compromised by China's grain-sized server-implants. Discovery by Amazon, Apple confirmed the FBI's fears
   * [Hardware implants debunked](https://9to5mac.com/2018/10/09/bloomberg/): This story appears to be FUD from an over-enthousiastic Bloomberg reporter, but...
   * [Bloomberg doubles down](https://www.infosecurity-magazine.com/news/us-telco-supply-chain-alteration) on the story
 
+### April
+* [China forces residents to install surveillance app with awfull security](https://www.vice.com/en_us/article/ne94dg/jingwang-app-no-encryption-china-force-install-urumqi-xinjiang)
 
 
 ### February
