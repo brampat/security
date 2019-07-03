@@ -10,17 +10,29 @@ Sources:
 
 ## 2019
 
+### Juli
+| When | Who | How many | What | Source |
+| ---- |--------|--------|--------|-------|
+|  | |  |  |    |
+
+### June
+| When | Who | How many | What | Source |
+| ---- |--------|--------|--------|-------|
+| 2019-06-13 | socialengineered.net       |      89,392 | In June 2019, the &quot;Art of Human Hacking&quot; site <a href="https://socialengineered.net" target="_blank" rel="noopener">Social Engineered</a> suffered a data breach. The breach of the MyBB forum was published on a rival hacking forum and included 89k unique email addresses spread across 55k forum users and other tables in the database. The exposed data also included usernames, IP addresses, private messages and passwords stored as salted MD5 hashes. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/SOCIALENGINEERED) |
+| 2019-06-10 | Wiener Büchereien          |     224,119 | In June 2019, <a href="https://futurezone.at/digital-life/wiener-buechereien-gehackt-daten-von-77000-nutzern-im-netz/400524190" target="_blank" rel="noopener">the library of Vienna (Wiener Büchereien) suffered a data breach</a>. The compromised data included 224k unique email addresses, names, physical addresses, phone numbers and dates of birth. The breached data was subsequently posted to Twitter by the alleged perpetrator of the breach. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/WIENERBUCHEREIEN) |
+
 ### May
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
 | 2019-05-29 | FlipBoard | 150M user-data | Real names, usernames, salted & hashes passwords, email-addresses, digital tokens for linked social media services | [Hacker News](https://thehackernews.com/2019/05/flipboard-data-breach-hacking.html)
-
+| 2019-05-07 | ordineavvocatiroma.it      |      41,960 | In May 2019, <a href="https://roma.repubblica.it/cronaca/2019/05/07/news/roma_anonymus_viola_la_mail_di_30mila_avvocati_c_e_anche_quella_di_raggi-225675248/" target="_blank" rel="noopener">the Lawyers Order of Rome suffered a data breach by a group claiming to be Anonymous Italy</a>. Data on tens of thousands of Roman lawyers was taken from the breached system and redistributed online. The data included contact information, email addresses and email messages themselves encompassing tens of thousands of unique email addresses. A total of 42k unique addresses appeared in the breach. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/ORDINEAVVOCATIDIROMA) |
 
 ### April
 | When | Who | How many | What | Source |
 | ---- |--------|--------|--------|-------|
 | 2019-04-17 | JustDial | 100M user-info | NoSQL database accessed by an old API endpoint containing users' name, email, mobile number, address, gender, date of birth, photo, occupation, company name | [Hacker News](https://thehackernews.com/2019/04/justdial-hacked-data-breach.html)
 | 2019-04-12 | FBI National Academy Association | 4000 Dox'd agents | member names, a mix of personal and government email addresses, job titles, phone numbers and their postal addresses of FBI and Police officers | [TechCrunch](https://techcrunch.com/2019/04/12/police-data-hack/) |
+| 2019-04-03 | Georgia Tech | 1.3 M user-info | names, addresses, social security numbers, internal identification numbers, and date of birth of current and former students, faculty and staff, and student applicants. | [The Hacker News](https://thehackernews.com/2019/04/georgia-tech-data-breach.html) |
 
 ### March
 | When | Who | How many | What | Source |
