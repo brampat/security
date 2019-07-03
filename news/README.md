@@ -10,12 +10,15 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+* Security flaws in a popular smart home hub let [hackers unlock front doors](https://techcrunch.com/2019/07/02/smart-home-hub-flaws-unlock-doors/)
 * [China forcing tourists to install text-stealing malware](https://www.vice.com/en_us/article/7xgame/at-chinese-border-tourists-forced-to-install-a-text-stealing-piece-of-malware) at its borders
 * [China Secretly Installing Spyware App Feng Cai (BXAQ) on Tourists' Phones](https://thehackernews.com/2019/07/xinjiang-fengcai-spyware.html)
 * [Android Security update patches 9 critical vulenrabilities](https://thehackernews.com/2019/07/android-security-update.html) including RCE without user interaction
+* [2000 IoT devices bricked by new Silex malware](https://www.zdnet.com/article/new-silex-malware-is-bricking-iot-devices-has-scary-plans/)
 
 ### June
 * Google Cloud [down](https://techcrunch.com/2019/06/02/google-cloud-is-down-affecting-numerous-applications-and-services/) affecting Google, GMail, Youtube and other services
+* [Hackers infiltrated](https://www.cnet.com/news/a-hacker-assault-left-mobile-carriers-open-to-network-shutdown/) 12+ mobile carriers, complete control of networks
 
 ### May
 
@@ -51,9 +54,7 @@ Collection of links to Hack-related news
 * UK Releases [Standards](https://ico.org.uk/media/about-the-ico/consultations/2614762/age-appropriate-design-code-for-public-consultation.pdf) for protection of children's privacy in online services
 * [Microsoft Customer Support Portal](https://motherboard.vice.com/en_us/article/ywyz3x/hackers-could-read-your-hotmail-msn-outlook-microsoft-customer-support) hacked allowing access to Hotmail, MSN and Outlook mail of non-corporate accounts
   * [Confirmation](https://www.theverge.com/2019/4/15/18311112/microsoft-outlook-web-email-hack-response-comment) from Microsoft
-*
-
-* [Carbanak Mallware sources found](https://thehackernews.com/2019/04/carbanak-malware-source-code.html): Researchers found the full source-code of the Carbanak (FIN7, Anunak or Cobalt) malware
+* [Carbanak Malware sources found](https://thehackernews.com/2019/04/carbanak-malware-source-code.html): Researchers found the full source-code of the Carbanak (FIN7, Anunak or Cobalt) malware
   * [Analysis](https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-one-a-rare-occurrence.html) from FireEye in 4 parts. 
 * [TicToc GPS tracking watch Pwnd](https://www.pentestpartners.com/security-blog/tic-toc-pwned/)
 * [How to track your kids](https://www.troyhunt.com/how-to-track-your-kids-and-other-peoples-kids-with-the-tictoctrack-watch/) and other people's kids by Troy Hunt
@@ -62,7 +63,7 @@ Collection of links to Hack-related news
 
 
 ### March
-
+* [XSS on Google Searchbox](https://www.youtube.com/watch?v=lG7U3fuNw3A)
 * [PentestPartners](https://www.youtube.com/watch?v=aZUQmJMuf8c) finds exploits in car-alarms from Viper and Pandora and clearly explains the attack scenario.
 * [ASUS](https://techcrunch.com/2019/03/25/asus-update-backdoor/) update software backdoored to target 600 specific Mac-addresses
   * Same on [Hackernews](https://thehackernews.com/2019/03/asus-computer-hacking.html) 
