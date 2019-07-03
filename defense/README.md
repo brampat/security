@@ -62,4 +62,6 @@ Sub-pages:
 * [What to do when hacked](stagesOfGrief.md)
 
 -----------
-Source: [Virtual Training Company](https://www.youtube.com/watch?v=wWKbQIfEGrQ)
+Sources:
+* [Virtual Training Company](https://www.youtube.com/watch?v=wWKbQIfEGrQ)
+* [NCSC](https://www.ncsc.gov.uk/section/advice-guidance/all-topics): List of subjects by UK's National Cyber Security Centre
