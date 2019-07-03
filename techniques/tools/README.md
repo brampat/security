@@ -111,12 +111,19 @@
 
 
 ## Practicing
+* [List](https://www.blackroomsec.com/updated-hacking-challenge-site-links/) of hacking challenge sites
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
 * [Hack the box](https://www.hackthebox.eu/): Online testing environment, accessible after completing an entry-level test
 * [Root-me](https://www.root-me.org/?lang=en): Online challenges and VM to practice hacking
+* [Try Hack Me](https://tryhackme.com/): Hack Challenges
 * [Hack.me](https://hack.me/): Online challenges on vulnerable web-applications
 * [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat) Vulnerable by Design AWS deployment tool for CTF-style challenges on AWS
+* [Pentester Labs](https://www.pentesterlab.com/): Includes some free exercises and Pro (paid) package
+* [PicoCTF](https://picoctf.com/) aimed at middle and high school students
+* [Hacker 101](https://www.hacker101.com/): Training for bounty-hunter by [HackerOne](https://www.hackerone.com/)
+* [Tracelabs](https://www.tracelabs.org/getinvolved/ctf/) OSINT CTF on finding missing persons
+* [CTFTime](https://ctftime.org/): Overview of scheduled CTF's
 
 ## Docker automation for Hack-tasks
 * [Docker for hackers](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/) A pentester's guide
