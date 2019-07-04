@@ -84,23 +84,18 @@ You can do everything, including:
 ## Secure Software Development class 101
 <hr />
 
-<span>
-```
-http://example.com/?name=Bram
-```
-</span>
+### XSS 101
 
+<pre><code>example.com/?name=Bram</code></pre>
 
-<span class="fragment" data-fragment-index="0" -->
-```
-http://example.com/?name=<script>alert('XSS triggered')</script>
-```
-</span>
+<pre class="fragment"><code>example.com/?name=<script>alert('XSS triggered')</script></code></pre>
 
 --
 
 ## Secure Software Development class 102
 <hr />
+
+### XSS Defense
 
 ```php
 <?php
@@ -110,38 +105,107 @@ http://example.com/?name=<script>alert('XSS triggered')</script>
 
 --
 
+## Secure Software Development
+<hr />
+
+### Fixing bugs
+
+![](./pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 160px; width: 650px;" -->
+
+Cost increases 30-100x<!-- .element style="z-index: -100; box-shadow:none; position: fixed; bottom: 20px; " -->
+
+-- Notes --
+
+Early discovery leads to lower impact and cost to fix
+Late discovery increases cost exponentially
+
+--
+
 ## Conventional Security effort
 <hr />
 
-![](./pics/truck_fixing.gif)<!-- .element style="width: 500px;" class="fragment" -->
+![](./pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" class="fragment" data-fragment-index="0" -->
+![](./pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
+![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" class="fragment" data-fragment-index="1" -->
+
+-- Notes --
+
+Conventional Security:
+* Add pentesting
+* Late discovery
+* Increased impact & cost
+* Lots of low-hanging fruit
+* Less time to find hard-to-find security bugs
+
+--
+
+## Conventional Security effort
+<hr />
+
+![](./pics/truck_fixing.gif)<!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 100px; width: 600px;" -->
+
+-- Notes --
+Feels a bit like this
 
 --
 
 ## Secure Software Development
 <hr />
 
-![](./pics/bug_cost.jpg)<!-- .element style="width: 500px;" -->
-
-Cost increases 30-100x
-
---
-
-## Secure Software Development
-<hr />
-
-### Conventional Security effort
+![](./pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" -->
 
 ![](./pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
 
-![](./pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 350px;" class="fragment" data-fragment-index="1" -->
-![](./pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 265px; top: 350px;" class="fragment" data-fragment-index="1" -->
-![](./pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 390px; top: 350px;" class="fragment" data-fragment-index="1" -->
-![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 515px; top: 350px;" class="fragment" data-fragment-index="1" -->
-![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 640px; top: 350px;" class="fragment" data-fragment-index="0" -->
-![](./pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 765px; top: 350px;" class="fragment" data-fragment-index="1" -->
-![](./pics/SSDLC_cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 890px; top: 350px;" class="fragment" data-fragment-index="1" -->
+![](./pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](./pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](./pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;"  -->
+![](./pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](pics/SSDLC__Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" class="fragment" data-fragment-index="0" -->
 
-![](pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 265px; top: 250px;" class="fragment" data-fragment-index="6" -->
+![](pics/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px;" class="fragment" data-fragment-index="3" -->
+
+
+--
+
+## Secure Software Development
+<hr />
+
+![](pics/apple_tree_.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 170px; width: 500px; " -->
+<hr /><!-- .element style="border-top: 3px solid #888888; position: fixed; top: 290px; width: 1000px; " class="fragment" data-fragment-index="1" -->
+<hr /><!-- .element style="border-top: 3px solid #888888; position: fixed; top: 390px; width: 1000px; " class="fragment" data-fragment-index="0" -->
+
+Sweet fruit<!-- .element style="position: fixed; left: 600px; top: 210px; " class="fragment" data-fragment-index="2" -->
+
+Bulk fruit<!-- .element style="position: fixed; left: 600px; top: 320px; " class="fragment" data-fragment-index="1" -->
+
+Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; " class="fragment" data-fragment-index="0" -->
+
+![](pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 410px; " class="fragment fade-in-then-out" data-fragment-index="3" -->
+![](pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 300px; " class="fragment fade-in-then-out" data-fragment-index="4" -->
+![](pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 410px; " class="fragment " data-fragment-index="4" -->
+![](pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: -20px; top: 410px; " class="fragment " data-fragment-index="4" -->
+![](pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 200px; " class="fragment " data-fragment-index="5" -->
+![](pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 300px; " class="fragment " data-fragment-index="5" -->
+![](pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: -20px; top: 300px; " class="fragment " data-fragment-index="5" -->
+
+-- Notes --
+
+* Low hanging fruit:
+  * easy security issues
+  * script kiddies
+* Bulk fruit:
+  * intermediate issues
+  * blackhat hackers
+* Sweet fruit
+  * Advanced security issues
+  * APT-level hackers
+* (Timeboxed) Pentesting catches low hanging fruit
+* Enabling devs to do basic or even intermediate Security testing will push Pentesting effort up
+* Catches advanced security bugs
+  * More value for money
+  * More satisfaction for pentesters and client
 
 --
 
@@ -180,7 +244,7 @@ Cost increases 30-100x
 ![](./pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Static Code analysis (SAST):
-  * QA: Checkmarx, Fortify, FindSecurityBugs, PumaScan, MS SDL for Azure
+  * QA: SonarQube, FindSecurityBugs, Checkmarx, Fortify, PumaScan, MS SDL for Azure
   * Dependencies & Licensing: OWASP Dependency-check, White-source, Snyk
 * Pair programming
 * Code review / Pull-requests
@@ -270,7 +334,21 @@ class SimpleControllerSpec extends Specification {
 * Monitoring with SIEM / Log aggregation:
   * Splunk, ElasticStack, OSSIM, OSSEC, Apache Metron, SIEMonster
 * Patching & Updating
-* Phase-out procedures
 
 ![](./pics/siemonster.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 410px; width: 520px; z-index: -1;" -->
 
+--
+
+## Secure Software Development
+<hr />
+
+![](pics/SSDLC__Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+* Phase-out procedures
+* Safe removal of:
+  * Application
+  * Server
+  * Connections (to and from)
+  * Account
+* Data Archiving
+* Code Archiving

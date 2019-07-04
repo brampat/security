@@ -12,14 +12,18 @@ TODO: ADD DECOMMISSION
 
 ![](./pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
 
-![](./pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 350px;" -->
-![](./pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 265px; top: 350px;"  -->
-![](./pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 390px; top: 350px;"  -->
-![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 515px; top: 350px;"  -->
-![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 640px; top: 350px;"  -->
-![](./pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 765px; top: 350px;"  -->
+![](./pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" -->
+![](./pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" -->
+![](./pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" -->
+![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" -->
+![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" -->
+![](./pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" -->
+![](pics/SSDLC__Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" -->
 
-![](./pics/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 265px; top: 250px;"  -->
+![](pics/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px;" -->
+
+
+
 
 --
 
@@ -72,6 +76,11 @@ Five main ways to test your software product:
 ![](pics/BitFi.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px; width: 400px;"  -->
 ![](pics/BitFi_no_weaknesses.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; bottom: 50px;"  -->
 
+-- Notes --
+
+* BitFi launched Cryptocurrency-wallet with no security weaknesses
+* They didn't say it was unhackable
+
 --
 
 ## Unhackable
@@ -80,6 +89,9 @@ Five main ways to test your software product:
 ### Bitfi
 
 ![](pics/BitFi_promise.png)
+
+-- Notes --
+* Until they did
 
 --
 
