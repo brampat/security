@@ -110,7 +110,7 @@ You can do everything, including:
 
 ### Fixing bugs
 
-![](./pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 160px; width: 650px;" -->
+![](pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 160px; width: 650px;" -->
 
 Cost increases 30-100x<!-- .element style="z-index: -100; box-shadow:none; position: fixed; bottom: 20px; " -->
 
@@ -124,9 +124,9 @@ Late discovery increases cost exponentially
 ## Conventional Security effort
 <hr />
 
-![](./pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" class="fragment" data-fragment-index="0" -->
-![](./pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
-![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" class="fragment" data-fragment-index="1" -->
+![](pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" class="fragment" data-fragment-index="0" -->
+![](pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
+![](pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
 
@@ -142,7 +142,7 @@ Conventional Security:
 ## Conventional Security effort
 <hr />
 
-![](./pics/truck_fixing.gif)<!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 100px; width: 600px;" -->
+![](pics/truck_fixing.gif)<!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 100px; width: 600px;" -->
 
 -- Notes --
 Feels a bit like this
@@ -152,16 +152,16 @@ Feels a bit like this
 ## Secure Software Development
 <hr />
 
-![](./pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" -->
+![](pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" -->
 
-![](./pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
+![](pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
 
-![](./pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" class="fragment" data-fragment-index="0" -->
-![](./pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" class="fragment" data-fragment-index="0" -->
-![](./pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" class="fragment" data-fragment-index="0" -->
-![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" class="fragment" data-fragment-index="0" -->
-![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;"  -->
-![](./pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;"  -->
+![](pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" class="fragment" data-fragment-index="0" -->
 ![](pics/SSDLC_Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" class="fragment" data-fragment-index="0" -->
 
 ![](pics/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px;" class="fragment" data-fragment-index="3" -->
@@ -212,8 +212,8 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
 ## Secure Software Development
 <hr />
 
-![](./pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
-![](./pics/risk_vs_impact.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 210px; width: 620px; z-index: -1;" -->
+![](pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/risk_vs_impact.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 210px; width: 620px; z-index: -1;" -->
 
 * CIA Ratings
 * Quality Gates
@@ -228,20 +228,20 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
 ## Secure Software Development
 <hr />
 
-![](./pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Threat Modelling
 * Attack Surface Analysis
 * Security Architecture
 
-![](./pics/threat_model.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 210px; width: 620px; z-index: -1;" -->
+![](pics/threat_model.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 210px; width: 620px; z-index: -1;" -->
 
 --
 
 ## Secure Software Development
 <hr />
 
-![](./pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Static Code analysis (SAST):
   * QA: SonarQube, FindSecurityBugs, Checkmarx, Fortify, PumaScan, MS SDL for Azure
@@ -249,14 +249,14 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
 * Pair programming
 * Code review / Pull-requests
 
-![](./pics/checkmarx.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
+![](pics/checkmarx.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
 
 --
 
 ## Secure Software Development
 <hr />
 
-![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * DAST Tools: OWASP ZAP, Nessus, OpenVAS
 * Basic Vulnerability scanning
@@ -264,14 +264,14 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
 * Security Unit Testing
 * Security Smoke tests
 
-![](./pics/nessus.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
+![](pics/nessus.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
 
 --
 
 ## Secure Software Development: Unit tests
 <hr />
 
-![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 
 ```groovy
@@ -311,21 +311,21 @@ class SimpleControllerSpec extends Specification {
 ## Secure Software Development
 <hr />
 
-![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Professional Pen-testing
 * Risk Assessment review
 * Advanced Code Reviews
 * Fuzz Testing (Chaos Monkey testing)
 
-![](./pics/kali.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
+![](pics/kali.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
 
 --
 
 ## Secure Software Development
 <hr />
 
-![](./pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Secure deployment
 * Secrets Managements
@@ -335,7 +335,7 @@ class SimpleControllerSpec extends Specification {
   * Splunk, ElasticStack, OSSIM, OSSEC, Apache Metron, SIEMonster
 * Patching & Updating
 
-![](./pics/siemonster.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 410px; width: 520px; z-index: -1;" -->
+![](pics/siemonster.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 410px; width: 520px; z-index: -1;" -->
 
 --
 
