@@ -18,7 +18,7 @@ TODO: ADD DECOMMISSION
 ![](./pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" -->
 ![](./pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" -->
 ![](./pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" -->
-![](pics/SSDLC__Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" -->
+![](pics/SSDLC_Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" -->
 
 ![](pics/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px;" -->
 
