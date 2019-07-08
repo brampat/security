@@ -105,9 +105,26 @@
 * [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ) pentesting API's using OpenAPI definitions
 
 ## Cloud
-* [GCP Google Storage Brute-forcing](https://github.com/RhinoSecurityLabs/GCPBucketBrute) script to enumerate Google Storage buckets
-* [Pacu](https://github.com/RhinoSecurityLabs/pacu) AWS exploitation framework
+* [GCP Google Storage Brute-forcing](https://github.com/RhinoSecurityLabs/GCPBucketBrute): Enumerates Google Storage buckets
+* [Pacu](https://github.com/RhinoSecurityLabs/pacu): AWS exploitation framework
 * [AWS Security Research](https://github.com/RhinoSecurityLabs/Cloud-Security-Research) by [Rhino Security Labs](http://www.rhinosecuritylabs.com/)
+* [weirdALL](https://github.com/carnal0wnage/weirdAAL): AWS Attack Library
+* [Pacu](https://github.com/RhinoSecurityLabs/pacu): AWS penetration testing toolkit
+* [Cred Scanner](https://github.com/disruptops/cred_scanner)
+* [AWS PWN](https://github.com/dagrz/aws_pwn)
+* [Cloudfrunt](https://github.com/MindPointGroup/cloudfrunt)
+* [Cloudjack](https://github.com/prevade/cloudjack)
+* [Nimbostratus](https://github.com/andresriancho/nimbostratus)
+* [GitLeaks](https://github.com/zricethezav/gitleaks): Audit git repos for secrets
+* [TruffleHog](https://github.com/dxa4481/truffleHog): Searches through git repositories for high entropy strings and secrets, digging deep into commit history
+* [DumpsterDiver](https://github.com/securing/DumpsterDiver): Tool to search secrets in various filetypes, like keys (e.g. AWS Access Key, Azure Share Key or SSH keys) or passwords.
+* [Mad-King](https://github.com/ThreatResponse/mad-king): Proof of Concept Zappa Based AWS Persistence and Attack Platform
+* [Cloud-Nuke](https://github.com/gruntwork-io/cloud-nuke): A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it
+* [MozDef: The Mozilla Defense Platform](https://github.com/mozilla/MozDef): The Mozilla Defense Platform (MozDef) seeks to automate the security incident handling process and facilitate the real-time activities of incident handlers.
+* [Lambdashell](http://www.lambdashell.com/): This is a simple AWS lambda function that does a straight exec. Essentially giving you a shell directly in my AWS infrastructure to just run your commands.
+* [Lambda-Proxy](https://github.com/puresec/lambda-proxy/): A bridge between SQLMap and AWS Lambda, which lets you use SQLMap to natively test AWS Lambda functions for SQL Injection vulnerabilities.
+* [CloudCopy](https://github.com/Static-Flow/CloudCopy): Cloud version of the Shadow Copy attack against domain controllers running in AWS using only the EC2:CreateSnapshot permission
+* [enumerate-iam](https://github.com/andresriancho/enumerate-iam): Enumerate the permissions associated with AWS credential set
 
 
 ## Practicing
