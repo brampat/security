@@ -44,7 +44,6 @@ independent from another request. So for example, there's no auto-save for the s
 
 
 ## Secure coding training  /teaching
-
 * [Hacksplaining](https://www.hacksplaining.com/) all common vulnerabilities with step-by-step hack-examples and defense with code examples
 * [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt on Pluralsight (free course)
 * [OWASP Secure coding practices](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)  quick reference guide
@@ -53,4 +52,16 @@ independent from another request. So for example, there's no auto-save for the s
   * [Secure Development Lifecycles](https://www.youtube.com/watch?v=L-gL1YQUrwg) by Bart de Win
 * [OWASP Encoding project](https://www.owasp.org/index.php/Category:OWASP_Encoding_Project)
 * [SAFECode](https://safecode.org/training/) On-demand web-casts
-
+* [Pragmatic Web Security](https://pragmaticwebsecurity.com/index.html#courses) by [Philippe De Ryck](https://twitter.com/philippederyck)
+  * [From OWASP Top 10 to OWASP ASVS](https://pragmaticwebsecurity.com/talks/owaspasvs.html)
+  * [Cookies vs tokens: a paradoxical choice](https://pragmaticwebsecurity.com/talks/cookiesvstokens.html)
+  * [OAuth 2.0 security in Angular](https://pragmaticwebsecurity.com/talks/passwordspixiedust.html)
+  * [HTTPS for developers](https://pragmaticwebsecurity.com/talks/httpsfordevelopers.html)
+  * [Angular and the OWASP top 10](https://pragmaticwebsecurity.com/talks/angularowasptop10)
+  * [The parts of JWT security nobody talks about](https://pragmaticwebsecurity.com/talks/jwtsecurity.html)
+  * [The truth about cookies, tokens and APIs](https://pragmaticwebsecurity.com/talks/truthcookiestokensapis.html)
+  * [Introduction to OAuth 2.0 and OpenID Connect](https://pragmaticwebsecurity.com/talks/introductionoauth.html)
+  * [Security patterns for keeping secrets in the browser](https://pragmaticwebsecurity.com/talks/browsersecrets.html)
+  * [Common API security pitfalls](https://pragmaticwebsecurity.com/talks/commonapisecuritypitfalls)
+  * [Taking security seriously](https://pragmaticwebsecurity.com/talks/takingsecurityseriously.html)
+  
