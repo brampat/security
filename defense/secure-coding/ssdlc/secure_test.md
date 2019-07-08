@@ -1,4 +1,6 @@
 # Secure testing
+* Risk Analysis
+* Vulnerability Assessment & Penetration Testing
 
 ## Five ways
 
