@@ -8,6 +8,13 @@ Collection of links to Hack-related news
   * [Cybermonitor](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) github.
   * [Zack Whittaker](https://us18.campaign-archive.com/home/?u=e1ad6038c994abec17dafb116&id=a2457dc8ad) This week in Security
 
+
+## Podcasts
+* [Smashing Security](https://www.smashingsecurity.com/): Security news with [Graham Cluley](https://twitter.com/gcluley) and [Carole Theriault](https://twitter.com/caroletheriault)
+* [Darknet Diaries](https://darknetdiaries.com/): Dark stories from the web with [Jack Rhysider](https://twitter.com/JackRhysider)
+* [Weekly Update](https://www.youtube.com/user/troyhuntdotcom/videos) by [Troy Hunt](https://twitter.com/troyhunt)
+* [SANS StormCast](https://isc.sans.edu/podcast.html) (almost) Daily updates on Security 
+
 ## 2019
 ### July
 * UK police forensics paid to recover from [ransomware attack](https://www.bbc.com/news/uk-48881959) 
