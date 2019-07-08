@@ -277,6 +277,7 @@ The tools described can be integrated in CI/CD toolchains.
 * Continuous Monitoring / SIEM:
   * [SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management) - Security Information and Event Management
   * [Comparison](https://logz.io/blog/open-source-siem-tools/)
+  * [LME](https://www.ncsc.gov.uk/blog-post/logging-made-easy) Logging Made Easy blog by NCSC UK
   * [Splunk](https://www.splunk.com/page/sign_up/es_sandbox)
     * [ThreatHunting](https://github.com/olafhartong/ThreatHunting) for Splunk: A Splunk app mapped to MITRE ATT&CK to guide your threat hunts
       * [BLOG](https://securityaffairs.co/wordpress/81288/security/hunting-mitres-attck-splunk.html) on using ThreatHunting
