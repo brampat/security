@@ -47,6 +47,7 @@
 | Malware | Malicious software |
 | NIDS | Network Intrusion Detection System |
 | [Password-manager](../techniques/passwords/password-managers.md) | Tool for storing account-credentials and generating unique, random and strong passwords |
+| PII | Personally Identifiable Information |
 | Proxy | System to use as an intermediate between you and the target / server. Sometimes used to mask your identity and / or location. Less reliable than VPN. Chaining proxies can make it much harder to detect. |
 | Ransomware | Also see Malware |
 | RAT | Remote Administration Tools |
