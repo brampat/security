@@ -33,7 +33,7 @@ See [Tools](techniques/tools/README.md)
 ## Courses & Certification
 See [Certifications](certifications/README.md)
 
-## Websites:
+## Websites
 * [Guru99 Ethical Hacking tutorials](https://www.guru99.com/ethical-hacking-tutorials.html)
 * [Yeahhub](https://www.yeahhub.com/) Advanced hacking tutorials
 
