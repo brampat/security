@@ -10,6 +10,22 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+* UK police forensics paid to recover from [ransomware attack](https://www.bbc.com/news/uk-48881959) 
+* D-Link settles over [horrible router security](https://arstechnica.com/information-technology/2019/07/d-link-agrees-to-new-security-monitoring-to-settle-ftc-charges/)
+* Google scrubs 100+ [adware apps](https://www.cyberscoop.com/google-play-store-malicious-apps-trend-micro/)
+* [PGP keyserver network](https://gist.github.com/rjhansen/67ab921ffb4084c865b3618d6955275f) under attack
+* Ryuk ransomware [hits Georgia Court](https://arstechnica.com/information-technology/2019/07/ryuk-ryuk-ryuk-georgias-courts-hit-by-ransomware/)
+* Texas Police collects [9.2 million texts](https://techcrunch.com/2019/06/29/wiretap-prosecutors-texas/) in a single wiretap, but did not lead to arrests
+* MET Police facial recognition system [wrongfully marks 81%](https://news.sky.com/story/met-polices-facial-recognition-tech-has-81-error-rate-independent-report-says-11755941) of it's detected people against "watchlist"
+* Email-client [Superhuman](https://mikeindustries.com/blog/archive/2019/06/superhuman-is-spying-on-you) spies on its users
+* Google's [Jigsaw unit](https://www.vice.com/en_us/article/vb98pb/google-jigsaw-became-toxic-mess) became a toxic work environment
+* [Top secret US Air Force files](https://www.forbes.com/sites/thomasbrewster/2019/07/02/exclusive-fbi-investigates-leak-of-1000-pages-of-top-secret-air-force-intelligence/#41bd8a912973) found after police tipped for marijuana farm
+* Amazon trying to [sell Ring Smart-doorbell](https://www.vice.com/en_us/article/43jmnq/how-amazon-and-the-cops-set-up-elaborate-sting-operation-that-accomplished-nothing) on base of FUD but fails to put up results
+* 23 year old man [sentenced to 27 months](https://www.justice.gov/usao-sdca/pr/utah-man-sentenced-computer-hacking-crime) for Christmas 2013 DDoS attacks
+* Apple and Google not taking action against [spyware apps](https://www.wired.com/story/common-apps-domestic-abusers-stalk-victims/)
+* YouTube briefly blocked and [suspended hacking videos](https://www.theverge.com/2019/7/3/20681586/youtube-ban-instructional-hacking-phishing-videos-cyber-weapons-lab-strike) by accident
+* USA Border Patrol suspends Perceptics contract for [leaking sensitive files](https://www.washingtonpost.com/technology/2019/07/02/border-surveillance-subcontractor-suspended-after-cyberattack-misuse-traveler-images/?utm_term=.787a45f70ba7)
+* Researchers crack open[Facebook campaign that pushed malware](https://arstechnica.com/information-technology/2019/07/five-year-old-facebook-campaign-pushed-malware-on-100000-followers/) for years
 * Security flaws in a popular smart home hub let [hackers unlock front doors](https://techcrunch.com/2019/07/02/smart-home-hub-flaws-unlock-doors/)
 * [China forcing tourists to install text-stealing malware](https://www.vice.com/en_us/article/7xgame/at-chinese-border-tourists-forced-to-install-a-text-stealing-piece-of-malware) at its borders
 * [China Secretly Installing Spyware App Feng Cai (BXAQ) on Tourists' Phones](https://thehackernews.com/2019/07/xinjiang-fengcai-spyware.html)
