@@ -67,7 +67,12 @@ For security bugs, this is no different. Security bugs are no different than any
 
 Here, you can see the different stages of a software development lifecycle from requirements to decommissioning. For each stage, a corresponding stage in security activities can be added. Below, I will detail each stage's security activities. Please note, this is not a comprehensive list of activities. 
 
-### Requirements
+### Requirements Analysis
+* Risk Analysis
+* Threat Identification
+* Threat Impact Probability
+* Abuse Cases
+* Usability Guidelines
 
 During requirements, the team can coordinate with their organisation's Chief Information Security Officer (CISO) to discuss CIA classifications and Business Impact Analysis. Questions to answer include:
 * What data is handled in the application?
@@ -83,7 +88,10 @@ During requirements, the team can coordinate with their organisation's Chief Inf
     * Will data storage be separated from the application's logic?
     * How will data storage be secured?
 * How will the application be accessed?
-  * Is it accessible via internet or only internally?
+  * Is it:
+    * Publicly accessible
+    * Client / partner accessible?
+    * Internally accessible?
   * Is VPN mandatory?
 * Does the application expose sensitive or important functionality?
   * Financial transactions
@@ -113,14 +121,18 @@ Additionally the team could also add the extended CIA aspects of:
 
 During the design phase of the application or separate functionality, the team again assisted by the CISO can Sollic
 * Threat analysis
+* Design Security Requirements
+* Architecture & Design Review
+* Threat Modelling
 * Abuse cases
 
 [Sub-page](secure_design.md)
 
 ### Build
-
+* Secure Coding
+* Risk Based Security Tests
 * Static analysis
-* SAST tools
+  * SAST tools
 
 Some security measures:
 * Encrypt data at rest (in database or other storage)
@@ -143,13 +155,16 @@ Some security measures:
 
 
 ### Test
+* Risk Analysis
+* Vulnerability Assessment & Penetration Testing
 
 [Sub-page](secure_test.md)
 
 ### Deploy
-
 * Secrets management
 * Secure config
+  * Configuration Review
+  * Network Configuration Review 
 * Pentest
 
 ### Maintain
