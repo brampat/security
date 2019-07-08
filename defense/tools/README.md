@@ -82,7 +82,8 @@ The tools described can be integrated in CI/CD toolchains.
     * [WhiteSource](https://marketplace.visualstudio.com/items?itemName=whitesource.whitesource) for dependency management, checks licenses and vulnerabilities.
     * [Fortify](https://marketplace.visualstudio.com/items?itemName=fortifyvsts.hpe-security-fortify-vsts) for VisualStudio
     * [Checkmarx](https://marketplace.visualstudio.com/items?itemName=checkmarx.cxsast) for VisualStudio
-    * [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension) for active scan of vulnerabilities on running code
+    * [Reshift](https://www.softwaresecured.com/reshift)
+    * [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension) for active scan of vulnerabilities on running code in Visual Studio TReam Services (current Azure DevOps)
   * [Secure Headers](https://securityheaders.com/)
   * [ImmuniWeb](https://www.immuniweb.com/free/) free tests for Website, Mobile app, SSL and Phishing sites.
 * Security Unit tests
@@ -144,14 +145,24 @@ The tools described can be integrated in CI/CD toolchains.
   * Integrate into CI/CD
   * Tools:
     * [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
+    * [OSSIndex](https://ossindex.sonatype.org/) supports numerous ecosystems and integrates with several toolchains
+      * Maven [ossindex-maven-plugin](https://sonatype.github.io/ossindex-maven/maven-plugin/)
+      * NPM [AuditJS](https://www.npmjs.com/package/auditjs) package
+      * Visual Studio [Audit.Net](https://marketplace.visualstudio.com/items?itemName=VorSecurity.AuditNet) extension
     * GitHub [Automated Security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes) for vulnerable dependencies
     * [JForg X-Ray](https://jfrog.com/xray/): in combination with JFrog Artifactory
     * [PHP Sercurity Checker](https://security.sensiolabs.org/)
     * Ruby [Bundler-Audit](https://github.com/rubysec/bundler-audit)
-    * Gemnasium
     * [NPM Audit](https://docs.npmjs.com/cli/audit)
     * [Retire.JS](https://retirejs.github.io/retire.js/)
-    * Node Security Platform
+    * Ruby & Rails [Hakiri](https://hakiri.io/)
+    * [Snyk](https://snyk.io/) scans [support](https://snyk.io/docs/) Ruby, Java, Python, .NET, PHP, NodeJS and others
+    * [SourceClear](https://www.sourceclear.com/) supports [10+ languages](https://www.sourceclear.com/vulnerability-database/search#_) and integrates with several toolchains
+    * [Nexus](https://www.sonatype.com/products-overview) platform
+    * [BlackDuck](https://www.blackducksoftware.com/)
+    * [13 tools](https://techbeacon.com/app-dev-testing/13-tools-checking-security-risk-open-source-dependencies) for checking open source dependencies
+    * Node Security Platform (Included in NPM as of April 2018)
+    * [Gemnasium](https://docs.gitlab.com/ee/user/project/import/gemnasium.html) (Integrated into GitLab and integrates with GitHub)
   
 ## Acceptance
 * Infrastructure as Code analysis
