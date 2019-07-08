@@ -112,6 +112,7 @@
 
 ## Practicing
 * [List](https://www.blackroomsec.com/updated-hacking-challenge-site-links/) of hacking challenge sites
+* [List 2](https://www.peerlyst.com/posts/resource-a-compendium-of-sites-that-you-can-practice-on-you-can-legally-hack-these-sites-karl-m-1)
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
 * [Hack the box](https://www.hackthebox.eu/): Online testing environment, accessible after completing an entry-level test
