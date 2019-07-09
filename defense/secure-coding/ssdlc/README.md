@@ -67,55 +67,14 @@ For security bugs, this is no different. Security bugs are no different than any
 
 Here, you can see the different stages of a software development lifecycle from requirements to decommissioning. For each stage, a corresponding stage in security activities can be added. Below, I will detail each stage's security activities. Please note, this is not a comprehensive list of activities. 
 
-### Requirements Analysis
+### Requirements
 * Risk Analysis
 * Threat Identification
 * Threat Impact Probability
 * Abuse Cases
 * Usability Guidelines
 
-During requirements, the team can coordinate with their organisation's Chief Information Security Officer (CISO) to discuss CIA classifications and Business Impact Analysis. Questions to answer include:
-* What data is handled in the application?
-  * Does this concern sensitive / confidential data, like:
-    * Information that is already publicly available?
-    * Personally Identifiable data (PII) -> This will require you to adhere to privacy laww like GDPR and equivalent
-    * Intellectual Property
-    * Competitive Client or contract information
-    * Etc.
-  * Where and how will data be stored?
-    * Will data be stored on cloud-services or internally?
-    * Will data be encrypted?
-    * Will data storage be separated from the application's logic?
-    * How will data storage be secured?
-* How will the application be accessed?
-  * Is it:
-    * Publicly accessible
-    * Client / partner accessible?
-    * Internally accessible?
-  * Is VPN mandatory?
-* Does the application expose sensitive or important functionality?
-  * Financial transactions
-  * Control industrial machinery, utilities like water purification, water, gas or electricity networks, traffic systems like traffic-lights, level crossings etc.
-  * Handle or support in health-care, like insulin monitors or pumps, pacemakers, MRI scanners etc.
-* Does it support risky software operations, like managing content, uploading data or files, etc.
-* What are availability requirements?
-  * Should it be available 24/7 99.999999% of the time?
-  * Should it be available only during working hours? If so: what are working hours? Are users located in different timezones?
-
-#### Risk assessment
-
-Using this table the application and it's data can be classified on the CIA aspects.
-
-| Quality aspect    | Priority      |           |           |           |
-|-------------------|---------------|-----------|-----------|-----------|
-| Confidentiality   | Very strict   | Strict    | Internal  | Public    |
-| Integrity         | Critical      | High      | Medium    | Low       |
-| Availability      | Critical      | High      | Medium    | Low       |
-
-Additionally the team could also add the extended CIA aspects of:
-* Non-repudiation
-* Code validation
-* Authentication
+[Sub-page](security_requirements.md)
 
 ### Design
 
