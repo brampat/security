@@ -17,6 +17,7 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+* 1300+ Android Apps in Google Play circumvent standard Android permission model to [collect location, IMEI and Mac](https://thehackernews.com/2019/07/android-permission-bypass.html) data
 * UK police forensics paid to recover from [ransomware attack](https://www.bbc.com/news/uk-48881959) 
 * D-Link settles over [horrible router security](https://arstechnica.com/information-technology/2019/07/d-link-agrees-to-new-security-monitoring-to-settle-ftc-charges/)
 * Google scrubs 100+ [adware apps](https://www.cyberscoop.com/google-play-store-malicious-apps-trend-micro/)
