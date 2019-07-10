@@ -3,6 +3,7 @@
 Collection of (mostly Dutch) news-items on Rian van Rijbroek, the cyber-expert, hacker and leading expert authority on Smart Blockchain 
 
 ## July
+* 9 [NRC](https://www.nrc.nl/nieuws/2019/07/09/vierde-directielid-in-half-jaar-tijd-weg-bij-centric-a3966561): Commercieel directeur Hans Schrijver vertrekt bij IT-bedrijf Centric
 * 1 [Computable](https://www.computable.nl/artikel/nieuws/security/6694589/250449/sanderink-centric-krijgt-cybersecurity-tak.html): Sanderink: 'Centric krijgt cybersecurity-tak'
 
 ## June
