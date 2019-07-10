@@ -88,15 +88,17 @@ If you use a Javascript Framework like Angular, add this method, so the JavaScri
 * [source](https://developer.okta.com/blog/2018/07/30/10-ways-to-secure-spring-boot)
 
 ### Spring Security 5 Open ID Connect
-
 * Get Started with [Spring Security 5.0 and OIDC](https://developer.okta.com/blog/2017/12/18/spring-security-5-oidc)
 
 
 ### Other
 * [Spring Actuators](https://www.veracode.com/blog/research/exploiting-spring-boot-actuators) exploit on Spring Boot < 1.5
+* [Java dependency resolving over plain HTTP](https://medium.com/bugbountywriteup/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb)
+  * [PoC of Dilettante: an exploit](https://max.computer/blog/how-to-take-over-the-computer-of-any-java-or-clojure-or-scala-developer/)
+  * [Code for Dilettante](https://github.com/mveytsman/dilettante): Proxy for MITM exploit injection
+  * [Status overview](https://docs.google.com/spreadsheets/d/1zemxj8QdIp0saqvwJx6Po1KnyEmJXl2KC_0j0SLd_2E/edit#gid=0) of MITM vulnerable Java libraries
 
 ## Examples / practice
-
 * [OWASP WebGoat](https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project) Vulnerable web-application
   * [WebGoat on github](https://github.com/WebGoat/WebGoat) 
 * [JuiceShop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
