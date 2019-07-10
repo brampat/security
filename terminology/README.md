@@ -45,6 +45,7 @@
 | MAC address | Media Access Control address, uniquely identifies a network interface at physical layer. Usually embedded into the network card (ethernet), but also in Bluetooth, WiFi, Thunderbolt, USB network interface etc.. |
 | MAC address spoofing | Changing the MAC address of a network interface |
 | Malware | Malicious software |
+| MITM | Man in the Middle: Attacking communications for sniffing or injection by sitting in between sender and receiver |
 | NIDS | Network Intrusion Detection System |
 | [Password-manager](../techniques/passwords/password-managers.md) | Tool for storing account-credentials and generating unique, random and strong passwords |
 | PII | Personally Identifiable Information |
