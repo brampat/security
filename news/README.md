@@ -17,6 +17,8 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+* New Magecart campaign uses heavily [obfuscated Javascript](https://thehackernews.com/2019/07/magecart-amazon-s3-hacking.html) to evade detection
+* Magecart Creditcard skimming via Javascript supply-chain attacks is [far from over](https://www.riskiq.com/blog/labs/magecart-amazon-s3-buckets/), largely because of misconfigured Amazon S3 buckets 
 * 1300+ Android Apps in Google Play circumvent standard Android permission model to [collect location, IMEI and Mac](https://thehackernews.com/2019/07/android-permission-bypass.html) data
 * UK police forensics paid to recover from [ransomware attack](https://www.bbc.com/news/uk-48881959) 
 * D-Link settles over [horrible router security](https://arstechnica.com/information-technology/2019/07/d-link-agrees-to-new-security-monitoring-to-settle-ftc-charges/)
