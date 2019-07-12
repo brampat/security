@@ -11,9 +11,10 @@ Sources:
 ## 2019
 
 ### Juli
-| When | Who | How many | What | Source |
-| ---- |--------|--------|--------|-------|
-|  | |  |  |    |
+| When  | Who   | How many  | What  | Source |
+| ----  |-------|-----------|-------|-------|
+|       |       |           |       |       |
+
 
 ### June
 | When | Who | How many | What | Source |
@@ -732,6 +733,7 @@ Sources:
 | 2011-12-28 | 17173.com                  |   7,485,802 | In late 2011, <a href="https://news.softpedia.com/news/China-Investigates-Hacking-Operations-That-Exposed-100-Million-Users-244312.shtml" target="_blank" rel="noopener">a series of data breaches in China affected up to 100 million users</a>, including 7.5 million from the gaming site known as 17173. Whilst there is evidence that the data is legitimate, due to the difficulty of emphatically verifying the Chinese breach it has been flagged as &quot;unverified&quot;. The data in the breach contains usernames, email addresses and salted MD5 password hashes and was provided with support from <a href="https://dehashed.com/" target="_blank" rel="noopener">dehashed.com</a>. <a href="https://www.troyhunt.com/handling-chinese-data-breaches-in-have-i-been-pwned/" target="_blank" rel="noopener">Read more about Chinese data breaches in Have I been pwned.</a> | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/17173) |
 | 2011-12-26 | tianya.cn                  |  29,020,808 | In December 2011, <a href="http://thehackernews.com/2011/12/tianya-chinas-biggest-online-forum-40.html" target="_blank" rel="noopener">China's largest online forum known as Tianya was hacked</a> and tens of millions of accounts were obtained by the attacker. The leaked data included names, usernames and email addresses. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/TIANYA) |
 | 2011-12-24 | stratfor.com               |     859,777 | In December 2011, &quot;Anonymous&quot; <a href="http://www.troyhunt.com/2011/12/5-website-security-lessons-courtesy-of.html" target="_blank" rel="noopener">attacked the global intelligence company known as &quot;Stratfor&quot;</a> and consequently disclosed a veritable treasure trove of data including hundreds of gigabytes of email and tens of thousands of credit card details which were promptly used by the attackers to make charitable donations (among other uses). The breach also included 860,000 user accounts complete with email address, time zone, some internal system data and MD5 hashed passwords with no salt. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/STRATFOR) |
+| 2011-12-21 | Zhenai.com                 |   5,024,908 | Email addresses, Plain-text Passwords | [HaveIBeenPwned](https://haveibeenpwned.com/PwnedWebsites#Zhenai)   |
 | 2011-12-21 | hemmelig.com               |      28,641 | In December 2011, Norway's largest online sex shop hemmelig.com was <a href="http://www.dazzlepod.com/hemmelig/?page=93" target="_blank" rel="noopener">hacked by a collective calling themselves &quot;Team Appunity&quot;</a>. The attack exposed over 28,000 usernames and email addresses along with nicknames, gender, year of birth and unsalted MD5 password hashes. | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/HEMMELIG) |
 | 2011-12-01 | dodonew.com                |   8,718,404 | In late 2011, data was allegedly obtained from the Chinese website known as <a href="http://dodonew.com" target="_blank" rel="noopener">Dodonew.com</a> and contained 8.7M accounts. Whilst there is evidence that the data is legitimate, due to the difficulty of emphatically verifying the Chinese breach it has been flagged as &quot;unverified&quot;. The data in the breach contains email addresses and user names. <a href="https://www.troyhunt.com/handling-chinese-data-breaches-in-have-i-been-pwned/" target="_blank" rel="noopener">Read more about Chinese data breaches in Have I been pwned.</a> | source: [HIBP](https://haveibeenpwned.com/api/v2/breach/DODONEW) |
 
