@@ -17,6 +17,11 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+* Long read on the Sinkhole that [stopped the Wannacry attack](https://techcrunch.com/2019/07/08/the-wannacry-sinkhole/) in 2017
+* British Airways faces record [£183m fine](https://www.bbc.com/news/business-48905907) for data breach
+* Mozilla [blocks UAE](https://www.reuters.com/article/us-usa-cyber-mozilla/mozilla-blocks-uae-bid-to-become-an-internet-security-guardian-after-hacking-reports-idUSKCN1U42CA) bid to become an internet security guardian after hacking reports
+* The Zoom Desktop App Lets Any Website [Take Over Your Mac’s Camera](https://www.buzzfeednews.com/article/nicolenguyen/zoom-webcam-hacker-watching-you-vulnerability)
+  * Apple pushes a [silent update](https://techcrunch.com/2019/07/10/apple-silent-update-zoom-app/) to fix the issue
 * New Magecart campaign uses heavily [obfuscated Javascript](https://thehackernews.com/2019/07/magecart-amazon-s3-hacking.html) to evade detection
 * Magecart Creditcard skimming via Javascript supply-chain attacks is [far from over](https://www.riskiq.com/blog/labs/magecart-amazon-s3-buckets/), largely because of misconfigured Amazon S3 buckets 
 * 1300+ Android Apps in Google Play circumvent standard Android permission model to [collect location, IMEI and Mac](https://thehackernews.com/2019/07/android-permission-bypass.html) data
@@ -35,7 +40,7 @@ Collection of links to Hack-related news
 * Apple and Google not taking action against [spyware apps](https://www.wired.com/story/common-apps-domestic-abusers-stalk-victims/)
 * YouTube briefly blocked and [suspended hacking videos](https://www.theverge.com/2019/7/3/20681586/youtube-ban-instructional-hacking-phishing-videos-cyber-weapons-lab-strike) by accident
 * USA Border Patrol suspends Perceptics contract for [leaking sensitive files](https://www.washingtonpost.com/technology/2019/07/02/border-surveillance-subcontractor-suspended-after-cyberattack-misuse-traveler-images/?utm_term=.787a45f70ba7)
-* Researchers crack open[Facebook campaign that pushed malware](https://arstechnica.com/information-technology/2019/07/five-year-old-facebook-campaign-pushed-malware-on-100000-followers/) for years
+* Researchers crack open [Facebook campaign that pushed malware](https://arstechnica.com/information-technology/2019/07/five-year-old-facebook-campaign-pushed-malware-on-100000-followers/) for years
 * Security flaws in a popular smart home hub let [hackers unlock front doors](https://techcrunch.com/2019/07/02/smart-home-hub-flaws-unlock-doors/)
 * [China forcing tourists to install text-stealing malware](https://www.vice.com/en_us/article/7xgame/at-chinese-border-tourists-forced-to-install-a-text-stealing-piece-of-malware) at its borders
 * [China Secretly Installing Spyware App Feng Cai (BXAQ) on Tourists' Phones](https://thehackernews.com/2019/07/xinjiang-fengcai-spyware.html)
@@ -45,13 +50,23 @@ Collection of links to Hack-related news
 * [Third Florida city](https://www.techspot.com/news/80744-third-florida-city-falls-victim-ransomware-attack.html) falls victim to ransomware attack
 
 ### June
+* 2 more oil tankers [attacked](https://www.vox.com/2019/6/13/18677289/oil-tankers-iran-gulf-oman-attack) in Gulf of Oman
+  * And again US [blames Iran](https://www.vox.com/2019/6/13/18677991/pompeo-oil-tankers-iran-trump-administration) to be responsible
+  * This time with [video evidence](https://www.vox.com/2019/6/14/18678791/iran-tanker-attack-navy-video-picture)
+  * Later Iran [shoots down](https://www.vox.com/2019/6/20/18692644/iran-drone-attack-war) a US military drone
+  * US launched [Cyber attacks](https://www.nytimes.com/2019/06/22/us/politics/us-iran-cyber-attacks.html) as retaliatory action
+    * Detailed article [here](https://www.lawfareblog.com/what-really-happened-cyber-command-action-against-iran)
+  * Meanwhile, Iran [ramps up Cyber attacks](https://www.politico.com/story/2019/06/21/us-iran-cyberattacks-3469447) as well
+* US Pentagon [strikes back](https://news.yahoo.com/pentagon-secretly-struck-back-against-iranian-cyber-spies-targeting-us-ships-234520824.html) against Iranian cyberspies targeting U.S. ships 
 * [Lake City](https://www.techspot.com/news/80698-second-florida-city-agrees-pay-ransomware-hackers-massive.html) in Florida pays $500k in ransomware attack
 * [Riviera Beach](https://www.techspot.com/news/80595-florida-city-agrees-pay-ransomware-hackers-600000-unlock.html) in Florida pays $600k in ransomware attack
 * Google Cloud [down](https://techcrunch.com/2019/06/02/google-cloud-is-down-affecting-numerous-applications-and-services/) affecting Google, GMail, Youtube and other services
 * [Hackers infiltrated](https://www.cnet.com/news/a-hacker-assault-left-mobile-carriers-open-to-network-shutdown/) 12+ mobile carriers, complete control of networks
 
 ### May
-
+* 4 oil tankers attacked in Persian Gulf, [raises tension](https://www.nytimes.com/2019/05/13/world/middleeast/saudi-arabia-oil-tanker-sabotage.html) between Iran and US
+  * Bolton [suspects Iran](https://www.nytimes.com/2019/05/29/world/middleeast/iran-bolton-attacks.html) to be responsible
+  * Which [Iran denies](https://www.presstv.com/Detail/2019/05/29/597207/John-Bolton-Iran-UAE-Fujairah)
 * [Practical SHAttered](https://www.zdnet.com/article/sha-1-collision-attacks-are-now-actually-practical-and-a-looming-danger/) SHA-1 collision attack using chosen-prefix collisions
 * [US Universities](https://www.buzzfeednews.com/article/ryanmac/us-money-funding-facial-recognition-sensetime-megvii) funding tech behind China's surveillance state
 * [Flipboard](https://about.flipboard.com/support-information-incident-May-2019/) hacked twice, but only found out 9 months later
