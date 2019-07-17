@@ -50,6 +50,16 @@ independent from another request. So for example, there's no auto-save for the s
 * Video's from [SecAppDev](https://www.youtube.com/channel/UCSii2fuiLLlGqaR6sR_y0rA/videos)
   * [OWASP Top 10 Proactive controls](https://www.youtube.com/watch?v=-tF-ZkzdThI) by [Jim Manico](https://twitter.com/manicode)
   * [Secure Development Lifecycles](https://www.youtube.com/watch?v=L-gL1YQUrwg) by Bart de Win
+* Video's from [The Secure Developer](https://www.youtube.com/channel/UCFf01c7VwZZWCRJwmcn5_DQ/videos) by [Snyk](https://snyk.io/)
+  * [Top 10 Proactive Controls](https://www.youtube.com/watch?v=ldXe8f5yVq8) by [Jim Manico](https://twitter.com/manicode)
+  * The [State of Open Source Security](https://www.youtube.com/watch?v=rGpmVVTrCLc)
+  * [Why can't we build secure software](https://www.youtube.com/watch?v=Uep-z8vaXGk) by [Tanya Janca](https://twitter.com/shehackspurple)
+  * [DevSecOps](https://www.youtube.com/watch?v=Wx7dsbEReiE): Faster Feedback with Security Unit Testing in CI/CD
+  * [Insecure transit](https://www.youtube.com/watch?v=wtspLMAPCYQ): Microservice Security
+  * The [Three faces of DevSecOps](https://www.youtube.com/watch?v=9VDvXjpZcVk)
+  * [10 excellent ways](https://www.youtube.com/watch?v=KsG7AZqXL9M) to secure your Spring Boot Application
+  * The new ways of [DevSecOps](https://www.youtube.com/watch?v=XByV6SBdpYA)
+  * Making Security an [Integrated part](https://www.youtube.com/watch?v=GFd4RWVfhsM) of the Software Development Lifecycle by Siren Hofvander with [Siren Hofvander](https://twitter.com/securitypony)
 * [OWASP Encoding project](https://www.owasp.org/index.php/Category:OWASP_Encoding_Project)
 * [SAFECode](https://safecode.org/training/) On-demand web-casts
 * [Pragmatic Web Security](https://pragmaticwebsecurity.com/index.html#courses) by [Philippe De Ryck](https://twitter.com/philippederyck)
