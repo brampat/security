@@ -25,6 +25,7 @@
   * Part 5.12: [Authentication, Identity & Access Control](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-12-authentication-authn-identity-and-access-control-165cd2f23110)
   * Part 5.13: [HTTPS only](https://code.likeagirl.io/pushing-left-like-a-boss-part-5-13-https-only-e4fd3b881519)
  * [Security Learns to Sprint](https://www.youtube.com/watch?v=g3wCiEEiZmI) Adding Sec to DevSecOps by [Tanya Janca](https://twitter.com/shehackspurple)
+* CI/CD Pipeline [](https://www.facebook.com/WIALondon/videos/483256762218355/) starting at 30min.
 
 ## Agile software development
 
