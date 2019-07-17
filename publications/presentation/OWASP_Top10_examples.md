@@ -647,10 +647,19 @@ Escape for the correct context:
 ## Known Vulnerabilities: attack
 <hr />
 
-[Jenkins Miner](https://research.checkpoint.com/jenkins-miner-one-biggest-mining-operations-ever-discovered/) exploiting [CVE-2017-1000353](https://nvd.nist.gov/vuln/detail/CVE-2017-1000353) in Jenkins up to 2.56
-[Struts 2](https://www.youtube.com/watch?v=QQxBukCSW8E) RCE demo
+[Reinvent the Wheel](https://xkcd.com/2140/) Dependencies
 
-Enables all other vulnerabilites. Hacker Cheat-mode:
+![](https://imgs.xkcd.com/comics/reinvent_the_wheel.png)
+
+--
+
+## Known Vulnerabilities: attack
+<hr />
+
+* [Jenkins Miner](https://research.checkpoint.com/jenkins-miner-one-biggest-mining-operations-ever-discovered/) exploiting [CVE-2017-1000353](https://nvd.nist.gov/vuln/detail/CVE-2017-1000353) in Jenkins up to 2.56
+* [Struts 2](https://www.youtube.com/watch?v=QQxBukCSW8E) RCE demo
+
+X-Powered-By: Enables all other vulnerabilites. Hacker's Cheat-mode:
 
 ![](pics/x-powered-by.png)
 
