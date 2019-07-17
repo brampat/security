@@ -1,6 +1,4 @@
 # Security requirements
-
-
 During requirements, the team can coordinate with their organisation's Chief Information Security Officer (CISO) to discuss CIA classifications and Business Impact Analysis. Questions to answer include:
 * What data is handled in the application?
   * Does this concern sensitive / confidential data, like:
@@ -30,7 +28,6 @@ During requirements, the team can coordinate with their organisation's Chief Inf
   * Should it be available only during working hours? If so: what are working hours? Are users located in different timezones?
 
 ## Example requirements:
-
 * Encrypt all data at rest
 * Encrypt all data in transit
 * Validate and sanitize all data coming into the system
@@ -83,7 +80,6 @@ Source:
   * [Slides](https://pragmaticwebsecurity.com/talks/owaspasvs.html) of "From the OWASP Top Ten(s) to the OWASP ASVS"
 
 ## Risk assessment
-
 Using this table the application and it's data can be classified on the CIA aspects.
 
 | Quality aspect    | Priority      |           |           |           |
@@ -97,3 +93,10 @@ Additionally the team could also add the extended CIA aspects of:
 * Code validation
 * Authentication
 
+## Tools:
+* OWASP Threat Dragon
+* OWASP [Cornucopia](https://www.owasp.org/index.php/OWASP_Cornucopia) Cardgame
+* Microsoft [Elevation of Privilege](https://www.microsoft.com/en-us/download/confirmation.aspx?id=20303) Threat Modeling Card Game
+
+Practice:
+* Bruce Wayne / Batman threat model
