@@ -592,8 +592,8 @@ Escape for the correct context:
 
 ![](pics/jenkins_XMRminer.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 200px; width: 400px;" -->
 
-[Jenkins Miner](https://research.checkpoint.com/jenkins-miner-one-biggest-mining-operations-ever-discovered/) exploiting [CVE-2017-1000353](https://nvd.nist.gov/vuln/detail/CVE-2017-1000353) in Jenkins up to 2.56
-[Struts 2](https://www.youtube.com/watch?v=QQxBukCSW8E) RCE demo
+* [Jenkins Miner](https://research.checkpoint.com/jenkins-miner-one-biggest-mining-operations-ever-discovered/) exploiting [CVE-2017-1000353](https://nvd.nist.gov/vuln/detail/CVE-2017-1000353) in Jenkins up to 2.56
+* [Struts 2](https://www.youtube.com/watch?v=QQxBukCSW8E) RCE demo
 
 --
 
@@ -734,6 +734,7 @@ X-Powered-By: Enables all other vulnerabilites. Hacker's Cheat-mode:
 
 ## Insufficient Logging & Monitoring: defense
 <hr />
+
 * Log all login, access control and server-side input validation failures
 * Sufficient context
 * Archive long enough for analysis
