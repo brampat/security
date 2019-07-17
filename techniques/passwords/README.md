@@ -11,11 +11,8 @@ On top of that, some have been broken. Here's an overview
 | [SHA1](https://en.wikipedia.org/wiki/SHA-1)    | No, first [collisions](https://www.theverge.com/2017/2/23/14712118/google-sha1-collision-broken-web-encryption-shattered) since Feb. 2005, controlled [collision](https://en.wikipedia.org/wiki/SHA-1#SHAttered_%E2%80%93_first_public_collision) in 2 docs since 2017 |
 | [SHA2](https://en.wikipedia.org/wiki/SHA-2) (256, 512 etc)   |           |
 | [SHA3](https://en.wikipedia.org/wiki/SHA-3)    |           |
-| 
-
 
 Use bcrypt, because [this](https://codahale.com/how-to-safely-store-a-password/)
-
 
 ### Encryption
 
