@@ -259,6 +259,9 @@ This method can be extended to achieve both integrity and confidentiality:
 * Encrypt the signature using the sender's private key, so anyone can verify that the message came from the sender using the sender's public key
 * Encrypt the message using the receiver's public key, so only the receiver can decrypt the message using his / her's private key.
 
+![](encrypt_sign.png)
+
+
 Examples: sha-3, md5 (now obsolete), etc.
 
 ##### Summary
