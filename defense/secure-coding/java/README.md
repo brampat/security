@@ -87,16 +87,19 @@ If you use a Javascript Framework like Angular, add this method, so the JavaScri
 
 * [source](https://developer.okta.com/blog/2018/07/30/10-ways-to-secure-spring-boot)
 
-### Spring Security 5 Open ID Connect
+### Spring
 * Get Started with [Spring Security 5.0 and OIDC](https://developer.okta.com/blog/2017/12/18/spring-security-5-oidc)
-
+* [10 excellent ways](https://www.youtube.com/watch?v=KsG7AZqXL9M) to secure your Spring Boot Application
+* [Spring Actuators](https://www.veracode.com/blog/research/exploiting-spring-boot-actuators) exploit on Spring Boot < 1.5
 
 ### Other
-* [Spring Actuators](https://www.veracode.com/blog/research/exploiting-spring-boot-actuators) exploit on Spring Boot < 1.5
+* Oracle Java SE [Secure Coding](https://www.oracle.com/technetwork/java/seccodeguide-139067.html) Guidelines
+* SEI CERT Oracle [Coding Standard](https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java) for Java
 * [Java dependency resolving over plain HTTP](https://medium.com/bugbountywriteup/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb)
   * [PoC of Dilettante: an exploit](https://max.computer/blog/how-to-take-over-the-computer-of-any-java-or-clojure-or-scala-developer/)
   * [Code for Dilettante](https://github.com/mveytsman/dilettante): Proxy for MITM exploit injection
   * [Status overview](https://docs.google.com/spreadsheets/d/1zemxj8QdIp0saqvwJx6Po1KnyEmJXl2KC_0j0SLd_2E/edit#gid=0) of MITM vulnerable Java libraries
+* [10 minutes on Java Security](http://www.youtube.com/watch?v=_ANdXIuhbzQ) with [Steven Chin](https://twitter.com/steveonjava)
 
 ## Examples / practice
 * [OWASP WebGoat](https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project) Vulnerable web-application
