@@ -60,11 +60,16 @@ The tools described can be integrated in CI/CD toolchains.
   * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
   * [Fortify](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports 25+ languages including Java, C#, C++, Swift & PHP
   * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
+  * [CodeSonar](https://www.grammatech.com/products/codesonar): SAST for C, C++, Java and binaries
+  * [Coverity](https://scan.coverity.com/): SAST for C, C++, C#, Java, JavaScript, Ruby and Python
+  * [Klocwork](https://www.roguewave.com/products-services/klocwork): SAST for C, C++, C# and Java
   * Java:
     * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
       * See [JavaVulnerableLab](https://github.com/brampat/JavaVulnerableLab) demo for an example-project and instructions to run Sonar with FindSecurityBugs and import them into Sonarcloud
     * [OWASP Lapse+](https://www.owasp.org/index.php/OWASP_LAPSE_Project)
     * [OWASP Orizon](https://www.owasp.org/index.php/Category:OWASP_Orizon_Project) (Also for Android APK files)
+    * The [Checker Framework](https://checkerframework.org/)
+    * Parasoft [Jtest](https://www.parasoft.com/products/jtest)
   * Groovy: [CodeNarc](http://codenarc.sourceforge.net/)
   * PHP:
     * [OWASP WAP](https://www.owasp.org/index.php/OWASP_WAP-Web_Application_Protection)
@@ -75,6 +80,7 @@ The tools described can be integrated in CI/CD toolchains.
     * [Bandit](https://github.com/openstack/bandit) on GitHub
     * [Bandit](https://bandit.readthedocs.io/en/latest/)
   * C: [Flawfinder](http://www.dwheeler.com/flawfinder/)
+    * Parasoft [C/C++test](https://www.parasoft.com/products/ctest)
   * C#: [PumaScan](https://github.com/pumasecurity/puma-scan)
   * Go: [Gosec](https://github.com/GoASTScanner/gas)
   * .NET: [OWASP O2](https://www.owasp.org/index.php/OWASP_O2_Platform)
@@ -84,6 +90,7 @@ The tools described can be integrated in CI/CD toolchains.
     * [Checkmarx](https://marketplace.visualstudio.com/items?itemName=checkmarx.cxsast) for VisualStudio
     * [Reshift](https://www.softwaresecured.com/reshift)
     * [OWASP ZAP VSTS extension](https://github.com/deliveron/owasp-zap-vsts-extension) for active scan of vulnerabilities on running code in Visual Studio TReam Services (current Azure DevOps)
+    * Parsoft [dottest](https://www.parasoft.com/products/dottest)
   * [Secure Headers](https://securityheaders.com/)
   * [ImmuniWeb](https://www.immuniweb.com/free/) free tests for Website, Mobile app, SSL and Phishing sites.
 * Security Unit tests
