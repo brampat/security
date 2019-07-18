@@ -44,3 +44,10 @@ What exactly is 2FA anyway?
 But it's super-safe right?
 
 ![](2FA_social.jpg)
+
+
+## Internet banking fraud
+Awareness video on phishing: [It wasn't me](https://www.youtube.com/watch?v=HTkdwnwAqlg)
+
+## Password manager
+Awareness video on password hygiene: [Mary Password Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ)
