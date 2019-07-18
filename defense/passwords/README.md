@@ -272,7 +272,11 @@ Examples: sha-3, md5 (now obsolete), etc.
 | Encryption    | Yes           | Yes (symetric or asymetric)   | Protect confidentiality of information                                                                                    | PGP, 3DES, RSA, Blowfish, Twofish, AES            |
 | Hashing       | No            | -                             | Proof of integrity or password storage                                                                                    | MD5, SHA1, SHA2 (256, 512 etc), Bcrypt, Scrypt    |
 
-[Slides](https://www.slideshare.net/sas3/secure-password-storage-management) from Sastry Tumuluri
+##### Sources
+* [Slides](https://www.slideshare.net/sas3/secure-password-storage-management) from Sastry Tumuluri
+* [Asymmetric Encryption](https://www.usna.edu/CyberDept/sy110/lec/cryptAsymmEnc/lec.html)
+* [Public-private key cryptography](https://en.m.wikipedia.org/wiki/Public-key_cryptography) on Wikipedia
+* [Digital Signatures](https://en.m.wikipedia.org/wiki/Digital_signature) on Wikipedia
 
 
 ### Offline attacks:
