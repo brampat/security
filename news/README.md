@@ -17,6 +17,9 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+* Hacker stole data from [70% of Bulgarian Citizens](https://thehackernews.com/2019/07/bulgaria-nra-data-breach.html) from Tax Agency Servers and arrested a 20y old whitehat hacker
+* Another sidechannel attack that lets Android apps [Capture Loudspeaker data](https://thehackernews.com/2019/07/android-side-channel-attacks.html) without permission
+* Security researchers discovered [EvilGnome](https://thehackernews.com/2019/07/linux-gnome-spyware.html), an undetected experimental backdoor implant of spyware targetting Linux desktop users
 * Long read on the Sinkhole that [stopped the Wannacry attack](https://techcrunch.com/2019/07/08/the-wannacry-sinkhole/) in 2017
 * British Airways faces record [£183m fine](https://www.bbc.com/news/business-48905907) for data breach
 * Mozilla [blocks UAE](https://www.reuters.com/article/us-usa-cyber-mozilla/mozilla-blocks-uae-bid-to-become-an-internet-security-guardian-after-hacking-reports-idUSKCN1U42CA) bid to become an internet security guardian after hacking reports
