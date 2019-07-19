@@ -202,8 +202,9 @@ The tools described can be integrated in CI/CD toolchains.
   * Azure Resource Manager
   * Google Cloud Deployment Manager
 * Security Acceptance testing:
-  * BDD-Security
-  * Gauntlt
+  * [BDD-Security](https://github.com/continuumsecurity/bdd-security)
+  * [Gauntlt](http://gauntlt.org/)
+    * Gauntlt [Starter Kit](https://www.youtube.com/watch?v=hMpVQKcyGSE) video
   * Mittn
 * Infrastructure Tests:
   * Serverspec

@@ -44,6 +44,151 @@
 * [Billing Alerts CFN templates](https://github.com/btkrausen/AWS/tree/master/CloudFormation/Billing%20Alerts)
 * [Watchmen](https://github.com/iagcl/watchmen): AWS account compliance using centrally managed Config Rules
 
+#### Network / Endpoints
+* FireEye
+* AlertLogic
+* Chyphort
+* Zscaler
+* Skybox Security
+* Norse
+* Seculert
+* Total Defense
+* Cyber Flow Analytics
+* Quarri
+* Aralabs
+* Bit9
+* ForeScout
+* Cylance
+* 21ICT
+* Redjack
+* LightCyber
+
+#### Virtualization
+* Illumio
+* HighCloud Security
+* HYTrust
+* Click Security
+* Bromium
+
+#### Cloud Application
+* Netskope
+* Adallom
+* Skyhigh
+* VeraCode
+* Ionic
+* Apprity
+* Elastica
+
+#### Cloud Data Protection
+* Encrypted Cloud
+* PerspecSys
+* CloudLock
+* CipherCloud
+* Vaultive
+* Gazzang
+
+#### Cloud Infrastructure
+* CirScope
+* Dome9
+* Voltage Security
+* CloudPassage
+* Threat Stack
+
+#### Website
+* Distil.it
+* Fireblade
+* Tinfoil Security
+* WhiteHat
+* Wallarm
+* Shapesecurity
+
+#### Big data
+* Sqrrl
+* Vectra
+* Solera
+* Bitsight
+* M.dot
+* PacketSled
+* Dataguise
+
+#### Email
+* Bounce
+*ReturnPath
+* Agari
+* AppRiver
+
+### Mobile Security
+* Lookout
+* Mocana
+* [Zimperium](https://www.zimperium.com/)
+* Bitglass
+* Mojave Networks
+* Appthority
+* Lacoon Mobile Security
+
+#### MDM / MAM
+* Bluebox
+* Divide
+* NativeFlow
+* Workspot
+* Averail
+* MobileIron
+* Airwatch
+
+### Identity Access Management
+
+#### Access Management
+* Conjur
+* Simplified
+* Bettercloud
+* Onelogin
+* Centrify
+* SecureAuth
+* Okta
+* Stormpath
+* PingIdentity
+* Bitium
+* Viewfinity
+
+#### Authentication
+* Sedicii
+* Virtrue
+* Insights
+* ThreatMetrix
+* PluriLock
+* Duo
+* Authy
+* PayFone
+* Toopher
+
+#### Shared Passwords
+* CommonKey
+* Password Box
+
+### eCommerce Fraud
+* Sift Science
+* FraudMetrix
+* Trustev
+
+### Incident Response Collaboration
+* AlienVault
+* CyberSponse
+* Threat Stream
+* IDD
+* Vorstack
+* CounterTack
+
+### Phone Fraud
+* PinDrop Security
+* TrustId
+
+### Various
+* BlackLotus
+* SmartVue
+* Prolexic
+* Defense.net
+* Arxan
+
 ### Incident response
 * [AWS IR](https://github.com/ThreatResponse/aws_ir) - AWS specific Incident Response and Forensics Tool
 * [AWSlog](https://github.com/jaksi/awslog) - Show the history and changes between configuration versions of AWS resources using AWS Config 
@@ -110,4 +255,8 @@
 * [OWASP ServerlessGoat](https://www.owasp.org/index.php/OWASP_Serverless_Goat) - OWASP ServerlessGoat is a deliberately insecure realistic AWS Lambda serverless application, maintained by OWASP for educational purposes. Single click installation through the AWS Serverless Application Repository.
 
 ## Sources
-* [Source](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)
+* Toni de la Fuente's [Github](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)
+* [Joseph Floyd](http://www.josephfloyd.com/blog/cloud-security-landscape)
+
+## Video's
+* [Gone in 60 milliseconds](https://media.ccc.de/v/33c3-7865-gone_in_60_milliseconds) on hacking serverless AWS
