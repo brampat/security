@@ -17,6 +17,7 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+* Kazakhstan government [intercepting all HTTPS traffic](https://www.zdnet.com/article/kazakhstan-government-is-now-intercepting-all-https-traffic/)
 * Hacker stole data from [70% of Bulgarian Citizens](https://thehackernews.com/2019/07/bulgaria-nra-data-breach.html) from Tax Agency Servers and arrested a 20y old whitehat hacker
 * Another sidechannel attack that lets Android apps [Capture Loudspeaker data](https://thehackernews.com/2019/07/android-side-channel-attacks.html) without permission
 * Security researchers discovered [EvilGnome](https://thehackernews.com/2019/07/linux-gnome-spyware.html), an undetected experimental backdoor implant of spyware targetting Linux desktop users
