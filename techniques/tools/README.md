@@ -106,27 +106,48 @@
 * [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ) pentesting API's using OpenAPI definitions
 
 ## Cloud
-* [GCP Google Storage Brute-forcing](https://github.com/RhinoSecurityLabs/GCPBucketBrute): Enumerates Google Storage buckets
-* [Pacu](https://github.com/RhinoSecurityLabs/pacu): AWS exploitation framework
-* [AWS Security Research](https://github.com/RhinoSecurityLabs/Cloud-Security-Research) by [Rhino Security Labs](http://www.rhinosecuritylabs.com/)
-* [weirdALL](https://github.com/carnal0wnage/weirdAAL): AWS Attack Library
-* [Pacu](https://github.com/RhinoSecurityLabs/pacu): AWS penetration testing toolkit
-* [Cred Scanner](https://github.com/disruptops/cred_scanner)
-* [AWS PWN](https://github.com/dagrz/aws_pwn)
+* Lots of [resources](https://github.com/toniblyx/SANSCloudSecuritySummit2018) including tools and blogs
+* [CloudCopy](https://github.com/Static-Flow/CloudCopy): Cloud version of the Shadow Copy attack against domain controllers running in AWS using only the EC2:CreateSnapshot permission
+* [Cloud-Custodian](https://github.com/cloud-custodian/cloud-custodian): Rules engine for cloud security, cost optimization, and governance, DSL in yaml for policies to query, filter, and take actions on resources
 * [Cloudfrunt](https://github.com/MindPointGroup/cloudfrunt)
 * [Cloudjack](https://github.com/prevade/cloudjack)
-* [Nimbostratus](https://github.com/andresriancho/nimbostratus)
-* [GitLeaks](https://github.com/zricethezav/gitleaks): Audit git repos for secrets
-* [TruffleHog](https://github.com/dxa4481/truffleHog): Searches through git repositories for high entropy strings and secrets, digging deep into commit history
-* [DumpsterDiver](https://github.com/securing/DumpsterDiver): Tool to search secrets in various filetypes, like keys (e.g. AWS Access Key, Azure Share Key or SSH keys) or passwords.
-* [Mad-King](https://github.com/ThreatResponse/mad-king): Proof of Concept Zappa Based AWS Persistence and Attack Platform
 * [Cloud-Nuke](https://github.com/gruntwork-io/cloud-nuke): A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it
+* [CloudSploit](https://github.com/cloudsploit): Cloud security configuration monitoring
+* [Cred Scanner](https://github.com/disruptops/cred_scanner)
+* [DumpsterDiver](https://github.com/securing/DumpsterDiver): Tool to search secrets in various filetypes, like keys (e.g. AWS Access Key, Azure Share Key or SSH keys) or passwords.
+* [edda](https://github.com/Netflix/edda) by Netflix: Service to track changes in your cloud
+* [enumerate-iam](https://github.com/andresriancho/enumerate-iam): Enumerate the permissions associated with AWS credential set
+* [GCP Google Storage Brute-forcing](https://github.com/RhinoSecurityLabs/GCPBucketBrute): Enumerates Google Storage buckets
+* [GitLeaks](https://github.com/zricethezav/gitleaks): Audit git repos for secrets
+* [Mad-King](https://github.com/ThreatResponse/mad-king): Proof of Concept Zappa Based AWS Persistence and Attack Platform
 * [MozDef: The Mozilla Defense Platform](https://github.com/mozilla/MozDef): The Mozilla Defense Platform (MozDef) seeks to automate the security incident handling process and facilitate the real-time activities of incident handlers.
+* [Nimbostratus](https://github.com/andresriancho/nimbostratus)
+* [Security Monkey](https://github.com/Netflix/security_monkey) by Netflix: Monitors AWS, GCP, OpenStack, and GitHub orgs for assets and their changes over time
+* [TruffleHog](https://github.com/dxa4481/truffleHog): Searches through git repositories for high entropy strings and secrets, digging deep into commit history
+
+### Azure
+* [AzureStack Tools](https://github.com/Azure/AzureStack-Tools): Scripts and tools that help customers use Azure and Azure Stack
+* [Azurite](https://github.com/mwrlabs/Azurite): Enumeration and reconnaissance activities in the Microsoft Azure Cloud
+* [Secure DevOps kit for Azure](https://github.com/azsk/DevOpsKit): Secure DevOps Kit for Azure. Docs found [here](https://github.com/azsk/DevOpsKit-docs)
+
+### GCP
+* [GCP Audit](https://github.com/spotify/gcp-audit): A tool for auditing security properties of GCP projects.
+
+### AWS
+* [AWS Limit Checker](https://github.com/jantman/awslimitchecker): A script and python module to check your AWS service limits and usage via boto
+* [AWS PWN](https://github.com/dagrz/aws_pwn)
+* [AWS Security Benchmark](https://github.com/awslabs/aws-security-benchmark): Open source demos, concept and guidance related to the AWS CIS Foundation framework
+* [AWS Security Research](https://github.com/RhinoSecurityLabs/Cloud-Security-Research) by [Rhino Security Labs](http://www.rhinosecuritylabs.com/)
 * [Lambdashell](http://www.lambdashell.com/): This is a simple AWS lambda function that does a straight exec. Essentially giving you a shell directly in my AWS infrastructure to just run your commands.
 * [Lambda-Proxy](https://github.com/puresec/lambda-proxy/): A bridge between SQLMap and AWS Lambda, which lets you use SQLMap to natively test AWS Lambda functions for SQL Injection vulnerabilities.
-* [CloudCopy](https://github.com/Static-Flow/CloudCopy): Cloud version of the Shadow Copy attack against domain controllers running in AWS using only the EC2:CreateSnapshot permission
-* [enumerate-iam](https://github.com/andresriancho/enumerate-iam): Enumerate the permissions associated with AWS credential set
+* [Nimbostratus](http://andresriancho.github.io/nimbostratus/): Tools for fingerprinting and exploiting Amazon cloud infrastructures
+* [Pacu](https://github.com/RhinoSecurityLabs/pacu): AWS exploitation framework
+* [Prowler](https://github.com/toniblyx/prowler): AWS CIS Benchmark Tool
+* [Scout2](https://github.com/nccgroup/Scout2): Security auditing tool for AWS environments
+* [weirdALL](https://github.com/carnal0wnage/weirdAAL): AWS Attack Library
 
+### Cloud Practicing
+* [AWS Lambhack](https://github.com/devsecops/lambhack): A vulnerable serverless lambda application
 
 ## Practicing
 * [List](https://www.blackroomsec.com/updated-hacking-challenge-site-links/) of hacking challenge sites
