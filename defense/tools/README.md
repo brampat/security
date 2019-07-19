@@ -64,7 +64,7 @@ The tools described can be integrated in CI/CD toolchains.
   * [CodeSonar](https://www.grammatech.com/products/codesonar): SAST for C, C++, Java and binaries
   * [Coverity](https://scan.coverity.com/): SAST for C, C++, C#, Java, JavaScript, Ruby and Python
   * [Klocwork](https://www.roguewave.com/products-services/klocwork): SAST for C, C++, C# and Java
-  * [GuardRails](https://www.guardrails.io/): SAST for Python, Ruby, JavaScript, Go, and Solidity
+  * [GuardRails](https://www.guardrails.io/): SAST for PHP, Python, Ruby, Java (using Maven), JavaScript, Go, and Solidity. Coming soon (planned aug 2019): Elixir, C/C++, .NET
   * Java:
     * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
       * See [JavaVulnerableLab](https://github.com/brampat/JavaVulnerableLab) demo for an example-project and instructions to run Sonar with FindSecurityBugs and import them into Sonarcloud
