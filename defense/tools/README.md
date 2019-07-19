@@ -29,6 +29,7 @@ The tools described can be integrated in CI/CD toolchains.
     * [BFG](https://rtyley.github.io/bfg-repo-cleaner/) deletes secrets from GIT repo history
       * [BFG Blog](https://anchor.host/removing-sensitive-data-from-git-repos/) 
   * git-hound
+  * [GitGot](https://github.com/BishopFox/GitGot) for scanning secrets on GitHub
   * ThoughtWorks [Talisman](https://github.com/thoughtworks/talisman)
   * Auth0 [repo-supervisor](https://github.com/auth0/repo-supervisor)
   * Peer Code reviews
@@ -63,6 +64,7 @@ The tools described can be integrated in CI/CD toolchains.
   * [CodeSonar](https://www.grammatech.com/products/codesonar): SAST for C, C++, Java and binaries
   * [Coverity](https://scan.coverity.com/): SAST for C, C++, C#, Java, JavaScript, Ruby and Python
   * [Klocwork](https://www.roguewave.com/products-services/klocwork): SAST for C, C++, C# and Java
+  * [GuardRails](https://www.guardrails.io/): SAST for Python, Ruby, JavaScript, Go, and Solidity
   * Java:
     * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
       * See [JavaVulnerableLab](https://github.com/brampat/JavaVulnerableLab) demo for an example-project and instructions to run Sonar with FindSecurityBugs and import them into Sonarcloud
