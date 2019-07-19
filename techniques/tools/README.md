@@ -11,6 +11,7 @@
 * [Initial Scan](https://github.com/SolomonSklash/initial-scan): A tool for performing an initial, information-gathering scan of websites for penetration tests.
 * [Osmedeus](https://github.com/j3ssie/Osmedeus): Automatic Reconnaissance and Scanning in Penetration Testing
 * [Foca](https://www.elevenpaths.com/labstools/foca/index.html): Fingerprinting Organizations with Collected Archives is a tool used mainly to find metadata and hidden information in the documents its scans. 
+* [GitGot](https://github.com/BishopFox/GitGot): Scans GitHub for secrets
 
 ## Search engines for Hackers:
 * [Censys.io](https://censys.io/): Exposed devices & services lookup, based on IP or CIDR blocks
