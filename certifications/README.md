@@ -157,6 +157,15 @@ This training is available from these three sources. Course outline is exactly i
 
 
 
+## CompTIA
+
+| Days  | Relevant for                                                              | Training                                                                                                                                                                              | Certification     | Cost  |
+| ----: | --------------------------------------------------------------------------| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ----: |
+|       | CompTIA Network+, 2 years IT administration with a security focus         | [SY0-501](https://certification.comptia.org/certifications/security#overview) Security+                                                                                               | Yes               | $499 - $899. Also available [Android App](https://play.google.com/store/apps/details?id=com.learnzapp.securityplus&hl=en) for € 15.99  |
+|       | Network+, Security+, 3-4 years information security                       | [CS0-001](https://certification.comptia.org/certifications/cybersecurity-analyst) Cybersecurity Analyst                                                                               | Yes               | $499 - $799  |
+|       | 10 years IT administration, incl 5 years technical security experience    | [CAS-003](https://certification.comptia.org/certifications/comptia-advanced-security-practitioner) Advanced Security Practitioner                                                     | Yes               | $549 - $849  |
+|       | Network+, Security+, 3-4 years information security                       | [PT0-001](https://certification.comptia.org/certifications/pentest) PenTest+                                                                                                          | Yes               | $549 - $949  |
+
 
 
 
