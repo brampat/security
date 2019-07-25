@@ -64,13 +64,18 @@ http://newspaper.com/items.php?id=2 and 1=2
 SELECT title, description, body FROM items WHERE ID = 2 and 1=2
 ```
 
-
-
-Source:
+# Sources
 * [SQL injection for dummies](https://www.youtube.com/watch?v=ciNHn38EyRc)
-* [OWASP](https://www.owasp.org/index.php/Blind_SQL_Injection)
+* [SQL injection cheat sheet](http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)
+* [SQL and NoSQL injection](https://ckarande.gitbooks.io/owasp-nodegoat-tutorial/content/tutorial/a1_-_sql_and_nosql_injection.html)
 * [Acunetix](https://www.acunetix.com/blog/articles/exploiting-sql-injection-example/) full step-by-step exploit with SQL-injection
+* [OWASP](https://www.owasp.org/index.php/Blind_SQL_Injection)
 * [Acunetix](https://www.acunetix.com/websitesecurity/blind-sql-injection/)
+* [Time-base blind SQLi](http://www.sqlinjection.net/time-based/)
 * [SQL Injection out of band exploitation](https://www.gracefulsecurity.com/sql-injection-out-of-band-exploitation/)
 * [SQL Injection filter evasion with sqlmap](https://www.gracefulsecurity.com/sql-injection-filter-evasion/)
 * [Introduction to SQLMap](https://www.gracefulsecurity.com/introduction-to-sqlmap/)
+
+## SQL injection fun stuff
+* [Company name](https://beta.companieshouse.gov.uk/company/10542519) with SQL injection
+* 
