@@ -74,4 +74,4 @@ independent from another request. So for example, there's no auto-save for the s
   * [Security patterns for keeping secrets in the browser](https://pragmaticwebsecurity.com/talks/browsersecrets.html)
   * [Common API security pitfalls](https://pragmaticwebsecurity.com/talks/commonapisecuritypitfalls)
   * [Taking security seriously](https://pragmaticwebsecurity.com/talks/takingsecurityseriously.html)
-  
+* [Security Ninja's](https://github.com/cniemira/security-ninjas)
