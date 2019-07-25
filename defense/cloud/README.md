@@ -255,6 +255,7 @@
 * [OWASP ServerlessGoat](https://www.owasp.org/index.php/OWASP_Serverless_Goat) - OWASP ServerlessGoat is a deliberately insecure realistic AWS Lambda serverless application, maintained by OWASP for educational purposes. Single click installation through the AWS Serverless Application Repository.
 
 ## Sources
+* [Cloud Security Alliance](https://cloudsecurityalliance.org/)
 * Toni de la Fuente's [Github](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)
 * [Joseph Floyd](http://www.josephfloyd.com/blog/cloud-security-landscape)
 
