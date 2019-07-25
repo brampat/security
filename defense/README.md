@@ -22,10 +22,11 @@ Technical measures to enforce security: Firewalls, encryption, network securitie
 * [SAFECode](https://safecode.org) Non profit organization with free on-demand webcasts on Secure Software Development
 
 -----------
-Sub-pages:
 
+Sub-pages:
 * [Defense Types](defenseTypes.md)
 * [OWASP](owasp/README.md)
+* [Encryption](encryption/README.md)
 
 ## Networking:
 * [ARP Poisoning](arpPoisoning.md)
@@ -65,3 +66,6 @@ Sub-pages:
 Sources:
 * [Virtual Training Company](https://www.youtube.com/watch?v=wWKbQIfEGrQ)
 * [NCSC](https://www.ncsc.gov.uk/section/advice-guidance/all-topics): List of subjects by UK's National Cyber Security Centre
+* PagerDuty Security Training:
+  * [For Engineers](https://sudo.pagerduty.com/for_engineers/)
+  * [For Everyone](https://sudo.pagerduty.com/for_everyone/)
