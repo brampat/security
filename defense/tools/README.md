@@ -56,6 +56,7 @@ The tools described can be integrated in CI/CD toolchains.
 
 ## Commit
 * Static Code analysis
+  * OWASP [Glue](https://www.owasp.org/index.php/OWASP_Glue_Tool_Project): Integrates and coordinates different analysis and tools
   * Wikipedia [List](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) of Static Code Analysis Tools
   * [Awesome Static Analysis](https://github.com/mre/awesome-static-analysis) list of tools
   * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
@@ -153,7 +154,8 @@ The tools described can be integrated in CI/CD toolchains.
   * Ensure also transitive dependencies are checked
   * Integrate into CI/CD
   * Tools:
-    * [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
+    * OWASP [Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
+    * OWASP [Depedency Track](https://dependencytrack.org/)
     * [OSSIndex](https://ossindex.sonatype.org/) supports numerous ecosystems and integrates with several toolchains
       * Maven [ossindex-maven-plugin](https://sonatype.github.io/ossindex-maven/maven-plugin/)
       * NPM [AuditJS](https://www.npmjs.com/package/auditjs) package
