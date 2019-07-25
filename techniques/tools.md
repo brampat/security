@@ -80,10 +80,10 @@
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
 * [Acunetix](https://www.acunetix.com/web-vulnerability-scanner/) (4.5k+ / year): Web app security scanner
 * [Metasploit](https://www.metasploit.com/) (15k+ / year (?), community and dev / research versions available): Penmetration testing framework by Rapid7
-* [Nessus](https://www.tenable.com/downloads/nessus): Was OpenSource, now commercial (Euro 2470 / year), free for home & limited training use. Updates vuln. database using plugins.
+* [Nessus](https://www.tenable.com/downloads/nessus): Vulnerability scanner for VM, Server OS or host machines. Was OpenSource, now commercial (Euro 2470 / year), free for home & limited training use. Updates vuln. database using plugins.
 * [DomListener](https://chrome.google.com/webstore/detail/domlistener/jlfdgnlpibogjanomigieemaembjeolj?hl=en) Chrome extension that listens to DOM-changes (eg. for DOM-bases XSS detection)
-* [OpenVAS](http://www.openvas.org/): OpenSource
-* [Nexpose](https://www.rapid7.com/products/nexpose/): 
+* [OpenVAS](http://www.openvas.org/): OpenSource Vulnerability scanner for VM, Server OS or host machines
+* [Nexpose](https://www.rapid7.com/products/nexpose/): Vulnerability scanner for VM, Server OS or host machines
 * [GFI LAN Guard](https://www.gfi.com/products-and-solutions/network-security-solutions/gfi-languard): Euro 21.60 per node per year (or less from 50+ nodes)  
 
 ## Payloads
@@ -93,6 +93,7 @@
 
 ### Super-basics
 * [Hacksplaining](https://www.hacksplaining.com/lessons)
+* [Secure Code Warrior](https://portal.securecodewarrior.com/#/website-trial/)
 * [Security Ninja's](https://github.com/cniemira/security-ninjas) OpenSource AppSec training with examples for all OWASP Top 10 vulnerabilities
 
 ### Various levels
@@ -102,6 +103,9 @@
 * [OWASP JuiceShop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project) vulnerable webapplication
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
+
+### CTF's
+* [PicoCTF](https://picoctf.com/)
 
 ### Lists of practice sites and VM's
 * [OWASP maintained list](https://github.com/OWASP/OWASP-VWAD) contains both online, offline and VM vulnerable applications
