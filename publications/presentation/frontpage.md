@@ -56,7 +56,7 @@
 ![](./pics/bart_roos.jpg)<!-- .element style="position: fixed; top: 160px; right: 350px; width: 150px;" -->
 ![](./pics/jeremy_gosney.jpg)<!-- .element style="position: fixed; top: 330px; right: 300px; width: 150px;" -->
 ![](./pics/jim_manico.png)<!-- .element style="position: fixed; bottom: 140px; right: 140px; width: 150px;" -->
-![](./pics/kevin_mitnick.jpg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
+![](./pics/shehackspurple.jpg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
 ![](./pics/edwin_van_andel.jpg)<!-- .element style="position: fixed; bottom: 20px; right: 10px; width: 150px;" -->
 ![](./pics/wesley_neelen.png)<!-- .element style="position: fixed; bottom: 40px; right: 320px; width: 150px;" -->
 ![](./pics/oscar_koeroo.jpg)<!-- .element style="position: fixed; top: 320px; left: 350px; width: 150px;" -->
@@ -77,6 +77,7 @@
 * Victor Gevers - GDI Foundation non-profit for safer internet
 * Rik van Duijn - Dearbytes hacker
 * Wesley Neelen - Dearbytes hacker, IoT devices, hardware
-* Kevin Mitnick - Worlds most famous hacker (actually only social engineer)
+* Tanya Janca - Cloud Advocate at Microsoft
 * Edwin van Andel - Zerocopter hacker platform
 
+* Kevin Mitnick - Worlds most famous hacker (actually only social engineer)
