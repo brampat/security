@@ -14,15 +14,15 @@
 <hr />
 
 ### CIA - Confidentiality
-
+*Hackers can read my bank-transactions*<!-- .element: class="fragment" data-fragment-index="0" -->
 * Data leaks<!-- .element: class="fragment" data-fragment-index="1" -->
 * Web-cam hacks<!-- .element: class="fragment" data-fragment-index="1" -->
 * Bad config<!-- .element: class="fragment" data-fragment-index="1" -->
 * SQL-injection (dump)<!-- .element: class="fragment" data-fragment-index="1" -->
 
-![](./pics/confidential.jpeg)<!-- .element style="position: fixed; top: 160px; right: 240px; width: 275px;"  -->
+![](./pics/confidential.jpeg)<!-- .element style="position: fixed; top: 160px; right: 140px; width: 275px; " class="fragment" data-fragment-index="0" -->
 
-![](./pics/gevers_chinese_mongodb.png)<!-- .element style="position: fixed; top: 150px; right: 20px; width: 225px;" class="fragment" data-fragment-index="1" -->
+![](./pics/gevers_chinese_mongodb.png)<!-- .element style="position: fixed; bottom: 100px; right: 20px; width: 225px;" class="fragment" data-fragment-index="1" -->
 ![](./pics/webcam_1.png)<!-- .element style="position: fixed; top: 450px; left: 40px; width: 275px;" class="fragment" data-fragment-index="1" -->
 ![](./pics/beautiful_info_data_breaches.png)<!-- .element style="position: fixed; top: 380px; right: 260px; width: 325px;" class="fragment" data-fragment-index="1"  -->
 
@@ -32,12 +32,12 @@
 <hr />
 
 ### CIA - Integrity
-
+*Hackers can empty my bank-account*<!-- .element: class="fragment" data-fragment-index="0" -->
 * Account takeover<!-- .element: class="fragment" data-fragment-index="1" -->
 * Car-hacking<!-- .element: class="fragment" data-fragment-index="1" -->
 * SQL injection insert / update<!-- .element: class="fragment" data-fragment-index="1" -->
 
-![](./pics/ssl_lock.jpg)<!-- .element style="position: fixed; top: 160px; right: 280px; width: 275px;"  -->
+![](./pics/ssl_lock.jpg)<!-- .element style="position: fixed; top: 160px; right: 280px; width: 275px;" class="fragment" data-fragment-index="0" -->
 
 ![](./pics/baby_phone_2.png)<!-- .element style="position: fixed; top: 280px; right: 20px; width: 375px;" class="fragment" data-fragment-index="1" -->
 ![](./pics/sluizen.png)<!-- .element style="position: fixed; top: 140px; right: 190px; width: 375px;" class="fragment" data-fragment-index="1" -->
@@ -50,7 +50,7 @@
 <hr />
 
 ### CIA - Availability
-
+*Internet-banking is down*<!-- .element: class="fragment" data-fragment-index="0" -->
 * (D)DOS<!-- .element: class="fragment" data-fragment-index="1" -->
 * Ransomware<!-- .element: class="fragment" data-fragment-index="1" -->
 * SQL-injection drop table<!-- .element: class="fragment" data-fragment-index="1" -->
