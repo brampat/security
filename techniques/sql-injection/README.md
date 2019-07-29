@@ -72,10 +72,10 @@ SELECT title, description, body FROM items WHERE ID = 2 and 1=2
 * [OWASP](https://www.owasp.org/index.php/Blind_SQL_Injection)
 * [Acunetix](https://www.acunetix.com/websitesecurity/blind-sql-injection/)
 * [Time-base blind SQLi](http://www.sqlinjection.net/time-based/)
+* [Exploiting a tricky blind SQL injection](https://www.noob.ninja/2019/07/exploiting-tricky-blind-sql-injection.html)
 * [SQL Injection out of band exploitation](https://www.gracefulsecurity.com/sql-injection-out-of-band-exploitation/)
 * [SQL Injection filter evasion with sqlmap](https://www.gracefulsecurity.com/sql-injection-filter-evasion/)
 * [Introduction to SQLMap](https://www.gracefulsecurity.com/introduction-to-sqlmap/)
 
 ## SQL injection fun stuff
 * [Company name](https://beta.companieshouse.gov.uk/company/10542519) with SQL injection
-* 
