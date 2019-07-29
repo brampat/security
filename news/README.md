@@ -17,7 +17,7 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
-
+* Synology [warns](https://www.synology.com/en-global/company/news/article/2019JulyRansomware) users of Ransomware attacks by brute-forcing network storage admin's credentials
 * Ransomware attacks disabled Johannesburg's [electricity provider](https://www.bbc.com/news/technology-49125853)
 * [Monokle](https://arstechnica.com/information-technology/2019/07/advanced-mobile-surveillanceware-made-in-russia-found-in-the-wild/) advanced Russian mobile surveillanceware found in the wild
 * Apple contractors regularly [hear accidental recordings](https://www.theguardian.com/technology/2019/jul/26/apple-contractors-regularly-hear-confidential-details-on-siri-recordings) in Siri Voice recognition training
