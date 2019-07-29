@@ -297,6 +297,21 @@ Volunteers:
 ## Online Attacks
 <hr />
 
+### Brute forcing
+
+![](pics/brute_force_humor.png)
+
+-- Notes --
+
+This is not how brute-force defence works
+
+--
+
+<!-- .slide: style="font-size: 16px;" -->
+
+## Online Attacks
+<hr />
+
 ### Common passwords
 
 | Rank | 2011     | 2012     | 2013        | 2014      | 2015      | 2016       | 2017      | 2018      |
