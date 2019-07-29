@@ -17,6 +17,17 @@ Collection of links to Hack-related news
 
 ## 2019
 ### July
+
+* Ransomware attacks disabled Johannesburg's [electricity provider](https://www.bbc.com/news/technology-49125853)
+* [Monokle](https://arstechnica.com/information-technology/2019/07/advanced-mobile-surveillanceware-made-in-russia-found-in-the-wild/) advanced Russian mobile surveillanceware found in the wild
+* Apple contractors regularly [hear accidental recordings](https://www.theguardian.com/technology/2019/jul/26/apple-contractors-regularly-hear-confidential-details-on-siri-recordings) in Siri Voice recognition training
+* Google Belgium employees [listening to user's voice recording](https://www.zeebiz.com/technology/news-google-admits-listening-to-voice-recordings-of-users-from-its-ai-voice-assistants-105444) to train AI-Voic  assistant
+* Cloud Hosting firm [iNSYNQ](https://krebsonsecurity.com/2019/07/quickbooks-cloud-hosting-firm-insynq-hit-in-ransomware-attack/) hit by Ransomware attack
+* NSA forms [Cybersecurity Directorate](https://www.wsj.com/articles/nsa-forms-cybersecurity-directorate-under-more-assertive-u-s-effort-11563876005) headed by Anne Neuberger
+* Equifax to pay between [$525M and $700M](https://www.ftc.gov/news-events/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related) for 2017 data breach
+* Government contractor releases PoC for [BlueKeep Windows exploit](https://www.vice.com/en_us/article/wjvvvb/cybersecurity-firm-drops-code-for-the-incredibly-dangerous-windows-bluekeep-vulnerability)
+* Wannacry accidental hero [MalwareTech](https://techcrunch.com/2019/07/26/marcus-hutchins-sentenced-kronos/) released after sentenced to time-served and one year supervised release, while the judge praised his important skills: “It’s going to take the people [...] with your skills to come up with solutions"
+* Facebook faces [$5B settlement](https://www.ftc.gov/news-events/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions) and several independent privacy restrictions due to Cambridge Analytica debacle
 * Kazakhstan government [intercepting all HTTPS traffic](https://www.zdnet.com/article/kazakhstan-government-is-now-intercepting-all-https-traffic/)
 * Hacker stole data from [70% of Bulgarian Citizens](https://thehackernews.com/2019/07/bulgaria-nra-data-breach.html) from Tax Agency Servers and arrested a 20y old whitehat hacker
 * Another sidechannel attack that lets Android apps [Capture Loudspeaker data](https://thehackernews.com/2019/07/android-side-channel-attacks.html) without permission
