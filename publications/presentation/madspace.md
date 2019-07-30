@@ -47,6 +47,19 @@ When a new vulnerability is disclosed, it can be reported to MITRE
 ## Hacking
 <hr />
 
+### Marcus Hutchins (‘WannaCry hero’) sentenced to supervised release
+* Accidentally [stopped WannaCry](https://techcrunch.com/2019/07/08/the-wannacry-sinkhole/) by registering domain *iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com* (2017)
+* Created and sold Kronos banking malware (2014-2015)
+
+![](pics/malwaretech.jpg)<!-- .element style="margin: 0px; width: 475px;" -->
+
+
+
+--
+
+## Hacking
+<hr />
+
 * Basics:
   * [Hacksplaining](https://www.hacksplaining.com/lessons)
   * [Secure Code Warrior](https://portal.securecodewarrior.com/#/website-trial/)
