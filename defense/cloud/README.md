@@ -201,7 +201,7 @@
 * [SSM-Acquire](https://github.com/mozilla/ssm-acquire) - A python module for orchestrating content acquisitions and analysis via Amazon SSM
 
 ### AppSec
-* [asecure.cloud](https://asecure.cloud) - A repository of cutomizable AWS security configurations (Cloudformation and CLI templates)
+* [asecure.cloud](https://asecure.cloud) - A repository of customizable AWS security configurations (Cloudformation and CLI templates)
 * [Assume](https://github.com/SanderKnape/assume) - A simple CLI utility that makes it easier to switch between different AWS roles
 * [AWS Service Control Policies](https://github.com/jchrisfarris/aws-service-control-policies) - Collection of semi-useful Service Control Policies and scripts to manage them 
 * [AWS Vault](https://github.com/99designs/aws-vault) - A vault for securely storing and accessing AWS credentials in development environments 
@@ -253,6 +253,10 @@
 * [https://github.com/m6a-UdS/dvca](https://github.com/m6a-UdS/dvca) - Damn Vulnerable Cloud Application [more info](https://medium.com/poka-techblog/privilege-escalation-in-the-cloud-from-ssrf-to-global-account-administrator-fd943cf5a2f6)
 * [https://github.com/sonofagl1tch/AWSDetonationLab](https://github.com/sonofagl1tch/AWSDetonationLab) - Scripts and templates to generate some basic detections of the AWS security services
 * [OWASP ServerlessGoat](https://www.owasp.org/index.php/OWASP_Serverless_Goat) - OWASP ServerlessGoat is a deliberately insecure realistic AWS Lambda serverless application, maintained by OWASP for educational purposes. Single click installation through the AWS Serverless Application Repository.
+
+
+### Azure
+* [How to secure Azure Applications](https://docs.microsoft.com/en-us/azure/architecture/security/overview)
 
 ## Sources
 * [Cloud Security Alliance](https://cloudsecurityalliance.org/)
