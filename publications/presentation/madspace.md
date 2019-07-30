@@ -101,6 +101,14 @@ That's all folks<!-- .element: style="position: fixed; left: 50px; top: 550px;" 
 
 --
 
+## Disclosing Responsibly
+<hr />
+
+* [ZeroCopter](https://www.zerocopter.com/responsible-disclosure)
+* [BugCrowd](https://www.bugcrowd.com/resource/what-is-responsible-disclosure/)
+
+--
+
 ## Hacking
 <hr />
 
