@@ -50,10 +50,14 @@
 ![](https://imgs.xkcd.com/comics/bad_code.png)
 
 
-
 [Goto](https://xkcd.com/292/) Code Quality
 
 ![](https://imgs.xkcd.com/comics/goto.png)
+
+
+[Code Quality](https://xkcd.com/1513/)
+
+![](https://imgs.xkcd.com/comics/code_quality.png)
 
 
 [Voting Software](https://xkcd.com/2030/) Software Quality, Security, Blockchain
