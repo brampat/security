@@ -52,6 +52,8 @@ Project page found [here](https://www.owasp.org/index.php/OWASP_Proactive_Contro
 #### 2016
 * Wiki found [here](https://www.owasp.org/index.php/OWASP_Proactive_Controls_2016)
 * PDF found [here](https://www.owasp.org/images/9/9b/OWASP_Top_10_Proactive_Controls_V2.pdf)
+* Blogs:
+  * Immuniweb [part 1](https://www.immuniweb.com/blog/what-application-developers-should-know-about-secure-coding-and-proactive-security-part1.html) and [part 2](https://www.immuniweb.com/blog/how-can-application-developers-build-secure-and-reliable-code-owasp-top-10-proactive-controls-part-2.html)
 
 #### 2014
 * Wiki found [here](https://www.owasp.org/index.php/OWASP_Proactive_Controls_2014)
