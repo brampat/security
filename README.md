@@ -58,7 +58,8 @@ See [Video's](videos/README.md)
 | [Tweakers](https://www.tweakers.net/)                 | 1     | Var, NL       | Var           | € 15          |
 | [Hack in the Box](http://www.hitb.nl/)                | 5     | Amsterdam, NL | April / May   | € ??          |
 | [Dutch Cyber Warfare Community](http://www.dcwc.nl/)  | part  | Var, NL       | Var           | Free          |
-
+| [SHA2017](https://sha2017.org/) (name changes every time) | 5  | Var, NL      | 2021         | ~€ 300        |
+| [Chaos Communication Congress](https://events.ccc.de/upcoming-events/) | 5 | Var, DE | ?      | € ??          |
 
 ## Terminology
 See [Terminology](terminology/README.md)
