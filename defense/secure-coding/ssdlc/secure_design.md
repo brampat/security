@@ -40,6 +40,9 @@ Remove unused code, code comments, API's, VM's, libraries and otyher resources
 
 ## Threat Modelling
 
+Sources:
+* OWASP DevSlop Show: [Rapid Threat Model Prototyping](https://www.youtube.com/watch?v=6eUlRVzcbaU) with Geoffrey Hill
+
 
 ## Protection of Source-code
 
