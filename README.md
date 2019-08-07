@@ -16,6 +16,8 @@ Do NOT use this knowledge for any illegal activities and / or any activities tha
 * [Careers in Security, Ethical Hacking and advice on getting started](https://www.troyhunt.com/careers-in-security-ethical-hacking-and-advice-on-where-to-get-started/) - Troy Hunt<br>
 * [Appsec Learning Resources](https://medium.com/@john.opdenakker/some-useful-appsec-learning-resources-de8a0b3c896f) by [John Opdenakker](https://twitter.com/j_opdenakker)
 * [Bug Hunter's Methodology](https://www.youtube.com/watch?v=HI1mTQ7ovFY) on how to efficiently do Bug Bounties by [Jason Haddix](https://twitter.com/jhaddix)
+* [The Cyber Mentor](https://www.thecybermentor.com/)
+  * The Complete Beginner [Network Penetration Testing Course](https://www.youtube.com/watch?v=WnN6dbos5u8) for 2019
 
 ## Pages similar like this
 * [Resources for learning Hacking](https://github.com/faizann24/Resources-for-learning-Hacking) - Faizan Ahmad
