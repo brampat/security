@@ -257,6 +257,7 @@
 
 ### Azure
 * [How to secure Azure Applications](https://docs.microsoft.com/en-us/azure/architecture/security/overview)
+* [Azure Security Principles](https://docs.microsoft.com/en-us/azure/architecture/security/security-principles)
 
 ## Sources
 * [Cloud Security Alliance](https://cloudsecurityalliance.org/)
