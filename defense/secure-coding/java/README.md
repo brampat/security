@@ -91,6 +91,8 @@ If you use a Javascript Framework like Angular, add this method, so the JavaScri
 * Get Started with [Spring Security 5.0 and OIDC](https://developer.okta.com/blog/2017/12/18/spring-security-5-oidc)
 * [10 excellent ways](https://www.youtube.com/watch?v=KsG7AZqXL9M) to secure your Spring Boot Application
 * [Spring Actuators](https://www.veracode.com/blog/research/exploiting-spring-boot-actuators) exploit on Spring Boot < 1.5
+* [Spring Default Password Encoder](https://www.baeldung.com/spring-security-5-default-password-encoder) in Spring Security 5
+* Spring Security with Spring Boot 2.0: [Password Encoder](https://dzone.com/articles/spring-security-with-spring-boot-20-password-encod)
 
 ### Other
 * Oracle Java SE [Secure Coding](https://www.oracle.com/technetwork/java/seccodeguide-139067.html) Guidelines
