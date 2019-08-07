@@ -66,6 +66,7 @@ During requirements, the team can coordinate with their organisation's Chief Inf
   * Ensure proper actions are taken when these alerts happen
 * Perform the following before releasing the application:
   * Threat modelling
+    * [Threat modelling with DREAD and STRIDE](https://haiderm.com/application-threat-modeling-using-dread-and-stride/)
   * Code review on both quality, technical aspects, security aspects
   * Security testing
 * Fail safe or close the application when an unexpected error is raised, examples: 
