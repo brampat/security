@@ -74,6 +74,9 @@
 
 ![](https://imgs.xkcd.com/comics/heartbleed.png)
 
+[Heartbleed explained](https://xkcd.com/1354/)
+
+![](https://imgs.xkcd.com/comics/heartbleed_explanation.png)
 
 [Reinvent the Wheel](https://xkcd.com/2140/) Dependencies
 
