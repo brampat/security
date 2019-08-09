@@ -16,6 +16,10 @@ Collection of links to Hack-related news
 * [SANS StormCast](https://isc.sans.edu/podcast.html) (almost) Daily updates on Security 
 
 ## 2019
+
+### August
+* Very sophisticated [Coinbase hack](https://www.technologyreview.com/s/614094/an-attempted-heist-at-coinbase-was-scary-good-even-though-it-failed/) thwarted
+
 ### July
 * Synology [warns](https://www.synology.com/en-global/company/news/article/2019JulyRansomware) users of Ransomware attacks by brute-forcing network storage admin's credentials
 * Ransomware attacks disabled Johannesburg's [electricity provider](https://www.bbc.com/news/technology-49125853)

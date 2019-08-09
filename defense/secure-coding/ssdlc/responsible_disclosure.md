@@ -57,6 +57,7 @@ Example of excellent post-mortems:
   * Specifically at 1:22 The apology
 * [Disqus](https://blog.disqus.com/security-alert-user-info-breach)
 * [Mozilla](https://blog.mozilla.org/blog/2019/05/09/what-we-do-when-things-go-wrong/)
+* [Coinbase](https://blog.coinbase.com/responding-to-firefox-0-days-in-the-wild-d9c85a57f15b)
 
 Example of bad response to a disclosure:
 * [Atrient](https://www.secjuice.com/security-researcher-assaulted-ice-atrient/) assualts security researchers over PowerKiosk marketing Platform disclosure
