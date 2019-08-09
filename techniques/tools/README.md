@@ -174,6 +174,14 @@
 ## Other
 * [https://Crawler.ninja](Crawler.ninja): Security Statistics on top 1 million Alexa sites
 
+
+## Reporting
+* Screenshots and editing:
+  * Greenshot
+  * Flameshot
+* Notes
+  * Keepnote (Discontinued)
+  * Cherrytree
 ---------------
 Sources:
 * [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
