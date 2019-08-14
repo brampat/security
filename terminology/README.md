@@ -50,6 +50,8 @@
 | [Password-manager](../techniques/passwords/password-managers.md) | Tool for storing account-credentials and generating unique, random and strong passwords |
 | PII | Personally Identifiable Information |
 | Proxy | System to use as an intermediate between you and the target / server. Sometimes used to mask your identity and / or location. Less reliable than VPN. Chaining proxies can make it much harder to detect. |
+| Purple Teaming | Activities to promote collaboration, empathy and advocacy in the security space of an organisation, also see resources from [Tanya Janca](https://twitter.com/shehackspurple) [here](../defense/secure-coding/ssdlc/README.md)|
+| [Pyramid of Pain](pyramid_of_pain.md) | Different levels of attack indicators, used to defend more effectively against the same attacks / attackers |
 | Ransomware | Also see Malware |
 | RAT | Remote Administration Tools |
 | RBAC | Role Base Access Control, grants access based on a user's role |
