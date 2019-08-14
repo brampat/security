@@ -18,7 +18,10 @@ Collection of links to Hack-related news
 ## 2019
 
 ### August
-* Very sophisticated [Coinbase hack](https://www.technologyreview.com/s/614094/an-attempted-heist-at-coinbase-was-scary-good-even-though-it-failed/) thwarted
+* 11: Drivers enable installing of [persistent backdoors](https://thehackernews.com/2019/08/windows-driver-vulnerability.html) on Windows
+* 08: Critical US Election Systems [still online](https://www.vice.com/en_us/article/3kxzk9/exclusive-critical-us-election-systems-have-been-left-exposed-online-despite-official-denials) where officials said everything is offline and secured.
+* 08: Very sophisticated [Coinbase hack](https://www.technologyreview.com/s/614094/an-attempted-heist-at-coinbase-was-scary-good-even-though-it-failed/) thwarted
+  * [Response details](https://blog.coinbase.com/responding-to-firefox-0-days-in-the-wild-d9c85a57f15b) by Coinbase security team
 
 ### July
 * Synology [warns](https://www.synology.com/en-global/company/news/article/2019JulyRansomware) users of Ransomware attacks by brute-forcing network storage admin's credentials
