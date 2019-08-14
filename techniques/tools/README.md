@@ -171,6 +171,10 @@
 * [Using Docker for disposable attack images](https://blog.zsec.uk/ltr101-dac/)
 * [DockerAttack](https://github.com/ZephrFish/DockerAttack): Various tools and Docker images
 
+# Firwmare scanning
+* [Firmware Slap](https://github.com/ChrisTheCoolHut/Firmware_Slap): Vulnerability discovery and function similarity in firmware
+
+
 ## Other
 * [https://Crawler.ninja](Crawler.ninja): Security Statistics on top 1 million Alexa sites
 
