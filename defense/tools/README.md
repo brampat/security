@@ -299,6 +299,7 @@ The tools described can be integrated in CI/CD toolchains.
     * [X-Pack](https://www.elastic.co/products/stack)
     * [ElastAlert](https://github.com/Yelp/elastalert)
     * Blog on [Security plugins](https://www.theserverside.com/feature/Detect-attacker-intent-with-Elasticsearch-security-plugins) for Elasticsearch
+    * Elasticstack [scaling](https://www.elastic.co/blog/small-medium-or-large-scaling-elasticsearch-and-evolving-the-elastic-stack-to-fit)
   * [Backstory](https://chronicle.security/products/backstory/) from Google / Alphabet's [Chronicle](https://chronicle.security/)
   * [OSSIM](https://www.alienvault.com/products/ossim)
   * [OSSEC](http://www.ossec.net/)
