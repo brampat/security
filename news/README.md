@@ -18,7 +18,18 @@ Collection of links to Hack-related news
 ## 2019
 
 ### August
+* 17: New Bluetooth attacks to [sniff sensitive data](https://arstechnica.com/information-technology/2019/08/new-attack-exploiting-serious-bluetooth-weakness-can-intercept-sensitive-data/)
+* 15: In-depth look at the [20-year old Windows bug](https://arstechnica.com/information-technology/2019/08/a-look-at-the-windows-10-exploit-google-zero-disclosed-this-week/) Project Zero's [Tavis Ormandy](https://twitter.com/taviso) found
+* 15: Trump administration seeks to re-authorize NSA's [surveillance Call Records program](https://www.nytimes.com/2019/08/15/us/politics/trump-nsa-call-records-program.html)
+* 15: ECB [shuts down reporting website](https://www.reuters.com/article/us-ecb-cyber/ecb-shuts-down-one-of-its-websites-after-hacker-attack-idUSKCN1V51N0) after infection
+* 15: USCC [released samples](https://techcrunch.com/2019/08/15/cyber-command-north-korea-malware/) of North Korean malware
+* 14: Survey on 6000 firmware finds [no progress on security](https://securityledger.com/2019/08/huge-survey-of-firmware-finds-no-security-gains-in-15-years/) hygiene in 15 years 
+* 14: New York hiring hackers to [hit back at stalkerware](https://www.technologyreview.com/s/614168/nyc-hires-hackers-to-hit-back-at-stalkerware/)
+* 13: RaidForum hackers [breached and leaked](https://arstechnica.com/information-technology/2019/08/hacker-sites-incriminating-database-published-online-by-rival-group/) data from rival Cracked.to
+* 13: Four BlueKeep like Windows [RDP vulns](https://thehackernews.com/2019/08/windows-rdp-wormable-flaws.html) found by Microsoft
+* 13: Google Project Zero found a [20y old unpatched vuln](https://thehackernews.com/2019/08/ctfmon-windows-vulnerabilities.html) in all Windows versions
 * 11: Drivers enable installing of [persistent backdoors](https://thehackernews.com/2019/08/windows-driver-vulnerability.html) on Windows
+* 10: Pentest Partners found [many flaws](https://www.pentestpartners.com/security-blog/reverse-engineering-4g-hotspots-for-fun-bugs-and-net-financial-loss/) in cellular dongles and routers
 * 08: Critical US Election Systems [still online](https://www.vice.com/en_us/article/3kxzk9/exclusive-critical-us-election-systems-have-been-left-exposed-online-despite-official-denials) where officials said everything is offline and secured.
 * 08: Very sophisticated [Coinbase hack](https://www.technologyreview.com/s/614094/an-attempted-heist-at-coinbase-was-scary-good-even-though-it-failed/) thwarted
   * [Response details](https://blog.coinbase.com/responding-to-firefox-0-days-in-the-wild-d9c85a57f15b) by Coinbase security team
