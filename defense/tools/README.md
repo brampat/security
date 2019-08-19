@@ -169,6 +169,8 @@ The tools described can be integrated in CI/CD toolchains.
     * Ruby & Rails [Hakiri](https://hakiri.io/)
     * [Snyk](https://snyk.io/) scans [support](https://snyk.io/docs/) Ruby, Java, Python, .NET, PHP, NodeJS and others
     * [SourceClear](https://www.sourceclear.com/) supports [10+ languages](https://www.sourceclear.com/vulnerability-database/search#_) and integrates with several toolchains
+      * [Security Graph Language](https://www.sourceclear.com/sgl/): Domain specific language designed to identify security issues in open-source code
+      * SourceClear [Dashboard](https://status.srcclr.net/): 
     * [Nexus](https://www.sonatype.com/products-overview) platform
     * [BlackDuck](https://www.blackducksoftware.com/)
     * [13 tools](https://techbeacon.com/app-dev-testing/13-tools-checking-security-risk-open-source-dependencies) for checking open source dependencies
