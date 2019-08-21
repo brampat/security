@@ -93,6 +93,9 @@ If you use a Javascript Framework like Angular, add this method, so the JavaScri
 * [Spring Actuators](https://www.veracode.com/blog/research/exploiting-spring-boot-actuators) exploit on Spring Boot < 1.5
 * [Spring Default Password Encoder](https://www.baeldung.com/spring-security-5-default-password-encoder) in Spring Security 5
 * Spring Security with Spring Boot 2.0: [Password Encoder](https://dzone.com/articles/spring-security-with-spring-boot-20-password-encod)
+* [Spring Vault tutorial](https://www.baeldung.com/spring-vault)
+  * [Spring Vault Introduction](https://www.baeldung.com/spring-cloud-vault) integrating Hashicorp’s Vault into a Spring-Boot project
+  * [Spring Vault Docs](https://docs.spring.io/spring-vault/docs/current/reference/html/index.html)
 
 ### Other
 * Oracle Java SE [Secure Coding](https://www.oracle.com/technetwork/java/seccodeguide-139067.html) Guidelines
