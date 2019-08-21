@@ -1,0 +1,1 @@
+Blogs are moved to my [Github.io Page](https://brampat.github.io/)
