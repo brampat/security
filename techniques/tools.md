@@ -114,3 +114,4 @@
 Sources:
 * [Virtual training company](https://www.youtube.com/watch?v=wWKbQIfEGrQ&index=2&list=PL_pOCSwlf9XkyacNSmF5ZtjeMeP4ap8KI)
 * [Guru99](https://www.guru99.com/ethical-hacking-tutorials.html)
+* [Hausec](https://hausec.com/): Pentesting resources
