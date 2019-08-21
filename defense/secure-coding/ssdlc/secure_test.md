@@ -2,6 +2,12 @@
 * Risk Analysis
 * Vulnerability Assessment & Penetration Testing
 
+## Automated testing
+
+### Resources
+* [Automated Testing using Gherkin syntax](https://medium.com/asos-techblog/automated-security-testing-using-language-you-already-know-60b968d55cec)
+
+
 ## Five ways
 
 There are a number of ways to get your software tested. Some work well, some don't. All methods have their strengths and weaknesses.
