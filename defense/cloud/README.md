@@ -30,6 +30,7 @@
 * [LambdaGuard](https://github.com/Skyscanner/LambdaGuard): An AWS Lambda auditing tool designed to create asset visibility and provide actionable results.
 * [Komiser](https://github.com/mlabouardy/komiser): Cloud Environment Inspector, nalyze and manage cloud cost, usage, security, and governance in one place.
 * [Perimeterator](https://github.com/darkarnium/perimeterator): AWS perimeter monitoring: Periodically scan internet facing AWS resources to detect misconfigured services
+* [CloudSploit](https://cloudsploit.com): Commercial Cloud Security and configuration scanner for Amazon AWS, Microsoft Azure and (coming soon) GitHub
 
 ### Monitoring and auditing
 * [Security Monkey](https://github.com/Netflix/security_monkey)
