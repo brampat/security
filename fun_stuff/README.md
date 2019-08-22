@@ -10,3 +10,9 @@ All things [authentication](authentication/README.md)
 
 Things [to do](unlocked_pc/README.md) with other people's unlocked PC's.
 
+## Bug-free
+
+We have accepted that bug-free code is virtually impossible. We also accept that security-bugs are a sub-category of bugs and should be treated as such.
+Therefore we as AppSec / Security professionals cannot require developers to write completely secure applications. Though there is a way....?
+
+![](bug_free.jpg)  
