@@ -6,7 +6,7 @@
 
 ### Resources
 * [Automated Testing using Gherkin syntax](https://medium.com/asos-techblog/automated-security-testing-using-language-you-already-know-60b968d55cec)
-
+* [Gauntlt](http://gauntlt.org/) testing toolset that uses Gherkin syntax
 
 ## Five ways
 
