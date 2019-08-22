@@ -18,6 +18,13 @@ Collection of links to Hack-related news
 ## 2019
 
 ### August
+* 21: [Backdoor](https://threatpost.com/backdoor-found-in-utility-for-linux/147581/) found in Linux and Unix administration-tool Webmin
+* 21: Google [blocks](https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html) Kazakhstan government surveillance root-cert
+* 21: Mozilla [blocks](https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html) Kazakhstan government surveillance root-cert
+* 21: In-depth [article](https://techcrunch.com/2019/08/21/google-mozilla-kazakhstans-browser-spying/) on Google, Mozilla and Apple blocking Kazakhstan surveillance root-cert
+* 20: Apple [re-introduces](https://thehackernews.com/2019/08/ios-iphone-jailbreak.html) jailbreak vuln. in iOS 12.4 after fixing it in 12.3
+* 20: Facebook launches [privacy-tool](https://thehackernews.com/2019/08/clear-off-facebook-activity.html) to review and disconnect 3rd party history-data from your Facebook-identity
+* 20: Microsoft [increases](https://msrc-blog.microsoft.com/2019/08/20/announcing-the-microsoft-edge-insider-channels-bounty/) maximum bug-bounties for Edge browser to $30k
 * 17: New Bluetooth attacks to [sniff sensitive data](https://arstechnica.com/information-technology/2019/08/new-attack-exploiting-serious-bluetooth-weakness-can-intercept-sensitive-data/)
 * 15: In-depth look at the [20-year old Windows bug](https://arstechnica.com/information-technology/2019/08/a-look-at-the-windows-10-exploit-google-zero-disclosed-this-week/) Project Zero's [Tavis Ormandy](https://twitter.com/taviso) found
 * 15: Trump administration seeks to re-authorize NSA's [surveillance Call Records program](https://www.nytimes.com/2019/08/15/us/politics/trump-nsa-call-records-program.html)
@@ -30,6 +37,7 @@ Collection of links to Hack-related news
 * 13: Google Project Zero found a [20y old unpatched vuln](https://thehackernews.com/2019/08/ctfmon-windows-vulnerabilities.html) in all Windows versions
 * 11: Drivers enable installing of [persistent backdoors](https://thehackernews.com/2019/08/windows-driver-vulnerability.html) on Windows
 * 10: Pentest Partners found [many flaws](https://www.pentestpartners.com/security-blog/reverse-engineering-4g-hotspots-for-fun-bugs-and-net-financial-loss/) in cellular dongles and routers
+* 09: Apple [increases](https://thehackernews.com/2019/08/apple-bug-bounty.html) maximum bug-bounties to $1M and releases pre-jailbroken iPhones to security researchers
 * 08: Critical US Election Systems [still online](https://www.vice.com/en_us/article/3kxzk9/exclusive-critical-us-election-systems-have-been-left-exposed-online-despite-official-denials) where officials said everything is offline and secured.
 * 08: Very sophisticated [Coinbase hack](https://www.technologyreview.com/s/614094/an-attempted-heist-at-coinbase-was-scary-good-even-though-it-failed/) thwarted
   * [Response details](https://blog.coinbase.com/responding-to-firefox-0-days-in-the-wild-d9c85a57f15b) by Coinbase security team
