@@ -33,6 +33,8 @@ Preventing injection requires keeping data separate from commands and queries.
 | 2004  | A6        | Injection Flaws           |
 | 2003  | A6        | Command Injection Flaws   |
 
+### Resources
+* [SQL Injection cheat sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/?utm_source=hacksplaining&utm_medium=post&utm_campaign=articlelink) by Netspraker
 
 ## Broken Authentication
 
