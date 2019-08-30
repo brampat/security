@@ -365,6 +365,16 @@ class SimpleControllerSpec extends Specification {
 }
 ```
 
+--
+
+## Secure Software Development
+<hr />
+
+![](pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+![](pics/pentesting_vs_ciso.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 170px; width: 500px; " -->
+
+How Pentesters [think](https://www.youtube.com/watch?v=XKr3Vb9ABHs)
 
 --
 
