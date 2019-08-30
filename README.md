@@ -78,6 +78,9 @@ See [Terminology](terminology/README.md)
 * [Hackenproof](https://www.hackenproof.com/)
 * [Cobalt](https://cobalt.io/) aimed as SaaS
 
+### Bug Bounty history
+* [History of Bug Bounty Programs](https://blog.cobalt.io/the-history-of-bug-bounty-programs-50def4dcaab3)
+* [Bug Bounties go big](https://www.forbes.com/sites/taylorarmerding/2019/08/15/bug-bounties-go-big/)
 
 ## Hacking way of working
 - [Stages](./techniques/stages)
