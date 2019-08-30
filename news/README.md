@@ -18,10 +18,14 @@ Collection of links to Hack-related news
 ## 2019
 
 ### August
+* 30: DDS Safe backup-service for dental patient data hit by [ransomware](https://thehackernews.com/2019/08/dds-safe-dental-ransomware-attack.html)
+* 29: Google extends bug-bounty program to [data abuse and all Play store apps](https://thehackernews.com/2019/08/google-data-abuse-bug-bounty.html)
+* 27: In depth story on Cyber-insurance and the way they [fuel](https://www.propublica.org/article/the-extortion-economy-how-insurance-companies-are-fueling-a-rise-in-ransomware-attacks) Ransomware attacks
 * 21: [Backdoor](https://threatpost.com/backdoor-found-in-utility-for-linux/147581/) found in Linux and Unix administration-tool Webmin
 * 21: Google [blocks](https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html) Kazakhstan government surveillance root-cert
 * 21: Mozilla [blocks](https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html) Kazakhstan government surveillance root-cert
 * 21: In-depth [article](https://techcrunch.com/2019/08/21/google-mozilla-kazakhstans-browser-spying/) on Google, Mozilla and Apple blocking Kazakhstan surveillance root-cert
+* 21: Texas hit by no less than [22 ransomware](https://www.theverge.com/2019/8/20/20823139/texas-towns-ransomware-attack-cities-fbi-threat-computers-offline) attacks
 * 20: Apple [re-introduces](https://thehackernews.com/2019/08/ios-iphone-jailbreak.html) jailbreak vuln. in iOS 12.4 after fixing it in 12.3
 * 20: Facebook launches [privacy-tool](https://thehackernews.com/2019/08/clear-off-facebook-activity.html) to review and disconnect 3rd party history-data from your Facebook-identity
 * 20: Microsoft [increases](https://msrc-blog.microsoft.com/2019/08/20/announcing-the-microsoft-edge-insider-channels-bounty/) maximum bug-bounties for Edge browser to $30k
