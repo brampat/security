@@ -103,6 +103,7 @@
   * Jenkins (Will be adding "Something Cool" soon)
   * SMB (Check if user is an administrator) (must use --domain with this module. for host, use smb://)
   * FTP (List root dir contents)
+* [JavaScript deobvuscator](https://lelinhtinh.github.io/de4js/) and unpacker
 
 ## API's
 * [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ) pentesting API's using OpenAPI definitions
