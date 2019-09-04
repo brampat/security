@@ -8,20 +8,17 @@ Work in progress
 ## SSDLC
 <hr />
 
-![](pics/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
+![](pics/ssdlc/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
 
-![](pics/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" -->
-![](pics/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" -->
-![](pics/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" -->
-![](pics/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" -->
-![](pics/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" -->
-![](pics/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" -->
-![](pics/SSDLC_Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" -->
+![](pics/ssdlc/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" class="fragment" data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" class="fragment" data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" class="fragment" data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" class="fragment" data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" class="fragment" data-fragment-index="0" -->
+![](pics/ssdlc/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" class="fragment" data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" class="fragment" data-fragment-index="1" -->
 
-![](pics/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px;" -->
-
-
-
+![](pics/ssdlc/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px;" class="fragment" data-fragment-index="2" -->
 
 --
 
@@ -57,12 +54,19 @@ Five main ways to test your software product:
 * Cost
 * Exposure
 
+-- Notes --
+
+* Effort: How much effort to set up / initiate
+* Control: How much control over testing / testers
+* Cost: How much cost to set up / initiate including results / consequences
+* Exposure: How much exposure to outside it generates
+
 --
 
 ## Unhackable
 <hr />
 
-![](pics/unhackable.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px;"  -->
+![](pics/testing/unhackable.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px;"  -->
 
 --
 
@@ -71,8 +75,8 @@ Five main ways to test your software product:
 
 ### Bitfi
 
-![](pics/BitFi.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px; width: 400px;"  -->
-![](pics/BitFi_no_weaknesses.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; bottom: 50px;"  -->
+![](pics/testing/BitFi.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px; width: 400px;"  -->
+![](pics/testing/BitFi_no_weaknesses.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; bottom: 50px;"  -->
 
 -- Notes --
 
@@ -86,7 +90,7 @@ Five main ways to test your software product:
 
 ### Bitfi
 
-![](pics/BitFi_promise.png)
+![](pics/testing/BitFi_promise.png)
 
 -- Notes --
 * Until they did
@@ -98,7 +102,7 @@ Five main ways to test your software product:
 
 ### Bitfi
 
-![](pics/BitFi_hacked.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px;"  -->
+![](pics/testing/BitFi_hacked.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px;"  -->
 
 --
 
@@ -107,7 +111,7 @@ Five main ways to test your software product:
 
 ### Bitfi
 
-![](pics/BitFi_concession.png)
+![](pics/testing/BitFi_concession.png)
 
 --
 
@@ -116,57 +120,42 @@ Five main ways to test your software product:
 
 ### Bitfi
 
-![](pics/BitFi_profile.png)
+![](pics/testing/BitFi_profile.png)
 
 --
 
 ## Unhackable
 <hr />
 
-* No effort
-* No control
-* High cost: PR, damage, recalls / panic fixes
-* High exposure
+![](pics/testing/unhackable.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 --
 
 ## Pentest
 <hr />
 
-* Low effort
-* High control
-* High cost: expensive to catch all
-* Low exposure
+![](pics/testing/external_pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 --
 
 ## Internal Testing
 <hr />
 
-* Low effort
-* High control
-* High cost: expensive to catch all
-* Low exposure
+![](pics/testing/internal_testing.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 --
 
 ## Bug Bounties
 <hr />
 
-* Low effort
-* High control
-* High cost: expensive to catch all
-* Low exposure
+![](pics/testing/bug_bounty_program.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 --
 
 ## Responsible Disclosure
 <hr />
 
-* Medium effort
-* Medium control
-* Low cost
-* Medium exposure
+![](pics/testing/resposible_disclosure.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 -- Notes --
 
@@ -188,7 +177,7 @@ Five main ways to test your software product:
 
 ### Control vs exposure
 
-![](pics/testing_control_vs_exposure.png)
+![](pics/testing/testing_control_vs_exposure.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 200px;"  -->
 
 -- Notes --
 
@@ -202,7 +191,7 @@ Five main ways to test your software product:
 
 ### Cost vs effort
 
-![](pics/testing_cost_vs_effort.png)
+![](pics/testing/testing_cost_vs_effort.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 200px;"  -->
 
 -- Notes --
 
@@ -237,11 +226,35 @@ Five main ways to test your software product:
 
 ### Advise
 
-* Proper bug-fixing process<!-- .element class="fragment" data-fragment-index="0" -->
+Set up bug-fixing process
+  * Thorough
+  * Integrated in SSDLC
   * Fast
   * Reliable
-* Embrace external researchers<!-- .element class="fragment" data-fragment-index="1" -->
-  * Acknowledge
-  * Cooperate
-  * Thank
-* Never, EVER claim you're unhackable<!-- .element class="fragment" data-fragment-index="2" -->
+
+--
+
+## Testing
+<hr />
+
+### Advise
+
+1. Internal testing<!-- .element class="fragment" data-fragment-index="0" -->
+2. External Pentesting<!-- .element class="fragment" data-fragment-index="1" -->
+3. Private Bug-bounties<!-- .element class="fragment" data-fragment-index="2" -->
+4. Public Bug-bounties<!-- .element class="fragment" data-fragment-index="3" -->
+
+Add Responsible Disclosure if SSDLC is mature<!-- .element class="fragment" data-fragment-index="4" -->
+
+--
+
+## Testing
+<hr />
+
+### Advise
+
+Embrace external researchers
+* Acknowledge
+* Cooperate
+* Thank
+* Never, EVER claim you're unhackable<!-- .element class="fragment" -->

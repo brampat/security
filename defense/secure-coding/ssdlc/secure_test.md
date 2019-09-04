@@ -44,7 +44,7 @@ Examples of these are:
 * [Bitfi](https://www.zdnet.com/article/unhackable-bitfi-cryptocurrency-wallet-just-got-hacked/) crypto-wallet
 * [eyeDisk](https://www.zdnet.com/article/unhackable-biometric-drive-exposed-passwords-in-clear-text/) flashdrive
 
-![](../../../publications/presentation/pics/unhackable.jpg)
+![](../../../publications/presentation/pics/testing/unhackable.jpg)
 
 ### Responsible disclosure process
 
@@ -150,14 +150,14 @@ Internal testing is all about maturity of SSDLC:
 
 ## Comparison
 
-![](../../../publications/presentation/pics/testing_control_vs_exposure.png)
+![](../../../publications/presentation/pics/testing/testing_control_vs_exposure.png)
 
 * With more exposure comes less control
 * Saying you're unhackable is basically the bullseye on your head
 
 ### Cost vs effort
 
-![](../../../publications/presentation/pics/testing_cost_vs_effort.png)
+![](../../../publications/presentation/pics/testing/testing_cost_vs_effort.png)
 
 
 ## Advise
