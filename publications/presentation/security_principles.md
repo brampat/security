@@ -86,3 +86,28 @@ There is debate on extending CIA, with multiple options, including this diagram.
 * **D** enial of Service (A): [DDoS-er caught](https://tweakers.net/reviews/6031/een-ddoser-betrapt-hoe-de-aanvaller-tegen-de-lamp-liep.html) (Dutch)
 * **E** levation of privilege (C / I): iPhone Jailbreaking / Account takeover / iCloud-hacking
 
+--
+
+## Security Principles
+<hr />
+
+### Pyramid of Pain
+
+![](./pics/Pyramid_of_Pain_v2.png)<!-- .element style="box-shadow:none; position: fixed; top: 260px; right: 200px; width: 575px; z-index: -100;"  -->
+
+
+<span>Detection</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; bottom: 60px; left: 340px; z-index: -100;"  -->
+<span>Attacker</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 210px; left: 340px; z-index: -100;"  -->
+<span>Workaround</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; right: 240px; z-index: -100;"  -->
+<span>Sophistication</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; left: 50px; z-index: -100;"  -->
+![](./pics/hacker-3.png)<!-- .element style="box-shadow:none; position: fixed; top: 250px; left: 130px; width: 100px; background-color: #ffffff;" -->
+![](./pics/hat_black.png)<!-- .element style="box-shadow:none; position: fixed; top: 350px; left: 100px; width: 100px; background-color: #ffffff;" -->
+![](./pics/script.png)<!-- .element style="box-shadow:none; position: fixed; top: 450px; left: 70px; width: 100px; background-color: #ffffff;" -->
+
+
+-- Notes --
+
+* Pyramid of Pain shows indicators on different levels to detect attacks / attackers.
+* Blocking the attacks based on these indicators is easily circumvented or very hard to do, indicated by the pain-level. Eg:
+  * Hash values of malicious files are trivial to change, so not effective / no pain
+
