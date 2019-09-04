@@ -927,6 +927,9 @@ login(username, password) {
 
 ## Defense: Brute-force attack
 
+![](pics/strong_passwords.png)<!-- .element style="position: fixed; width: 900px; top: 280px;" -->
+
+<!--
 |        | 10x lower | 'Ulllll99' | 8x alphanum | 10x alphanum |
 |--------|----------:|-----------:|------------:|-------------:|
 | MD5    |     6 sec |      0 sec |       9 sec |     10 hours |
@@ -935,4 +938,4 @@ login(username, password) {
 | SHA512 |     4 min |      0 sec |       6 min |      18 days |
 | SCRYPT |    6 days |      2 min |      9 days |    104 years |
 | BCRYPT |  221 days |     1 hour |    341 days |  3 millennia |
-
+-->
