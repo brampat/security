@@ -103,12 +103,20 @@
 * [OWASP JuiceShop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project) vulnerable webapplication
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
+* [Forensics CTF images](https://dfir.training/resources/downloads/ctf-forensic-test-images)
 
 ### CTF's
 * [PicoCTF](https://picoctf.com/)
 
 ### Lists of practice sites and VM's
 * [OWASP maintained list](https://github.com/OWASP/OWASP-VWAD) contains both online, offline and VM vulnerable applications
+
+### Cicada 3301
+* 4-part documentary on Cicada 3301 puzzles:
+  * [Part 1](https://www.youtube.com/watch?v=RatbYqc0-jE)
+  * [Part 2](https://www.youtube.com/watch?v=Rx8pfheh6aI)
+  * [Part 3](https://www.youtube.com/watch?v=HRYyhdTHraU)
+  * [Part 4](https://www.youtube.com/watch?v=GanHp3XCYgg)
 
 ---------------
 Sources:
