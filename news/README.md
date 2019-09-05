@@ -8,7 +8,6 @@ Collection of links to Hack-related news
   * [Cybermonitor](https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections) github.
   * [Zack Whittaker](https://us18.campaign-archive.com/home/?u=e1ad6038c994abec17dafb116&id=a2457dc8ad) This week in Security
 
-
 ## Podcasts
 * [Smashing Security](https://www.smashingsecurity.com/): Security news with [Graham Cluley](https://twitter.com/gcluley) and [Carole Theriault](https://twitter.com/caroletheriault)
 * [Darknet Diaries](https://darknetdiaries.com/): Dark stories from the web with [Jack Rhysider](https://twitter.com/JackRhysider)
@@ -17,10 +16,22 @@ Collection of links to Hack-related news
 
 ## 2019
 
+### September
+*  4: Config provisioning SMS could install [malicious proxy](https://thehackernews.com/2019/09/just-sms-could-let-remote-attackers.html) on Android phones to sniff internet and email
+*  2: Additional news uncovers important role planting Stuxnet at Natanz by [Dutch mole](https://news.yahoo.com/revealed-how-a-secret-dutch-mole-aided-the-us-israeli-stuxnet-cyber-attack-on-iran-160026018.html)
+
 ### August
+* 30: Twitter CEO Jack Dorsey [SIM-Swapped](https://www.wired.com/story/jack-dorsey-twitter-hacked/) to post fake Twitter messages
+* 30: Untargetted iOS [spyware infections](https://www.wired.com/story/ios-attack-watering-hole-project-zero/) to mass-surveillance large groups (presumably Chinese Uighur) rewrites the rules on iPhone hacking
+  * (Sept 1): Same attackers also launched [Android and Windows attacks](https://www.forbes.com/sites/thomasbrewster/2019/09/01/iphone-hackers-caught-by-google-also-targeted-android-and-microsoft-windows-say-sources/) through the same infected websites
 * 30: DDS Safe backup-service for dental patient data hit by [ransomware](https://thehackernews.com/2019/08/dds-safe-dental-ransomware-attack.html)
 * 29: Google extends bug-bounty program to [data abuse and all Play store apps](https://thehackernews.com/2019/08/google-data-abuse-bug-bounty.html)
+* 28: Apple [disables Siri command review](https://techcrunch.com/2019/08/28/apple-is-turning-siri-audio-clip-review-off-by-default-and-bringing-it-in-house/) and brings Siri AI training inhouse
+* 28: Magecart hackers compromised another 80 eCommerce sites with [creditcard skimming](https://thehackernews.com/2019/08/magecart-hacking-credit-card.html) software
+* 27: US Border Patrol [denies access](https://techcrunch.com/2019/08/27/border-deny-entry-united-states-social-media/) based on received Social Media messages
+* 27: WAF Provider [Imperva breach](https://thehackernews.com/2019/08/imperva-waf-breach.html) exposes sensitive customer data including SSL Certs and API keys
 * 27: In depth story on Cyber-insurance and the way they [fuel](https://www.propublica.org/article/the-extortion-economy-how-insurance-companies-are-fueling-a-rise-in-ransomware-attacks) Ransomware attacks
+* 26: US Cybersecurity Infrastructure Security Agency fears 2020 election to be targeted by [ransomware attacks](https://www.reuters.com/article/us-usa-cyber-election-exclusive-idUSKCN1VG222)
 * 21: [Backdoor](https://threatpost.com/backdoor-found-in-utility-for-linux/147581/) found in Linux and Unix administration-tool Webmin
 * 21: Google [blocks](https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html) Kazakhstan government surveillance root-cert
 * 21: Mozilla [blocks](https://security.googleblog.com/2019/08/protecting-chrome-users-in-kazakhstan.html) Kazakhstan government surveillance root-cert
