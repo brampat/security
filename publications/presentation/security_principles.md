@@ -37,11 +37,11 @@
 * Car-hacking<!-- .element: class="fragment" data-fragment-index="1" -->
 * SQL injection insert / update<!-- .element: class="fragment" data-fragment-index="1" -->
 
-![](./pics/ssl_lock.jpg)<!-- .element style="position: fixed; top: 160px; right: 280px; width: 275px;" class="fragment" data-fragment-index="0" -->
+![](./pics/ssl_lock.jpg)<!-- .element style="position: fixed; top: 160px; right: 180px; width: 275px;" class="fragment" data-fragment-index="0" -->
 
 ![](./pics/baby_phone_2.png)<!-- .element style="position: fixed; top: 280px; right: 20px; width: 375px;" class="fragment" data-fragment-index="1" -->
-![](./pics/sluizen.png)<!-- .element style="position: fixed; top: 140px; right: 190px; width: 375px;" class="fragment" data-fragment-index="1" -->
-![](./pics/stuxnet.png)<!-- .element style="position: fixed; top: 370px; left: 10px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](./pics/sluizen.png)<!-- .element style="position: fixed; bottom: 40px; right: 10px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](./pics/stuxnet.png)<!-- .element style="position: fixed; bottom: 70px; left: 10px; width: 375px;" class="fragment" data-fragment-index="1" -->
 ![](./pics/jeep_cherokee.png)<!-- .element style="position: fixed; top: 390px; left: 320px; width: 275px;" class="fragment" data-fragment-index="1" -->
 
 --

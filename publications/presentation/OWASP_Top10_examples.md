@@ -170,7 +170,10 @@ In prioritized order
 
 -- Notes --
 
-Although Data-breaches (with password-leaks) themselves are not the actual attack, they enable credential stuffing, which is an excellent example of broken authentication
+* Although Data-breaches (with password-leaks) themselves are not the actual attack, they enable credential stuffing, which is an excellent example of broken authentication
+* More info on how RockYou changed the way account hacking is done on [Darknet Diaries episode 33](https://darknetdiaries.com/episode/33/)
+  * In 2009 a hacker broke into a website with millions of users and downloaded the entire user database. What that hacker did with the data has changed the way we view account security even today.
+  * Download the RockYou password list [here](https://wiki.skullsecurity.org/Passwords)
 
 --
 
