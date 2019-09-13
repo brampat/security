@@ -94,10 +94,5 @@ Additionally the team could also add the extended CIA aspects of:
 * Code validation
 * Authentication
 
-## Tools:
-* OWASP Threat Dragon
-* OWASP [Cornucopia](https://www.owasp.org/index.php/OWASP_Cornucopia) Cardgame
-* Microsoft [Elevation of Privilege](https://www.microsoft.com/en-us/download/confirmation.aspx?id=20303) Threat Modeling Card Game
-
 Practice:
 * Bruce Wayne / Batman threat model
