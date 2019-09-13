@@ -95,6 +95,7 @@ What pops up in your mind?
 
 ## Intro
 <hr />
+
 * Age <20 ?<!-- .element: class="fragment" data-fragment-index="1" -->
 * Millionairs ?<!-- .element: class="fragment" data-fragment-index="2" -->
 * Self-thaught ?<!-- .element: class="fragment" data-fragment-index="3" -->

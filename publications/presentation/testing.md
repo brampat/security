@@ -229,6 +229,13 @@ Doing this with your internal team can decrease the monetary cost, but:
 ## Bug Bounties
 <hr />
 
+![](./pics/testing/hacker1.png)<!-- .element style="position: fixed; width: 850px; top: 70px; right: 50px; background-color: #ffffff;" -->
+
+--
+
+## Bug Bounties
+<hr />
+
 ![](pics/testing/bug_bounty_program.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 
