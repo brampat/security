@@ -44,6 +44,13 @@ Sources:
 * OWASP DevSlop Show: [Rapid Threat Model Prototyping](https://www.youtube.com/watch?v=6eUlRVzcbaU) with Geoffrey Hill
 * More [docs and material](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs) from Geoffrey Hill
 
+### Tools:
+* OWASP Threat Dragon
+* OWASP [Cornucopia](https://www.owasp.org/index.php/OWASP_Cornucopia) Cardgame
+* Microsoft [Elevation of Privilege](https://www.microsoft.com/en-us/download/confirmation.aspx?id=20303) Threat Modeling Card Game
+* [Backdoors & Breaches](https://www.blackhillsinfosec.com/webcast-introducing-backdoors-breaches-incident-response-card-game/) Incident Response Card Game
+* [Cubicles & Compromises](https://www.blackhillsinfosec.com/dungeons-dragons-meet-cubicles-compromises/)
+
 ## Protection of Source-code
 
 
