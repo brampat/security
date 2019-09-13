@@ -3,47 +3,46 @@
 ## Tools:
 
 ### Hardening, assessment and inventory
-* [ScoutSuite](https://github.com/nccgroup/ScoutSuite): Cloud Security auditing AWS, Google Cloud and Azure
-* [Prowler](https://github.com/toniblyx/prowler): CIS benchmarks and additional checks for security best practices in AWS
-* [CloudSploit](https://github.com/cloudsploit/scans): AWS security scanning checks
-* [CloudMapper](https://github.com/duo-labs/cloudmapper): Analyze AWS environments
-* [CloudTracker](https://github.com/duo-labs/cloudtracker): Find over-privileged IAM users and roles by comparing CloudTrail logs with current IAM policies
-* [AWS Security Benchmarks](https://github.com/awslabs/aws-security-benchmark): scrips and templates guidance related to the AWS CIS Foundation framework (Python)
-* [AWS Public IPs](https://github.com/arkadiyt/aws_public_ips): Fetch all public IP addresses tied to your AWS account. Works with IPv4/IPv6, Classic/VPC networking, and across all AWS services (Ruby)
-* [PMapper](https://github.com/nccgroup/PMapper): Advanced and Automated AWS IAM Evaluation (Python)
-* [AWS-Inventory](https://github.com/nccgroup/aws-inventory): Make a inventory of all your resources across regions (Python)
-* [Resource Counter](https://github.com/disruptops/resource-counter): Counts number of resources in categories across regions
-* [ICE](https://github.com/Teevity/ice): Ice provides insights from a usage and cost perspective, with high detail dashboards.
-* [SkyArk](https://github.com/cyberark/SkyArk): SkyArk provides advanced discovery and security assessment for the most privileged entities in the tested AWS. 
-* [Trailblazer AWS](https://github.com/willbengtson/trailblazer-aws): Trailblazer AWS, determine what AWS API calls are logged by CloudTrail and what they are logged as. You can also use TrailBlazer as an attack simulation framework.
-* [Lunar](https://github.com/lateralblast/lunar): Security auditing tool based on several security frameworks (it does some AWS checks)
-* [Cloud-reports](https://github.com/tensult/cloud-reports): Scans your AWS cloud resources and generates reports
-* [Pacbot](https://github.com/tmobile/pacbot): Platform for continuous compliance monitoring, compliance reporting and security automation for the cloud
-* [cs-suite](https://github.com/SecurityFTW/cs-suite): Integrates tools like Scout2 and Prowler among others 
-* [aws-key-disabler](https://github.com/te-papa/aws-key-disabler): A small lambda script that will disable access keys older than a given amount of days
 * [Antiope](https://github.com/turnerlabs/antiope/): AWS Inventory and Compliance Framework
-* [FunctionShield](https://www.puresec.io/function-shield) A free AWS Lambda security library for developers, providing runtime protection such as: outbound network blocking, disable shell processes, /tmp/ disk I/O operations and prevents leakage of the handler's source code.
-* [Cloud Reports](https://github.com/tensult/cloud-reports) Scans your AWS cloud resources and generates reports, includes security best practices.
-* [Terraform AWS Secure Baseline](https://github.com/nozaq/terraform-aws-secure-baseline) Terraform module to set up your AWS account with the secure baseline configuration based on CIS Amazon Web Services Foundations. 
+* [AWS-Inventory](https://github.com/nccgroup/aws-inventory): Make a inventory of all your resources across regions (Python)
+* [AWS key disabler](https://github.com/te-papa/aws-key-disabler): A small lambda script that will disable access keys older than a given amount of days
+* [AWS Public IPs](https://github.com/arkadiyt/aws_public_ips): Fetch all public IP addresses tied to your AWS account. Works with IPv4/IPv6, Classic/VPC networking, and across all AWS services (Ruby)
+* [AWS Security Benchmarks](https://github.com/awslabs/aws-security-benchmark): scrips and templates guidance related to the AWS CIS Foundation framework (Python)
 * [Cartography](https://github.com/lyft/cartography): Cartography is a Python tool that consolidates infrastructure assets and the relationships between them in an intuitive graph view powered by a Neo4j database. 
-* [TrailScraper](https://github.com/flosell/trailscraper): A command-line tool to get valuable information out of AWS CloudTrail
-* [LambdaGuard](https://github.com/Skyscanner/LambdaGuard): An AWS Lambda auditing tool designed to create asset visibility and provide actionable results.
-* [Komiser](https://github.com/mlabouardy/komiser): Cloud Environment Inspector, nalyze and manage cloud cost, usage, security, and governance in one place.
-* [Perimeterator](https://github.com/darkarnium/perimeterator): AWS perimeter monitoring: Periodically scan internet facing AWS resources to detect misconfigured services
+* CloudGuard [Dome9](https://www.checkpoint.com/products/cloud-security-orchestration): Public cloud security and compliance orchestration for AWS, Azure and Google Cloud Platform
+* [CloudMapper](https://github.com/duo-labs/cloudmapper): Analyze AWS environments
+* [Cloud-reports](https://github.com/tensult/cloud-reports): Scans your AWS cloud resources and generates reports
 * [CloudSploit](https://cloudsploit.com): Commercial Cloud Security and configuration scanner for Amazon AWS, Microsoft Azure and (coming soon) GitHub
+* [CloudSploit](https://github.com/cloudsploit/scans): AWS security scanning checks
+* [CloudTracker](https://github.com/duo-labs/cloudtracker): Find over-privileged IAM users and roles by comparing CloudTrail logs with current IAM policies
+* [cs-suite](https://github.com/SecurityFTW/cs-suite): Integrates tools like Scout2 and Prowler among others
+* [FunctionShield](https://www.puresec.io/function-shield) A free AWS Lambda security library for developers, providing runtime protection such as: outbound network blocking, disable shell processes, /tmp/ disk I/O operations and prevents leakage of the handler's source code.
+* [ICE](https://github.com/Teevity/ice): Ice provides insights from a usage and cost perspective, with high detail dashboards.
+* [Komiser](https://github.com/mlabouardy/komiser): Cloud Environment Inspector, nalyze and manage cloud cost, usage, security, and governance in one place.
+* [LambdaGuard](https://github.com/Skyscanner/LambdaGuard): An AWS Lambda auditing tool designed to create asset visibility and provide actionable results.
+* [Lunar](https://github.com/lateralblast/lunar): Security auditing tool based on several security frameworks (it does some AWS checks)
+* [Pacbot](https://github.com/tmobile/pacbot): Platform for continuous compliance monitoring, compliance reporting and security automation for the cloud
+* [Perimeterator](https://github.com/darkarnium/perimeterator): AWS perimeter monitoring: Periodically scan internet facing AWS resources to detect misconfigured services
+* [PMapper](https://github.com/nccgroup/PMapper): Advanced and Automated AWS IAM Evaluation (Python)
+* [Prowler](https://github.com/toniblyx/prowler): CIS benchmarks and additional checks for security best practices in AWS
+* [Resource Counter](https://github.com/disruptops/resource-counter): Counts number of resources in categories across regions
+* [ScoutSuite](https://github.com/nccgroup/ScoutSuite): Cloud Security auditing AWS, Google Cloud and Azure
+* [SkyArk](https://github.com/cyberark/SkyArk): SkyArk provides advanced discovery and security assessment for the most privileged entities in the tested AWS. 
+* [Terraform AWS Secure Baseline](https://github.com/nozaq/terraform-aws-secure-baseline) Terraform module to set up your AWS account with the secure baseline configuration based on CIS Amazon Web Services Foundations. 
+* [Trailblazer AWS](https://github.com/willbengtson/trailblazer-aws): Trailblazer AWS, determine what AWS API calls are logged by CloudTrail and what they are logged as. You can also use TrailBlazer as an attack simulation framework.
+* [TrailScraper](https://github.com/flosell/trailscraper): A command-line tool to get valuable information out of AWS CloudTrail
 
 ### Monitoring and auditing
-* [Security Monkey](https://github.com/Netflix/security_monkey)
-* [Krampus](https://github.com/sendgrid/krampus) (as Security Monkey complement)
-* [Cloud Inquisitor](https://github.com/RiotGames/cloud-inquisitor)
-* [CloudCustodian](https://github.com/capitalone/cloud-custodian)
-* [AWS key disabler](https://github.com/te-papa/aws-key-disabler): Disable keys after X days
-* [Repokid](https://github.com/Netflix/repokid): Least Privilege
-* [Wazuh CloudTrail module](https://documentation.wazuh.com/current/amazon/index.html)
-* [Hammer](https://github.com/dowjones/hammer)
-* [Streamalert](https://github.com/airbnb/streamalert)
 * [Billing Alerts CFN templates](https://github.com/btkrausen/AWS/tree/master/CloudFormation/Billing%20Alerts)
+* [CloudCustodian](https://github.com/capitalone/cloud-custodian)
+* [Cloud Inquisitor](https://github.com/RiotGames/cloud-inquisitor)
+* [Hammer](https://github.com/dowjones/hammer)
+* [Krampus](https://github.com/sendgrid/krampus) (as Security Monkey complement)
+* [Repokid](https://github.com/Netflix/repokid): Least Privilege
+* [Security Monkey](https://github.com/Netflix/security_monkey)
+* [Streamalert](https://github.com/airbnb/streamalert)
 * [Watchmen](https://github.com/iagcl/watchmen): AWS account compliance using centrally managed Config Rules
+* [Wazuh CloudTrail module](https://documentation.wazuh.com/current/amazon/index.html)
 
 #### Network / Endpoints
 * FireEye
