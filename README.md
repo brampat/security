@@ -11,6 +11,11 @@ If you see any information that originated from you and you would like to have i
 
 Do NOT use this knowledge for any illegal activities and / or any activities that you do NOT have explicit authorization to do so. Failure to gain authorization BEFORE you even try to hack a system may result in prosecution and punishment in either confinement and / or fines.
 
+## Main Security Resources
+* [OWASP](https://www.owasp.org): Open Web Application Security Project
+* [Center for Internet Security](https://www.cisecurity.org/)
+* [SANS](https://www.sans.org/): Institute for Information Security Training
+
 ## Getting started
 * [How to get your first job as a hacker](https://medium.com/@hakluke/how-to-get-your-first-job-as-a-hacker-7c1f5c4bf4b3) - Luke Stephens<br>
 * [Careers in Security, Ethical Hacking and advice on getting started](https://www.troyhunt.com/careers-in-security-ethical-hacking-and-advice-on-where-to-get-started/) - Troy Hunt<br>
