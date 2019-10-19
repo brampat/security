@@ -239,7 +239,7 @@ These tools help to crack passwords
 ## Sensitive Data Exposure: attack
 <hr />
 
-![](pics/gevers_chinese_mongodb.png)<!-- .element style="width: 400px;" -->
+![](pics/cia/gevers_chinese_mongodb.png)<!-- .element style="width: 400px;" -->
 
 [Breed-ready status](https://www.bleepingcomputer.com/news/security/creepy-database-lists-breedready-status-for-18-million-women/)<!-- .element style="position: fixed; width: 400px; bottom: 100px; right: 100px;" -->
 

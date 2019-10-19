@@ -10,7 +10,7 @@
 
 ![](./pics/twitter.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 50px;" --> brampatelski<br>
 ![](./pics/linkedin.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 50px;" --> brampatelski<br>
-![](./pics/github.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 50px;" --> brampat<br>
+![](./pics/github.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 50px;" --> brampat.github.io<br>
 
 ![](./pics/ordina.jpeg)<!-- .element style="position: fixed; bottom: 10px; right: 20px; width: 150px;" -->
 
@@ -24,7 +24,7 @@
 
 ![](./pics/Den_Hack.png)<!-- .element style="position: fixed; top: 290px; right: 20px; width: 250px; background-color: #444444;" -->
 ![](./pics/SecAppDev.png)<!-- .element style="position: fixed; top: 260px; left: 280px; width: 150px;" -->
-![](./pics/OWASP_Chapter_meetup.png)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
+![](./pics/owasp.jpeg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
 ![](./pics/Tweakers_Meetup_Security.png)<!-- .element style="position: fixed; top: 290px; left: 20px; width: 250px;" -->
 ![](./pics/Tweakers_Meetup_XL_-_Security___Privacy.jpeg)<!-- .element style="position: fixed; top: 160px; right: 80px; width: 250px;" -->
 ![](./pics/Secure_Programming_Foundation.png)<!-- .element style="position: fixed; top: 380px; left: 30px; width: 150px;" -->
@@ -80,4 +80,3 @@
 * Tanya Janca - Cloud Advocate at Microsoft
 * Edwin van Andel - Zerocopter hacker platform
 
-* Kevin Mitnick - Worlds most famous hacker (actually only social engineer)

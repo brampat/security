@@ -1,52 +1,41 @@
 ## Secure Software Development
 <hr />
 
+![](pics/ssdlc/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
 
 --
 
 ## Project Trilemma
 <hr />
 
-![](pics/project_triangle.png)<!-- .element style="box-shadow:none; position: middle; width: 500px;" -->
+![](pics/ssdlc/project_triangle.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; width: 500px;" -->
 
-Pick any 2
+
+Who:<!-- .element class="fragment" data-fragment-index="0" -->
+* Struggles with Project Trilemma?<!-- .element class="fragment" data-fragment-index="0" -->
+* Has no security requirements?<!-- .element class="fragment" data-fragment-index="1" -->
 
 -- Notes --
 
-You can control any 2 elements, team / developers control the 3rd:
-* functionality for cheap, takes time
-* functionality quickly, expensive
-* cheap and quickly, not fully functional
+Clients want it all, for cheap and now
 
---
-
-## Project Trilemma: Test
-<hr />
-
-Please:
-* Stand if you struggle with Project Trilemma
-* Have a seat if you DON'T have clear requirements<!-- .element class="fragment" data-fragment-index="0" -->
-* Have a seat if you DO have clear security requirements<!-- .element class="fragment" data-fragment-index="1" -->
-* Everyone still standing should have:<!-- .element class="fragment" data-fragment-index="2" -->
-  * Clear requirements<!-- .element class="fragment" data-fragment-index="2" -->
-  * But no security requirements<!-- .element class="fragment" data-fragment-index="2" -->
-  * Struggles with Project Trilemma<!-- .element class="fragment" data-fragment-index="2" -->
-
-Perfect solution for you<!-- .element class="fragment" data-fragment-index="3" -->
+They can control any 2 elements, team / developers control the 3rd:
+* functionality for cheap, but it takes time
+* functionality quickly, but is expensive
+* cheap and quickly, but not fully functional
 
 --
 
 ## Project Trilemma: Solution
 <hr />
 
-* Functional
-* Fast
+* Functional complete
+* Fast to build
 * Cheap
-* Great UX (for dba-ers)<!-- .element class="fragment" data-fragment-index="0" -->
-* Sacrifice some security<!-- .element class="fragment" data-fragment-index="0" -->
-  * But that wasn't required<!-- .element class="fragment" data-fragment-index="0" -->
+* No security<!-- .element class="fragment" data-fragment-index="1" -->
+  * But that wasn't required<!-- .element class="fragment" data-fragment-index="1" -->
 
-![](pics/cheap_fast_fully_functional.png)<!-- .element style="box-shadow:none; position: fixed; right: 15px; top: 50px;" class="fragment" data-fragment-index="0" -->
+![](pics/ssdlc/cheap_fast_fully_functional.png)<!-- .element style="box-shadow:none; position: fixed; right: 15px; top: 150px;" class="fragment" data-fragment-index="0" -->
 
 -- Notes --
 
@@ -59,79 +48,66 @@ You can do everything, including:
 
 --
 
-## Development class 101
+## AppDev
 <hr />
 
+### Hello World 101
 ```php
 <?php
   echo 'Hello, World!';
 ?>
 ```
 
---
-
-## Development class 102
-<hr />
-
-```php
-<?php
+### Hello World 102<!-- .element class="fragment" data-fragment-index="0" -->
+<pre class="fragment" data-fragment-index="0"><code>&lt;?php
   echo 'Hello ' . $_GET["name"] . '!'; 
 ?>
-```
-
---
-
-## Secure Software Development class 101
-<hr />
-
-### XSS 101
-
-<pre><code>example.com/?name=Bram</code></pre>
-
-<pre class="fragment"><code>example.com/?name=<script>alert('XSS triggered')</script></code></pre>
-
---
-
-## Secure Software Development class 102
-<hr />
-
-### XSS Defense
-
-```php
-<?php
-  echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';
-?>
-```
+</code></pre>
 
 --
 
 ## Secure Software Development
 <hr />
 
-### Fixing bugs
+### XSS 101
+<pre><code>example.com/?name=Bram</code></pre>
+<pre><code>example.com/?name=<script>alert('XSS triggered')</script></code></pre>
 
-![](pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 160px; width: 650px;" -->
-
-Cost increases 30-100x<!-- .element style="z-index: -100; box-shadow:none; position: fixed; bottom: 20px; " -->
-
--- Notes --
-
-Early discovery leads to lower impact and cost to fix
-Late discovery increases cost exponentially
+### XSS Defense<!-- .element class="fragment" data-fragment-index="0" -->
+<pre class="fragment" data-fragment-index="0"><code>&lt;?php
+  echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!'; 
+?>
+</code></pre>
 
 --
 
-## Conventional Security effort
+
+## Secure Software Development 101
 <hr />
 
-![](pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" class="fragment" data-fragment-index="0" -->
-![](pics/ssdlc/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
+![](pics/ssdlc/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" -->
+![](pics/ssdlc/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " class="fragment" data-fragment-index="0" -->
 ![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
 
-Conventional Security:
+* Early discovery leads to lower impact and cost to fix
+* Late discovery increases cost exponentially
+* Cost increases 30-100x
+
+So what do we do?
 * Add pentesting
+
+--
+
+## Secure Software Development 101
+<hr />
+
+![](pics/ssdlc/truck_fixing.gif)<!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 100px; width: 600px;" -->
+
+-- Notes --
+
+Feels a bit like this:
 * Late discovery
 * Increased impact & cost
 * Lots of low-hanging fruit
@@ -139,20 +115,10 @@ Conventional Security:
 
 --
 
-## Conventional Security effort
+## Secure Software Development 102
 <hr />
 
-![](pics/truck_fixing.gif)<!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 100px; width: 600px;" -->
-
--- Notes --
-Feels a bit like this
-
---
-
-## Secure Software Development
-<hr />
-
-![](pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" -->
+![](pics/ssdlc/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" -->
 
 ![](pics/ssdlc/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
 
@@ -176,6 +142,14 @@ Feels a bit like this
 
 ![](https://imgs.xkcd.com/comics/security.png)
 
+<span style="box-shadow:none; position: fixed; right: 0px; bottom: 0px; font-size: 20px;" >Source: [XKCD 538](https://xkcd.com/538/)</span>
+
+-- Notes --
+
+* Risk assessment looks at actual threats
+* Attackers don't build supercomputers to crack 4096-bit encryption
+* They try the easy ways first, like forcing the user with a wrench
+
 Source: [Security reality](https://xkcd.com/538/)
 
 --
@@ -183,10 +157,17 @@ Source: [Security reality](https://xkcd.com/538/)
 ## Secure Software Development
 <hr />
 
-![](pics/ssdlc/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
-![](pics/risk_vs_impact.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 210px; width: 620px; z-index: -1;" -->
+### Impact vs Probability (*)
 
-* Risk = Impact X Probability
+![](pics/ssdlc/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+![](pics/ssdlc/risk_vs_impact.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 210px; width: 820px; z-index: -1;" -->
+
+(*) Or D.R.E.A.D.<!-- .element style="box-shadow:none; position: fixed; left: 0px; bottom: 0px;" class="fragment" data-fragment-index="0" -->
+
+-- Notes --
+
+See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for full risk model 
+
 * Risk Assessment
 * CIA Ratings
 * Quality Gates
@@ -202,6 +183,14 @@ Source: [Security reality](https://xkcd.com/538/)
 
 ### Tools
 
+![](pics/owasp.jpeg)<!-- .element style="box-shadow:none; position: fixed; right: 540px; top: 280px; width: 220px;" -->
+<span style="box-shadow:none; position: fixed; right: 620px; top: 520px; ">ASVS<span>
+![](pics/ssdlc/MS_elevation_of_privilege.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 250px; width: 220px;" -->
+![](pics/ssdlc/OWASP_Cornucopia.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 280px; top: 360px; width: 220px;" -->
+
+
+-- Notes --
+
 * OWASP [ASVS](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 * OWASP [Cornucopia](https://www.owasp.org/index.php/OWASP_Cornucopia)
 * Microsoft [Elevation of Privilege](https://www.microsoft.com/en-us/download/details.aspx?id=20303) cardgame
@@ -212,12 +201,16 @@ Source: [Security reality](https://xkcd.com/538/)
 <hr />
 
 ![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+![](pics/ssdlc/threat_model.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 160px; width: 820px; z-index: -1;" -->
+
+-- Notes --
+
 * Architecture Analysis
 * Threat Modelling
 * Attack Surface Analysis
 * Security Architecture
 
-![](pics/threat_model.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 210px; width: 620px; z-index: -1;" -->
 
 --
 
@@ -228,10 +221,32 @@ Source: [Security reality](https://xkcd.com/538/)
 
 ![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
-![](pics/crossing.gif)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 220px; width: 520px;" -->
+![](pics/ssdlc/crossing.gif)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 220px; width: 520px;" -->
+
+-- Notes --
 
 * No default login credentials
 * Block on mechanism fail
+
+--
+
+## Secure Software Development
+<hr />
+
+### Secure design
+
+![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+![](pics/ssdlc/login_design.jpeg)<!-- .element style="box-shadow:none; position: fixed; left: 10px; top: 220px; width: 370px;" -->
+![](pics/ssdlc/login_design_2.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 220px; width: 370px;" -->
+![](pics/ssdlc/login_design_3.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 360px; width: 370px;" -->
+![](pics/ssdlc/login_design_4.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 510px; width: 370px;" -->
+
+<span style="box-shadow:none; position: fixed; right: 0px; bottom: 0px; font-size: 20px;" >Source: Helping customers secure their accounts - [Leif Dreizler](https://segment.com/blog/helping-customers-secure-their-accounts/)</span>
+
+-- Notes --
+
+
 
 --
 
@@ -242,7 +257,7 @@ Source: [Security reality](https://xkcd.com/538/)
 
 ### Tool
 
-![](pics/threatdragon_logo_image.svg)
+![](pics/ssdlc/threat_dragon.svg)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 160px;" -->
 
 OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 
@@ -253,13 +268,19 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 
 ![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
+![](pics/ssdlc/checkmarx.jpg)<!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 360px; width: 520px; z-index: -1;" -->
+![](pics/ssdlc/fortify.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 160px; width: 420px; z-index: -2;" -->
+![](pics/ssdlc/sonarqube_owasp_top10.png)<!-- .element style="box-shadow:none; position: fixed; left: 0px; top: 160px; width: 520px; z-index: -3;" -->
+
+-- Notes --
+
+* Use SAST tools with caution: It's no turn-key fix
+* Also: Cover OWASP Top 10 is nice, but no secure app
 * Static Code analysis (SAST):
   * QA: SonarQube, FindSecurityBugs, Checkmarx, Fortify, PumaScan, MS SDL for Azure
   * Dependencies & Licensing: OWASP Dependency-check, White-source, Snyk
 * Pair programming
 * Code review / Pull-requests
-
-![](pics/checkmarx.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
 
 --
 
@@ -270,7 +291,7 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 
 ![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
-![](pics/blacklist.png)<!-- .element style="box-shadow:none;" -->
+![](pics/ssdlc/blacklist.png)<!-- .element style="box-shadow:none;" -->
 
 --
 
@@ -281,9 +302,13 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 
 ![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
+* OWASP [Code Review](https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project) Project (Guide 2.0)
 * OWASP [Cheat Sheet](https://www.owasp.org/index.php/OWASP_Cheat_Sheet_Series) series
 * OWASP [Secure Coding](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide) Practices
 * OWASP [Top 10 Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls)
+
+![](pics/ssdlc/owasp_code_review_guide.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 150px; width: 280px;" -->
+
 
 --
 
@@ -298,6 +323,21 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 * OWASP [Top 10 Web Application Risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 * OWASP [Top 10 Mobile Risks](https://www.owasp.org/index.php/OWASP_Mobile_Security_Project#Top_Ten_Mobile_Risks)
 
+![](pics/ssdlc/OWASP_vul_control_graph.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 350px; width: 580px;" -->
+
+
+--
+
+## Secure Software Development
+<hr />
+
+### Dynamic Testing Tools
+
+* OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) (with [HUD](https://www.youtube.com/watch?v=1hbKGDgx_p0))
+* Nessus, OpenVAS
+
+![](pics/ssdlc/OWASP_ZAP.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 320px; z-index: -1;" -->
+
 --
 
 ## Secure Software Development
@@ -305,24 +345,10 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 
 ![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
-* DAST Tools: OWASP ZAP, Nessus, OpenVAS
 * Basic Vulnerability scanning
 * Internal Red-teaming
 * Security Unit Testing
 * Security Smoke tests
-
-![](pics/nessus.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
-
---
-
-## Secure Software Development
-<hr />
-
-### Dynamic Testing Tool
-
-![](pics/OWASP_Zap.png)
-
-OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project): Zed Attack Proxy
 
 --
 
@@ -372,7 +398,7 @@ class SimpleControllerSpec extends Specification {
 
 ![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
-![](pics/pentesting_vs_ciso.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 170px; width: 500px; " -->
+![](pics/ssdlc/pentesting_vs_ciso.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 220px; width: 500px; " -->
 
 How Pentesters [think](https://www.youtube.com/watch?v=XKr3Vb9ABHs)
 
@@ -383,7 +409,7 @@ How Pentesters [think](https://www.youtube.com/watch?v=XKr3Vb9ABHs)
 
 ![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
-![](pics/apple_tree_.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 170px; width: 500px; " -->
+![](pics/ssdlc/apple_tree_.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 170px; width: 500px; " -->
 <hr /><!-- .element style="border-top: 3px solid #888888; position: fixed; top: 290px; width: 1000px; " class="fragment" data-fragment-index="1" -->
 <hr /><!-- .element style="border-top: 3px solid #888888; position: fixed; top: 390px; width: 1000px; " class="fragment" data-fragment-index="0" -->
 
@@ -430,7 +456,7 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
 * Advanced Code Review
 * Fuzz Testing
 
-![](pics/kali.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
+![](pics/ssdlc/kali.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
 
 --
 
@@ -440,6 +466,17 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
 ![](pics/ssdlc/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Secure Deployment
+* Secrets Vault
+* Server Hardening
+* Monitoring / Log aggregation:
+  * Splunk, ElasticStack
+* Patching & Updating
+
+![](pics/ssdlc/siemonster.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 210px; width: 500px; z-index: -1;" -->
+
+-- Notes --
+
+* Secure Deployment
 * Secrets Managements
 * Security Configuration
 * Server Hardening
@@ -447,7 +484,6 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
   * Splunk, ElasticStack, OSSIM, OSSEC, Apache Metron, SIEMonster
 * Patching & Updating
 
-![](pics/siemonster.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 410px; width: 520px; z-index: -1;" -->
 
 --
 
@@ -457,7 +493,13 @@ Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; 
 ![](pics/ssdlc/SSDLC_Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Phase-out Procedures
-* Safe removal of:
+* Secure removal
+* Data & Code Archiving
+
+-- Notes --
+
+* Phase-out Procedures
+* Secure removal of:
   * Application
   * Server
   * Connections (to and from)
