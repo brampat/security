@@ -96,10 +96,10 @@ Unless otherwise stated:
   
 ## Darknet & Hacker stories
 
-#### The darknet - Jamie Bartlett
+#### The darknet - [Jamie Bartlett](https://twitter.com/jamiejbartlett)
   * Book
   * Synopsis: Stories about the excesses of a free internet. Shows both sides of mostly controversial phenomenon, like webcam girls, crypto-currencies, information freedom, privacy
-#### The World's most dangerous geek, David Kushner
+#### The World's most dangerous geek, [David Kushner](https://twitter.com/davidkushner)
   * Book, Audiobook
   * Synopsis: Several stories of controversial crime enabled by technology, internet connectivity and sometimes hacking
 
@@ -172,14 +172,14 @@ will have eternal life either by continuously reparing diseases and aging by the
 
 ## Entertainment
 
-#### We are legion (we are Bob), Bobiverse #1 - Dennis E. Taylor
+#### We are legion (we are Bob), Bobiverse #1 - [Dennis E. Taylor](https://twitter.com/Dennis_E_Taylor)
   * Book, Audiobook
   * Fictional
   * Subjects: Cryogenics, AI, Interstellar travel, Terraforming, Von Neumann probes
   * Synopsis: Dot-com billionaire buys cryogenic-treatment and instantly dies only to wake up as a Von Neumann AI
   * For we are many - Bobiverse #2, Dennis E. Taylor 
   * All these worls - Bobiverse #3, Dennis E. Taylor
-#### Ready player one - Ernest Cline
+#### Ready player one - [Ernest Cline](https://twitter.com/erniecline)
   * Book, [Movie](https://www.imdb.com/title/tt1677720/)
   * Fictional
   * Subject: Privacy, Politics, Surveillance, SciFi, VR
