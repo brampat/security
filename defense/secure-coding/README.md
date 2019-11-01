@@ -61,6 +61,7 @@ independent from another request. So for example, there's no auto-save for the s
   * The new ways of [DevSecOps](https://www.youtube.com/watch?v=XByV6SBdpYA)
   * Making Security an [Integrated part](https://www.youtube.com/watch?v=GFd4RWVfhsM) of the Software Development Lifecycle by Siren Hofvander with [Siren Hofvander](https://twitter.com/securitypony)
 * [OWASP Encoding project](https://www.owasp.org/index.php/Category:OWASP_Encoding_Project)
+* [From OWASP Top 10 to Secure Applications](https://www.youtube.com/watch?v=nUUxLuio6rs) by Roberto Velasco @ Spring I/O 2019
 * [SAFECode](https://safecode.org/training/) On-demand web-casts
 * [Pragmatic Web Security](https://pragmaticwebsecurity.com/index.html#courses) by [Philippe De Ryck](https://twitter.com/philippederyck)
   * [From OWASP Top 10 to OWASP ASVS](https://pragmaticwebsecurity.com/talks/owaspasvs.html)
