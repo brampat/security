@@ -47,7 +47,7 @@
 
 ```update accounts set balance = 0;```<!-- .element: class="fragment" data-fragment-index="0" -->
 
-![](./pics/ssl_lock.jpg)<!-- .element style="position: fixed; top: 160px; right: 120px; width: 275px;" class="fragment" data-fragment-index="0" -->
+![](./pics/cia/2fa.jpg)<!-- .element style="position: fixed; top: 160px; right: 120px; width: 275px;" class="fragment" data-fragment-index="0" -->
 
 ![](pics/cia/baby_phone_2.png)<!-- .element style="position: fixed; bottom: 10px; right: 220px; width: 375px;" class="fragment" data-fragment-index="1" -->
 ![](pics/cia/sluizen.png)<!-- .element style="position: fixed; bottom: 180px; right: 0px; width: 375px;" class="fragment" data-fragment-index="1" -->
@@ -88,12 +88,12 @@ There is debate on extending CIA, with multiple options, including this diagram.
 ## Security Principles
 <hr />
 
-* **S** poofing (Integrity)
-* **T**ampering (Integrity)
-* **R** epudiation (Integrity)
-* **I** nformation disclosure (Confidentiality)
-* **D** enial of Service (Availability)
-* **E** levation of privilege (Confidentiality / Integrity)
+* **S** poofing
+* **T**ampering
+* **R** epudiation
+* **I** nformation disclosure
+* **D** enial of Service
+* **E** levation of privilege
 
 -- Notes --
 
@@ -104,7 +104,24 @@ There is debate on extending CIA, with multiple options, including this diagram.
 * **D** enial of Service (A): [DDoS-er caught](https://tweakers.net/reviews/6031/een-ddoser-betrapt-hoe-de-aanvaller-tegen-de-lamp-liep.html) (Dutch)
 * **E** levation of privilege (C / I): iPhone Jailbreaking / Account takeover / iCloud-hacking
 
+--
 
+## Security Principles
+<hr />
+
+* **D** amage
+* **R** eproducibility
+* **E** xploitability
+* **A** ffected users
+* **D** iscoverability
+
+-- Notes --
+
+* **D** amage – how bad would an attack be?
+* **R** eproducibility – how easy is it to reproduce the attack?
+* **E** xploitability – how much work is it to launch the attack?
+* **A** ffected users – how many people will be impacted?
+* **D** iscoverability – how easy is it to discover the threat?
 
 --
 
@@ -116,6 +133,7 @@ There is debate on extending CIA, with multiple options, including this diagram.
 ![](./pics/Pyramid_of_Pain_v2.png)<!-- .element style="box-shadow:none; position: fixed; top: 260px; right: 200px; width: 575px; z-index: -100;"  -->
 
 
+<span>Detection</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; left: 340px; z-index: -100;"  -->
 <span>Workaround</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; right: 240px; z-index: -100;"  -->
 <span>Sophistication</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; left: 50px; z-index: -100;"  -->
 ![](./pics/hacker-3.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 300px; left: 130px; width: 100px; background-color: #ffffff;" class="fragment" data-fragment-index="3" -->

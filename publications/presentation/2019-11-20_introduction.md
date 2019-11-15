@@ -17,6 +17,19 @@
 
 -- Notes --
 
+* Start Most Popular Programming languages in background
+  * At 2:58 Python comes in
+* Open [Python-clock](https://pythonclock.org/)
+* Strip everything from the page
+* Set title to Bram's Mystery page
+* Remove the URL
+
+Questions:
+* What is this timer?
+* Why is it important?
+* How did I strip the page?
+* Developer tools are one of AppSec's best friends:
+  * Go Hack yourself
 
 --
 
@@ -47,6 +60,7 @@
 * Intro
 * Security Principles
 * Secure Software Development
-* Bonus: 5 ways to do security testing
+* 5 ways to do security testing
+* Now what? (including more Python stuffz)
 
 TL;DR -> OWASP SAMM and expand from there<!-- .element style="box-shadow:none; position: fixed; left: 0px; bottom: 100px;" class="fragment" data-fragment-index="0" -->

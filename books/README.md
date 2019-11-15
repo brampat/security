@@ -103,8 +103,8 @@ Unless otherwise stated:
   * Book, Audiobook
   * Synopsis: Several stories of controversial crime enabled by technology, internet connectivity and sometimes hacking
 
-![The Darknet](the_darknet.jpg) 
-![The world's most dangerous geek](worlds_most_dangerous_geek.jpg) 
+![The Darknet](../publications/presentation/pics/resources/the_darknet.jpg) 
+![The world's most dangerous geek](../publications/presentation/pics/resources/worlds_most_dangerous_geek.jpg) 
 
 
 ## Movies

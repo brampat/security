@@ -21,10 +21,8 @@
 
 --
 
-## Testing
+## Five ways of testing
 <hr />
-
-### Five ways
 
 1. Internal testing
 2. Pentest
@@ -43,10 +41,8 @@ Five main ways to test your software product:
 
 --
 
-## Testing
+## Criteria
 <hr />
-
-### Criteria
 
 * Effort
 * Control
