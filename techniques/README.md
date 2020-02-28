@@ -17,6 +17,7 @@ Sub-pages:
   * Tools: [Wireshark](https://www.wireshark.org/)
 * [WiFi Sniffing](wifiSniffing.md)
 * [Beginner course](https://www.youtube.com/watch?v=WnN6dbos5u8) on Network penetration (15 hours over 11 weeks)
+  * [Homework for this training](https://github.com/hmaverickadams/Beginner-Network-Pentesting)
 
 ## Databases
 * SQL Injection [cheat-sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)

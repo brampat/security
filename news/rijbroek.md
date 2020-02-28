@@ -2,6 +2,11 @@
 
 Collection of (mostly Dutch) news-items on Rian van Rijbroek, the cyber-expert, hacker and leading expert authority on Smart Blockchain 
 
+## December
+https://www.ad.nl/enschede/ongewenste-relatie-cybercharlatan-rian-van-rijbroek-en-digi-rechercheur~ae03601b6/
+
+## October
+https://www.tubantia.nl/regio/gerard-sanderink-barsten-in-aureool-van-man-van-620-miljoen~a21256f7/
 
 ## September
 * 9 [Follow the Money](https://www.ftm.nl/artikelen/juridische-zakelijke-zelfverminking-gerard-sanderink): Juridische en zakelijke zelfverminking van Gerard Sanderink

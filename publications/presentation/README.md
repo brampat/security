@@ -18,7 +18,15 @@ You can create or customize your own slidedeck by creating a customized version 
 
 ### Starting the presentation
 
-* Start webserver with (needs Python):
+* Start webserver with (needs Python3):
+
+
+```python
+python3 -m http.server
+```
+
+#### Deprecated
+The old Python 2 way of doing this is:
 
 ```python
 python -m SimpleHTTPServer 8000

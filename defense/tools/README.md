@@ -302,6 +302,7 @@ The tools described can be integrated in CI/CD toolchains.
     * [ElastAlert](https://github.com/Yelp/elastalert)
     * Blog on [Security plugins](https://www.theserverside.com/feature/Detect-attacker-intent-with-Elasticsearch-security-plugins) for Elasticsearch
     * Elasticstack [scaling](https://www.elastic.co/blog/small-medium-or-large-scaling-elasticsearch-and-evolving-the-elastic-stack-to-fit)
+    * [RedELK](https://outflank.nl/blog/2019/02/14/introducing-redelk-part-1-why-we-need-it/): Red Team’s SIEM ([GitHub](https://github.com/outflanknl/RedELK/) )
   * [Backstory](https://chronicle.security/products/backstory/) from Google / Alphabet's [Chronicle](https://chronicle.security/)
   * [OSSIM](https://www.alienvault.com/products/ossim)
   * [OSSEC](http://www.ossec.net/)

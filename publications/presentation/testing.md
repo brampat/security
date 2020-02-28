@@ -6,16 +6,16 @@
 ## SSDLC
 <hr />
 
-![](pics/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" class="fragment" data-fragment-index="0" -->
 ![](pics/ssdlc/SDLC.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 800px; " -->
+![](pics/ssdlc/bug_cost.jpg)<!-- .element style="z-index: -100; box-shadow:none; position: fixed; left: 40px; top: 130px; width: 750px;" class="fragment" data-fragment-index="1" -->
 
-![](pics/ssdlc/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" class="fragment" data-fragment-index="2" -->
-![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" class="fragment" data-fragment-index="2" -->
-![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" class="fragment" data-fragment-index="2" -->
-![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" class="fragment" data-fragment-index="2" -->
-![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" class="fragment" data-fragment-index="1" -->
-![](pics/ssdlc/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" class="fragment" data-fragment-index="2" -->
-![](pics/ssdlc/SSDLC_Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" class="fragment" data-fragment-index="2" -->
+![](pics/ssdlc/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; left: 130px; top: 320px;" class="fragment" data-fragment-index="3" -->
+![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 320px;" class="fragment" data-fragment-index="3" -->
+![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; left: 350px; top: 320px;" class="fragment" data-fragment-index="3" -->
+![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; left: 460px; top: 320px;" class="fragment" data-fragment-index="3" -->
+![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; left: 570px; top: 320px;" class="fragment" data-fragment-index="2" -->
+![](pics/ssdlc/SSDLC_Config.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 320px;" class="fragment" data-fragment-index="3" -->
+![](pics/ssdlc/SSDLC_Cleanup.png)<!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 320px;" class="fragment" data-fragment-index="3" -->
 
 ![](pics/ssdlc/SSDLC_Left.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px;" class="fragment" data-fragment-index="3" -->
 
@@ -49,6 +49,9 @@ Five main ways to test your software product:
 * Cost
 * Exposure
 
+![](pics/testing/example_comparison.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 250px;"  -->
+
+
 -- Notes --
 
 * Effort: How much effort to set up / initiate
@@ -63,6 +66,7 @@ Five main ways to test your software product:
 
 ![](pics/testing/unhackable.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 50px;"  -->
 
+
 -- Notes --
 
 5. Say your product or service is unhackable
@@ -74,10 +78,17 @@ These "promises" are like a red cloth for a horde of bulls: They will storm it a
 ## Unhackable
 <hr />
 
-![](pics/testing/unhackable_pr.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
+![](pics/testing/unhackable_pr.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px; width: 700px;"  -->
+
+Companies are branding their stuff "unhackable" to get free pen-tests & publicity (*)<!-- .element style="box-shadow:none; position: fixed; left: 190px; top: 250px; width: 600px;"  -->
+
+(*) Edited for better reading, source in presentation-notes<!-- .element style="box-shadow:none; position: fixed; left: 10px; bottom: 20px; width: 600px; font-size: 10px;"  -->
+
+
 
 -- Notes --
 
+* [Source](https://twitter.com/_Freakyclown_/status/1170260326488715264)
 * It does give you free pen-tests, yes, but at what cost?
 * Bad PR, no PenTest report, no decent coverage, no handover
 
@@ -164,10 +175,15 @@ But they still claim something, except it's not verified for accuracy
 ## Pentest
 <hr />
 
-![](pics/hat_white.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
+![](pics/hat_white.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 150px;"  -->
+
+* Effort: Call us!
+* Control: Rules of Engagement
+* Cost: $$$
+* Exposure: NDA, external
+* Extra: Professionals, reporting, advise
 
 -- Notes --
-
 
 2. Hire pentesters to do this (most common way)
 
@@ -188,9 +204,10 @@ In contrast: a professional pentest can be:
 ## Internal Testing
 <hr />
 
-![](pics/testing/internal_testing.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
+* SSDLC (for real)
 
 -- Notes --
+
 
 1. Make developers test their own software
 
@@ -199,16 +216,32 @@ Doing this with your internal team can decrease the monetary cost, but:
 * You have virtually total control and no exposure outside the company (except leaks or if you choose to expose / transparency)
 
 
+* Effort: Training, doing, improving
+* Control: Internal, policy needed
+* Cost: Minimal $$$, but time
+* Exposure: NDA, internal
+
+--
+
+## Internal Testing
+<hr />
+
+![](pics/testing/internal_testing.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
+
 --
 
 ## Bug Bounties
 <hr />
 
-![](./pics/hackerone.png)<!-- .element style="position: fixed; width: 150px; top: 70px; right: 50px; background-color: #ffffff;" -->
-![](./pics/zerocopter.jpg)<!-- .element style="position: fixed; width: 150px; top: 140px; right: 170px; background-color: #ffffff;"  -->
-![](./pics/bugcrowd.jpeg)<!-- .element style="position: fixed; width: 150px; top: 210px; right: 0px; background-color: #ffffff;"  -->
+![](./pics/hackerone.png)<!-- .element style="position: fixed; width: 150px; top: 270px; right: 50px; background-color: #ffffff;" -->
+![](./pics/zerocopter.jpg)<!-- .element style="position: fixed; width: 150px; top: 340px; right: 210px; background-color: #ffffff;"  -->
+![](./pics/bugcrowd.jpeg)<!-- .element style="position: fixed; width: 150px; top: 430px; right: 3px; background-color: #ffffff;"  -->
 
-![](./pics/try_to_hack.png)<!-- .element style="position: fixed; width: 850px; bottom: 50px; lefty: 40px;" class="fragment" data-fragment-index="0" -->
+* Market for testers & companies
+
+![](./pics/testing/bounty-hunters.jpg)<!-- .element style="position: fixed; width: 450px; bottom: 50px; left: 30px; background-color: #ffffff;"  -->
+
+
 
 -- Notes --
 
@@ -219,13 +252,21 @@ Doing this with your internal team can decrease the monetary cost, but:
 * Control is reasonable, you could go private or public bounty program. Control follows the quality of mitigation process quality
   * Control is less when dealing with inexperienced bounty-hunters, so learn to deal (in positive ways) with those
   * Learn how these bug-bounty hunters think, extend a hand way forward to them
+* Cost is dependent on how many findings & nature you get, and what bounties you set.
+  * Better internal testing should get easy finds
+  * Better payout should draw in experienced bounty-hunters
+
+* Effort: Have IR, then call BB-platform
+* Control: Private or Public, Rules of Engagement
+* Cost: Depends on findings & payout
+* Exposure: Private or Public
 
 --
 
 ## Bug Bounties
 <hr />
 
-![](./pics/testing/hacker1.png)<!-- .element style="position: fixed; width: 850px; top: 70px; right: 50px; background-color: #ffffff;" -->
+![](./pics/testing/hacker1.png)<!-- .element style="position: fixed; width: 650px; top: 170px; right: 150px; background-color: #ffffff;" -->
 
 --
 
@@ -240,14 +281,20 @@ Doing this with your internal team can decrease the monetary cost, but:
 ## Responsible Disclosure
 <hr />
 
-![](pics/testing/security.txt.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
+* Contact-info
+* Easy to find
+* Rules of Engagement
+* One-sided promise
+* No contract
+
+![](pics/testing/security.txt.png)<!-- .element style="box-shadow:none; position: fixed; width: 500px; right: 150px; bottom: 150px;"  -->
 
 -- Notes --
 
 3. Have a responsible disclosure policy and hope someone (everyone) uses it
 
-* Effort setting up is easy: security.txt and fo
-  * Effort to handle is dependent on dev-team's ability to communicate with bug-reporters and fix bugs
+* Effort setting up is easy: security.txt and easy to find contact info
+  * Effort to handle is dependent on how good you are at incident response
 * Control depends on responsible disclosure rules (make them easy to read, though clear on feasible requirements)
   * Make sure you can fix bugs within short time-frame
   * Fixing in very short time-frame is PR bonus
@@ -255,13 +302,15 @@ Doing this with your internal team can decrease the monetary cost, but:
   * Geeky shirts and stickers are cool, but product and $$$ are better. Doesn't have to be $100k budget (unless you're Google / Facebook)
 * Exposure depends on product, PR, handling etc.
   * If you handle it badly, you WILL get exposure
-  * If you have a security-related product, you WILL get exposure: see BitFi, but also Tesla, secure USB's etc.
-  
-* Just add a formatted test-file to your site, add a nicely formatted page as well, and your good to go.
-* Wait: also add that response and mitigation process, because you also need it with this
-* Control is again: reasonable, as long as you respond quickly and reach out to security community, talk THEIR language
+  * If you have a security-related product, you WILL get exposure: see BitFi, secure USB's etc.
+  * If you handle these effectively AND pay & praise researchers, you could get good PR exposure: see Tesla, Google, Microsoft, Facebook (sometimes)
+
+Tips:
+* Setup incident response and mitigation process first (and practice)
+* Then add security.txt to your site, add a nicely formatted page as well, and your good to go.
+* Control: reasonable, if you respond quickly and reach out to security community, talk THEIR language
 * Cost is quite low. If you're a tech-company, think about paying in shirts, stickers or product, if it fits tech-savvy security researchers.
-* Do mind that you could get exposure, but you indirectly influence whether that will be negative or positive (again, depends on quality of response process)
+* Understand that you could get exposure, but you indirectly influence whether that will be negative or positive (again, depends on quality of response process)
 
 --
 
@@ -328,10 +377,11 @@ Doing this with your internal team can decrease the monetary cost, but:
 ### Advise
 
 Set up bug-fixing process
-  * Thorough
-  * Integrated in SSDLC
-  * Fast
-  * Reliable
+  * Test & practice
+  * Integrate in SSDLC
+  * Make it:
+    * Fast
+    * Reliable
 
 --
 
@@ -345,7 +395,7 @@ Set up bug-fixing process
 3. Private Bug-bounties<!-- .element class="fragment" data-fragment-index="2" -->
 4. Public Bug-bounties<!-- .element class="fragment" data-fragment-index="3" -->
 
-Add Responsible Disclosure if SSDLC is mature<!-- .element class="fragment" data-fragment-index="4" -->
+Add Responsible Disclosure whenever IR & SSDLC is mature<!-- .element class="fragment" data-fragment-index="4" -->
 
 --
 

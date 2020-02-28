@@ -16,6 +16,7 @@
 * [p0f](http://lcamtuf.coredump.cx/p0f3/): Offline / passive OS fingerprinter
 * [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
+  * [Lots of Burp-suite / PortSwigger tutorials](https://portswigger.net/web-security)
   * [Introduction to Burp-suite Pro](https://www.gracefulsecurity.com/introduction-to-burp-suite-pro/)
   * [Burp Macros](https://www.gracefulsecurity.com/burp-macros-re-authentication/)
 * OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)

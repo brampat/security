@@ -34,8 +34,21 @@
 ![](pics/cia/confidential.jpeg)<!-- .element style="position: fixed; top: 160px; right: 40px; width: 275px; " class="fragment" data-fragment-index="0" -->
 
 ![](pics/cia/gevers_chinese_mongodb.png)<!-- .element style="position: fixed; bottom: 30px; right: 20px; width: 250px;" class="fragment" data-fragment-index="1" -->
-![](./pics/webcam_1.png)<!-- .element style="position: fixed; top: 450px; left: 40px; width: 275px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/beautiful_info_data_breaches.png)<!-- .element style="position: fixed; top: 380px; right: 290px; width: 325px;" class="fragment" data-fragment-index="1"  -->
+![](./pics/webcam_1.png)<!-- .element style="position: fixed; top: 320px; left: 40px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/OnlyFans.jpg)<!-- .element style="position: fixed; top: 320px; right: 320px; width: 300px;" class="fragment" data-fragment-index="1"  -->
+![](pics/cia/beautiful_info_data_breaches.png)<!-- .element style="position: fixed; top: 480px; left: 90px; width: 225px;" class="fragment" data-fragment-index="1"  -->
+![](pics/cia/baby_phone_2.png)<!-- .element style="position: fixed; bottom: 10px; right: 280px; width: 325px;" class="fragment" data-fragment-index="1" -->
+
+-- Notes --
+
+Sources:
+* OnlyFans [dataleak](https://thenextweb.com/media/2020/02/28/massive-cache-stolen-onlyfans-videos-have-been-dumped-online/) 2020-02-28
+* Webcam Sauna [hack](https://publicnieuws.com/2018/03/beelden-naakte-oranje-handbalsters-op-pornosite/) 2018-03-07
+* China [unsecured MongoDB databases](https://twitter.com/0xdude/status/1102985184134287360?lang=en) 2019-03-05
+* Baby Monitor [hacking](https://www.google.com/search?q=baby+monitor+hacking&tbm=vid) 2013 through 2018
+  * [2013](https://www.youtube.com/watch?v=MXIWfuakeW4) news
+  * [2018](https://www.youtube.com/watch?v=IZJOHUfRo_o) Pedophiles hacking baby monitors
+  * [2015](https://www.youtube.com/watch?v=QZQqvYdQ9u4) True horror stories: I used to hack baby monitors
 
 --
 
@@ -49,10 +62,19 @@
 
 ![](./pics/cia/2fa.jpg)<!-- .element style="position: fixed; top: 160px; right: 120px; width: 275px;" class="fragment" data-fragment-index="0" -->
 
-![](pics/cia/baby_phone_2.png)<!-- .element style="position: fixed; bottom: 10px; right: 220px; width: 375px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/sluizen.png)<!-- .element style="position: fixed; bottom: 180px; right: 0px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/sluizen.png)<!-- .element style="position: fixed; bottom: 100px; right: 0px; width: 375px;" class="fragment" data-fragment-index="1" -->
 ![](pics/cia/stuxnet.png)<!-- .element style="position: fixed; bottom: 170px; left: 150px; width: 375px;" class="fragment" data-fragment-index="1" -->
 ![](pics/cia/jeep_cherokee.png)<!-- .element style="position: fixed; top: 390px; left: -20px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/citrix.png)<!-- .element style="position: fixed; bottom: 30px; left: 320px; width: 225px;" class="fragment" data-fragment-index="1" -->
+
+-- Notes --
+
+Sources:
+* Gas-pipe [hack](https://arstechnica.com/information-technology/2020/02/a-us-gas-pipeline-operator-was-infected-by-malware-your-questions-answered/) 2020-02-20
+* Nederlandse sluizen kwetsbaar voor [hack](https://www.agconnect.nl/artikel/nederlandse-sluizen-kwetsbaar-voor-hack) 2017-12-08
+* [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet) 2007-11-XX and 2010-04-XX
+* [Jeep Hacking](https://www.wired.com/video/watch/hackers-wireless-jeep-attack-stranded-me-on-a-highway) 2015-07-21
+* [Citrix VPN](https://www.cyberscoop.com/citrix-vulnerability-backdoor-fireeye/) hack - 2020-01-17
 
 --
 
@@ -64,9 +86,18 @@
 
 ```SQL drop database the_bank```<!-- .element: class="fragment" data-fragment-index="0" -->
 
-![](pics/cia/norsk_hydro.png)<!-- .element style="position: fixed; bottom: 50px; right: 220px; width: 275px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/notpetya.png)<!-- .element style="position: fixed; top: 140px; right: 90px; width: 275px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/DDoS.png)<!-- .element style="position: fixed; bottom: 70px; left: 10px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/norsk_hydro.png)<!-- .element style="position: fixed; bottom: 50px; right: 20px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/notpetya.png)<!-- .element style="position: fixed; top: 140px; right: 110px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/DDoS.png)<!-- .element style="position: fixed; bottom: 170px; left: 10px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/maastricht_ransomware.png)<!-- .element style="position: fixed; bottom: 20px; left: 310px; width: 375px;" class="fragment" data-fragment-index="1" -->
+
+-- Notes --
+
+Sources:
+* [NotPetya](https://www.cyberscoop.com/telebots-eset-notpetya-ukraine-link/) Ukraine hack - 2018-10-XX
+* [Norsk Hydro](https://techcrunch.com/2019/03/19/norsk-hydro-ransomware) Ransomware attack - 2019-03-19
+* [Maastricht University](https://www.bleepingcomputer.com/news/security/ransomware-hits-maastricht-university-all-systems-taken-down/) ransomware - 2019-12-23
+* [Catching a DDoS-er](https://tweakers.net/reviews/6031/een-ddoser-betrapt-hoe-de-aanvaller-tegen-de-lamp-liep.html) (Dutch) - 2018-02-18
 
 --
 
