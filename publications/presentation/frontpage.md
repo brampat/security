@@ -44,8 +44,8 @@
 ## Inspirational Heroes
 <hr />
 
-![](pics/heroes/shehackspurple.jpg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
 ![](pics/heroes/jim_manico.png)<!-- .element style="position: fixed; bottom: 140px; right: 140px; width: 150px;" -->
+![](pics/heroes/shehackspurple.jpg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
 ![](pics/heroes/freaky_clown.png)<!-- .element style="position: fixed; top: 310px; left: 190px; width: 150px;" -->
 ![](pics/heroes/jayson_e_street.jpeg)<!-- .element style="position: fixed; top: 490px; left: 10px; width: 150px;" -->
 ![](pics/heroes/jeremy_gosney.jpg)<!-- .element style="position: fixed; top: 330px; right: 300px; width: 150px;" -->
@@ -59,7 +59,7 @@
 ![](pics/heroes/edwin_van_andel.jpg)<!-- .element style="position: fixed; bottom: 20px; right: 10px; width: 150px;" -->
 ![](pics/heroes/wesley_neelen.png)<!-- .element style="position: fixed; bottom: 40px; right: 320px; width: 150px;" -->
 ![](pics/heroes/troy_hunt.jpg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
-![](pics/heroes/Chris_Kubecka.jpg)<!-- .element style="position: fixed; top: 320px; left: 350px; width: 150px;" -->
+![](pics/heroes/Chris_Kubecka.jpeg)<!-- .element style="position: fixed; top: 320px; left: 350px; width: 150px;" -->
 
 ![](pics/heroes/.jpeg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
 
