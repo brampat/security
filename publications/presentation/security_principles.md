@@ -3,7 +3,7 @@
 
 ### CIA - Pillars of Security
 
-![](pics/cia/CIA_2.png)<!-- .element style="box-shadow:none; position: fixed; top: 160px; right: 200px; width: 575px;"  -->
+![](pics/cia/CIA.png)<!-- .element style="box-shadow:none; position: fixed; top: 160px; right: 200px; width: 575px;"  -->
 
 -- Notes --
 
@@ -129,10 +129,10 @@ There is debate on extending CIA, with multiple options, including this diagram.
 -- Notes --
 
 * **S** poofing (I): IP / [Caller-ID](https://youtu.be/FO0iG_P0P6M?t=345) / Mail-address / [GPS](https://www.scmagazine.com/home/pokemon-go-cheaters-may-inadvertently-learn-gps-spoofing/)
-* **T**ampering (I): Ransomware / Data / Log-file / Cookie / [URL Query string](https://nos.nl/artikel/273011-alle-begrotingsstukken-openbaar.html)
+* **T**ampering (I): Data / Log-file / Cookie / [URL Query string](https://nos.nl/artikel/273011-alle-begrotingsstukken-openbaar.html)
 * **R** epudiation (I)
 * **I** nformation disclosure (C): Data-breaches: [Information is awesome](https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/) / [HIBP](https://haveibeenpwned.com)
-* **D** enial of Service (A): [DDoS-er caught](https://tweakers.net/reviews/6031/een-ddoser-betrapt-hoe-de-aanvaller-tegen-de-lamp-liep.html) (Dutch)
+* **D** enial of Service (A): Ransomware, [DDoS-er caught](https://tweakers.net/reviews/6031/een-ddoser-betrapt-hoe-de-aanvaller-tegen-de-lamp-liep.html) (Dutch)
 * **E** levation of privilege (C / I): iPhone Jailbreaking / Account takeover / iCloud-hacking
 
 --
@@ -148,8 +148,8 @@ There is debate on extending CIA, with multiple options, including this diagram.
 
 -- Notes --
 
-* **D** amage – how bad would an attack be?
-* **R** eproducibility – how easy is it to reproduce the attack?
+* **D** amage – how much damage could an attack cause?
+* **R** eproducibility – how easy is it to (re)produce the attack?
 * **E** xploitability – how much work is it to launch the attack?
 * **A** ffected users – how many people will be impacted?
 * **D** iscoverability – how easy is it to discover the threat?
@@ -174,8 +174,13 @@ There is debate on extending CIA, with multiple options, including this diagram.
 
 -- Notes --
 
+Sources:
+* [Initial article](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html) by David J Bianco
+* [Attackiq.com](https://attackiq.com/blog/2019/06/26/emulating-attacker-activities-and-the-pyramid-of-pain/)
+
 * Pyramid of Pain contains indicators to detect attacks / attackers on different levels.
-* Workarounds for blocking the attacks become harder higher up in the pyramid, indicated by the pain-level. Eg:
+* Mitigations can be put in place to block the attacks
+* Workarounds for these mitigations become harder higher up in the pyramid, indicated by the pain-level. Eg:
   * Hash values of malicious files are trivial to change, so not effective / no pain
   * Changing tools or techniques / procedures are very hard, so detecting and blocking those is very effective
 

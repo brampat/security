@@ -26,11 +26,12 @@
 
 * [Blog](https://brampat.github.io/) and [Security Braindump](https://github.com/brampat/security) by [me](https://twitter.com/brampatelski)
 * [Pushing Left like a Boss](https://medium.com/bugbountywriteup/pushing-left-like-a-boss-table-of-contents-42fd063a75bb) by Tanya Janca
+  * Tanya's new company [SheHacksPurple.dev](https://www.shehackspurple.dev/)
 * [John Opdenakker](https://johnopdenakker.com/)
 
 ![](pics/brpa.jpg)<!-- .element style="position: fixed; top: 200px; right: 100px; width: 150px; background:none; border:none; box-shadow:none; " -->
-![](pics/shehackspurple.jpg)<!-- .element style="position: fixed; top: 300px; right: 220px; width: 150px; background:none; border:none; box-shadow:none; " -->
-![](pics/John-Opdenakker.png)<!-- .element style="position: fixed; top: 400px; right: 340px; width: 150px; background:none; border:none; box-shadow:none; " -->
+![](pics/heroes/shehackspurple.jpg)<!-- .element style="position: fixed; top: 300px; right: 220px; width: 150px; background:none; border:none; box-shadow:none; " -->
+![](pics/heroes/John-Opdenakker.png)<!-- .element style="position: fixed; top: 400px; right: 340px; width: 150px; background:none; border:none; box-shadow:none; " -->
 
 
 --

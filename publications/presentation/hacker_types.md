@@ -98,7 +98,7 @@
 * Corporate revenge hacker
 
 ![](./pics/corporate_hacker.png)<!-- .element style="position: fixed; top: 150px; right: 20px; background-color: #ffffff;" -->
-![](./pics/edward_snowden_small.jpg)<!-- .element style="position: fixed; top: 420px; right: 120px; width: 350px; background-color: #ffffff;" -->
+![](pics/heroes/edward_snowden_small.jpg)<!-- .element style="position: fixed; top: 420px; right: 120px; width: 350px; background-color: #ffffff;" -->
 ![](./pics/superman.jpg)<!-- .element style="position: fixed; top: 450px; left: 120px; width: 350px; background-color: #ffffff;" -->
 
 -- Notes --

@@ -409,3 +409,11 @@ Embrace external researchers
 * Cooperate
 * Thank
 * Never, EVER claim you're unhackable<!-- .element class="fragment" -->
+
+--
+
+## (Re)Sources
+<hr />
+
+* [DawgyG](https://darknetdiaries.com/episode/60/)
+* [XBox Underground](https://darknetdiaries.com/episode/45/)
