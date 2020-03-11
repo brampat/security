@@ -3,7 +3,7 @@
 
 ### CIA - Pillars of Security
 
-![](pics/cia/CIA.png)<!-- .element style="box-shadow:none; position: fixed; top: 160px; right: 200px; width: 575px;"  -->
+![](pics/cia/cia.png)<!-- .element style="box-shadow:none; position: fixed; top: 160px; right: 200px; width: 575px;"  -->
 
 -- Notes --
 
