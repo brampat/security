@@ -163,6 +163,51 @@ But they still claim something, except it's not verified for accuracy
 ## Unhackable
 <hr />
 
+### Data Deposit Box
+
+![](pics/testing/data_deposit_box.png)
+
+-- Notes --
+
+Provides Secure Cloud backup protection
+100% protection!!!
+
+--
+
+## Unhackable
+<hr />
+
+### Data Deposit Box
+
+![](pics/testing/data-deposit-exposed.jpg)
+
+-- Notes --
+
+Yep, they leaked their own data, including unencrypted usernames and passwords (in logfiles).
+Data was stored in unprotected Amazon S3 bucket
+
+Source: [VPNMentor](https://www.vpnmentor.com/blog/report-datadepositbox-leak/)
+
+--
+
+## Unhackable
+<hr />
+
+### Data Deposit Box
+
+![](pics/testing/Data-Deposit-Box-logs.jpg)
+
+-- Notes --
+
+Don't ever log passwords
+
+Source: [VPNMentor](https://www.vpnmentor.com/blog/report-datadepositbox-leak/)
+
+--
+
+## Unhackable
+<hr />
+
 ![](pics/testing/unhackable.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 -- Notes --
