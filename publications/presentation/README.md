@@ -18,14 +18,18 @@ You can create or customize your own slidedeck by creating a customized version 
 
 ### Starting the presentation
 
-* Start webserver with (needs Python3):
-
+* Install [RevealJS](https://github.com/hakimel/reveal.js/releases) so that there is a sub-folder ```presentation/revealjs``` containing these folders with RevealJS's sources:
+  * css
+  * js
+  * lib
+  * plugin etc.
+* Start webserver with Python3 (preferred):
 
 ```python
 python3 -m http.server
 ```
 
-#### Deprecated
+* Or Python2 (deprecated)
 The old Python 2 way of doing this is:
 
 ```python
