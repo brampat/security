@@ -599,8 +599,25 @@ Sources:
 * Salting (Dynamic)
 
 ## References
-* [Passwords evolved](https://www.troyhunt.com/passwords-evolved-authentication-guidance-for-the-modern-era/)
+* [Passwords evolved](https://www.troyhunt.com/passwords-evolved-authentication-guidance-for-the-modern-era/) by [Troy Hunt](https://twitter.com/troyhunt)
 * [Administrator's guide to password research](https://www.microsoft.com/en-us/research/publication/an-administrators-guide-to-internet-password-research/)
+* NIST Digital Identity Guidelines [800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html)
+* [Effectiveness of several MFA types](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html) by Google
+
+### Password strength
+* Why [length beats complexity](https://malwarejake.blogspot.com/2015/10/why-is-length-complexity-because-math.html) in password strength by Malware Jake
 * [Analyzing password-strength meters](https://www.ndss-symposium.org/ndss2014/programme/very-weak-very-strong-analyzing-password-strength-meters/)
+
+### Password rotation
+* [Frequent Password changes is a bad security idea](https://www.schneier.com/blog/archives/2016/08/frequent_passwo.html) by [Bruce Schneier](https://www.schneier.com/)
+* The [Nonsense of Password rotation](https://johnopdenakker.com/the-non-sense-of-password-rotation/) by [John Opdenakker](https://twitter.com/j_opdenakker)
+* SANS Debate around [Password Rotation](https://www.sans.org/blog/the-debate-around-password-rotation-policies/) Policies
+
+### Password Managers
+Note that the use of password-managers to manage strong (long, unique and random) passwords is almost always much more secure than reusing weak passwords.
+Flaws in password managers often can only be exploited when the device has been compromised by malicious software, in which case the security of the password manager is not the thing to worry about.
+* [Choosing](https://freedom.press/training/blog/choosing-password-manager/) a Password manager
 * [Password manager hacking](https://www.securityevaluators.com/casestudies/password-manager-hacking/)
-* [Effectiveness of several MFA types](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html)
+* Several [security flaws](https://www.welivesecurity.com/2020/03/19/security-flaws-found-in-popular-password-managers/) found in popular Password Managers
+* Password managers can be [hacked](https://www.tomsguide.com/news/password-manager-hacks). What to do now. An article based on research from 2017-ish, sounding like it wants to spread FUD. The article missed the "Flawed PW Managers are almost always better than weak password reuse"-message
+* Password managers [easily compromised](https://www.itproportal.com/news/passwords-managers-easily-compromised-by-illegitimate-apps/) by illegitimate apps. Research addressing a flaw in app-identification by Password managers.
