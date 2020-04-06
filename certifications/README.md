@@ -45,7 +45,8 @@ Compared to CEH, this certification is much more challenging and valuable
 
 Preparation guides:
 * [From newbie to OSCP](http://niiconsulting.com/checkmate/2017/06/a-detail-guide-on-oscp-preparation-from-newbie-to-oscp/)
-
+* [OSCP-like VM's](https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview#) on Vulnhub (updated regularly)
+  * [OSCP Write-up](https://medium.com/@ranakhalil101/hack-the-box-safe-writeup-w-o-metasploit-c83b00185447) by [Rana Khalil](https://medium.com/@ranakhalil101)
 
 ## SANS
 
