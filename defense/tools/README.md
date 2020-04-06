@@ -263,7 +263,7 @@ The tools described can be integrated in CI/CD toolchains.
   * [Unhide](http://www.unhide-forensics.info/): Rootkit-finding file integrity checkers for Unix-based systems
 * Multi-tools
   * [Wazuh](https://wazuh.com/): OpenSource tool for threat detection, integrity monitoring, incident response and compliance
-
+  * [Dispatch](https://github.com/Netflix/dispatch) by Netflix, [Introduction Blog](https://medium.com/@NetflixTechBlog/introducing-dispatch-da4b8a2a8072), [Docs](https://hawkins.gitbook.io/dispatch/)
 ## Operation
 * Tools Integration:
   * [Nucleus](https://www.nucleussec.com/)
