@@ -193,7 +193,7 @@ Source: [VPNMentor](https://www.vpnmentor.com/blog/report-datadepositbox-leak/)
 ## Unhackable
 <hr />
 
-### Data Deposit Box
+### Data Deposit Box (open S3 bucket)
 
 ![](pics/testing/Data-Deposit-Box-logs.jpg)
 
@@ -202,6 +202,12 @@ Source: [VPNMentor](https://www.vpnmentor.com/blog/report-datadepositbox-leak/)
 Don't ever log passwords
 
 Source: [VPNMentor](https://www.vpnmentor.com/blog/report-datadepositbox-leak/)
+
+But only amateurs are so stupid?
+* [Twitter](https://www.adweek.com/digital/twitter-corrected-a-bug-that-caused-passwords-to-be-stored-in-plain-text/) did it (May 2018)
+* [Facebook](https://krebsonsecurity.com/2019/03/facebook-stored-hundreds-of-millions-of-user-passwords-in-plain-text-for-years/) did it (Mar 2019)
+* [Google](https://www.theverge.com/2019/5/21/18634842/google-passwords-plain-text-g-suite-fourteen-years) did it (May 2019)
+
 
 --
 
@@ -287,8 +293,12 @@ Doing this with your internal team can decrease the monetary cost, but:
 ![](./pics/testing/bounty-hunters.jpg)<!-- .element style="position: fixed; width: 450px; bottom: 50px; left: 30px; background-color: #ffffff;"  -->
 
 
-
 -- Notes --
+
+Platforms:
+* HackerOne
+* ZeroCopter
+* Bugcrowd
 
 4. Use a bug-bounty platform (private or public)
 

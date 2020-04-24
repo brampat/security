@@ -48,40 +48,6 @@ You can do everything, including:
 
 --
 
-## AppDev
-<hr />
-
-### Hello World 101
-```php
-<?php
-  echo 'Hello, World!';
-?>
-```
-
-### Hello World 102<!-- .element class="fragment" data-fragment-index="0" -->
-<pre class="fragment" data-fragment-index="0"><code>&lt;?php
-  echo 'Hello ' . $_GET["name"] . '!'; 
-?>
-</code></pre>
-
---
-
-## Secure Software Development
-<hr />
-
-### XSS 101
-<pre><code>example.com/?name=Bram</code></pre>
-<pre><code>example.com/?name=<script>alert('XSS triggered')</script></code></pre>
-
-### XSS Defense<!-- .element class="fragment" data-fragment-index="0" -->
-<pre class="fragment" data-fragment-index="0"><code>&lt;?php
-  echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!'; 
-?>
-</code></pre>
-
---
-
-
 ## Secure Software Development 101
 <hr />
 
@@ -103,7 +69,7 @@ So what do we do?
 ## Secure Software Development 101
 <hr />
 
-![](pics/ssdlc/truck_fixing.gif)<!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 100px; width: 600px;" -->
+![](pics/ssdlc/security_afterthought.gif)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 200px; width: 800px;" -->
 
 -- Notes --
 
@@ -150,6 +116,7 @@ Actual risks<!-- .element style="box-shadow:none; position: fixed; left: 270px; 
 
 -- Notes --
 
+Supports the requirements process by adding effective security requirements
 * Risk assessment looks at actual threats
 * Attackers don't build supercomputers to crack 4096-bit encryption
 * They try the easy ways first, like forcing the user with a wrench
@@ -166,7 +133,7 @@ Source: [Security reality](https://xkcd.com/538/)
 ![](pics/ssdlc/SSDLC_Risk.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 ![](pics/ssdlc/risk_vs_impact.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 210px; width: 820px; z-index: -1;" -->
 
-(*) Or D.R.E.A.D.<!-- .element style="box-shadow:none; position: fixed; left: 0px; bottom: 0px;" class="fragment" data-fragment-index="0" -->
+(*) Or D.R.E.A.D.<!-- .element style="box-shadow:none; position: fixed; left: 0px; bottom: 0px; font-size: 18px;" class="fragment" data-fragment-index="0" -->
 
 -- Notes --
 
@@ -204,6 +171,22 @@ See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for ful
 ## Secure Software Development
 <hr />
 
+### Secure by default
+
+![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+![](pics/ssdlc/crossing.gif)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 220px; width: 520px;" -->
+
+-- Notes --
+
+* No default login credentials
+* Block on mechanism fail
+
+--
+
+## Secure Software Development
+<hr />
+
 ![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 ![](pics/ssdlc/threat_model.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 160px; width: 820px; z-index: -1;" -->
@@ -215,22 +198,6 @@ See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for ful
 * Attack Surface Analysis
 * Security Architecture
 
-
---
-
-## Secure Software Development
-<hr />
-
-### Secure by default
-
-![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
-
-![](pics/ssdlc/crossing.gif)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 220px; width: 520px;" -->
-
--- Notes --
-
-* No default login credentials
-* Block on mechanism fail
 
 --
 
@@ -250,7 +217,7 @@ See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for ful
 
 -- Notes --
 
-
+How can I help my users make secure choices?
 
 --
 
@@ -326,8 +293,13 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 * OWASP [Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check)
 * OWASP [Top 10 Web Application Risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 * OWASP [Top 10 Mobile Risks](https://www.owasp.org/index.php/OWASP_Mobile_Security_Project#Top_Ten_Mobile_Risks)
+* Dedicated SAST:
+  * Fortify
+  * CheckMarx
 
-![](pics/ssdlc/OWASP_vul_control_graph.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 350px; width: 580px;" -->
+Picture found [here](https://raw.githubusercontent.com/brampat/security/master/defense/owasp/OWASP_vul_control_graph.png)
+
+![](pics/ssdlc/OWASP_vul_control_graph.png)<!-- .element style="box-shadow:none; position: fixed; right: -50px; top: 350px; width: 730px;" -->
 
 
 --
@@ -353,47 +325,6 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 * Internal Red-teaming
 * Security Unit Testing
 * Security Smoke tests
-
---
-
-## Secure Software Development
-<hr />
-
-### Unit tests
-
-![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
-
-
-```groovy
-class SimpleController {
-    def hello() {
-        render "Hello ${params.name} !"
-    }
-}
-```
-
-```groovy
-@TestFor(SimpleController)
-@Unroll
-class SimpleControllerSpec extends Specification {
-
-    void 'test param'() {
-        given:
-        params.name = name
-        
-        when:
-        controller.hello()
-        
-        then:
-        response.text.contains(result)
-        
-        where:
-        name                        || result
-        'Bram'                      || 'Hello Bram'
-        '<script>alert(1)</script>' || '&lt;script&gt;alert(1)&lt;/script&gt;'
-    }
-}
-```
 
 --
 
@@ -436,7 +367,7 @@ Go hack yourself<!-- .element style="box-shadow:none; position: fixed; right: -2
 -- Notes --
 
 * Low hanging fruit:
-  * easy security issues
+  * Say OWASP Top 10-level
   * script kiddies
 * Bulk fruit:
   * intermediate issues
@@ -459,8 +390,10 @@ Go hack yourself<!-- .element style="box-shadow:none; position: fixed; right: -2
 
 * Professional Pen-testing
 * Risk Assessment Review
-* Advanced Code Review
-* Fuzz Testing
+* Secure Code Review
+* Functional logic
+* Automated and manual:
+  * SAST & DAST
 
 ![](pics/ssdlc/kali.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 520px; z-index: -1;" -->
 
