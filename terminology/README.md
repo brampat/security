@@ -78,4 +78,11 @@
 | Zero Day | Exploit for which no patch, mitigation is available |
 | WEP | Wired Equivalent Privacy, encrypts the data transmitted over the network |
 | WPA | WiFi protected Access, developed to solve WEP's weaknesses |
+| [Sig-int](https://en.wikipedia.org/wiki/Signals_intelligence) | Signals Intelligence: Gathering intelligence by means of interception of signals. |
+| [Com-int](https://en.wikipedia.org/wiki/Communications_intelligence) | Communications intelligence: Gathering intelligence on communications between people. |
+| [El-int](https://en.wikipedia.org/wiki/Electronic_intelligence) | Electronic intelligence: Gathering intelligence on electronic signals not directly used in communications. |
+| [Im-int](https://en.wikipedia.org/wiki/Imagery_intelligence) | Image intelligence: Gathering intelligence by means of satellite and aerial photography. |
+| [Os-int](https://en.wikipedia.org/wiki/Open-source_intelligence) | Open source intelligence: Gathering intelligence by means of publicly available sources, like media, internet and other open data stores |
+| [Hum-int](https://en.wikipedia.org/wiki/Human_intelligence_(intelligence_gathering\)) | Human intelligence: Gathering intelligence by means of interpersonal contact either voluntary (by conversation) or involuntary (waterboarding). Can also focus on groups / group thinking, like general census about government, activist groups and political parties |
+| Psyops | Influence, gauge and change the way of thinking of a group of people |
 |  |  |
