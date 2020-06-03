@@ -76,6 +76,10 @@
 * [SQLMap](http://sqlmap.org/): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
 * [SQLMap](tools/sqlmap.md): Database penetration, mapping & data-extraction tool for various database-types including support for various blind extraction techniques.
 
+## Android
+* [APK URL grep](https://github.com/ndelphit/apkurlgrep): Extract endpoints from APK files
+
+
 ## Vulnerability scanners
 * [List](https://sectools.org/tag/vuln-scanners/) of vulnerability scanners with comparisons
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
