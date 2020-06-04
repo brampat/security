@@ -167,6 +167,6 @@ This training is available from these three sources. Course outline is exactly i
 |       | 10 years IT administration, incl 5 years technical security experience    | [CAS-003](https://certification.comptia.org/certifications/comptia-advanced-security-practitioner) Advanced Security Practitioner                                                     | Yes               | $549 - $849  |
 |       | Network+, Security+, 3-4 years information security                       | [PT0-001](https://certification.comptia.org/certifications/pentest) PenTest+                                                                                                          | Yes               | $549 - $949  |
 
-
+Test-exams for CompTIA Security+ found [here](https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests).
 
 
