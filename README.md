@@ -99,6 +99,7 @@ See [Terminology](terminology/README.md)
 ## Name drops
 
 ### International
+* [Chris Kubecka](https://twitter.com/secevangelism): Goto incident response expert for states to handle APT-level attacks. She has deep technical security skills AND can explain these in non-technical ways.
 * [Edward Snowden](https://twitter.com/snowden)
 * [Emad Shanab](https://twitter.com/Alra3ees): Ethical hacker & Lawyer. Posts lots of tools, repositories with resources, etc. on Twitter
 * [Freaky Clown](https://twitter.com/__freakyclown__): Physical hacker and pentester, founder of Cygenta
