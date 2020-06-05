@@ -160,6 +160,7 @@ The tools described can be integrated in CI/CD toolchains.
       * Maven [ossindex-maven-plugin](https://sonatype.github.io/ossindex-maven/maven-plugin/)
       * NPM [AuditJS](https://www.npmjs.com/package/auditjs) package
       * Visual Studio [Audit.Net](https://marketplace.visualstudio.com/items?itemName=VorSecurity.AuditNet) extension
+    * GitHub [DepShield](https://www.sonatype.com/depshield)
     * GitHub [Automated Security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes) for vulnerable dependencies
     * [JForg X-Ray](https://jfrog.com/xray/): in combination with JFrog Artifactory
     * [PHP Sercurity Checker](https://security.sensiolabs.org/)
@@ -176,6 +177,10 @@ The tools described can be integrated in CI/CD toolchains.
     * [13 tools](https://techbeacon.com/app-dev-testing/13-tools-checking-security-risk-open-source-dependencies) for checking open source dependencies
     * Node Security Platform (Included in NPM as of April 2018)
     * [Gemnasium](https://docs.gitlab.com/ee/user/project/import/gemnasium.html) (Integrated into GitLab and integrates with GitHub)
+    * Golang: [Nancy](https://github.com/sonatype-nexus-community/nancy)
+    * Python / Conda: [Jake](https://github.com/sonatype-nexus-community/jake)
+    * Ruby: [Chelsea](https://github.com/sonatype-nexus-community/chelsea)
+    
   
 ## Acceptance
 * Infrastructure as Code analysis
