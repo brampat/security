@@ -49,6 +49,9 @@
 * [Spring Security Account registration](https://www.baeldung.com/registration-with-spring-mvc-and-spring-security): Note: is vulnerable to account enumeration
 * Get Started with [Spring Security 5.0 and OIDC](https://developer.okta.com/blog/2017/12/18/spring-security-5-oidc)
 
+### RMI
+* [RMIScout](https://know.bishopfox.com/research/rmiscout): Brute-Force Java RMI Interfaces for Code Execution
+
 ### Fail on no HTTPS
 
 ```java
