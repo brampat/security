@@ -10,6 +10,10 @@ Sources:
 
 ## 2019
 
+### August
+
+
+
 ### Juli
 | When  | Who   | How many  | What  | Source |
 | ----  |-------|-----------|-------|-------|
