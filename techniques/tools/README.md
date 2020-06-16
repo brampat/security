@@ -4,7 +4,7 @@
 
 * [Kali Linux](https://www.kali.org/downloads/): Linux distro specifically for Penetration testing, strict Debian based
 * [Back track Linux](https://www.backtrack-linux.org/): Precursor to Kali Linux (since 2013), Ubuntu based.
-* [MacChanger](https://www.hackingtutorials.org/general-tutorials/mac-address-spoofing-with-macchanger/): Change mac-addresses of your network interfaces to allow for anonimization or spoofing [https://www.youtube.com/watch?v=7nF2BAfWUEg&t=12469s](Basic tutorial on 3:34:05)
+* [MacChanger](https://www.hackingtutorials.org/general-tutorials/mac-address-spoofing-with-macchanger/): Change mac-addresses of your network interfaces to allow for anonymization or spoofing [https://www.youtube.com/watch?v=7nF2BAfWUEg&t=12469s](Basic tutorial on 3:34:05)
 
 ## Information gathering
 * [You Get Signal](https://www.yougetsignal.com/tools/web-sites-on-web-server/): Reverse IP domain check
@@ -29,13 +29,12 @@
 * Zenmap: GUI front-end to Nmap
 * [GoScan](https://github.com/marco-lancini/goscan): Similar to NMap, developed in Go
 * [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
+  * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)
+  * [Filter reference guide](https://www.wireshark.org/docs/dfref/)
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
 * OWASP [ZAP](https://owasp.org/www-project-zap/)
   * [OWASP ZAP HUD](https://www.youtube.com/watch?v=1hbKGDgx_p0): Presentation by Simon Bennetts for OWASP London
 * [Ettercap](http://www.ettercap-project.org/ettercap/downloads.html): Network sniffing (incl. SSH & HTTPS)
-* [Wireshark](https://www.wireshark.org)
-  * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)
-  * [Filter reference guide](https://www.wireshark.org/docs/dfref/)
 
 ## Calculating with IP-addresses:
 * [Subnet calculator](http://www.subnet-calculator.com/)
@@ -44,8 +43,8 @@
 ## Network hacking
 * [Aircrack-NG](https://www.aircrack-ng.org/downloads.html): Wireless network cracking
 * [Angry IP Scanner](https://angryip.org/download/#linux): IP & port scanner
-* enum: Enumerate Wdinwos shares using null-sessions
-* enum4linux: Enumerate Wdinwos shares using null-sessions
+* enum: Enumerate Windows shares using null-sessions
+* enum4linux: Enumerate Windows shares using null-sessions
 
 ## IDS
 * [Snort](https://www.snort.org/): Opensource IDS
@@ -74,7 +73,7 @@
 * [Ophcrack](http://ophcrack.sourceforge.net/): Cross platform tool uses Rainbow table attacks or brute force.
 * [Hydra](https://sectools.org/tool/hydra/): Dictionary attacks against numerous network protocols
 * [Pipal](https://digi.ninja/projects/pipal.php): Password Analyser [Usage tips](./pipal.md)
-* [NebulousAD](https://blog.nuid.io/nebulousad/): Credential Auditor for Active Directory (K-anonimity is planned, but not available yet)
+* [NebulousAD](https://blog.nuid.io/nebulousad/): Credential Auditor for Active Directory (K-anonymity is planned, but not available yet)
 
 ## Database
 * [SleuthQL](https://github.com/RhinoSecurityLabs/SleuthQL) identifies parameters and values for potential SQL-injection attacks
@@ -84,13 +83,13 @@
 ## Web app
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
 * [Acunetix](https://www.acunetix.com/web-vulnerability-scanner/) (4.5k+ / year): Web app security scanner
-* [Metasploit](https://www.metasploit.com/) (15k+ / year (?), community and dev / research versions available): Penmetration testing framework by Rapid7
+* [Metasploit](https://www.metasploit.com/) (15k+ / year (?), community and dev / research versions available): Penetration testing framework by Rapid7
   * [Meterpreter Basics](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)
 * [Nessus](https://www.tenable.com/downloads/nessus): Was OpenSource, now commercial (Euro 2470 / year), free for home & limited training use. Updates vuln. database using plugins.
 * [DomListener](https://chrome.google.com/webstore/detail/domlistener/jlfdgnlpibogjanomigieemaembjeolj?hl=en) Chrome extension that listens to DOM-changes (eg. for DOM-bases XSS detection)
 * [Requestbin.com](https://requestbin.com) for dumping requests of XSS
 * [Beecepter](https://beeceptor.com/) for intercepting requests of XSS
-* [Uguu](https://uguu.se) for temporary file hosting (Javascrip, image etc.)
+* [Uguu](https://uguu.se) for temporary file hosting (Javascript, image etc.)
 * [XSS Hunter](https://xsshunter.com/): Service to assist in XSS attacks with exploit-hosting, Payload probes etc.
 * [myBFF](https://github.com/MooseDojo/myBFF) a Bruteforce Framework, Bruteforces:
   * HP SiteScope (will attempt to give you a Meterpreter Shell!)
@@ -104,7 +103,7 @@
   * Jenkins (Will be adding "Something Cool" soon)
   * SMB (Check if user is an administrator) (must use --domain with this module. for host, use smb://)
   * FTP (List root dir contents)
-* [JavaScript deobvuscator](https://lelinhtinh.github.io/de4js/) and unpacker
+* [JavaScript deobfuscator](https://lelinhtinh.github.io/de4js/) and unpacker
 
 ## API's
 * [Swagger-EZ](https://github.com/RhinoSecurityLabs/Swagger-EZ) pentesting API's using OpenAPI definitions
