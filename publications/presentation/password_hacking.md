@@ -3,6 +3,10 @@
 
 ![](pics/correct_horse_battery_staple.png)<!-- .element style="position: fixed; width: 750px; top: 80px; left: 100px;" class="fragment" data-fragment-index="1" -->
 
+-- Notes --
+
+The way we failed at effective passwords is so prevalent, there is an XKCD comic about it.
+
 --
 
 ## Required knowledge
@@ -47,22 +51,22 @@ That's all folks<!-- .element: style="position: fixed; left: 50px; top: 550px;" 
 ## Password storage: Attack SQL Injection
 <hr />
 
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;" -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 115px; top: 310px; width: 100px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 330px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 330px;" -->
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 65px; top: 390px; width: 100px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 410px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 410px;" -->
 <pre>bob</pre><!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 470px; width: 100px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 470px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 470px;" -->
 <pre>eve</pre><!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 530px; width: 100px;" -->
 
 
-![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 300px;" -->
+![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 300px;" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="0" -->
-![](./pics/PW_Arrow2.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 360px;" class="fragment" data-fragment-index="0" -->
-![](./pics/PW_Arrow3.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 400px;" class="fragment" data-fragment-index="0" -->
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 445px;" class="fragment" data-fragment-index="0" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="0" -->
+![](pics/passwords/PW_Arrow2.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 360px;" class="fragment" data-fragment-index="0" -->
+![](pics/passwords/PW_Arrow3.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 400px;" class="fragment" data-fragment-index="0" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 445px;" class="fragment" data-fragment-index="0" -->
 
 <pre>P@ssw0rd</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 360px; width: 100px;" class="fragment" data-fragment-index="0" -->
 <pre>qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 385px; width: 100px;" class="fragment" data-fragment-index="0" -->
@@ -79,12 +83,12 @@ That's all folks<!-- .element: style="position: fixed; left: 50px; top: 550px;" 
 <pre>123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 420px; top: 455px; width: 100px; height: 100px;" class="fragment" data-fragment-index="1" -->
 <pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 420px; top: 480px; width: 100px; height: 100px;" class="fragment" data-fragment-index="1" -->
 
-![](./pics/PW_SQLi.png)<!-- .element style="box-shadow:none; position: fixed; left: 580px; top: 400px;" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_SQLi.png)<!-- .element style="box-shadow:none; position: fixed; left: 580px; top: 400px;" class="fragment" data-fragment-index="2" -->
 <pre>union select user, password 
 from users; --</pre><!-- .element style="box-shadow:none; position: fixed; left: 580px; top: 460px;" class="fragment" data-fragment-index="2" -->
 
 
-![](./pics/PW_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 750px; top: 350px;" class="fragment" data-fragment-index="3" -->
+![](pics/passwords/PW_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 750px; top: 350px;" class="fragment" data-fragment-index="3" -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 760px; top: 384px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 760px; top: 415px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>bob</pre><!-- .element style="box-shadow:none; position: fixed; left: 760px; top: 446px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
@@ -94,12 +98,24 @@ from users; --</pre><!-- .element style="box-shadow:none; position: fixed; left:
 <pre>123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 815px; top: 446px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 815px; top: 477px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
 
+
+-- Notes --
+
+How can I extract all user-data using SQLi?
+```Union select```
+(or tools like SQLmap)
+
 --
 
 ## Bobby Tables
 <hr />
 
 ![](pics/bobby_tables.png)
+
+-- Notes --
+
+SQL injection attacks are so prevalent, there even is an XKCD comic about it.
+
 
 --
 
@@ -124,131 +140,57 @@ prm.Value = "Robert'; DROP TABLE Students; --";
 
 Contains example code for: ADO.NET, ASP, C#, Delphi, Go, Java, Perl, PHP, Python, Ruby, VB.NET and more<!-- .element style="font-size: 12px; width: 300px;" class="fragment" data-fragment-index="1" -->
 
+-- Notes --
+
+SQL injection defence is so easy, but so often not implemented, there even is a website called Bobby Tables about it.
+
 --
 
-## Encoding, Encryption, Hashing
+## Defense: SQL-injection
 <hr />
 
---
-
-## Encoding
-<hr />
-
-* Purpose: Efficient transport or storage
-* Undone via decoding<!-- .element: class="fragment" data-fragment-index="1" -->
-  * Encoding algorithm (public)
-  * Easy using trial & error
-* Examples: ASCII, Unicode (UTF-*), URL Encoding, base64, RGB, HTML<!-- .element: class="fragment" data-fragment-index="2" -->
-
-![](pics/encoding.png)<!-- .element: style="position: fixed; width: 350px; right: 0px; top: 120px;" -->
+![](pics/passwords/queries_done.jpg)
 
 
 --
 
-## Encryption
+## Required knowledge
 <hr />
 
-* Purpose: Confidentiality
-* Undo: decryption<!-- .element: class="fragment" data-fragment-index="1" -->
-  * Needed: 
-    * Encryption algorithm (public)
-    * Key
-  * Brute force (Easy: ROT13 / CAESAR, Hard: others)
-* Single key (symmetric):<!-- .element: class="fragment" data-fragment-index="2" -->
-  * Same key used to encrypt & decrypt
-* Dual (or more) keys (asymmetric):<!-- .element: class="fragment" data-fragment-index="3" -->
-  * Different keys used to encrypt & decrypt
-* Examples: CAESAR-cipher, PGP, 3DES, RSA, Blowfish, Twofish, AES<!-- .element: class="fragment" data-fragment-index="4" -->
-
-![](pics/end-to-end-encryption.png)<!-- .element: style="position: fixed; width: 400px; right: 0px; top: 120px;" -->
-
---
-
-## Optional: Key exchange
-<hr />
-
-### Challenge
-
-Alice & Bob:
-* Are on internet
-* Want confidentially
-
-They should:
-* Agree on a shared key
-* Over internet (in public)
-* So only Alice & Bob know the key
-
---
-
-## Optional: Key exchange
-<hr />
-
-### Diffie Hellmann
-
-![](./pics/DH-diagram.png)<!-- .element: style="position: fixed; width: 400px; left: 250px; top: 220px;" -->
-
-<span>Choose g and p using [this](https://en.wikipedia.org/wiki/Primitive_root_modulo_n) table</span><!-- .element: style="position: fixed; top: 550px;" -->
-
---
-
-## Optional: Key exchange
-<hr />
-
-### Diffie Hellmann
-
-Volunteers:
-* Alice
-* Bob
-* Calculating expert in:
-  * Power raising
-  * Modulo
-
---
-
-## Hashing
-<hr />
-
-* Purpose: Integrity
-* Undo: not possible<!-- .element: class="fragment" data-fragment-index="2" -->
-* Irreversible<!-- .element: class="fragment" data-fragment-index="2" -->
-* Same input always creates same output<!-- .element: class="fragment" data-fragment-index="3" -->
-  * (using same algorithm)
-* No collisions (in practice)<!-- .element: class="fragment" data-fragment-index="4" -->
-* Examples: MD5, SHA-1, SHA-2 (224, 256, 384 etc), scrypt, bcrypt <!-- .element: class="fragment" data-fragment-index="5" -->
-
-![](pics/hashing.png)<!-- .element: style="position: fixed; width: 400px; right: 0px; top: 120px;" -->
+### Hashing
+See Encryption & stuff
 
 --
 
 ## Password storage: Account creation
 <hr />
 
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;" -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 115px; top: 310px; width: 100px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 330px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 330px;" -->
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 65px; top: 390px; width: 100px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 410px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 410px;" -->
 <pre>bob</pre><!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 470px; width: 100px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 470px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 470px;" -->
 <pre>eve</pre><!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 530px; width: 100px;" -->
 
-![](./pics/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" -->
+![](pics/passwords/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" -->
 
-![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 300px;" -->
+![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 300px;" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="1" -->
 <pre>P@ssw0rd</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 360px; width: 100px;" class="fragment" data-fragment-index="1" -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 495px; top: 405px; width: 100px; height: 100px;" class="fragment" data-fragment-index="2" -->
 <pre>65E84...C5</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 405px; width: 100px; height: 100px;" class="fragment" data-fragment-index="2" -->
-![](./pics/PW_Arrow2.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 360px;" class="fragment" data-fragment-index="3" -->
+![](pics/passwords/PW_Arrow2.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 360px;" class="fragment" data-fragment-index="3" -->
 <pre>qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 385px; width: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 495px; top: 430px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>8D969...92</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 430px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
-![](./pics/PW_Arrow3.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 400px;" class="fragment" data-fragment-index="3" -->
+![](pics/passwords/PW_Arrow3.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 400px;" class="fragment" data-fragment-index="3" -->
 <pre>123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 410px; width: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>bob</pre><!-- .element style="box-shadow:none; position: fixed; left: 495px; top: 455px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>5E884...D8</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 455px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 445px;" class="fragment" data-fragment-index="3" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 445px;" class="fragment" data-fragment-index="3" -->
 <pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 435px; width: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>eve</pre><!-- .element style="box-shadow:none; position: fixed; left: 495px; top: 480px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
 <pre>B03DD...42</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 480px; width: 100px; height: 100px;" class="fragment" data-fragment-index="3" -->
@@ -258,25 +200,25 @@ Volunteers:
 ## Password storage: Login
 <hr />
 
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;"  -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;"  -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 115px; top: 310px; width: 100px;"  -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 330px;"  -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 330px;"  -->
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 65px; top: 390px; width: 100px;"  -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 410px;"  -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 410px;"  -->
 <pre>bob</pre><!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 470px; width: 100px;"  -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 470px;"  -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 470px;"  -->
 <pre>eve</pre><!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 530px; width: 100px;"  -->
-![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 650px; top: 300px;" -->
+![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 650px; top: 300px;" -->
 
-![](./pics/PW_Arrow2.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 360px;" class="fragment" data-fragment-index="0" -->
+![](pics/passwords/PW_Arrow2.png)<!-- .element style="box-shadow:none; position: fixed; left: 90px; top: 360px;" class="fragment" data-fragment-index="0" -->
 <pre>qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 385px; width: 100px;" class="fragment" data-fragment-index="0" -->
 
-![](./pics/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" class="fragment" data-fragment-index="1" -->
 <pre>8D969...92</pre><!-- .element style="box-shadow:none; position: fixed; left: 420px; top: 390px; width: 100px; height: 100px;" class="fragment" data-fragment-index="1" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 420px; " class="fragment" data-fragment-index="2" -->
-![](./pics/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 500px;" class="fragment" data-fragment-index="2" -->
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 440px; -webkit-transform: rotate(180deg);" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 420px; " class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 500px;" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 440px; -webkit-transform: rotate(180deg);" class="fragment" data-fragment-index="2" -->
 
 
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 695px; top: 405px; width: 100px; height: 100px;" -->
@@ -292,12 +234,10 @@ Volunteers:
 
 --
 
-<!-- .slide: style="font-size: 16px;" -->
-
-## Online Attacks
+## Brute-force
 <hr />
 
-### Brute forcing
+### Defence
 
 ![](pics/brute_force_humor.png)
 
@@ -307,27 +247,14 @@ This is not how brute-force defence works
 
 --
 
-<!-- .slide: style="font-size: 16px;" -->
-
 ## Online Attacks
 <hr />
 
 ### Common passwords
 
-| Rank | 2011     | 2012     | 2013        | 2014      | 2015      | 2016       | 2017      | 2018      |
-|-----:|----------|----------|-------------|-----------|-----------|------------|-----------|-----------|
-| 1    | password | password | 123456      | 123456    | 123456    | 123456     | 123456    | 123456    |
-| 2    | 123456   | 123456   | password    | password  | password  | password   | password  | password  |
-| 3    | 12345678 | 12345678 | 12345678    | 12345     | 12345678  | 12345      | 12345678  | 123456789 |
-| 4    | qwerty   | abc123   | qwerty      | 12345678  | qwerty    | 12345678   | qwerty    | 12345678  |
-| 5    | abc123   | qwerty   | abc123      | qwerty    | 12345     | football   | 12345     | 12345     |
-| 6    | monkey   | monkey   | 123456789   | 123456789 | 123456789 | qwerty     | 123456789 | 111111    |
-| 7    | 1234567  | letmein  | 111111      | 1234      | football  | 1234567890 | letmein   | 1234567   |
-| 8    | letmein  | dragon   | 1234567     | baseball  | 1234      | 1234567    | 1234567   | sunshine  |
-| 9    | trustno1 | 111111   | iloveyou    | dragon    | 1234567   | princess   | football  | qwerty    |
-| 10   | dragon   | baseball | adobe123    | football  | baseball  | 1234       | iloveyou  | iloveyou  |
+![](pics/passwords/password_top10.png)<!-- .element style="box-shadow:none; "  -->
 
-2016:
+Up to 2016:
 * Top 25 passwords = 10% all passwords observed
 * 123456 = 4% 
 
@@ -336,12 +263,45 @@ This is not how brute-force defence works
 ## Online Attacks
 <hr />
 
+### Common passwords
+
+![](pics/passwords/password_scores.png)<!-- .element style="box-shadow:none; "  -->
+
+
+-- Notes --
+
+* Top 1-25 gets 25 to 1 point
+* Total score for each password over years
+* Top X:
+  * 123456: 223
+  * password: 216
+  * 12345678: 201
+  * qwerty: 190
+  * 1234567: 158
+  * abc123: 138
+  * 12345: 134
+  * 123456789: 127
+  * 111111: 110
+  * iloveyou: 95
+  * monkey: 92
+  * football: 90
+  * letmein: 88
+  * dragon: 79
+  * welcome
+  * 123123
+
+
+--
+
+## Online Attacks
+<hr />
+
 ### Dictionary attack
 
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;"  -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;"  -->
 <pre>cracker</pre><!-- .element style="box-shadow:none; position: fixed; left: 115px; top: 310px; width: 100px;"  -->
-![](./pics/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" -->
-![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 650px; top: 300px;" -->
+![](pics/passwords/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" -->
+![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 650px; top: 300px;" -->
 
 <pre>Common passwords
 123456
@@ -354,10 +314,10 @@ password
 P@ssw0rd
 </pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="1" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 420px; " class="fragment" data-fragment-index="1" -->
-![](./pics/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 500px;" -->
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 440px; -webkit-transform: rotate(180deg);" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 420px; " class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 500px;" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 440px; -webkit-transform: rotate(180deg);" class="fragment" data-fragment-index="1" -->
 
 <pre>alice
 123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 360px; width: 100px; color: red;" class="fragment fade-in-then-out" data-fragment-index="1" -->
@@ -417,10 +377,10 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 
 ### Credential Stuffing
 
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 170px; top: 250px;"  -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 170px; top: 250px;"  -->
 <pre>cracker</pre><!-- .element style="box-shadow:none; position: fixed; left: 165px; top: 310px; width: 100px;"  -->
-![](./pics/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" -->
-![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 300px;" -->
+![](pics/passwords/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 320px; top: 370px;" -->
+![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 300px;" -->
 
 <pre>Leaked passwords
 simon / football
@@ -430,10 +390,10 @@ joyce / iloveyou
 alice / P@ssw0rd
 </pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 190px; top: 280px;" class="fragment" data-fragment-index="1" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 420px; " class="fragment" data-fragment-index="1" -->
-![](./pics/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 500px;" -->
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 650px; top: 440px; -webkit-transform: rotate(180deg);" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 190px; top: 280px;" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 420px; " class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 500px;" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 650px; top: 440px; -webkit-transform: rotate(180deg);" class="fragment" data-fragment-index="1" -->
 
 <pre>simon
 football</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; top: 360px; width: 100px; color: red;" class="fragment fade-in-then-out" data-fragment-index="1" -->
@@ -472,11 +432,11 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 
 ### Refuse common / leaked passwords
 
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;"  -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 250px;"  -->
 <pre>simon</pre><!-- .element style="box-shadow:none; position: fixed; left: 115px; top: 310px; width: 100px;"  -->
-![](./pics/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 280px; top: 340px;" -->
-![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 200px;" -->
-![](./pics/PW_empty_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 700px; top: 500px; width: 200px;" -->
+![](pics/passwords/PW_SHA.png)<!-- .element style="box-shadow:none; position: fixed; left: 280px; top: 340px;" -->
+![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 200px;" -->
+![](pics/passwords/PW_empty_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 700px; top: 500px; width: 200px;" -->
 <pre>Password</pre><!-- .element style="box-shadow:none; position: fixed; left: 710px; top: 500px; width: 100px; height: 100px;" -->
 <pre>123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 710px; top: 520px; width: 100px; height: 100px;" -->
 <pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 710px; top: 542px; width: 100px; height: 100px;" -->
@@ -488,7 +448,7 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 <pre>15E2B..25</pre><!-- .element style="box-shadow:none; position: fixed; left: 810px; top: 566px; width: 100px; height: 100px;" -->
 <pre>EF797..4F</pre><!-- .element style="box-shadow:none; position: fixed; left: 810px; top: 588px; width: 100px; height: 100px;" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="0" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 140px; top: 280px;" class="fragment" data-fragment-index="0" -->
 <div class="fragment fade-in" data-fragment-index="0">
   <div class="fragment fade-out" data-fragment-index="4">
     <pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 355px; width: 100px;" -->
@@ -496,12 +456,12 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
   </div>
 </div>
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 410px; top: 390px; " class="fragment" data-fragment-index="2" -->
-![](./pics/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 470px;" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 410px; top: 390px; " class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Compare.png)<!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 470px;" class="fragment" data-fragment-index="2" -->
 
 <div class="fragment fade-in" data-fragment-index="2">
   <div class="fragment fade-out" data-fragment-index="4">
-    <img src="./pics/PW_Arrow2.png" style="box-shadow:none; position: fixed; left: 600px; top: 510px; width: 100px;" class="fragment" data-fragment-index="2">
+    <img src="pics/passwords/PW_Arrow2.png" style="box-shadow:none; position: fixed; left: 600px; top: 510px; width: 100px;" class="fragment" data-fragment-index="2">
   </div>
 </div>
 
@@ -516,7 +476,7 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
   <pre>6D231..EC</pre><!-- .element style="box-shadow:none; position: fixed; left: 380px; top: 360px; width: 100px; height: 100px;" -->
 </div>
 
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 590px; top: 400px; " class="fragment" data-fragment-index="5" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 590px; top: 400px; " class="fragment" data-fragment-index="5" -->
 <pre>6D231..EC</pre><!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 308px; width: 100px;" class="fragment" data-fragment-index="5" -->
 <pre>simon</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 308px; width: 100px;" class="fragment" data-fragment-index="5" -->
 
@@ -529,7 +489,7 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 
 ### Lookup table attack
 
-![](./pics/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 300px;" -->
+![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 300px;" -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 405px; width: 100px; height: 100px;" -->
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 430px; width: 100px; height: 100px;" -->
 <pre>bob</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 455px; width: 100px; height: 100px;" -->
@@ -551,9 +511,9 @@ password
 P@ssw0rd
 </pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" class="fragment" data-fragment-index="1" -->
 
-![](./pics/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" class="fragment" data-fragment-index="2" -->
 
-![](./pics/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" class="fragment" data-fragment-index="3" -->
+![](pics/passwords/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" class="fragment" data-fragment-index="3" -->
 <pre>123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 259px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
 <pre>qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 282px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
 <pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 306px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
@@ -584,10 +544,10 @@ P@ssw0rd
 <pre>6BFCC..04</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 332px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
 
 
-![](./pics/PW_Lookup.png)<!-- .element style="box-shadow:none; position: fixed; left: 490px; top: 390px;" class="fragment" data-fragment-index="4" -->
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 405px; -webkit-transform: rotate(220deg);" class="fragment" data-fragment-index="4" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 470px; top: 290px;  -webkit-transform: rotate(220deg);" class="fragment" data-fragment-index="5" -->
-![](./pics/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 280px; top: 235px; -webkit-transform: rotate(215deg);" class="fragment" data-fragment-index="6" -->
+![](pics/passwords/PW_Lookup.png)<!-- .element style="box-shadow:none; position: fixed; left: 490px; top: 390px;" class="fragment" data-fragment-index="4" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 405px; -webkit-transform: rotate(220deg);" class="fragment" data-fragment-index="4" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 470px; top: 290px;  -webkit-transform: rotate(220deg);" class="fragment" data-fragment-index="5" -->
+![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 280px; top: 235px; -webkit-transform: rotate(215deg);" class="fragment" data-fragment-index="6" -->
 
 --
 
@@ -608,9 +568,9 @@ Aaaaaa02
 etc.
 </pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" -->
 
-![](./pics/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" class="fragment" -->
+![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" class="fragment" -->
 
-![](./pics/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
+![](pics/passwords/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
 <pre>123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 259px; width: 100px; height: 100px; font-size: 12px;" -->
 <pre>qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 282px; width: 100px; height: 100px; font-size: 12px;" -->
 <pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 306px; width: 100px; height: 100px; font-size: 12px;" -->
@@ -637,8 +597,8 @@ aaaaaaaB
 ...
 </pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" -->
 
-![](./pics/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" -->
-![](./pics/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
+![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" -->
+![](pics/passwords/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
 
 <pre>8x alphanumeric</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 259px; width: 100px; height: 100px; font-size: 10px;" -->
 <pre>Ulllll99</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 282px; width: 100px; height: 100px; font-size: 10px;" -->
@@ -691,8 +651,8 @@ aaaaaaaB
 ...
 </pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" -->
 
-![](./pics/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" -->
-![](./pics/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
+![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" -->
+![](pics/passwords/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
 
 <pre>8x alphanumeric</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 259px; width: 100px; height: 100px; font-size: 10px;" -->
 <pre>Ulllll99</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 282px; width: 100px; height: 100px; font-size: 10px;" -->
@@ -745,8 +705,8 @@ aaaaaaaB
 ...
 </pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" -->
 
-![](./pics/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" -->
-![](./pics/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
+![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" -->
+![](pics/passwords/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" -->
 
 <pre>8x alphanumeric</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 259px; width: 100px; height: 100px; font-size: 10px;" -->
 <pre>Ulllll99</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 282px; width: 100px; height: 100px; font-size: 10px;" -->
@@ -789,7 +749,7 @@ aaaaaaaB
 
 <span style="font-size: 16px;">20 - 30 characters is sufficient<span><br>
 <span style="font-size: 16px;">Any pattern or system you introduce can be broken<span>
-![](./pics/lastpass.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 260px; width: 290px;" class="fragment" data-fragment-index="0" -->
+![](pics/intro/lastpass.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 260px; width: 290px;" class="fragment" data-fragment-index="0" -->
 ![](./pics/1password.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 460px; width: 290px;" class="fragment" data-fragment-index="0" -->
 
 
@@ -800,35 +760,35 @@ aaaaaaaB
 
 ### (Dynamic) Salt
 
-![](./pics/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 470px; top: 260px; width: 90px;" -->
-![](./pics/PW_Salt_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 230px; width: 300px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 190px;" -->
+![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 470px; top: 260px; width: 90px;" -->
+![](pics/passwords/PW_Salt_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 230px; width: 300px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 190px;" -->
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 15px; top: 250px;" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 200px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 200px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
 <pre>P@ssw0rd</pre><!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 230px;" class="fragment" data-fragment-index="1" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
 
-![](./pics/PW_Random_salt.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 300px;" class="fragment" data-fragment-index="2" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 145px; top: 285px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Random_salt.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 300px;" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 145px; top: 285px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="2" -->
 <pre>(ZmgbWZLV2F6</pre><!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 300px; width: 100px;" class="fragment" data-fragment-index="2" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 270px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="3" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 270px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="3" -->
 
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 630px; top: 260px; font-size: 14px;" class="fragment" data-fragment-index="4" -->
 <pre>(ZmgbWZLV2F6</pre><!-- .element style="box-shadow:none; position: fixed; left: 727px; top: 260px; font-size: 11px;" class="fragment" data-fragment-index="4" -->
 <pre>F5EF1..6C</pre><!-- .element style="box-shadow:none; position: fixed; left: 825px; top: 260px; font-size: 11px;" class="fragment" data-fragment-index="4" -->
 
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 400px;" class="fragment" data-fragment-index="5" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 400px;" class="fragment" data-fragment-index="5" -->
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 15px; top: 460px; " class="fragment" data-fragment-index="5" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 125px; top: 385px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="6" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 125px; top: 385px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="6" -->
 <pre>P@ssw0rd</pre><!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 400px; width: 100px;" class="fragment" data-fragment-index="6" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 340px; -webkit-transform: rotate(-63deg);" class="fragment" data-fragment-index="6" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 340px; -webkit-transform: rotate(-63deg);" class="fragment" data-fragment-index="6" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 145px; top: 315px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="7" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 145px; top: 315px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="7" -->
 <pre>2SCkqpcH+x>Q</pre><!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 350px; width: 100px;" class="fragment" data-fragment-index="7" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 310px; -webkit-transform: rotate(-53deg);" class="fragment" data-fragment-index="7" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 310px; -webkit-transform: rotate(-53deg);" class="fragment" data-fragment-index="7" -->
 
 <pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 630px; top: 285px; font-size: 14px;" class="fragment" data-fragment-index="8" -->
 <pre>2SCkqpcH+x>Q</pre><!-- .element style="box-shadow:none; position: fixed; left: 727px; top: 285px; font-size: 11px;" class="fragment" data-fragment-index="8" -->
@@ -863,7 +823,7 @@ login(username, password) {
 ## Timing Attack 
 <hr />
 
-![](pics/PW_Timing.png)
+![](pics/passwords/PW_Timing.png)
 
 --
 
@@ -896,26 +856,26 @@ login(username, password) {
 
 ### Pepper (Static Salt)
 
-![](./pics/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 470px; top: 260px; width: 90px;" -->
-![](./pics/PW_Salt_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 230px; width: 300px;" -->
-![](./pics/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 190px;" -->
+![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 470px; top: 260px; width: 90px;" -->
+![](pics/passwords/PW_Salt_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 230px; width: 300px;" -->
+![](pics/passwords/PW_Actor.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 190px;" -->
 
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 15px; top: 250px;" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 200px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 200px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
 <pre>P@ssw0rd</pre><!-- .element style="box-shadow:none; position: fixed; left: 200px; top: 230px;" class="fragment" data-fragment-index="1" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 220px; -webkit-transform: rotate(-33deg);" class="fragment" data-fragment-index="1" -->
 
-![](./pics/PW_Random_salt.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 300px;" class="fragment" data-fragment-index="2" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 145px; top: 285px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Random_salt.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 300px;" class="fragment" data-fragment-index="2" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 145px; top: 285px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="2" -->
 <pre>(ZmgbWZLV2F6</pre><!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 300px; width: 100px;" class="fragment" data-fragment-index="2" -->
 
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 270px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="3" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 270px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="3" -->
 
-![](pics/PW_Vault.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 400px;" class="fragment" data-fragment-index="4" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 125px; top: 385px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="5" -->
+![](pics/passwords/PW_Vault.png)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 400px;" class="fragment" data-fragment-index="4" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 125px; top: 385px; -webkit-transform: rotate(-43deg);" class="fragment" data-fragment-index="5" -->
 <pre>MaFHgAKL8ekS</pre><!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 400px; width: 100px;" class="fragment" data-fragment-index="5" -->
-![](pics/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 340px; -webkit-transform: rotate(-65deg);" class="fragment" data-fragment-index="6" -->
+![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 360px; top: 340px; -webkit-transform: rotate(-65deg);" class="fragment" data-fragment-index="6" -->
 
 <pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 630px; top: 260px; font-size: 14px;" class="fragment" data-fragment-index="7" -->
 <pre>(ZmgbWZLV2F6</pre><!-- .element style="box-shadow:none; position: fixed; left: 727px; top: 260px; font-size: 11px;" class="fragment" data-fragment-index="7" -->

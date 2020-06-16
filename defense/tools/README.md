@@ -155,7 +155,7 @@ The tools described can be integrated in CI/CD toolchains.
   * Integrate into CI/CD
   * Tools:
     * OWASP [Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
-    * OWASP [Depedency Track](https://dependencytrack.org/)
+    * OWASP [Depedency Track](https://owasp.org/www-project-dependency-track/)
     * [OSSIndex](https://ossindex.sonatype.org/) supports numerous ecosystems and integrates with several toolchains
       * Maven [ossindex-maven-plugin](https://sonatype.github.io/ossindex-maven/maven-plugin/)
       * NPM [AuditJS](https://www.npmjs.com/package/auditjs) package

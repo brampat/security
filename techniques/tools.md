@@ -19,7 +19,7 @@
   * [Lots of Burp-suite / PortSwigger tutorials](https://portswigger.net/web-security)
   * [Introduction to Burp-suite Pro](https://www.gracefulsecurity.com/introduction-to-burp-suite-pro/)
   * [Burp Macros](https://www.gracefulsecurity.com/burp-macros-re-authentication/)
-* OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
+* OWASP [ZAP](https://owasp.org/www-project-zap/)
 * [Ettercap](http://www.ettercap-project.org/ettercap/downloads.html): Network sniffing (incl. SSH & HTTPS)
 * [Wireshark](https://www.wireshark.org)
   * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)

@@ -10,7 +10,9 @@
 
 ## (Re)Sources
 <hr />
-
+* Ordina
+  * Security Journey / Dojo (Pilot)
+  * Security Champions / CISO Group -> Ricky, me, many others
 * OWASP's [OpenSAMM.org](https://owaspsamm.org/)
 * Go [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first)
 * Darknet Diaries:

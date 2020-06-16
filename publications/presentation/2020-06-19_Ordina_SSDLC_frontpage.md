@@ -2,9 +2,10 @@
 # SSDLC
 <hr />
 
-## Requirements to decommission
+## Secure Software development workshop
 
-* Questions in chat
+* Questions? Add a "?" in the chat
+* Unmute before you ask
 
 ![](./pics/brpa.jpg)<!-- .element style="position: fixed; top: 300px; right: 60px; height: 200px;"  -->
 
@@ -22,13 +23,13 @@
 ## Conferences & Certifications
 <hr />
 
-![](./pics/Den_Hack.png)<!-- .element style="position: fixed; top: 290px; right: 20px; width: 250px; background-color: #444444;" -->
-![](./pics/SecAppDev.png)<!-- .element style="position: fixed; top: 260px; left: 280px; width: 150px;" -->
-![](./pics/owasp.jpeg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
-![](./pics/Tweakers_Meetup_Security.png)<!-- .element style="position: fixed; top: 290px; left: 20px; width: 250px;" -->
-![](./pics/Tweakers_Meetup_XL_-_Security___Privacy.jpeg)<!-- .element style="position: fixed; top: 160px; right: 80px; width: 250px;" -->
-![](./pics/Secure_Programming_Foundation.png)<!-- .element style="position: fixed; top: 380px; left: 30px; width: 150px;" -->
-![](pics/frontpage/infosec.jpg)<!-- .element style="position: fixed; top: 400px; left: 300px; width: 150px;" -->
+![](pics/frontpage/Den_Hack.png)<!-- .element style="position: fixed; top: 290px; right: 20px; width: 250px; background-color: #444444;" -->
+![](pics/frontpage/SecAppDev.png)<!-- .element style="position: fixed; top: 260px; left: 280px; width: 150px;" -->
+![](pics/frontpage/owasp.jpeg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
+![](pics/frontpage/Tweakers_Meetup_Security.png)<!-- .element style="position: fixed; top: 290px; left: 20px; width: 250px;" -->
+![](pics/frontpage/Tweakers_Meetup_XL_-_Security___Privacy.jpeg)<!-- .element style="position: fixed; top: 160px; right: 80px; width: 250px;" -->
+![](pics/frontpage/Secure_Programming_Foundation.png)<!-- .element style="position: fixed; top: 380px; left: 30px; width: 150px;" -->
+![](pics/frontpage/infosec.jpg)<!-- .element style="position: fixed; top: 400px; left: 220px; width: 150px;" -->
 ![](pics/frontpage/ejpt_certificate.png)<!-- .element style="position: fixed; bottom: 0px; left: 20px; width: 250px;" -->
 ![](pics/frontpage/spring_cert.jpg)<!-- .element style="position: fixed; top: 150px; left: 270px; width: 150px;" -->
 ![](pics/frontpage/scrum.png)<!-- .element style="position: fixed; top: 330px; right: 300px; width: 150px;" -->
@@ -37,6 +38,7 @@
 ![](pics/frontpage/jfall.png)<!-- .element style="position: fixed; bottom: 130px; right: 70px; width: 150px;" -->
 ![](pics/frontpage/javaone.jpg)<!-- .element style="position: fixed; bottom: 20px; right: 240px; width: 150px;" -->
 ![](pics/frontpage/codemotion.svg)<!-- .element style="position: fixed; bottom: 20px; right: 40px; width: 150px;" -->
+![](pics/frontpage/devseccon24.jpg)<!-- .element style="position: fixed; top: 390px; left: 390px; width: 110px;" -->
 
 --
 
@@ -48,7 +50,7 @@
 ![](pics/heroes/shehackspurple.jpg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
 ![](pics/heroes/freaky_clown.png)<!-- .element style="position: fixed; top: 310px; left: 190px; width: 150px;" -->
 ![](pics/heroes/jayson_e_street.jpeg)<!-- .element style="position: fixed; top: 490px; left: 10px; width: 150px;" -->
-![](pics/heroes/jeremy_gosney.jpg)<!-- .element style="position: fixed; top: 330px; right: 300px; width: 150px;" -->
+![](pics/heroes/katie_moussouris.jpeg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
 ![](pics/heroes/brenno_de_winter.jpeg)<!-- .element style="position: fixed; top: 190px; right: 20px; width: 150px;" -->
 ![](pics/heroes/edward_snowden_small.jpg)<!-- .element style="position: fixed; top: 300px; left: 20px; width: 150px;" -->
 ![](pics/heroes/daniel_verlaan.jpg)<!-- .element style="position: fixed; top: 130px; left: 270px; width: 150px;" -->
@@ -58,7 +60,7 @@
 ![](pics/heroes/bart_roos.jpg)<!-- .element style="position: fixed; top: 160px; right: 350px; width: 150px;" -->
 ![](pics/heroes/edwin_van_andel.jpg)<!-- .element style="position: fixed; bottom: 20px; right: 10px; width: 150px;" -->
 ![](pics/heroes/wesley_neelen.png)<!-- .element style="position: fixed; bottom: 40px; right: 320px; width: 150px;" -->
-![](pics/heroes/troy_hunt.jpg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
+![](pics/heroes/troy_hunt.jpg)<!-- .element style="position: fixed; top: 330px; right: 300px; width: 150px;" -->
 ![](pics/heroes/Chris_Kubecka.jpeg)<!-- .element style="position: fixed; top: 320px; left: 350px; width: 150px;" -->
 
 ![](pics/heroes/.jpeg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->

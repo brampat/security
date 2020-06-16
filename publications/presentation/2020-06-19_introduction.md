@@ -5,19 +5,30 @@ What pops up in your mind?
 
 --
 
+<!-- .slide: class="table-medium" -->
 
 ## Agenda
 <hr />
 
-* Intro
-* Security Principles
-* Shifting Left in SDLC
-* Threat Analysis
-* Hackers
-* Hack Activities
-* Continuous Security-Testing
-* Password Hacking (and defending)
-* _Choose your topic_
+| Time  | Subject                          | Type |
+|------:|----------------------------------|------|
+| 9:00  | Intro                            |      |
+| 9:15  | Security Principles              | T    |
+| 9:30  | Hacking basics                   | P    |
+| 10:00 | Pause                            | -    |
+| 10:15 | Pushing Left                     | T    |
+| 10:45 | Hacking puzzles                  | P    |
+| 12:00 | Pause                            | -    |
+| 12:30 | Hacker-types                     | T    |
+| 12:45 | Hack Activities                  | T    |
+| 13:00 | Hacking puzzles                  | P    |
+| 14:00 | OWASP Top 10 by example          | T    |
+| 14:45 | Pause                            | -    |
+| 15:00 | Hacking puzzles                  | P    |
+| 15:30 | Encryption & stuff               | T    |
+| 15:45 | Continuous Security-Testing      | T    |
+| 16:00 | AMA                              | T    |
+
 
 --
 

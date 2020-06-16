@@ -5,49 +5,6 @@
 
 --
 
-## Project Trilemma
-<hr />
-
-![](pics/ssdlc/project_triangle.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; width: 500px;" -->
-
-
-Who:<!-- .element class="fragment" data-fragment-index="0" -->
-* Struggles with Project Trilemma?<!-- .element class="fragment" data-fragment-index="0" -->
-* Has no security requirements?<!-- .element class="fragment" data-fragment-index="1" -->
-
--- Notes --
-
-Clients want it all, for cheap and now
-
-They can control any 2 elements, team / developers control the 3rd:
-* functionality for cheap, but it takes time
-* functionality quickly, but is expensive
-* cheap and quickly, but not fully functional
-
---
-
-## Project Trilemma: Solution
-<hr />
-
-* Functional complete
-* Fast to build
-* Cheap
-* No security<!-- .element class="fragment" data-fragment-index="1" -->
-  * But that wasn't required<!-- .element class="fragment" data-fragment-index="1" -->
-
-![](pics/ssdlc/cheap_fast_fully_functional.png)<!-- .element style="box-shadow:none; position: fixed; right: 15px; top: 150px;" class="fragment" data-fragment-index="0" -->
-
--- Notes --
-
-Web-app that simply performs database-queries.
-You can do everything, including:
-* create account (insert into users)
-* reset passwords (update user)
-* add orders (insert into orders)
-* etc.
-
---
-
 ## Secure Software Development 101
 <hr />
 
@@ -154,7 +111,7 @@ See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for ful
 
 ### Tools
 
-![](pics/owasp.jpeg)<!-- .element style="box-shadow:none; position: fixed; right: 540px; top: 280px; width: 220px;" -->
+![](pics/frontpage/owasp.jpeg)<!-- .element style="box-shadow:none; position: fixed; right: 540px; top: 280px; width: 220px;" -->
 <span style="box-shadow:none; position: fixed; right: 620px; top: 520px; ">ASVS<span>
 ![](pics/ssdlc/MS_elevation_of_privilege.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 250px; width: 220px;" -->
 ![](pics/ssdlc/OWASP_Cornucopia.jpg)<!-- .element style="box-shadow:none; position: fixed; right: 280px; top: 360px; width: 220px;" -->
@@ -171,22 +128,6 @@ See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for ful
 ## Secure Software Development
 <hr />
 
-### Secure by default
-
-![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
-
-![](pics/ssdlc/crossing.gif)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 220px; width: 520px;" -->
-
--- Notes --
-
-* No default login credentials
-* Block on mechanism fail
-
---
-
-## Secure Software Development
-<hr />
-
 ![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 ![](pics/ssdlc/threat_model.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 160px; width: 820px; z-index: -1;" -->
@@ -197,7 +138,6 @@ See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for ful
 * Threat Modelling
 * Attack Surface Analysis
 * Security Architecture
-
 
 --
 
@@ -218,6 +158,23 @@ See [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)) for ful
 -- Notes --
 
 How can I help my users make secure choices?
+
+--
+
+## Secure Software Development
+<hr />
+
+### Secure by default
+
+![](pics/ssdlc/SSDLC_Threat.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+![](pics/ssdlc/crossing.gif)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 220px; width: 520px;" -->
+
+-- Notes --
+
+* No default login credentials
+* Block on mechanism fail
+
 
 --
 
@@ -307,18 +264,6 @@ Picture found [here](https://raw.githubusercontent.com/brampat/security/master/d
 ## Secure Software Development
 <hr />
 
-### Dynamic Testing Tools
-
-* OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) (with [HUD](https://www.youtube.com/watch?v=1hbKGDgx_p0))
-* Nessus, OpenVAS
-
-![](pics/ssdlc/OWASP_ZAP.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 320px; z-index: -1;" -->
-
---
-
-## Secure Software Development
-<hr />
-
 ![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
 * Basic Vulnerability scanning
@@ -354,13 +299,13 @@ Bulk fruit<!-- .element style="position: fixed; left: 600px; top: 320px; " class
 
 Low hanging fruit<!-- .element style="position: fixed; left: 600px; top: 420px; " class="fragment" data-fragment-index="0" -->
 
-![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 410px; " class="fragment fade-in-then-out" data-fragment-index="3" -->
-![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 300px; " class="fragment fade-in-then-out" data-fragment-index="4" -->
-![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 410px; " class="fragment " data-fragment-index="4" -->
-![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: -20px; top: 410px; " class="fragment " data-fragment-index="4" -->
-![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 200px; " class="fragment " data-fragment-index="5" -->
-![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 300px; " class="fragment " data-fragment-index="5" -->
-![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: -20px; top: 300px; " class="fragment " data-fragment-index="5" -->
+![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 410px; " class="fragment fade-in-then-out" data-fragment-index="0" -->
+![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 300px; " class="fragment fade-in-then-out" data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 410px; " class="fragment " data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: -20px; top: 410px; " class="fragment " data-fragment-index="1" -->
+![](pics/ssdlc/SSDLC_Pentest.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 200px; " class="fragment " data-fragment-index="2" -->
+![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 300px; " class="fragment " data-fragment-index="2" -->
+![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: -20px; top: 300px; " class="fragment " data-fragment-index="2" -->
 
 Go hack yourself<!-- .element style="box-shadow:none; position: fixed; right: -20px; bottom: 100px; " -->
 
@@ -380,6 +325,20 @@ Go hack yourself<!-- .element style="box-shadow:none; position: fixed; right: -2
 * Catches advanced security bugs
   * More value for money
   * More satisfaction for pentesters and client
+
+--
+
+## Secure Software Development
+<hr />
+
+### Dynamic Testing Tools
+
+![](pics/ssdlc/SSDLC_Dynamic.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
+
+* OWASP [ZAP](https://owasp.org/www-project-zap/) (with [HUD](https://www.youtube.com/watch?v=1hbKGDgx_p0))
+* Nessus, OpenVAS
+
+![](pics/ssdlc/OWASP_ZAP.png)<!-- .element style="box-shadow:none; position: fixed; right: 0px; top: 310px; width: 320px; z-index: -1;" -->
 
 --
 

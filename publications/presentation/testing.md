@@ -1,6 +1,10 @@
 ## Testing software
 <hr />
 
+### Why are you here?
+
+![](pics/intro/try_to_hack.png)
+
 --
 
 ## SSDLC
@@ -256,6 +260,11 @@ In contrast: a professional pentest can be:
 <hr />
 
 * SSDLC (for real)
+* Effort: Training & doing
+* Control: OpenSAMM, OWASP, experts
+* Cost: Should be part of the job
+* Exposure: NDA, external
+* Extra: Quality in general
 
 -- Notes --
 
@@ -328,6 +337,21 @@ Platforms:
 ## Bug Bounties
 <hr />
 
+* Age 19
+* Self-thaught
+* Millionaire
+
+![](pics/intro/try_to_hack.png)
+
+-- Notes --
+
+Source: [BBC](https://www.bbc.com/news/av/technology-47407609/how-one-teenager-is-making-millions-by-hacking-legally)
+
+--
+
+## Bug Bounties
+<hr />
+
 ![](pics/testing/bug_bounty_program.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
 
 
@@ -373,56 +397,6 @@ Tips:
 <hr />
 
 ![](pics/testing/resposible_disclosure.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 150px;"  -->
-
-
---
-
-## Testing
-<hr />
-
-### Control vs exposure
-
-![](pics/testing/testing_control_vs_exposure.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 200px;"  -->
-
--- Notes --
-
-* With more exposure comes less control
-* Saying you're unhackable is basically the bullseye on your head
-
---
-
-## Testing
-<hr />
-
-### Cost vs effort
-
-![](pics/testing/testing_cost_vs_effort.png)<!-- .element style="box-shadow:none; position: fixed; left: 150px; top: 200px;"  -->
-
--- Notes --
-
-* Effort to say you're unhackable is really low: post on Social media will land with the correct hackers very quickly
-  * But costs will be high or gigantic, depending on how ethical they handle it
-  * Prepare for PR backlash and bad publicity in news
-* Initiating pentest is also easy: phone us, we'll do it for you
-  * Running quality pentests that cover both low fruit and advanced attacks is expensive
-* Having a responsible disclosure requires very little effort and cost:
-  * Security.txt proposed standard at [IETF.org](https://tools.ietf.org/html/draft-foudil-securitytxt-06)
-  * Generate one at [securitytxt.org](https://securitytxt.org/)
-  * But handling them requires a business process to communicate between external researchers of various levels (in experience and communication) and development teams that should solve the issues
-  * Cost could include small thank-you's from acknowledgements / mentions to stickers and t-shirts to products and bounties
-* Bug bounties formalize and streamline responsible disclosure
-  * Effort is again two parts: setting up and handling
-  * Setup is a bit more than just a responsible disclosure, but platforms help with that
-  * Handling is similar to responsible disclosure, so reuse that for both
-  * Cost will be: fee's to Bug bounty platform and thank-you's mostly in form of bounties, but thank-you's, stickers, t-shirts and product for duplicates or low-level bugs will increase goodwill
-  * Private bug-bounties should be aimed at experienced bug-hunters, which will result in more and higher bounty-payouts
-  * Cost also depends on how good the base security is of what you like to test
-* Internal is all about maturity of SSDLC
-  * Start with awareness training for devs
-  * Learn them how to [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first)
-  * That should fix low hanging fruit.
-  * Have experienced pentesters test for advanced issues
-  * Having automated security (unit-) tests is very helpful
 
 --
 

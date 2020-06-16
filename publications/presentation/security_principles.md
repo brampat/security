@@ -27,19 +27,21 @@
 <hr />
 
 ### CIA - Confidentiality
-*Attackers read my bank-transactions*<!-- .element: class="fragment" data-fragment-index="0" -->
-
-```mysqldump -all-databases > dump.sql```<!-- .element: class="fragment" data-fragment-index="0" -->
+Data disclosure
+* *Attackers read my bank-transactions*<!-- .element: class="fragment" data-fragment-index="0" -->
+* ```mysqldump -all-databases > dump.sql```<!-- .element: class="fragment" data-fragment-index="0" -->
 
 ![](pics/cia/confidential.jpeg)<!-- .element style="position: fixed; top: 160px; right: 40px; width: 275px; " class="fragment" data-fragment-index="0" -->
 
 ![](pics/cia/gevers_chinese_mongodb.png)<!-- .element style="position: fixed; bottom: 30px; right: 20px; width: 250px;" class="fragment" data-fragment-index="1" -->
-![](./pics/webcam_1.png)<!-- .element style="position: fixed; top: 320px; left: 40px; width: 275px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/OnlyFans.jpg)<!-- .element style="position: fixed; top: 320px; right: 320px; width: 300px;" class="fragment" data-fragment-index="1"  -->
+![](./pics/webcam_1.png)<!-- .element style="position: fixed; top: 340px; left: 40px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/OnlyFans.jpg)<!-- .element style="position: fixed; top: 350px; right: 320px; width: 300px;" class="fragment" data-fragment-index="1"  -->
 ![](pics/cia/beautiful_info_data_breaches.png)<!-- .element style="position: fixed; top: 480px; left: 90px; width: 225px;" class="fragment" data-fragment-index="1"  -->
 ![](pics/cia/baby_phone_2.png)<!-- .element style="position: fixed; bottom: 10px; right: 280px; width: 325px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
+
+The system allows unauthorized data disclosure
 
 Sources:
 * OnlyFans [dataleak](https://thenextweb.com/media/2020/02/28/massive-cache-stolen-onlyfans-videos-have-been-dumped-online/) 2020-02-28
@@ -56,18 +58,20 @@ Sources:
 <hr />
 
 ### CIA - Integrity
-*Attackers empty my bank-account*<!-- .element: class="fragment" data-fragment-index="0" -->
-
-```update accounts set balance = 0;```<!-- .element: class="fragment" data-fragment-index="0" -->
+Manipulation
+* *Attackers empty my bank-account*<!-- .element: class="fragment" data-fragment-index="0" -->
+* ```update accounts set balance = 0;```<!-- .element: class="fragment" data-fragment-index="0" -->
 
 ![](./pics/cia/2fa.jpg)<!-- .element style="position: fixed; top: 160px; right: 120px; width: 275px;" class="fragment" data-fragment-index="0" -->
 
-![](pics/cia/sluizen.png)<!-- .element style="position: fixed; bottom: 100px; right: 0px; width: 375px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/stuxnet.png)<!-- .element style="position: fixed; bottom: 170px; left: 150px; width: 375px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/jeep_cherokee.png)<!-- .element style="position: fixed; top: 390px; left: -20px; width: 275px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/citrix.png)<!-- .element style="position: fixed; bottom: 30px; left: 320px; width: 225px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/sluizen.png)<!-- .element style="position: fixed; bottom: 170px; right: -30px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/stuxnet.png)<!-- .element style="position: fixed; bottom: 40px; left: 260px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/jeep_cherokee.png)<!-- .element style="position: fixed; bottom: 10px; left: -20px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/citrix.png)<!-- .element style="position: fixed; bottom: 10px; right: 60px; width: 225px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
+
+The system allows manipulation, we can't trust the system and the system fails to enforce trust in its users
 
 Sources:
 * Gas-pipe [hack](https://arstechnica.com/information-technology/2020/02/a-us-gas-pipeline-operator-was-infected-by-malware-your-questions-answered/) 2020-02-20
@@ -82,14 +86,15 @@ Sources:
 <hr />
 
 ### CIA - Availability
-*Internet-banking is down*<!-- .element: class="fragment" data-fragment-index="0" -->
+Unavailable
+* *Internet-banking is down*<!-- .element: class="fragment" data-fragment-index="0" -->
+* ```SQL drop database the_bank```<!-- .element: class="fragment" data-fragment-index="0" -->
 
-```SQL drop database the_bank```<!-- .element: class="fragment" data-fragment-index="0" -->
-
-![](pics/cia/norsk_hydro.png)<!-- .element style="position: fixed; bottom: 50px; right: 20px; width: 275px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/notpetya.png)<!-- .element style="position: fixed; top: 140px; right: 110px; width: 275px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/DDoS.png)<!-- .element style="position: fixed; bottom: 170px; left: 10px; width: 375px;" class="fragment" data-fragment-index="1" -->
-![](pics/cia/maastricht_ransomware.png)<!-- .element style="position: fixed; bottom: 20px; left: 310px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/notpetya.png)<!-- .element style="position: fixed; top: 140px; right: 50px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/wannacry.png)<!-- .element style="position: fixed; top: 280px; right: 220px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/norsk_hydro.png)<!-- .element style="position: fixed; bottom: 20px; right: 0px; width: 275px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/DDoS.png)<!-- .element style="position: fixed; bottom: 150px; left: 0px; width: 375px;" class="fragment" data-fragment-index="1" -->
+![](pics/cia/maastricht_ransomware.png)<!-- .element style="position: fixed; bottom: 0px; left: 310px; width: 375px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
 
@@ -119,8 +124,10 @@ There is debate on extending CIA, with multiple options, including this diagram.
 ## Security Principles
 <hr />
 
+### Categories
+
 * **S** poofing
-* **T**ampering
+* **T** ampering
 * **R** epudiation
 * **I** nformation disclosure
 * **D** enial of Service
@@ -128,6 +135,7 @@ There is debate on extending CIA, with multiple options, including this diagram.
 
 -- Notes --
 
+Attack categorization
 * **S** poofing (I): IP / [Caller-ID](https://youtu.be/FO0iG_P0P6M?t=345) / Mail-address / [GPS](https://www.scmagazine.com/home/pokemon-go-cheaters-may-inadvertently-learn-gps-spoofing/)
 * **T**ampering (I): Data / Log-file / Cookie / [URL Query string](https://nos.nl/artikel/273011-alle-begrotingsstukken-openbaar.html)
 * **R** epudiation (I)
@@ -140,6 +148,8 @@ There is debate on extending CIA, with multiple options, including this diagram.
 ## Security Principles
 <hr />
 
+### Severity
+
 * **D** amage
 * **R** eproducibility
 * **E** xploitability
@@ -148,6 +158,10 @@ There is debate on extending CIA, with multiple options, including this diagram.
 
 -- Notes --
 
+Optional:
+* DREAD analysis of the Death Star attack of Star Wars IV: A new hope (and Rogue One)
+
+Attack categorization
 * **D** amage – how much damage could an attack cause?
 * **R** eproducibility – how easy is it to (re)produce the attack?
 * **E** xploitability – how much work is it to launch the attack?

@@ -1,12 +1,12 @@
 ## OWASP
 <hr />
 
-* [OWASP](https://www.owasp.org/index.php/Main_Page)
-  * [Open SAMM](https://www.opensamm.org/)
-  * [Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
-  * [Mobile Top 10](https://www.owasp.org/index.php/OWASP_Mobile_Top_10)
-  * [Top 10 proactive controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls)
-  * [Cheat Sheets](https://www.owasp.org/index.php/OWASP_Cheat_Sheet_Series)
+* [OWASP](https://owasp.org/)
+  * [OWASP SAMM](https://owasp.org/www-project-samm/)
+  * [Top 10](https://owasp.org/www-project-top-ten/)
+  * [Mobile Top 10](https://owasp.org/www-project-mobile-top-10/)
+  * [Top 10 proactive controls](https://owasp.org/www-project-proactive-controls/)
+  * [Cheat Sheets](https://cheatsheetseries.owasp.org/)
 
 ![](pics/owasp.jpeg)<!-- .element style="position: fixed; top: 200px; right: 20px; width: 250px; background:none; border:none; box-shadow:none; " -->
 
@@ -14,8 +14,9 @@
 
 ## OWASP
 
-* [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) Zed Attack Proxy
-* [Security Shepherd](https://www.owasp.org/index.php/OWASP_Security_Shepherd) training platform
+* [ZAP](https://owasp.org/www-project-zap/) Zed Attack Proxy
+* [Security Knowledge Framework](https://owasp.org/www-project-security-knowledge-framework/)
+* [Security Shepherd](https://owasp.org/www-project-security-shepherd/) training platform
 
 ![](pics/ssdlc/OWASP_ZAP.png)<!-- .element style="position: fixed; top: 200px; right: 20px; width: 250px; background:none; border:none; box-shadow:none; " -->
 

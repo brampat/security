@@ -29,6 +29,7 @@
 * [CI/CD Pipeline](https://www.facebook.com/WIALondon/videos/483256762218355/) starting at 30min.
 * [Continuous Delivery](https://www.youtube.com/watch?v=skLJuksCRTw) by [Jez Humble](https://twitter.com/jezhumble?lang=en)
 * [Shifting Security from Right to Left](https://blog.jetbrains.com/idea/2019/06/webinar-recording-shifting-security-from-right-to-left/) by [Brian Vermeer](https://twitter.com/BrianVerm)
+* [How to tackle software security vulnerabilities](https://www.youtube.com/watch?v=qLhGKr3yHo8) by [Rob van der Veer](https://twitter.com/robvanderveer)
 
 
 ## Agile software development

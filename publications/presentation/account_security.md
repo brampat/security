@@ -138,10 +138,10 @@ For people with perfect photographic memory, go ahead and remember 100+ of these
 
 <span style="font-size: 16px; position: fixed; left: 10px; bottom: 80px; ">20 - 30 characters is sufficient<span><br>
 <span style="font-size: 16px; position: fixed; left: 10px; bottom: 60px; ">Any pattern or system you introduce can be broken<span>
-![](./pics/lastpass.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 260px; width: 290px;" -->
+![](pics/intro/lastpass.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 260px; width: 290px;" -->
 ![](./pics/1password.png)<!-- .element style="box-shadow:none; position: fixed; right: 70px; top: 400px; width: 290px;" -->
 ![](./pics/keepass.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 260px; width: 290px;" -->
-![](./pics/dashlane.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 400px; width: 290px;" -->
+![](pics/intro/dashlane.png)<!-- .element style="box-shadow:none; position: fixed; left: 70px; top: 400px; width: 290px;" -->
 
 -- Notes --
 

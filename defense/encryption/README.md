@@ -27,3 +27,4 @@ To satisfy these requirements, we can use public-private key encryption and sign
 * [Asymmetric Encryption](https://www.usna.edu/CyberDept/sy110/lec/cryptAsymmEnc/lec.html)
 * [Public-private key cryptography](https://en.m.wikipedia.org/wiki/Public-key_cryptography) on Wikipedia
 * [Digital Signatures](https://en.m.wikipedia.org/wiki/Digital_signature) on Wikipedia
+* [Bad Cryptography](https://its.ny.gov/sites/default/files/documents/2bruce_barnett.pptx.pdf) by Bruce Barnett

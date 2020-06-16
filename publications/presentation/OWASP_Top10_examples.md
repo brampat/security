@@ -136,7 +136,6 @@ In prioritized order
   * Expression Language
   * etc.
 
-
 --
 
 ## OWASP 2017-A2: Broken Authentication
@@ -159,17 +158,21 @@ In prioritized order
 ![](pics/rockyou.jpeg)<!-- .element style="box-shadow:none; position: fixed; left: 500px; top: 135px; width: 200px;" -->
 ![](pics/myfitnesspal.png)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 132px; width: 200px;" -->
 ![](pics/twitter.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 400px; width: 200px;" -->
-![](pics/facebook.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 172px; width: 200px;" -->
-![](pics/google-icon.png)<!-- .element style="box-shadow:none; position: fixed; left: 280px; top: 150px; width: 200px;" -->
+![](pics/intro/facebook.png)<!-- .element style="box-shadow:none; position: fixed; left: 450px; top: 172px; width: 200px;" -->
+![](pics/intro/google-icon.png)<!-- .element style="box-shadow:none; position: fixed; left: 280px; top: 150px; width: 200px;" -->
 ![](pics/myspace.jpg)<!-- .element style="box-shadow:none; position: fixed; left: 720px; top: 162px; width: 200px;" -->
-![](pics/linkedin.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 380px; width: 200px;" -->
+![](pics/intro/linkedin.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 380px; width: 200px;" -->
 ![](pics/psn.jpg)<!-- .element style="box-shadow:none; position: fixed; left: 750px; top: 320px; width: 200px;" -->
-![](pics/dropbox.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 400px; width: 200px;" -->
+![](pics/intro/dropbox.png)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 400px; width: 200px;" -->
 
 [Information is beautiful](https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)<!-- .element style="position: fixed; left: 50px; bottom: 50px;" -->
 
 -- Notes --
 
+* Failure to implement & secure authentication & session management:
+  * Enables interception & misuse of session-tokens
+  * Failure defend against brute-force attacks
+  * Failure defend against credential stuffing
 * Although Data-breaches (with password-leaks) themselves are not the actual attack, they enable credential stuffing, which is an excellent example of broken authentication
 * More info on how RockYou changed the way account hacking is done on [Darknet Diaries episode 33](https://darknetdiaries.com/episode/33/)
   * In 2009 a hacker broke into a website with millions of users and downloaded the entire user database. What that hacker did with the data has changed the way we view account security even today.
@@ -211,12 +214,23 @@ These tools help to crack passwords
   * Securely stored
   * Invalidate (on logout, idle and absolute timeouts) 
 
+-- Notes --
+
+
+
 --
 
 ## Broken Authentication: further reading
 <hr />
 
 * OWASP on [2017-A2 Broken Authentication](https://www.owasp.org/index.php/Top_10-2017_A2-Broken_Authentication)
+* OWASP [Authentication Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+* OWASP [Credential Stuffing Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html)
+* OWASP [Forgot Password Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)
+* OWASP [Session Management Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
+* NIST SP800-63b [Section 5](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5) Authenticator and Verifier Requirements
+* Darknet Diaries 33 [RockYou](https://darknetdiaries.com/episode/33/)
+* Darknet Diaries 45 [XBox Underground p1](https://darknetdiaries.com/episode/45/)
 * [Passwords, fun with numbers](https://github.com/brampat/security/tree/master/publications/2019-02-20_passwords_fun_with_numbers)
 * [Password attacks & defenses](https://github.com/brampat/security/tree/master/defense/passwords)
 
@@ -243,24 +257,45 @@ These tools help to crack passwords
 
 [Breed-ready status](https://www.bleepingcomputer.com/news/security/creepy-database-lists-breedready-status-for-18-million-women/)<!-- .element style="position: fixed; width: 400px; bottom: 100px; right: 100px;" -->
 
+-- Notes --
+
+* Failure to protect sensitive data:
+  * At rest & in transit
+
 --
 
 ## Sensitive Data Exposure: attack
 <hr />
 
-![](pics/linkedin.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 380px; width: 200px;" -->
+![](pics/intro/linkedin.png)<!-- .element style="box-shadow:none; position: fixed; left: 520px; top: 380px; width: 200px;" -->
 ![](pics/marriott.jpeg)<!-- .element style="box-shadow:none; position: fixed; left: 300px; top: 400px; width: 200px;" -->
 ![](pics/family_locator.png)<!-- .element style="box-shadow:none; position: fixed; left: 250px; top: 180px; width: 350px;" -->
-![](pics/flipboard.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 300px; width: 200px;" -->
+![](pics/intro/flipboard.png)<!-- .element style="box-shadow:none; position: fixed; left: 100px; top: 300px; width: 200px;" -->
 ![](pics/justdial.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 200px; width: 300px;" -->
+
+--
+
+## Sensitive Data Exposure: attack
+<hr />
+
+![](pics/OWASP_top10/firesheep.jpg)<!-- .element style="box-shadow:none; position: fixed; left: 50px; top: 200px; width: 300px;" -->
+![](pics/OWASP_top10/nissan_leaf_API.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 200px; width: 200px;" -->
+![](pics/OWASP_top10/bucket-with-holes.jpg)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 420px; width: 300px;" -->
+
+
 
 -- Notes --
 
-* [Marriott](https://www.nytimes.com/2018/11/30/business/marriott-data-breach.html) Data Breach with unencrypted passports and credit-card details
-* [Family Locator](https://techcrunch.com/2019/03/23/family-tracking-location-leak/) leaked unencrypted GPS data
-* [LinkedIn](https://www.vice.com/en_us/article/4xaaxb/you-can-now-finally-check-if-you-were-a-victim-of-the-2012-linkedin-hack) had 164 Million accounts with unsalted SHA1 passwords
-* [FlipBoard](https://thehackernews.com/2019/05/flipboard-data-breach-hacking.html): Real names, usernames, salted & hashes passwords, email-addresses, digital tokens for linked social media services
-* [JustDial](https://thehackernews.com/2019/04/justdial-hacked-data-breach.html): NoSQL database accessed by an old API endpoint containing users' name, email, mobile number, address, gender, date of birth, photo, occupation, company name
+* API abuse to enable data harvesting
+* Man-in-the-Middle to intercept unencrypted data-traffic
+  * [Firesheep](https://en.wikipedia.org/wiki/Firesheep) makes the attack as easy as installing a [Firefox plugin](https://codebutler.com/2010/10/24/firesheep/) / [Firesheep](https://codebutler.com/projects/firesheep/)
+* Insecurely configured cloud-services (S3 buckets, MongoDB's etc.)
+* Examples:
+  * [Marriott](https://www.nytimes.com/2018/11/30/business/marriott-data-breach.html) Data Breach with unencrypted passports and credit-card details
+  * [Family Locator](https://techcrunch.com/2019/03/23/family-tracking-location-leak/) leaked unencrypted GPS data
+  * [LinkedIn](https://www.vice.com/en_us/article/4xaaxb/you-can-now-finally-check-if-you-were-a-victim-of-the-2012-linkedin-hack) had 164 Million accounts with unsalted SHA1 passwords
+  * [FlipBoard](https://thehackernews.com/2019/05/flipboard-data-breach-hacking.html): Real names, usernames, salted & hashes passwords, email-addresses, digital tokens for linked social media services
+  * [JustDial](https://thehackernews.com/2019/04/justdial-hacked-data-breach.html): NoSQL database accessed by an old API endpoint containing users' name, email, mobile number, address, gender, date of birth, photo, occupation, company name
 
 --
 
@@ -270,7 +305,7 @@ These tools help to crack passwords
 * Classify data on confidentiality
 * Apply controls per classification
 * Don't store unnecessary data
-* Encrypt at at rest & in transit
+* Encrypt at rest & in transit
 * Use strong encryption & proper key-management
 * Enforce HTTPS using HTTP Strict Transport Security (HSTS)
 * Use proper password storage

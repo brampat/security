@@ -30,7 +30,7 @@
 * [GoScan](https://github.com/marco-lancini/goscan): Similar to NMap, developed in Go
 * [Wireshark](https://www.wireshark.org): DPI scanning / sniffing tool
 * [Burp Suite / Portswigger](https://portswigger.net/burp/communitydownload) (Euro 350 / year, limited functionality community edition available): Penetration testing, detailed analysis and (manual / automated) modification of network traffic. Ideal for webapp hacking
-* OWASP [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
+* OWASP [ZAP](https://owasp.org/www-project-zap/)
   * [OWASP ZAP HUD](https://www.youtube.com/watch?v=1hbKGDgx_p0): Presentation by Simon Bennetts for OWASP London
 * [Ettercap](http://www.ettercap-project.org/ettercap/downloads.html): Network sniffing (incl. SSH & HTTPS)
 * [Wireshark](https://www.wireshark.org)

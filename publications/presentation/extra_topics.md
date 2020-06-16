@@ -13,9 +13,8 @@
 
 ### Security
 
-* OWASP: [Top 10](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf), [Cheat-sheets](https://github.com/OWASP/CheatSheetSeries/tree/master/cheatsheets), [Projects](https://www.owasp.org/index.php/Category:OWASP_Project#tab=Project_Inventory)
-  * [OWASP Student Chapters](https://www.owasp.org/index.php/OWASP_Student_Chapters_Program)
-  * [OWASP Education Project](https://www.owasp.org/index.php/Category:OWASP_Education_Project)
+* OWASP: [Top 10](https://owasp.org/www-project-top-ten/), [Cheat-sheets](https://cheatsheetseries.owasp.org/), [Projects](https://owasp.org/projects/)
+  * [OWASP Online Bootcamp](https://owasp-academy.teachable.com/) for Application Security
 * Secure Software Development Lifecycle: [Tools](https://github.com/brampat/security/tree/master/defense/tools), Methods, Procedures
 
 --

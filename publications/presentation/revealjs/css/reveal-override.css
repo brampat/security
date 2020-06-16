@@ -28,3 +28,11 @@ hr {
 	border: 0px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
+
+section.table-medium {
+	font-size: 20px;
+}
+
+section.table-small table {
+	font-size: 15px;
+}

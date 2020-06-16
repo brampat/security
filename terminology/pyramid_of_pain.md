@@ -4,5 +4,7 @@ The concept of the Pyramid of Pain was invented by [David J. Bianco](https://twi
 The Pyramid of Pain describes different levels of indicators to detect a specific threat actor and the ability to respond to those indicators.
 The concept promotes to prioritize acting on the higher-level indicators (towards the top of the pyramid), which makes it more challenging for the threat actor to evade an organization's defenses, thus causing more pain.
 
+TODO: elaborate
+
 ## Sources
 * [Pyramid of Pain](http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html) by [David J. Bianco](https://twitter.com/davidjbianco)
