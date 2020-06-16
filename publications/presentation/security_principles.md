@@ -181,9 +181,9 @@ Attack categorization
 <span>Detection</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; left: 340px; z-index: -100;"  -->
 <span>Workaround</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; right: 240px; z-index: -100;"  -->
 <span>Sophistication</span><!-- .element style="font-size: 16px; box-shadow:none; position: fixed; top: 230px; left: 50px; z-index: -100;"  -->
-![](./pics/hacker-3.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 300px; left: 130px; width: 100px; background-color: #ffffff;" class="fragment" data-fragment-index="3" -->
+![](pics/hacker_types/hacker-3.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 300px; left: 130px; width: 100px; background-color: #ffffff;" class="fragment" data-fragment-index="3" -->
 ![](pics/cia/spider_2.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 180px; left: 70px; width: 100px; background-color: #ffffff;" class="fragment" data-fragment-index="2" -->
-![](./pics/script.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 70px; left: 0px; width: 100px; background-color: #ffffff;" class="fragment" data-fragment-index="1" -->
+![](pics/hacker_types/script.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 70px; left: 0px; width: 100px; background-color: #ffffff;" class="fragment" data-fragment-index="1" -->
 
 
 -- Notes --

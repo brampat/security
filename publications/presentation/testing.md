@@ -230,7 +230,7 @@ But only amateurs are so stupid?
 ## Pentest
 <hr />
 
-![](pics/hat_white.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 150px;"  -->
+![](pics/hacker_types/hat_white.png)<!-- .element style="box-shadow:none; position: fixed; right: 50px; top: 150px;"  -->
 
 * Effort: Call us!
 * Control: Rules of Engagement
