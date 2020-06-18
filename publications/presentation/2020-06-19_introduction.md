@@ -13,22 +13,74 @@ What pops up in your mind?
 | Time  | Subject                          | Type |
 |------:|----------------------------------|------|
 | 9:00  | Intro                            |      |
-| 9:15  | Security Principles              | T    |
-| 9:30  | Hacking basics                   | P    |
-| 10:00 | Pause                            | -    |
-| 10:15 | Pushing Left                     | T    |
-| 10:45 | Hacking puzzles                  | P    |
+| 9:30  | Security Principles              | T    |
+| 10:00 | Hacking basics                   | L    |
+| 10:30 | Pushing Left                     | T    |
+| 11:00 | Hacker-types                     | T    |
+| 11:30 | Hacking puzzles                  | L    |
 | 12:00 | Pause                            | -    |
-| 12:30 | Hacker-types                     | T    |
 | 12:45 | Hack Activities                  | T    |
-| 13:00 | Hacking puzzles                  | P    |
-| 14:00 | OWASP Top 10 by example          | T    |
+| 13:00 | OWASP Top 10 by example          | T    |
+| 13:45 | Hacking puzzles                  | L    |
 | 14:45 | Pause                            | -    |
-| 15:00 | Hacking puzzles                  | P    |
-| 15:30 | Encryption & stuff               | T    |
-| 15:45 | Continuous Security-Testing      | T    |
+| 15:00 | Encryption & stuff               | T    |
+| 15:15 | Continuous Security-Testing      | T    |
+| 15:30 | Hacking puzzles                  | L    |
 | 16:00 | AMA                              | T    |
 
+--
+
+## (Re)Sources
+<hr />
+
+* OWASP [SAMM](https://owasp.org/www-project-samm/)
+* Go [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first)
+* Darknet Diaries:
+  * [Samy](https://darknetdiaries.com/episode/61/)
+  * [MS08-067](https://darknetdiaries.com/episode/57/)
+  * [MAGECART](https://darknetdiaries.com/episode/52/)
+  * [XBox Underground](https://darknetdiaries.com/episode/45/) part 1
+* Mr Robot
+* My [GitHub](https://github.com/brampat/security) Security brain-dump via:
+<span>![](./pics/github.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 30px;" --> brampat.github.io</span><!-- .element style="position: fixed; bottom: 120px; left: 40px;" -->
+* Twitter<!-- .element style="position: fixed; bottom: 80px; left: 33px;" -->
+<span>![](./pics/twitter.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 30px;" --> brampatelski</span><!-- .element style="position: fixed; bottom: 33px; left: 40px;" -->
+
+![](pics/resources/darknet_diaries.jpg)<!-- .element style="position: fixed; bottom: 33px; right: 40px;" -->
+
+
+--
+
+## Coding & Java
+<hr />
+
+* My [GitHub](https://github.com/brampat/security/tree/master/defense/secure-coding/java) Java section
+* Oracle [Secure Coding Guidelines](https://www.oracle.com/java/technologies/javase/seccodeguide.html) for Java SE
+* OWASP [Cheat Sheets](https://cheatsheetseries.owasp.org/IndexProactiveControls.html)
+
+--
+
+
+## Ordina Resources
+<hr />
+
+* [BIO](https://www.informatiebeveiligingsdienst.nl/project/baseline-informatiebeveiliging-overheid/): Baseline Informatiebeveilging Overheid
+* [Grip op SSD](https://www.cip-overheid.nl/productcategorie%C3%ABn-en-worshops/producten/secure-software/)
+* Security Journey
+* Ordina Security training path
+
+-- Notes --
+
+These resources aren't all internal Ordina resources, but are very relevant for Ordina, employees and clients
+
+--
+
+## Hands-on
+<hr />
+
+* [Hacksplaining](https://www.hacksplaining.com/)
+* [Root-me.org](https://www.root-me.org/)
+* [Hacker101](https://www.hacker101.com/)
 
 --
 

@@ -35,7 +35,18 @@
 ![](./pics/transparant_box.jpg)<!-- .element style="position: fixed; width: 150px; top: 330px; right: 100px; background-color: #ffffff;" class="fragment" data-fragment-index="2" -->
 ![](./pics/red_blue.png)<!-- .element style="position: fixed; width: 300px; bottom: 20px; right: 50px; background-color: #ffffff;" class="fragment" data-fragment-index="3" -->
 
+-- Notes --
+
+* Bug Bounty platforms bring ethical hackers & companies together
+  * HackerOne
+  * ZeroCopter (Dutch)
+  * BugCrowd
+
+
+
 --
+
+<!-- .slide: class="table-medium" -->
 
 ## Asymetrical Game
 <hr />
@@ -45,7 +56,7 @@
 | Time      | Immediate response                | Limited assignment time       | No deadline                       | Black-hats|
 | Money     | Limited resources                 | Limited resources             | Unlimited resources (sometimes)   | Black-hats|
 | Knowledge | White-box                         | White-box (mostly)            | Black-box                         | SOC       |
-| Attack    | Don't known when, where and how   | Controlled (Rules of engagement)| No rules                       | Black-hats|
+| Attack    | Don't known when, where and how   | Controlled (Rules of engagement)| No rules                        | Black-hats|
 | Defend    | Needs to defend everything        |                               | Needs just one entry              | Black-hats|
 | Detect    | Single detection needed           | Stealthy not (always) needed  | Remain stealthy                   | SOC       |
 

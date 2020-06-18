@@ -4,7 +4,7 @@
 
 ## Secure Software development workshop
 
-* Questions? Add a "?" in the chat
+* Questions? Raise your hand
 * Unmute before you ask
 
 ![](./pics/brpa.jpg)<!-- .element style="position: fixed; top: 300px; right: 60px; height: 200px;"  -->
