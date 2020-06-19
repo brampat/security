@@ -22,12 +22,12 @@
 ## Conferences & Certifications
 <hr />
 
-![](./pics/Den_Hack.png)<!-- .element style="position: fixed; top: 290px; right: 20px; width: 250px; background-color: #444444;" -->
-![](./pics/SecAppDev.png)<!-- .element style="position: fixed; top: 260px; left: 280px; width: 150px;" -->
-![](./pics/owasp.jpeg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
-![](./pics/Tweakers_Meetup_Security.png)<!-- .element style="position: fixed; top: 290px; left: 20px; width: 250px;" -->
-![](./pics/Tweakers_Meetup_XL_-_Security___Privacy.jpeg)<!-- .element style="position: fixed; top: 160px; right: 80px; width: 250px;" -->
-![](./pics/Secure_Programming_Foundation.png)<!-- .element style="position: fixed; top: 380px; left: 30px; width: 150px;" -->
+![](pics/frontpage/Den_Hack.png)<!-- .element style="position: fixed; top: 290px; right: 20px; width: 250px; background-color: #444444;" -->
+![](pics/frontpage/SecAppDev.png)<!-- .element style="position: fixed; top: 260px; left: 280px; width: 150px;" -->
+![](pics/frontpage/owasp.jpeg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
+![](pics/frontpage/Tweakers_Meetup_Security.png)<!-- .element style="position: fixed; top: 290px; left: 20px; width: 250px;" -->
+![](pics/frontpage/Tweakers_Meetup_XL_-_Security___Privacy.jpeg)<!-- .element style="position: fixed; top: 160px; right: 80px; width: 250px;" -->
+![](pics/frontpage/Secure_Programming_Foundation.png)<!-- .element style="position: fixed; top: 380px; left: 30px; width: 150px;" -->
 ![](pics/frontpage/infosec.jpg)<!-- .element style="position: fixed; top: 400px; left: 300px; width: 150px;" -->
 ![](pics/frontpage/ejpt_certificate.png)<!-- .element style="position: fixed; bottom: 0px; left: 20px; width: 250px;" -->
 ![](pics/frontpage/spring_cert.jpg)<!-- .element style="position: fixed; top: 150px; left: 270px; width: 150px;" -->
@@ -60,10 +60,6 @@
 ![](pics/heroes/wesley_neelen.png)<!-- .element style="position: fixed; bottom: 40px; right: 320px; width: 150px;" -->
 ![](pics/heroes/troy_hunt.jpg)<!-- .element style="position: fixed; top: 140px; left: 80px; width: 150px;" -->
 ![](pics/heroes/Chris_Kubecka.jpeg)<!-- .element style="position: fixed; top: 320px; left: 350px; width: 150px;" -->
-
-![](pics/heroes/.jpeg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
-
-![](pics/heroes/)
 
 -- Notes --
 

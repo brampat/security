@@ -69,23 +69,18 @@
                 <section data-markdown="./extra_topics.md" data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-separator-notes="^-- Notes --"></section>
             </div>
         </div>
-        <script src="revealjs/lib/js/head.min.js"></script>
-        <script src="revealjs/js/reveal.js"></script>
+        <script src="revealjs/dist/reveal.js"></script>
+        <script src="revealjs/plugin/notes/notes.js"></script>
+        <script src="revealjs/plugin/markdown/markdown.js"></script>
+        <script src="revealjs/plugin/highlight/highlight.js"></script>
         <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
             Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
-
-                // Optional libraries used to extend on reveal.js
-                dependencies: [
-                    { src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: 'revealjs/plugin/notes/notes.js' }
-                ]
+                hash: true,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
             });
         </script>
     </body>

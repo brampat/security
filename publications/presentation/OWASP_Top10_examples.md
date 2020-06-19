@@ -487,7 +487,7 @@ GET http://canadian-business-news/company/maple-syrup-inc/2019-Q2.pdf
 * Review components
 * Removed default credentials
 * Separated code and configuration
-* NNo hardcoded credentials or other settings and secrets
+* No hardcoded credentials or other settings and secrets
 * Dedicated accounts with appropriate (least) privileges
 * Smoke-tests for correct version and configuration
 * Segregated environments and differentiate credentials
@@ -560,7 +560,7 @@ Crypto-jacking:
   miner.start();
 &#60;/script&#62;
 </pre>
- 
+
 --
 
 ## Cross-Site Scripting (XSS): defense
@@ -586,7 +586,7 @@ Escape for the correct context:
 <hr />
 
 * OWASP on [2017-A7 Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_%28XSS%29)
-* OWASP [XSS Prevention Cheat sheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
+* OWASP [XSS Prevention Cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * XSS types:
   * [Reflected XSS](https://www.owasp.org/index.php/Testing_for_Reflected_Cross_site_scripting_%28OTG-INPVAL-001%29)
   * [Stored XSS](https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_%28OTG-INPVAL-002%29)
@@ -780,7 +780,7 @@ X-Powered-By: Enables all other vulnerabilites. Hacker's Cheat-mode:
 * Generic format for log-aggregation
 * Audit trails with integrity controls for high-value transactions
 * (Near) Realtime monitoring & alerting process
-* Incident repsonse & recovery process
+* Incident response & recovery process
 
 --
 
@@ -789,7 +789,7 @@ X-Powered-By: Enables all other vulnerabilites. Hacker's Cheat-mode:
 
 * OWASP on [2017-A10 Insufficient Logging & Monitoring](https://www.owasp.org/index.php/Top_10-2017_A10-Insufficient_Logging%26Monitoring)
 * OWASP [Security Logging](https://www.owasp.org/index.php/OWASP_Security_Logging_Project) project
-* [9 logging sincs in Java](https://stackify.com/9-logging-sins-java/)
+* [9 logging sins in Java](https://stackify.com/9-logging-sins-java/)
 * [Spring Boot Authentication Audit](https://www.baeldung.com/spring-boot-authentication-audit)
 * [Splunk](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 * [Elastic Stack](https://www.elastic.co/products/)
