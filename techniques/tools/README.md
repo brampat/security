@@ -168,6 +168,25 @@
 * [Tracelabs](https://www.tracelabs.org/getinvolved/ctf/) OSINT CTF on finding missing persons
 * [CTFTime](https://ctftime.org/): Overview of scheduled CTF's
 
+### Docker vulnerable containers
+* BSides San Francisco:
+  * CTF [2017](https://github.com/BSidesSF/ctf-2017-release)
+  * CTF [2018](https://github.com/BSidesSF/ctf-2018-release)
+  * CTF [2019](https://github.com/BSidesSF/ctf-2019-release)
+  * CTF [2020](https://github.com/BSidesSF/ctf-2020-release)
+* Collection of vulnerable [Docker Containers](https://hub.docker.com/u/vulnerables)
+* Collection of vulnerable [Docker Environments](https://github.com/vulhub/vulhub)
+* Damn Vulnerable Web Application Docker container [Web-DVWA](https://hub.docker.com/r/vulnerables/web-dvwa/)
+* DerpCon [CTF 2020](https://github.com/runcode-ninja/DerpCon-CTF-2020)
+* [Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat)
+* Metasploit [Vulnerability Emulator](https://hub.docker.com/r/vulnerables/metasploit-vulnerability-emulator)
+* OWASP [Juice Shop](https://github.com/bkimminich/juice-shop#docker-container)
+* OWASP [WebGoat](https://github.com/WebGoat/WebGoat#1-run-using-docker)
+* [SecGen](https://github.com/cliffe/SecGen/): Security Scenario Generator generates randomised vulnerable systems
+* Tufts University [CTF](https://github.com/mchow01/tufts-ctf-fall2014-docker#pulling-the-image-from-docker-hub) for Introduction to Computer Security
+* Web Application Pentest [Lab setup](https://www.hackingarticles.in/web-application-pentest-lab-setup-using-docker/) Using Docker
+* [WebSploit](https://websploit.h4cker.org/download.html)
+
 ## Docker automation for Hack-tasks
 * [Docker for hackers](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/) A pentester's guide
 * [Using Docker for disposable attack images](https://blog.zsec.uk/ltr101-dac/)
