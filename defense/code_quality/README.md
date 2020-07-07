@@ -153,10 +153,17 @@ TODO:
 
 # Readability
 
+```
+//When I wrote this, only God and I understood what I was doing
+//Now, God only knows
+```
+
+[Source](https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered/316233#316233)
+
 ## Inline comments
 
 * [Comments tell you why](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
-* [Wikipedia](https://en.wikipedia.org/wiki/Comment_(computer_programming)
+* [Wikipedia](https://en.wikipedia.org/wiki/Comment_\(computer_programming\))
 * [Coding standards for clarity](https://softwareengineering.stackexchange.com/questions/336430/coding-standard-for-clarity-comment-every-line-of-code)
 * [Force people to read and understand code](https://softwareengineering.stackexchange.com/questions/201657/forcing-people-to-read-and-understand-code-instead-of-using-comments-function-s)
 
@@ -239,8 +246,8 @@ TODO
   * Languages: Java, JavaScript, Salesforce.com Apex and Visualforce, PLSQL, Apache Velocity, XML, XSL 
   * Metrics: Common programming flaws
   * Formats: 
-  * Licence: []
-  * Runs on: Linux, Mac OSX, Windows, [InntelliJ](https://pmd.github.io/pmd-6.15.0/pmd_userdocs_tools.html#idea), [Eclipse](https://pmd.github.io/pmd-6.15.0/pmd_userdocs_tools.html#eclipse), [Maven](https://pmd.github.io/pmd-6.15.0/pmd_userdocs_tools_maven.html)
+  * Licence: [BSD-style](https://pmd.github.io/pmd-6.25.0/license.html) / Apache License
+  * Runs on: Linux, Mac OSX, Windows, [IntelliJ](https://pmd.github.io/pmd-6.15.0/pmd_userdocs_tools.html#idea), [Eclipse](https://pmd.github.io/pmd-6.15.0/pmd_userdocs_tools.html#eclipse), [Maven](https://pmd.github.io/pmd-6.15.0/pmd_userdocs_tools_maven.html)
 * [JaCoCo](https://www.eclemma.org/jacoco/)
   * Languages: Java
   * Metrics: Code Test coverage
@@ -251,7 +258,7 @@ TODO
   * Languages: Java
   * Metrics: Code Test coverage
   * Formats: 
-  * Licence: [GNU GPL]
+  * Licence: [GNU GPL v2.0](https://github.com/cobertura/cobertura/blob/master/LICENSE.txt/)
   * Runs on: JVM
 * [Checkstyle](http://checkstyle.sourceforge.net/)
   * Languages: Java
@@ -377,3 +384,95 @@ TODO
   * Licence: []
   * Runs on: 
 
+# 12 ways to make your code suck less
+[Source](https://www.youtube.com/watch?v=nVZE53IYi4w) by [Venkat Subramaniam](https://www.twitter.com/venkat_s)
+
+## Intro
+* We can't be agile if our code sucks
+* Code is how we tell our colleagues how we feel about them
+* "Lowering quality lengthens development time" - First law of Programming, [source](http://c2.com/cgi/wiki?FirstLawOfProgramming)
+* What's Quality Code?
+  * The quality of code is inversely proportional to the effort it takes to understand it - [source](http://blog.agiledeveloper.com/2010/05/thoughts-through-tweets_15.html)
+  * "If only we could compare the cost of quality with the cost of not having it..."
+
+## Twelve ways we can help
+
+### 12: Schedule time to lower technical debt
+* What is technical debt? [Ward Cunningham](http://c2.com/cgi/wiki?WardExplainsDebtMetaphor)
+
+### 11: Favor high cohesion
+* High cohesion == low cyclomatic complexity
+
+### 10: Favor loose coupling
+* Tight coupling makes code:
+  * Hard to extend
+  * Hard to test
+
+### 09: Program with intention
+```
+//When I wrote this, only God and I understood what I was doing
+//Now, God only knows
+```
+[source](https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered)
+
+Beck's rule for simple design (in this order):
+* Passes the tests
+* Reveals intention
+* No duplication
+* Fewest elements
+
+[source](http://martinfowler.com/bliki/BeckDesignRules.html)
+
+Program deliberately: write tests before writing code. This forces you to think about how the code will be used.
+
+### 08: Avoid primitive obsession
+Good code should read like a story, not a puzzle
+
+### 07: Prefer clear code over clever code
+
+* Programs must be written for people to read, and only incidentally for machines to execute - Abelson and Sussman
+* 10% of the time, we write ugly code for performance reasons, the other 90% of the time, we write ugly code to be consistent
+* Those who sacrifice quality to get performance may end up getting neither
+* There are two ways of constructing software design.
+  * One way is to make it so simple that there are obviously no deficiencies
+  * and the other is to make it so complicated that there are no obvious deficiencies - Tony Hoare
+
+### 06: Apply Zinsser's principle on writing
+
+On writing well, the classic guide to writing nonfiction - William Zinsser
+
+* Simplicity
+* Clarity
+* Brevity
+* Humanity
+
+### 05: Comment why, not what
+* Don't comment to cover up bad code
+* Write expressive self-documenting code
+* Good code is like a good joke, Writing comments is like explaining a joke
+
+### 04: Avoid long methods - Apply SLAP
+* Single Level of Abstraction Principle (SLAP)
+* Keep indention / levels to a minimum (Limited width)
+
+Perils of Long methods:
+* Hard to understand
+* Hard to test
+* Lead to duplication
+* Hard to reuse
+* Become longer
+* Low cohesion
+* Increase coupling
+
+### 03: Give good meaningful names
+* Programmer: person who can name their children quite easily but has a hard time naming their variables
+* Variable names represent abstraction
+* If we can't name a variable or function properly, it may be a sign we've not yet understood its true purpose
+
+### 02: Do tactical code reviews
+* Peer reviews catch 60% of defects
+* Perspective-based reviews catch 35% more defects than non-directed reviews
+* Peer reviews complement testing
+* Technical and social activity
+
+### 01: Reduce state & state mutation
