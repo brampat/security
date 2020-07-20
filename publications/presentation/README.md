@@ -18,10 +18,10 @@ You can create or customize your own slidedeck by creating a customized version 
 
 ### Starting the presentation
 
-* Install [RevealJS](https://github.com/hakimel/reveal.js/releases) so that there is a sub-folder ```presentation/revealjs``` containing these folders with RevealJS's sources:
+* Install [RevealJS](https://revealjs.com/installation/) using the ```Basic setup``` so that there is a sub-folder ```revealjs``` in the folder ```presentation``` containing these folders with RevealJS's sources:
   * css
+  * dist
   * js
-  * lib
   * plugin etc.
 * Start webserver with Python3 (preferred):
 
@@ -36,7 +36,7 @@ The old Python 2 way of doing this is:
 python -m SimpleHTTPServer 8000
 ```
 
-* Open [localhost](http://localhost:8000) on port 8000
+* Open [localhost](http://localhost:8000/index.html) on port 8000 (yes, with index.html explicitly added)
 * On that page, enter key ```S``` for speaker-notes
 
 ## Details
