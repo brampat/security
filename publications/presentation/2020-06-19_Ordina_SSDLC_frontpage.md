@@ -63,10 +63,6 @@
 ![](pics/heroes/troy_hunt.jpg)<!-- .element style="position: fixed; top: 330px; right: 300px; width: 150px;" -->
 ![](pics/heroes/Chris_Kubecka.jpeg)<!-- .element style="position: fixed; top: 320px; left: 350px; width: 150px;" -->
 
-![](pics/heroes/.jpeg)<!-- .element style="position: fixed; bottom: 0px; right: 175px; width: 150px;" -->
-
-![](pics/heroes/)
-
 -- Notes --
 
 * Troy Hunt - Have I Been pwned, Microsoft MVP
