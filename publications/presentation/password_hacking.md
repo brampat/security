@@ -48,6 +48,51 @@ That's all folks<!-- .element: style="position: fixed; left: 50px; top: 550px;" 
 
 --
 
+## Bobby Tables
+<hr />
+
+![](pics/bobby_tables.png)
+
+-- Notes --
+
+SQL injection attacks are so prevalent, there even is an XKCD comic about it.
+
+--
+
+## Defense: SQL-injection
+<hr />
+
+### Parameterized queries
+
+```asp
+var cmd = new SqlCommand() {
+   Connection = conn,
+   CommandText = "SELECT * FROM Students WHERE FirstName = @FirstName"
+};
+var prm = cmd.Parameters.Add("StudentName", SqlDbType.NVarChar);
+prm.Value = "Robert'; DROP TABLE Students; --";
+```
+
+![](./pics/OWASP_Top_10.png)<!-- .element style="position: fixed; left: 450px; width: 500px;" class="fragment" data-fragment-index="1" -->
+
+<br><br><br>
+[bobby-tables.com](http://bobby-tables.com/)<!-- .element class="fragment" data-fragment-index="1" -->
+
+Contains example code for: ADO.NET, ASP, C#, Delphi, Go, Java, Perl, PHP, Python, Ruby, VB.NET and more<!-- .element style="font-size: 12px; width: 300px;" class="fragment" data-fragment-index="1" -->
+
+-- Notes --
+
+SQL injection defence is so easy, but so often not implemented, there even is a website called Bobby Tables about it.
+
+--
+
+## Defense: SQL-injection
+<hr />
+
+![](pics/passwords/queries_done.jpg)
+
+--
+
 ## Password storage: Attack SQL Injection
 <hr />
 
@@ -107,58 +152,13 @@ How can I extract all user-data using SQLi?
 
 --
 
-## Bobby Tables
-<hr />
-
-![](pics/bobby_tables.png)
-
--- Notes --
-
-SQL injection attacks are so prevalent, there even is an XKCD comic about it.
-
-
---
-
-## Defense: SQL-injection
-<hr />
-
-### Parameterized queries
-
-```asp
-var cmd = new SqlCommand() {
-   Connection = conn,
-   CommandText = "SELECT * FROM Students WHERE FirstName = @FirstName"
-};
-var prm = cmd.Parameters.Add("StudentName", SqlDbType.NVarChar);
-prm.Value = "Robert'; DROP TABLE Students; --";
-```
-
-![](./pics/OWASP_Top_10.png)<!-- .element style="position: fixed; left: 450px; width: 500px;" class="fragment" data-fragment-index="1" -->
-
-<br><br><br>
-[bobby-tables.com](http://bobby-tables.com/)<!-- .element class="fragment" data-fragment-index="1" -->
-
-Contains example code for: ADO.NET, ASP, C#, Delphi, Go, Java, Perl, PHP, Python, Ruby, VB.NET and more<!-- .element style="font-size: 12px; width: 300px;" class="fragment" data-fragment-index="1" -->
-
--- Notes --
-
-SQL injection defence is so easy, but so often not implemented, there even is a website called Bobby Tables about it.
-
---
-
-## Defense: SQL-injection
-<hr />
-
-![](pics/passwords/queries_done.jpg)
-
-
---
-
 ## Required knowledge
 <hr />
 
 ### Hashing
 See Encryption & stuff
+
+![](pics/crypto/hashing.png)<!-- .element style="box-shadow:none; width: 600px; " -->
 
 --
 
@@ -231,6 +231,28 @@ See Encryption & stuff
 <pre>5E884...D8</pre><!-- .element style="box-shadow:none; position: fixed; left: 750px; top: 455px; width: 100px; height: 100px;" -->
 <pre>B03DD...42</pre><!-- .element style="box-shadow:none; position: fixed; left: 750px; top: 480px; width: 100px; height: 100px;" -->
 
+--
+
+## Offline Attacks
+<hr />
+
+### Hashcat
+
+![](pics/crypto/5k_cracking_rig.jpg)<!-- .element style="box-shadow:none; position: fixed; left: 20px; top: 250px; width: 300px;" -->
+
+![](pics/crypto/brutalis_rear_thumb.png)<!-- .element style="box-shadow:none; position: fixed; right: 20px; top: 250px; width: 400px;" -->
+
+-- Notes --
+
+* Left: homemade for $5000,-
+  * MD5: 76526.9 MH/s
+  * NetNTLM v1: 67492.1 MH/s
+  * NetNTLM v2: 4943.9 MH/s
+
+* Right: Professional machine for $21200 - $25000,-
+  * MD5: 307.2 GH/s
+  * NetNTLM v1: 272.4 GH/s
+  * NetNTLM v2: 21336.5 MH/s
 
 --
 
@@ -239,7 +261,7 @@ See Encryption & stuff
 
 ### Defence
 
-![](pics/brute_force_humor.png)
+![](pics/brute_force_humor.png)<!-- .element style="box-shadow:none;" -->
 
 -- Notes --
 
@@ -257,6 +279,10 @@ This is not how brute-force defence works
 Up to 2016:
 * Top 25 passwords = 10% all passwords observed
 * 123456 = 4% 
+
+-- Notes --
+
+This was started after the RockYou breach in 2009 of plain-text passwords got leaked. That leak was caused by SQL-injection. Listen to Darknet Diaries Ep. 33
 
 --
 
@@ -740,6 +766,23 @@ aaaaaaaB
 --
 
 ## Defense: Brute-force attack
+
+![](pics/strong_passwords.png)<!-- .element style="position: fixed; width: 900px; top: 280px;" -->
+
+<!--
+|        | 10x lower | 'Ulllll99' | 8x alphanum | 10x alphanum |
+|--------|----------:|-----------:|------------:|-------------:|
+| MD5    |     6 sec |      0 sec |       9 sec |     10 hours |
+| SHA1   |    34 sec |      0 sec |      53 sec |       2 days |
+| SHA256 |     1 min |      0 sec |       2 min |       6 days |
+| SHA512 |     4 min |      0 sec |       6 min |      18 days |
+| SCRYPT |    6 days |      2 min |      9 days |    104 years |
+| BCRYPT |  221 days |     1 hour |    341 days |  3 millennia |
+-->
+
+--
+
+## Defense: Brute-force attack
 <hr />
 
 # L ong
@@ -883,19 +926,3 @@ login(username, password) {
 
 <pre>hash("P@ssw0rd" + "(ZmgbWZLV2F6" + "MaFHgAKL8ekS") -> "E25B9..CD"</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 185px; font-size: 11px;" class="fragment" data-fragment-index="9" -->
 
---
-
-## Defense: Brute-force attack
-
-![](pics/strong_passwords.png)<!-- .element style="position: fixed; width: 900px; top: 280px;" -->
-
-<!--
-|        | 10x lower | 'Ulllll99' | 8x alphanum | 10x alphanum |
-|--------|----------:|-----------:|------------:|-------------:|
-| MD5    |     6 sec |      0 sec |       9 sec |     10 hours |
-| SHA1   |    34 sec |      0 sec |      53 sec |       2 days |
-| SHA256 |     1 min |      0 sec |       2 min |       6 days |
-| SHA512 |     4 min |      0 sec |       6 min |      18 days |
-| SCRYPT |    6 days |      2 min |      9 days |    104 years |
-| BCRYPT |  221 days |     1 hour |    341 days |  3 millennia |
--->
