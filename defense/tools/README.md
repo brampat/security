@@ -61,6 +61,7 @@ The tools described can be integrated in CI/CD toolchains.
   * [Awesome Static Analysis](https://github.com/mre/awesome-static-analysis) list of tools
   * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
   * [Fortify](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports 25+ languages including Java, C#, C++, Swift & PHP
+  * [VeraCode](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports Java, C#, [integration](https://www.veracode.com/integrations) with many tools
   * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
   * [CodeSonar](https://www.grammatech.com/products/codesonar): SAST for C, C++, Java and binaries
   * [Coverity](https://scan.coverity.com/): SAST for C, C++, C#, Java, JavaScript, Ruby and Python

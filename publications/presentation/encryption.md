@@ -91,7 +91,7 @@ Volunteers:
 * No collisions (practically)<!-- .element: class="fragment" data-fragment-index="4" -->
 * Examples: MD5, SHA-1, SHA-2 (224, 256, 384 etc), scrypt, bcrypt <!-- .element: class="fragment" data-fragment-index="0" -->
 
-![](pics/hashing.png)<!-- .element: style="position: fixed; width: 400px; right: 0px; bottom: 20px;" -->
+![](pics/crypto/hashing.png)<!-- .element: style="position: fixed; width: 400px; right: 0px; bottom: 20px;" -->
 
 
 --
