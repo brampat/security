@@ -5,6 +5,11 @@ For a combined graph overview see [here](graph.md), which includes:
 * OWASP Mobile Top 10
 * OWASP Top 10 Proactive Controls
 
+## OWASP Projects Map
+
+The [Application Security Wayfinder](https://owasp.org/www-project-integration-standards/) diagram plots the different OWASP Projects on an SDLC Map, so you can identify projects to use in different phases and steps of the organisation.
+
+
 ## OWASP Top 10 (vulnerabilities)
 
 The OWASP Top Ten provides a powerful awareness document for web application security. The OWASP Top Ten represents a broad consensus about what the most critical web application security flaws are.
