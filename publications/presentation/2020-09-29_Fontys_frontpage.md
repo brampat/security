@@ -1,8 +1,17 @@
-<!-- .slide: data-background="#DB8831" style="text-align: left; vertical-align: middle; color:white" color="#FFFFFF" -->
-# SSDLC
+# How did I get here?
 <hr />
 
-## Requirements to decommission
+![](pics/intro/HAL9000_quicksave_2019.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; bottom: 200px; left: 220px;" -->
+
+
+
+--
+
+<!-- .slide: data-background="#DB8831" style="text-align: left; vertical-align: middle; color:white" color="#FFFFFF" -->
+# Password Hacking
+<hr />
+
+## Defending myself and my users
 
 * Questions in chat
 
@@ -11,6 +20,7 @@
 <span>![](./pics/twitter.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 30px;" --> brampatelski</span><!-- .element style="position: fixed; bottom: 110px; left: 20px;" -->
 <span>![](pics/intro/linkedin.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 30px;" --> brampatelski</span><!-- .element style="position: fixed; bottom: 75px; left: 20px;" -->
 <span>![](./pics/github.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 30px;" --> brampat.github.io</span><!-- .element style="position: fixed; bottom: 40px; left: 20px;" -->
+
 
 ![](./pics/ordina.jpeg)<!-- .element style="position: fixed; bottom: 10px; right: 20px; width: 150px;" -->
 
@@ -81,3 +91,31 @@
 * Chris Kubecka - Incident Response & Cyber warfare specialist - Saudi Aramco attacks (2012) of [Shamoon](https://darknetdiaries.com/episode/30/) by Iran / Saudi Arabian embassy The Hague (2014) by ISIS 
 * Edwin van Andel - Zerocopter hacker platform
 
+--
+
+## Agenda
+<hr />
+
+* Whoami
+* ~~Maastricht~~ UHS Ransomware
+* SQLi basics
+* Hashing basics 
+* Storing passwords
+* Offline attacks
+
+-- Notes --
+
+[UHS](https://www.nu.nl/tech/6080538/ziekenhuizen-in-meerdere-staten-vs-getroffen-door-ransomware.html)
+
+--
+
+## (Re)Sources
+<hr />
+
+* [Darknet Diaries](https://darknetdiaries.com/)
+  * 33: [RockYou](https://darknetdiaries.com/episode/33/)
+  * 45: [Xbox Underground p1](https://darknetdiaries.com/episode/45/)
+* Mr Robot
+* Passwords, Fun with Numbers on [brampat.github.io](https://brampat.github.io/2019-02-20_passwords_fun_with_numbers/README)
+
+![](pics/resources/darknet_diaries.jpg)<!-- .element style="position: fixed; top: 350px; right: 50px; width: 250px; background:none; border:none; box-shadow:none; " -->

@@ -25,11 +25,16 @@ The tools described can be integrated in CI/CD toolchains.
   * For hooks:
     * Yelp pre-commit framework
     * Overcommit
+  * Secrets scanning:
+    * git-hound
+    * gitrob
+    * truffleHog
+    * git-secrets
+    * [GitGot](https://github.com/BishopFox/GitGot) for scanning secrets on GitHub
+    * OWASP Sedated
   * AWS Labs [git-secrets](https://github.com/awslabs/git-secrets)
     * [BFG](https://rtyley.github.io/bfg-repo-cleaner/) deletes secrets from GIT repo history
       * [BFG Blog](https://anchor.host/removing-sensitive-data-from-git-repos/) 
-  * git-hound
-  * [GitGot](https://github.com/BishopFox/GitGot) for scanning secrets on GitHub
   * ThoughtWorks [Talisman](https://github.com/thoughtworks/talisman)
   * Auth0 [repo-supervisor](https://github.com/auth0/repo-supervisor)
   * Peer Code reviews
@@ -161,6 +166,13 @@ The tools described can be integrated in CI/CD toolchains.
       * Maven [ossindex-maven-plugin](https://sonatype.github.io/ossindex-maven/maven-plugin/)
       * NPM [AuditJS](https://www.npmjs.com/package/auditjs) package
       * Visual Studio [Audit.Net](https://marketplace.visualstudio.com/items?itemName=VorSecurity.AuditNet) extension
+    * Golang / Go: [Nancy](https://github.com/sonatype-nexus-community/nancy)
+    * Python / Conda: [Jake](https://github.com/sonatype-nexus-community/jake)
+    * Ruby / RubyGems: [Chelsea](https://github.com/sonatype-nexus-community/chelsea)
+    * AuditJS: Javascript NPM
+    * Cheque: C / C++
+    * Pants: Carbo
+    * AHAB: Bse OS (Debian, Fedora, Alpine)
     * GitHub [DepShield](https://www.sonatype.com/depshield)
     * GitHub [Automated Security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes) for vulnerable dependencies
     * [JForg X-Ray](https://jfrog.com/xray/): in combination with JFrog Artifactory
@@ -178,9 +190,7 @@ The tools described can be integrated in CI/CD toolchains.
     * [13 tools](https://techbeacon.com/app-dev-testing/13-tools-checking-security-risk-open-source-dependencies) for checking open source dependencies
     * Node Security Platform (Included in NPM as of April 2018)
     * [Gemnasium](https://docs.gitlab.com/ee/user/project/import/gemnasium.html) (Integrated into GitLab and integrates with GitHub)
-    * Golang: [Nancy](https://github.com/sonatype-nexus-community/nancy)
-    * Python / Conda: [Jake](https://github.com/sonatype-nexus-community/jake)
-    * Ruby: [Chelsea](https://github.com/sonatype-nexus-community/chelsea)
+    * 
     
   
 ## Acceptance
@@ -316,6 +326,7 @@ The tools described can be integrated in CI/CD toolchains.
   * [SIEMonster](https://siemonster.com/)
   * [Prelude](https://www.prelude-siem.org/)
   * [Elastic Intel](https://github.com/securityclippy/elasticintel/)
+  * [Azure Sentinel](https://azure.microsoft.com/en-in/services/azure-sentinel/)
   * Grafana
   * Graphite
   * Statsd

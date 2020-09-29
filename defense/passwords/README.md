@@ -86,6 +86,16 @@ So the most important factor of a strong password is unpredictability. The impor
 
 If these factors are included, even a decimal only password can be [strong enough](../../publications/2019-02-20_passwords_fun_with_numbers/README.md#professional-cracking). At length 23 even a "simple" decimal password hashed in weak MD5 can withstand a $847k intelligence agency grade password-cracking machine. These scenario's describe pure brute-forcing in which systems try out every conceivable password possible, which is often not a feasible attack because of its CPU (time) or storage intensive requirements.
 
+Best password managers:
+* 2020:
+  * [All That SaaS](https://allthatsaas.com/roundup/best-password-managers/) Comparison of 26 password managers
+  * [PCMag](https://www.pcmag.com/picks/the-best-password-managers) Comparison of 11 top picks
+  * [Wired](https://www.wired.com/story/best-password-managers/) Comparison of 5+
+  * [TechRadar](https://www.techradar.com/best/password-manager) Comparison of 10
+  * [CNet](https://www.cnet.com/how-to/best-password-manager-to-use-for-2020-1password-last-password-more-compared/) Comparison of 7 and details on how password managers work
+  * [Tom's Guide](https://www.tomsguide.com/us/best-password-managers,review-3785.html) Comparison of 7+
+  * [SafetyDetectives](https://www.safetydetectives.com/best-password-managers/) Comparison of 10+
+
 ### Online attacks:
 These attacks describe online attacks performed against running systems, including websites, online API's, backends exposed to outside connections or apps. Attacks like this use automated tools to fire multiple password-guesses per second to the system using lists of credentials to try out, reading the response to scan for valid credentials. Tools like Burp-suite's Repeater can launch these attacks.
 

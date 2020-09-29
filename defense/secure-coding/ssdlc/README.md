@@ -127,10 +127,21 @@ Some security measures:
 
 ### Deploy
 * Secrets management
+  * User or auto-generated passwords
+  * API and other application keys/credentials (including within containers)
+  * SSH Keys
+  * Database and other system-to-system passwords.
+  * Private certificates for secure communication, transmitting and receiving of data (TLS, SSL etc.)
+  * Private encryption keys for systems like PGP
+  * RSA and other one-time password devices
 * Secure config
   * Configuration Review
   * Network Configuration Review 
 * Pentest
+
+#### Sources
+* [Secrets Management](https://www.beyondtrust.com/resources/glossary/secrets-management)
+* Top Secrets Management Tools [Compared](https://dzone.com/articles/top-secrets-management-tools-compared)
 
 ### Maintain
 

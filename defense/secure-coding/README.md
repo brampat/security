@@ -76,3 +76,8 @@ independent from another request. So for example, there's no auto-save for the s
   * [Common API security pitfalls](https://pragmaticwebsecurity.com/talks/commonapisecuritypitfalls)
   * [Taking security seriously](https://pragmaticwebsecurity.com/talks/takingsecurityseriously.html)
 * [Security Ninja's](https://github.com/cniemira/security-ninjas)
+
+
+## Microsoft Security Webinars
+* [List](https://aka.ms/SecurityWebinars) of MS Security Webinars (Mostly Azure related)
+* Becoming an [Azure Sentinal Ninja](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310)
