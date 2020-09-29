@@ -79,3 +79,9 @@ Project page found [here](https://www.owasp.org/index.php/OWASP_Mobile_Security_
 ## OWASP Top 10 Mobile Controls
 Project page found [here](https://www.owasp.org/index.php/OWASP_Mobile_Security_Project#tab=Top_10_Mobile_Controls)
 
+## OWASP API Top 10
+Project page found [here](https://owasp.org/www-project-api-security/)
+
+This OWASP project was started in May 2019 published two release candidates in September and an official release in December 2019.
+
+  

@@ -34,13 +34,35 @@ independent from another request. So for example, there's no auto-save for the s
 ## Security standards / models
 
 * [ASVS](https://github.com/OWASP/ASVS/tree/master/4.0/en) Application Security Verification Standard: For verification of security maturity
-* [OWASP SAMM](https://owasp.org/www-project-samm/) OWASP Software Assurance Maturity Model: For measuring maturity of secure software deveopment.
+* [Cybrary Secure coding](https://www.cybrary.it/course/secure-coding/): OWASP Top 10 and SANS Top 25 vulnerabilities and defenses
+
+### OWASP SAMM
+* [OWASP SAMM](https://owasp.org/www-project-samm/) or [OWASP SAMM.org](https://www.owaspsamm.org) OWASP Software Assurance Maturity Model: For measuring maturity of secure software deveopment.
   * SAMM defines four business functions each with three security practices. Each of the twelve practices are divided into three maturity levels.O
   ![](SAMM.png)
   * [OWASP SAMM 1.5](https://owaspsamm.org/v1-5/downloads/): SAMM 1.5 in a PDF 
   * [OWASP SAMM 2.0](https://owaspsamm.org/model/): SAMM 2.0  introduction 
 * [SAMM Self Assessment](https://github.com/AsteriskLabs/ssa): (dormant since 2014) Tool to assist in Self-assessment on OpenSAMM (built in Rails).
-* [Cybrary Secure coding](https://www.cybrary.it/course/secure-coding/): OWASP Top 10 and SANS Top 25 vulnerabilities and defenses
+
+#### User day June 2020
+* [Full stream](https://youtu.be/BpNbWZg_pKY)
+  * 3:45 [OWASP SAMM Update 2.0](https://youtu.be/5B-methdLO8) - Bart de Win
+  * 33:33 [The Seven deadly sins of SAMM](https://youtu.be/yz-JbdI48NU)
+  * 1:03:14 Agile Guidance for SAMM - Rob van der Veer (Agile add-on triggered by Dutch CIP's [Agile Security Management](https://www.cip-overheid.nl/media/1358/20191010_agile_security_management_v101.pdf))
+  * 2:21:20 SAMM 2.0 Dashboard
+  * 2:51:38 OWASP Top 10 Maturity Categories for Security Champions
+  * 3:21:47  Using OWASP SAMM to kickstart SSDLC
+  * OWASP SAMM: Tools of the trade
+
+| Time      | Talk                                                              | Presenter             |
+|----------!|-------------------------------------------------------------------|-----------------------|
+| 3:45      | [OWASP SAMM Update 2.0](https://youtu.be/5B-methdLO8)             | Bart de Win & [Sebastien Deleersnyder](https://www.twitter.com/sebadele) |
+| 33:33     | [The Seven deadly sins of SAMM](https://youtu.be/yz-JbdI48NU)     | John Wood             |
+| 1:03:14   | Agile Guidance for SAMM                                           | Rob van der Veer      |
+| 2:21:20   | SAMM 2.0 Dashboard                                                | Sathish Ashwin        |
+| 2:51:38   | OWASP Top 10 Maturity Categories for Security Champions           | [Lucian Corlan](https://www.twitter.com/securitystack)    |
+| 3:21:47   | Using OWASP SAMM to kickstart SSDLC                               | [Thomas Kerbl](https://www.twitter.com/dementophobia)     |
+|           | OWASP SAMM: Tools of the trade                                    | John Ellingsworth     |
 
 
 ## Secure coding training  /teaching
