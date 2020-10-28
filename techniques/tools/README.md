@@ -167,7 +167,9 @@
 * [Hacker 101](https://www.hacker101.com/): Training for bounty-hunter by [HackerOne](https://www.hackerone.com/)
 * [Tracelabs](https://www.tracelabs.org/getinvolved/ctf/) OSINT CTF on finding missing persons
 * [CTFTime](https://ctftime.org/): Overview of scheduled CTF's
-
+* [Awesome-CTF](https://github.com/apsdehal/awesome-ctf): A curated list of CTF frameworks, libraries, resources, softwares and tutorials.
+* [AnarchoTechNYC](https://github.com/AnarchoTechNYC/meta/wiki/InfoSec#hacking-challenges): List of CTF's, with short description on the focus of each CTF
+ 
 ### Docker vulnerable containers
 * BSides San Francisco:
   * CTF [2017](https://github.com/BSidesSF/ctf-2017-release)
