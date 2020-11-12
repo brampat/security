@@ -1,13 +1,23 @@
 ## Password hacking
 <hr />
 
-![](pics/correct_horse_battery_staple.png)<!-- .element style="position: fixed; width: 750px; top: 80px; left: 100px;" class="fragment" data-fragment-index="1" -->
+![](pics/correct_horse_battery_staple.png)<!-- .element style="box-shadow:none; position: fixed; width: 700px; top: 120px; left: 150px;" class="fragment" data-fragment-index="1" -->
 
 -- Notes --
 
 The way we failed at effective passwords is so prevalent, there is an XKCD comic about it.
 
 --
+
+## Why?
+<hr />
+
+![](pics/passwords/password_reuse_1.png)<!-- .element style="position: fixed; width: 450px; top: 150px; left: 0px;"  -->
+![](pics/passwords/password_reuse_2.png)<!-- .element style="position: fixed; width: 500px; top: 150px; right: 0px;" class="fragment" data-fragment-index="1" -->
+
+
+--
+
 
 ## Required knowledge
 <hr />
@@ -51,7 +61,7 @@ That's all folks<!-- .element: style="position: fixed; left: 50px; top: 550px;" 
 ## Bobby Tables
 <hr />
 
-![](pics/bobby_tables.png)
+![](pics/bobby_tables.png)<!-- .element: style="box-shadow:none; position: fixed; width: 650px; left: 150px; top: 175px;" -->
 
 -- Notes --
 
@@ -132,7 +142,7 @@ var prm = cmd.Parameters.Add("StudentName", SqlDbType.NVarChar);
 prm.Value = "Robert'; DROP TABLE Students; --";
 ```
 
-![](./pics/OWASP_Top_10.png)<!-- .element style="position: fixed; left: 450px; width: 500px;" class="fragment" data-fragment-index="1" -->
+![](./pics/passwords/OWASP_Injection.png)<!-- .element style="position: fixed; right: 10px; width: 650px;" class="fragment" data-fragment-index="1" -->
 
 <br><br><br>
 [bobby-tables.com](http://bobby-tables.com/)<!-- .element class="fragment" data-fragment-index="1" -->
@@ -153,7 +163,7 @@ SQL injection defence is so easy, but so often not implemented, there even is a 
 ## Hashing TL;DR:
 <hr />
 
-See Encryption & stuff
+See cryptography
 
 ![](pics/crypto/hashing.png)<!-- .element style="box-shadow:none; width: 600px; " -->
 
@@ -643,71 +653,6 @@ qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 240px; 
 
 --
 
-## Lookup table attack
-<hr />
-
-![](pics/passwords/PW_Database.png)<!-- .element style="box-shadow:none; position: fixed; left: 680px; top: 300px;" -->
-<pre>admin</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 405px; width: 100px; height: 100px;" -->
-<pre>alice</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 430px; width: 100px; height: 100px;" -->
-<pre>bob</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 455px; width: 100px; height: 100px;" -->
-<pre>eve</pre><!-- .element style="box-shadow:none; position: fixed; left: 725px; top: 480px; width: 100px; height: 100px;" -->
-
-<pre>65E84...C5</pre><!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 405px; width: 100px; height: 100px;" -->
-<pre>8D969...92</pre><!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 430px; width: 100px; height: 100px;" -->
-<pre>5E884...D8</pre><!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 455px; width: 100px; height: 100px;" -->
-<pre>B03DD...42</pre><!-- .element style="box-shadow:none; position: fixed; left: 780px; top: 480px; width: 100px; height: 100px;" -->
-
-<pre>Common passwords
-123456
-password
-123456789
-12345678
-12345
-111111
-...
-P@ssw0rd
-</pre><!-- .element style="box-shadow:none; position: fixed; left: 30px; top: 230px; width: 100px; font-size: 10px;" class="fragment" data-fragment-index="1" -->
-
-![](pics/passwords/PW_Hash.png)<!-- .element style="box-shadow:none; position: fixed; left: 120px; top: 260px; width: 90px;" class="fragment" data-fragment-index="2" -->
-
-![](pics/passwords/PW_Rainbow_table.png)<!-- .element style="box-shadow:none; position: fixed; left: 220px; top: 230px; width: 400px;" class="fragment" data-fragment-index="3" -->
-<pre>123456</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 259px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>qwerty</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 282px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>password</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 306px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>P@ssw0rd</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 332px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-
-<!-- MD5 -->
-<pre>E10AD..3E</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 259px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>D8578..A4</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 282px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>5F4DC..99</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 306px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>161EB..92</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 332px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-
-<!-- SHA1 -->
-<pre>7C4A8..1B</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 259px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>B1B37..1E</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 282px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>5BAA6..D8</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 306px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>21BD1..57</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 332px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-
-<!-- SHA256 -->
-<pre>8D969..92</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 259px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>65E84..C5</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 282px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>5E884..D8</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 306px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>B03DD..42</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 332px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-
-<!-- SHA512 -->
-<pre>BA325..13</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 259px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>0DD3E..F8</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 282px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>B109F..86</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 306px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-<pre>6BFCC..04</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 332px; width: 100px; height: 100px; font-size: 12px;" class="fragment" data-fragment-index="3" -->
-
-
-![](pics/passwords/PW_Lookup.png)<!-- .element style="box-shadow:none; position: fixed; left: 490px; top: 390px;" class="fragment" data-fragment-index="4" -->
-![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 620px; top: 405px; -webkit-transform: rotate(220deg);" class="fragment" data-fragment-index="4" -->
-![](pics/passwords/PW_Arrow1.png)<!-- .element style="box-shadow:none; position: fixed; left: 470px; top: 290px;  -webkit-transform: rotate(220deg);" class="fragment" data-fragment-index="5" -->
-![](pics/passwords/PW_Arrow4.png)<!-- .element style="box-shadow:none; position: fixed; left: 280px; top: 235px; -webkit-transform: rotate(215deg);" class="fragment" data-fragment-index="6" -->
-
---
-
 ## Brute-force attack
 <hr />
 
@@ -736,10 +681,10 @@ aaaaaaaB
 <pre>14x alphanumeric</pre><!-- .element style="box-shadow:none; position: fixed; left: 225px; top: 332px; width: 100px; height: 100px; font-size: 10px;" -->
 
 <!-- 8x alphanumeric -->
-<pre>47 min.</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 259px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="1" -->
-<pre>2 hours</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 259px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="1" -->
-<pre>6 hours</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 259px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="1" -->
-<pre>18 hours</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 259px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="1" -->
+<pre>47 min.</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 259px; width: 100px; height: 100px; font-size: 10px;"  -->
+<pre>2 hours</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 259px; width: 100px; height: 100px; font-size: 10px;"  -->
+<pre>6 hours</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 259px; width: 100px; height: 100px; font-size: 10px;"  -->
+<pre>18 hours</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 259px; width: 100px; height: 100px; font-size: 10px;"  -->
 
 <!-- Ulllll99 -->
 <pre>0 seconds</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 282px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="2" -->
@@ -754,10 +699,10 @@ aaaaaaaB
 <pre>0 seconds</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 306px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="3" -->
 
 <!-- 14x alphanumeric -->
-<pre>5138 mil.</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 332px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="4" -->
-<pre>15146 mill.</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 332px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="4" -->
-<pre>41871 mill.</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 332px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="4" -->
-<pre>121563 mill.</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 332px; width: 100px; height: 100px; font-size: 10px;" class="fragment" data-fragment-index="4" -->
+<pre>5138 mil.</pre><!-- .element style="box-shadow:none; position: fixed; left: 327px; top: 332px; width: 100px; height: 100px; font-size: 10px;"  -->
+<pre>15146 mill.</pre><!-- .element style="box-shadow:none; position: fixed; left: 400px; top: 332px; width: 100px; height: 100px; font-size: 10px;"  -->
+<pre>41871 mill.</pre><!-- .element style="box-shadow:none; position: fixed; left: 480px; top: 332px; width: 100px; height: 100px; font-size: 10px;"  -->
+<pre>121563 mill.</pre><!-- .element style="box-shadow:none; position: fixed; left: 550px; top: 332px; width: 100px; height: 100px; font-size: 10px;"  -->
 
 --
 
@@ -936,7 +881,7 @@ aaaaaaaB
 # P asswords
 
 <span style="font-size: 16px;">20-30 chars or 4-5 words is sufficient<span><br>
-<span style="font-size: 16px;">Any pattern or system you introduce can be broken<span>
+<span style="font-size: 16px;">Any pattern weakens the password<span>
 ![](pics/1password.png)<!-- .element style="box-shadow:none; position: fixed; right: 10px; top: 160px; width: 190px;" class="fragment" data-fragment-index="0" -->
 ![](pics/intro/lastpass.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 260px; width: 190px;" class="fragment" data-fragment-index="0" -->
 ![](pics/passwords/bitwarden.png)<!-- .element style="box-shadow:none; position: fixed; right: 60px; top: 360px; width: 190px;" class="fragment" data-fragment-index="0" -->
@@ -1017,7 +962,7 @@ login(username, password) {
 ## Timing Attack 
 <hr />
 
-![](pics/passwords/PW_Timing.png)
+![](pics/passwords/PW_Timing.png)<!-- .element style="box-shadow:none;" -->
 
 --
 
@@ -1090,3 +1035,29 @@ login(username, password) {
 * [Multi Factor Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html)
 * [SAML](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html)
 
+--
+
+<!--
+TODO:
+
+SSO challenges:
+* transparency in single sign on and / or user synchronization:
+  * Users don't understand when it's SSO or when it's a different account. This steers towards password reuse
+  * Examples:
+    * AD account integration with jira, confluence, azure outlook, online company intranet and others
+
+Challenges:
+* Eliminating bad passwords (weak, reuse etc)
+* Make MFA common practice
+* Make backup scenario's transparent, but secure
+  * Backup / password reset should be just as secure as initial MFA, so no SMS fallback
+* Make passwordless login preferable options:
+  * Easy to use
+  * Hard to crack
+  * Examples:
+    * Biometrics
+    * Email based OTP (links, eg. Slack Magic Links)
+    * MFA methods as primary method, in combination with other factors
+    * Google Prompt
+* Eliminate passwords
+-->
