@@ -1,6 +1,15 @@
 # Software updates
 <hr />
 
+## Bugfree programming
+
+![](pics/software_updates/bug_free.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; top: 270px; left: 250px;" class="fragment" -->
+
+--
+
+# Software updates
+<hr />
+
 ## Bugs
 
 ![](pics/wfh/generic_timeline.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 150px; left: 220px; width: 575px;" -->

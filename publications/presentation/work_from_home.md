@@ -47,9 +47,9 @@
 
 ![](pics/wfh/kids_games.jpeg)<!-- .element style="box-shadow:none; position: fixed; top: 135px; right: 20px; width: 425px;" -->
 
-![](pics/wfh/unifi-app.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 20px; left: 370px; width: 250px;" class="fragment fade-in-then-out" data-fragment-index="0" -->
+![](pics/wfh/unifi-app.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 20px; left: 370px; width: 250px;" class="fragment" data-fragment-index="0" -->
 
-![](pics/wfh/usg.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 20px; left: 620px; width: 325px;" class="fragment fade-in-then-out" data-fragment-index="0" -->
+![](pics/wfh/usg.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 20px; left: 620px; width: 325px;" class="fragment" data-fragment-index="0" -->
 
 -- Notes --
 

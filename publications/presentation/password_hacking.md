@@ -1,7 +1,7 @@
 ## Password hacking
 <hr />
 
-![](pics/correct_horse_battery_staple.png)<!-- .element style="box-shadow:none; position: fixed; width: 700px; top: 120px; left: 150px;" class="fragment" data-fragment-index="1" -->
+![](pics/correct_horse_battery_staple.png)<!-- .element style="box-shadow:none; position: fixed; width: 700px; top: 120px; left: 150px;" -->
 
 -- Notes --
 
