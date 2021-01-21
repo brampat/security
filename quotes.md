@@ -19,4 +19,4 @@ TODO: Add a link somewhere to this page
 | [Katie Moussouris](https://twitter.com/k8em0) | On developers writing insecure code: "Even if they don't know what they're doing wrong, calling them idiots and calling their babies ugly was probably not going to work very well "  | [source](https://duo.com/decipher/hacking-for-good-the-cult-of-the-dead-cow-and-the-rise-of-hacker-culture) 14:42 |
 | [Katie Moussouris](https://twitter.com/k8em0) | On responsible disclosures: "Somebody is not calling their baby ugly, they're just saying their baby has some interesting features."  | [source](https://duo.com/decipher/hacking-for-good-the-cult-of-the-dead-cow-and-the-rise-of-hacker-culture) 15:37 |
 |  Security Journey  | "Your data has been breached, but it wasn't really our software, it was the stuff we copy and pasted in."  |
-
+| Tim Cook | "Any backdoor is a backdoor for everyone" | [source](https://betanews.com/2015/11/11/apples-tim-cook-on-weakening-encryption-any-backdoor-is-a-backdoor-for-everyone/)|
