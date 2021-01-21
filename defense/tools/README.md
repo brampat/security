@@ -7,6 +7,7 @@ The tools described can be integrated in CI/CD toolchains.
 
 * [Secure DevOps poster](https://www.sans.org/security-resources/posters/appsec/secure-devops-toolchain-swat-checklist-60): Toolchain and SWAT checklist
 * [Exploring DevOps toolchain](https://blogs.sans.org/appsecstreetfighter/files/2018/10/DevSecOps_Exploring_Phase1-2.pdf): Presentation detailing DevOps toolchain and challenges in adding Sec to DevOps
+* [AppSec Pipeline](https://www.appsecpipeline.org/): Overview of AppSec Pipeline tools
 
 ![Security controls](security-controls.png)
 
@@ -192,8 +193,6 @@ The tools described can be integrated in CI/CD toolchains.
     * [13 tools](https://techbeacon.com/app-dev-testing/13-tools-checking-security-risk-open-source-dependencies) for checking open source dependencies
     * Node Security Platform (Included in NPM as of April 2018)
     * [Gemnasium](https://docs.gitlab.com/ee/user/project/import/gemnasium.html) (Integrated into GitLab and integrates with GitHub)
-    * 
-    
   
 ## Acceptance
 * Infrastructure as Code analysis
@@ -219,6 +218,7 @@ The tools described can be integrated in CI/CD toolchains.
   * sslyze
   * OWASP ZAP
   * ssh_scan
+  * [NIKTO](https://github.com/sullo/nikto): free command-line vulnerability scanner, scans webservers for weaknesses
 * Cloud Configuration Management:
   * AWS CloudFormation
   * Azure Resource Manager
@@ -247,16 +247,21 @@ The tools described can be integrated in CI/CD toolchains.
   * Security Monkey
   * OSQuery
 * Secrets Management
+  * Comparison on [GeekFlare](https://geekflare.com/secret-management-software/)
   * Ansible Vault
   * [HashiCorp Vault](https://www.vaultproject.io/)
   * Blackbox
   * Chef Vault
-  * Docker Secrets
-  * Hashicorp Vault
-  * Pinterest Knox
+  * [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)
+  * [Pinterest Knox](https://github.com/pinterest/knox)
+  * [Akeyless Vault](https://www.akeyless.io/product-secrets-management/)
+  * Square [Keywhiz](https://square.github.io/keywhiz/)
+  * Lyft [Confidant](https://lyft.github.io/confidant/)
+  * [Strongbox](https://strongboxsafe.com/)
 * Cloud Secrets Management:
   * AWS KMS
-  * Azure Key Vault
+  * [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
+  * [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
   * Google Cloud KMS
 * Cloud Security Testing:
   * CloudSploit
@@ -282,6 +287,7 @@ The tools described can be integrated in CI/CD toolchains.
 * Multi-tools
   * [Wazuh](https://wazuh.com/): OpenSource tool for threat detection, integrity monitoring, incident response and compliance
   * [Dispatch](https://github.com/Netflix/dispatch) by Netflix, [Introduction Blog](https://medium.com/@NetflixTechBlog/introducing-dispatch-da4b8a2a8072), [Docs](https://hawkins.gitbook.io/dispatch/)
+
 ## Operation
 * Tools Integration:
   * [Nucleus](https://www.nucleussec.com/)
@@ -344,3 +350,8 @@ The tools described can be integrated in CI/CD toolchains.
   * Cloud Custodian
   * Compliance Monkey
   * Forseti Security
+
+## Other
+* [OWASP Defect Dojo](https://owasp.org/www-project-defectdojo/): open source vulnerability management tool
+  * [Getting Started](https://defectdojo.readthedocs.io/en/latest/getting-started.html)
+* JIRA: Issue tracking
