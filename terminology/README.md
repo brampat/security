@@ -12,6 +12,7 @@
 | Blue Team | Defense side of an ethical hack operation. Also see Red team / Blue team testing |
 | [C.I.A.](CIA.md) | Confidentiality, Integrity, Availability |
 | Countermeasure | Control put in place to mitigate potential losses |
+| CWWP | Cloud Workload Protection Platform |
 | DAST | Dynamic Application Security Testing, in which a runnig application is reviewed and debugged to find security issues |
 | [DMZ](https://en.wikipedia.org/wiki/DMZ_(computing)) | Demilitarized zone or perimeter network, subnetwork containing and only exposing external-facing services. |
 | [DoS](../techniques/dos.md) | Denial of Service, flooding a system with more requests it can handle, thereby making the system unable to respond to valid requests. |
@@ -45,6 +46,7 @@
 | MAC address | Media Access Control address, uniquely identifies a network interface at physical layer. Usually embedded into the network card (ethernet), but also in Bluetooth, WiFi, Thunderbolt, USB network interface etc.. |
 | MAC address spoofing | Changing the MAC address of a network interface |
 | Malware | Malicious software |
+| MAST | Mobile Application Security Testing |
 | MITM | Man in the Middle: Attacking communications for sniffing or injection by sitting in between sender and receiver |
 | NIDS | Network Intrusion Detection System |
 | [Password-manager](../techniques/passwords/password-managers.md) | Tool for storing account-credentials and generating unique, random and strong passwords |
@@ -53,6 +55,7 @@
 | Purple Teaming | Activities to promote collaboration, empathy and advocacy in the security space of an organisation, also see resources from [Tanya Janca](https://twitter.com/shehackspurple) [here](../defense/secure-coding/ssdlc/README.md)|
 | [Pyramid of Pain](pyramid_of_pain.md) | Different levels of attack indicators, used to defend more effectively against the same attacks / attackers |
 | Ransomware | Also see Malware |
+| RASP | Runtime Application Self Protection |
 | RAT | Remote Administration Tools |
 | RBAC | Role Base Access Control, grants access based on a user's role |
 | Red Team | Attack side of an ethical hack operation. Quote of @Viss "If the customer defines the scope, it cannot be called red teaming" [here](https://youtu.be/4LmSEthRZLU?t=10m5s) |
@@ -60,7 +63,8 @@
 | Reverse-shell | Malicious software on a system to gain access to that system initiated from the system iteself to the hacker |
 | Risk | Probability of a threat becoming real and corresponding potential damages |
 | Root kit | See [Malware types](malwareTypes.md) |
-| SAST | Static Application Security Testing, in which the code is reviewed to find any security issues. This can be performaned automatically using tools or manually |
+| SAST | Static Application Security Testing, in which the code is reviewed to find any security issues. This can be performed automatically using tools or manually |
+| SCA | Software Composition Analysis, determining the components in a software-product, with the goal to identify parts of the product have vulnerabilities, so they need to be updated to a newer, fixed version |
 | Shoulder surfing | Method of gaining access to a secret or password by observing a user entering the secret on a keyboard. In [Citizen Four](https://www.imdb.com/title/tt4044364/) Edward Snowden is using a blanket to shield his typing in the password when accessing his laptop. |
 | Social Engineering | Ways of using weakness of people (helpfulness) by persuading them to give up information that can help you in gaining access gaining access to a system, organization or building ||
 | SQL Injection |  |
