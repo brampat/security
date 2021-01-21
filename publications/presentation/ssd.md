@@ -215,7 +215,7 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 ## Secure Software Development
 <hr />
 
-### White- vs black- listing
+### Allow vs Deny lists
 
 ![](pics/ssdlc/SSDLC_Static.png)<!-- .element style="box-shadow:none; position: fixed; right: 40px; top: 10px; width: 120px;" -->
 
@@ -250,6 +250,9 @@ OWASP [Threat Dragon](https://www.owasp.org/index.php/OWASP_Threat_Dragon)
 * OWASP [Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check)
 * OWASP [Top 10 Web Application Risks](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
 * OWASP [Top 10 Mobile Risks](https://www.owasp.org/index.php/OWASP_Mobile_Security_Project#Top_Ten_Mobile_Risks)
+* SonarQube:
+  * FindBugs
+  * FindSecBugs
 * Dedicated SAST:
   * Fortify
   * CheckMarx
