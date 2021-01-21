@@ -29,7 +29,7 @@ Do NOT use this knowledge for any illegal activities and / or any activities tha
 * [The Book of secret knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more
 * [Hacking books](https://github.com/tanc7/hacking-books) PDF downloads
 * [Hacker Roadmap](https://github.com/sundowndev/hacker-roadmap) guide for amateurs pen testers and a collection of hacking tools, resources and references to practice ethical hacking, pen testing and web security
-
+* [InfoSec Reference](https://github.com/rmusser01/Infosec_Reference) - [Robert Musser](https://twitter.com/r_o_b_e_r_t_1)
 
 ## Books & Film
 See [Books](books/README.md)
