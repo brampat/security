@@ -1,3 +1,21 @@
+# Code Quality
+
+![](../../fun_stuff/technical_debt.png)
+
+## Restaurant Metaphore
+
+Sources:
+* [comment](https://news.ycombinator.com/item?id=25008587) as listed below
+* [Blog](https://www.defmyfunc.com/2019-08-28_an_analogy_for_software_development/)
+
+"If you run a commercial kitchen and you only ever cook food, because selling cooked food is your business -- if you never clean the dishes, never scrape the grill, never organize the freezer -- the health inspector will shut your shit down pretty quickly.
+ 
+ Software, on the other hand, doesn't have health inspectors. It has kitchen staff who become more alarmed over time at the state of the kitchen they're working in every day, and if nothing is done about it, there will come a point where the kitchen starts failing to produce edible meals.
+ 
+ Generally, you can either convince decision makers that cleaning the kitchen is more profitable in the long run or you can dust off your resume and get out before it burns down."
+
+
+
 # Code metrics
 
 Code quality metrics and standards in general can have a serious indirect influence on how secure specific code is. Code quality can be divided into several subjects which influence the ease with which code can be maintained.
@@ -5,6 +23,14 @@ Code quality metrics and standards in general can have a serious indirect influe
 * [Top 15 best practices for readable code](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)
 * [Code C.R.A.P.](https://www.artima.com/weblogs/viewpost.jsp?thread=215899): Change Risk Analysis and Predictions / Change Risk Anti-Patterns
   * [CRAP 4 Java](http://www.crap4j.org/)
+
+## Definitions
+
+* System: The system or application under review
+* Component: Code grouped together based on common traits. Mostly corresponds with a package. Eg. A Java package like ```java.util``` or ```org.apache.commons.collections```.
+* Module: A delimited group of declaration. Mostly corresponds with a class or file.
+* Unit: The smallest named piece of code. Mostly corresponds with a method or function.
+
 
 ## Code quality
 
@@ -30,7 +56,7 @@ Using Visual Studio, the maintainability score can be calculated. This produces 
 
 ### Cyclomatic Complexity
 
-This metric indicated the complexity of code and is best calculated per method. The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
+This metric indicated the complexity of code and is best calculated per unit (method). The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
 * ```if```
 * Each ```case``` and ```default``` in a ```switch```
 * ```for```, ```foreach``` and ```while```
@@ -61,11 +87,56 @@ Cyclomatic complexity directly influences the minimum number of tests required t
 
 ![](cyclomatic_complexity_max.png)
 
+
+### MSDN
+
+Based on Microsoft Developer Network best practices, the following rating is used to rank units:
 * 2-10: Good
 * 11-20: Okay
 * 21+: Avoid
 
-Sources:
+
+### SIG
+
+Rate all units based on the following table: 
+
+| Cyclomatic Complexity | Complexity   | Risk              |
+|-----------------------|--------------|-------------------|
+| 1-10                  | Simple       | Without much risk |
+| 11-20                 | More Complex | Moderate risk     |
+| 21-50                 | Complexity   | High risk         |
+| >50                   | Untestable   | Very high risk    |
+
+* For each unit, if this unit has risk (CC of 11+), add the number of lines of that unit to the corresponding risk category. 
+* Calculate the total number of lines of the system
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the lowest rank rated over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 25.00%   | 0.00%  | 0.00%     |
+| +    | 0.5   | 30.00%   | 5.00%  | 0.00%     |
+| 0    | 0     | 40.00%   | 10.00% | 0.00%     |
+| -    | -0.5  | 50.00%   | 15.00% | 5.00%     |
+| --   | -1    | -%       | -%     | -%        |
+
+Example:
+* A system with 10000 lines of code in total
+* Lines of code in units with:
+  * simple complexity total 6700
+  * moderate complexity total 2600
+  * high complexity total 700
+  * there are no lines with very high complexity
+* Percentages calculate the following ratings:
+  * 67% with no risk: ++
+  * 26% with moderate risk: +
+  * 7% with high risk: 0
+* This rates the system into the 0 rank
+* If the code is refactored to limit the high complexity code to 500 lines of code, this will improve the rating to +
+
+### Sources
 * [Wikipedia](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
 
 #### Java
@@ -80,6 +151,7 @@ v(G) = B - D + 1
 
 Tools to calculate Cyclomatic complexity for your code:
 * [SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)
+  * Works with the [SQALE](https://en.wikipedia.org/wiki/SQALE) model, which maps reasonably well on ISO-25010
 * [JaCoCo](https://www.eclemma.org/jacoco/)
 * [Eclipse Metrics plugin](https://github.com/qxo/eclipse-metrics-plugin)
 
@@ -89,6 +161,46 @@ Visual Studio contains the Code Metrics functionality to calculate Cyclomatic Co
 
 * [MSDN Blog](https://blogs.msdn.microsoft.com/zainnab/2011/05/17/code-metrics-cyclomatic-complexity/)
 * [C-Sharp corner](https://www.c-sharpcorner.com/article/code-metrics-cyclomatic-complexity/)
+
+### Unit Size
+
+Rate all units based on the following table: 
+
+| Unit Size | Risk              |
+|-----------|-------------------|
+| 1-24      | Without much risk |
+| 25-31     | Moderate risk     |
+| 32-48     | High risk         |
+| 49+       | Very high risk    |
+
+* For each unit, if this unit has risk (Unit Size of 25+), add the number of lines of that unit to the corresponding risk category. 
+* Calculate the total number of lines of the system
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the lowest rank rated over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 25.00%   | 0.00%  | 0.00%     |
+| +    | 0.5   | 30.00%   | 5.00%  | 0.00%     |
+| 0    | 0     | 40.00%   | 10.00% | 0.00%     |
+| -    | -0.5  | 50.00%   | 15.00% | 5.00%     |
+| --   | -1    | -%       | -%     | -%        |
+
+Example:
+* A system with 10000 lines of code in total
+* Lines of code in units with:
+  * small units up to 24 lines total 6700 lines of code
+  * medium sized units of 25 to 31 lines total 2600 lines of code
+  * large units of 32 to 48 lines total 700 lines of code
+  * there are no lines with very high complexity
+* Percentages calculate the following ratings:
+  * 67% with no risk: ++
+  * 26% with moderate risk: +
+  * 7% with high risk: 0
+* This rates the system into the 0 rank
+* If the code is refactored to limit the large units to total 500 lines of code, this will improve the rating to +
 
 ### Inheritence
 
@@ -476,3 +588,28 @@ Perils of Long methods:
 * Technical and social activity
 
 ### 01: Reduce state & state mutation
+
+
+
+
+## Sources
+
+### ISO
+* [ISO 9126](https://en.wikipedia.org/wiki/ISO/IEC_9126)
+* ISO-25010
+
+![](iso25010.png)
+
+![](ISO_25010_Maintainability_Model.png)
+
+### SIG
+
+Software Improvement Group
+* [Software analysis based on international standards](https://www.softwareimprovementgroup.com/methodologies/iso-iec-25010-2011-standard/)
+* [SIG/TÜViT Evaluation Criteria Trusted Product Maintainability: Guidance for producers](https://www.softwareimprovementgroup.com/wp-content/uploads/2020-SIG-TUViT-Evaluation-Criteria-Trusted-Product-Maintainability-Guidance-for-producers.pdf) v12.0 (2020)
+* [SIG/TÜViT Evaluation Criteria Trusted Product Maintainability: Guidance for producers](https://www.softwareimprovementgroup.com/wp-content/uploads/2019/11/20190919-SIG-TUViT-Evaluation-Criteria-Trusted-Product-Maintainability-Guidance-for-producers.pdf) v11.0 (2019)
+* [A-Practical-Model-for-Measuring-Maintainability.pdf](https://www.softwareimprovementgroup.com/wp-content/uploads/2019/10/APracticalModelForMeasuringMaintainability.pdf)
+
+### Microsoft Develop Network
+
+* [MSDN Blog](https://blogs.msdn.microsoft.com/zainnab/2011/05/17/code-metrics-cyclomatic-complexity/)
