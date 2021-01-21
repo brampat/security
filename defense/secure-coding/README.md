@@ -55,7 +55,7 @@ independent from another request. So for example, there's no auto-save for the s
   * OWASP SAMM: Tools of the trade
 
 | Time      | Talk                                                              | Presenter             |
-|----------!|-------------------------------------------------------------------|-----------------------|
+|----------:|-------------------------------------------------------------------|-----------------------|
 | 3:45      | [OWASP SAMM Update 2.0](https://youtu.be/5B-methdLO8)             | Bart de Win & [Sebastien Deleersnyder](https://www.twitter.com/sebadele) |
 | 33:33     | [The Seven deadly sins of SAMM](https://youtu.be/yz-JbdI48NU)     | John Wood             |
 | 1:03:14   | Agile Guidance for SAMM                                           | Rob van der Veer      |
