@@ -15,9 +15,21 @@ The way we failed at effective passwords is so prevalent, there is an XKCD comic
 ![](pics/passwords/password_reuse_1.png)<!-- .element style="position: fixed; width: 450px; top: 150px; left: 0px;"  -->
 ![](pics/passwords/password_reuse_2.png)<!-- .element style="position: fixed; width: 500px; top: 150px; right: 0px;" class="fragment" data-fragment-index="1" -->
 
-
 --
 
+## TL;DR
+<hr />
+
+# L ong
+# U nique
+# R andom
+# P asswords
+
+![](pics/passwords/larp.jpg)<!-- .element style="position: fixed; width: 500px; top: 150px; right: 0px;" -->
+
+<span style="font-size: 20px; position: fixed; right: 20px; bottom: 10px;">(*) Not to be confused with L.A.R.P. which is Live Action Role Playing</span>
+
+--
 
 ## Required knowledge
 <hr />
