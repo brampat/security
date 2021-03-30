@@ -314,6 +314,29 @@ The tools described can be integrated in CI/CD toolchains.
   * vuls
 * Blameless Postmortems:
   * Etsy Morgue
+* Application Discovery:
+  * SolarWinds Server & Application Monitor
+  * [Datadog APM Service Map](https://www.datadoghq.com/dg/apm/service-map/)
+  * [Dynatrace](https://www.dynatrace.com/platform/)
+  * [ManageEngine](https://www.manageengine.com/products/applications_manager/) Applications Manager
+  * [Device42](https://www.device42.com/download/)
+  * [ExtraHop](https://www.extrahop.com/demo/)
+  * [ScienceLogic](https://sciencelogic.com/product/demo)
+  * [Appmigrate](https://www.migrateapplication.com/) (Free)
+  * [Savision](https://martellotech.com/try-free/)
+  * [AppDynamics](https://www.appdynamics.com/free-trial/)
+  * [Open-AudIT](https://opmantek.com/open-source-discovery-tools-open-audit/) (Open source)
+  * [ImmuniWeb® Discovery](https://www.immuniweb.com/products/discovery/)
+  * [SolarWinds Network Performance Monitor](https://www.solarwinds.com/network-performance-monitor/use-cases/network-discovery-tool)
+  * [PRTG Network Monitor](https://www.paessler.com/prtg)
+  * [Virima](https://www.virima.com/)
+  * [Qualys](https://www.qualys.com/apps/asset-inventory/) Asset Discovery (Free)
+  * [Lansweeper](https://www.lansweeper.com/) (Free plan up to 100 assets, Enterprise plan for Euro 1,- per asset, per year)
+  * [AT&T Cybersecurity](https://www.alienvault.com/solutions/asset-discovery-inventory)
+  * [Asset panda](https://www.assetpanda.com/)
+  * [InvGate Assets](https://www.invgate.com/assets/)
+  * [MMSoft Pulseway](https://www.pulseway.com/)
+  
 * Continuous Monitoring / SIEM:
   * [SIEM](https://en.wikipedia.org/wiki/Security_information_and_event_management) - Security Information and Event Management
   * [Comparison](https://logz.io/blog/open-source-siem-tools/)

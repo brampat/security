@@ -36,3 +36,8 @@ section.table-medium {
 section.table-small table {
 	font-size: 15px;
 }
+
+
+section.dependency table {
+	margin: unset;
+}

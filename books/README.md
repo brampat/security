@@ -178,7 +178,7 @@ will have eternal life either by continuously reparing diseases and aging by the
   * Subjects: Cryogenics, AI, Interstellar travel, Terraforming, Von Neumann probes
   * Synopsis: Dot-com billionaire buys cryogenic-treatment and instantly dies only to wake up as a Von Neumann AI
   * For we are many - Bobiverse #2, Dennis E. Taylor 
-  * All these worls - Bobiverse #3, Dennis E. Taylor
+  * All these worlds - Bobiverse #3, Dennis E. Taylor
 #### Ready player one - [Ernest Cline](https://twitter.com/erniecline)
   * Book, [Movie](https://www.imdb.com/title/tt1677720/)
   * Fictional
