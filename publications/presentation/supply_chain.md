@@ -274,7 +274,7 @@ Source: [Hackernoon](https://medium.com/hackernoon/im-harvesting-credit-card-num
 
 A month after the fictive story, Browse-aloud browser aid for visually challenged ppl is infected
 * may websites using the Browse-aloud plugin directly from its CDN are infected, including
-  * Machester City Council
+  * Manchester City Council
   * US Courts
   * NHS
   * 
@@ -317,6 +317,21 @@ Other research:
 ![](./pics/supply_chain/php_backdoor.png)<!-- .element style="box-shadow:none;" -->
 
 Source: [ArsTechnica](https://arstechnica.com/gadgets/2021/03/hackers-backdoor-php-source-code-after-breaching-internal-git-server/)
+
+--
+
+# OMIGOD
+<hr />
+
+Open Management Infrastructure on MS Azure
+
+* CVE-2021-38647 – Unauthenticated RCE as root (Severity: 9.8)
+* CVE-2021-38648 – Privilege Escalation vulnerability (Severity: 7.8)
+* CVE-2021-38645 – Privilege Escalation vulnerability (Severity: 7.8)
+* CVE-2021-38649 – Privilege Escalation vulnerability (Severity: 7.0)
+
+
+[Source](https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution)
 
 --
 
@@ -366,9 +381,18 @@ Source: [Google Blog](https://security.googleblog.com/2021/03/introducing-sigsto
 
 <hr />
 
-
+* OWASP Top 10 A9 (2017): Using Componentns with Known Vulnerabilities
+* Security Journey:
+  * White Belt lesson 11: Software Supply Chain
+  * Yellow Belt lesson 14: OWASP Top 10 part 3
 * [Backstabber’s Knife Collection: A Review of Open Source Software Supply Chain Attacks](https://link.springer.com/chapter/10.1007%2F978-3-030-52683-2_2)
 * [Hunting Malicious NPM packages](https://duo.com/decipher/hunting-malicious-npm-packages)
 * [Software Supply Chain Attacks](https://www.whitesourcesoftware.com/resources/blog/software-supply-chain-attacks/)
 * [Fixing vulnerabilities in Maven projects](https://snyk.io/blog/fixing-vulnerabilities-in-maven-projects/)
 * [Easy Code Signing & Verification for Supply Chain Integrity](https://security.googleblog.com/2021/03/introducing-sigstore-easy-code-signing.html)
+
+
+--
+
+Notes:
+https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution

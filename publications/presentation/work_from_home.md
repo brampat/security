@@ -23,7 +23,9 @@
 
 -- Notes --
 
-* Keep all devices up to date
+* Keep all software and devices up to date
+  * Remember Zoom?
+  * Dec 7: Zero-click RCE in Microsoft Teams (all versions, including web-client)
   * Also IoT devices
   * Create separate VLans for different device categories
 * Also Router

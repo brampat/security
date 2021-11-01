@@ -1,7 +1,12 @@
 ## Password hacking
 <hr />
 
-![](pics/correct_horse_battery_staple.png)<!-- .element style="box-shadow:none; position: fixed; width: 700px; top: 120px; left: 150px;" -->
+* Why __strong__ passwords?
+* How __strong__ should they be?
+* What can I as a __user__ do?
+* What can I as a __developer__ do?
+
+![](pics/correct_horse_battery_staple.png)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
 
 -- Notes --
 
@@ -178,6 +183,14 @@ SQL injection defence is so easy, but so often not implemented, there even is a 
 See cryptography
 
 ![](pics/crypto/hashing.png)<!-- .element style="box-shadow:none; width: 600px; " -->
+
+-- Notes --
+
+* One-way function
+* Any size input results in fixed-size digest
+* The same input always results in the same output
+* Slightly different input results in completely different output
+* In practice, different inputs never result in the same output
 
 --
 

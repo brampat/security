@@ -20,8 +20,8 @@
 
 Timeline:
 * Vulnerability is found (Zero day: number of days producer knows about vulnerability)
-* Attack scenario developed (optional):
-  * PoC (white hat)
+* Attack scenario developed (optional, somewhere during the lifecycle):
+  * Proof of Concept (white hat, non-damaging)
   * Exploit (black hat)
 * Producer knows about vulnerability (end of zero day)
 * Producer developed patch
@@ -48,6 +48,8 @@ Timeline:
 
 -- Notes --
 
+Equifax handles credit-card and payment data
+
 * CVE-2017-5638 (CVSS 10.0)
   * Discovered 2017-03-06
 * Apache Struts 2.3.5 to 2.3.31 / 2.5 - 2.5.10
@@ -62,7 +64,7 @@ Sources:
 
 --
 
-### Examples
+## Examples
 <hr />
 
 ### EternalBlue
@@ -86,7 +88,7 @@ Sources:
 
 * Discovery  (by NSA in ???)
 * Exploit: Eternal Blue (by NSA in ???)
-* Awareness: NSA tipped Microsoft in ???
+* Awareness: NSA tipped Microsoft in ??? probably because NSA found out their hacking tools were stolen
   * CVE-2017-0144 (CVSS 8.1)
   * Everything using SMBv1 (deprecated in 2013) including:
     * Siemens Ultrasound Medical Equipment
@@ -100,3 +102,17 @@ Sources:
   * 2019-07-17: [800k](https://www.darkreading.com/vulnerabilities---threats/800k-systems-still-vulnerable-to-bluekeep/d/d-id/1335286) unpatched
   * 2020-04-03: [600k](https://www.darkreading.com/vulnerabilities---threats/eternalblue-longevity-underscores-patching-problem/d/d-id/1337233) unpatched
   * 2020-05-12: [Millions](https://www.welivesecurity.com/2020/05/12/wannacryptor-remains-global-threat-three-years-on/) still use SMBv1
+
+--
+
+## FireEye Hack
+<hr />
+
+* Made public Dec-08
+* Top player in InfoSec
+* Red Team Tools stolen
+* APT level attack
+* No Zero-days
+* Released detection-tools for their own Red Team Tools
+
+![](pics/software_updates/fireeye.jpg)<!-- .element style="box-shadow:none; position: fixed; bottom: 90px; right: 50px; width: 375px;" -->
