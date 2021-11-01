@@ -57,6 +57,51 @@
 
 --
 
+## Responsible Testing
+<hr />
+
+### Sinead O'Connor test
+
+![](pics/ethics/sinead-oconnor.jpg)<!-- .element style="position: fixed; width: 550px; top: 120px; right: 0px; background-color: #ffffff;" -->
+
+-- Notes --
+
+* Test with least impact possible
+* SQL injection: SQL error with single quote
+* XSS: alert(1);
+
+
+--
+
+## Disclosure policies
+<hr />
+
+![](pics/ethics/Tesla_responsible_disclosure.png)<!-- .element style="box-shadow:none; " -->
+
+--
+
+## Disclosure Period
+<hr />
+
+### 
+
+* 90 days
+* 7 days (actively exploited)
+
+![](pics/ethics/google.jpg)<!-- .element style="position: fixed; width: 650px; bottom: 120px; right: 0px; background-color: #ffffff;" -->
+
+--
+
+## Vulnerability Timeline
+<hr />
+
+![](pics/wfh/generic_timeline.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 150px; left: 220px; width: 575px;" -->
+
+![](pics/wfh/exploit.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 250px; left: 350px; width: 275px;" class="fragment" data-fragment-index="1" -->
+
+
+--
+
 ## Cult of the Dead Cow
 <hr />
 
@@ -95,5 +140,4 @@
   * Founder & CEO Thistle Technologies
 
 [Defcon](https://www.youtube.com/watch?v=tr4PEQ-g7r8) interview
-
 
