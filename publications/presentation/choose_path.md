@@ -39,12 +39,11 @@
 ![](pics/intro/try_to_hack.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 10px; width: 750px; right: 10px; background-color: #ffffff;" -->
 
 * Pros:
-  * Continuous money
-* Cons:
   * Basic skills
-  * Used to fix broken stuff
   * Sustainable
-
+  * Used to fix broken stuff
+* Cons:
+  * No big cash in (?)
 
 -- Notes --
 
