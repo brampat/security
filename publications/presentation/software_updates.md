@@ -3,7 +3,12 @@
 
 ## Bugfree programming
 
-![](pics/software_updates/bug_free.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; top: 270px; left: 250px;" class="fragment" -->
+![](pics/software_updates/bug_free.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; top: 270px; left: 250px;" -->
+
+-- Notes --
+
+Why do we have updates?
+* Because there is no such thing as bug-free software
 
 --
 
@@ -19,17 +24,19 @@
 -- Notes --
 
 Timeline:
-* Vulnerability is found (Zero day: number of days producer knows about vulnerability)
-* Attack scenario developed (optional, somewhere during the lifecycle):
+* Discovery: Vulnerability is found
+* Awareness: Producer knows about vulnerability (end of zero day)
+* Patch: Producer develops and releases patch
+  * Researchers and attackers can reverse the patch to learn details
+  * In cycle (normal release schedule, sys admins are prepared)
+  * Out-of-cycle (outside release schedule, sys admins are unprepared, often only when actively exploited)
+* Patch is installed
+* Exploit: Attack scenario developed (optional, somewhere during the lifecycle):
+  * Bug is weaponized: bug is exploited to run payload
   * Proof of Concept (white hat, non-damaging)
   * Exploit (black hat)
-* Producer knows about vulnerability (end of zero day)
-* Producer developed patch
-* Producer released patch
-  * In band (normal release schedule, sys admins are prepared)
-  * Out-of-band (outside release schedule, sys admins are unprepared)
-  * Researchers and attackers can reverse the patch to learn details
-* Patch is installed
+    * If it's before Awareness date, it's called a Zero day
+    * number of days producer knows about vulnerability
 
 --
 
@@ -48,7 +55,7 @@ Timeline:
 
 -- Notes --
 
-Equifax handles credit-card and payment data
+Conext: Equifax is a big creditcard company that handles creditcard and lots of payment data
 
 * CVE-2017-5638 (CVSS 10.0)
   * Discovered 2017-03-06
@@ -56,7 +63,7 @@ Equifax handles credit-card and payment data
   * Alerted on 2017-03-08 by US-CERT
 * Patch Apache Struts 2.3.32 / 2.5.10.1
   * Release on 2017-03-06
-* Class-action law-suit filed for $70B (add 9 zero's) on 2017-09-17
+* Class-action law-suit filed for $70B (that's 70 + 9 zero's) on 2017-09-17
   * Settlement for $575M on 2019-07-22 after many protective measures for Equifax by Trump appointed officials
 
 Sources:
@@ -86,12 +93,15 @@ Sources:
 
 -- Notes --
 
-* Discovery  (by NSA in ???)
+* Discovery: by NSA in ???
 * Exploit: Eternal Blue (by NSA in ???)
-* Awareness: NSA tipped Microsoft in ??? probably because NSA found out their hacking tools were stolen
+* Awareness: NSA tipped Microsoft in ???
+  * probably because NSA found out their hacking tools were stolen
+    * by Shadow brokers / Vault 7
   * CVE-2017-0144 (CVSS 8.1)
   * Everything using SMBv1 (deprecated in 2013) including:
     * Siemens Ultrasound Medical Equipment
+    * SMB: Server Message Block File sharing protocol
 * Patch 2017-03-14 (supported Windows)
 * Exploit worldwide release 2017-04-14 (Shadow Brokers)
 * Attack 2017-05-12 (WannaCry)
@@ -108,11 +118,12 @@ Sources:
 ## FireEye Hack
 <hr />
 
-* Made public Dec-08
+* Breach at Mandiant (then called FireEye)
+* Made public Dec-08, 2020
 * Top player in InfoSec
 * Red Team Tools stolen
 * APT level attack
 * No Zero-days
 * Released detection-tools for their own Red Team Tools
 
-![](pics/software_updates/fireeye.jpg)<!-- .element style="box-shadow:none; position: fixed; bottom: 30px; right: 50px; width: 375px;" -->
+![](pics/software_updates/mandiant.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 30px; right: 50px; width: 375px;" -->

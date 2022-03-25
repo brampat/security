@@ -66,6 +66,7 @@
 <hr />
 
 * What do I have?
+![](pics/wfh/inventory.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
 
 -- Notes --
 
@@ -83,12 +84,13 @@
 <hr />
 
 * Is it up to date?
+![](pics/wfh/check.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
 
 -- Notes --
 
 * Check
   * Find out need for updates
-  * Can it be updated?
+  * Can its firmware be updated?
   * Which version does it have
   * Which version is the latest (Google)
   * Add to your list
@@ -99,6 +101,8 @@
 <hr />
 
 * Run update
+![](pics/wfh/update.png)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
+
 
 -- Notes --
 
@@ -113,6 +117,7 @@
 <hr />
 
 * Enable auto updates
+![](pics/wfh/automate.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
 
 -- Notes --
 
@@ -127,6 +132,7 @@
 
 * Check list
 * Update when needed
+![](pics/wfh/repeat.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
 
 -- Notes --
 
@@ -148,6 +154,7 @@
 * Single room or step
 * Timebox
 * Plan
+![](pics/wfh/start_small.jpg)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
 
 -- Notes --
 
