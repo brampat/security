@@ -17,18 +17,18 @@ The way we failed at effective passwords is so prevalent, there is an XKCD comic
 ## Why?
 <hr />
 
-![](pics/passwords/password_reuse_1.png)<!-- .element style="position: fixed; width: 450px; top: 150px; left: 0px;"  -->
-![](pics/passwords/password_reuse_2.png)<!-- .element style="position: fixed; width: 500px; top: 150px; right: 0px;" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/password_reuse_1.png)<!-- .element style="position: fixed; width: 750px; top: 150px; left: 0px;"  -->
+![](pics/passwords/password_reuse_2_new.png)<!-- .element style="position: fixed; width: 520px; top: 185px; left: 76px;" class="fragment" data-fragment-index="1" -->
 
 --
 
 ## TL;DR
 <hr />
 
-# L ong
-# U nique
-# R andom
-# P asswords
+# <span style="color: #CC0000;">L</span>ong
+# <span style="color: #00CC00;">U</span>nique
+# <span style="color: #0000CC;">R</span>andom
+# <span style="color: #CC00CC;">P</span>asswords
 
 ![](pics/passwords/larp.jpg)<!-- .element style="position: fixed; width: 500px; top: 150px; right: 0px;" -->
 

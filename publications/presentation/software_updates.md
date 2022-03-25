@@ -115,4 +115,4 @@ Sources:
 * No Zero-days
 * Released detection-tools for their own Red Team Tools
 
-![](pics/software_updates/fireeye.jpg)<!-- .element style="box-shadow:none; position: fixed; bottom: 90px; right: 50px; width: 375px;" -->
+![](pics/software_updates/fireeye.jpg)<!-- .element style="box-shadow:none; position: fixed; bottom: 30px; right: 50px; width: 375px;" -->

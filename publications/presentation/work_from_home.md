@@ -33,6 +33,134 @@
   * Strong Authentication of admin panel
   * Change default login
   * Disable wifi access to admin panel if possible
+* Anything Smart
+  * Smart / Electric cars
+  * Including smart door locks: see Scream 2022 movie-trailer
+
+--
+
+# Scream 2022
+<hr />
+
+"Nice Smart door locks"
+
+![](./pics/wfh/scream_2022.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; bottom: 20px; right: 20px; width: 830px;" -->
+![](./pics/wfh/scream_mask.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; top: 100px; right: 10px; width: 230px;" -->
+
+--
+
+# Plan
+<hr />
+
+* Discovery
+* Check
+* Update
+* Automate
+* Repeat
+
+![](./pics/wfh/checklist.jpg)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; bottom: 20px; right: 20px; width: 430px;" -->
+
+--
+
+# Discovery
+<hr />
+
+* What do I have?
+
+-- Notes --
+
+* Discovery
+  * List all your smart devices
+    * Eg. room by room
+  * Walk through home:
+    * Does it have Wifi / network-cable?
+    * Can I connect / control through smart-app?
+    * Check the manual
+
+--
+
+# Check
+<hr />
+
+* Is it up to date?
+
+-- Notes --
+
+* Check
+  * Find out need for updates
+  * Can it be updated?
+  * Which version does it have
+  * Which version is the latest (Google)
+  * Add to your list
+
+--
+
+# Update
+<hr />
+
+* Run update
+
+-- Notes --
+
+* Run an update
+  * Is the menu / update process easy?
+  * Google instructions (and store them digitally)
+  * Contact support when needed
+
+--
+
+# Automate
+<hr />
+
+* Enable auto updates
+
+-- Notes --
+
+* Automate
+  * Enable automatic firmware updates
+  * Check if it works
+
+--
+
+# Repeat
+<hr />
+
+* Check list
+* Update when needed
+
+-- Notes --
+
+* Repeat
+  * Get out your list from last time
+  * Check for additions
+  * Google newest versions
+  * Compare with current installed version
+  * Update if needed
+  * Check if automatic formware updates are being installed
+    * Check the box
+
+--
+
+
+# Start Small
+<hr />
+
+* Single room or step
+* Timebox
+* Plan
+
+-- Notes --
+
+Start small, either by 
+* Doing one room a month or;
+* Doing a step each month
+* Don't recommend doing a device caterory per month:
+  * Might forget / think you're done and forget not so obvious devices
+* Timebox:
+  * 1 or 2 hours a month, more if you like it
+  * Should take less time with more complete checklists and auto-updates
+* Plan:
+  * Add repeating calendar item
 
 --
 
