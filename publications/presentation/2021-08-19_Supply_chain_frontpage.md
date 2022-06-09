@@ -7,6 +7,8 @@
 
 * Questions in chat
 
+![](pics/intro/HAL9000_quicksave_2019.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; bottom: 200px; left: 20px;" -->
+
 ![](./pics/brpa.jpg)<!-- .element style="position: fixed; top: 300px; right: 60px; height: 200px;"  -->
 
 <span>![](./pics/twitter.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; width: 30px;" --> brampatelski</span><!-- .element style="position: fixed; bottom: 110px; left: 20px;" -->
@@ -89,9 +91,14 @@
 <hr />
 
 * Whoami
-* Security Hygiene @home
-* Bug Lifecycle
-* Understanding Passwords
+* Software Supply Chains
+* Software Updates
+* Examples of attacks
+* Custom Software & Dependencies
+* Examples of dependency attacks
+* Mitigations:
+  * Dependency Check
+  * Signed dependencies
 
 -- Notes --
 
@@ -104,8 +111,9 @@
 
 * [Darknet Diaries](https://darknetdiaries.com/)
   * 57: [MS08-067](https://darknetdiaries.com/transcript/57/)
-  * 33: [RockYou](https://darknetdiaries.com/episode/33/)
-  * 45: [Xbox Underground p1](https://darknetdiaries.com/episode/45/)
-* Passwords, Fun with Numbers on [brampat.github.io](https://brampat.github.io/2019-02-20_passwords_fun_with_numbers/README)
+* Security JOURNEY White Belt:
+  * [Module 11](https://ordina.securityjourney.com/belts/1/modules/370/full) Software Supply Chain
+  * [Module 15](https://ordina.securityjourney.com/belts/1/modules/374/full) SDL
+
 
 ![](pics/resources/darknet_diaries.jpg)<!-- .element style="position: fixed; top: 350px; right: 50px; width: 250px; background:none; border:none; box-shadow:none; " -->
