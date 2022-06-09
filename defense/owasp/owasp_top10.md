@@ -1,72 +1,102 @@
 # OWASP Top 10
 
+Version 2021 found [here](https://owasp.org/Top10/#welcome-to-the-owasp-top-10-2021)
 Version 2017 found [here](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf)
 
-## Injection
+![](OWASP_Top_10_Web_Vuln.png)
 
-[source](https://www.owasp.org/index.php/Top_10-2017_A1-Injection)
-
-### Description
-
-Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent
-to an interpreter as part of a command or query. The attacker’s hostile data can trick the
-interpreter into executing unintended commands or accessing data without proper authorization.
-
-### Mitigation
-
-Preventing injection requires keeping data separate from commands and queries.
-
-* The preferred option is to use a safe API, which avoids the use of the interpreter entirely or provides a parameterized interface, or migrate to use Object Relational Mapping Tools (ORMs). Note: Even when parameterized, stored procedures can still introduce SQL injection if PL/SQL or T-SQL concatenates queries and data, or executes hostile data with EXECUTE IMMEDIATE or exec().
-* Use positive or "whitelist" server-side input validation. This is not a complete defense as many applications require special characters, such as text areas or APIs for mobile applications. 
-* For any residual dynamic queries, escape special characters using the specific escape syntax for that interpreter. Note: SQL structure such as table names, column names, and so on cannot be escaped, and thus user-supplied structure names are dangerous. This is a common issue in report-writing software.
-* Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.
-
-
-### Position
-
-| Year  | Position  | Name                      |
-|------:|----------:|---------------------------|
-| 2017  | A1        | Injection                 |
-| 2013  | A1        | Injection                 |
-| 2010  | A1        | Injection                 |
-| 2007  | A2        | Injection Flaws           |
-| 2004  | A6        | Injection Flaws           |
-| 2003  | A6        | Command Injection Flaws   |
-
-### Resources
-* [SQL Injection cheat sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/?utm_source=hacksplaining&utm_medium=post&utm_campaign=articlelink) by Netspraker
-
-## Broken Authentication
-
-[source](https://www.owasp.org/index.php/Top_10-2017_A2-Broken_Authentication)
+## Broken Access Control
 
 ### Description
 
-Application functions related to authentication and session management are often implemented
-incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit
-other implementation flaws to assume other users’ identities temporarily or permanently.
+Restrictions on what authenticated users are allowed to do are often not properly enforced.
+Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access
+other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.
 
+[source](https://www.owasp.org/index.php/Top_10-2017_A5-Broken_Access_Control)
 
 ### Mitigation
 
-* Where possible, implement multi-factor authentication to prevent automated, credential stuffing, brute force, and stolen credential re-use attacks.
-* Do not ship or deploy with any default credentials, particularly for admin users.
-* Implement weak-password checks, such as testing new or changed passwords against a list of the top 10000 worst passwords.
-* Align password length, complexity and rotation policies with NIST 800-63 B's guidelines in section 5.1.1 for Memorized Secrets or other modern, evidence based password policies.
-* Ensure registration, credential recovery, and API pathways are hardened against account enumeration attacks by using the same messages for all outcomes.
-* Limit or increasingly delay failed login attempts. Log all failures and alert administrators when credential stuffing, brute force, or other attacks are detected.
-* Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. Session IDs should not be in the URL, be securely stored and invalidated after logout, idle, and absolute timeouts.
+Access control is only effective if enforced in trusted server-side code or server-less API, where the attacker cannot modify the access control check or metadata.
+* With the exception of public resources, deny by default.
+* Implement access control mechanisms once and re-use them throughout the application, including minimizing CORS usage.
+* Model access controls should enforce record ownership, rather than accepting that the user can create, read, update, or delete any record.
+* Unique application business limit requirements should be enforced by domain models.
+* Disable web server directory listing and ensure file metadata (e.g. .git) and backup files are not present within web roots.
+* Log access control failures, alert admins when appropriate (e.g. repeated failures).
+* Rate limit API and controller access to minimize the harm from automated attack tooling.
+* JWT tokens should be invalidated on the server after logout.
+
+Developers and QA staff should include functional access control unit and integration tests.
 
 ### Position
 
-| Year  | Position  | Name                                          |
-|------:|----------:|-----------------------------------------------|
-| 2017  | A2        | Broken Authentication                         |
-| 2013  | A2        | Broken Authentication and Session Management  |
-| 2010  | A3        | Broken Authentication and Session Management  |
-| 2007  | A7        | Broken Authentication and Session Management  |
-| 2004  | A3        | Broken Authentication and Session Management  |
-| 2003  | A3        | Broken Account and Session Management         |
+Merges the following items from OWASP Top 2013:
+* A4 - Insecure Direct Object References
+* A7 - Missing Function Level Access Control
+
+
+| Year | Position | Name                                                                      |
+|-----:|---------:|---------------------------------------------------------------------------|
+| 2021 |       A1 | Broken Access Control                                                     |
+| 2017 |       A5 | Broken Access Control                                                     |
+| 2013 |  A4 - A7 | Insecure Direct Object References - Missing Function Level Access Control |
+| 2010 |  A4 - A8 | Insecure Direct Object References – Failure to Restrict URL Access        |
+| 2007 | A4 - A10 | Insecure Direct Object References – Failure to Restrict URL Access        |
+| 2004 |       A2 | Broken Access Control                                                     |
+| 2003 |  A2 - A9 | Broken Access Control - Remote Administration Flaws                       |
+
+
+## Insecure Direct Object References
+
+* Formerly split in 2007 through 2013 from ```Broken Access Control```
+* Re-merged in 2017 with ```Missing Function Level Access Control```
+* Merged with ```Remote Administration Flaws``` in 2004
+
+### Description
+
+A direct object reference occurs when a developer exposes a reference to an internal implementation object, such as a file, directory, or database key. Without an access control check or other protection, attackers can manipulate these references to access unauthorized data.
+
+[source](https://www.owasp.org/index.php/Top_10_2013-A4-Insecure_Direct_Object_References)
+
+### Position
+
+| Year | Position | Name                                                  |
+|-----:|---------:|-------------------------------------------------------|
+| 2021 |       A1 | Broken Access Control                                 |
+| 2017 |       A5 | Broken Access Control                                 |
+| 2013 |       A4 | Insecure Direct Object References                     |
+| 2010 |       A4 | Insecure Direct Object References                     |
+| 2007 |       A4 | Insecure Direct Object References                     |
+| 2004 |       A2 | Broken Access Control                                 |
+| 2003 |  A2 - A9 | Broken Access Control - Remote Administration Flaws   |
+
+
+## Missing Function Level Access Control
+
+* Formerly split in 2007 through 2013 from ```Broken Access Control```
+* Re-merged in 2017 with ```Insecure Direct Object References```
+* Merged with ```Remote Administration Flaws``` in 2004
+
+### Description
+
+Most web applications verify function level access rights before making that functionality visible in the UI. However, applications need to perform the same access control checks on the server when each function is accessed. If requests are not verified, attackers will be able to forge requests in order to access functionality without proper authorization.
+
+[source](https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control)
+
+### Position
+
+|    Year | Position | Name                                                  |
+|--------:|---------:|-------------------------------------------------------|
+|    2021 |       A1 | Broken Access Control                                 |
+|    2017 |       A5 | Broken Access Control                                 |
+|    2013 |       A7 | Missing Function Level Access Control                 |
+|    2010 |       A8 | Failure to Restrict URL Access                        |
+|    2007 |      A10 | Failure to Restrict URL Access                        |
+|    2004 |       A2 | Broken Access Control                                 |
+|    2003 |  A2 - A9 | Broken Access Control - Remote Administration Flaws   |
+
+
 
 ## Sensitive Data Exposure
 
@@ -75,7 +105,7 @@ other implementation flaws to assume other users’ identities temporarily or pe
   * A9 - Insufficient Transport Layer Protection
 
 Data exposure is a breach of confidentiality. This can be prevented by securing data both at rest and in transit.
-The former OWASP 2010 vulnerabilities A7 and A9 handle these separately. In OWASP 2013 these vulnerabilities were merged into A6 - Sensitive Dtaa Exposure  
+The former OWASP 2010 vulnerabilities A7 and A9 handle these separately. In OWASP 2013 these vulnerabilities were merged into A6 - Sensitive Dtaa Exposure
 
 [source](https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure)
 
@@ -102,14 +132,15 @@ Do the following, at a minimum, and consult the references:
 
 ### Position
 
-| Year  | Position  | Name                                                                      |
-|------:|----------:|---------------------------------------------------------------------------|
-| 2017  | A3        | Sensitive Data Exposure                                                   |
-| 2013  | A6        | Sensitive Data Exposure                                                   |
-| 2010  | A7 - A9   | Insecure Cryptographic Storage - Insufficient Transport Layer Protection  |
-| 2007  | A8 - A9   | Insecure Cryptographic Storage - Insecure Communications                  |
-| 2004  | A8        | Insecure Storage - (new in 2007)                                          |
-| 2003  | A8        | Insecure Use of Cryptography                                              |
+| Year | Position | Name                                                                     |
+|-----:|---------:|--------------------------------------------------------------------------|
+| 2021 |       A2 | Cryptographic Failures                                                   |
+| 2017 |       A3 | Sensitive Data Exposure                                                  |
+| 2013 |       A6 | Sensitive Data Exposure                                                  |
+| 2010 |  A7 - A9 | Insecure Cryptographic Storage - Insufficient Transport Layer Protection |
+| 2007 |  A8 - A9 | Insecure Cryptographic Storage - Insecure Communications                 |
+| 2004 |       A8 | Insecure Storage - (new in 2007)                                         |
+| 2003 |       A8 | Insecure Use of Cryptography                                             |
 
 ## Insecure Cryptographic Storage
 
@@ -126,14 +157,84 @@ Many web applications do not properly protect sensitive data, such as credit car
 
 ### Position
 
-| Year  | Position  | Name                              |
-|------:|----------:|-----------------------------------|
-| 2017  | A3        | Sensitive Data Exposure           |
-| 2013  | A6        | Sensitive Data Exposure           |
-| 2010  | A7        | Insecure Cryptographic Storage    |
-| 2007  | A8        | Insecure Cryptographic Storage    |
-| 2004  | A8        | Insecure Storage                  |
-| 2003  | A8        | Insecure Use of Cryptography      |
+| Year | Position | Name                             |
+|-----:|---------:|----------------------------------|
+| 2021 |       A2 | Cryptographic Failures           |
+| 2017 |       A3 | Sensitive Data Exposure          |
+| 2013 |       A6 | Sensitive Data Exposure          |
+| 2010 |       A7 | Insecure Cryptographic Storage   |
+| 2007 |       A8 | Insecure Cryptographic Storage   |
+| 2004 |       A8 | Insecure Storage                 |
+| 2003 |       A8 | Insecure Use of Cryptography     |
+
+
+## Injection
+
+[source](https://www.owasp.org/index.php/Top_10-2017_A1-Injection)
+
+### Description
+
+Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent
+to an interpreter as part of a command or query. The attacker’s hostile data can trick the
+interpreter into executing unintended commands or accessing data without proper authorization.
+
+### Mitigation
+
+Preventing injection requires keeping data separate from commands and queries.
+
+* The preferred option is to use a safe API, which avoids the use of the interpreter entirely or provides a parameterized interface, or migrate to use Object Relational Mapping Tools (ORMs). Note: Even when parameterized, stored procedures can still introduce SQL injection if PL/SQL or T-SQL concatenates queries and data, or executes hostile data with EXECUTE IMMEDIATE or exec().
+* Use positive or "whitelist" server-side input validation. This is not a complete defense as many applications require special characters, such as text areas or APIs for mobile applications.
+* For any residual dynamic queries, escape special characters using the specific escape syntax for that interpreter. Note: SQL structure such as table names, column names, and so on cannot be escaped, and thus user-supplied structure names are dangerous. This is a common issue in report-writing software.
+* Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.
+
+
+### Position
+
+| Year | Position | Name                      |
+|-----:|---------:|---------------------------|
+| 2021 |       A3 | Injection                 |
+| 2017 |       A1 | Injection                 |
+| 2013 |       A1 | Injection                 |
+| 2010 |       A1 | Injection                 |
+| 2007 |       A2 | Injection Flaws           |
+| 2004 |       A6 | Injection Flaws           |
+| 2003 |       A6 | Command Injection Flaws   |
+
+### Resources
+* [SQL Injection cheat sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/?utm_source=hacksplaining&utm_medium=post&utm_campaign=articlelink) by Netspraker## Broken Authentication
+
+[source](https://www.owasp.org/index.php/Top_10-2017_A2-Broken_Authentication)
+
+### Description
+
+Application functions related to authentication and session management are often implemented
+incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit
+other implementation flaws to assume other users’ identities temporarily or permanently.
+
+
+### Mitigation
+
+* Where possible, implement multi-factor authentication to prevent automated, credential stuffing, brute force, and stolen credential re-use attacks.
+* Do not ship or deploy with any default credentials, particularly for admin users.
+* Implement weak-password checks, such as testing new or changed passwords against a list of the top 10000 worst passwords.
+* Align password length, complexity and rotation policies with NIST 800-63 B's guidelines in section 5.1.1 for Memorized Secrets or other modern, evidence based password policies.
+* Ensure registration, credential recovery, and API pathways are hardened against account enumeration attacks by using the same messages for all outcomes.
+* Limit or increasingly delay failed login attempts. Log all failures and alert administrators when credential stuffing, brute force, or other attacks are detected.
+* Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. Session IDs should not be in the URL, be securely stored and invalidated after logout, idle, and absolute timeouts.
+
+### Position
+
+| Year | Position | Name                                         |
+|-----:|---------:|----------------------------------------------|
+| 2021 |       A7 | Identification and Authentication Failures   |
+| 2017 |       A2 | Broken Authentication                        |
+| 2013 |       A2 | Broken Authentication and Session Management |
+| 2010 |       A3 | Broken Authentication and Session Management |
+| 2007 |       A7 | Broken Authentication and Session Management |
+| 2004 |       A3 | Broken Authentication and Session Management |
+| 2003 |       A3 | Broken Account and Session Management        |
+
+
 
 ## Insufficient Transport Layer Protection
 
@@ -181,102 +282,15 @@ If these controls are not possible, consider using virtual patching, API securit
 
 ### Position
 
-| Year  | Position  | Name                          |
-|------:|----------:|-------------------------------|
-| 2017  | A4 (new)  | XML External Entities (XXE)   |
-| 2013  |           |                               |
-| 2010  |           |                               |
-| 2007  |           |                               |
-| 2004  |           |                               |
-| 2003  |           |                               |
-
-## Broken Access Control
-
-### Description
-
-Restrictions on what authenticated users are allowed to do are often not properly enforced.
-Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access
-other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.
-
-[source](https://www.owasp.org/index.php/Top_10-2017_A5-Broken_Access_Control)
-
-### Mitigation
-
-Access control is only effective if enforced in trusted server-side code or server-less API, where the attacker cannot modify the access control check or metadata.
-* With the exception of public resources, deny by default.
-* Implement access control mechanisms once and re-use them throughout the application, including minimizing CORS usage.
-* Model access controls should enforce record ownership, rather than accepting that the user can create, read, update, or delete any record.
-* Unique application business limit requirements should be enforced by domain models.
-* Disable web server directory listing and ensure file metadata (e.g. .git) and backup files are not present within web roots.
-* Log access control failures, alert admins when appropriate (e.g. repeated failures).
-* Rate limit API and controller access to minimize the harm from automated attack tooling.
-* JWT tokens should be invalidated on the server after logout. 
-
-Developers and QA staff should include functional access control unit and integration tests.
-
-### Position
-
-Merges the following items from OWASP Top 2013:
-* A4 - Insecure Direct Object References
-* A7 - Missing Function Level Access Control
-
-
-| Year  | Position  | Name                                                                      |
-|------:|----------:|---------------------------------------------------------------------------|
-| 2017  | A5        | Broken Access Control                                                     |
-| 2013  | A4 - A7   | Insecure Direct Object References - Missing Function Level Access Control |
-| 2010  | A4 - A8   | Insecure Direct Object References – Failure to Restrict URL Access        |
-| 2007  | A4 - A10  | Insecure Direct Object References – Failure to Restrict URL Access        |
-| 2004  | A2        | Broken Access Control                                                     |
-| 2003  | A2 - A9   | Broken Access Control - Remote Administration Flaws                       |
-
-
-## Insecure Direct Object References
-
-* Formerly split in 2007 through 2013 from ```Broken Access Control``` 
-* Re-merged in 2017 with ```Missing Function Level Access Control```
-* Merged with ```Remote Administration Flaws``` in 2004
-
-### Description
-
-A direct object reference occurs when a developer exposes a reference to an internal implementation object, such as a file, directory, or database key. Without an access control check or other protection, attackers can manipulate these references to access unauthorized data.
-
-[source](https://www.owasp.org/index.php/Top_10_2013-A4-Insecure_Direct_Object_References)
-
-### Position
-
-| Year  | Position  | Name                                                  |
-|------:|----------:|-------------------------------------------------------|
-| 2017  | A5        | Broken Access Control                                 |
-| 2013  | A4        | Insecure Direct Object References                     |
-| 2010  | A4        | Insecure Direct Object References                     |
-| 2007  | A4        | Insecure Direct Object References                     |
-| 2004  | A2        | Broken Access Control                                 |
-| 2003  | A2 - A9   | Broken Access Control - Remote Administration Flaws   |
-
-
-## Missing Function Level Access Control
-
-* Formerly split in 2007 through 2013 from ```Broken Access Control``` 
-* Re-merged in 2017 with ```Insecure Direct Object References```
-* Merged with ```Remote Administration Flaws``` in 2004
-
-### Description
-
-Most web applications verify function level access rights before making that functionality visible in the UI. However, applications need to perform the same access control checks on the server when each function is accessed. If requests are not verified, attackers will be able to forge requests in order to access functionality without proper authorization.
-
-[source](https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control)
-
-### Position
-
-| Year  | Position  | Name                                                  |
-|------:|----------:|-------------------------------------------------------|
-| 2017  | A5        | Broken Access Control                                 |
-| 2013  | A7        | Missing Function Level Access Control                 |
-| 2010  | A8        | Failure to Restrict URL Access                        |
-| 2007  | A10       | Failure to Restrict URL Access                        |
-| 2004  | A2        | Broken Access Control                                 |
-| 2003  | A2 - A9   | Broken Access Control - Remote Administration Flaws   |
+| Year | Position | Name                        |
+|-----:|---------:|-----------------------------|
+| 2021 |     A5   | Security Misconfiguration   |
+| 2017 | A4 (new) | XML External Entities (XXE) |
+| 2013 |          |                             |
+| 2010 |          |                             |
+| 2007 |          |                             |
+| 2004 |          |                             |
+| 2003 |          |                             |
 
 
 ## Security Misconfiguration
@@ -304,14 +318,15 @@ Secure installation processes should be implemented, including:
 
 ### Position
 
-| Year  | Position  | Name                      |
-|------:|----------:|---------------------------|
-| 2017  | A6        | Security Misconfiguration |
-| 2013  | A5        | Security Misconfiguration |
-| 2010  | A6 (new)  | Security Misconfiguration |
-| 2007  |           |                           |
-| 2004  |           |                           |
-| 2003  |           |                           |
+| Year | Position | Name                      |
+|-----:|---------:|---------------------------|
+| 2021 |       A5 | Security Misconfiguration |
+| 2017 |       A6 | Security Misconfiguration |
+| 2013 |       A5 | Security Misconfiguration |
+| 2010 | A6 (new) | Security Misconfiguration |
+| 2007 |          |                           |
+| 2004 |          |                           |
+| 2003 |          |                           |
 
 
 ## Cross-Site Scripting (XSS)
@@ -336,14 +351,15 @@ Preventing XSS requires separation of untrusted data from active browser content
 
 ### Position
 
-| Year  | Position  | Name                          |
-|------:|----------:|-------------------------------|
-| 2017  | A7        | Cross-Site Scripting (XSS)    |
-| 2013  | A3        | Cross-Site Scripting (XSS)    |
-| 2010  | A2        | Cross-Site Scripting (XSS)    |
-| 2007  | A1        | Cross-Site Scripting (XSS)    |
-| 2004  | A4        | Cross-Site Scripting (XSS)    |
-| 2003  | A4        | Cross-Site Scripting (XSS)    |
+| Year | Position | Name                       |
+|-----:|---------:|----------------------------|
+| 2021 |       A3 | Injection                  |
+| 2017 |       A7 | Cross-Site Scripting (XSS) |
+| 2013 |       A3 | Cross-Site Scripting (XSS) |
+| 2010 |       A2 | Cross-Site Scripting (XSS) |
+| 2007 |       A1 | Cross-Site Scripting (XSS) |
+| 2004 |       A4 | Cross-Site Scripting (XSS) |
+| 2003 |       A4 | Cross-Site Scripting (XSS) |
 
 ## Insecure Deserialization
 
@@ -367,14 +383,15 @@ The only safe architectural pattern is not to accept serialized objects from unt
 
 ### Position
 
-| Year  | Position  | Name                      |
-|------:|----------:|---------------------------|
-| 2017  | A8 (new)  | Insecure Deserialization  |
-| 2013  |           |                           |
-| 2010  |           |                           |
-| 2007  |           |                           |
-| 2004  |           |                           |
-| 2003  |           |                           |
+| Year | Position | Name                                 |
+|-----:|---------:|--------------------------------------|
+| 2021 |       A8 | Software and Data Integrity Failures |
+| 2017 | A8 (new) | Insecure Deserialization             |
+| 2013 |          |                                      |
+| 2010 |          |                                      |
+| 2007 |          |                                      |
+| 2004 |          |                                      |
+| 2003 |          |                                      |
 
 
 ## Using Components with Known Vulnerabilities
@@ -400,14 +417,15 @@ Every organization must ensure that there is an ongoing plan for monitoring, tri
 
 ### Position
 
-| Year  | Position  | Name                                          |
-|------:|----------:|-----------------------------------------------|
-| 2017  | A9        | Using Components with Known Vulnerabilities   |
-| 2013  | A9 (new)  | Using Components with Known Vulnerabilities   |
-| 2010  |           |                                               |
-| 2007  |           |                                               |
-| 2004  |           |                                               |
-| 2003  |           |                                               |
+| Year | Position | Name                                        |
+|-----:|---------:|---------------------------------------------|
+| 2021 |       A6 | Vulnerable and Outdated Components          |
+| 2017 |       A9 | Using Components with Known Vulnerabilities |
+| 2013 | A9 (new) | Using Components with Known Vulnerabilities |
+| 2010 |          |                                             |
+| 2007 |          |                                             |
+| 2004 |          |                                             |
+| 2003 |          |                                             |
 
 ## Insufficient Logging & Monitoring
 
@@ -433,14 +451,15 @@ There are commercial and open source application protection frameworks such as O
 
 ### Position
 
-| Year  | Position  | Name                              |
-|------:|----------:|-----------------------------------|
-| 2017  | A10 (new) | Insufficient Logging & Monitoring |
-| 2013  |           |                                   |
-| 2010  |           |                                   |
-| 2007  |           |                                   |
-| 2004  |           |                                   |
-| 2003  |           |                                   |
+| Year |  Position | Name                                  |
+|-----:|----------:|---------------------------------------|
+| 2021 |        A9 | Security Logging & Monitring Failures |
+| 2017 | A10 (new) | Insufficient Logging & Monitoring     |
+| 2013 |           |                                       |
+| 2010 |           |                                       |
+| 2007 |           |                                       |
+| 2004 |           |                                       |
+| 2003 |           |                                       |
 
 ## Cross-Site Request Forgery (CSRF)
 
