@@ -2,18 +2,18 @@
 <hr />
 
 Maintenance:
-* Health
-* Safety
-* Durability
+* Healthy
+* Safe
+* Durable
 
 ![](./pics/software_updates/ductape_builds.jpeg)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; bottom: 20px; right: 20px; width: 430px;" -->
 
 -- Notes --
 
-Regular maintenance is needed to ensure:
-* Health
-* Safety and
-* Durability
+Regular maintenance is needed to ensure your home is
+* Healthy
+* Safe & secure
+* Durable
 
 --
 
@@ -68,7 +68,7 @@ Regular maintenance is needed to ensure:
 * Whoami
 * Bug Lifecycle
 * Security Hygiene @home
-* Bonus: Understanding Passwords
+* Bonus: Strong Auth
 
 -- Notes --
 
