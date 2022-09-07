@@ -40,9 +40,10 @@ How to make passwords unpredictable:
 
 -- Notes --
 
-Whenever you try to use 50+ character passwords
+Why Long:
 * Longer passwords means harder to crack
 * Length beats complexity in general
+* Whenever you try to use 50+ character passwords
 
 
 --
@@ -51,10 +52,10 @@ Whenever you try to use 50+ character passwords
 
 -- Notes --
 
-Why unique?
+Why unique:
+* If it's reused, it will leak
 * If someone asks for your password, you say no
 * But any random website, we have no problem to provide our password
-  * If it's reused, it will leak
 
 --
 
@@ -63,11 +64,12 @@ Why unique?
 
 -- Notes --
 
-* And that's where millions of dollars on Cyber security will fail
-* When people reuse passwords
+Effect of password reuse is:
+* Armor is Millions of dollars on Cyber-security will fail
+* Arrow through the visor: when people reuse passwords
+  * Dataleak at Municipality of Buren (yesterday) was password-based attack
 * You are part of security, if you like it or not
 * So get a password manager
-
 
 --
 

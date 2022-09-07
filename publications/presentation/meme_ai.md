@@ -49,7 +49,7 @@
 * Again: the training data-set is very important
   * we should make sure we don't create biased algorithms
     * Examples: preferring caucasian ppl over ppl of color (Twitter)
-    * Dutch Tax offices: treating certain groups as more fraudulent based on religion
-    * Gender bias, ppl of color
+    * Gender bias
+    * Dutch Tax offices: groups are fraudulent based on religion, home address, car-size etc
   * Algorithms are only as fair as the people who create them
 

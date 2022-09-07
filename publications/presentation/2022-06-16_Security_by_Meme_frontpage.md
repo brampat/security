@@ -34,6 +34,7 @@ This is the first awareness lesson:
 * Code Quality
 * Cryptography
 * Password Security
+* Bonus memes (if time)
 
 -- Notes --
 
@@ -50,4 +51,13 @@ This is the first awareness lesson:
 -- Notes --
 
 I dunno, he just ran somewhere
-
+* Elliot Anderson from Mr. Robot
+* Advisors:
+  * Kor Adana (network security analyst and forensics manager for Toyota Motor Sales)
+  * Michael Bazzell (security consultant and former FBI Cyber Crimes Task Force agent and investigator)
+  * James Plouffe (lead solutions architect at MobileIron)
+  * 2nd season:
+    * Jeff Moss (founder and director of Black Hat and DEF CON computer security conferences)
+    * Marc Rogers (principal security researcher for Cloudflare and head of security for DEF CON)
+    * Ryan Kazanciyan (chief security architect for Tanium)
+    * Andre McGregor (director of security for Tanium and former FBI Cyber Special agent)

@@ -13,7 +13,7 @@ This is not investment advice, not even investment opinion
 
 --
 
-![](pics/meme/encryption/base64_encryption.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; left: 0px; top: 10px;"  -->
+![](pics/meme/encryption/base64_encryption.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 650px; left: 60px; top: 10px;"  -->
 
 -- Notes --
 
@@ -21,18 +21,20 @@ Encoding is not encryption
 
 --
 
-![](pics/meme/encryption/md5.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; left: 0px; top: 10px;"  -->
+![](pics/meme/encryption/md5.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 650px; left: 50px; top: 10px;"  -->
 
 -- Notes --
 
 Hashing is cryptography
-* Cannot be reversed
-* NOT encryption
+* Hexadecimal digest for instance next to file-downloads etc.
+* Protects integrity: Is this really what I expect it is (not been tampered with)
+* Hashes cannot be reversed
+  * NOT encryption
 * MD5 is broken
 * SHA1 is vulnerable
-* SHA2 is strong with enough bit-size
+* SHA2 is strong with high enough bit-size
   * Bitcoin uses SHA-256 -> SHA2 with 256 bits
-* But if you need password hashing: Use BCrypt
+* But....
 
 --
 
@@ -40,11 +42,13 @@ Hashing is cryptography
 
 -- Notes --
 
+SHA-256 is not for everything
 * Caesar Cipher (encryption) is weak
 * Hashing, depending on which algo, is soft to brute-force with rainbow-tables
 * Hashing with salt defends against rainbow-tables
   * Weak against weak passwords
-* BCrypt has built-in salt ans is deliberately "slow" to defend against brute-force
+* BCrypt has built-in salt and is deliberately "slow" to defend against brute-force
+  * If you need password hashing: Use BCrypt
   * Still weak against weak passwords
 
 --
@@ -68,6 +72,7 @@ Never roll your own encryption
 
 The Death Star plans were stolen by physically taking out the harddrive
 * Use encryption to protect confidentiality
+* Jyn Erso stealing harddrive
 
 --
 

@@ -18,6 +18,14 @@
 
 --
 
+![](pics/meme/physical/auth_bypass.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 750px; left: 50px; top: 10px;"  -->
+
+-- Notes --
+
+Threat model to prevent authorization bypasses
+
+--
+
 ![](pics/meme/physical/surveillance_cameras.jpg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 750px; left: 0px; top: 10px;"  -->
 
 -- Notes --
@@ -30,6 +38,21 @@
   * All employees can check for badges, when company policy is to wear them visibly
   * Be helpful and friendly, malicious ppl will reveal themselves soon enough
   * Spot that "lost visitor" and help them to front-desk for a visitor badge
+
+--
+
+# Scream 2022
+<hr />
+
+"Nice Smart door locks"
+
+![](./pics/wfh/scream_2022.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; bottom: 20px; right: 20px; width: 830px;" -->
+![](./pics/wfh/scream_mask.png)<!-- .element style="vertical-align: middle; background:none; border:none; box-shadow:none; position: fixed; top: 100px; right: 10px; width: 230px;" -->
+
+-- Notes --
+
+Where physical meets digital
+* Insecure Security cams / baby-cams
 
 --
 

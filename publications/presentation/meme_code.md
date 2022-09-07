@@ -16,7 +16,9 @@ Quality (Maintainability) is about what a developer sees
 
 -- Notes --
 
-Well maintained code can still add new features to old code
+Old but well maintained code can still be expanded with new features
+* May look odd, but stable
+* However....
 
 --
 
@@ -24,15 +26,21 @@ Well maintained code can still add new features to old code
 
 -- Notes --
 
-But adding features, without maintaining code will result in risky applications
+Adding features
+* without maintaining code
+* will result in risk
+* Resulting in bugs which.... 
 
 --
 
-![](pics/meme/maintainability/fixing_bugs_in_prod.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 850px; left: 0px; top: 10px;"  -->
+## Fixing bugs on Prod
+
+![](pics/meme/maintainability/fixing_bugs_in_prod.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 850px; left: 0px; top: 110px;"  -->
 
 -- Notes --
 
-Which will eventually need fixing
+Bugs will eventually need fixing
+* Let's fix bugs before prod
 
 --
 
@@ -40,18 +48,23 @@ Which will eventually need fixing
 
 -- Notes --
 
-We build on other ppl's work 
+How important software can be:
+* We build on other ppl's work / dependencies
+* Log4J / Spring
 * This comic references [OpenSSL](https://www.theregister.com/2021/05/10/untangling_open_sources_sustainability_problem/)
+  * 2014: Heartbleed on OpenSSL
+  * 2020: This comic
 * But [left-pad](https://www.theregister.com/2016/03/23/npm_left_pad_chaos/) in NPM is a similar example
 * And recently [node-ipc](https://portswigger.net/daily-swig/npm-maintainer-targets-russian-users-with-data-wiping-protestware) contained anti-Russia malware
 
 --
 
-![](pics/meme/maintainability/bug_free.jpg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 850px; left: 0px; top: 10px;"  -->
+![](pics/meme/maintainability/bug_free.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 850px; left: 0px; top: 10px;"  -->
 
 -- Notes --
 
-Just remember that no code is free from bugs
+And accept that coding without bugs is nearly impossible
+* Well, maybe some people only make a single bug in their life 
 
 
 
