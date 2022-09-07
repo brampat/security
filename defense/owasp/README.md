@@ -2,8 +2,18 @@
 
 For a combined graph overview see [here](graph.md), which includes:
 * OWASP Top 10 vulnerabilities
-* OWASP Mobile Top 10
+* OWASP Top 10 [Mobile](https://github.com/OWASP/www-project-mobile-top-10)
 * OWASP Top 10 Proactive Controls
+* OWASP Top 10 API
+* OWASP Top 10 [Kubernetes](https://github.com/OWASP/www-project-kubernetes-top-ten)
+* OWASP Top 10 [Docker](https://github.com/OWASP/www-project-docker-top-10)
+* OWASP Top 10 [Low Code](https://github.com/OWASP/www-project-top-10-low-code-no-code-security-risks)
+* OWASP Top 10 [CICD](https://github.com/OWASP/www-project-top-10-ci-cd-security-risks)
+* OWASP Top 10 [Thick Client](https://github.com/OWASP/www-project-thick-client-top-10)
+* OWASP Top 10 [Cloud Native Application](https://github.com/OWASP/Cloud-Native-Application-Security-Top-10)
+* OWASP Top 10 [Serverless](https://github.com/OWASP/Serverless-Top-10-Project)
+* 
+* OWASP Top 10 [Card Game](https://github.com/OWASP/www-project-top-10-card-game)
 
 ## OWASP Projects Map
 
