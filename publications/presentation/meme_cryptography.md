@@ -2,18 +2,28 @@
 ## Cryptography
 <hr />
 
+### Why?
+
+![](pics/meme/cyber_is_easy.jpg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; right: 60px; top: 120px;"  -->
+
+
+
 --
 
-![](pics/meme/encryption/crypto-means-cryptography.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 750px; left: 0px; top: 10px;"  -->
+![](pics/meme/encryption/crypto-means-cryptography.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 750px; left: 100px; top: 100px;"  -->
 
 -- Notes --
 
-This is not investment advice, not even investment opinion
+Just to be clear, we're not talking about cryptocurrency
+* This is not investment advice, not even investment opinion
 * But what is considered cryptography then?
 
 --
 
-![](pics/meme/encryption/base64_encryption.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 650px; left: 60px; top: 10px;"  -->
+## Not Crypto
+
+
+![](pics/meme/encryption/base64_encryption.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; left: 200px; bottom: 10px;"  -->
 
 -- Notes --
 
@@ -21,7 +31,9 @@ Encoding is not encryption
 
 --
 
-![](pics/meme/encryption/md5.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 650px; left: 50px; top: 10px;"  -->
+## Broken Crypto
+
+![](pics/meme/encryption/md5.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; left: 200px; bottom: 10px;"  -->
 
 -- Notes --
 
@@ -38,7 +50,9 @@ Hashing is cryptography
 
 --
 
-![](pics/meme/encryption/bcrypt.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; left: 0px; top: 10px;"  -->
+## Stronger
+
+![](pics/meme/encryption/bcrypt.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; right: 60px; top: 10px;"  -->
 
 -- Notes --
 
@@ -76,13 +90,30 @@ The Death Star plans were stolen by physically taking out the harddrive
 
 --
 
-![](pics/meme/encryption/wrench.png)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 750px; left: 0px; top: 10px;"  -->
+![](pics/meme/encryption/wrench.png)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 650px; left: 150px; top: 110px;"  -->
 
 -- Notes --
 
-But don't think it's unbeatable
+But cryptography doesn't solve all risks
 * Actual attacks will always take the easy route:
   * Threatening ppl
   * Or phishing
 
+--
+
+## Lesson
+
+![](pics/meme/encryption/Security-Champion.jpg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 800px; left: 100px; bottom: 10px;"  -->
+
+* Security & Crypto is complex
+* Security Champions
+* Dedicated Security Team
+
+-- Notes --
+
+Security and crypto is hard enough.
+* Have a security champion in your team who connects your team with...
+* a dedicated security support team which...
+* Builds reusable crypto building blocks, battle-tested
+* Use those blocks
 
