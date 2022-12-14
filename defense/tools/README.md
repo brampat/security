@@ -35,17 +35,24 @@ The tools described can be integrated in CI/CD toolchains.
 * Overcommit
 
 #### Secrets scanning
-* git-hound
-* gitrob
-* truffleHog
-* AWS Labs [git-secrets](https://github.com/awslabs/git-secrets)
-* [GitGot](https://github.com/BishopFox/GitGot) for scanning secrets on GitHub
-* OWASP Sedated
-* [BFG](https://rtyley.github.io/bfg-repo-cleaner/) deletes secrets from GIT repo history
-  * [BFG Blog](https://anchor.host/removing-sensitive-data-from-git-repos/) 
-* ThoughtWorks [Talisman](https://github.com/thoughtworks/talisman)
-* Auth0 [repo-supervisor](https://github.com/auth0/repo-supervisor)
 * Aqua [Trivy](https://aquasecurity.github.io/trivy/)
+* Auth0 [repo-supervisor](https://github.com/auth0/repo-supervisor)
+* [BFG](https://rtyley.github.io/bfg-repo-cleaner/) deletes secrets from GIT repo history
+  * [BFG Blog](https://anchor.host/removing-sensitive-data-from-git-repos/)
+* [detect-secrets](https://github.com/Yelp/detect-secrets)
+* [git-all-secrets](https://github.com/anshumanbh/git-all-secrets)
+* [GitGot](https://github.com/BishopFox/GitGot) for scanning secrets on GitHub
+* git-hound
+* [github secret scanning](https://docs.github.com/en/developers/overview/secret-scanning-partner-program)
+* [git-leaks](https://github.com/zricethezav/gitleaks)
+* gitrob
+* [git-secrets](https://github.com/awslabs/git-secrets) by AWS Labs
+* [Gitty leaks](https://github.com/kootenpv/gittyleaks)
+* OWASP Sedated
+* ThoughtWorks [Talisman](https://github.com/thoughtworks/talisman)
+* truffleHog
+* truffleHog3
+* [Whispers](https://github.com/Skyscanner/whispers)
 
 #### Peer Code reviews
 * CERT Secure Coding Standards
