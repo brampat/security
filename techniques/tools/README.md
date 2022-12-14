@@ -23,6 +23,7 @@
 * [HIBP](https://haveibeenpwned.com/): Have I Been Pwned, see if an account (based on mail-address) has been breached and in what leak
 * [Pipl](https://pipl.com/): People Search engine
 * [OSInt](https://osintframework.com/): Information gathering from free and semi-free resources. Links to many other search engines.
+* [Intel Techniques](https://inteltechniques.com/tools/)
 
 ## Network scanning
 * Nmap: Network scanning tool, comes with most Linux distributions, but also available on Windows
