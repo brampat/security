@@ -110,28 +110,55 @@ Somewhere in this timeline an exploit may be created, released and used.
 
 --
 
+# OMIGOD
+<hr />
+
+Open Management Infrastructure on MS Azure
+
+* CVE-2021-38647 – Unauthenticated RCE as root (Severity: 9.8)
+* CVE-2021-38648 – Privilege Escalation vulnerability (Severity: 7.8)
+* CVE-2021-38645 – Privilege Escalation vulnerability (Severity: 7.8)
+* CVE-2021-38649 – Privilege Escalation vulnerability (Severity: 7.0)
+
+
+[Source](https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution)
+
+-- Notes --
+
+* In Azure Linux VM's werd automatisch een OMI agent geinstalleerd bij bepaalde services.
+* OMI proces draait met hoogste rechten
+* OMI documentatie is / was er niet (onbekende software, attack surface)
+* Er zaten 4 kwetsbaarheden in
+* Kwetsbaarheid: remove auth-header to gain root
+* Patch op 14-sept 2021
+* in bepaalde gevallen moet deze handmatig geupdate worden
+
+https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution
+
+--
+
 # Custom Software
 <hr />
 
 ## Dependency Bugs
 
-![](pics/supply_chain/depedency_timeline.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 20px; width: 275px;" class="fragment fade-in" data-fragment-index="1" -->
+![](pics/supply_chain/dependency_timeline.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 20px; width: 275px;" class="fragment fade-in" data-fragment-index="1" -->
 
 <span>Apache Http Core</span><!-- .element style="font-size: 10px; position: fixed; bottom: 450px; left: 110px; width: 210px;" class="fragment fade-in" data-fragment-index="1" -->
 
-![](pics/supply_chain/depedency_timeline_2.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 300px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
+![](pics/supply_chain/dependency_timeline_2.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 300px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
 
 <span>Apache Http Client</span><!-- .element style="font-size: 10px; position: fixed; bottom: 450px; left: 360px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
 
-![](pics/supply_chain/depedency_timeline_2.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 515px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
+![](pics/supply_chain/dependency_timeline_2.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 515px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
 
 <span>Camel Http</span><!-- .element style="font-size: 10px; position: fixed; bottom: 450px; left: 580px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
 
-![](pics/supply_chain/depedency_timeline_2.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 730px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
+![](pics/supply_chain/dependency_timeline_2.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 375px; left: 730px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
 
 <span>My App</span><!-- .element style="font-size: 10px; position: fixed; bottom: 450px; left: 810px; width: 210px;" class="fragment fade-in" data-fragment-index="2" -->
 
-![](pics/supply_chain/dependency_tree.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 20px; right: 20px; width: 525px;"  -->
+![](pics/supply_chain/dependency_tree.png)<!-- .element style="box-shadow:none; position: fixed; bottom: 20px; right: 20px; width: 525px;" class="fragment fade-in" data-fragment-index="3" -->
 
 
 -- Notes --
@@ -320,21 +347,6 @@ Source: [ArsTechnica](https://arstechnica.com/gadgets/2021/03/hackers-backdoor-p
 
 --
 
-# OMIGOD
-<hr />
-
-Open Management Infrastructure on MS Azure
-
-* CVE-2021-38647 – Unauthenticated RCE as root (Severity: 9.8)
-* CVE-2021-38648 – Privilege Escalation vulnerability (Severity: 7.8)
-* CVE-2021-38645 – Privilege Escalation vulnerability (Severity: 7.8)
-* CVE-2021-38649 – Privilege Escalation vulnerability (Severity: 7.0)
-
-
-[Source](https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution)
-
---
-
 # Mitigation
 <hr />
 
@@ -378,13 +390,13 @@ Source: [Google Blog](https://security.googleblog.com/2021/03/introducing-sigsto
 
 
 # Further reading
-
 <hr />
 
-* OWASP Top 10 A9 (2017): Using Componentns with Known Vulnerabilities
-* Security Journey:
-  * White Belt lesson 11: Software Supply Chain
-  * Yellow Belt lesson 14: OWASP Top 10 part 3
+* Security Journey - White Belt:
+  * [Module 11](https://ordina.securityjourney.com/belts/1/modules/370/full) Software Supply Chain
+  * [Module 15](https://ordina.securityjourney.com/belts/1/modules/374/full) SDL
+* OWASP Top 10 A9 (2017): Using Components with Known Vulnerabilities
+  * Yellow Belt [Module 14](https://ordina.securityjourney.com/belts/2/modules/274/full): OWASP Top 10 part 3 - A9
 * [Backstabber’s Knife Collection: A Review of Open Source Software Supply Chain Attacks](https://link.springer.com/chapter/10.1007%2F978-3-030-52683-2_2)
 * [Hunting Malicious NPM packages](https://duo.com/decipher/hunting-malicious-npm-packages)
 * [Software Supply Chain Attacks](https://www.whitesourcesoftware.com/resources/blog/software-supply-chain-attacks/)
@@ -392,7 +404,3 @@ Source: [Google Blog](https://security.googleblog.com/2021/03/introducing-sigsto
 * [Easy Code Signing & Verification for Supply Chain Integrity](https://security.googleblog.com/2021/03/introducing-sigstore-easy-code-signing.html)
 
 
---
-
-Notes:
-https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution
