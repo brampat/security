@@ -18,6 +18,24 @@ The physical means to enforce security and access to the organization: Gates, gu
 ## Logical / Technical controls
 Technical measures to enforce security: Firewalls, encryption, network securities, accounts
 
+
+# Frameworks and Assessments
+* [OWASP SAMM](https://owaspsamm.org/) Software Assurance Maturity model
+  * Maturity in the secure software development process
+  * Mostly organizational scope
+  * Assessment found [here](https://owaspsamm.org/assessment/) including an MS Excel and Google Docs Spreadsheet
+* [OWASP DSOMM](https://owasp.org/www-project-devsecops-maturity-model/) DevSecOps Maturity Model
+  * DevSecOps, maturity in DevOps, CI/CD and automation
+  * Partly maps to OWASP SAMM, but more focussed on tech and automation
+  * Heatmap "assessment" found [here](https://dsomm.timo-pagel.de/circular-heatmap)
+* [CD3M](https://nisi.nl/continuousdelivery/articles/maturity-model) by NISI
+  * Continuous Delivery, DevOps and some Scrum / Agile practices
+* [SLSA](https://slsa.dev/) Supply chain Levels for Software Artifacts
+* [BSIMM](https://www.bsimm.com/) Building Security In Maturity Model
+* Scrum Agile:
+  * [Sprint Agile](https://sprintagile.com.au/maturity-assessment/)
+  * [InfoQ](https://www.infoq.com/articles/agile-team-maturity-assessment/)
+
 # Resources
 * [SAFECode](https://safecode.org) Non profit organization with free on-demand webcasts on Secure Software Development
 
