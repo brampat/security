@@ -15,7 +15,7 @@ See my article for users (Dutch) [here](../publications/2018-02-08_passwords_myt
 * Proper hashing (bcrypt)
 * Proper encryption (using hardened algorithms)
 * Dynamic & static salting
-* 2FA / Multi-FA
+* 2FA / MFA
 * Account lockout (temporary, after failed logins)
 
 See my article for developers (Dutch) [part 1](../publications/2018-02-21_passwords_myths_errors_tips_for_devs_1/README.md) and [part 2](../publications/2018-02-08_passwords_myths_errors_tip_for_users/README.md)
