@@ -16,6 +16,9 @@
 * [Web Application basics](web-app-basics.md)
 * [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt
 
+### Web Defence
+* [Defense by numbers](https://www.youtube.com/watch?v=I3pNLB3Cq24&t=3s): Making Problems for Script Kiddies and Scanner Monkeys. Using HTTP Response codes by [Chris John Riley](https://twitter.com/ChrisJohnRiley)
+
 ## Fun stories
 * [How I used to rob banks](https://www.youtube.com/watch?v=mDdRGlSW9Ro) by [Freaky Clown](https://twitter.com/__freakyclown__)
 * [Top hacker shows how it's done](https://www.youtube.com/watch?v=hqKafI7Amd8) by Pablos Holman
