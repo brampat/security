@@ -259,9 +259,22 @@ The tools described can be integrated in CI/CD toolchains.
 * Ensure also transitive dependencies are checked
 * Integrate into CI/CD
 
+#### CVE Databases
+* [Bug Alert](https://bugalert.org/)
+* [CVE](https://cve.mitre.org/cve/) Common Vulnerability Enumeration by Mitre
+* GitHub [Advisories](https://github.com/advisories)
+* [GSD](https://github.com/cloudsecurityalliance/gsd-database) Global Security Database
+* [NVD](https://nvd.nist.gov/) National Vulnerability Database by NIST
+* [OpenCVE](https://www.opencve.io/)
+* [OSV](https://osv.dev/list) OpenSource Vulnerabilities
+* [PyPA](https://github.com/pypa/advisory-database) Advisory Database
+* [RustSec](https://github.com/RustSec/advisory-db) Advisory Database
+
 #### Tools
 * OWASP [Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
 * OWASP [Dependency Track](https://owasp.org/www-project-dependency-track/)
+* [OSV Scanner](https://github.com/google/osv-scanner)
+* [Dep-Scan](https://github.com/AppThreat/dep-scan)
 * [Nexus](https://www.sonatype.com/products-overview) platform
   * Nexus [Repository](https://www.sonatype.com/products/nexus-repository)
   * Nexus [Lifecycle Foundation](https://www.sonatype.com/products/lifecycle-foundation)
@@ -296,7 +309,18 @@ The tools described can be integrated in CI/CD toolchains.
   * [Bundler-Audit](https://github.com/rubysec/bundler-audit)
   * Ruby & Rails [Hakiri](https://hakiri.io/)
 * Contrast [SCA](https://www.contrastsecurity.com/contrast-sca)
-  
+
+#### SBOM tools
+* OWASP [CycloneDX](https://github.com/CycloneDX/cyclonedx-maven-plugin)
+* [Syft](https://github.com/anchore/syft)
+* Microsoft [SBOM Tool](https://github.com/microsoft/sbom-tool)
+* [Fossa](https://fossa.com/pricing)
+* [MergeBase](https://mergebase.com/try/)
+* [Bomber](https://github.com/devops-kung-fu/bomber) scans SBoMs for security vulnerabilities
+* [SBOM Operator](https://github.com/ckotzbauer/sbom-operator) catalogues all images of a Kubernetes cluster to multiple formats
+* [5 tools](https://mergebase.com/blog/best-tools-for-generating-sbom/) for generating SBOMs
+
+
 ## Acceptance
 
 ### Infrastructure as Code
