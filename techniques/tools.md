@@ -24,6 +24,7 @@
 * [Wireshark](https://www.wireshark.org)
   * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)
   * [Filter reference guide](https://www.wireshark.org/docs/dfref/)
+* [OpenKAT](https://github.com/minvws/nl-kat-coordination)
 
 ## CMS
 * [CMSMap](https://github.com/Dionach/CMSmap) CMS scanner, supports WordPress, Joomla, Drupal and Moodle
