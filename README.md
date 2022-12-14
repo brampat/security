@@ -49,24 +49,27 @@ See [Video's](videos/README.md)
 
 ## Conferences
 
-| Conference                                            | Days  | Where?        | Period        | Cost          |
-| ----------------------------------------------------- | ----- | ------------- | ------------- | ------------- |
-| [Blackhat EU](https://www.blackhat.com/)              | 4     | London        | December      | £ 1400        |
-| [Blackhat USA](https://www.blackhat.com/)             | 6     | Las Vegas     | August        | $  ??         |
-| [Blackhat Asia](https://www.blackhat.com/)            | 4     | Singapore     | March         | $ 1900        |
-| [Defcon](https://www.defcon.org/)                     | 4     | Las Vegas     | July / August | $ 280         |
-| [LocoMocoSec](https://locomocosec.com/)               | 5     | USA, Hawai    | April         | $ 632 - 986   |
-| [RSAConf USA](https://www.rsaconference.com/)         | 5     | San Fransisco | Feb / Mar / Apr | $ 1795 - $ 2595 |
-| [RSAConf Abu Dhabi](https://www.rsaconference.com/) (disc.?) | 5 | Abu Dhabi  | November      | $ ??          |
-| [RSAConf Singapore](https://www.rsaconference.com/)   | 3     | Singapore     | July          |               |
-| [RSAC unplugged](https://www.rsaconference.com/)      | 1     | London        | June          |               |
-| [SecAppDev](https://secappdev.org/)                   | 5     | Leuven, BE    | Februari      | € 2400        |
-| [D3n H4ck](https://www.denhack.nl/)                   | 1     | Den Haag, NL  | Juli          | Free          |
-| [Tweakers](https://www.tweakers.net/)                 | 1     | Var, NL       | Var           | € 15          |
-| [Hack in the Box](http://www.hitb.nl/)                | 5     | Amsterdam, NL | April / May   | € ??          |
-| [Dutch Cyber Warfare Community](http://www.dcwc.nl/)  | part  | Var, NL       | Var           | Free          |
-| [SHA2017](https://sha2017.org/) (name changes every time) | 5  | Var, NL      | 2021         | ~€ 300        |
-| [Chaos Communication Congress](https://events.ccc.de/upcoming-events/) | 5 | Var, DE | ?      | € ??          |
+| Conference                                                             | Days | Where?        | Period               | Cost            |
+|------------------------------------------------------------------------|------|---------------|----------------------|-----------------|
+| [Blackhat EU](https://www.blackhat.com/)                               | 4    | London        | December             | £ 1400          |
+| [Blackhat USA](https://www.blackhat.com/)                              | 6    | Las Vegas     | August               | $  ??           |
+| [Blackhat Asia](https://www.blackhat.com/)                             | 4    | Singapore     | March                | $ 1900          |
+| [Defcon](https://www.defcon.org/)                                      | 4    | Las Vegas     | July / August        | $ 280           |
+| [LocoMocoSec](https://locomocosec.com/)                                | 5    | USA, Hawai    | April                | $ 632 - 986     |
+| [RSAConf USA](https://www.rsaconference.com/)                          | 5    | San Fransisco | Feb / Mar / Apr      | $ 1795 - $ 2595 |
+| [RSAConf Abu Dhabi](https://www.rsaconference.com/) (disc.?)           | 5    | Abu Dhabi     | November             | $ ??            |
+| [RSAConf Singapore](https://www.rsaconference.com/)                    | 3    | Singapore     | July                 |                 |
+| [RSAC unplugged](https://www.rsaconference.com/)                       | 1    | London        | June                 |                 |
+| [SecAppDev](https://secappdev.org/)                                    | 5    | Leuven, BE    | Februari             | € 2400          |
+| [D3n H4ck](https://www.denhack.nl/)                                    | 1    | Den Haag, NL  | Juli                 | Free            |
+| [Tweakers](https://www.tweakers.net/)                                  | 1    | Var, NL       | Var                  | € 15            |
+| [Hack in the Box](http://www.hitb.nl/)                                 | 5    | Amsterdam, NL | April / May          | € ??            |
+| [Dutch Cyber Warfare Community](http://www.dcwc.nl/)                   | part | Var, NL       | Var                  | Free            |
+| [Chaos Communication Congress](https://events.ccc.de/upcoming-events/) | 5    | Var, DE       | ?                    | € ??            |
+| [Sec4Dev](https://sec4dev.io/)                                         | 4    | Vienna, AU    | Early September      | € 570           |
+| Dutch Hackercamp July (see below)                                      | 5    | Var, NL       | Late July (each ~5y) | ~€ 300          |
+| [SHA2017](https://sha2017.org/) (Still Hacking Anyway)                 | 5    | Var, NL       | Late July            | ~€ 300          |
+| [May Contain Hackers](https://mch2022.org/)                            | 5    | Zeewolde, NL  | Late July            | ~€ 300          |
 
 ## Terminology
 See [Terminology](terminology/README.md)
