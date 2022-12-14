@@ -110,6 +110,7 @@
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
 * [Forensics CTF images](https://dfir.training/resources/downloads/ctf-forensic-test-images)
+* [Aman Hardikar](https://www.amanhardikar.com/mindmaps/Practice.html)
 
 ### CTF's
 * [PicoCTF](https://picoctf.com/)
