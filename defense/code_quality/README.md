@@ -38,7 +38,24 @@ Here are the five basic code quality metrics:
 
 ### Maintainability
 
-Maintainability measures the ease with which code can be changed, bugs can be fixed and extended. 
+Maintainability measures the ease with which code can be changed, bugs can be fixed and extended. Maintainability can be divided into these aspects:
+* Modularity
+* Reusability
+* Analysability
+* Adaptability
+* Testability
+
+To measure these aspects using an objective scoring system, we look at the following properties:
+* Volume: total lines of code
+* Duplication: Percentage of duplicate code
+* Unit size: lines of code per unit
+* Unit complexity: cyclomatic complexity per unit
+* Unit interfacing: number of arguments to call a unit
+* Coupling: non SDK imports per module
+* Component balance: size compared between components
+
+These aspects can be measured in terms of low or high risk and rated accordingly. Depending on how many lines of the code-base fall in each risk-category, we can set thresholds to rate the system as a whole. Having some moderate risk therefore doesn't immediately result in a bad score. It depends on the severity of the risk and the lines of code as a percentage within each risk category. See Cyclomatic complexity -> SIG below for examples.
+
 
 #### .NET
 
@@ -53,10 +70,47 @@ Using Visual Studio, the maintainability score can be calculated. This produces 
 
 * [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/26/code-metrics-maintainability-index/)
 
+### Volume
+
+The total lines of code for a system can easily be measured using SonarQube or Github. More lines of code means bigger strain on maintainability. Lines of code also gives an indication of how much time it takes to rebuild. The system as a whole gets a single rating for volume. For Java code, we can use the following table. 
+
+|     Rank    |     Rebuild years |     Code         |
+|-------------|-------------------|------------------|
+|     ++      |     0-8           |     0-66k        |
+|     +       |     8-30          |     66-246k      |
+|     0       |     30-80         |     246-665k     |
+|     -       |     80-160        |     665-1310k    |
+|     --      |     160+          |     1310k+       |
+
+### Component Balance
+
+The component balance of a system measures how evenly the lines of code are distributed over the components. An unbalance indicates possible flaws in architecture and higher risk in specific (more code-heavy) components. Balance can be measured using the Gini Coefficiency. A Gini Coefficiency of 0 means all components are in perfect balance, while a value of 1 means a single component contains all lines of code. This can be measured using the following Excel formula:
+
+```
+{
+  =AVERAGE(
+    ABS(
+      DATAPOINTS – TRANSPOSE(DATAPOINTS)
+    )
+  ) / AVERAGE(DATAPOINTS) / 2
+}
+```
+
+The balance should not exceed 0.7
+
+|     Rank    | Gini coefficiency |
+|-------------|-------------------|
+|     ++      | 0-0.7             |
+|     +       | 0.700001-8-30     |
+|     0       | 30-80             |
+|     -       | 80-160            |
+|     --      | 160+              |
+
+
 
 ### Cyclomatic Complexity
 
-This metric indicated the complexity of code and is best calculated per unit (method). The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
+This metric indicated the complexity of code and is calculated per unit (method). The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
 * ```if```
 * Each ```case``` and ```default``` in a ```switch```
 * ```for```, ```foreach``` and ```while```
@@ -72,7 +126,7 @@ Cyclomatic complexity can be calculated using the formula below. The formal defi
 ```
 v(G) = E - N + 2P
 ```
-Since we will only review complexity of methods, which always connect all code from start to end, P will always be 1 and we can simplify the formula to:
+Since we will only review complexity of methods, which always connect all code from start to end, P will always be 1 we can simplify the formula to:
 ```
 v(G) = E - N + 2
 ```
@@ -112,7 +166,7 @@ Rate all units based on the following table:
 * Relate the total number of lines for each risk category as a percentage of the total lines of code.
 * Review the lowest rank based on the table below:
   * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
-  * Take the lowest rank rated over all risk categories. The system as a whole has this ranking
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
 
 | Rank | Score | Moderate | High   | Very High |
 |------|-------|----------|--------|-----------|
@@ -164,7 +218,7 @@ Visual Studio contains the Code Metrics functionality to calculate Cyclomatic Co
 
 ### Unit Size
 
-Rate all units based on the following table: 
+This metric simply measures each unit in lines of code. More lines of code means bigger strain on maintainability. Rate all units based on the following table: 
 
 | Unit Size | Risk              |
 |-----------|-------------------|
@@ -178,7 +232,7 @@ Rate all units based on the following table:
 * Relate the total number of lines for each risk category as a percentage of the total lines of code.
 * Review the lowest rank based on the table below:
   * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
-  * Take the lowest rank rated over all risk categories. The system as a whole has this ranking
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
 
 | Rank | Score | Moderate | High   | Very High |
 |------|-------|----------|--------|-----------|
@@ -201,6 +255,60 @@ Example:
   * 7% with high risk: 0
 * This rates the system into the 0 rank
 * If the code is refactored to limit the large units to total 500 lines of code, this will improve the rating to +
+
+
+### Unit Interfacing
+
+This metric measures each unit's number of arguments. More arguments means more complex to interface with. Rate all units based on the following table:
+
+| Unit Size | Risk              |
+|-----------|-------------------|
+| 1-2       | Without much risk |
+| 3-4       | Moderate risk     |
+| 5-6       | High risk         |
+| 7+        | Very high risk    |
+
+* For each unit, if this unit has risk (arguments of 3 or more), add the number of lines of that unit to the corresponding risk category.
+* Calculate the total number of lines of the system
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 12.50%   | 2.50%  | 0.50%     |
+| +    | 0.5   | 17.50%   | 5.00%  | 1.00%     |
+| 0    | 0     | 25.00%   | 10.00% | 2.00%     |
+| -    | -0.5  | 30.00%   | 15.00% | 5.00%     |
+| --   | -1    | -%       | -%     | -%        |
+
+
+### Coupling
+
+This metric measures the coupling of a modules with modules from other components. We count each class's dependencies on non-SDK imports from another package. Sub-packages are also counted. Imports should not use wildcards. Since imports from the same package are implicit and not declared, these are not counted. More imports from other packages means tighter coupling. Rate all modules based on the following table:
+
+| Imports | Risk              |
+|---------|-------------------|
+| 0-10    | Without much risk |
+| 11-20   | Moderate risk     |
+| 21-50   | High risk         |
+| 51+     | Very high risk    |
+
+* For each module, if this module has risk (11 or more imports), add the number of lines of that module to the corresponding risk category.
+* Calculate the total number of lines of the system
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 12.50%   | 7.50%  | 2.50%     |
+| +    | 0.5   | 17.50%   | 10.00% | 5.00%     |
+| 0    | 0     | 25.00%   | 15.00% | 8.00%     |
+| -    | -0.5  | 30.00%   | 20.00% | 12.50%    |
+| --   | -1    | -%       | -%     | -%        |
 
 ### Inheritence
 
@@ -593,6 +701,8 @@ Perils of Long methods:
 
 
 ## Sources
+* [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+
 
 ### ISO
 * [ISO 9126](https://en.wikipedia.org/wiki/ISO/IEC_9126)
