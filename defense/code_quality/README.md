@@ -56,10 +56,21 @@ To measure these aspects using an objective scoring system, we look at the follo
 
 These aspects can be measured in terms of low or high risk and rated accordingly. Depending on how many lines of the code-base fall in each risk-category, we can set thresholds to rate the system as a whole. Having some moderate risk therefore doesn't immediately result in a bad score. It depends on the severity of the risk and the lines of code as a percentage within each risk category. See Cyclomatic complexity -> SIG below for examples.
 
+#### ISO 25010
+
+Maintainability aspects can be measured using several specific properties per aspect. 
+
+|               | Volume  | Duplication | Unit Size | Unit Complexity | Unit Interfacing  | Coupling  | Component Balance |
+|---------------|---------|-------------|-----------|-----------------|-------------------|-----------|-------------------|
+| Modularity    |         |             |           |                 |                   | X         | X                 |
+| Reusability   |         |             | X         |                 | X                 |           |                   |
+| Analysability | X       | X           | X         |                 |                   |           | X                 |
+| Adaptability  |         | X           |           | X               |                   | X         |                   |
+| Testability   | X       |             |           | X               |                   |           |                   |
 
 #### .NET
 
-Using Visual Studio, the maintainability score can be calculated. This produces an integer value of 0 to 100, whereby larger values indicate a higher (better) maintainability. Microsoft advises to keep the score above 20, though I'ld advise to also look at code that scores between 20-50. The index is an aggregated score of several indexes, including cyclomatic complexity, lines of code and the Halstead volume. 
+Using Visual Studio, the maintainability score can be calculated. This produces an integer value of 0 to 100, whereby larger values indicate a higher (better) maintainability. Microsoft advises to keep the score above 20, though I'ld advise to also look at code that scores between 20-74. The index is an aggregated score of several indexes, including cyclomatic complexity, lines of code and the Halstead volume. 
 
 ![](maintainability.png)
 
@@ -70,9 +81,17 @@ Using Visual Studio, the maintainability score can be calculated. This produces 
 
 * [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/26/code-metrics-maintainability-index/)
 
+#### MSDN
+
+Based on Microsoft Developer Network best practices, the following rating is used to rank units:
+* 2-10: Good
+* 11-20: Okay
+* 21+: Avoid
+
+
 ### Volume
 
-The total lines of code for a system can easily be measured using SonarQube or Github. More lines of code means bigger strain on maintainability. Lines of code also gives an indication of how much time it takes to rebuild. The system as a whole gets a single rating for volume. For Java code, we can use the following table. 
+The total lines of code for a system can easily be measured using SonarQube or GitHub. More lines of code means bigger strain on maintainability. Lines of code also gives an indication of how much time it takes to rebuild. The system as a whole gets a single rating for volume. For Java code, we can use the following table. 
 
 |     Rank    |     Rebuild years |     Code         |
 |-------------|-------------------|------------------|
@@ -82,35 +101,72 @@ The total lines of code for a system can easily be measured using SonarQube or G
 |     -       |     80-160        |     665-1310k    |
 |     --      |     160+          |     1310k+       |
 
-### Component Balance
 
-The component balance of a system measures how evenly the lines of code are distributed over the components. An unbalance indicates possible flaws in architecture and higher risk in specific (more code-heavy) components. Balance can be measured using the Gini Coefficiency. A Gini Coefficiency of 0 means all components are in perfect balance, while a value of 1 means a single component contains all lines of code. This can be measured using the following Excel formula:
+### Duplication
 
-```
-{
-  =AVERAGE(
-    ABS(
-      DATAPOINTS – TRANSPOSE(DATAPOINTS)
-    )
-  ) / AVERAGE(DATAPOINTS) / 2
-}
-```
+Duplication can be measured with SonarQube. Duplicate code increases maintainability cost. A change in one piece of duplicate code should also be made in the corresponding other piece duplicate code. The risk of missing a change or fix in all pieces of duplicate code can result in bugs. 
 
-The balance should not exceed 0.7
-
-|     Rank    | Gini coefficiency |
-|-------------|-------------------|
-|     ++      | 0-0.7             |
-|     +       | 0.700001-8-30     |
-|     0       | 30-80             |
-|     -       | 80-160            |
-|     --      | 160+              |
+#### Sources
+[Artima](https://www.artima.com/intv/dry.html)
 
 
+### Unit Size
 
-### Cyclomatic Complexity
+This metric simply measures each unit in lines of code. More lines of code means bigger strain on maintainability. Rate all units based on the following table:
 
-This metric indicated the complexity of code and is calculated per unit (method). The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
+| Unit Size | Risk              |
+|-----------|-------------------|
+| 1-24      | Without much risk |
+| 25-31     | Moderate risk     |
+| 32-48     | High risk         |
+| 49+       | Very high risk    |
+
+* For each unit, if this unit has risk (Unit Size of 25+), add the number of lines of that unit to the corresponding risk category.
+* Calculate the total number of lines of the system
+* Relate the tUnit interfacingotal number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 25.00%   | 0.00%  | 0.00%     |
+| +    | 0.5   | 30.00%   | 5.00%  | 0.00%     |
+| 0    | 0     | 40.00%   | 10.00% | 0.00%     |
+| -    | -0.5  | 50.00%   | 15.00% | 5.00%     |
+| --   | -1    | -%       | -%     | -%        |
+
+Example:
+* A system with 10000 lines of code in total
+* Lines of code in units with:
+  * small units up to 24 lines total 6700 lines of code
+  * medium sized units of 25 to 31 lines total 2600 lines of code
+  * large units of 32 to 48 lines total 700 lines of code
+  * there are no lines with very high complexity
+* Percentages calculate the following ratings:
+  * 67% with no risk: ++
+  * 26% with moderate risk: +
+  * 7% with high risk: 0
+* This rates the system into the 0 rank
+* If the code is refactored to limit the large units to total 500 lines of code, this will improve the rating to +
+
+#### Lines of code
+
+Lines of code is both a measurement of quality and readability. This will mean that there are two thresholds to adhere to. Always take the lower threshold.
+For both criteria, the lines of code are measured in context of a single method.
+
+For the quality criteria, a method with more lines of code will often fulfil more than one purpose and will therefore be much harder to test. Keeping a method simple and focused will result in smaller methods.
+
+For the readability criteria, a method with more lines of code will not fit on a screen which forces the developer to scroll in order to read the code.
+
+Code Metrics Viewer rates this metric value the following way:
+![](lines_of_code_quality.png)
+
+
+
+### Unit Complexity
+
+Unit complexity can be measure using the Cyclomatic Complexity metric. This metric indicated the complexity of code and should be calculated per unit (method). The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
 * ```if```
 * Each ```case``` and ```default``` in a ```switch```
 * ```for```, ```foreach``` and ```while```
@@ -141,16 +197,7 @@ Cyclomatic complexity directly influences the minimum number of tests required t
 
 ![](cyclomatic_complexity_max.png)
 
-
-### MSDN
-
-Based on Microsoft Developer Network best practices, the following rating is used to rank units:
-* 2-10: Good
-* 11-20: Okay
-* 21+: Avoid
-
-
-### SIG
+#### SIG
 
 Rate all units based on the following table: 
 
@@ -190,8 +237,6 @@ Example:
 * This rates the system into the 0 rank
 * If the code is refactored to limit the high complexity code to 500 lines of code, this will improve the rating to +
 
-### Sources
-* [Wikipedia](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
 
 #### Java
 
@@ -203,12 +248,6 @@ JaCoCo calculates cyclomatic complexity of a method with the following equivalen
 v(G) = B - D + 1
 ```
 
-Tools to calculate Cyclomatic complexity for your code:
-* [SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)
-  * Works with the [SQALE](https://en.wikipedia.org/wiki/SQALE) model, which maps reasonably well on ISO-25010
-* [JaCoCo](https://www.eclemma.org/jacoco/)
-* [Eclipse Metrics plugin](https://github.com/qxo/eclipse-metrics-plugin)
-
 #### .NET
 
 Visual Studio contains the Code Metrics functionality to calculate Cyclomatic Complexity
@@ -216,45 +255,14 @@ Visual Studio contains the Code Metrics functionality to calculate Cyclomatic Co
 * [MSDN Blog](https://blogs.msdn.microsoft.com/zainnab/2011/05/17/code-metrics-cyclomatic-complexity/)
 * [C-Sharp corner](https://www.c-sharpcorner.com/article/code-metrics-cyclomatic-complexity/)
 
-### Unit Size
+#### Sources
+* [Wikipedia](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
 
-This metric simply measures each unit in lines of code. More lines of code means bigger strain on maintainability. Rate all units based on the following table: 
-
-| Unit Size | Risk              |
-|-----------|-------------------|
-| 1-24      | Without much risk |
-| 25-31     | Moderate risk     |
-| 32-48     | High risk         |
-| 49+       | Very high risk    |
-
-* For each unit, if this unit has risk (Unit Size of 25+), add the number of lines of that unit to the corresponding risk category. 
-* Calculate the total number of lines of the system
-* Relate the total number of lines for each risk category as a percentage of the total lines of code.
-* Review the lowest rank based on the table below:
-  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
-  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
-
-| Rank | Score | Moderate | High   | Very High |
-|------|-------|----------|--------|-----------|
-| ++   | 1     | 25.00%   | 0.00%  | 0.00%     |
-| +    | 0.5   | 30.00%   | 5.00%  | 0.00%     |
-| 0    | 0     | 40.00%   | 10.00% | 0.00%     |
-| -    | -0.5  | 50.00%   | 15.00% | 5.00%     |
-| --   | -1    | -%       | -%     | -%        |
-
-Example:
-* A system with 10000 lines of code in total
-* Lines of code in units with:
-  * small units up to 24 lines total 6700 lines of code
-  * medium sized units of 25 to 31 lines total 2600 lines of code
-  * large units of 32 to 48 lines total 700 lines of code
-  * there are no lines with very high complexity
-* Percentages calculate the following ratings:
-  * 67% with no risk: ++
-  * 26% with moderate risk: +
-  * 7% with high risk: 0
-* This rates the system into the 0 rank
-* If the code is refactored to limit the large units to total 500 lines of code, this will improve the rating to +
+Tools to calculate Cyclomatic complexity for your code:
+* [SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)
+  * Works with the [SQALE](https://en.wikipedia.org/wiki/SQALE) model, which maps reasonably well on ISO-25010
+* [JaCoCo](https://www.eclemma.org/jacoco/)
+* [Eclipse Metrics plugin](https://github.com/qxo/eclipse-metrics-plugin)
 
 
 ### Unit Interfacing
@@ -310,9 +318,34 @@ This metric measures the coupling of a modules with modules from other component
 | -    | -0.5  | 30.00%   | 20.00% | 12.50%    |
 | --   | -1    | -%       | -%     | -%        |
 
+Coupling can be measured in SonarQube with custom RegEx rules. Use the Regexp Multiline template as a base with the following Regex. This will count all lines that define an import other than JDK (java or javax) classes.
+
+```regexp
+(^import (?!java))
+```
+
+### Class coupling
+
+Class coupling indicates how dependent a class is upon other classes.
+
+This metric can be used as an indicator of how evolvable a function, a class, or at least an assembly project actually is.
+It is calculated for each level and represents the number of types (excluding built-in language types) being used by a method, class, etc..
+Lower values are better.
+
+Code Metrics Viewer rates this metric value the following way:
+
+* Per member (method)
+  ![](class_coupling_member.png)
+
+* Per type (class, interface, enum)
+  ![](class_coupling_type.png)
+
+* [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)
+
+
 ### Inheritence
 
-The depth of inheritance metric indicates the depth of the inheritance chain, including classes and interfaces. Higher inheritence depth means a more complex object hierarchy. Lower values are better because it will be easier to follow the flow of the code when debugging or analyzing. 
+The depth of inheritance metric indicates the depth of the inheritance chain, including classes and interfaces. Higher inheritance depth means a more complex object hierarchy. Lower values are better because it will be easier to follow the flow of the code when debugging or analyzing. 
 
 ![](inheritence.png)
 
@@ -323,32 +356,36 @@ Code Metrics Viewer rates the metric value the following way:
 
 [Source](https://codemetricsviewer.wordpress.com/2011/06/26/how-to-interpret-received-results/)
 
-### Class coupling
 
-Class coupling indicates how dependent a class is upon other classes. 
 
-This metric can be used as an indicator of how evolvable a function, a class, or at least an assembly project actually is. 
-It is calculated for each level and represents the number of types (excluding built-in language types) being used by a method, class, etc.. 
-Lower values are better. 
 
-Code Metrics Viewer rates this metric value the following way: 
 
-* Per member (method) 
-![](class_coupling_member.png)
+### Component Balance
 
-* Per type (class, interface, enum)
-![](class_coupling_type.png)
-  
-* [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)
+The component balance of a system measures how evenly the lines of code are distributed over the components. An unbalance indicates possible flaws in architecture and higher risk in specific (more code-heavy) components. Balance can be measured using the Gini Coefficiency. A Gini Coefficiency of 0 means all components are in perfect balance, while a value of 1 means a single component contains all lines of code. This can be measured using the following Excel formula:
 
-### Lines of code
+```
+{
+  =AVERAGE(
+    ABS(
+      DATAPOINTS – TRANSPOSE(DATAPOINTS)
+    )
+  ) / AVERAGE(DATAPOINTS) / 2
+}
+```
 
-Lines of code is both a measurement of quality and readability. This will mean that there are two thresholds to adhere to. Always take the lower threshold.
-For both criteria, the lines of code are measured in context of a single method. For the quality criteria, a method with more lines of code will often 
-fulfil more than one purpose and will therefore be much harder to test. Keeping a method simple and focused will result in smaller methods.
+The balance should not exceed 0.7
 
-Code Metrics Viewer rates this metric value the following way: 
-![](lines_of_code_quality.png)
+|     Rank    | Gini coefficiency |
+|-------------|-------------------|
+|     ++      | 0-0.7             |
+|     +       | 0.7-30            |
+|     0       | 30-80             |
+|     -       | 80-160            |
+|     --      | 160+              |
+
+
+
 
 
 ## Additional metrics
@@ -396,10 +433,6 @@ Grouping code and methods in classes based on functionality
 ## Naming conventions
 
 
-## Duplicate code / DRY
-[Artima](https://www.artima.com/intv/dry.html)
-
-
 ## Nesting
 
 Ternary operator:
@@ -435,6 +468,10 @@ IDE etc. from the team-member who can display the least number of lines on his /
 ## Line length
 
 TODO
+
+
+
+
 
 # Generic sources:
 
