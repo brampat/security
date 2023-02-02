@@ -101,6 +101,18 @@ The total lines of code for a system can easily be measured using SonarQube or G
 |     -       |     80-160        |     665-1310k    |
 |     --      |     160+          |     1310k+       |
 
+Volume in Lines of Code per rebuild year is different per language. Source: [SIG TUViT](https://www.softwareimprovementgroup.com/wp-content/uploads/SIG-TUViT-Evaluation-Criteria-Trusted-Product-Maintainability-Guidance-for-producers.pdf)
+
+| Language        | Lines of code in 36 person years |
+|-----------------|----------------------------------|
+| C++             | 263,000                          |
+| C#              | 360,000                          |
+| Java            | 324,000                          |
+| JavaScript      | 364,000                          |
+| Python          | 248,000                          |
+| Ruby            | 227,000                          |
+| TypeScript      | 310,000                          |
+
 
 ### Duplication
 
@@ -150,6 +162,20 @@ Example:
 * This rates the system into the 0 rank
 * If the code is refactored to limit the large units to total 500 lines of code, this will improve the rating to +
 
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Method Length Template using the settings below
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                  | Description                                                               | Max | Severity |
+|----------------------------------------|---------------------------------------------------------------------------|-----|----------|
+| Unit size must be less than 49 lines   | Number of lines per unit (method or function) of 49+ is a very high risk) | 48  | Critical |
+| Unit size should be less than 32 lines | Number of lines per unit (method or function) of 32+ is a high risk)      | 31  | Major    |
+| Unit size could be less than 25 lines  | Number of lines per unit (method or function) of 25+ is a moderate risk)  | 24  | Minor    |
+
 #### Lines of code
 
 Lines of code is both a measurement of quality and readability. This will mean that there are two thresholds to adhere to. Always take the lower threshold.
@@ -161,7 +187,6 @@ For the readability criteria, a method with more lines of code will not fit on a
 
 Code Metrics Viewer rates this metric value the following way:
 ![](lines_of_code_quality.png)
-
 
 
 ### Unit Complexity
@@ -237,6 +262,19 @@ Example:
 * This rates the system into the 0 rank
 * If the code is refactored to limit the high complexity code to 500 lines of code, this will improve the rating to +
 
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Cyclomatic Complexity Template using the settings below
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                        | Description                                                                     | Max | Severity |
+|----------------------------------------------|---------------------------------------------------------------------------------|-----|----------|
+| Cyclomatic Complexity must be less than 50   | Cyclomatic Complexity per unit (method or function) of 50+ is a very high risk) | 50  | Critical |
+| Cyclomatic Complexity should be less than 20 | Cyclomatic Complexity per unit (method or function) of 20+ is a high risk)      | 20  | Major    |
+| Cyclomatic Complexity could be less than 10  | Cyclomatic Complexity per unit (method or function) of 10+ is a moderate risk)  | 10  | Minor    |
 
 #### Java
 
@@ -291,6 +329,20 @@ This metric measures each unit's number of arguments. More arguments means more 
 | -    | -0.5  | 30.00%   | 15.00% | 5.00%     |
 | --   | -1    | -%       | -%     | -%        |
 
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Parameter Number Template using the settings below
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                           | Description                                                                   | Max | Severity |
+|-------------------------------------------------|-------------------------------------------------------------------------------|-----|----------|
+| Unit number of parameters must be less than 7   | Number of parameters per unit (method or function) of 7+ is a very high risk) | 6   | Critical |
+| Unit number of parameters should be less than 5 | Number of parameters per unit (method or function) of 5+ is a high risk)      | 4   | Major    |
+| Unit number of parameters could be less than 3  | Number of parameters per unit (method or function) of 3+ is a moderate risk)  | 2   | Minor    |
+
 
 ### Coupling
 
@@ -323,6 +375,26 @@ Coupling can be measured in SonarQube with custom RegEx rules. Use the Regexp Mu
 ```regexp
 (^import (?!java))
 ```
+
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Regexp Multiline Template using the settings below combined with
+  * Avoid Star Import Template using the settings below. Allowing star imports for static members can be enabled based on preference.
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                              | Description                                                                      | Max | Severity |
+|----------------------------------------------------|----------------------------------------------------------------------------------|-----|----------|
+| Number of non-JDK imports must be less than 50     | Number of non-JDK imports per module (class or file) of 50+ is a very high risk) | 50  | Critical |
+| Number of non-JDK imports should be less than 20   | Number of non-JDK imports per module (class or file) of 20+ is a high risk)      | 20  | Major    |
+| Number of non-JDK imports could be less than 10    | Number of non-JDK imports per module (class or file) of 10+ is a moderate risk)  | 10  | Minor    |
+
+| Title                          | Description                                                                | Allow Class Imports | Allow Static Member Imports | Severity |
+|--------------------------------|----------------------------------------------------------------------------|---------------------|-----------------------------|----------|
+| Star imports should be avoided | Star imports should be avoided since it masks the number of actual imports | false50             | <based on preference>       | Critical |
+
 
 ### Class coupling
 
@@ -357,9 +429,6 @@ Code Metrics Viewer rates the metric value the following way:
 [Source](https://codemetricsviewer.wordpress.com/2011/06/26/how-to-interpret-received-results/)
 
 
-
-
-
 ### Component Balance
 
 The component balance of a system measures how evenly the lines of code are distributed over the components. An unbalance indicates possible flaws in architecture and higher risk in specific (more code-heavy) components. Balance can be measured using the Gini Coefficiency. A Gini Coefficiency of 0 means all components are in perfect balance, while a value of 1 means a single component contains all lines of code. This can be measured using the following Excel formula:
@@ -383,9 +452,6 @@ The balance should not exceed 0.7
 |     0       | 30-80             |
 |     -       | 80-160            |
 |     --      | 160+              |
-
-
-
 
 
 ## Additional metrics
@@ -458,19 +524,48 @@ Sources:
 
 ## Lines of code
 
-For readability lines of code is a heavily debated metric. The threshold for an acceptable number of lines of code is dependant on a number of factors, 
+For readability lines of code is a heavily debated metric. The threshold for an acceptable number of lines of code is dependent on a number of factors, 
 including screen-size / resolution, team preference, IDE's used etc. The threshold is measured in context of a single method. The threshold is simply 
 having all lines of code for a single method be visible without having to scroll. Always reason from the least optimistic scenario. So take the screen, 
 IDE etc. from the team-member who can display the least number of lines on his / her screen.
 
 ![](lines_of_code_read.png)
 
+
+### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * File Length Template using the settings below as an example
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                    | Description                              | Max | Severity |
+|------------------------------------------|------------------------------------------|-----|----------|
+| File length must be no more than 500     | File length must be no more than 500     | 500 | Critical |
+| File length should be no more than 200   | File length should be no more than 200   | 200 | Major    |
+| File length could be no more than 100    | File length could be no more than 100    | 100 | Minor    |
+
+
+
 ## Line length
 
-TODO
+The threshold for an acceptable line-length is dependent on a number of factors, including screen-size / resolution, team preference, IDE's used, IDE-panels opened etc. The threshold is measured for each line of code. The threshold is simply having a standard IDE with development panels opened, like the Project panel, build-panel etc. All lines of a class should be visible without having to use horizontal scroll or line-wrapping. Define the threshold from the least optimistic scenario. So take the screen, IDE etc. from the team-member who can display the least number of charactes per line on their screen. Open the panels that are opened by the team-members most often during development. Then define how many characters can still fit into the code-panel without the need for using horizontal scroll or word-wrapping.
 
 
+### Tool to measure
 
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Line Length Template using the settings below as an example
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                   | Description                              | Max | Severity |
+|-----------------------------------------|------------------------------------------|-----|----------|
+| Line length must be no more than 200    | Line length must be no more than 200     | 200 | Critical |
+| Line length should be no more than 170  | Line length should be no more than 170   | 170 | Major    |
+| Line length could be no more than 140   | Line length could be no more than 140    | 140 | Minor    |
 
 
 # Generic sources:
