@@ -2,7 +2,7 @@
 
 ![](../../fun_stuff/technical_debt.png)
 
-## Restaurant Metaphore
+## Restaurant Metaphor
 
 Sources:
 * [comment](https://news.ycombinator.com/item?id=25008587) as listed below
@@ -118,6 +118,16 @@ Volume in Lines of Code per rebuild year is different per language. Source: [SIG
 
 Duplication can be measured with SonarQube. Duplicate code increases maintainability cost. A change in one piece of duplicate code should also be made in the corresponding other piece duplicate code. The risk of missing a change or fix in all pieces of duplicate code can result in bugs. 
 
+Duplicate code can be measured with tools like SonarQube. We measure duplicate code in percentage of the total codebase. Depending on the percentage of duplicate code, we rate the system as a whole using the following chart.
+
+|     Rank    | Duplicate Cde |
+|-------------|---------------|
+|     ++      | 0-3%          |
+|     +       | 3-5%          |
+|     0       | 5-10%         |
+|     -       | 10-20%        |
+|     --      | 20-100%       |
+
 #### Sources
 [Artima](https://www.artima.com/intv/dry.html)
 
@@ -135,7 +145,7 @@ This metric simply measures each unit in lines of code. More lines of code means
 
 * For each unit, if this unit has risk (Unit Size of 25+), add the number of lines of that unit to the corresponding risk category.
 * Calculate the total number of lines of the system
-* Relate the tUnit interfacingotal number of lines for each risk category as a percentage of the total lines of code.
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
 * Review the lowest rank based on the table below:
   * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
   * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
@@ -172,9 +182,9 @@ The following tools can be used to measure and alert this metric:
 
 | Title                                  | Description                                                               | Max | Severity |
 |----------------------------------------|---------------------------------------------------------------------------|-----|----------|
-| Unit size must be less than 49 lines   | Number of lines per unit (method or function) of 49+ is a very high risk) | 48  | Critical |
-| Unit size should be less than 32 lines | Number of lines per unit (method or function) of 32+ is a high risk)      | 31  | Major    |
-| Unit size could be less than 25 lines  | Number of lines per unit (method or function) of 25+ is a moderate risk)  | 24  | Minor    |
+| Unit size must be less than 49 lines   | Number of lines per unit (method or function) of 49+ is a very high risk  | 48  | Critical |
+| Unit size should be less than 32 lines | Number of lines per unit (method or function) of 32+ is a high risk       | 31  | Major    |
+| Unit size could be less than 25 lines  | Number of lines per unit (method or function) of 25+ is a moderate risk   | 24  | Minor    |
 
 #### Lines of code
 
@@ -270,11 +280,11 @@ The following tools can be used to measure and alert this metric:
 * SonarQube
   * Quality Profile using above Checkstyle rules
 
-| Title                                        | Description                                                                     | Max | Severity |
-|----------------------------------------------|---------------------------------------------------------------------------------|-----|----------|
-| Cyclomatic Complexity must be less than 50   | Cyclomatic Complexity per unit (method or function) of 50+ is a very high risk) | 50  | Critical |
-| Cyclomatic Complexity should be less than 20 | Cyclomatic Complexity per unit (method or function) of 20+ is a high risk)      | 20  | Major    |
-| Cyclomatic Complexity could be less than 10  | Cyclomatic Complexity per unit (method or function) of 10+ is a moderate risk)  | 10  | Minor    |
+| Title                                           | Description                                                                    | Max | Severity |
+|-------------------------------------------------|--------------------------------------------------------------------------------|-----|----------|
+| Cyclomatic Complexity must be no more than 50   | Cyclomatic Complexity per unit (method or function) of >50 is a very high risk | 50  | Critical |
+| Cyclomatic Complexity should be no more than 20 | Cyclomatic Complexity per unit (method or function) of >20 is a high risk      | 20  | Major    |
+| Cyclomatic Complexity could be no more than 10  | Cyclomatic Complexity per unit (method or function) of >10 is a moderate risk  | 10  | Minor    |
 
 #### Java
 
@@ -337,11 +347,11 @@ The following tools can be used to measure and alert this metric:
 * SonarQube
   * Quality Profile using above Checkstyle rules
 
-| Title                                           | Description                                                                   | Max | Severity |
-|-------------------------------------------------|-------------------------------------------------------------------------------|-----|----------|
-| Unit number of parameters must be less than 7   | Number of parameters per unit (method or function) of 7+ is a very high risk) | 6   | Critical |
-| Unit number of parameters should be less than 5 | Number of parameters per unit (method or function) of 5+ is a high risk)      | 4   | Major    |
-| Unit number of parameters could be less than 3  | Number of parameters per unit (method or function) of 3+ is a moderate risk)  | 2   | Minor    |
+| Title                                           | Description                                                                  | Max | Severity |
+|-------------------------------------------------|------------------------------------------------------------------------------|-----|----------|
+| Unit number of parameters must be less than 7   | Number of parameters per unit (method or function) of 7+ is a very high risk | 6   | Critical |
+| Unit number of parameters should be less than 5 | Number of parameters per unit (method or function) of 5+ is a high risk      | 4   | Major    |
+| Unit number of parameters could be less than 3  | Number of parameters per unit (method or function) of 3+ is a moderate risk  | 2   | Minor    |
 
 
 ### Coupling
@@ -385,15 +395,15 @@ The following tools can be used to measure and alert this metric:
 * SonarQube
   * Quality Profile using above Checkstyle rules
 
-| Title                                              | Description                                                                      | Max | Severity |
-|----------------------------------------------------|----------------------------------------------------------------------------------|-----|----------|
-| Number of non-JDK imports must be less than 50     | Number of non-JDK imports per module (class or file) of 50+ is a very high risk) | 50  | Critical |
-| Number of non-JDK imports should be less than 20   | Number of non-JDK imports per module (class or file) of 20+ is a high risk)      | 20  | Major    |
-| Number of non-JDK imports could be less than 10    | Number of non-JDK imports per module (class or file) of 10+ is a moderate risk)  | 10  | Minor    |
+| Title                                              | Description                                                                     | Max | Severity |
+|----------------------------------------------------|---------------------------------------------------------------------------------|-----|----------|
+| Number of non-JDK imports must be less than 50     | Number of non-JDK imports per module (class or file) of 50+ is a very high risk | 50  | Critical |
+| Number of non-JDK imports should be less than 20   | Number of non-JDK imports per module (class or file) of 20+ is a high risk      | 20  | Major    |
+| Number of non-JDK imports could be less than 10    | Number of non-JDK imports per module (class or file) of 10+ is a moderate risk  | 10  | Minor    |
 
 | Title                          | Description                                                                | Allow Class Imports | Allow Static Member Imports | Severity |
 |--------------------------------|----------------------------------------------------------------------------|---------------------|-----------------------------|----------|
-| Star imports should be avoided | Star imports should be avoided since it masks the number of actual imports | false50             | <based on preference>       | Critical |
+| Star imports should be avoided | Star imports should be avoided since it masks the number of actual imports | false               | <based on preference>       | Critical |
 
 
 ### Class coupling
@@ -492,12 +502,14 @@ TODO:
 
 ## Formatting
 
+TODO
 
 ## Code grouping
 Grouping code and methods in classes based on functionality
 
 ## Naming conventions
 
+TODO
 
 ## Nesting
 
@@ -514,6 +526,7 @@ a = (condition) ? 10 : 20
 
 ## Structure
 
+TODO
 
 ## Separation of concerns
 
