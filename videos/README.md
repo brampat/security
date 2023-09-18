@@ -26,7 +26,7 @@
 * [The dark site of the web](https://www.youtube.com/watch?v=HfuZJVpNWR4) by Kyle Terry
 * [A trip to India](https://www.youtube.com/watch?v=u5MttVF0A10) how [Bart Roos](https://twitter.com/Bartr00s) counter-hacks Call-center scams
 * [Chris Roberts](https://www.youtube.com/watch?v=PMP9TKrQBKQ) at Tweakers XL Privacy & Security May 2018
-
+* [NULL license plate](https://www.youtube.com/watch?v=TwRE2QK1Ibc) story by Droogie on DefCon 27
 
 ## Why hackers?
 * [Hackers: the internet's immune system](https://www.youtube.com/watch?v=erCAp_Bd0AQ) by [Keren Elazari](https://twitter.com/k3r3n3)
