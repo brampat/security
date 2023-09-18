@@ -37,6 +37,7 @@ The more serious ethical hackers see this as insufficient, basic.
 * [Hack.me](https://hack.me/)
 * [Root-me.org](https://www.root-me.org/en/Challenges/)
 * [Skillset](https://www.skillset.com/certifications/ceh)
+* [Hacksplaining](https://www.hacksplaining.com/)
 
 
 ## OSCP
