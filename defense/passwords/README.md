@@ -613,6 +613,8 @@ Sources:
 * [Administrator's guide to password research](https://www.microsoft.com/en-us/research/publication/an-administrators-guide-to-internet-password-research/)
 * NIST Digital Identity Guidelines [800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html)
 * [Effectiveness of several MFA types](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html) by Google
+* Credential Stuffing attacks with [Nuclei](https://blog.projectdiscovery.io/understanding-automating-credential-stuffing-a-comprehensive-guide/)
+
 
 ### Password strength
 * Why [length beats complexity](https://malwarejake.blogspot.com/2015/10/why-is-length-complexity-because-math.html) in password strength by Malware Jake
