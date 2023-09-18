@@ -5,8 +5,6 @@ to provide DevOps teams with Security tools and help them deliver secure softwar
 in a DevOps way-of-working.
 The tools described can be integrated in CI/CD toolchains.
 
-* [Secure DevOps poster](https://www.sans.org/security-resources/posters/appsec/secure-devops-toolchain-swat-checklist-60): Toolchain and SWAT checklist
-* [Exploring DevOps toolchain](https://blogs.sans.org/appsecstreetfighter/files/2018/10/DevSecOps_Exploring_Phase1-2.pdf): Presentation detailing DevOps toolchain and challenges in adding Sec to DevOps
 * [AppSec Pipeline](https://www.appsecpipeline.org/): Overview of AppSec Pipeline tools
 
 ![Security controls](security-controls.png)
@@ -90,6 +88,11 @@ The tools described can be integrated in CI/CD toolchains.
 * [Fortify](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports 25+ languages including Java, C#, C++, Swift & PHP
 * [VeraCode](https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview) supports Java, C#, [integration](https://www.veracode.com/integrations) with many tools
 * [Kiuwan](https://www.kiuwan.com/code-analysis-qa/)
+* [SonarQube](https://www.sonarsource.com/products/sonarqube/)
+  * Version [Comparison](https://www.sonarsource.com/products/sonarqube/downloads/)
+  * On Premise [pricing](https://www.sonarsource.com/plans-and-pricing/#sonarqube)
+  * Cloud [pricing](https://www.sonarsource.com/plans-and-pricing/#sonarcloud)
+  * Sonatype [Lift](https://lift.sonatype.com/getting-started)
 * [CodeSonar](https://www.grammatech.com/products/codesonar): SAST for C, C++, Java and binaries
 * [Coverity](https://scan.coverity.com/): SAST for C, C++, C#, Java, JavaScript, Ruby and Python
 * [Klocwork](https://www.roguewave.com/products-services/klocwork): SAST for C, C++, C# and Java
@@ -235,13 +238,15 @@ The tools described can be integrated in CI/CD toolchains.
 * [Actuary](https://github.com/diogomonica/actuary)
 * [Anchore](https://anchore.com/opensource/)
 * [Clair](https://github.com/coreos/clair)
+* Aqua [Trivy](https://aquasecurity.github.io/trivy/)
 * Dagda
 * Docker Bench
 * [Falco](https://github.com/draios/falco)
 * [Nexus Container](https://www.sonatype.com/products/container)
 * Snyk [Container](https://snyk.io/product/container-vulnerability-management/)
 * [Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud) (formerly Twistlock)
-* Aqua [Trivy](https://aquasecurity.github.io/trivy/)
+* [Qualys](https://www.qualys.com/apps/asset-inventory/)
+* JFrog
 
 #### Hardening
 * Bane
@@ -304,7 +309,7 @@ The tools described can be integrated in CI/CD toolchains.
 * GitHub [DepShield](https://www.sonatype.com/depshield)
 * GitHub [Automated Security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes) for vulnerable dependencies
 * [JForg X-Ray](https://jfrog.com/xray/): in combination with JFrog Artifactory
-* [PHP Sercurity Checker](https://security.sensiolabs.org/)
+* [PHP Security Checker](https://security.sensiolabs.org/)
 * Ruby:
   * [Bundler-Audit](https://github.com/rubysec/bundler-audit)
   * Ruby & Rails [Hakiri](https://hakiri.io/)
@@ -366,7 +371,7 @@ The tools described can be integrated in CI/CD toolchains.
 * [NIKTO](https://github.com/sullo/nikto): free command-line vulnerability scanner, scans webservers for weaknesses
 * Nessus
 * OpenVAS
-* Qualys
+* [Qualys](https://www.qualys.com/apps/asset-inventory/) Asset Discovery
 
 #### Cloud Configuration Management
 * AWS CloudFormation
@@ -393,6 +398,12 @@ The tools described can be integrated in CI/CD toolchains.
 * [OpenVAS](http://www.openvas.org/): OpenSource Vulnerability scanner for VM, Server OS or host machines
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
 * [Acunetix](https://www.acunetix.com/web-vulnerability-scanner/) (4.5k+ / year): Web app security scanner
+
+#### Fuzz-testing
+* OWASP ZAP
+* [ClusterFuzz](https://github.com/google/clusterfuzz)
+  * [ClusterFuzzLite](https://github.com/google/clusterfuzzlite)
+* [OSS-Fuzz](https://github.com/google/oss-fuzz)
 
 ## Production
 
@@ -525,7 +536,7 @@ Multi-tools
 * [SolarWinds Network Performance Monitor](https://www.solarwinds.com/network-performance-monitor/use-cases/network-discovery-tool)
 * [PRTG Network Monitor](https://www.paessler.com/prtg)
 * [Virima](https://www.virima.com/)
-* [Qualys](https://www.qualys.com/apps/asset-inventory/) Asset Discovery (Free)
+* [Qualys](https://www.qualys.com/apps/asset-inventory/) Asset Discovery
 * [Lansweeper](https://www.lansweeper.com/) (Free plan up to 100 assets, Enterprise plan for Euro 1,- per asset, per year)
 * [AT&T Cybersecurity](https://www.alienvault.com/solutions/asset-discovery-inventory)
 * [Asset panda](https://www.assetpanda.com/)
