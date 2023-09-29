@@ -2,7 +2,7 @@
 
 ![](../../fun_stuff/technical_debt.png)
 
-## Restaurant Metaphore
+## Restaurant Metaphor
 
 Sources:
 * [comment](https://news.ycombinator.com/item?id=25008587) as listed below
@@ -38,11 +38,39 @@ Here are the five basic code quality metrics:
 
 ### Maintainability
 
-Maintainability measures the ease with which code can be changed, bugs can be fixed and extended. 
+Maintainability measures the ease with which code can be changed, bugs can be fixed and extended. Maintainability can be divided into these aspects:
+* Modularity
+* Reusability
+* Analysability
+* Adaptability
+* Testability
+
+To measure these aspects using an objective scoring system, we look at the following properties:
+* Volume: total lines of code
+* Duplication: Percentage of duplicate code
+* Unit size: lines of code per unit
+* Unit complexity: cyclomatic complexity per unit
+* Unit interfacing: number of arguments to call a unit
+* Coupling: non SDK imports per module
+* Component balance: size compared between components
+
+These aspects can be measured in terms of low or high risk and rated accordingly. Depending on how many lines of the code-base fall in each risk-category, we can set thresholds to rate the system as a whole. Having some moderate risk therefore doesn't immediately result in a bad score. It depends on the severity of the risk and the lines of code as a percentage within each risk category. See Cyclomatic complexity -> SIG below for examples.
+
+#### ISO 25010
+
+Maintainability aspects can be measured using several specific properties per aspect. 
+
+|               | Volume  | Duplication | Unit Size | Unit Complexity | Unit Interfacing  | Coupling  | Component Balance |
+|---------------|---------|-------------|-----------|-----------------|-------------------|-----------|-------------------|
+| Modularity    |         |             |           |                 |                   | X         | X                 |
+| Reusability   |         |             | X         |                 | X                 |           |                   |
+| Analysability | X       | X           | X         |                 |                   |           | X                 |
+| Adaptability  |         | X           |           | X               |                   | X         |                   |
+| Testability   | X       |             |           | X               |                   |           |                   |
 
 #### .NET
 
-Using Visual Studio, the maintainability score can be calculated. This produces an integer value of 0 to 100, whereby larger values indicate a higher (better) maintainability. Microsoft advises to keep the score above 20, though I'ld advise to also look at code that scores between 20-50. The index is an aggregated score of several indexes, including cyclomatic complexity, lines of code and the Halstead volume. 
+Using Visual Studio, the maintainability score can be calculated. This produces an integer value of 0 to 100, whereby larger values indicate a higher (better) maintainability. Microsoft advises to keep the score above 20, though I'ld advise to also look at code that scores between 20-74. The index is an aggregated score of several indexes, including cyclomatic complexity, lines of code and the Halstead volume. 
 
 ![](maintainability.png)
 
@@ -53,42 +81,7 @@ Using Visual Studio, the maintainability score can be calculated. This produces 
 
 * [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/26/code-metrics-maintainability-index/)
 
-
-### Cyclomatic Complexity
-
-This metric indicated the complexity of code and is best calculated per unit (method). The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
-* ```if```
-* Each ```case``` and ```default``` in a ```switch```
-* ```for```, ```foreach``` and ```while```
-* ```catch``` and ```throw``` or ```throws```
-* ```&&```, ```&```, ```||```, ```|```, , ```^```, ```a ? b : c```, ```x ?? y```
-
-
-Cyclomatic complexity can be calculated using the formula below. The formal definition of the cyclomatic complexity v(G) is based on the representation of a method's control flow graph as a directed graph, where
-
-* E is the number of edges
-* N the number of nodes
-* P is the number of connected components 
-```
-v(G) = E - N + 2P
-```
-Since we will only review complexity of methods, which always connect all code from start to end, P will always be 1 and we can simplify the formula to:
-```
-v(G) = E - N + 2
-```
-
-This results in a value of 2 or higher. Keeping the index below 11 for scope of methods is best, though experienced teams could choose to set the threshold to 15 if done with care.
-
-![](cyclomatic_complexity.png)
-
-In this graph, we see 9 edges and 8 nodes. Therefore the complexity is ```9 - 8 + 2 = 3```
-
-Cyclomatic complexity directly influences the minimum number of tests required to potentially cover all the code in unit-tests.
-
-![](cyclomatic_complexity_max.png)
-
-
-### MSDN
+#### MSDN
 
 Based on Microsoft Developer Network best practices, the following rating is used to rank units:
 * 2-10: Good
@@ -96,75 +89,52 @@ Based on Microsoft Developer Network best practices, the following rating is use
 * 21+: Avoid
 
 
-### SIG
+### Volume
 
-Rate all units based on the following table: 
+The total lines of code for a system can easily be measured using SonarQube or GitHub. More lines of code means bigger strain on maintainability. Lines of code also gives an indication of how much time it takes to rebuild. The system as a whole gets a single rating for volume. For Java code, we can use the following table. 
 
-| Cyclomatic Complexity | Complexity   | Risk              |
-|-----------------------|--------------|-------------------|
-| 1-10                  | Simple       | Without much risk |
-| 11-20                 | More Complex | Moderate risk     |
-| 21-50                 | Complexity   | High risk         |
-| >50                   | Untestable   | Very high risk    |
+|     Rank    |     Rebuild years |     Code         |
+|-------------|-------------------|------------------|
+|     ++      |     0-8           |     0-66k        |
+|     +       |     8-30          |     66-246k      |
+|     0       |     30-80         |     246-665k     |
+|     -       |     80-160        |     665-1310k    |
+|     --      |     160+          |     1310k+       |
 
-* For each unit, if this unit has risk (CC of 11+), add the number of lines of that unit to the corresponding risk category. 
-* Calculate the total number of lines of the system
-* Relate the total number of lines for each risk category as a percentage of the total lines of code.
-* Review the lowest rank based on the table below:
-  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
-  * Take the lowest rank rated over all risk categories. The system as a whole has this ranking
+Volume in Lines of Code per rebuild year is different per language. Source: [SIG TUViT](https://www.softwareimprovementgroup.com/wp-content/uploads/SIG-TUViT-Evaluation-Criteria-Trusted-Product-Maintainability-Guidance-for-producers.pdf)
 
-| Rank | Score | Moderate | High   | Very High |
-|------|-------|----------|--------|-----------|
-| ++   | 1     | 25.00%   | 0.00%  | 0.00%     |
-| +    | 0.5   | 30.00%   | 5.00%  | 0.00%     |
-| 0    | 0     | 40.00%   | 10.00% | 0.00%     |
-| -    | -0.5  | 50.00%   | 15.00% | 5.00%     |
-| --   | -1    | -%       | -%     | -%        |
+| Language        | Lines of code in 36 person years |
+|-----------------|----------------------------------|
+| C++             | 263,000                          |
+| C#              | 360,000                          |
+| Java            | 324,000                          |
+| JavaScript      | 364,000                          |
+| Python          | 248,000                          |
+| Ruby            | 227,000                          |
+| TypeScript      | 310,000                          |
 
-Example:
-* A system with 10000 lines of code in total
-* Lines of code in units with:
-  * simple complexity total 6700
-  * moderate complexity total 2600
-  * high complexity total 700
-  * there are no lines with very high complexity
-* Percentages calculate the following ratings:
-  * 67% with no risk: ++
-  * 26% with moderate risk: +
-  * 7% with high risk: 0
-* This rates the system into the 0 rank
-* If the code is refactored to limit the high complexity code to 500 lines of code, this will improve the rating to +
 
-### Sources
-* [Wikipedia](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
+### Duplication
 
-#### Java
+Duplication can be measured with SonarQube. Duplicate code increases maintainability cost. A change in one piece of duplicate code should also be made in the corresponding other piece duplicate code. The risk of missing a change or fix in all pieces of duplicate code can result in bugs. 
 
-JaCoCo calculates cyclomatic complexity of a method with the following equivalent formula where:
-* B is the number of branches
-* D is the number of decision points
+Duplicate code can be measured with tools like SonarQube. We measure duplicate code in percentage of the total codebase. Depending on the percentage of duplicate code, we rate the system as a whole using the following chart.
 
-```
-v(G) = B - D + 1
-```
+|     Rank    | Duplicate Cde |
+|-------------|---------------|
+|     ++      | 0-3%          |
+|     +       | 3-5%          |
+|     0       | 5-10%         |
+|     -       | 10-20%        |
+|     --      | 20-100%       |
 
-Tools to calculate Cyclomatic complexity for your code:
-* [SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)
-  * Works with the [SQALE](https://en.wikipedia.org/wiki/SQALE) model, which maps reasonably well on ISO-25010
-* [JaCoCo](https://www.eclemma.org/jacoco/)
-* [Eclipse Metrics plugin](https://github.com/qxo/eclipse-metrics-plugin)
+#### Sources
+[Artima](https://www.artima.com/intv/dry.html)
 
-#### .NET
-
-Visual Studio contains the Code Metrics functionality to calculate Cyclomatic Complexity
-
-* [MSDN Blog](https://blogs.msdn.microsoft.com/zainnab/2011/05/17/code-metrics-cyclomatic-complexity/)
-* [C-Sharp corner](https://www.c-sharpcorner.com/article/code-metrics-cyclomatic-complexity/)
 
 ### Unit Size
 
-Rate all units based on the following table: 
+This metric simply measures each unit in lines of code. More lines of code means bigger strain on maintainability. Rate all units based on the following table:
 
 | Unit Size | Risk              |
 |-----------|-------------------|
@@ -173,12 +143,12 @@ Rate all units based on the following table:
 | 32-48     | High risk         |
 | 49+       | Very high risk    |
 
-* For each unit, if this unit has risk (Unit Size of 25+), add the number of lines of that unit to the corresponding risk category. 
+* For each unit, if this unit has risk (Unit Size of 25+), add the number of lines of that unit to the corresponding risk category.
 * Calculate the total number of lines of the system
 * Relate the total number of lines for each risk category as a percentage of the total lines of code.
 * Review the lowest rank based on the table below:
   * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
-  * Take the lowest rank rated over all risk categories. The system as a whole has this ranking
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
 
 | Rank | Score | Moderate | High   | Very High |
 |------|-------|----------|--------|-----------|
@@ -202,9 +172,262 @@ Example:
 * This rates the system into the 0 rank
 * If the code is refactored to limit the large units to total 500 lines of code, this will improve the rating to +
 
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Method Length Template using the settings below
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                  | Description                                                               | Max | Severity |
+|----------------------------------------|---------------------------------------------------------------------------|-----|----------|
+| Unit size must be less than 49 lines   | Number of lines per unit (method or function) of 49+ is a very high risk  | 48  | Critical |
+| Unit size should be less than 32 lines | Number of lines per unit (method or function) of 32+ is a high risk       | 31  | Major    |
+| Unit size could be less than 25 lines  | Number of lines per unit (method or function) of 25+ is a moderate risk   | 24  | Minor    |
+
+#### Lines of code
+
+Lines of code is both a measurement of quality and readability. This will mean that there are two thresholds to adhere to. Always take the lower threshold.
+For both criteria, the lines of code are measured in context of a single method.
+
+For the quality criteria, a method with more lines of code will often fulfil more than one purpose and will therefore be much harder to test. Keeping a method simple and focused will result in smaller methods.
+
+For the readability criteria, a method with more lines of code will not fit on a screen which forces the developer to scroll in order to read the code.
+
+Code Metrics Viewer rates this metric value the following way:
+![](lines_of_code_quality.png)
+
+
+### Unit Complexity
+
+Unit complexity can be measure using the Cyclomatic Complexity metric. This metric indicated the complexity of code and should be calculated per unit (method). The index is calculated by defining the total number of independent branches or possible paths within a method. More paths means a higher index, which indicates higher complexity. The expressions and operands that increase the index are:
+* ```if```
+* Each ```case``` and ```default``` in a ```switch```
+* ```for```, ```foreach``` and ```while```
+* ```catch``` and ```throw``` or ```throws```
+* ```&&```, ```&```, ```||```, ```|```, , ```^```, ```a ? b : c```, ```x ?? y```
+
+
+Cyclomatic complexity can be calculated using the formula below. The formal definition of the cyclomatic complexity v(G) is based on the representation of a method's control flow graph as a directed graph, where
+
+* E is the number of edges
+* N the number of nodes
+* P is the number of connected components 
+```
+v(G) = E - N + 2P
+```
+Since we will only review complexity of methods, which always connect all code from start to end, P will always be 1 we can simplify the formula to:
+```
+v(G) = E - N + 2
+```
+
+This results in a value of 2 or higher. Keeping the index below 11 for scope of methods is best, though experienced teams could choose to set the threshold to 15 if done with care.
+
+![](cyclomatic_complexity.png)
+
+In this graph, we see 9 edges and 8 nodes. Therefore the complexity is ```9 - 8 + 2 = 3```
+
+Cyclomatic complexity directly influences the minimum number of tests required to potentially cover all the code in unit-tests.
+
+![](cyclomatic_complexity_max.png)
+
+#### SIG
+
+Rate all units based on the following table: 
+
+| Cyclomatic Complexity | Complexity   | Risk              |
+|-----------------------|--------------|-------------------|
+| 1-10                  | Simple       | Without much risk |
+| 11-20                 | More Complex | Moderate risk     |
+| 21-50                 | Complexity   | High risk         |
+| >50                   | Untestable   | Very high risk    |
+
+* For each unit, if this unit has risk (CC of 11+), add the number of lines of that unit to the corresponding risk category. 
+* Calculate the total number of lines of the system
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 25.00%   | 0.00%  | 0.00%     |
+| +    | 0.5   | 30.00%   | 5.00%  | 0.00%     |
+| 0    | 0     | 40.00%   | 10.00% | 0.00%     |
+| -    | -0.5  | 50.00%   | 15.00% | 5.00%     |
+| --   | -1    | -%       | -%     | -%        |
+
+Example:
+* A system with 10000 lines of code in total
+* Lines of code in units with:
+  * simple complexity total 6700
+  * moderate complexity total 2600
+  * high complexity total 700
+  * there are no lines with very high complexity
+* Percentages calculate the following ratings:
+  * 67% with no risk: ++
+  * 26% with moderate risk: +
+  * 7% with high risk: 0
+* This rates the system into the 0 rank
+* If the code is refactored to limit the high complexity code to 500 lines of code, this will improve the rating to +
+
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Cyclomatic Complexity Template using the settings below
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                           | Description                                                                    | Max | Severity |
+|-------------------------------------------------|--------------------------------------------------------------------------------|-----|----------|
+| Cyclomatic Complexity must be no more than 50   | Cyclomatic Complexity per unit (method or function) of >50 is a very high risk | 50  | Critical |
+| Cyclomatic Complexity should be no more than 20 | Cyclomatic Complexity per unit (method or function) of >20 is a high risk      | 20  | Major    |
+| Cyclomatic Complexity could be no more than 10  | Cyclomatic Complexity per unit (method or function) of >10 is a moderate risk  | 10  | Minor    |
+
+#### Java
+
+JaCoCo calculates cyclomatic complexity of a method with the following equivalent formula where:
+* B is the number of branches
+* D is the number of decision points
+
+```
+v(G) = B - D + 1
+```
+
+#### .NET
+
+Visual Studio contains the Code Metrics functionality to calculate Cyclomatic Complexity
+
+* [MSDN Blog](https://blogs.msdn.microsoft.com/zainnab/2011/05/17/code-metrics-cyclomatic-complexity/)
+* [C-Sharp corner](https://www.c-sharpcorner.com/article/code-metrics-cyclomatic-complexity/)
+
+#### Sources
+* [Wikipedia](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
+
+Tools to calculate Cyclomatic complexity for your code:
+* [SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)
+  * Works with the [SQALE](https://en.wikipedia.org/wiki/SQALE) model, which maps reasonably well on ISO-25010
+* [JaCoCo](https://www.eclemma.org/jacoco/)
+* [Eclipse Metrics plugin](https://github.com/qxo/eclipse-metrics-plugin)
+
+
+### Unit Interfacing
+
+This metric measures each unit's number of arguments. More arguments means more complex to interface with. Rate all units based on the following table:
+
+| Unit Size | Risk              |
+|-----------|-------------------|
+| 1-2       | Without much risk |
+| 3-4       | Moderate risk     |
+| 5-6       | High risk         |
+| 7+        | Very high risk    |
+
+* For each unit, if this unit has risk (arguments of 3 or more), add the number of lines of that unit to the corresponding risk category.
+* Calculate the total number of lines of the system
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 12.50%   | 2.50%  | 0.50%     |
+| +    | 0.5   | 17.50%   | 5.00%  | 1.00%     |
+| 0    | 0     | 25.00%   | 10.00% | 2.00%     |
+| -    | -0.5  | 30.00%   | 15.00% | 5.00%     |
+| --   | -1    | -%       | -%     | -%        |
+
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Parameter Number Template using the settings below
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                           | Description                                                                  | Max | Severity |
+|-------------------------------------------------|------------------------------------------------------------------------------|-----|----------|
+| Unit number of parameters must be less than 7   | Number of parameters per unit (method or function) of 7+ is a very high risk | 6   | Critical |
+| Unit number of parameters should be less than 5 | Number of parameters per unit (method or function) of 5+ is a high risk      | 4   | Major    |
+| Unit number of parameters could be less than 3  | Number of parameters per unit (method or function) of 3+ is a moderate risk  | 2   | Minor    |
+
+
+### Coupling
+
+This metric measures the coupling of a modules with modules from other components. We count each class's dependencies on non-SDK imports from another package. Sub-packages are also counted. Imports should not use wildcards. Since imports from the same package are implicit and not declared, these are not counted. More imports from other packages means tighter coupling. Rate all modules based on the following table:
+
+| Imports | Risk              |
+|---------|-------------------|
+| 0-10    | Without much risk |
+| 11-20   | Moderate risk     |
+| 21-50   | High risk         |
+| 51+     | Very high risk    |
+
+* For each module, if this module has risk (11 or more imports), add the number of lines of that module to the corresponding risk category.
+* Calculate the total number of lines of the system
+* Relate the total number of lines for each risk category as a percentage of the total lines of code.
+* Review the lowest rank based on the table below:
+  * For each risk category, take the percentage of code that falls into that risk category and rank it to the maximum allowed percentages in the table below.
+  * Take the highest rank which still fits over all risk categories. The system as a whole has this ranking
+
+| Rank | Score | Moderate | High   | Very High |
+|------|-------|----------|--------|-----------|
+| ++   | 1     | 12.50%   | 7.50%  | 2.50%     |
+| +    | 0.5   | 17.50%   | 10.00% | 5.00%     |
+| 0    | 0     | 25.00%   | 15.00% | 8.00%     |
+| -    | -0.5  | 30.00%   | 20.00% | 12.50%    |
+| --   | -1    | -%       | -%     | -%        |
+
+Coupling can be measured in SonarQube with custom RegEx rules. Use the Regexp Multiline template as a base with the following Regex. This will count all lines that define an import other than JDK (java or javax) classes.
+
+```regexp
+(^import (?!java))
+```
+
+#### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Regexp Multiline Template using the settings below combined with
+  * Avoid Star Import Template using the settings below. Allowing star imports for static members can be enabled based on preference.
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                              | Description                                                                     | Max | Severity |
+|----------------------------------------------------|---------------------------------------------------------------------------------|-----|----------|
+| Number of non-JDK imports must be less than 50     | Number of non-JDK imports per module (class or file) of 50+ is a very high risk | 50  | Critical |
+| Number of non-JDK imports should be less than 20   | Number of non-JDK imports per module (class or file) of 20+ is a high risk      | 20  | Major    |
+| Number of non-JDK imports could be less than 10    | Number of non-JDK imports per module (class or file) of 10+ is a moderate risk  | 10  | Minor    |
+
+| Title                          | Description                                                                | Allow Class Imports | Allow Static Member Imports | Severity |
+|--------------------------------|----------------------------------------------------------------------------|---------------------|-----------------------------|----------|
+| Star imports should be avoided | Star imports should be avoided since it masks the number of actual imports | false               | <based on preference>       | Critical |
+
+
+### Class coupling
+
+Class coupling indicates how dependent a class is upon other classes.
+
+This metric can be used as an indicator of how evolvable a function, a class, or at least an assembly project actually is.
+It is calculated for each level and represents the number of types (excluding built-in language types) being used by a method, class, etc..
+Lower values are better.
+
+Code Metrics Viewer rates this metric value the following way:
+
+* Per member (method)
+  ![](class_coupling_member.png)
+
+* Per type (class, interface, enum)
+  ![](class_coupling_type.png)
+
+* [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)
+
+
 ### Inheritence
 
-The depth of inheritance metric indicates the depth of the inheritance chain, including classes and interfaces. Higher inheritence depth means a more complex object hierarchy. Lower values are better because it will be easier to follow the flow of the code when debugging or analyzing. 
+The depth of inheritance metric indicates the depth of the inheritance chain, including classes and interfaces. Higher inheritance depth means a more complex object hierarchy. Lower values are better because it will be easier to follow the flow of the code when debugging or analyzing. 
 
 ![](inheritence.png)
 
@@ -215,32 +438,30 @@ Code Metrics Viewer rates the metric value the following way:
 
 [Source](https://codemetricsviewer.wordpress.com/2011/06/26/how-to-interpret-received-results/)
 
-### Class coupling
 
-Class coupling indicates how dependent a class is upon other classes. 
+### Component Balance
 
-This metric can be used as an indicator of how evolvable a function, a class, or at least an assembly project actually is. 
-It is calculated for each level and represents the number of types (excluding built-in language types) being used by a method, class, etc.. 
-Lower values are better. 
+The component balance of a system measures how evenly the lines of code are distributed over the components. An unbalance indicates possible flaws in architecture and higher risk in specific (more code-heavy) components. Balance can be measured using the Gini Coefficiency. A Gini Coefficiency of 0 means all components are in perfect balance, while a value of 1 means a single component contains all lines of code. This can be measured using the following Excel formula:
 
-Code Metrics Viewer rates this metric value the following way: 
+```
+{
+  =AVERAGE(
+    ABS(
+      DATAPOINTS – TRANSPOSE(DATAPOINTS)
+    )
+  ) / AVERAGE(DATAPOINTS) / 2
+}
+```
 
-* Per member (method) 
-![](class_coupling_member.png)
+The balance should not exceed 0.7
 
-* Per type (class, interface, enum)
-![](class_coupling_type.png)
-  
-* [source](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)
-
-### Lines of code
-
-Lines of code is both a measurement of quality and readability. This will mean that there are two thresholds to adhere to. Always take the lower threshold.
-For both criteria, the lines of code are measured in context of a single method. For the quality criteria, a method with more lines of code will often 
-fulfil more than one purpose and will therefore be much harder to test. Keeping a method simple and focused will result in smaller methods.
-
-Code Metrics Viewer rates this metric value the following way: 
-![](lines_of_code_quality.png)
+|     Rank    | Gini coefficiency |
+|-------------|-------------------|
+|     ++      | 0-0.7             |
+|     +       | 0.7-30            |
+|     0       | 30-80             |
+|     -       | 80-160            |
+|     --      | 160+              |
 
 
 ## Additional metrics
@@ -281,16 +502,14 @@ TODO:
 
 ## Formatting
 
+TODO
 
 ## Code grouping
 Grouping code and methods in classes based on functionality
 
 ## Naming conventions
 
-
-## Duplicate code / DRY
-[Artima](https://www.artima.com/intv/dry.html)
-
+TODO
 
 ## Nesting
 
@@ -307,6 +526,7 @@ a = (condition) ? 10 : 20
 
 ## Structure
 
+TODO
 
 ## Separation of concerns
 
@@ -317,16 +537,49 @@ Sources:
 
 ## Lines of code
 
-For readability lines of code is a heavily debated metric. The threshold for an acceptable number of lines of code is dependant on a number of factors, 
+For readability lines of code is a heavily debated metric. The threshold for an acceptable number of lines of code is dependent on a number of factors, 
 including screen-size / resolution, team preference, IDE's used etc. The threshold is measured in context of a single method. The threshold is simply 
 having all lines of code for a single method be visible without having to scroll. Always reason from the least optimistic scenario. So take the screen, 
 IDE etc. from the team-member who can display the least number of lines on his / her screen.
 
 ![](lines_of_code_read.png)
 
+
+### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * File Length Template using the settings below as an example
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                    | Description                              | Max | Severity |
+|------------------------------------------|------------------------------------------|-----|----------|
+| File length must be no more than 500     | File length must be no more than 500     | 500 | Critical |
+| File length should be no more than 200   | File length should be no more than 200   | 200 | Major    |
+| File length could be no more than 100    | File length could be no more than 100    | 100 | Minor    |
+
+
+
 ## Line length
 
-TODO
+The threshold for an acceptable line-length is dependent on a number of factors, including screen-size / resolution, team preference, IDE's used, IDE-panels opened etc. The threshold is measured for each line of code. The threshold is simply having a standard IDE with development panels opened, like the Project panel, build-panel etc. All lines of a class should be visible without having to use horizontal scroll or line-wrapping. Define the threshold from the least optimistic scenario. So take the screen, IDE etc. from the team-member who can display the least number of charactes per line on their screen. Open the panels that are opened by the team-members most often during development. Then define how many characters can still fit into the code-panel without the need for using horizontal scroll or word-wrapping.
+
+
+### Tool to measure
+
+The following tools can be used to measure and alert this metric:
+* CheckStyle:
+  * Line Length Template using the settings below as an example
+* SonarQube
+  * Quality Profile using above Checkstyle rules
+
+| Title                                   | Description                              | Max | Severity |
+|-----------------------------------------|------------------------------------------|-----|----------|
+| Line length must be no more than 200    | Line length must be no more than 200     | 200 | Critical |
+| Line length should be no more than 170  | Line length should be no more than 170   | 170 | Major    |
+| Line length could be no more than 140   | Line length could be no more than 140    | 140 | Minor    |
+
 
 # Generic sources:
 
@@ -593,6 +846,8 @@ Perils of Long methods:
 
 
 ## Sources
+* [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+
 
 ### ISO
 * [ISO 9126](https://en.wikipedia.org/wiki/ISO/IEC_9126)

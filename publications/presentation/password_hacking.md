@@ -1,7 +1,12 @@
 ## Password hacking
 <hr />
 
-![](pics/correct_horse_battery_staple.png)<!-- .element style="box-shadow:none; position: fixed; width: 700px; top: 120px; left: 150px;" -->
+* Why __strong__ passwords?
+* How __strong__ should they be?
+* What can I as a __user__ do?
+* What can I as a __developer__ do?
+
+![](pics/correct_horse_battery_staple.png)<!-- .element style="box-shadow:none; position: fixed; width: 500px; bottom: 20px; right: 10px;" -->
 
 -- Notes --
 
@@ -12,18 +17,18 @@ The way we failed at effective passwords is so prevalent, there is an XKCD comic
 ## Why?
 <hr />
 
-![](pics/passwords/password_reuse_1.png)<!-- .element style="position: fixed; width: 450px; top: 150px; left: 0px;"  -->
-![](pics/passwords/password_reuse_2.png)<!-- .element style="position: fixed; width: 500px; top: 150px; right: 0px;" class="fragment" data-fragment-index="1" -->
+![](pics/passwords/password_reuse_1.png)<!-- .element style="position: fixed; width: 750px; top: 150px; left: 0px;"  -->
+![](pics/passwords/password_reuse_2_new.png)<!-- .element style="position: fixed; width: 520px; top: 185px; left: 76px;" class="fragment" data-fragment-index="1" -->
 
 --
 
 ## TL;DR
 <hr />
 
-# L ong
-# U nique
-# R andom
-# P asswords
+# <span style="color: #CC0000;">L</span>ong
+# <span style="color: #00CC00;">U</span>nique
+# <span style="color: #0000CC;">R</span>andom
+# <span style="color: #CC00CC;">P</span>asswords
 
 ![](pics/passwords/larp.jpg)<!-- .element style="position: fixed; width: 500px; top: 150px; right: 0px;" -->
 
@@ -178,6 +183,14 @@ SQL injection defence is so easy, but so often not implemented, there even is a 
 See cryptography
 
 ![](pics/crypto/hashing.png)<!-- .element style="box-shadow:none; width: 600px; " -->
+
+-- Notes --
+
+* One-way function
+* Any size input results in fixed-size digest
+* The same input always results in the same output
+* Slightly different input results in completely different output
+* In practice, different inputs never result in the same output
 
 --
 

@@ -24,6 +24,7 @@
 * [Wireshark](https://www.wireshark.org)
   * [Userguide](https://www.wireshark.org/docs/wsug_html_chunked/)
   * [Filter reference guide](https://www.wireshark.org/docs/dfref/)
+* [OpenKAT](https://github.com/minvws/nl-kat-coordination)
 
 ## CMS
 * [CMSMap](https://github.com/Dionach/CMSmap) CMS scanner, supports WordPress, Joomla, Drupal and Moodle
@@ -110,6 +111,7 @@
 * [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/): Vulnerable Linux VM for security & penetration practicing
 * [Firing Range](https://public-firing-range.appspot.com/): Test bed for automated application security scanners
 * [Forensics CTF images](https://dfir.training/resources/downloads/ctf-forensic-test-images)
+* [Aman Hardikar](https://www.amanhardikar.com/mindmaps/Practice.html)
 
 ### CTF's
 * [PicoCTF](https://picoctf.com/)

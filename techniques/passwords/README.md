@@ -111,7 +111,7 @@ Source [Guru99](https://www.guru99.com/how-to-crack-password-of-an-application.h
 * Password [dictionaries](https://wiki.skullsecurity.org/Passwords)
 * More leaked [Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords)
 * On [Password strength](https://nulab.com/blog/tech/password-strength/) and password strength meters
-
+* Credential Stuffing attacks with [Nuclei](https://blog.projectdiscovery.io/understanding-automating-credential-stuffing-a-comprehensive-guide/)
 
 ## Password Hash lookup / cracking online
 * [Hashkiller](https://hashkiller.co.uk/db-info.aspx) lists cracked / calculated hashes

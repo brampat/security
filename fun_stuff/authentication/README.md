@@ -2,6 +2,11 @@
 
 Making sure your accounts are secure is easy. Just use a password manager and MFA where possible. But the theory is easy, while in practice, a mistake is easily made.
 
+## Games:
+
+* [Gandalf's AI](https://gandalf.lakera.ai/) makes sure you shall not pass
+* The [Password Game](https://neal.fun/password-game/) of choosing a password
+
 ## Remember
 We all know you memorize passwords, never write a password down.
 
@@ -49,5 +54,7 @@ But it's super-safe right?
 ## Internet banking fraud
 Awareness video on phishing: [It wasn't me](https://www.youtube.com/watch?v=HTkdwnwAqlg)
 
-## Password manager
-Awareness video on password hygiene: [Mary Password Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ)
+## Video's
+* Awareness video on password hygiene: [Mary Password Poppins](https://www.youtube.com/watch?v=IgCHcuCw_RQ)
+* You should probably [change your password](https://www.youtube.com/watch?v=aHaBH4LqGsI) by Michael McIntyre Netflix Special
+* Guessing the password [in movies](https://www.youtube.com/watch?v=Mgh_CfhJxkk)

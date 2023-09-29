@@ -16,6 +16,9 @@
 * [Web Application basics](web-app-basics.md)
 * [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt
 
+### Web Defence
+* [Defense by numbers](https://www.youtube.com/watch?v=I3pNLB3Cq24&t=3s): Making Problems for Script Kiddies and Scanner Monkeys. Using HTTP Response codes by [Chris John Riley](https://twitter.com/ChrisJohnRiley)
+
 ## Fun stories
 * [How I used to rob banks](https://www.youtube.com/watch?v=mDdRGlSW9Ro) by [Freaky Clown](https://twitter.com/__freakyclown__)
 * [Top hacker shows how it's done](https://www.youtube.com/watch?v=hqKafI7Amd8) by Pablos Holman
@@ -23,7 +26,7 @@
 * [The dark site of the web](https://www.youtube.com/watch?v=HfuZJVpNWR4) by Kyle Terry
 * [A trip to India](https://www.youtube.com/watch?v=u5MttVF0A10) how [Bart Roos](https://twitter.com/Bartr00s) counter-hacks Call-center scams
 * [Chris Roberts](https://www.youtube.com/watch?v=PMP9TKrQBKQ) at Tweakers XL Privacy & Security May 2018
-
+* [NULL license plate](https://www.youtube.com/watch?v=TwRE2QK1Ibc) story by Droogie on DefCon 27
 
 ## Why hackers?
 * [Hackers: the internet's immune system](https://www.youtube.com/watch?v=erCAp_Bd0AQ) by [Keren Elazari](https://twitter.com/k3r3n3)

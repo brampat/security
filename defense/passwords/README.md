@@ -613,6 +613,8 @@ Sources:
 * [Administrator's guide to password research](https://www.microsoft.com/en-us/research/publication/an-administrators-guide-to-internet-password-research/)
 * NIST Digital Identity Guidelines [800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html)
 * [Effectiveness of several MFA types](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html) by Google
+* Credential Stuffing attacks with [Nuclei](https://blog.projectdiscovery.io/understanding-automating-credential-stuffing-a-comprehensive-guide/)
+
 
 ### Password strength
 * Why [length beats complexity](https://malwarejake.blogspot.com/2015/10/why-is-length-complexity-because-math.html) in password strength by Malware Jake
@@ -631,3 +633,15 @@ Flaws in password managers often can only be exploited when the device has been 
 * Several [security flaws](https://www.welivesecurity.com/2020/03/19/security-flaws-found-in-popular-password-managers/) found in popular Password Managers
 * Password managers can be [hacked](https://www.tomsguide.com/news/password-manager-hacks). What to do now. An article based on research from 2017-ish, sounding like it wants to spread FUD. The article missed the "Flawed PW Managers are almost always better than weak password reuse"-message
 * Password managers [easily compromised](https://www.itproportal.com/news/passwords-managers-easily-compromised-by-illegitimate-apps/) by illegitimate apps. Research addressing a flaw in app-identification by Password managers.
+
+### MFA / 2FA
+* Webinar: [12 Ways Multi-Factor Authentication can be Hacked](https://www.youtube.com/watch?v=bhLCQLkZdcw) and how to Best Defend Against it
+* [Hacks That Bypass Multi-Factor Authentication](https://blog.knowbe4.com/hacks-that-bypass-multi-factor-authentication-webinar) and How to Make Your MFA Solution Phishing Resistant
+* [SMS redirect](https://www.theverge.com/2021/3/15/22332315/sms-redirect-flaw-exploit-text-message-hijacking-hacking)
+* [3 Ways to hack SIM cards](https://www.makeuseof.com/tag/ways-sim-card-hacked/)
+
+### Storage
+* [OWAPS Password Storage Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+* [Best Hashing Algorithm](https://codesigningstore.com/what-is-the-best-hashing-algorithm)
+* [Secure Password Hashing](https://stackoverflow.com/questions/1841595/secure-password-hashing)
+
