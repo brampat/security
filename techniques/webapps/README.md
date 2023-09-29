@@ -63,6 +63,7 @@
 
 ## Web Application Firewall
 * [WAF-specific repo](https://github.com/0xInfection/Awesome-WAF) with lots of information specific to WAFs, enumeration and evasion
+* [Open AppSec](https://www.openappsec.io/) Open-source WAF solution with paid upgrade options.
 
 Sources:
 * [OWASP](https://www.owasp.org/index.php/Main_Page)
