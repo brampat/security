@@ -350,6 +350,20 @@ Some of these movies also deal with brain to computer interfacing, bio and techn
 * Subject: AI, Robotics, Asimov's law of robotics
 * Synopsis: Based on the 1973 movie. In a real-life Wild-west themepark, guests can do whatever they like with their robotic hosts. Westworld questions the definition of life, existentialism and ethics regarding AI lifeforms. 
 
+#### [M3gan](https://www.imdb.com/title/tt8760708/)
+* Release 2022
+* Subject: AI, Robotics, Asimov's law of robotics
+* Synopsis: Robitics engineer suddenty becomes caretaker of her niece, but is way too busy for the task, working overtime creating interactive high-tech toys. Her newest project is M3gan, the Model 3 Generative ANdroid, a fully self-learning AI robot. 
+
+#### [T.I.M.](https://www.imdb.com/title/tt21988182)
+* Release 2023, Netflix
+* Subject: AI, Robotics, Asimov's law of robotics
+* Synopsis: Abi is working on the prototype of T.I.M. Technologically. Integrated. Manservant. an all-purpose butler, while living with her partner Paul. But T.I.M. isn't as devoid of feelings as you'ld expect a robot to be.  
+
+#### [The Creator](https://www.imdb.com/title/tt11858890/)
+* Release 2023
+* Subject: AI, Robotics, Asimov's law of robotics
+* Synopsis: In a war of humans vs. AI robots, ex Special Forces Joshua's assignment is to neutralise the AI's secret weapon. When he finds the weapon, he discovers it to be a young child robot. 
 
 #### Transcendence
 * [Movie](https://www.imdb.com/title/tt2209764)
