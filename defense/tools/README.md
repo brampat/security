@@ -20,6 +20,10 @@ The tools described can be integrated in CI/CD toolchains.
 * [Security Compass](https://www.securitycompass.com/)
 * [Threat Modeler](https://threatmodeler.com/)
 
+### Developer Portal
+* [Backstage](https://backstage.io/)
+* [OpsLevel](https://www.opslevel.com/)
+
 ### IDE Security plugins
 * [FindSecurityBugs](http://find-sec-bugs.github.io/) for Eclipse and IntelliJ
 * [Puma Scan](https://github.com/pumasecurity/puma-scan) for Visual Studio
