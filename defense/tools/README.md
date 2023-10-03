@@ -249,14 +249,18 @@ The tools described can be integrated in CI/CD toolchains.
 * [Nexus Container](https://www.sonatype.com/products/container)
 * Snyk [Container](https://snyk.io/product/container-vulnerability-management/)
 * [Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud) (formerly Twistlock)
-* [Qualys](https://www.qualys.com/apps/asset-inventory/)
 * JFrog
+
+#### Vulnerability Scanning
+* Outpost24
+* Rapid7
+* Tenable
+* [Qualys](https://www.qualys.com/apps/asset-inventory/)
 
 #### Hardening
 * Bane
 * CIS Benchmarks
 * grsecurity
-
 
 ### Dependency Management
 
@@ -269,15 +273,21 @@ The tools described can be integrated in CI/CD toolchains.
 * Integrate into CI/CD
 
 #### CVE Databases
-* [Bug Alert](https://bugalert.org/)
-* [CVE](https://cve.mitre.org/cve/) Common Vulnerability Enumeration by Mitre
 * GitHub [Advisories](https://github.com/advisories)
-* [GSD](https://github.com/cloudsecurityalliance/gsd-database) Global Security Database
-* [NVD](https://nvd.nist.gov/) National Vulnerability Database by NIST
+* NIST [NVD](https://nvd.nist.gov/) National Vulnerability Database
+* [CVE](https://cve.mitre.org/cve/) Common Vulnerability Enumeration by Mitre
 * [OpenCVE](https://www.opencve.io/)
 * [OSV](https://osv.dev/list) OpenSource Vulnerabilities
+* [Bug Alert](https://bugalert.org/)
+* [GSD](https://github.com/cloudsecurityalliance/gsd-database) Global Security Database
 * [PyPA](https://github.com/pypa/advisory-database) Advisory Database
 * [RustSec](https://github.com/RustSec/advisory-db) Advisory Database
+* CISA [Known Exploited Vulnerablity Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+* FIRST [EPSS](https://www.first.org/epss/) Exploit Prediction Scoring System
+
+##### Aggregation
+* [Open Vulnerability Project](https://github.com/jeremylong/Open-Vulnerability-Project)
+
 
 #### Tools
 * OWASP [Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
@@ -373,7 +383,7 @@ The tools described can be integrated in CI/CD toolchains.
 * OWASP ZAP
 * ssh_scan
 * [NIKTO](https://github.com/sullo/nikto): free command-line vulnerability scanner, scans webservers for weaknesses
-* Nessus
+* [Nessus](https://www.tenable.com/products/nessus) by Tenable
 * OpenVAS
 * [Qualys](https://www.qualys.com/apps/asset-inventory/) Asset Discovery
 
@@ -398,6 +408,7 @@ The tools described can be integrated in CI/CD toolchains.
 
 ### Dynamic Application Security Testing (DAST)
 * OWASP [ZAP](https://www.zaproxy.org/)
+* [Nuclei](https://docs.nuclei.sh/getting-started/overview): Fast vulnerability scanner with MIT licence (Opensource)
 * [Nessus](https://www.tenable.com/downloads/nessus): Vulnerability scanner for VM, Server OS or host machines. Was OpenSource, now commercial (Euro 2470 / year), free for home & limited training use. Updates vuln. database using plugins.
 * [OpenVAS](http://www.openvas.org/): OpenSource Vulnerability scanner for VM, Server OS or host machines
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
@@ -510,12 +521,19 @@ Multi-tools
 * [OWASP Defect Dojo](https://owasp.org/www-project-defectdojo/): open source vulnerability management tool
   * [Getting Started](https://defectdojo.readthedocs.io/en/latest/getting-started.html)
 * [Brinqa](https://www.brinqa.com/)
-* [Kenna Security](https://www.kennasecurity.com/)
+* [Cisco Vulnerablity Management](https://www.cisco.com/site/us/en/products/security/vulnerability-management/index.html)
+  * Formerly Kenna VM by [Kenna Security](https://www.kennasecurity.com/)
 * [Azure Boards](https://azure.microsoft.com/en-us/services/devops/boards/)
 * [PivotalTracker](https://www.pivotaltracker.com/)
 * [Asana](https://asana.com/)
 * [ShortCut](https://shortcut.com/)
 * [Trello](https://trello.com/en)
+* [Outscan NX](https://outpost24.com/products/risk-based-vulnerability-management/) by Outpost24
+* [InsightVM](https://www.rapid7.com/products/insightvm/) by Rapid7
+* [Tenable Vulnerability Management](https://www.tenable.com/products/tenable-io) by Tenable
+* [ThreadFix](https://www.coalfire.com/services/offensive-security/application-security/threadfix)
+* [Software Risk Manager](https://www.synopsys.com/software-integrity/software-risk-manager.html) by Synopsis
+* [Orchestrons](https://www.we45.com/orchestrons) by We45
 
 ### Blameless Postmortems
 * Etsy [Morgue](https://github.com/etsy/morgue)
