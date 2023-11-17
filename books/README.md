@@ -15,7 +15,7 @@ Unless otherwise stated:
 
 #### How I rob banks - FC
 * Subject: Security, Physical and digital Pentesting
-* Synopsis: Unbelievable stories from a physical and digital pentester. Start with chapter "The Gold bar", it's exactly what you'ld expect.
+* Synopsis: Unbelievable stories from a physical and digital pentester. Start with chapter "The Gold bar", it's exactly what you'd expect.
 
 #### RTFM: Red Team Field Manual - Ben Clark
 * Book, [eBook](https://github.com/tanc7/hacking-books/blob/master/RTFM%20-%20Red%20Team%20Field%20Manual%20v3.pdf)
