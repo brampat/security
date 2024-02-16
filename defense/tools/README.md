@@ -1,13 +1,12 @@
 # SecDevOps
 
-This documentation is provided by [Sans.org](https://software-security.sans.org/blog/2018/10/14/exploring-the-devsecops-toolchain)
-to provide DevOps teams with Security tools and help them deliver secure software, while staying productive and agile
-in a DevOps way-of-working.
-The tools described can be integrated in CI/CD toolchains.
-
+The DevSecOps toolchain document is provided by [Sans.org](https://software-security.sans.org/blog/2018/10/14/exploring-the-devsecops-toolchain) to provide DevOps teams with Security tools and help them deliver secure software, while staying productive and agile in a DevOps way-of-working. The tools described can be integrated in CI/CD toolchains.
 * [AppSec Pipeline](https://www.appsecpipeline.org/): Overview of AppSec Pipeline tools
 
 ![Security controls](security-controls.png)
+
+## Other sources
+* [Opensource Security Index](https://opensourcesecurityindex.io/): Indexed list of most popular Opensource Security products
 
 ## Pre-commit
 
@@ -103,7 +102,7 @@ The tools described can be integrated in CI/CD toolchains.
 * [GuardRails](https://www.guardrails.io/): SAST for PHP, Python, Ruby, Java (using Maven), JavaScript, Go, and Solidity. Coming soon (planned aug 2019): Elixir, C/C++, .NET
 * [Secure Headers](https://securityheaders.com/)
 * [ImmuniWeb](https://www.immuniweb.com/free/) free tests for Website, Mobile app, SSL and Phishing sites.
-* SemGrep
+* [SemGrep](https://semgrep.dev/docs/getting-started/)
 * [Nexus Lifecycle](https://www.sonatype.com/products/open-source-security-dependency-management)
 * Gitlab-CI [SAST](https://docs.gitlab.com/ee/user/application_security/sast/index.html)
 * Snyk [Code](https://snyk.io/product/snyk-code/)
@@ -290,6 +289,7 @@ The tools described can be integrated in CI/CD toolchains.
 
 
 #### Tools
+* [List](https://owasp.org/www-community/Component_Analysis) of tools, curated by OWASP, including licence indicator (OpenSource, Freemium, Commercial)
 * OWASP [Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check): for Java, .NET, Ruby, Python
 * OWASP [Dependency Track](https://owasp.org/www-project-dependency-track/)
 * [OSV Scanner](https://github.com/google/osv-scanner)
@@ -462,6 +462,9 @@ The tools described can be integrated in CI/CD toolchains.
 * SIMP
 
 ### Runtime Application Security Protection (RASP)
+
+A RASP or Runtime Application Security Protection tool protects a single web application by monitoring inputs, outputs and behavior of the application. It is integrated with the application itself.
+
 * Contrast [Protect](https://www.contrastsecurity.com/contrast-protect)
 
 Intrusion Detection System (IDS):
@@ -484,6 +487,17 @@ File Integrity Monitors (FIM):
 Multi-tools
 * [Wazuh](https://wazuh.com/): OpenSource tool for threat detection, integrity monitoring, incident response and compliance
 * [Dispatch](https://github.com/Netflix/dispatch) by Netflix, [Introduction Blog](https://medium.com/@NetflixTechBlog/introducing-dispatch-da4b8a2a8072), [Docs](https://hawkins.gitbook.io/dispatch/)
+
+### Web Application Firewalls (WAF)
+
+WAF or Web Application Firewalls protect web applications from generic attacks, like SQLi and XSS attacks. They are placed in front of the organization's web applications and all traffic flows through the WAF before it is handled by the web applications themselves.
+
+* [ModSecurity](https://www.modsecurity.org/)
+  * ModSecurity [GitHub](https://github.com/SpiderLabs/ModSecurity)
+  * OWASP ModSecurity [Core Rule Set](https://owasp.org/www-project-modsecurity-core-rule-set/) Project
+
+### Web Application and API Protection (WAAP)
+
 
 ## Operation
 
