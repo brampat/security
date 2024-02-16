@@ -160,13 +160,13 @@ Unless otherwise stated:
 
 #### Dot.con - James Veitch
 * Subject: Phishing, Security, Comic relief
-* Synopsis: Stand-up comedian (on [YouTube](https://www.youtube.com/c/jamesveitch)) and [Ted](https://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email)) responds to Nigerian prince-scams and keeps scammers busy.
+* Synopsis: Stand-up Tech-comedian (on [YouTube](https://www.youtube.com/c/jamesveitch)) and [Ted](https://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email)) responds to Nigerian prince-scams and keeps scammers busy.
 
 ### Other
 
 #### De Broncode - Eric Smit
 * Book (Dutch)
-* Subject:
+* Subject: Tech
 * Synopsis: True story of e TV-mechanic who invented coding-tech that would have changed the world, but took it with him into his grave.
 
 #### The Doomsday Machine - Daniel Elsberg
@@ -189,6 +189,8 @@ Unless otherwise stated:
 
 
 ## Movies
+
+Similar list of [Hacker movies](https://hackermovie.club/) by [k4m4](https://github.com/k4m4)
 
 ### Privacy
 
@@ -234,7 +236,7 @@ Unless otherwise stated:
 #### [Ratter](https://www.imdb.com/title/tt3836512/)
 * Release: 2015
 * Subject: Privacy, IoT, Spyware
-* Synopsis: Filmed through IoT-connected devices. Student is tormented by a stalker who hacks into her electronic devices and monitors her every move.
+* Synopsis: Blair Witch style stalker nightmare, filmed through IoT-connected devices. Student is tormented by a stalker who hacks into her electronic devices and monitors her every move.
 
 #### [The Tindler Swindler](https://www.imdb.com/title/tt14992922/)
 * Documentary
@@ -286,28 +288,28 @@ Unless otherwise stated:
 * Subject: Security, Ethical Hacking
 * Synopsis: The Kevin Mitnick story
 
-#### [Mr. Robot](https://www.imdb.com/title/tt4158110/)
-* TV Series of 4 seasons with 10-13 ep. per season
-* Release: 2015
-* Subject: Security, Ethical Hacking, Cybercrime, Grey Hat
-* Synopsis: Elliot, an unstable young cyber-security engineer is tempted to go grey-hat or even black-hat when a shadowy figure enters his life
-* Fun facts: Advisors on the hacks to make sure they are fact-checked include network & cyber security analysts, forensics managers, security consultants, FBI Cyber crime agents, Black Hat & DEF CON conference lead
-
 #### [Black Mirror](https://www.imdb.com/title/tt2085059/)
 * TV Series of 6 seasons with 3-6 ep per season 
 * Release: 2011
 * Subject: Hacking, Identity Fraude, Surveillance, Privacy, VR, Social Media, etc.
 * Synopsis: Series of isolated stories on how existing technologies could backfire when gone unchecked.
 
+#### [Minority Report](https://www.imdb.com/title/tt0181689)
+* Release: 2012
+* Subject: Surveillance, Predictive policing, Personalized advertising
+* Synopsis: Science fiction which has mostly become reality: drones scan retina -> facial recognition, personalized shopping experience -> instore WiFi tracking and crime-prediction through oracles -> big-data
+
 #### [Who am I](https://www.imdb.com/title/tt3042408/)
 * Release: 2014, Netflix
 * Subject: Privacy, Hacking, Cybercrime
 * Synopsis: Benjamin, Max and friends form the hacker-group CLAY, but are hunted by Cybercrime investigator Lindberg. Great plot twists.
 
-#### [Minority Report](https://www.imdb.com/title/tt0181689)
-* Release: 2012
-* Subject: Surveillance, Predictive policing, Personalized advertising
-* Synopsis: Science fiction which has mostly become reality: drones scan retina -> facial recognition, personalized shopping experience -> instore WiFi tracking and crime-prediction through oracles -> big-data
+#### [Mr. Robot](https://www.imdb.com/title/tt4158110/)
+* TV Series of 4 seasons with 10-13 ep. per season
+* Release: 2015
+* Subject: Security, Ethical Hacking, Cybercrime, Grey Hat
+* Synopsis: Elliot, an unstable young cyber-security engineer is tempted to go grey-hat or even black-hat when a shadowy figure enters his life
+* Fun facts: Advisors on the hacks to make sure they are fact-checked include network & cyber security analysts, forensics managers, security consultants, FBI Cyber crime agents, Black Hat & DEF CON conference lead
 
 
 ### Isaac Asimov - Law of Robotics
@@ -353,7 +355,7 @@ Some of these movies also deal with brain to computer interfacing, bio and techn
 #### [M3gan](https://www.imdb.com/title/tt8760708/)
 * Release 2022
 * Subject: AI, Robotics, Asimov's law of robotics
-* Synopsis: Robitics engineer suddenty becomes caretaker of her niece, but is way too busy for the task, working overtime creating interactive high-tech toys. Her newest project is M3gan, the Model 3 Generative ANdroid, a fully self-learning AI robot. 
+* Synopsis: Robitics engineer suddenly becomes caretaker of her niece, but is way too busy for the task, working overtime creating interactive high-tech toys. Her newest project is M3gan, the Model 3 Generative Android, a fully self-learning AI robot. 
 
 #### [T.I.M.](https://www.imdb.com/title/tt21988182)
 * Release 2023, Netflix
