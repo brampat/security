@@ -29,6 +29,10 @@ But they wouldn't give false information deliberately
 
 ![](not_a_robot.jpg)
 
+Or can it?
+
+![](ChatGPT_honest.jpg)
+
 Find a satisfying solution
 
 ![](pebcak_fixed.png)
@@ -54,6 +58,10 @@ A parrot
 ![](ML_vs_parrot.jpg)
 
 ## Advantage or burden
+
+Whether AI is helpful or not, depends on correctness
+
+![](Coding_benefits_AI.jpg)
 
 AI as a tool can be very helpful if used correctly.
 But if we trust AI blindly, it can become a burder.
