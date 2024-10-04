@@ -1,8 +1,33 @@
 
 # Certifications
 
+Certifications may help with identifying skill-levels and knowledge gaps. For both the certification holder and client or (potential) employer, this may be helpful. Do keep in mind, that some people may be skilled at learning facts and taking exams but lack actual experience or ability to apply skills in practice. Also, some experienced people that are good at applying the needed skills in practice, may be weak at learning facts and passing exams. Bottom line is: an exam has false positives (the first category) and false negatives (the latter category) and it should not be a definitive reason to hire or not hire a person. This is especially important in the security field where qualified people are hard to find.
+
+* [ISACA](https://www.isaca.org/credentialing):
+  * [CISA](https://www.isaca.org/credentialing/cisa) Certified Information Systems Auditor
+  * [CISM](https://www.isaca.org/credentialing/cism) Certified Information Security Manager
+  * [CRISC](https://www.isaca.org/credentialing/crisc) Certified in Risk and Information Systems Control
+  * [CGEIT](https://www.isaca.org/credentialing/cgeit) Certified in the Governance of Enterprise IT
+  * [CDPSE](https://www.isaca.org/credentialing/cdpse) Certified Data Privacy Solutions Engineer
+  * [CCOA](https://www.isaca.org/credentialing/ccoa) Certified Cybersecurity Operations Analyst
+  * [CSX-P](https://www.isaca.org/credentialing/csx-p) Cybersecurity Practitioner
+  * [ITCA](https://www.isaca.org/credentialing/itca) Information Technology Certified Associate
+  * [CET](https://www.isaca.org/credentialing/cet) Certified in Emerging Technology
+* [ISC2](https://www.isc2.org/certifications)
+  * [CC](https://www.isc2.org/certifications/cc) Certified in Cybersecurity
+  * [CCSP](https://www.isc2.org/certifications/ccsp) Certified Cloud Security Professional
+  * [CISSP](https://www.isc2.org/certifications/cissp) Certified Information Systems Security Professional
+  * [CGRC](https://www.isc2.org/certifications/cgrc) Governance, Risk and Compliance Certification
+  * [ISSAP](https://www.isc2.org/certifications/issap) Information Systems Security Architecture Professional
+  * [ISSEP](https://www.isc2.org/certifications/issep) Information Systems Security Engineering Professional
+  * [ISSMP](https://www.isc2.org/certifications/issmp) Information Systems Security Management Professional
+  * [CSSLP](https://www.isc2.org/certifications/csslp) Certified Secure Software Lifecycle Professional
+  * [SSCP](https://www.isc2.org/certifications/sscp) Systems Security Certified Practitioner
+
+
+# Pentesting
+
 * [PWK](https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux/) - Penetration Testing with Kali Linux - $800,- including 30-day lab access & exam.
-* [CCISP](http://www.firebrandtraining.co.uk/uk/cissp.asp#fast-metro) - Certified Information Systems Security Professional
 
 
 ## CEH
