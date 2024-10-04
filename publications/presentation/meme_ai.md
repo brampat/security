@@ -1,10 +1,10 @@
 
-## Machine Learning & AI
+## Machine Learning, Deep Learning & AI
 <hr />
 
 --
 
-![](pics/meme/AI/AI.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 650px; left: 0px; top: 10px;"  -->
+![](pics/meme/AI/AI.jpeg)<!-- .element class="center-x" style="border:none; box-shadow:none; position: fixed; width: 650px; top: 10px;"  -->
 
 -- Notes --
 
@@ -18,7 +18,7 @@
 
 --
 
-![](pics/meme/AI/dog_cupcakes.jpg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 750px; left: 0px; top: 10px;"  -->
+![](pics/meme/AI/dog_cupcakes.jpg)<!-- .element class="center-x" style="border:none; box-shadow:none; position: fixed; width: 650px; top: 10px;"  -->
 
 -- Notes --
 
@@ -29,7 +29,7 @@
 
 --
 
-![](pics/meme/AI/bug_captcha.png)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 550px; left: 0px; top: 10px;"  -->
+![](pics/meme/AI/bug_captcha.png)<!-- .element class="center-x" style="border:none; box-shadow:none; position: fixed; width: 550px; top: 10px;"  -->
 
 -- Notes --
 
@@ -39,7 +39,33 @@
 
 --
 
-![](pics/meme/AI/turing_test.jpeg)<!-- .element style="border:none; box-shadow:none; position: fixed; width: 1250px; left: 0px; top: 10px;"  -->
+![](./pics/meme/AI/deep_learning.jpg)<!-- .element class="center-x" style="background:none; border:none; box-shadow:none; position: fixed; bottom: 10px; width: 600px;" -->
+
+--
+
+## Should we worry?
+<hr />
+
+![](./pics/meme/AI/making_friends_with_AI.png)<!-- .element class="center-x" style="background:none; border:none; box-shadow:none; position: fixed; bottom: 10px; width: 500px;" -->
+
+--
+
+![](./pics/meme/AI/AI_accepting_job.png)<!-- .element class="center-x" style="background:none; border:none; box-shadow:none; position: fixed; bottom: 10px; width: 600px;" -->
+
+--
+
+## Extrapolating data
+<hr />
+
+![](./pics/meme/AI/Extrapolating_data.png)<!-- .element class="center-x" style="background:none; border:none; box-shadow:none; position: fixed; bottom: 10px; width: 600px;" -->
+
+--
+
+![](./pics/meme/AI/Coding_benefits_AI.jpg)<!-- .element class="center-x" style="background:none; border:none; box-shadow:none; position: fixed; bottom: 10px; width: 700px;" -->
+
+--
+
+![](pics/meme/AI/turing_test.jpeg)<!-- .element class="center-x" style="border:none; box-shadow:none; position: fixed; width: 1250px; top: 10px;"  -->
 
 -- Notes --
 
