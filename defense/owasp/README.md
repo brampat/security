@@ -2,17 +2,16 @@
 
 For a combined graph overview see [here](graph.md), which includes:
 * OWASP Top 10 [Web Application Security Risks](https://owasp.org/www-project-top-ten/)
-* OWASP Top 10 [Mobile](https://github.com/OWASP/www-project-mobile-top-10)
+* OWASP Top 10 [Mobile](https://owasp.org/www-project-mobile-top-10/2023-risks/) ([GitHub](https://github.com/OWASP/www-project-mobile-top-10/blob/master/2023-risks/index.md))
 * OWASP Top 10 [Proactive Controls](https://owasp.org/www-project-proactive-controls/)
-* OWASP Top 10 [API Security](https://owasp.org/www-project-api-security/)
-* OWASP Top 10 [Kubernetes](https://owasp.org/www-project-kubernetes-top-ten/)
-* OWASP Top 10 [Docker](https://github.com/OWASP/www-project-docker-top-10)
-* OWASP Top 10 [Low Code](https://github.com/OWASP/www-project-top-10-low-code-no-code-security-risks)
-* OWASP Top 10 [CICD](https://github.com/OWASP/www-project-top-10-ci-cd-security-risks)
-* OWASP Top 10 [Thick Client](https://github.com/OWASP/www-project-thick-client-top-10)
-* OWASP Top 10 [Cloud Native Application](https://github.com/OWASP/Cloud-Native-Application-Security-Top-10)
+* OWASP Top 10 [API Security](https://owasp.org/www-project-api-security/) ([GitHub](https://github.com/OWASP/www-project-api-security/blob/master/index.md))
+* OWASP Top 10 [CICD](https://owasp.org/www-project-top-10-ci-cd-security-risks/) ([GitHub](https://github.com/OWASP/www-project-top-10-ci-cd-security-risks))
+* OWASP Top 10 [Kubernetes](https://owasp.org/www-project-kubernetes-top-ten/) ([GitHub](https://github.com/OWASP/www-project-kubernetes-top-ten/blob/main/index.md))
+* OWASP Top 10 [Docker](https://owasp.org/www-project-docker-top-10/) ([GitHub](https://github.com/OWASP/Docker-Security))
+* OWASP Top 10 [Low-Code / No-Code](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/) ([GitHub](https://github.com/OWASP/www-project-top-10-low-code-no-code-security-risks/blob/main/index.md))
+* OWASP Top 10 [Cloud Native Application](https://owasp.org/www-project-cloud-native-application-security-top-10/) ([GitHub](https://github.com/OWASP/Cloud-Native-Application-Security-Top-10))
 * OWASP Top 10 [Serverless](https://github.com/OWASP/Serverless-Top-10-Project)
-* OWASP Top 10 [Low-Code / No-Code](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/)
+* OWASP Top 10 [Thick Client](https://owasp.org/www-project-thick-client-top-10/) ([GitHub](https://github.com/OWASP/www-project-thick-client-top-10))
 * OWASP Top 10 [Card Game](https://github.com/OWASP/www-project-top-10-card-game)
 
 ## OWASP Projects Map
