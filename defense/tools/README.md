@@ -48,6 +48,8 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * [git-leaks](https://github.com/zricethezav/gitleaks)
 * gitrob
 * [git-secrets](https://github.com/awslabs/git-secrets) by AWS Labs
+* [github-secrets](https://github.com/neodyme-labs/github-secrets)
+* [gitlab-secrets](https://github.com/RichardoC/gitlab-secrets)
 * [Gitty leaks](https://github.com/kootenpv/gittyleaks)
 * OWASP Sedated
 * ThoughtWorks [Talisman](https://github.com/thoughtworks/talisman)
