@@ -279,12 +279,13 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * [CVE](https://cve.mitre.org/cve/) Common Vulnerability Enumeration by Mitre
 * [OpenCVE](https://www.opencve.io/)
 * [OSV](https://osv.dev/list) OpenSource Vulnerabilities
-* [Bug Alert](https://bugalert.org/)
+* [Bug Alert](https://bugalert.org/) (stopped posting after Oct 2023?)
 * [GSD](https://github.com/cloudsecurityalliance/gsd-database) Global Security Database
 * [PyPA](https://github.com/pypa/advisory-database) Advisory Database
 * [RustSec](https://github.com/RustSec/advisory-db) Advisory Database
 * CISA [Known Exploited Vulnerablity Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 * FIRST [EPSS](https://www.first.org/epss/) Exploit Prediction Scoring System
+* KNOW [Knowledge Now](https://know.netenrich.com/content/track/top-stories) by Netenrich
 
 ##### Aggregation
 * [Open Vulnerability Project](https://github.com/jeremylong/Open-Vulnerability-Project)
