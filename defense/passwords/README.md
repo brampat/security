@@ -645,3 +645,6 @@ Flaws in password managers often can only be exploited when the device has been 
 * [Best Hashing Algorithm](https://codesigningstore.com/what-is-the-best-hashing-algorithm)
 * [Secure Password Hashing](https://stackoverflow.com/questions/1841595/secure-password-hashing)
 
+### History
+* First password leak was at [MIT](https://www.wired.com/2012/01/computer-password/) in 1962
+* Earliest CVE with default password was [CVE-1999-0503](https://nvd.nist.gov/vuln/detail/CVE-1999-0503) in Oct, 1998
