@@ -66,6 +66,7 @@ independent from another request. So for example, there's no auto-save for the s
 
 
 ## Secure coding training  /teaching
+* OpenSSF [Developing Secure Software](https://training.linuxfoundation.org/training/developing-secure-software-lfd121/) (free)
 * [Hacksplaining](https://www.hacksplaining.com/) all common vulnerabilities with step-by-step hack-examples and defense with code examples
 * [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt on Pluralsight (free course)
 * [OWASP Secure coding practices](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)  quick reference guide
@@ -98,6 +99,7 @@ independent from another request. So for example, there's no auto-save for the s
   * [Common API security pitfalls](https://pragmaticwebsecurity.com/talks/commonapisecuritypitfalls)
   * [Taking security seriously](https://pragmaticwebsecurity.com/talks/takingsecurityseriously.html)
 * [Security Ninja's](https://github.com/cniemira/security-ninjas)
+* Github [Code Security](https://docs.github.com/en/code-security)
 
 
 ## Microsoft Security Webinars
