@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>OWASP Top 10 relations</title>
+    </head>
+    <body>
+        <div id="help">
+            Zoom with mouse-scroll, move graph with mouse-drag, enable / disable node-types with checkboxes
+        </div>
+        <div id="controls">
+            <label><input checked id="web" type="checkbox" class="filter"> OWASP Top 10 Web</label>
+            <label><input checked id="proactive" type="checkbox" class="filter"> OWASP Top 10 Proactive controls</label>
+            <label><input checked id="mobile" type="checkbox" class="filter"> OWASP Top 10 Mobile</label>
+            <label><input checked id="mitigations" type="checkbox" class="filter"> Mitigations</label>
+            <label><input checked id="toolsTechniques" type="checkbox" class="filter"> Tools & Techniques</label>
+        </div>
+        <div id="graph-container"></div>
+        <script src="jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </body>
+</html>

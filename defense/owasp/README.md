@@ -1,9 +1,11 @@
 # OWASP
 
-For a combined graph overview see [here](graph.md), which includes:
+For a combined graph overview see [here](./OWASP_graph/index.html), which includes:
 * OWASP Top 10 [Web Application Security Risks](https://owasp.org/www-project-top-ten/)
 * OWASP Top 10 [Mobile](https://owasp.org/www-project-mobile-top-10/2023-risks/) ([GitHub](https://github.com/OWASP/www-project-mobile-top-10/blob/master/2023-risks/index.md))
 * OWASP Top 10 [Proactive Controls](https://owasp.org/www-project-proactive-controls/)
+
+Other OWASP Top 10's:
 * OWASP Top 10 [API Security](https://owasp.org/www-project-api-security/) ([GitHub](https://github.com/OWASP/www-project-api-security/blob/master/index.md))
 * OWASP Top 10 [CICD](https://owasp.org/www-project-top-10-ci-cd-security-risks/) ([GitHub](https://github.com/OWASP/www-project-top-10-ci-cd-security-risks))
 * OWASP Top 10 [Kubernetes](https://owasp.org/www-project-kubernetes-top-ten/) ([GitHub](https://github.com/OWASP/www-project-kubernetes-top-ten/blob/main/index.md))

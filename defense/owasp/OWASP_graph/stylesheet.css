@@ -1,0 +1,50 @@
+#graph-container {
+    /*width: 800px;*/
+    /*height: 600px;*/
+    border: 1px solid #ccc;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+body {
+    font: 20px Arial, Helvetica, sans-serif;
+}
+
+#controls label {
+    margin-right: 10px;
+}
+
+.node circle.container {
+    width: 40px;
+    height: 60px;
+    x: -20;
+    y: -30;
+    /*fill: #ccc;*/
+    stroke-width: 1.5px;
+}
+
+.node circle.web {
+    fill: #e88;
+}
+
+.node circle.proactive {
+    fill: #8e8;
+}
+
+.node circle.mitigations {
+    fill: #9df;
+}
+
+.node circle.toolsTechniques {
+    fill: #88e;
+}
+
+.node circle.mobile {
+    fill: #da6;
+}
+
+text {
+    pointer-events: none;
+}
