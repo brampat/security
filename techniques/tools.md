@@ -5,6 +5,10 @@
 * [Back track Linux](https://www.backtrack-linux.org/): Precursor to Kali Linux (since 2013), Ubuntu based.
 * [MacChanger](https://www.hackingtutorials.org/general-tutorials/mac-address-spoofing-with-macchanger/): Change mac-addresses of your network interfaces to allow for anonimization or spoofing [https://www.youtube.com/watch?v=7nF2BAfWUEg&t=12469s](Basic tutorial on 3:34:05)
 
+
+* [CyberChef](https://github.com/gchq/CyberChef): WebApp for encoding (XOR, Base64), encryption (AES, DES, Blowfish), creating binary and hexdumps, compression and decompression, hashes and checksums, IPv6 and X.509 parsing
+* 
+
 ## Information gathering
 * [You Get Signal](https://www.yougetsignal.com/tools/web-sites-on-web-server/): Reverse IP domain check
 
