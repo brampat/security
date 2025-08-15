@@ -290,6 +290,10 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 ##### Aggregation
 * [Open Vulnerability Project](https://github.com/jeremylong/Open-Vulnerability-Project)
 
+##### Signing
+* [SigStore](https://www.sigstore.dev/)
+  * [Google Blog](https://security.googleblog.com/2021/03/introducing-sigstore-easy-code-signing.html)
+* [Chalk](https://chalkproject.io/) code and test attestation by CrashOverride
 
 #### Tools
 * [List](https://owasp.org/www-community/Component_Analysis) of tools, curated by OWASP, including licence indicator (OpenSource, Freemium, Commercial)
@@ -301,6 +305,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
   * Nexus [Repository](https://www.sonatype.com/products/nexus-repository)
   * Nexus [Lifecycle Foundation](https://www.sonatype.com/products/lifecycle-foundation)
   * Nexus [Firewall](https://www.sonatype.com/products/firewall)
+  * Nexus [IQ Server](https://help.sonatype.com/en/sonatype-iq-server.html)
 * [OSSIndex](https://ossindex.sonatype.org/) supports numerous ecosystems and integrates with several toolchains
   * Maven [ossindex-maven-plugin](https://sonatype.github.io/ossindex-maven/maven-plugin/)
 * [Snyk](https://snyk.io/) scans [support](https://snyk.io/docs/) Ruby, Java, Python, .NET, PHP, NodeJS and others
@@ -331,6 +336,12 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
   * [Bundler-Audit](https://github.com/rubysec/bundler-audit)
   * Ruby & Rails [Hakiri](https://hakiri.io/)
 * Contrast [SCA](https://www.contrastsecurity.com/contrast-sca)
+
+#### Dependency Update automation
+* [Dependabot](https://github.com/dependabot) for GitHub
+* [Renovate](https://docs.renovatebot.com/) for GitHub, GitLab, Bitbucket, Azure DevOps
+* GitLab [Dependency Scanning](https://docs.gitlab.com/user/application_security/dependency_scanning/) for GitLab Ultimate
+* [Snyk](https://docs.snyk.io/scan-with-snyk/pull-requests/snyk-pull-or-merge-requests) for GitHub, GitLab, Bitbucket, Azure DevOps
 
 #### SBOM tools
 * OWASP [CycloneDX](https://github.com/CycloneDX/cyclonedx-maven-plugin)
@@ -436,6 +447,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * Microsoft Azure Advisor
 * Security Monkey
 * OSQuery
+* [Checkov](https://www.checkov.io/)
 
 ### Secrets Management
 * Comparison on [GeekFlare](https://geekflare.com/secret-management-software/)
