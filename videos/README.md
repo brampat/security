@@ -31,6 +31,7 @@
 ## Why hackers?
 * [Hackers: the internet's immune system](https://www.youtube.com/watch?v=erCAp_Bd0AQ) by [Keren Elazari](https://twitter.com/k3r3n3)
 * [Why I teach people how to hack](https://www.youtube.com/watch?v=KwJyKmCbOws) by Ýmir Vigfússon
+* [Joe Grand](https://www.youtube.com/watch?v=VVJldn_MmMY&t=928s) from Cult of the Dead Cow at the 1998 United States Senate confirms they can take the entire internet offline in minutes
 
 ## Relevant Channels
 * [Tom Scott on Computerphile](https://www.youtube.com/playlist?list=PLzH6n4zXuckqmf_xUcvU5caZVoctP2ehL) with lots of security related video's
