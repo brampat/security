@@ -12,25 +12,31 @@ This page contains a collection of (links to) funny infosec related stories.
 
 In [this](https://www.bulletproof.co.uk/blog/expo-hack) blog Tom Wyatt of Bulletproof (UK) tells about printable Exhibition badges with QR-codes that are vulnerable to some injection. What could possibly go wrong?
 
-
 ## Wasting Scam-callers time
-
+* Darknet Diaries [143](https://darknetdiaries.com/episode/143/): Jim Hates Scams with [Jim Browning](https://www.youtube.com/c/JimBrowning)
 * Bart Roos: https://www.youtube.com/watch?v=u5MttVF0A10
-* [Scammer Payback](https://www.youtube.com/@ScammerPayback) on YouTube
-  * The People's [Call Center](https://www.youtube.com/watch?v=_RhYmx1xbY4) 2022 Stream
-  * Anti-Scam [Call Center](https://www.youtube.com/watch?v=_u_JTddAYes) 2023
-  * [100 People](https://www.youtube.com/watch?v=jUHFpfVPUYc) vs Scammers 2024
-  * The People's [Call Center](https://www.youtube.com/watch?v=scI0ayIZQLg)(2025)
-  * The People's [Call Center](https://www.youtube.com/watch?v=vmSuI3bX5sU)(2025) through [IRLRosie](https://www.youtube.com/@irlrosie)
-* [Kitboga](https://www.youtube.com/@KitbogaShow) on YouTube
-  * [Impossible Maze](https://www.youtube.com/watch?v=dWzz3NeDz3E)
-  * [Impossible Password Game](https://www.youtube.com/watch?v=knhQ2f8anT8)
-  * [Captcha](https://www.youtube.com/watch?v=S89fT5yPbpk)
-  * [Scavenger Hunt](https://www.youtube.com/watch?v=N8E8n0QorOQ)
-  * [Bot Army](https://www.youtube.com/watch?v=ZDpo_o7dR8c)
+
+### Scammer Payback
+[Scammer Payback](https://www.youtube.com/@ScammerPayback) on YouTube
+* The People's [Call Center](https://www.youtube.com/watch?v=_RhYmx1xbY4) 2022 Stream
+* Anti-Scam [Call Center](https://www.youtube.com/watch?v=_u_JTddAYes) 2023
+* [100 People](https://www.youtube.com/watch?v=jUHFpfVPUYc) vs Scammers 2024
+* The People's [Call Center](https://www.youtube.com/watch?v=scI0ayIZQLg)(2025)
+* The People's [Call Center](https://www.youtube.com/watch?v=vmSuI3bX5sU)(2025) through [IRLRosie](https://www.youtube.com/@irlrosie)
+
+### Kitboga
+[Kitboga](https://www.youtube.com/@KitbogaShow) on YouTube
+* [Impossible Maze](https://www.youtube.com/watch?v=dWzz3NeDz3E)
+* [Impossible Password Game](https://www.youtube.com/watch?v=knhQ2f8anT8)
+* [Captcha](https://www.youtube.com/watch?v=S89fT5yPbpk)
+* [Scavenger Hunt](https://www.youtube.com/watch?v=N8E8n0QorOQ)
+* [Bot Army](https://www.youtube.com/watch?v=ZDpo_o7dR8c)
 
 ### James Veitch
-
+James Veitch is an English comedian, mostly known for his comedy performances using slideshows and video effects that show interactions with authors of scam emails (known as scam baiting).
+* [TED Talk](https://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email): This is what happens when you reply to spam email (December 2015)
+* [TED Talk](https://www.ted.com/talks/james_veitch_the_agony_of_trying_to_unsubscribe): The agony of trying to unsubscribe (June 2016)
+* [TED Talk](https://www.youtube.com/watch?v=7pPqRNk2Qhw): More adventures in replying to spam (2016)
 * [TedX talk](https://www.youtube.com/watch?v=Yw-gpbZCIO4) Gold (2017)
 * Scamalot video [playlist](https://www.youtube.com/playlist?list=PLjaZD_N3WCf-SzY9lQqsUNbubksD_KCPT)
     * [Gold](www.youtube.com/watch?v=-9RL4RATwoY)
