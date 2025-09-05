@@ -109,6 +109,8 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * Gitlab-CI [SAST](https://docs.gitlab.com/ee/user/application_security/sast/index.html)
 * Snyk [Code](https://snyk.io/product/snyk-code/)
 * Contrast [Scan](https://www.contrastsecurity.com/contrast-scan)
+* [SAST Sweep](https://github.com/chebuya/sastsweep): Tool to scan opensource codebases at scale
+* [Aikido](https://www.aikido.dev/scanners/static-code-analysis-sast) SAST
 
 #### Java
 * [FindSecurityBugs](http://h3xstream.github.io/find-sec-bugs/)
@@ -187,6 +189,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * [GoCD](https://www.gocd.org/)
 * [Spinnaker](https://spinnaker.io/)
 
+
 ### Container Management
 
 #### Risks
@@ -251,6 +254,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * Snyk [Container](https://snyk.io/product/container-vulnerability-management/)
 * [Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud) (formerly Twistlock)
 * JFrog
+* [Aikido](https://www.aikido.dev/scanners/container-image-scanning) Container Scanning
 
 #### Vulnerability Scanning
 * Outpost24
@@ -336,6 +340,9 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
   * [Bundler-Audit](https://github.com/rubysec/bundler-audit)
   * Ruby & Rails [Hakiri](https://hakiri.io/)
 * Contrast [SCA](https://www.contrastsecurity.com/contrast-sca)
+* [Aikido](https://www.aikido.dev/scanners/open-source-dependency-scanning-sca) SCA
+* [Aikido](https://www.aikido.dev/scanners/outdated-eol-software) Outdated & EoL
+* [Aikido](https://www.aikido.dev/scanners/malware-detection-in-dependencies) Supply Chain Security
 
 #### Dependency Update automation
 * [Dependabot](https://github.com/dependabot) for GitHub
@@ -350,9 +357,9 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * [Fossa](https://fossa.com/pricing)
 * [MergeBase](https://mergebase.com/try/)
 * [Bomber](https://github.com/devops-kung-fu/bomber) scans SBoMs for security vulnerabilities
+* [Aikido](https://www.aikido.dev/scanners/open-source-license-risk) Open-Source license risk & SBOMs
 * [SBOM Operator](https://github.com/ckotzbauer/sbom-operator) catalogues all images of a Kubernetes cluster to multiple formats
 * [5 tools](https://mergebase.com/blog/best-tools-for-generating-sbom/) for generating SBOMs
-
 
 ## Acceptance
 
@@ -362,6 +369,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * Snyk [Infrastructure as Code](https://snyk.io/product/infrastructure-as-code-security/)
 * Aqua [Trivy](https://aquasecurity.github.io/trivy/)
 * Pulumi
+* [Aikido](https://www.aikido.dev/scanners/infrastructure-as-a-code-iac) IaC misconfigurations
 
 #### Guides
 * Comparison [Terraform vs Vagrant](https://www.trustradius.com/compare-products/terraform-vs-vagrant)
@@ -380,7 +388,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * Comparison [Puppet vs Chef](https://logz.io/blog/chef-vs-puppet/) and [Revisited](https://www.upguard.com/articles/puppet-vs.-chef-revisited)
 * Comparison [Ansible vs Saltstack](https://www.upguard.com/articles/ansible-vs-salt)
 * Comparison [Ansible vs Terraform](https://linuxacademy.com/blog/devops/ansible-vs-terraform-fight/)
- 
+
 #### Immutable Infrastructure
 * Docker
 * RKT
@@ -419,6 +427,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * Snyk [Cloud](https://snyk.io/product/snyk-cloud/)
 * Contrast [Serverless Application Security](https://www.contrastsecurity.com/contrast-serverless)
 * Coalfire [Cloud Security](https://www.coalfire.com/solutions/cloud-security)
+* [Aikido](https://www.aikido.dev/scanners/cloud-posture-management-cspm) Misconfigured Cloud Resources
 
 ### Dynamic Application Security Testing (DAST)
 * OWASP [ZAP](https://www.zaproxy.org/)
@@ -427,6 +436,9 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * [OpenVAS](http://www.openvas.org/): OpenSource Vulnerability scanner for VM, Server OS or host machines
 * [Netsparker](https://www.netsparker.com) (5k+ / year): Web app security scanner
 * [Acunetix](https://www.acunetix.com/web-vulnerability-scanner/) (4.5k+ / year): Web app security scanner
+* [Aikido](https://www.aikido.dev/scanners/surface-monitoring-dast) DAST
+* [Aikido](https://www.aikido.dev/scanners/api-scanning) API Scannning
+* [Checkmarx](https://checkmarx.com/checkmarx-dast/#features) DAST
 
 #### Fuzz-testing
 * OWASP ZAP
@@ -461,6 +473,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * Square [Keywhiz](https://square.github.io/keywhiz/)
 * Lyft [Confidant](https://lyft.github.io/confidant/)
 * [Strongbox](https://strongboxsafe.com/)
+* [Aikido](https://www.aikido.dev/scanners/secrets-detection) Secrets Detection
 
 ### Cloud Secrets Management
 * AWS KMS
@@ -510,9 +523,9 @@ WAF or Web Application Firewalls protect web applications from generic attacks, 
 * [ModSecurity](https://www.modsecurity.org/)
   * ModSecurity [GitHub](https://github.com/SpiderLabs/ModSecurity)
   * OWASP ModSecurity [Core Rule Set](https://owasp.org/www-project-modsecurity-core-rule-set/) Project
+* [Aikido](https://www.aikido.dev/zen)
 
 ### Web Application and API Protection (WAAP)
-
 
 ## Operation
 
@@ -640,3 +653,4 @@ WAF or Web Application Firewalls protect web applications from generic attacks, 
 * [DevSecOps Reference Architecture](https://www.sonatype.com/resources/white-paper-test-drive-a-devsecops-reference-architecture) by SonaType (register for free)
 * OWASP [Application Security Wayfinder](https://owasp.org/www-project-integration-standards/)
 * [Top DevOps Tools](https://medium.com/devops-mojo/top-useful-and-most-popular-devops-tools-best-widely-used-common-open-source-devops-gitops-tools-b4a674e00f15)
+
