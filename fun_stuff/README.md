@@ -1,5 +1,6 @@
 # Fun stuff:
 * [Tesla Sentry mode](https://www.youtube.com/watch?v=l5G4fZWYM4U) protecting your cookies
+* [XSS on Banking sites](https://www.youtube.com/watch?v=K0noqLisW_c) in the Netherlands (2015)
 
 ## Authentication
 All things [authentication](authentication/README.md)
