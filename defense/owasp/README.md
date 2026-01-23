@@ -25,9 +25,17 @@ The [Application Security Wayfinder](https://owasp.org/www-project-integration-s
 
 The OWASP Top Ten provides a powerful awareness document for web application security. The OWASP Top Ten represents a broad consensus about what the most critical web application security flaws are.
 
-Sources on [GitHub](https://github.com/OWASP/Top10), which include version 2013 and 2017
+Full description of all current and previous items on the list (starting from 2003) is located [here](./owasp_top10.md).
+
+Sources on [GitHub](https://github.com/OWASP/Top10)
 
 ### Versions:
+
+#### 2025
+* Main page on [OWASP](https://owasp.org/Top10/2025/)
+
+#### 2021
+* Main page on [OWASP](https://owasp.org/Top10/2021/)
 
 #### 2017
 * Main page on [OWASP](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project#tab=Main)
