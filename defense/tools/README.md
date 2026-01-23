@@ -343,6 +343,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 * [Aikido](https://www.aikido.dev/scanners/open-source-dependency-scanning-sca) SCA
 * [Aikido](https://www.aikido.dev/scanners/outdated-eol-software) Outdated & EoL
 * [Aikido](https://www.aikido.dev/scanners/malware-detection-in-dependencies) Supply Chain Security
+* [Socket.dev](https://socket.dev/) Go, Java, JavaScript / TypeScript, Python, Ruby, .NET
 
 #### Dependency Update automation
 * [Dependabot](https://github.com/dependabot) for GitHub
