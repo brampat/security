@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="owasp_samm.css">
+
+</head>
+<body>
+
+<div class="diagram">
+
+  <!-- 1. GOVERNANCE -->
+  <div class="bf gov-bf">
+    <div class="bf-header gov-hdr">
+      <span class="name">Governance</span>
+    </div>
+    <div class="bf-body">
+      <div class="streams-header"><div class="stream">Stream A</div><div class="stream">Stream B</div></div>
+
+      <div class="practice gov-pr">
+        <div class="practice-header gov-ph">Strategy &amp; Metrics</div>
+        <div class="practice-items">
+          <div class="tool gov-t" onclick="sendPrompt('Explain how to create and promote an SSDLC strategy across the organisation')">
+            <span class="tname">Create &amp; Promote</span>
+            <span class="tsub G-SM-A"></span>
+          </div>
+          <div class="tool gov-t" onclick="sendPrompt('What SSDLC metrics should we define and track for measuring security programme effectiveness?')">
+            <span class="tname">Measure &amp; Improve</span>
+            <span class="tsub G-SM-B"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice gov-pr">
+        <div class="practice-header gov-ph">Policy &amp; Compliance</div>
+        <div class="practice-items">
+          <div class="tool gov-t" onclick="sendPrompt('What clear security policies and standards should be defined for in-house software development?')">
+            <span class="tname">Policy &amp; Standards</span>
+            <span class="tsub G-PC-A"></span>
+          </div>
+          <div class="tool gov-t" onclick="sendPrompt('How do we map our software security controls to NIS2 compliance requirements?')">
+            <span class="tname">Compliance</span>
+            <span class="tsub G-PC-B"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice gov-pr">
+        <div class="practice-header gov-ph">Education &amp; Guidance</div>
+        <div class="practice-items">
+          <div class="tool gov-t" onclick="sendPrompt('How should we set up a Security Dojo training and awareness programme for developers?')">
+            <span class="tname">Training &amp; Awareness</span>
+            <span class="tsub G-EG-A"></span>
+          </div>
+          <div class="tool gov-t" onclick="sendPrompt('How do we build a Security Champions programme to embed security culture in development teams?')">
+            <span class="tname">Org. &amp; Culture</span>
+            <span class="tsub G-EG-B"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. DESIGN -->
+  <div class="bf des-bf">
+    <div class="bf-header des-hdr">
+      <span class="name">Design</span>
+    </div>
+    <div class="bf-body">
+      <div class="streams-header"><div class="stream">Stream A</div><div class="stream">Stream B</div></div>
+
+      <div class="practice des-pr">
+        <div class="practice-header des-ph">Threat Assessment</div>
+        <div class="practice-items">
+          <div class="tool des-t" onclick="sendPrompt('Explain STRIDE threat modelling as part of OWASP SAMM Threat Assessment')">
+            <span class="tname">Threat modelling</span>
+            <span class="tsub D-TA-A"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice des-pr">
+        <div class="practice-header des-ph">Security Requirements</div>
+        <div class="practice-items">
+          <div class="tool des-t" onclick="sendPrompt('How does OWASP ASVS mapping work as part of SAMM Security Requirements?')">
+            <span class="tname">ASVS requirements</span>
+            <span class="tsub D-SR-A"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice des-pr">
+        <div class="practice-header des-ph">Security Architecture</div>
+        <div class="practice-items">
+          <div class="tool des-t" onclick="sendPrompt('What security principles should guide secure architecture design for cloud-hosted software?')">
+            <span class="tname">Architecture Design</span>
+            <span class="tsub D-SA-A"></span>
+          </div>
+          <div class="tool des-t" onclick="sendPrompt('What common security components should be part of a shared tech stack to avoid reinventing security controls?')">
+            <span class="tname">Tech Stack</span>
+            <span class="tsub D-SA-B"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. IMPLEMENTATION -->
+  <div class="bf imp-bf">
+    <div class="bf-header imp-hdr">
+      <span class="name">Implementation</span>
+    </div>
+    <div class="bf-body">
+      <div class="streams-header"><div class="stream">Stream A</div><div class="stream">Stream B</div></div>
+
+      <div class="practice imp-pr">
+        <div class="practice-header imp-ph">Secure Build</div>
+        <div class="practice-items">
+          <div class="tool imp-t" onclick="sendPrompt('How should the automated build process be secured in Azure DevOps?')">
+            <span class="tname">Build Process</span>
+            <span class="tsub I-SB-A"></span>
+          </div>
+          <div class="tool imp-t" onclick="sendPrompt('How does SCA with OWASP Dependency-Check and Dependency-Track work in a CI pipeline?')">
+            <span class="tname">SCA</span>
+            <span class="tsub I-SB-B"></span>
+          </div>
+          <div class="tool imp-t" onclick="sendPrompt('How do we generate and maintain an SBOM using Trivy and OWASP Dependency-Track?')">
+            <span class="tname">SBOM</span>
+            <span class="tsub I-SB-A"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice imp-pr">
+        <div class="practice-header imp-ph">Secure Deployment</div>
+        <div class="practice-items">
+          <div class="tool imp-t" onclick="sendPrompt('How should automated deployment pipelines be secured in Azure DevOps?')">
+            <span class="tname">Depl. Process</span>
+            <span class="tsub I-SD-A" />
+          </div>
+          <div class="tool imp-t" onclick="sendPrompt('How do we manage secrets securely using Azure Key Vault and git-secrets in the deployment pipeline?')">
+            <span class="tname">Secrets</span>
+            <span class="tsub I-SD-B"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice imp-pr">
+        <div class="practice-header imp-ph">Defect Management</div>
+        <div class="practice-items">
+          <div class="tool imp-t" onclick="sendPrompt('How does SonarQube quality gate support defect management in the CI pipeline?')">
+            <span class="tname">Code quality gate</span>
+            <span class="tsub I-DM-A"></span>
+          </div>
+          <div class="tool imp-t" onclick="sendPrompt('How do we use DefectDojo for defect tracking across security findings?')">
+            <span class="tname">Defect Tracking</span>
+            <span class="tsub I-DM-B"></span>
+          </div>
+          <div class="tool imp-t" onclick="sendPrompt('How do we use DefectDojo to track metrics and feed security findings back to development teams?')">
+            <span class="tname">Metrics &amp; Feedback</span>
+            <span class="tsub I-DM-A"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. VERIFICATION -->
+  <div class="bf ver-bf">
+    <div class="bf-header ver-hdr">
+      <span class="name">Verification</span>
+    </div>
+    <div class="bf-body">
+      <div class="streams-header"><div class="stream">Stream A</div><div class="stream">Stream B</div></div>
+
+      <div class="practice ver-pr">
+        <div class="practice-header ver-ph">Architecture Assessment</div>
+        <div class="practice-items">
+          <div class="tool ver-t" onclick="sendPrompt('How does periodic security review and threat model refresh work as an architecture assessment?')">
+            <span class="tname">Architecture Validation</span>
+            <span class="tsub V-AA-A"></span>
+          </div>
+          <div class="tool ver-t" onclick="sendPrompt('How does CSPM with Microsoft Defender for Cloud support architecture assessment?')">
+            <span class="tname">Architecture Mitigation</span>
+            <span class="tsub V-AA-B"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice ver-pr">
+        <div class="practice-header ver-ph">Requirements-driven Testing</div>
+        <div class="practice-items">
+          <div class="tool ver-t" onclick="sendPrompt('How do we perform control verification through secure code review as a requirements-driven test?')">
+            <span class="tname">Control Verification</span>
+            <span class="tsub V-RT-A"></span>
+          </div>
+          <div class="tool ver-t" onclick="sendPrompt('How does DAST with OWASP ZAP support requirements-driven testing in a CI/CD pipeline?')">
+            <span class="tname">DAST</span>
+            <span class="tsub V-RT-B"></span>
+          </div>
+          <div class="tool ver-t" onclick="sendPrompt('How do we use OSS-Fuzz and ZAP for abuse testing and fuzzing?')">
+            <span class="tname">Misuse / Abuse Testing</span>
+            <span class="tsub V-RT-A"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice ver-pr">
+        <div class="practice-header ver-ph">Security Testing</div>
+        <div class="practice-items">
+          <div class="tool ver-t" onclick="sendPrompt('How do we use Semgrep and Fortify for SAST and edge case testing?')">
+            <span class="tname">SAST</span>
+            <span class="tsub V-ST-A"></span>
+          </div>
+          <div class="tool ver-t" onclick="sendPrompt('How does DAST through penetration testing and Nessus fit into the security testing practice?')">
+            <span class="tname">DAST</span>
+            <span class="tsub V-ST-B"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. OPERATIONS -->
+  <div class="bf ops-bf">
+    <div class="bf-header ops-hdr">
+      <span class="name">Operations</span>
+    </div>
+    <div class="bf-body">
+      <div class="streams-header"><div class="stream">Stream A</div><div class="stream">Stream B</div></div>
+
+      <div class="practice ops-pr">
+        <div class="practice-header ops-ph">Incident Management</div>
+        <div class="practice-items">
+          <div class="tool ops-t" onclick="sendPrompt('How does log aggregation with Dynatrace support incident management for Azure-hosted software?')">
+            <span class="tname">Log Aggregation</span>
+            <span class="tsub O-IM-A"></span>
+          </div>
+          <div class="tool ops-t" onclick="sendPrompt('How do we implement an incident response process using OTSM for software security incidents?')">
+            <span class="tname">Incident Response</span>
+            <span class="tsub O-IM-B"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice ops-pr">
+        <div class="practice-header ops-ph">Environment Management</div>
+        <div class="practice-items">
+          <div class="tool ops-t" onclick="sendPrompt('How do we harden environments using immutable minimal containers as a security control?')">
+            <span class="tname">Configuration Hardening</span>
+            <span class="tsub O-EM-A"></span>
+          </div>
+          <div class="tool ops-t" onclick="sendPrompt('How do we use Renovate for automated patching and dependency updating in Azure DevOps?')">
+            <span class="tname">Patching &amp; Updating</span>
+            <span class="tsub O-EM-B"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice ops-pr">
+        <div class="practice-header ops-ph">Operational Management</div>
+        <div class="practice-items">
+          <div class="tool ops-t" onclick="sendPrompt('How do we automate decommissioning and inventory management into a CMDB for software assets?')">
+            <span class="tname">Decommissioning</span>
+            <span class="tsub O-OM-A"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="legend">
+  <div class="leg-item"><div class="leg-dot gov-dot"></div>Governance</div>
+  <div class="leg-item"><div class="leg-dot des-dot"></div>Design</div>
+  <div class="leg-item"><div class="leg-dot imp-dot"></div>Implementation</div>
+  <div class="leg-item"><div class="leg-dot ver-dot"></div>Verification</div>
+  <div class="leg-item"><div class="leg-dot ops-dot"></div>Operations</div>
+  <div class="leg-item legend-note">Click any item for detail</div>
+</div>
+
+<script src="owasp_samm.js" defer></script>
+
+</body>
+</html>

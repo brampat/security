@@ -1,0 +1,224 @@
+[
+  {
+    "bf": "gov",
+    "title": "Strategy & Metrics",
+    "id": "strategy-metrics",
+    "order": 1,
+    "tools": [
+      { "tname": "Create & Promote", "label": "G-SM-A", "name": "SSDLC Strategy", "prompt": "Explain how to create and promote an SSDLC strategy across the organisation" },
+      { "tname": "Measure & Improve", "label": "G-SM-B", "name": "Define and use SSDLC metrics", "prompt": "What SSDLC metrics should we define and track for measuring security programme effectiveness?" }
+    ]
+  },
+  {
+    "bf": "gov",
+    "title": "Policy & Compliance",
+    "id": "policy-compliance",
+    "order": 2,
+    "tools": [
+      { "tname": "Policy & Standards", "label": "G-PC-A", "name": "Clear policies", "prompt": "What clear security policies and standards should be defined for in-house software development?" },
+      { "tname": "Compliance", "label": "G-PC-B", "name": "Map SSDLC Metrics to NIS2", "prompt": "How do we map our software security controls to NIS2 compliance requirements?" }
+    ]
+  },
+  {
+    "bf": "gov",
+    "title": "Education & Guidance",
+    "id": "education-guidance",
+    "order": 3,
+    "tools": [
+      { "tname": "Training & Awareness", "label": "G-EG-A", "name": "Security Dojo", "prompt": "How should we set up a Security Dojo training and awareness programme for developers?" },
+      { "tname": "Org. & Culture", "label": "G-EG-B", "name": "Security Champions", "prompt": "How do we build a Security Champions programme to embed security culture in development teams?" }
+    ]
+  },
+
+  {
+    "bf": "des",
+    "title": "Threat Assessment",
+    "id": "threat-assessment",
+    "order": 1,
+    "tools": [
+      { "tname": "Threat modelling", "label": "D-TA-A", "name": "STRIDE", "prompt": "TODO:" },
+      { "tname": "Threat modelling", "label": "D-TA-A", "name": "DREAD", "prompt": "TODO:" },
+      { "tname": "Threat modelling", "label": "D-TA-A", "name": "PASTA", "prompt": "TODO:" },
+      { "tname": "Threat modelling", "label": "D-TA-A OSS", "name": "OWASP Threat Dragon", "prompt": "TODO:" },
+      { "tname": "Threat modelling", "label": "D-TA-A Enterprise", "name": "IRIUS Automated Threat Modelling", "prompt": "See [IRIUS Risk](https://www.iriusrisk.com/threat-modeling-platform)" },
+      { "tname": "Threat modelling", "label": "D-TA-A Enterprise", "name": "ThreadModeler", "prompt": "[ThreadModeler](https://threatmodeler.com/)" },
+      { "tname": "Threat modelling", "label": "D-TA-A Enterprise", "name": "Devici", "prompt": "[Devici](https://www.securitycompass.com/devici/)" }
+
+    ]
+  },
+  {
+    "bf": "des",
+    "title": "Security Requirements",
+    "id": "security-requirements",
+    "order": 2,
+    "tools": [
+      { "tname": "ASVS requirements", "label": "D-SR-A", "name": "OWASP ASVS based Security requirements", "prompt": "How does OWASP ASVS mapping work as part of SAMM Security Requirements?" }
+    ]
+  },
+  {
+    "bf": "des",
+    "title": "Security Architecture",
+    "id": "security-architecture",
+    "order": 3,
+    "tools": [
+      { "tname": "Architecture Design", "label": "D-SA-A", "name": "Security Principles", "prompt": "What security principles should guide secure architecture design for cloud-hosted software?" },
+      { "tname": "Tech Stack", "label": "D-SA-B", "name": "Common Security Components", "prompt": "What common security components should be part of a shared tech stack to avoid reinventing security controls?" }
+    ]
+  },
+
+  {
+    "bf": "imp",
+    "title": "Secure Build",
+    "id": "secure-build",
+    "order": 1,
+    "tools": [
+      { "tname": "Build Process", "label": "I-SB-A", "name": "Automated Builds", "prompt": "How should the automated build process be secured in Azure DevOps?" },
+      { "tname": "SBOM", "label": "I-SB-A", "name": "Trivy", "prompt": "How do we generate and maintain an SBOM using Trivy and OWASP Dependency-Track?" },
+      { "tname": "SBOM", "label": "I-SB-A", "name": "OWASP Dependency Track", "prompt": "How do we generate and maintain an SBOM using Trivy and OWASP Dependency-Track?" },
+      { "tname": "SCA", "label": "I-SB-B", "name": "OWASP Dep Check", "prompt": "How does SCA with OWASP Dependency-Check and Dependency-Track work in a CI pipeline?" }
+    ]
+  },
+  {
+    "bf": "imp",
+    "title": "Secure Deployment",
+    "id": "secure-deployment",
+    "order": 2,
+    "tools": [
+      { "tname": "Depl. Process", "label": "I-SD-A", "name": "Automated Deployments", "prompt": "How should automated deployment pipelines be secured in Azure DevOps?" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Ansible Vault", "prompt": "" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "HashiCorp Vault", "prompt": "[HashiCorp Vault](https://developer.hashicorp.com/vault)" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Blackbox", "prompt": "" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Chef Vault", "prompt": "" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Docker Secrets", "prompt": "[Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Pinterest Knox", "prompt": "[Pinterest Knox](https://github.com/pinterest/knox)" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Akeyless Vault", "prompt": "[Akeyless Vault](https://www.akeyless.io/secrets-management/)" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Square Keywhiz", "prompt": "[Square Keywhiz](https://square.github.io/keywhiz/)" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Lyft Confidant", "prompt": "[Lyft Confidant](https://lyft.github.io/confidant/)" },
+      { "tname": "Secrets Management", "label": "I-SD-B", "name": "Strongbox", "prompt": "[Strongbox](https://strongboxsafe.com/)" },
+      { "tname": "Cloud Secrets Management", "label": "I-SD-B", "name": "Azure Key Vault", "prompt": "[Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)" },
+      { "tname": "Cloud Secrets Management", "label": "I-SD-B", "name": "AWS KMS", "prompt": "" },
+      { "tname": "Cloud Secrets Management", "label": "I-SD-B", "name": "AWS Secrets Manager", "prompt": "[AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)" },
+      { "tname": "Cloud Secrets Management", "label": "I-SD-B", "name": "Google Cloud KMS", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "Aikido Secrets Detection", "prompt": "[Aikido Secrets Detection](https://www.aikido.dev/code/secrets-detection)" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "git-secrets", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "Trivy", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "detect-secrets", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "git-all-secrets", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "GitGot", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "git-hound", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "github secret scanning", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "git-leaks", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "gitrob", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "github-secrets", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "gitlab-secrets", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "Gitty Leaks", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "OWASP Sedated", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "ThoughtWorks Talisman", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "truffleHog", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "truffleHog3", "prompt": "" },
+      { "tname": "Secrets Scanning", "label": "I-SD-B", "name": "Whispers", "prompt": "" }
+    ]
+  },
+  {
+    "bf": "imp",
+    "title": "Defect Management",
+    "id": "defect-management",
+    "order": 3,
+    "tools": [
+      { "tname": "Code quality gate", "label": "I-DM-A", "name": "SonarQube, Checkstyle, ISO-25010", "prompt": "How does SonarQube quality gate support defect management in the CI pipeline?" },
+      { "tname": "Defect Tracking", "label": "I-DM-B", "name": "DefectDojo & Azure DevOps integration", "prompt": "How do we use DefectDojo for defect tracking across security findings?" },
+      { "tname": "Metrics & Feedback", "label": "I-DM-A", "name": "DefectDojo", "prompt": "How do we use DefectDojo to track metrics and feed security findings back to development teams?" }
+    ]
+  },
+
+  {
+    "bf": "ver",
+    "title": "Architecture Assessment",
+    "id": "architecture-assessment",
+    "order": 1,
+    "tools": [
+      { "tname": "Architecture Validation", "label": "V-AA-A", "name": "ADR Review, Threat Model review", "prompt": "How does periodic security review and threat model refresh work as an architecture assessment?" },
+      { "tname": "Architecture Mitigation", "label": "V-AA-B", "name": "Secure code review", "prompt": "How does CSPM with Microsoft Defender for Cloud support architecture assessment?" }
+    ]
+  },
+  {
+    "bf": "ver",
+    "title": "Requirements-driven Testing",
+    "id": "requirements-testing",
+    "order": 2,
+    "tools": [
+      { "tname": "Control Verification", "label": "V-RT-A", "name": "Secure code review", "prompt": "How do we perform control verification through secure code review as a requirements-driven test?" },
+      { "tname": "DAST", "label": "V-RT-B", "name": "OWASP ZAP", "prompt": "How does DAST with OWASP ZAP support requirements-driven testing in a CI/CD pipeline?" },
+      { "tname": "Misuse / Abuse Testing", "label": "V-RT-A", "name": "OSS-Fuzz & ZAP", "prompt": "How do we use OSS-Fuzz and ZAP for abuse testing and fuzzing?" }
+    ]
+  },
+  {
+    "bf": "ver",
+    "title": "Security Testing",
+    "id": "security-testing",
+    "order": 3,
+    "tools": [
+      { "tname": "SAST", "label": "V-ST-A", "name": "SemGrep", "prompt": "" },
+      { "tname": "SAST", "label": "V-ST-A", "name": "Fortify", "prompt": "" },
+      { "tname": "SAST", "label": "V-ST-A", "name": "Checkmarx", "prompt": "" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Pentest", "prompt": "" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Nessus", "prompt": "" },
+      { "tname": "DAST", "label": "V-ST-B OSS", "name": "Checkmarx Zed Attack Proxy", "prompt": "[Checkmarx ZAProxy](https://www.zaproxy.org/)" },
+      { "tname": "DAST", "label": "V-ST-B OSS", "name": "Nuclei", "prompt": "[Nuclei](https://docs.projectdiscovery.io/opensource/nuclei/overview)" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "OpenVAS", "prompt": "[OpenVAS](https://www.openvas.org/)" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Netsparker", "prompt": "[Netsparker](https://www.invicti.com/)" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Acunetix", "prompt": "[Acunetix](https://www.acunetix.com/web-vulnerability-scanner/)" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Aikido DAST", "prompt": "[Aikido DAST](https://www.aikido.dev/attack/surface-monitoring-dast)" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Aikido API Scannning", "prompt": "[Aikido API Scannning](https://www.aikido.dev/attack/api-scanning)" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Checkmarx DAST", "prompt": "[Checkmarx DAST](https://checkmarx.com/checkmarx-dast/#features)" },
+      { "tname": "DAST", "label": "V-ST-B", "name": "Burp-suite", "prompt": "" }
+    ]
+  },
+
+  {
+    "bf": "ops",
+    "title": "Incident Management",
+    "id": "incident-management",
+    "order": 1,
+    "tools": [
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Dynatrace", "prompt": "How does log aggregation with Dynatrace support incident management for Azure-hosted software?" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "SIEM", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Splunk", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "ElasticStack", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Google Backstory", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "OSSIM", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "OSSEC", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Apache Metron", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Prelude", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Elastic Intel", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A Azure", "name": "Azure Sentinel", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Grafana", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Graphite", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Statsd", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Seyren", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "Sof-elk", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "ElastAlert", "prompt": "" },
+      { "tname": "Log Aggregation", "label": "O-IM-A", "name": "411", "prompt": "" },
+      { "tname": "Incident Response", "label": "O-IM-B", "name": "OTSM", "prompt": "How do we implement an incident response process using OTSM for software security incidents?" }
+    ]
+  },
+  {
+    "bf": "ops",
+    "title": "Environment Management",
+    "id": "environment-management",
+    "order": 2,
+    "tools": [
+      { "tname": "Configuration Hardening", "label": "O-EM-A", "name": "Immutable minimal containers", "prompt": "How do we harden environments using immutable minimal containers as a security control?" },
+      { "tname": "Patching & Updating", "label": "O-EM-B", "name": "Renovate, OWASP Dependency Check & Track, Maven, NPM", "prompt": "How do we use Renovate for automated patching and dependency updating in Azure DevOps?" }
+    ]
+  },
+  {
+    "bf": "ops",
+    "title": "Operational Management",
+    "id": "operational-management",
+    "order": 3,
+    "tools": [
+      { "tname": "Decommissioning", "label": "O-OM-A", "name": "Automated inventory into CMDB", "prompt": "How do we automate decommissioning and inventory management into a CMDB for software assets?" }
+    ]
+  }
+]
