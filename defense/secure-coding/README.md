@@ -65,8 +65,8 @@ independent from another request. So for example, there's no auto-save for the s
 |           | OWASP SAMM: Tools of the trade                                    | John Ellingsworth     |
 
 
-## Secure coding training  /teaching
-* OpenSSF [Developing Secure Software](https://training.linuxfoundation.org/training/developing-secure-software-lfd121/) (free)
+## Secure coding training / teaching
+* OpenSSF [Developing Secure Software](https://training.linuxfoundation.org/training/developing-secure-software-lfd121/)
 * [Hacksplaining](https://www.hacksplaining.com/) all common vulnerabilities with step-by-step hack-examples and defense with code examples
 * [Hack yourself first](https://www.pluralsight.com/courses/hack-yourself-first) by Troy Hunt on Pluralsight (free course)
 * [OWASP Secure coding practices](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)  quick reference guide

@@ -87,6 +87,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 
 ### Static Code analysis (SAST)
 * OWASP [Glue](https://www.owasp.org/index.php/OWASP_Glue_Tool_Project): Integrates and coordinates different analysis and tools
+* OWASP [SecureCodeBox](https://www.securecodebox.io/): Automated and scalable open source integration of multiple security scanners for continuous and automated security testing.
 * Wikipedia [List](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis) of Static Code Analysis Tools
 * [Awesome Static Analysis](https://github.com/mre/awesome-static-analysis) list of tools
 * [Checkmarx](https://www.checkmarx.com/) for [these](https://checkmarx.atlassian.net/wiki/spaces/KC/pages/22806548/7.1.8+Supported+Environments) languages: Java, .NET / C# and VB.NET, ASP, VB6, C / C++, PHP, Apex, Ruby, JavaScript, Perl 5, Objective C, HTML5, PL/SQL, Python, Groovy
@@ -243,6 +244,7 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
   * Securing Kubernetes [course-material](https://github.com/manicodesecurity/defending-devops)
 
 #### Container Security Scanning
+* [Cluster Image Scanner](https://github.com/SDA-SE/cluster-image-scanner)
 * [Actuary](https://github.com/diogomonica/actuary)
 * [Anchore](https://anchore.com/opensource/)
 * [Clair](https://github.com/coreos/clair)
@@ -293,6 +295,8 @@ The DevSecOps toolchain document is provided by [Sans.org](https://software-secu
 
 ##### Aggregation
 * [Open Vulnerability Project](https://github.com/jeremylong/Open-Vulnerability-Project)
+* [OpenSSF Scorecard](https://securityscorecards.dev/#what-is-openssf-scorecard)
+* [GUAC](https://github.com/guacsec/guac) or Graph for Understanding Artifact Composition aggregates software security metadata
 
 ##### Signing
 * [SigStore](https://www.sigstore.dev/)
