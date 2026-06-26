@@ -1,11 +1,186 @@
 // Extracted from owasp_samm2_white_bg.html
 // Exposes sendPrompt used by onclick attributes
-function sendPrompt(message) {
+let promptModal = null;
+let lastPromptTrigger = null;
+let promptCloseTimer = null;
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function buildSafeLink(url, label) {
+  return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + '</a>';
+}
+
+function renderPromptHTML(message) {
+  const rawMessage = String(message ?? '').trim();
+  if (!rawMessage) return '<p>No details available.</p>';
+
+  const linkTokens = [];
+  const tokenized = rawMessage.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, label, url) => {
+    const token = '__PROMPT_LINK_' + linkTokens.length + '__';
+    linkTokens.push(buildSafeLink(url, label));
+    return token;
+  });
+
+  let html = escapeHtml(tokenized);
+  html = html.replace(/(https?:\/\/[^\s<]+)/g, url => buildSafeLink(url, url));
+  linkTokens.forEach((tokenHtml, index) => {
+    html = html.replace('__PROMPT_LINK_' + index + '__', tokenHtml);
+  });
+
+  const paragraphs = html
+    .split(/\n\s*\n/)
+    .map(block => block.trim())
+    .filter(Boolean)
+    .map(block => '<p>' + block.replace(/\n/g, '<br>') + '</p>');
+
+  return paragraphs.join('');
+}
+
+function getPromptTrigger(triggerEl) {
+  if (triggerEl?.getBoundingClientRect) return triggerEl;
+
+  const activeElement = document.activeElement;
+  if (activeElement?.getBoundingClientRect && activeElement !== document.body) {
+    return activeElement;
+  }
+
+  const evt = window.event;
+  const eventTarget = evt?.currentTarget || evt?.target;
+  if (eventTarget?.getBoundingClientRect) return eventTarget;
+
+  return null;
+}
+
+function setPromptAnimationOrigin(triggerEl) {
+  if (!promptModal) return;
+
+  const panelRect = promptModal.panel.getBoundingClientRect();
+  const triggerRect = triggerEl?.getBoundingClientRect?.();
+
+  if (!triggerRect || !panelRect.width || !panelRect.height) {
+    promptModal.panel.style.setProperty('--prompt-from-x', '0px');
+    promptModal.panel.style.setProperty('--prompt-from-y', '12px');
+    promptModal.panel.style.setProperty('--prompt-from-scale-x', '0.96');
+    promptModal.panel.style.setProperty('--prompt-from-scale-y', '0.96');
+    return;
+  }
+
+  const triggerCenterX = triggerRect.left + (triggerRect.width / 2);
+  const triggerCenterY = triggerRect.top + (triggerRect.height / 2);
+  const panelCenterX = panelRect.left + (panelRect.width / 2);
+  const panelCenterY = panelRect.top + (panelRect.height / 2);
+
+  const deltaX = triggerCenterX - panelCenterX;
+  const deltaY = triggerCenterY - panelCenterY;
+  const scaleX = Math.min(1, Math.max(0.18, triggerRect.width / panelRect.width));
+  const scaleY = Math.min(1, Math.max(0.14, triggerRect.height / panelRect.height));
+
+  promptModal.panel.style.setProperty('--prompt-from-x', deltaX + 'px');
+  promptModal.panel.style.setProperty('--prompt-from-y', deltaY + 'px');
+  promptModal.panel.style.setProperty('--prompt-from-scale-x', scaleX.toFixed(3));
+  promptModal.panel.style.setProperty('--prompt-from-scale-y', scaleY.toFixed(3));
+}
+
+function animatePromptOpen(triggerEl) {
+  if (!promptModal) return;
+
+  window.clearTimeout(promptCloseTimer);
+  promptModal.root.classList.remove('closing', 'animate-in');
+  promptModal.root.classList.add('open');
+  promptModal.root.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+
+  requestAnimationFrame(() => {
+    setPromptAnimationOrigin(triggerEl);
+    requestAnimationFrame(() => {
+      promptModal.root.classList.add('animate-in');
+      promptModal.closeBtn.focus();
+    });
+  });
+}
+
+function finishPromptClose() {
+  if (!promptModal) return;
+  promptModal.root.classList.remove('open', 'closing', 'animate-in');
+  promptModal.root.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+  if (lastPromptTrigger && typeof lastPromptTrigger.focus === 'function') {
+    lastPromptTrigger.focus();
+  }
+}
+
+function closePromptModal() {
+  if (!promptModal || !promptModal.root.classList.contains('open')) return;
+
+  window.clearTimeout(promptCloseTimer);
+  promptModal.root.classList.remove('animate-in');
+  promptModal.root.classList.add('closing');
+  promptCloseTimer = window.setTimeout(finishPromptClose, 220);
+}
+
+function ensurePromptModal() {
+  if (promptModal) return promptModal;
+
+  const root = document.createElement('div');
+  root.className = 'prompt-modal';
+  root.setAttribute('role', 'dialog');
+  root.setAttribute('aria-modal', 'true');
+  root.setAttribute('aria-hidden', 'true');
+
+  const panel = document.createElement('div');
+  panel.className = 'prompt-panel';
+
+  const header = document.createElement('div');
+  header.className = 'prompt-header';
+
+  const title = document.createElement('h2');
+  title.className = 'prompt-title';
+  title.textContent = 'Hint details';
+
+  const closeBtn = document.createElement('button');
+  closeBtn.type = 'button';
+  closeBtn.className = 'prompt-close';
+  closeBtn.setAttribute('aria-label', 'Close hint details');
+  closeBtn.innerHTML = '&times;';
+
+  const content = document.createElement('div');
+  content.className = 'prompt-content';
+
+  header.appendChild(title);
+  header.appendChild(closeBtn);
+  panel.appendChild(header);
+  panel.appendChild(content);
+  root.appendChild(panel);
+  document.body.appendChild(root);
+
+  closeBtn.addEventListener('click', closePromptModal);
+  root.addEventListener('click', (event) => {
+    if (event.target === root) closePromptModal();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closePromptModal();
+  });
+
+  promptModal = { root, panel, content, closeBtn };
+  return promptModal;
+}
+
+function sendPrompt(message, triggerEl) {
   try {
     // Log for debugging
     console.log('sendPrompt:', message);
-    // Show a simple dialog (keeps existing behaviour visible). Replace as needed.
-    alert(message);
+    lastPromptTrigger = getPromptTrigger(triggerEl);
+    const modal = ensurePromptModal();
+    modal.content.innerHTML = renderPromptHTML(message);
+    animatePromptOpen(lastPromptTrigger);
   } catch (e) {
     console.error(e);
   }
@@ -49,6 +224,103 @@ function debounce(fn, wait){
 // Collapsible threshold
 const COLLAPSE_THRESHOLD = 5;
 
+function getStreamFromLabel(label) {
+  const match = String(label || '').match(/-(A|B)(?:\s|$)/i);
+  return match ? match[1].toUpperCase() : '';
+}
+
+function applyToolMetadata(toolEl, label) {
+  if (!toolEl || !label) return;
+
+  const stream = getStreamFromLabel(label);
+  if (stream) toolEl.dataset.stream = stream;
+  if (!toolEl.dataset.primaryLabel) toolEl.dataset.primaryLabel = label;
+}
+
+function removeEmptyPlaceholderTsubs(scope) {
+  if (!scope?.querySelectorAll) return;
+
+  scope.querySelectorAll('.tsub').forEach(tsub => {
+    const hasText = Boolean((tsub.textContent || '').trim());
+    const hasChildNodes = tsub.children.length > 0;
+    if (!hasText && !hasChildNodes) tsub.remove();
+  });
+}
+
+function getToolStream(toolEl) {
+  if (!toolEl) return 'A';
+
+  if (toolEl.dataset.stream) return toolEl.dataset.stream;
+
+  const markers = Array.from(toolEl.querySelectorAll('.tsub'));
+  for (const marker of markers) {
+    for (const cls of Array.from(marker.classList)) {
+      const match = cls.match(/-(A|B)$/i);
+      if (match) return match[1].toUpperCase();
+    }
+  }
+
+  return 'A';
+}
+
+function ensurePracticeStreamColumns(practiceItemsEl) {
+  if (!practiceItemsEl) return null;
+
+  let streamACol = practiceItemsEl.querySelector(':scope > .col[data-stream="A"]');
+  let streamBCol = practiceItemsEl.querySelector(':scope > .col[data-stream="B"]');
+
+  if (!streamACol || !streamBCol) {
+    const existingTools = Array.from(practiceItemsEl.querySelectorAll(':scope > .tool, :scope > .col > .tool'));
+    practiceItemsEl.innerHTML = '';
+
+    streamACol = document.createElement('div');
+    streamACol.className = 'col';
+    streamACol.dataset.stream = 'A';
+
+    streamBCol = document.createElement('div');
+    streamBCol.className = 'col';
+    streamBCol.dataset.stream = 'B';
+
+    practiceItemsEl.appendChild(streamACol);
+    practiceItemsEl.appendChild(streamBCol);
+
+    existingTools.forEach(toolEl => {
+      const targetCol = getToolStream(toolEl) === 'B' ? streamBCol : streamACol;
+      targetCol.appendChild(toolEl);
+    });
+  }
+
+  return { A: streamACol, B: streamBCol };
+}
+
+function placeToolInStreamColumn(practiceEl, toolEl) {
+  if (!practiceEl || !toolEl) return;
+
+  const practiceItemsEl = practiceEl.querySelector('.practice-items');
+  if (!practiceItemsEl) return;
+
+  const columns = ensurePracticeStreamColumns(practiceItemsEl);
+  if (!columns) return;
+
+  const stream = getToolStream(toolEl);
+  const targetCol = columns[stream] || columns.A;
+  if (toolEl.parentElement !== targetCol) {
+    targetCol.appendChild(toolEl);
+  }
+}
+
+function alignToolsToStreams() {
+  document.querySelectorAll('.practice').forEach(practiceEl => {
+    const practiceItemsEl = practiceEl.querySelector('.practice-items');
+    if (!practiceItemsEl) return;
+
+    ensurePracticeStreamColumns(practiceItemsEl);
+    Array.from(practiceEl.querySelectorAll('.tool')).forEach(toolEl => {
+      placeToolInStreamColumn(practiceEl, toolEl);
+    });
+  });
+}
+
 // Ensure tool DOM structure: .tname (always visible) + .tool-body (holds .tsub spans)
 function ensureToolStructure(toolEl) {
   if (!toolEl) return;
@@ -61,6 +333,8 @@ function ensureToolStructure(toolEl) {
     Array.from(toolEl.querySelectorAll('.tsub')).forEach(s => body.appendChild(s));
     toolEl.appendChild(body);
   }
+
+  removeEmptyPlaceholderTsubs(body);
 
   const tsubsCount = body.querySelectorAll('.tsub').length;
   let toggle = toolEl.querySelector('.toggle-btn');
@@ -114,6 +388,7 @@ function ensureToolStructure(toolEl) {
         } else {
           // collapsing: restore equal heights across the row
           equalizePracticeHeights();
+          placeToolInStreamColumn(practiceEl, toolEl);
         }
       });
 
@@ -210,6 +485,7 @@ function populatePracticesFromJSON() {
             // Append each item as its own span inside the tool box's body
             const container = toolEl.querySelector('.tool-body') || toolEl;
             itemsForTname.forEach(item => {
+              applyToolMetadata(toolEl, item.label);
               const labelClass = item.label || '';
               const className = 'tsub' + (labelClass ? ' ' + labelClass : '');
               const existingSame = Array.from(container.querySelectorAll('.tsub')).some(s => {
@@ -221,7 +497,12 @@ function populatePracticesFromJSON() {
                 const span = document.createElement('span');
                 span.className = className;
                 span.textContent = item.name || '';
-                if (item.prompt) span.onclick = () => sendPrompt(item.prompt);
+                if (item.prompt) {
+                  span.onclick = (event) => {
+                    event.stopPropagation();
+                    sendPrompt(item.prompt, event.currentTarget);
+                  };
+                }
                 container.appendChild(span);
               }
             });
@@ -237,6 +518,7 @@ function populatePracticesFromJSON() {
                 if (target) {
                   const parentTool = target.closest('.tool');
                   if (parentTool) {
+                    applyToolMetadata(parentTool, item.label);
                     // ensure parent has tool-body
                     let body = parentTool.querySelector('.tool-body');
                     if (!body) {
@@ -257,15 +539,21 @@ function populatePracticesFromJSON() {
                       const span = document.createElement('span');
                       span.className = className;
                       span.textContent = item.name || '';
-                      if (item.prompt) span.onclick = () => sendPrompt(item.prompt);
+                      if (item.prompt) {
+                        span.onclick = (event) => {
+                          event.stopPropagation();
+                          sendPrompt(item.prompt, event.currentTarget);
+                        };
+                      }
                       body.appendChild(span);
                     }
 
                     ensureToolStructure(parentTool);
                     return;
                   } else {
+                    applyToolMetadata(target.closest('.tool'), item.label);
                     target.textContent = item.name || '';
-                    target.onclick = item.prompt ? () => sendPrompt(item.prompt) : null;
+                    target.onclick = item.prompt ? (event) => sendPrompt(item.prompt, event.currentTarget) : null;
                     return;
                   }
                 }
@@ -277,6 +565,7 @@ function populatePracticesFromJSON() {
       });
 
       // Recalculate heights after DOM updates
+      alignToolsToStreams();
       equalizePracticeHeights();
     })
     .catch(err => console.error('Failed to load practices.json', err));
@@ -311,28 +600,29 @@ function annotateStaticTsubs() {
       const toolEls = prEl.querySelectorAll('.tool');
       toolEls.forEach(toolEl => {
         const tn = toolEl.querySelector('.tname');
-        const ts = toolEl.querySelector('.tsub');
-        if (!tn || !ts) return;
+        if (!tn) return;
         const name = tn.textContent.trim();
         for (let i = 0; i < toolsList.length; i++) {
           const cand = toolsList[i];
           if (cand.tname === name) {
             const label = cand.label;
-            if (label) {
-              ts.classList.add(label);
-            }
+            applyToolMetadata(toolEl, label);
             toolsList.splice(i,1);
             break;
           }
         }
         // ensure structure and collapsible behavior for existing tools
         ensureToolStructure(toolEl);
+        placeToolInStreamColumn(prEl, toolEl);
       });
     });
+    removeEmptyPlaceholderTsubs(document);
+    alignToolsToStreams();
   }).catch(e => console.warn('annotateStaticTsubs: failed', e));
 }
 
 document.addEventListener('DOMContentLoaded', function(){
+  ensurePromptModal();
   annotateStaticTsubs();
   populatePracticesFromJSON();
   window.addEventListener('resize', debounce(equalizePracticeHeights, 120));
