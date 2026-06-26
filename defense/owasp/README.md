@@ -15,6 +15,9 @@ Other OWASP Top 10's:
 * OWASP Top 10 [Serverless](https://github.com/OWASP/Serverless-Top-10-Project)
 * OWASP Top 10 [Thick Client](https://owasp.org/www-project-thick-client-top-10/) ([GitHub](https://github.com/OWASP/www-project-thick-client-top-10))
 * OWASP Top 10 [Card Game](https://github.com/OWASP/www-project-top-10-card-game)
+* OWASP Top 10 [Agentic Skills](https://owasp.org/www-project-agentic-skills-top-10/)
+* OWASP Top 10 [for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+* OWASP Top 10 [Machine Learning Security](https://owasp.org/www-project-machine-learning-security-top-10/)
 
 ## OWASP Projects Map
 
