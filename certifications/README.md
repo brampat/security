@@ -22,6 +22,12 @@ Certifications may help with identifying skill-levels and knowledge gaps. For bo
   * [ISSEP](https://www.isc2.org/certifications/issep) Information Systems Security Engineering Professional
   * [ISSMP](https://www.isc2.org/certifications/issmp) Information Systems Security Management Professional
   * [CSSLP](https://www.isc2.org/certifications/csslp) Certified Secure Software Lifecycle Professional
+    * [Cert Prep](https://www.linkedin.com/learning/isc2-certified-secure-software-lifecycle-professional-csslp-2023-cert-prep) on LinkedIn Learning
+    * Practice exams:
+      * [Open-exam-prep.com](https://open-exam-prep.com/practice/isc2-csslp) Practice exam (200 questions)
+      * Udemy: Is outdated, covers completely different topics and buggy (all questions have a literal option "Multiple choice", some questions do not have the correct answer listed etc)
+    * Prep Experience:
+      * [Prep experience](https://www.linkedin.com/pulse/study-smiley-facestill-passed-csslp-roger-ba-potte/) by Roger Ba Potte
   * [SSCP](https://www.isc2.org/certifications/sscp) Systems Security Certified Practitioner
 
 
