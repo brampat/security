@@ -120,13 +120,13 @@ Duplication can be measured with SonarQube. Duplicate code increases maintainabi
 
 Duplicate code can be measured with tools like SonarQube. We measure duplicate code in percentage of the total codebase. Depending on the percentage of duplicate code, we rate the system as a whole using the following chart.
 
-|     Rank    | Duplicate Cde |
-|-------------|---------------|
-|     ++      | 0-3%          |
-|     +       | 3-5%          |
-|     0       | 5-10%         |
-|     -       | 10-20%        |
-|     --      | 20-100%       |
+|     Rank    | Duplicate Code |
+|-------------|----------------|
+|     ++      | 0-3%           |
+|     +       | 3-5%           |
+|     0       | 5-10%          |
+|     -       | 10-20%         |
+|     --      | 20-100%        |
 
 #### Sources
 [Artima](https://www.artima.com/intv/dry.html)
