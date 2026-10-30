@@ -5,19 +5,54 @@ For a combined graph overview see [here](./OWASP_graph/index.html), which includ
 * OWASP Top 10 [Mobile](https://owasp.org/www-project-mobile-top-10/2023-risks/) ([GitHub](https://github.com/OWASP/www-project-mobile-top-10/blob/master/2023-risks/index.md))
 * OWASP Top 10 [Proactive Controls](https://owasp.org/www-project-proactive-controls/)
 
-Other OWASP Top 10's:
+### DevSecOps
+* OWASP [DevSecOps](https://owasp.org/projects/devsecops-top-10) Top 10
+* OWASP Top 10 [CI/CD](https://owasp.org/projects/top-10-cicd-security-risks) Security Risks -  ([GitHub](https://github.com/OWASP/www-project-top-10-ci-cd-security-risks))
+* OWASP Top 10 Risks for [Open Source Software](https://owasp.org/projects/top-10-risks-for-open-source-software)
 * OWASP Top 10 [API Security](https://owasp.org/www-project-api-security/) ([GitHub](https://github.com/OWASP/www-project-api-security/blob/master/index.md))
-* OWASP Top 10 [CICD](https://owasp.org/www-project-top-10-ci-cd-security-risks/) ([GitHub](https://github.com/OWASP/www-project-top-10-ci-cd-security-risks))
-* OWASP Top 10 [Kubernetes](https://owasp.org/www-project-kubernetes-top-ten/) ([GitHub](https://github.com/OWASP/www-project-kubernetes-top-ten/blob/main/index.md))
-* OWASP Top 10 [Docker](https://owasp.org/www-project-docker-top-10/) ([GitHub](https://github.com/OWASP/Docker-Security))
-* OWASP Top 10 [Low-Code / No-Code](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/) ([GitHub](https://github.com/OWASP/www-project-top-10-low-code-no-code-security-risks/blob/main/index.md))
-* OWASP Top 10 [Cloud Native Application](https://owasp.org/www-project-cloud-native-application-security-top-10/) ([GitHub](https://github.com/OWASP/Cloud-Native-Application-Security-Top-10))
-* OWASP Top 10 [Serverless](https://github.com/OWASP/Serverless-Top-10-Project)
-* OWASP Top 10 [Thick Client](https://owasp.org/www-project-thick-client-top-10/) ([GitHub](https://github.com/OWASP/www-project-thick-client-top-10))
-* OWASP Top 10 [Card Game](https://github.com/OWASP/www-project-top-10-card-game)
-* OWASP Top 10 [Agentic Skills](https://owasp.org/www-project-agentic-skills-top-10/)
-* OWASP Top 10 [for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+
+### Cloud
+* OWASP Top 10 [Cloud Native Application](https://owasp.org/projects/cloud-native-application-security-top-10) ([GitHub](https://github.com/OWASP/Cloud-Native-Application-Security-Top-10))
+* OWASP Top 10 [Serverless](https://owasp.org/projects/serverless-top-10)
+* OWASP Top 10 [Docker](https://owasp.org/projects/docker-top-10) ([GitHub](https://github.com/OWASP/Docker-Security))
+* OWASP Top 10 [Kubernetes](https://owasp.org/projects/kubernetes-top-ten) ([GitHub](https://github.com/OWASP/www-project-kubernetes-top-ten/blob/main/index.md))
+
+### App Client
+* OWASP Top 10 [Thick Client](https://owasp.org/projects/thick-client-top-10-project) ([GitHub](https://github.com/OWASP/www-project-thick-client-top-10))
+* OWASP [Desktop App](https://owasp.org/projects/desktop-app-security-top-10) Security Top 10
+* Mobile:
+  * OWASP Top 10 [Mobile](https://owasp.org/www-project-mobile-top-10/2023-risks/) ([GitHub](https://github.com/OWASP/www-project-mobile-top-10/blob/master/2023-risks/index.md))  
+  * OWASP Top 10 [Client-Side](https://owasp.org/projects/top-10-client-side-security-risks) Security Risks
+
+
+### Data / Privacy
+* OWASP [Data Security](https://owasp.org/projects/data-security-top-10) Top 10
+* OWASP Top 10 [Privacy Risks](https://owasp.org/projects/top-10-privacy-risks)
+
+### AI / LLM
 * OWASP Top 10 [Machine Learning Security](https://owasp.org/www-project-machine-learning-security-top-10/)
+* * OWASP Top 10 [Agentic Skills](https://owasp.org/projects/agentic-skills-top-10) - [webpage](https://owasp.github.io/www-project-agentic-skills-top-10/)
+* OWASP [MCP](https://owasp.org/projects/mcp-top-10) Top 10  
+* OWASP Top 10 [for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+* OWASP Top 10 [Neocloud & AI Data Center](https://owasp.org/projects/top-10-neocloud-and-ai-data-center-security-risks) Security Risks
+
+### Web3
+* OWASP [Smart Contract](https://owasp.org/projects/smart-contract-top-10) Top 10
+* OWASP [Solana](https://owasp.org/projects/solana-top-10) Top 10
+
+### Hardware / OT
+* OWASP [Operational Technology](https://owasp.org/projects/operational-technology-top-10) Top 10 - [webpage](https://ot.owasp.org/v/2025/)
+* OWASP Top 10 for [Maritime Security](https://owasp.org/projects/top-10-for-maritime-security)
+
+### Awareness Games
+* OWASP [Cornucopia](https://owasp.org/projects/cornucopia)
+* OWASP Top 10 [The Game](https://owasp.org/projects/top-10-the-game) - [webpage](https://top10thegame.org/en/)
+
+### Other
+* OWASP Top 10 [Low-Code / No-Code](https://owasp.org/www-project-top-10-low-code-no-code-security-risks/) ([GitHub](https://github.com/OWASP/www-project-top-10-low-code-no-code-security-risks/blob/main/index.md))
+* OWASP Top 10 for [Business Logic Abuse](https://owasp.org/projects/top-10-for-business-logic-abuse)
+* OWASP [Non-Human identities](https://owasp.org/projects/non-human-identities-top-10) Top 10
+
 
 ## OWASP Projects Map
 
